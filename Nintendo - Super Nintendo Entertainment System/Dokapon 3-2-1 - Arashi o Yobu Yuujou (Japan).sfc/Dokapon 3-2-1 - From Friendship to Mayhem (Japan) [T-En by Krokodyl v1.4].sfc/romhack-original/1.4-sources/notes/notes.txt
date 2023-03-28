@@ -1,0 +1,439 @@
+First game (Released on Dec 10 1993)
+決戦!ドカポン王国IV 〜伝説の勇者たち〜
+Kessen! Dokapon Oukoku IV: Densetsu no Yuusha Tachi
+Decisive battle! Dokapon Kingdom IV ~ Legendary Heroes ~
+The IV refers to the possibility of having 4 players.
+
+ドカポン3・2・1 〜嵐を呼ぶ友情〜
+Second game : Dokapon 3-2-1: Arashi o Yobu Yuujou
+
+
+
+But in terms of dokapon games
+Kessen (Un translated)
+321 (You fan translated)
+Ikari (untranslated)
+DX (Untranslated)
+World (Untranslated)
+Kingdom
+Journey
+
+
+##### TABLES #####
+1
+
+
+##### BREAKPOINTS #####
+Welcome text : 02CFE8
+First menu : 088259 (40259)
+Menu Week/Day : 0881F5
+Subroutine 1 : 308000
+Subroutine 2 : 3080D0
+
+4016f
+7*8000+816F
+07816F
+
+##### BANK ADDRESS CONVERSION #####
+Adresse pointeur : 14fe8
+Breakpoint : 02CFE8
+DEBUG; $81/AF15 B7 20       LDA [$20],y[$82:CFE8]   A:008C X:0006 Y:008C P:envmxdIzc
+
+x82CFE8/x800000 = x2CFE8
+(2-1)*8000+CFE8 = x14FE8
+
+81/A86A   01A86A
+88/B61D
+
+##### Traduction premier texte in game #####
+
+OFFSET=14fe8
+VALEUR=e3c4(c4e3)
+OFFSETDATA=163c4
+DATA=9700 9900 9b00 9d00 9f00 a100 a300 a500 a700 a900 ab00 ad00 af00 0030 b100 b300 b500 b700 b900 bb00 bd00 bf00 0030 c100 c300 c500 c700 c900 cb00 cd00 cf00 ffff
+JAP=ようこそ,ドカポン王国へ!{NL}今日は,どのモードであそぶのかな?{EL}
+ENG=0{EL}{NL}Welcome to Dokapon Kingdom!{NL}Which game mode do you want to{NL}play today? {EL}
+
+
+
+
+
+##### LOOKING FOR THE CHAR SPRITE LOADING #####
+0     D9400
+Breakpoint : 02CFE8
+Breakpoint : 08B61D
+
+Sprite 0 : D9400
+Sprite A : D8000
+Sprite 日 : D9C00  e000
+Sprite 字 : DE000  f001
+Sprite 話 : DE2E0  ff01
+Sprite 先 : DE400  0002
+
+
+char '0' : a000 -> D9400
+$81/AE3E 0A          ASL A                   A:00A0
+$81/AE3F 18          CLC                     A:0140
+$81/AE44 09 00 20    ORA #$2000              A:0140
+$81/AE47 92 24       STA ($24)  [$7E:7C19]   A:2140
+$81/B3A3 B9 00 00    LDA $0000,y[$7E:7C19]   A:0000
+$81/B3A6 29 FF 03    AND #$03FF              A:2140
+$81/B3A9 05 18       ORA $18    [$00:0018]   A:0140 X:0006
+$81/B3B2 69 00 80    ADC #$8000              A:1400
+$81/B3B5 AA          TAX                     A:9400
+
+
+##### SPLIT KANJIS #####
+ORIGINAL      NEW
+f000          0001 0101
+f800          1001 1101
+0001          2001 2101   魔
+6f01          fe01 ff01   救
+0002          2002 2102
+
+Original version
+Kanji working in menus : e000 -> 1f01
+
+
+##### CHAR REQUIRED #####
+letters           52
+numbers           10
+special           20
+legacy            14
+                  96
+cities            105   (double chars)
+weapons           97    (dc)
++shields          139
++armors           193
+
+
+##### COLOR LOADING #####
+81/A86C
+
+##### BUG DOUBLE CHAR MENU #####
+offset 40240
+Breakpoint 080240
+
+##### DAY OF THE WEEK #####
+starting value (x6440)
+$80/E449 69 E0 00    ADC #$00E0
+2d02=向
+4102=特
+
+##### LETTERS TO REMOVE #####
+removed : *<>$#=\_
+todo :
+merge O-QUOTES and C-QUOTES
+
+##### INPUT PLAYER NAME #####
+Word "Player"
+19c22
+Player : 2e01 2c01 ed00 3201 e700 eb00
+2e 01 94 4f a0 2c 01 94 51 a0 ed 00 94 53 a0 32 01 94 55 a0 e7 00 94 57 a0 eb 00 94 59 a0 bf 00
+
+
+0 1 2 3 4 bf bf bf bf bf 00 00 5 6 7 8 9 bf bf bf bf bf 00 fe a b c d e A B C D E 00 00 f g h i j F G H I J 00 fd k l m n o K L M N O 00 00 p q r s t P Q R S T 00 00 u v w x y U V W X Y 00 00 z bf bf bf bf Z bf bf bf bf 00 00 bf bf bf bf bf bf bf bf bf bf 00 ff ! ? : . ' bf bf bf bf bf 00 00 / ( ) [ ] bf bf bf bf bf 00 fe + - % bf bf bf bf bf bf bf 00 00 bf bf bf bf bf bf bf bf bf bf 00 fd bf bf bf bf bf bf bf bf bf bf 00 00 bf bf bf bf bf bf bf bf bf bf 00 00 bf bf bf bf bf bf bf bf bf bf 00 ff bf bf bf bf bf bf bf bf bf bf 00 ff bf bf bf bf bf bf
+
+ Alph
+
+bf00 e600 2400 2800 2000
+
+PAGE LETTER
+saved values jap offset : 43e8b
+shown values jap offset : 41fe6 (menu inc. 41fe2)
+
+##### BUG LEVEL UP CASTLE #####
+
+e3c4 -> 9cd0
+ed07 -> 10ed6
+308004
+3080A4
+01A856
+
+36a6b   D8 9B     (D8 9B 86)
+1a9bd8
+
+1A8000  00 80   0000
+1A8002  02 80   0010
+1A8004          0100
+1A8006          0110
+1A8008          1000
+1A800A          1010
+1A800C          1100
+1A800E          1110
+
+$30/8000 E2 20       SEP #$20                A:22B0 X:0000 Y:8537 P:envMxdIzc
+$30/8002 A5 22       LDA $22    [$00:0022]   A:22B0 X:0000 Y:8537 P:envMxdIzc
+$30/8004 C9 82       CMP #$82                A:2231 X:0000 Y:8537 P:envMxdIzc
+$30/8006 D0 09       BNE $09    [$8011]      A:2231 X:0000 Y:8537 P:eNvMxdIzc
+$30/8008 A9 30       LDA #$30                A:0082 X:0006 Y:8537 P:envMxdIZC
+$30/800A 85 22       STA $22    [$00:0022]   A:0030 X:0006 Y:8537 P:envMxdIzC
+$30/800C C2 20       REP #$20                A:0030 X:0006 Y:8537 P:envMxdIzC
+$30/800E A7 20       LDA [$20]  [$30:9A9E]   A:0030 X:0006 Y:8537 P:envmxdIzC
+$30/8010 6B          RTL                     A:0150 X:0006 Y:8537 P:envmxdIzC
+$30/8011 C9 AA       CMP #$AA                A:2231 X:0000 Y:8537 P:eNvMxdIzc
+$30/8013 D0 73       BNE $73    [$8088]      A:2231 X:0000 Y:8537 P:eNvMxdIzc
+$30/8088 C9 86       CMP #$86                A:2231 X:0000 Y:8537 P:eNvMxdIzc
+$30/808A D0 04       BNE $04    [$8090]      A:2231 X:0000 Y:8537 P:eNvMxdIzc
+$30/8090 C2 20       REP #$20                A:2231 X:0000 Y:8537 P:eNvMxdIzc
+$30/8092 A7 20       LDA [$20]  [$31:9FAA]   A:2231 X:0000 Y:8537 P:eNvmxdIzc
+$30/8094 6B          RTL                     A:FFFF X:0000 Y:8537 P:eNvmxdIzc
+
+18008C  30808C
+1800B0  3080B0
+
+OLD
+c9 86 d0 04 a9 35 85 22 c2 20 a7 20 6b
+NEW
+c9 86 d0 15 a5 20 29 02 c9 00 d0 09 a9 35 85 22 c2 20 a7 20 6b a9 36 85 22 c2 20 a7 20 6b
+
+c9 86 d0 15 (=skipped instructions)
+  A5 20
+  29 02
+  c9 00 d0 09
+        a9 35
+        85 22
+        c2 20 a7 20 6b
+  a9 36
+  85 22
+c2 20 a7 20 6b
+
+##### BANKS #####
+0x180000	fill 1010		30  (82)  Table 1 (x180100)
+0x188000	fill 1111		31  (82)  Table 2
+0x190000	fill 1212		32  --
+0x198000	fill 1313		33  ()  Table 4
+0x1a0000	fill 1414		34  ()  Table 5 (x1a0002)
+0x1a8000	fill 1515		35  (86)  Table 7
+0x1b0000  fill 1616   35  (86)  Table 7 overflow
+
+1736704
+1780516
+
+##### BUG ITEM / MAGIC USE MENU #####
+4d00 RM
+4f00  R
+7100 HA
+8b00 SA
+
+af004d004f0071008b00b000
+
+##### QUIZZ #####
+832a	$00:832A
+832b	$00:832B
+832c	$00:832C
+832d	$00:832D
+
+
+##### MENU #####
+Width : 30 (25 for a Yes/No question)
+
+40224 (07:8224)
+MENUDATA=0c00 120d
+STATUS
+S e0 00 e8 00 ed 00 e8 00 e1 00 e0 00
+U e1 00
+
+4022d
+MENUDATA=0106 0605
+Weeks
+
+40640-407CE
+407D0 
+(07:87d0)
+0C 00 12 0D
+81 00 58 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 82 10 73 85 00 30
+6A 00 71 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 82 10 75 85 00 30
+93 00 98 00 4F 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 82 10 77 85 00 30
+BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 00 30
+AF 00 4D 00 4F 00 71 00 8B 00 B0 00 BF 00 BF 00 BF 00 BF 00 AF 00 00 01 01 01 B0 00 BF 00 BF 00 BF 00 BF 00 00 30
+82 10 79 85 BF 00 BF 00 82 10 89 85 00 30
+82 10 7B 85 BF 00 BF 00 82 10 8B 85 00 30
+82 10 7D 85 BF 00 BF 00 82 10 8D 85 00 30
+82 10 7F 85 BF 00 BF 00 82 10 8F 85 00 30
+82 10 81 85 BF 00 BF 00 82 10 91 85 00 30
+82 10 83 85 BF 00 BF 00 82 10 93 85 00 30
+82 10 85 85 BF 00 BF 00 82 10 95 85 00 30
+82 10 87 85 BF 00 BF 00 82 10 97 85 FF FF
+
+
+$30/80F7	Loading x,y
+$81/A79A	Loading w,h
+$30/80A3	Loading character
+$30/80A5
+
+CRASH:
+$30/80A3 A7 20       LDA [$20]  [$31:8644]   A:0031 X:7D99 Y:8537 P:eNvmxdIzc
+$30/80A5 6B          RTL                     A:856D X:7D99 Y:8537 P:eNvmxdIzc
+
+$31:8644 = x188644
+18aa00
+
+103c7	44 86	(Right on monster)
+10399	44 86	(Right on player)
+
+CODE:
+103c7	08ab
+10399	00aa
+18aa00
+Weapon e6 00 1e 00 1a 00 29 00 28 00 27 00
+Shield e0 00 21 00 22 00 1e 00 25 00 1d 00
+Armor  ed 00 2b 00 26 00 28 00 2b 00
+[Items]    [Magic]af 00 0f 00 2d 00 1e 00 26 00 2c 00 b0 00 bf 00 bf 00 af 00 e2 00 1a 00 20 00 22 00 1c 00 b0 00 00 30
+
+NORMAL:
+$30/80A3 A7 20       LDA [$20]  [$31:9A64]   A:0031 X:7D8B Y:8537 P:eNvmxdIzc
+$30/80A5 6B          RTL                     A:1080 X:7D8B Y:8537 P:envmxdIzc
+$30/80A3 A7 20       LDA [$20]  [$31:9A68]   A:2131 X:0002 Y:8537 P:eNvmxdIzc
+$30/80A5 6B          RTL                     A:2001 X:0002 Y:8537 P:envmxdIzc
+$30/80A3 A7 20       LDA [$20]  [$31:9A6A]   A:0031 X:0004 Y:8537 P:eNvmxdIzc
+$30/80A5 6B          RTL                     A:1020 X:0004 Y:8537 P:envmxdIzc
+$30/80A3 A7 20       LDA [$20]  [$31:9A6E]   A:2531 X:0002 Y:8537 P:eNvmxdIzc
+$30/80A5 6B          RTL                     A:2000 X:0002 Y:8537 P:envmxdIzc
+$30/80A3 A7 20       LDA [$20]  [$31:9A70]   A:0031 X:0004 Y:8537 P:eNvmxdIzc
+$30/80A5 6B          RTL                     A:3000 X:0004 Y:8537 P:envmxdIzc
+$30/80A3 A7 20       LDA [$20]  [$31:9A9E]   A:0031 X:7D99 Y:8537 P:eNvmxdIzc
+$30/80A5 6B          RTL                     A:00E0 X:7D99 Y:8537 P:envmxdIzc
+
+e6 00 1e 00 1a 00 29 00 28 00 27 00 BF 00 BF 00 BF 00 BF 00 82 10 73 85 00 30
+e0 00 21 00 22 00 1e 00 25 00 1d 00 BF 00 BF 00 BF 00 BF 00 82 10 75 85 00 30
+ed 00 2b 00 26 00 28 00 2b 00 BF 00 BF 00 BF 00 BF 00 BF 00 82 10 77 85 00 30
+BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 00 30
+af 00 0f 00 2d 00 1e 00 26 00 2c 00 b0 00 BF 00 bf 00 bf 00 af 00 e2 00 1a 00 20 00 22 00 1c 00 b0 00 BF 00 00 30
+82 10 79 85 BF 00 BF 00 82 10 89 85 00 30
+82 10 7B 85 BF 00 BF 00 82 10 8B 85 00 30
+82 10 7D 85 BF 00 BF 00 82 10 8D 85 00 30
+82 10 7F 85 BF 00 BF 00 82 10 8F 85 00 30
+82 10 81 85 BF 00 BF 00 82 10 91 85 00 30
+82 10 83 85 BF 00 BF 00 82 10 93 85 00 30
+82 10 85 85 BF 00 BF 00 82 10 95 85 00 30
+82 10 87 85 BF 00 BF 00 82 10 97 85 FF FF
+
+####################################
+Dokapon
+castle
+
+##### SPRITE LOCATION #####
+
+ASMIK logo
+
+Sprite location : x117580
+
+---- LDA ----
+$87/DFB4 BF 20 E0 87 LDA $87E020,x[$87:E022] A:FF00 X:0002 Y:0000 P:envMXdIZc
+# x6*x8000 + e020 = 3e020
+
+MAP PALETTE
+A1 EA DD
+
+x10eadb     FF
+x10eadd     7F 7A 4A
+x10eadf     EC 31 99 36 99 36 99 36 34 2E B0 19 0C 0D 0E 12 8C
+[...]
+x10ebba
+
+16*16 bytes
+== 8 8*8 tiles in editor
+
+background color : #607860
+
+x10EADF
+00 00 = #000000
+ff ff = #F8F8F8
+
+$80/E907
+$80/BFA2
+$80/E944
+
+WARRIOR SPRITE
+Pointer loading : $83/9AB0 BF D3 9A 83 LDA $839AD3,x[$83:9AD3] A:0000 X:0000 Y:BE71 P:envmxdIZc
+# x83 / x8 = x10.6    x83 - (x10*x8) = x3     (x2)*x8000+x9ad3
+Pointer offset : x19AD3 ()
+Pointer value : A6 C7 9D
+Sprite offset : xEC7A6
+
+character warrior sprite EC7A6, pointer x19AD3 (A6 C7)
+character test sprite EE3A6
+the sprite is split into 12 8x8 squares
+A6 C7 9D    warrior
+A6 E3 9D    knight
+C4 8F 9A    thief
+A6 AB 9D    mage
+A6 8F 9D    fighter
+
+1 2 3
+4 5 6
+7 8 9
+a b c
+
+1 EC7A6       x19AD3 (A6 C7)
+2 EC7C6
+7 EC7E6
+8 EC806
+9 EC826
+
+3 = 1 flip H
+
+4 EC9A6
+5 EC9C6
+a EC9E6
+b ECA06
+c ECA26
+
+6 = 4 flip H
+
+EC7A0 / breakpoint : 9D7A0
+EC7A6 / 8000 = 1D.8F4C
+1C * 8000 = E0000
+C7A6 (A6 C7)
+
+C7A6
+315691  x4D12B
+747912  xB6988
+1303098 x13E23A
+1422775 x15B5B7
+
+$83/9AB0 == 105136 (x19AB0)
+
+$83/9AB0 BF D3 9A 83 LDA $839AD3,x[$83:9AD3] A:0000 X:0000 Y:BE71 P:envmxdIZc
+$83/9AB4 85 20       STA $20    [$00:0020]   A:C7A6 X:0000 Y:BE71 P:eNvmxdIzc
+x839AD3-x800000 = x39AD3
+(3-1)*8000+9AD3 = x19AD3 (A6 C7)
+
+$00/1E80 8B          PHB                     A:003F X:C7A6 Y:F004 P:envMxdIzc
+$00/1E80 8B          PHB                     A:003F X:C9A6 Y:F204 P:envMxdIzc
+$00/1E80 8B          PHB                     A:003F X:C9A6 Y:F204 P:envMxdIzc
+$00/1E80 8B          PHB                     A:003F X:C7A6 Y:F044 P:envMxdIzc
+$00/1E80 8B          PHB                     A:003F X:C9A6 Y:F244 P:envMxdIzc
+$00/1E80 8B          PHB                     A:003F X:CBA6 Y:F084 P:envMxdIzc
+$00/1E80 8B          PHB                     A:003F X:CDA6 Y:F284 P:envMxdIzc
+$00/1E80 8B          PHB                     A:003F X:CBA6 Y:F0C4 P:envMxdIzc
+$00/1E80 8B          PHB                     A:003F X:CDA6 Y:F2C4 P:envMxdIzc
+
+
+
+
+JAP=
+{1112 5a85}位{8010 5b85}{CR}{2010 6b85}{CW}{8310 6f85}{NL}
+人{CY}{2112 5985}{CW}ボス{2112 7385}村{2112 7585}死亡{CR}{2112 7485}{CW}{NL}
+
+{NL}{1112 7785}位{8010 7885}{CR}{2010 8885}{CW}{8310 8c85}{NL}人{CY}{2112 7685}{CW}ボス{2112 9085}村{2112 9285}死亡{CR}{2112 9185}{CW}{NL}{NL}{1112 9485}位{8010 9585}{CR}{2010 a585}{CW}{8310 a985}{NL}人{CY}{2112 9385}{CW}ボス{2112 ad85}村{2112 af85}死亡{CR}{2112 ae85}{CW}{NL}{NL}{1112 b185}位{8010 b285}{CR}{2010 c285}{CW}{8310 c685}{NL}人{CY}{2112 b085}{CW}ボス{2112 ca85}村{2112 cc85}死亡{CR}{2112 cb85}{CW}{EL}
+
+
+
+Look Side Menu
+
+$82/83C0 B5 39       LDA $39,x  [$00:0543]   A:FFFF X:050A Y:03D2 P:eNvMxdIzc
+$82/83C2 F0 0B       BEQ $0B    [$83CF]      A:FF00 X:050A Y:03D2 P:envMxdIZc
+$82/83CF C2 20       REP #$20                A:FF00 X:050A Y:03D2 P:envMxdIZc
+$82/83D1 AF A4 7D 7E LDA $7E7DA4[$7E:7DA4]   A:FF00 X:050A Y:03D2 P:envmxdIZc
+$82/83D5 C9 D4 87    CMP #$87D4              A:8644 X:050A Y:03D2 P:eNvmxdIzc
+$82/83D8 E2 20       SEP #$20                A:8644 X:050A Y:03D2 P:eNvmxdIzc
+$82/83DA F0 0E       BEQ $0E    [$83EA]      A:8644 X:050A Y:03D2 P:eNvMxdIzc
+$82/83DC A0 19 85    LDY #$8519              A:8644 X:050A Y:03D2 P:eNvMxdIzc
+$82/83DF 22 BA 95 83 JSL $8395BA[$83:95BA]   A:8644 X:050A Y:8519 P:eNvMxdIzc
+
+x10394	44 86
+x10399	44 86
+x103C7	44 86
+

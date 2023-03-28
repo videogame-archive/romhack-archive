@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "6d89168b",
+        "md5": "ad95980ecd83d5e4f3d137071ae79e69",
+        "sha1": "cbdd0a9bff5c220bed9253450b64041b3c8556f2"
+    },
+    "patches": [
+        {
+            "authors": [ "Twilight Translations" ],
+            "url": "https://www.romhacking.net/translations/1537/",
+            "version": "1.00",
+            "releaseDate": "2010-07-29",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

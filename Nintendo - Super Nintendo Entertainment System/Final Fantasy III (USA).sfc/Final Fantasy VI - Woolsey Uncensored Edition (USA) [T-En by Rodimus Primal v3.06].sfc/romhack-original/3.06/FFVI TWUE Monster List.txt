@@ -1,0 +1,354 @@
+Final Fantasy VI Ted Woolsey Uncensored Edition Monster List
+-------------------------------------------------------------
+
+The purpose of this is document is to give a list of monster name
+changes in game from other releases of Final Fantasy VI. Since 
+Ted Woolsey Uncensored Edition uses modern and official names of 
+monsters, that is what is used, where possible. In some cases, the original
+name was used
+
+ Original SNES name        GBA/Mobile/Steam          Ted Woolsey Uncensored
+ ------------------        ----------------          -----------------------
+-Guard                     Guard                     Guard
+-Lobo                      Silver Lobo               Silver Lobo
+-Vomammoth                 Megalodoth                Megalodoth
+-Were-Rat                  Wererat                   Wererat
+-Vaporite                  Spritzer                  Spritzer
+-Repo Man                  Bandit                    Bandit
+-Leafer                    Leaf Bunny                Leaf Bunny
+-Dark Wind                 Darkwind                  Darkwind
+-Sand Ray                  Sand Ray                  Sand Ray
+-Areneid                   Alacran                   Alacran
+-Bleary                    Foper                     Foper
+-Hornet                    Hornet                    Hornet
+-Crawly                    Urok                      Urok
+-GreaseMonk                Unseelie                  Unseelie
+-Rhodox                    Mu                        Mu
+-Brawler                   Zaghrem                   Zaghrem
+-Trilium                   Trillium                  Trillium
+-Tusker                    Gorgias                   Gorgias
+-Cirpius                   Cirpius                   Cirpius
+-Pterodon                  Lesser Lopros             LesrLopros
+-Nautiloid                 Nautiloid                 Nautiloid
+-Exocite                   Excocite                  Exocite
+-HeavyArmor                Heavy Armor               HeavyArmor
+-Commander                 Commander                 Commander
+-Vector Pup                Vector Hound              Vector Pup
+-Trilobiter                Cartagra                  Cartagra
+-Primordite                Acrophies                 Acrophies
+-Gold Bear                 Gold Bear                 Gold Bear
+-1st Class                 Valeor                    Valeor
+-Wild Rat                  Wild Rat                  Wild Rat
+-Stray Cat                 Stray Cat                 Stray Cat
+-Beakor                    Aepyornis                 Aepyornis
+-CrassHoppr                Nettlehopper              NetleHoppr
+-Rhobite                   Chippirabbit              Chip Rabbit
+-Leader                    Captain                   Captain
+-Soldier                   Imperial Soldier          Im.Soldier
+-Templar                   Templar                   Templar
+-Telstar                   Satellite                 Satellite
+-Ghost                     Ghost                     Ghost
+-Poplium                   Poplium                   Poplium
+-Hazer                     Cloud                     Cloud
+-Whisper                   Angel Whisper             Whisper
+-Over-Mind                 Oversoul                  Oversoul
+-Bomb                      Bomb                      Bomb
+-StillGoing                Living Dead               Living Dead
+-Specter                   Apparition                Apparition
+-Siegfried                 Siegfried                 Siegfried
+-Piranha                   Opinicus Fish             Opnicus
+-Anguiform                 Anguiform                 Anguiform
+-Aspik                     Aspiran                   Aspiran
+-Actaneon                  Actinian                  Actinian
+-Fidor                     Fidor                     Fidor
+-Trooper                   Corporal                  Corporal
+-Bounty Man                Hunting Hound             Hunt Hound
+-FossilFang                Fossil Dragon             FossilDrgn
+-Vulture                   Vulture                   Vulture
+-Iron Fist                 Iron Fist                 Iron Fist
+-Red Fang                  Bloodfang                 Bloodfang
+-Mind Candy                Rock Wasp                 Rock Wasp
+-Over Grunk                Paraladia                 Paraladia
+-Harvester                 Harvester                 Harvester
+-HadesGigas                Hill Gigas                Hill Gigas
+-Gabblegak                 Gobbledygook              Gabblegak
+-SlamDancer                Veil Dancer               Veil Dancer
+-Sewer Rat                 Stunner                   Stunner
+-Vermin                    Goetia                    Goetia
+-ChickenLip                Litwor Chicken            Litwor Chkn
+-Joker                     Joker                     Joker
+-Ralph                     Don                       Don
+-Wyvern                    Wyvern                    Wyvern
+-WeedFeeder                Grasswyrm                 Grasswyrm
+-Grenade                   Grenade                   Grenade
+-Bug                       Bug                       Bug
+-Pipsqueak                 Onion Knight              OnionKnight
+-Commando                  Sergeant                  Sergeant
+-Garm                      Belzecue                  Belzecue
+-ProtoArmor                Proto Armor               ProtoArmor
+-Trapper                   Trapper                   Trapper
+-Flan                      Flan                      Flan
+-General                   General                   General
+-Rhinox                    Destroyer                 Destroyer
+-Gobbler                   Lenergia                  Lenergia
+-Mag Roader                Magna Roader              Mag Roader
+-Chaser                    Chaser                    Chaser
+-Ing                       Outcast                   Outcast
+-Apparite                  Provoker                  Provoker
+-Zombone                   Zombie Dragon             ZombieDrgn
+-Coelecite                 Antares                   Antares
+-Lich                      Lich                      Lich
+-Sp Forces                 Imperial Elite            Imp. Elite
+-Mega Armor                Mega Armor                Mega Armor
+-Baskervor                 Briareus                  Briareus
+-Cephaler                  Devourer                  Devourer
+-Chimera                   Chimera                   Chimera
+-Intagir                   Intagir                   Intagir
+-Balloon                   Balloon                   Balloon
+-Slurm                     Bonnacon                  Bonnacon
+-Insecare                  Land Grillon              LandGrillon
+-Adamanchyt                Adamakary                 Adamankary
+-Mandrake                  Mandrake                  Mandrake
+-Abolisher                 Venobennu                 Venobennu
+-Sky Armor                 Sky Armor                 Sky Armor
+-Spit Fire                 Spitfire                  Spitfire
+-Brainpan                  Brainpan                  BrainPan
+-Misfit                    Misfit                    Misfit
+-Apokryphos                Apocrypha                 Apocrypha
+-Dragon                    Dragon                    Dragon
+-Wirey Drgn                Platinum Dragon           PlatinumDgn
+-Behemoth                  Behemoth                  Behemoth
+-Ninja                     Ninja                     Ninja
+-Naughty                   Naude                     Naude
+-Mesosaur                  Fafnir                    Fafnir
+-Gilomantis                Killer Mantis             KillerMantis
+-Peepers                   Peeper                    Peeper
+-Chitonid                  Murussu                   Murussu
+-Gigan Toad                Gigantoad                 Gigantoad
+-EarthGuard                Land Ray                  Land Ray
+-Lunaris                   Luna Wolf                 Luna Wolf
+-Black Drgn                Black Dragon              BlackDragn
+-Osprey                    Rukh                      Rukh
+-HermitCrab                Zokka                     Zokka
+-Pm Stalker                Nightwalker               Nightwalkr
+-Scorpion                  Scorpion                  Scorpion
+-Delta Bug                 Delta Beetle              Delta Bug
+-Bloompire                 Vampire Thorn             Vamp Thorn
+-Lizard                    Lizard                    Lizard
+-Buffalax                  Devoahan                  Devoahan
+-Sand Horse                Sandhorse                 Sandhorse
+-Maliga                    Cancer                    Cancer
+-Latimeria                 Oceanus                   Oceanus
+-Nohrabbit                 Desert Hare               Desert Hare
+-Humpty                    Humpty                    Humpty
+-Cruller                   Cruller                   Cruller
+-Drop                      Dropper                   Dropper
+-NeckHunter                Neck Hunter               NeckHunter
+-Dante                     Dante                     Dante
+-Bogy                      Bogy                      Bogy
+-Harpiai                   Marchosias                Marchosia
+-Deep Eye                  Deepeye                   Deepeye
+-Muus                      Mousse                    Mousse
+-Orog                      Borghese                  Borghese
+-Mad Oscar                 Malboro                   Malboro
+-PowerDemon                Cloudwraith               Cloudwraith
+-Exoray                    Exoray                    Exoray
+-Osteosaur                 Skeletal Horror           SkelHorror
+-Ursus                     Mugbear                   Mugbear
+-Scrapper                  Devil Fist                Devil Fist
+-Luridan                   Luridan                   Luridan
+-Punisher                  Punisher                  Punisher
+-Borras                    Glasya Labolas            Gl Labolas
+-Rhyos                     Gorgimera                 Gorgimera
+-Toe Cutter                Twinscythe                Twinscythe
+-Allo Ver                  Death Warden              DeathWardn
+-Dahling                   Misty                     Misty
+-Nighshade                 Rafflesia                 Rafflesia
+-Still Life                Still Life                Still Life
+-Wild Cat                  Coerl Cat                 Coeurl Cat
+-Crusher                   Crusher                   Crusher
+-SoulDancer                BladeDancer               SoulDancer
+-Vindr                     Caladrius                 Caladrius
+-Uroburos                  Ouroboros                 Ouroboros
+-Phase                     Face                      Face
+-Parasoul                  Zeveak                    Zeveak
+-Sea Flower                Seaflower                 Seaflower
+-Aquila                    Galypdes                  Galypdes
+-Necromancr                Necromancer               Necromancr
+-Trixter                   Clymenus                  Clymenus
+-Chaos Drgn                Chaos Dragon              ChaosDragn
+-Brachosaur                Brachiosaur               Brachosaur
+-Tyranosaur                Tyrannosaur               Tyranosaur
+-TumbleWeed                Tumbleweed                Tumbleweed
+-Reach Frog                Leap Frog                 Leap Frog
+-Hoover                    Slagworm                  Slagworm
+-Cactrot                   Cactuar                   Cactuar
+-Crawler                   Crawler                   Crawler
+-Sprinter                  Sprinter                  Sprinter
+-Geckorex                  Basilisk                  Basilisk
+-Spek Tor                  Lycaon                    Lycaon
+-Mantodea                  Greater Mantis            GreatMantis
+-Test Rider                Test Rider                Test Rider
+-Wizard                    Wizard                    Wizard
+-Nastidon                  Lukhavi                   Lukhavi
+-Psychot                   Psychos                   Psychos
+-Red Wolf                  Garm                      Garm
+-Pug                       Tonberry                  Tonberry
+-Tomb Thumb                Onion Dasher              OnionDashr
+-Anemone                   Anemone                   Anemone
+-Ceritops                  Illuyankas                Illuyankas
+-Poppers                   Knotty                    Knotty
+-Kiwok                     Tzakmaqiel                Tzakmaqiel
+-Zone Eater                Zone Eater                Zone Eater
+-Harpy                     Vasegiatta                Vasegiatta
+-GloomShell                Gloomwind                 Gloomwind
+-Prussian                  Purusa                    Purusa
+-Covert                    Covert                    Covert
+-Ogor                      Kamui                     Kamui
+-Wart Puck                 Wartpuck                  Wartpuck
+-Karkass                   Shambling Corpse          ShamCorpse
+-Tap Dancer                Amduscias                 Amduscias
+-Woolly                    Baalzephon                Baalzephon
+-Samurai                   Samurai                   Samurai
+-Rain Main                 Al Jabr                   Al Jabr
+-Suriander                 Suriander                 Suriander
+-Allosaurus                Weredragon                Weredragon
+-Sky Cap                   Schmidt                   Schmidt
+-PlutoArmor                Pluto Armor               PlutoArmor
+-Critic                    Alluring Rider            AlluringRider
+-Pan Dora                  Pandora                   Pandora
+-Parasite                  Parasite                  Parasite
+-Barb-e                    Coco                      Coco
+-Io                        Io                        Io
+-Lethal Wpn                Armored Weapon            ArmoredWpn
+-Boxed Set                 Lunatys                   Lunatys
+-Figaliz                   Figaro Lizard             FigaroLzrd
+-Goblin                    Devil                     Devil
+-Enuo                      Enuo                      Enuo
+-Magic Urn                 Magic Urn                 Magic Urn
+-L.10 Magic                Level 10 Magic            L.10 Magic
+-L.20 Magic                Level 20 Magic            L.20 Magic
+-L.30 Magic                Level 30 Magic            L.30 Magic
+-L.40 Magic                Level 40 Magic            L.40 Magic
+-L.50 Magic                Level 50 Magic            L.50 Magic
+-L.60 Magic                Level 60 Magic            L.60 Magic
+-L.70 Magic                Level 70 Magic            L.70 Magic
+-L.80 Magic                Level 80 Magic            L.80 Magic
+-L.90 Magic                Level 90 Magic            L.90 Magic
+-Warlock                   Warlock                   Warlock
+-Displayer                 Mahadeva                  Mahadeva
+-Slatter                   Sorath                    Sorath
+-Cluck                     Medusa Chicken            MedusaChkn
+-Eland                     Creature                  Creature
+-Hipocampus                Moonform                  Moonform
+-Opinicus                  Asidochelon               Aspidochln
+-Retainer                  Yojimbo                   Yojimbo
+-Dark Force                Dark Force                Dark Force
+-Steroidite                Muud Suud                 Muud Suud
+-Doom Drgn                 Fiend Dragon              FiendDragn
+-Mover                     Mover                     Mover
+-Madam                     Cherry                    Cherry
+-Vectaur                   Vector Lythos             Vec. Lyhtos
+-Brontaur                  Primeval Dragon           Brontaur
+-Land Worm                 Landworm                  Landworm
+-Scullion                  Gamma                     Gamma
+-Evil Oscar                Great Malboro             Gr.Malboro
+-Outsider                  Outsider                  Outsider
+-Hemophyte                 Demon Knight              Demon Knight
+-Dueller                   Duel Armor                Duel Armor
+-GtBehemoth                Great Behemoth            GtBehemoth 
+-Vectagoyle                Vector Chimera            VecChimera
+-Fortis                    Fortis                    Fortis
+-Junk                      Junk                      Junk
+-Innoc                     InnoSent                  InnoSent
+-Didalos                   Daedalus                  Daedalus
+-Veteran                   Ahriman                   Ahriman
+-Sky Base                  Death Machine             Death Mach
+-IronHitman                Metal Hitman              MetalHitman
+-Prometheus                Prometheus                Prometheus
+-Whelk                     Ymir                      Ymir
+-Marshal                   Guard Leader              GuardLeadr
+-M-TekArmor                Magitek Armor             M-TekArmor
+-Vargas                    Vargas                    Vargas
+-Ipooh                     Ipooh                     Ipooh
+-Ultros                    Ultros                    Ultros
+-TunnelArmr                Tunnel Armor              TunnelArmr
+-GhostTrain                Phantom Train             PhantomTrn
+-Rizopas                   Rhizopas                  Rhizopas
+-Rider                     Hell's Rider              Hell Rider
+-Kefka                     Kefka                     Kefka
+-Dadaluma                  Dadaluma                  Dadaluma
+-Ifrit                     Ifrit                     Ifrit
+-Shiva                     Shiva                     Shiva
+-Number 024                Number 024                Number 024
+-Number 128                Number 128                Number 128
+-RightBlade                Right Blade               Right Blade
+-Left Blade                Left Blade                Left Blade
+-Crane                     Crane                     Crane
+-FlameEater                Flame Eater               FlameEater
+-Chupon                    Typhon                    Typhon
+-Air Force                 Air Force                 Air Force
+-Laser Gun                 Laser Gun                 Laser Gun
+-MissileBay                Missle Bay                Missle Bay
+-Speck                     Bit                       Bit
+-Gigantos                  Gigantos                  Gigantos
+-AtmaWeapon                Ultima Weapon             UltimaWeapn
+-Nerapa                    Nelapa                    Nelapa
+-Phunbaba                  Humbaba                   Humbaba
+-Tentacle                  Tentacle                  Tentacle 
+-Presenter                 Angler Whelk              AnglrWhelk
+-Dullahan                  Dullahan                  Dullahan
+-SrBehemoth                Behemoth King             K.Behemoth
+-Chadarnook                Chadarnook                Chadarnook
+-Tritoch                   Valigarmanda              Valigrmanda
+-Pugs                      Tonberries                Tonberries
+-Umaro                     Yeti                      Yeti
+-Curley                    Curlax                    Curley
+-Larry                     Laragorn                  Larry
+-Moe                       Moebius                   Moe 
+-Wrexsoul                  Wrexsoul                  Wrexsoul
+-SoulSaver                 Soul Saver                SoulSaver
+-Master Pug                Master Tonberry           M. Tonberry
+-KatanaSoul                Samurai Soul              KatanaSoul
+-MagiMaster                Magic Master              MagiMaster
+-Doom Gaze                 Deathgaze                 Deathgaze
+-Hidon                     Hidon                     Hidon
+-Hidonite                  Erebus                    Erebus
+-Red Dragon                Red Dragon                Red Dragon
+-Blue Drgn                 Blue Dragon               BlueDragon
+-Gold Drgn                 Gold Dragon               GoldDragon
+-Ice Dragon                Ice Dragon                Ice Dragon
+-Storm Drgn                Storm Dragon              StormDragn
+-Dirt Drgn                 Earth Dragon              EarthDragn
+-SkullDrgn                 Skull Dragon              SkullDragon
+-White Drgn                Holy Dragon               HolyDragon
+-Inferno                   Inferno                   Inferno
+-Rough                     Rahu                      Rahu
+-Striker                   Ketu                      Ketu
+-Atma                      Ultima Buster             UltimaBustr
+-Guardian                  Guardian                  Guardian
+-Doom                      Fiend                     Fiend
+-Goddess                   Goddess                   Goddess
+-Poltrgeist                Demon                     Demon
+-Short Arm                 Short Arm                 Short Arm
+-Long Arm                  Long Arm                  Long Arm
+-Face                      Visage                    Visage
+-Tiger                     Tiger                     Tiger
+-Tools                     Machine                   Machine
+-Magic                     Magic                     Magic
+-Hit                       Power                     Power
+-Girl                      Lady                      Lady
+-Sleep                     Rest                      Rest
+-Kefka                     Kefka                     Kefka
+
+
+
+
+
+
+
+
+
+
+
+

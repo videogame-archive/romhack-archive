@@ -1,0 +1,37 @@
+Dragonball Z S.B.3 English Translation
+AGTP Version .99
+http://agtp.romhack.net
+draw_omega@yahoo.com
+
+-----------------
+Those Responsible
+-----------------
+Gideon Zhi - Romhacker, Translator
+Kitsune Sniper - Menus.
+
+-----------------
+Stuff Done
+-----------------
+Just about everything.
+
+-----------------
+Stuff Not Done
+-----------------
+A couple menus :(
+
+-----------------
+Patching Instructions
+-----------------
+Go to your favorite emulation site and download SNESTool. Drop it, the
+patch, and the DBZSB3 ROM into the same directory. Then
+open SNESTool. If it's missing some extenders, you'll have to find 'em
+on your own. Once you get SNESTool running, select (Use IPS) then the
+.ips patch file, then the DBZSB3 ROM. You should now be patched.
+
+At this point, I regret to inform you that I am unable to make a patch for
+the Japanese version, so you'll have to find the French one. Sorry :(
+
+-----------------
+If you find a bug
+-----------------
+Oh well. We probably know, and we'll fix it later.

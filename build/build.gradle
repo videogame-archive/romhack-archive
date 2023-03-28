@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'javax.json:javax.json-api:1.1'
+    runtimeOnly 'org.glassfish:javax.json:1.1'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    baseName = 'tools-library' // Default jar, no manifest, just to reuse the tools in other projects
+    version = '0.0.1'
+}
+
+def jarPackage(artifactName, className) {
+    return tasks.create("jar-${artifactName}", Jar) {
+        baseName = artifactName
+        version = jar.version
+        from(project.sourceSets.main.output) {
+            include "**/**"
+        }
+
+        from {
+            configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+        }
+
+        manifest {
+            attributes "Implementation-Title": className,
+                    "Main-Class": className
+        }
+    }
+}
+
+// Executable artifacts, all of them can be obtained together using the assemble task
+artifacts {
+    archives jarPackage("dat-creator", "com.github.openretrogamingarchive.dat.DatCreator"),
+            jarPackage("romset-creator", "com.github.openretrogamingarchive.romset.RomsetCreator"),
+            jarPackage("rom-patcher", "com.github.openretrogamingarchive.rompatcher.RomPatcher"),
+            jarPackage("romhack2archive", "com.github.openretrogamingarchive.hack2arch.Romhack2Archive")
+}
+
+tasks.withType(Jar) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

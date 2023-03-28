@@ -1,0 +1,402 @@
+Diff list
+
+##########################
+x644A	E0 01
+$80/E449
+Text loading (day of the week)
+
+##########################
+
+x6B81 A0 A2 00
+
+Moves quote sprites
+from x112D22 to x1BAD22
+
+Compressed data 112D22-1131D5
+
+##########################
+
+x6BB6	A0 A2 00
+
+Moves quote sprite order
+from x112B2E to x1C2B2E
+
+Compressed data 112B2E-112D21
+
+##########################
+
+x77B3	22 B0 82 30 5C CB F7 80
+
+Jumps to $30/82B0 (x1802B0)
+Jumps to $80/F7CB
+
+x1802B0 is a subroutine for
+loading overworld map sprites
+
+##########################
+
+x796F	22 30 82 30 5C 87 F9 80
+
+Jumps to $30/8230 (x180230)
+Jumps to $80/F987
+
+x180230 is a subroutine for
+loading overworld map sprites
+
+##########################
+
+x7B1E	22 30 81 30 5C 44 FB 80
+
+Jumps to $30/8130 (x180130)
+Jumps to $80/FB44
+
+x180130 is a subroutine for
+loading overworld map sprites
+
+##########################
+
+x7C20	22 A0 81 30 5C 40 FC 80
+
+Jumps to $30/81A0 (x1801A0)
+Jumps to $80/FC3E
+
+x1801A0 is a subroutine for
+loading overworld map sprites
+
+##########################
+
+x7D15	00 80 BC 00 80 BB 00 80 BA
+
+Changes 3 pointers
+- Overworld map sprite order
+from $97:BA39 to $BC:8000 (x1E0000)
+- Overworld map sprite (4x4 tiles) definition
+from $97:DC95 to $BB:8000 (x1D8000)
+- Overworld map tile definition
+from $96:A528 to $BA:8000 (x1D0000)
+
+##########################
+
+x7FDC	CB 00 34 FF
+
+りぽゆわキを
+
+##########################
+
+xA772	22 D0 80 30
+
+Jumps to x1800D0
+
+##########################
+
+xA7A7	22 00 81 30
+
+Jumps to x180100
+
+##########################
+
+xA852	22 00 80 30
+
+Jumps to x180000
+
+##########################
+
+xAE2E	E0 01
+$81/AE2D
+Text loading
+
+##########################
+x10394	DC 9A F0 05 A9 DC 9A 80 03 A9 00 AA
+x103C7	DC 9A 8F A4 7D 7E E2 20 C2 20 AF A4 7D 7E C9 00 AA
+
+Fixes for the side menu
+when "looking" at monsters
+or players and hitting right
+
+##########################
+
+x11B33	A0 39 00
+Score in Normal mode
+
+x11B4B	A0 39 00
+
+
+
+x11B50	A0 00 FA
+
+Pointer to 
+
+##########################
+
+x14F5C - x150A8
+
+Pointer table 1
+
+Points to dialogues
+
+##########################
+
+x19C21	A0 14 00 94 4F A0 25 00 94 51 A0 1A 00 94 53 A0 32 00 94 55 A0 1E 00 94 57 A0 2B 00 94 59 A0 BF 00
+
+Word "Player"
+for the name input
+The letters are after each A0
+
+##########################
+
+x31483 - x315B9
+x32169 - x321A9
+x32949 - x32967
+x32C29 - x32C49
+x32FDD - x3311B
+x36A49 - x36B61
+
+Pointer table 7
+
+Points to dialogues
+
+##########################
+
+x40100 - x40285
+
+Pointer table 2
+
+##########################
+
+Changes between x40288 and x42708
+are menu datas for table 2
+i.e. positions and dimensions
+for the menus
+
+##########################
+
+x43E8B
+
+Table of characters
+for the name input screen
+Not the letters shown
+But the letters saved
+
+##########################
+
+xBE332	20
+
+##########################
+
+xCEF46-xCEFC5
+xCEFC6-xCF045
+
+Sprite order for the title
+of the score graph screen
+Two sections :
+- Scenario mode reads
+	"End of week"
+- Normal mode
+	"Weeks remaining:"
+	
+##########################
+
+xD8000 - xDFFFF
+
+Character sprites 
+2bpp
+
+##########################
+
+x150000 - x1501FE
+
+Pointer table 4
+
+##########################
+
+x1531A8 - x153346
+
+Pointer table 5
+
+##########################
+
+x168000 - x168026
+
+Pointer table 6
+
+
+##########################
+
+x168028 - x16B4AB
+
+Table 6 data
+
+These are all fixed size texts
+
+##########################
+
+x1712E2-x171782
+
+Sprites for the 3 intro texts
+
+あれから...1年の月日が流れた
+平和の訪れたドカポン王国に
+ふたたび...
+
+ENGLISH
+Since then... One year has passed
+Dokapon was peaceful
+Again...
+
+Compressed data
+
+##########################
+
+x177A4A-x177AC9
+x177ACA-x177B49
+x177B4A-x177BC9
+
+Sprite order for the 3 intro texts
+
+##########################
+
+x180000
+x1800D0
+x180100
+
+Subroutines loading texts
+
+##########################
+
+x180130
+
+Subroutine for
+loading overworld map sprites
+Called from x7B1E
+
+##########################
+
+x1801A0
+
+Subroutine for
+loading overworld map sprites
+Called from x7C20
+
+##########################
+
+x180230
+
+Subroutine for
+loading overworld map sprites
+Called from x796F
+
+##########################
+
+x1802B0
+
+Subroutine for
+loading overworld map sprites
+Called from x77B3
+
+##########################
+
+x181000
+
+Table 1 data
+
+##########################
+
+x188000
+
+Table 2 data
+
+##########################
+
+x18AA00
+
+Right side menu when looking at
+a monster or player
+
+##########################
+
+x190000
+
+Sprite (4x4 tiles) definition
+for the town names on the map
+
+##########################
+
+x198000
+
+Table 4 data
+
+##########################
+
+x1A0000
+
+Table 5 data
+
+##########################
+
+x1A8000
+
+Table 7 data
+
+##########################
+
+x1B0000
+
+More Table 7 data
+
+##########################
+
+x1BAD22
+
+quote sprites
+
+Compressed data
+
+##########################
+
+x1C2B2E
+
+quote sprite order
+
+Compressed data
+
+##########################
+
+x1CDD63
+
+Sprites for the title
+of the score graph screen
+
+Compressed data
+
+##########################
+
+x1D0000
+
+Overworld map sprites
+
+Compressed data
+
+##########################
+
+x1D8000
+
+Overworld map 4x4 tiles
+
+Compressed data
+
+##########################
+
+x1DDC95
+
+DELETE?
+
+##########################
+
+x1E0000
+
+Overworld map sprite order
+
+##########################
+
+x6B82	A2
+x6BB7	A2

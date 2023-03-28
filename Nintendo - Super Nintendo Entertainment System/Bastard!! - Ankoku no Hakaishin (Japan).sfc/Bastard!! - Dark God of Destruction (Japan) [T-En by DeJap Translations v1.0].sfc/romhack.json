@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 1572864,
+        "crc32": "fbd39fdc",
+        "md5": "b24c26185cf8ee924883de6be1e5638d",
+        "sha1": "c8e698170b6bf36b2382348ad839c2f39a7cd88d"
+    },
+    "patches": [
+        {
+            "authors": [ "DeJap Translations" ],
+            "url": "https://www.romhacking.net/translations/289/",
+            "version": "1.0",
+            "releaseDate": "2000-12-22",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

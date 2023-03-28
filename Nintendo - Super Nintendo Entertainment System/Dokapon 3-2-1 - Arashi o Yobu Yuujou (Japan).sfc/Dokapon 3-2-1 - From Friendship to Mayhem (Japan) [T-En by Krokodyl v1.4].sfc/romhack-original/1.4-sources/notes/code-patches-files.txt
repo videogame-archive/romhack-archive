@@ -1,0 +1,32 @@
+Loading code patch src/main/resources/data/1B8000.data	Quote sprites
+Loading code patch src/main/resources/data/1B8800.data	Quote sprite order
+Loading code patch src/main/resources/data/1712E2.data	Sprites for the 3 intro texts
+Loading code patch src/main/resources/data/18AA00.data	Right side menu when looking at a monster or player
+Loading code patch src/main/resources/data/1CDD63.data	Sprites for the title of the score graph screen
+Loading code patch src/main/resources/data/190000.data	Sprite (4x4 tiles) definition for the town names on the map
+Loading code patch src/main/resources/data/1E0000.data	input/map-order-uncompressed.data
+Loading code patch src/main/resources/data/1D0000.data	Overworld map sprites
+Loading code patch src/main/resources/data/1D8000.data	Overworld map sprite (4x4 tiles) definition
+Loading code patch src/main/resources/data/1F0000.data	images/sprites/title-screen.png
+Loading code patch src/main/resources/data/1F8000.data	input/title-order-uncompressed.data
+Loading code patch src/main/resources/data/1B3000.data	Training map sprites
+Loading code patch src/main/resources/data/1B9000.data	input/training-map-order-uncompressed.data
+Loading code patch src/main/resources/data/1BB000.data	input/training-map-tiles-uncompressed.data
+Loading code patch src/main/resources/data/1C8000.data	images/sprites/banner.png
+Loading code patch src/main/resources/data/1CA000.data	images/sprites/doc.png
+Loading code patch src/main/resources/data/1CC000.data	images/sprites/salesman.png
+Loading code patch src/main/resources/data/1DA000.data	images/sprites/roshambo.png
+Loading code patch src/main/resources/data/1FA000.data	images/sprites/penny-omg.png
+Loading code patch src/main/resources/data/1BC500.data	images/sprites/rico.png
+Loading code patch src/main/resources/data/1C0000.data	images/sprites/battle-cards.png
+Loading code patch src/main/resources/data/1DC000.data	images/sprites/bill.png
+Loading code patch src/main/resources/data/1FC000.data	images/sprites/chapter-end.png
+Loading code patch src/main/resources/data/1F3000.data	images/sprites/chapter-start.png
+Loading code patch src/main/resources/data/1E8020.data	input/chapter-1-start-order-uncompressed.data
+Loading code patch src/main/resources/data/1E9000.data	input/chapter-2-start-order-uncompressed.data
+Loading code patch src/main/resources/data/1EA000.data	input/chapter-3-start-order-uncompressed.data
+Loading code patch src/main/resources/data/1EB000.data	input/chapter-4-start-order-uncompressed.data
+Loading code patch src/main/resources/data/1EC000.data	input/chapter-5-start-order-uncompressed.data
+Loading code patch src/main/resources/data/1ED000.data	input/chapter-6-start-order-uncompressed.data
+Loading code patch src/main/resources/data/1EE000.data	input/chapter-7-start-order-uncompressed.data
+Loading code patch src/main/resources/data/1EF000.data	input/chapter-8-start-order-uncompressed.data

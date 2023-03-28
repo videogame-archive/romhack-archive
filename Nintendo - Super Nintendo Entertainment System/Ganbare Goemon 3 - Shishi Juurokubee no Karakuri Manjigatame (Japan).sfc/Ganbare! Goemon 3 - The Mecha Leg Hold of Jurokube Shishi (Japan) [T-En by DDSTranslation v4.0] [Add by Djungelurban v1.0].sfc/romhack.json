@@ -1,0 +1,39 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "09ec3db1",
+        "md5": "9641556fe50a447412b18c500c4390b5",
+        "sha1": "d9f3b02595bbbe5ce181b23a66189731bd9ff4ba"
+    },
+    "patches": [
+        {
+            "authors": [ "DDSTranslation" ],
+            "url": "https://www.romhacking.net/translations/5354/",
+            "version": "4.0",
+            "releaseDate": "2020-02-08",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        },
+        {
+            "authors": [ "Djungelurban" ],
+            "url": "https://www.romhacking.net/translations/6197/",
+            "version": "1.0",
+            "releaseDate": "2021-08-02",
+            "alternative": null,
+            "labels": [ "Add" ]
+        }
+    ]
+}

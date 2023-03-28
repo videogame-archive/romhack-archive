@@ -1,0 +1,8 @@
+# Define binary file attributes.
+# - Do not treat them as text.
+# - Include binary diff in patches instead of "binary files differ."
+*.data binary
+*.bps binary
+*.7z binary
+*.zip binary
+*.aseprite binary

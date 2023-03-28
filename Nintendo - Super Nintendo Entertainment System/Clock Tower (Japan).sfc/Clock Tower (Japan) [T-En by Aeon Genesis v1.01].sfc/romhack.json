@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 3276800,
+        "crc32": "d0be5f8c",
+        "md5": "f7db027a37b8a493f67961c1d3f73701",
+        "sha1": "0e3874dfd0a69a8aa8db55a885ec5fc6fefc29df"
+    },
+    "patches": [
+        {
+            "authors": [ "Aeon Genesis" ],
+            "url": "https://www.romhacking.net/translations/302/",
+            "version": "1.01",
+            "releaseDate": "2001-09-10",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

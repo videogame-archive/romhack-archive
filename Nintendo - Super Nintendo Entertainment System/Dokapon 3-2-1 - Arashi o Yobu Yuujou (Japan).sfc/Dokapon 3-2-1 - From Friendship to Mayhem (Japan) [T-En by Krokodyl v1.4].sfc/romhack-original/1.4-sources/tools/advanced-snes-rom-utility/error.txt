@@ -1,0 +1,90 @@
+Consultez la fin de ce message pour plus de détails sur l'appel du débogage
+juste-à-temps (JIT) à la place de cette boîte de dialogue.
+
+************** Texte de l'exception **************
+System.ArgumentException: Le tableau source n'est pas assez long. Vérifiez srcIndex et la longueur, ainsi que les limites inférieures du tableau.
+   à System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   à System.Array.Copy(Array sourceArray, Int64 sourceIndex, Array destinationArray, Int64 destinationIndex, Int64 length)
+   à Advanced_SNES_ROM_Utility.BPSPatch.SourceRead(Byte[]& mergedSourceROM, Byte[]& patchedSourceROM, Int64& outputOffset, Int64& length)
+   à Advanced_SNES_ROM_Utility.BPSPatch.Apply(Byte[] mergedSourceROM, String crc32Hash, String bpsFilePath)
+   à Advanced_SNES_ROM_Utility.Form1.buttonPatch_Click(Object sender, EventArgs e)
+   à System.Windows.Forms.Control.OnClick(EventArgs e)
+   à System.Windows.Forms.Button.OnClick(EventArgs e)
+   à System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   à System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   à System.Windows.Forms.Control.WndProc(Message& m)
+   à System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   à System.Windows.Forms.Button.WndProc(Message& m)
+   à System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+************** Assemblys chargés **************
+mscorlib
+    Version de l'assembly : 4.0.0.0
+    Version Win32 : 4.8.4420.0 built by: NET48REL1LAST_C
+    CodeBase : file:///C:/Windows/Microsoft.NET/Framework64/v4.0.30319/mscorlib.dll
+----------------------------------------
+Advanced_SNES_ROM_Utility
+    Version de l'assembly : 0.9.6.0
+    Version Win32 : 0.9.6.0
+    CodeBase : file:///D:/Jeux/dokapon/Advanced_SNES_ROM_Utility_v0.9.6/Advanced_SNES_ROM_Utility.exe
+----------------------------------------
+System.Windows.Forms
+    Version de l'assembly : 4.0.0.0
+    Version Win32 : 4.8.4400.0 built by: NET48REL1LAST_C
+    CodeBase : file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms/v4.0_4.0.0.0__b77a5c561934e089/System.Windows.Forms.dll
+----------------------------------------
+System
+    Version de l'assembly : 4.0.0.0
+    Version Win32 : 4.8.4360.0 built by: NET48REL1LAST_C
+    CodeBase : file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System/v4.0_4.0.0.0__b77a5c561934e089/System.dll
+----------------------------------------
+System.Drawing
+    Version de l'assembly : 4.0.0.0
+    Version Win32 : 4.8.4390.0 built by: NET48REL1LAST_C
+    CodeBase : file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Drawing/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+----------------------------------------
+System.Configuration
+    Version de l'assembly : 4.0.0.0
+    Version Win32 : 4.8.4190.0 built by: NET48REL1LAST_B
+    CodeBase : file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Configuration/v4.0_4.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+----------------------------------------
+System.Core
+    Version de l'assembly : 4.0.0.0
+    Version Win32 : 4.8.4455.0 built by: NET48REL1LAST_C
+    CodeBase : file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Core/v4.0_4.0.0.0__b77a5c561934e089/System.Core.dll
+----------------------------------------
+System.Xml
+    Version de l'assembly : 4.0.0.0
+    Version Win32 : 4.8.4084.0 built by: NET48REL1
+    CodeBase : file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Xml/v4.0_4.0.0.0__b77a5c561934e089/System.Xml.dll
+----------------------------------------
+mscorlib.resources
+    Version de l'assembly : 4.0.0.0
+    Version Win32 : 4.8.4084.0 built by: NET48REL1
+    CodeBase : file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/mscorlib.resources/v4.0_4.0.0.0_fr_b77a5c561934e089/mscorlib.resources.dll
+----------------------------------------
+System.Windows.Forms.resources
+    Version de l'assembly : 4.0.0.0
+    Version Win32 : 4.8.4084.0 built by: NET48REL1
+    CodeBase : file:///C:/WINDOWS/Microsoft.Net/assembly/GAC_MSIL/System.Windows.Forms.resources/v4.0_4.0.0.0_fr_b77a5c561934e089/System.Windows.Forms.resources.dll
+----------------------------------------
+
+************** Débogage JIT **************
+Pour activer le débogage juste-à-temps (JIT), le fichier de configuration pour cette
+application ou cet ordinateur (machine.config) doit avoir la valeur
+jitDebugging définie dans la section system.windows.forms.
+L'application doit également être compilée avec le débogage
+activé.
+
+Par exemple :
+
+<configuration>
+    <system.windows.forms jitDebugging="true" />
+</configuration>
+
+Lorsque le débogage juste-à-temps est activé, les exceptions non gérées
+seront envoyées au débogueur JIT inscrit sur l'ordinateur
+plutôt que d'être gérées par cette boîte de dialogue.
+
+

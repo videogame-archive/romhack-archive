@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "412e1512",
+        "md5": "7ccaceca2d4ffcc1f640cbdfa8891b5b",
+        "sha1": "41d0b08737914d5cd84f8bf0f0335f6c5bf02cf2"
+    },
+    "patches": [
+        {
+            "authors": [ "Synchronicity" ],
+            "url": "https://www.romhacking.net/translations/1442/",
+            "version": "1.0",
+            "releaseDate": "2009-11-03",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+"＊　　　　＊
+なんはんをロートしますか？
+　Nｏ．１
+／
+(1)Nｏ．２
+／
+(2)Nｏ．３
+／",105,,,"[#e300]Wh[ic]h save data wou[ld] you
+[#0301][li]ke to [lo]ad?
+[#4301ffbb00]Data1…
+[#8301ffbb01]Data2…
+[#c301ffbb02]Data3…"
+"＊　　　＊
+これて、いいてすか？
+(e)
+　はい
+／
+(1)いいえ",71,,,"[#2902]Are you sure?
+[#6902][#0e] [#ffbb00]Yes[#ffbbff]/[#ffbb01]No"
+"＊
+ロート　しました。",27,,,"[#2b01]Save data
+[#4b01][lo]aded."

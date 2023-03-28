@@ -1,0 +1,47 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 1572864,
+        "crc32": "99b9edd5",
+        "md5": "0cb823fb39c0b865d2d93e1ab34740ad",
+        "sha1": "bf2f24d625b2e9c5f9c82c41bb0d8a5a316b78fd"
+    },
+    "patches": [
+        {
+            "authors": [ "J2e Translations" ],
+            "url": "https://www.romhacking.net/translations/352/",
+            "version": "3.21",
+            "releaseDate": "2001-07-03",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        },
+        {
+            "authors": [ "Spooniest" ],
+            "url": "https://www.romhacking.net/translations/2602/",
+            "version": "1.0",
+            "releaseDate": "2012-06-16",
+            "alternative": null,
+            "labels": [ "Add" ]
+        },
+        {
+            "authors": [ "Masaru" ],
+            "url": "https://www.romhacking.net/translations/6467/",
+            "version": "1.2",
+            "releaseDate": "2022-11-06",
+            "alternative": null,
+            "labels": [ "Add" ]
+        }
+    ]
+}

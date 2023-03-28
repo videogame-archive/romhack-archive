@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 6291456,
+        "crc32": "4d35b71d",
+        "md5": "fc4d0b6dd08a87664f1beecb1dfb5f30",
+        "sha1": "1e737d05f48aa81ed9d084452088186de70a6050"
+    },
+    "patches": [
+        {
+            "authors": [ "LethargicOwl" ],
+            "url": "https://www.romhacking.net/translations/3072/",
+            "version": "1.0",
+            "releaseDate": "2017-06-12",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

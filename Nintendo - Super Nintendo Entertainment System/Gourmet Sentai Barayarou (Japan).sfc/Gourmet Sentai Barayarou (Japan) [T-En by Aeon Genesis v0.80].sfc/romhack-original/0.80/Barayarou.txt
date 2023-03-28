@@ -1,0 +1,40 @@
+Barayarou - Gourmet Squadron English Translation
+AGTP Version 0.95
+http://agtp.romhack.net
+draw_omega@yahoo.com
+
+-----------------
+Those Responsible
+-----------------
+Gideon Zhi - Romhacker, Translation
+
+-----------------
+Stuff Done
+-----------------
+Enemy names.
+Ingredient names.
+Meal names.
+
+-----------------
+Stuff Not Done
+-----------------
+Character bios.
+Story sequences.
+A couple small cooking things.
+
+-----------------
+Patching Instructions
+-----------------
+Go to your favorite emulation site and download SNESTool. Drop it, the
+patch, and the Japanese Barayarou ROM into the same directory. Then
+open SNESTool. If it's missing some extenders, you'll have to find 'em
+on your own. Once you get SNESTool running, select (Use IPS) then the
+baraya2e.ips patch file, then the Japanese Barayarou ROM.
+You should now be patched.
+
+-----------------
+If you find a bug
+-----------------
+The only bugs I want to be notified of are words that get split in the
+middle or untranslated text in the blocks that I said I'd done. Alright?
+Alright.

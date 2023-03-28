@@ -1,0 +1,127 @@
+Flying Hero: Bugyuru's Adventure
+v1.0
+February 29, 2012
+KingMike Translations (http://kingmike.emxuxhaven.net)
+
+***********
+INTROUCTION
+***********
+Flying Hero is a "cute 'em up" by Sting (better known for their unusual RPGs,
+this may have been their first game) and SOFEL.
+A fairly uknown game, but I think it's pretty good.
+Typical of cute 'em ups, it's also quite challenging. If you can finish it
+without cheating (especially hard mode), you are quite skilled.
+Bugyuru is some little flying egg/ball thing, Pao is his girlfriend.
+For no real reason, the vampire Biblio has captured her, and Bugyuru
+must rescue her. A simple story, but who really cares about plot in
+a shooter?
+****
+TEAM
+****
+ KingMike - tools, assembly, graphics, script editing
+ Geisha Boy, DarknessSavior - translation
+
+***********
+WHAT'S DONE
+***********
+ Should be complete.
+
+************
+WHAT'S BUGGY
+************
+ Not aware of any bugs.
+
+*********************
+PATCHING INSTRUCTIONS
+*********************
+ Either apply the IPS version of the patch to an original Japanese ROM,
+ or use a program such as upset (from byuu.org) to apply the UPS version.
+
+ And I suppose you know not to apply it to a pre-patched ROM.
+
+ This patch is for a non-headered ROM.
+ I have changed the checksum so it should be correct on a properly-patched ROM.
+
+****************
+EMULATION ISSUES
+****************
+ Not aware of any.
+
+*****************
+PLAY INSTRUCTIONS
+*****************
+Start up the game, and you will see the story cutscene, and then the title.
+Press Start to skip to the title.
+Then press Start to start the game, or push Select to access the Options menu.
+
+Controls:
+ D-Pad
+   Move Bugyuru
+ Select
+   Change flying speed
+ Start
+   Pause
+ A Button
+   Unused.
+ B Button
+   Shoot. Hold for rapid fire. Hold L or R to angle your shot.
+ X Button
+   Unused.
+ Y Button
+   Drop a bomb. You have a limited supply.
+ L Button
+   Hold to aim 45 degrees to the left.
+ R Button
+   Hold to aim 45 degrees to the right.
+
+Options
+ Level: Change the difficulty level.
+   On harder difficulties, there will be more enemies, and they will have more health.
+   Bosses will also have additional attack phases.
+ Sound Mode: Stereo or Monaural.
+ Music: Listen to the music.
+
+Screen
+ At the top left, you will see your score.
+ There will also be wings to indicate your flying speed. Press Select to change.
+ Of course, choose a faster speed will allow you to fly faster, but with less precision.
+
+ At the bottom left is your lives counter. I believe you can get more if you get enough points.
+
+ At the bottom right is the number of cakes you've collected,
+ and below that is your bomb supply. You get three per life.
+
+Weapons
+ Flakes : Shoots snowflakes at your enemies. Slow but strong.
+ Lightning : Shoots lightning at your enemies. Your shot grows in length.
+ Bulb : Normal shot.
+ Cluster : Also normal shot?
+
+ The elephant-like icon adds a hornet swarm to your shot.
+  They are heat-seeking. Very useful upgrade.
+
+ Cake: Collect three of them to upgrade your weapon one level.
+  When you take a hit, your weapon will be downgraded one level.
+  The hornets will be removed if you take a hit and your weapon is
+   already at the lowest level.
+  If you are already at the lowest possible weaponry when you
+   take a hit, you will lose a life.
+
+ Triple cake: Same as three cakes. It immediately upgrades your weapon.
+  If you are already at maximum, it does nothing.
+
+Continue
+ When you have lost a life and you have no more in reserve, the game is over.
+ You are allowed to continue from the beginning of the current stage.
+ You have three chances to continue.
+
+*********
+COPYRIGHT
+*********
+Original game (c)1992 by Sting and SOFEL
+English translation (c)2012 by KingMike, Geisha Boy and DarknessSavior
+I am not affiliated with Sting or SOFEL
+Do not distribute the game image ("ROM") and the patch.
+This patch is for non-profit recreational use.
+Use it if you have an original, but play on emulator or flash cart. Don't destroy donors.
+I do not support or condone any reproduction business.

@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "43a1e6c6",
+        "md5": "a3a3ededc23f537220bf17bf5ae90f4c",
+        "sha1": "8e301af46cfda7dbb8ecc2faeeeb20c7fd8a95cd"
+    },
+    "patches": [
+        {
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Ian Kelley", "Tomato", "Oogami" ],
+            "url": "https://www.romhacking.net/translations/718/",
+            "version": "1.00",
+            "releaseDate": "2002-05-28",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

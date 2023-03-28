@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "1d7858fe",
+        "md5": "ce7f04c5cabbe883ac73d90136202c57",
+        "sha1": "21b1f6017c1a5d2fec6ad95ec0eaf0d735d6e1b8"
+    },
+    "patches": [
+        {
+            "authors": [ "Demiforce", "Tomato" ],
+            "url": "https://www.romhacking.net/translations/850/",
+            "version": "1.0",
+            "releaseDate": "2004-10-10",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

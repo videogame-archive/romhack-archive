@@ -1,0 +1,3 @@
+BL Patch - Real SNES (copier) version (slow version)
+
+This is meant for copiers and will have no font glitches.

@@ -1,0 +1,39 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 6291456,
+        "crc32": "d0e41f6b",
+        "md5": "fed985a0c5ca26e859034072fb895593",
+        "sha1": "8436b6133ad72585b4ac3f6fedde7fb2460e8de7"
+    },
+    "patches": [
+        {
+            "authors": [ "DQ Translations" ],
+            "url": "https://www.romhacking.net/translations/1323/",
+            "version": "1.1",
+            "releaseDate": "2009-11-19",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        },
+        {
+            "authors": [ "Rod Merida" ],
+            "url": "https://www.romhacking.net/translations/6398/",
+            "version": "1.0c",
+            "releaseDate": "2022-10-23",
+            "alternative": null,
+            "labels": [ "Add" ]
+        }
+    ]
+}

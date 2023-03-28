@@ -1,0 +1,401 @@
+========Breath of Fire 2: The Fated Child=======
+==============Retranslation Project=============
+===============Translator's Notes===============
+======Copyright 2009 Watercrown Productions=====
+========http://theryusui.googlepages.com========
+
+
+
+==CONTENTS==
+
+1.0: Introduction
+
+2.0: Overview
+
+3.0: What's Different And Why
+	3.1: General Notes
+	3.2: Characters
+	3.3: Prologue
+	3.4: Chapter 1
+	3.5: Chapter 2
+	3.6: Chatper 3
+	3.7: Chapter 4
+	3.8: Chapter 5
+	3.9: Chapter 6
+	3.10: Chapter 7
+	3.11: Chapter 8
+	3.12: Chapter 9
+	3.13: Chapter 10
+
+4.0: Et Cetera
+	4.1: Addendum (v1.2)
+
+
+
+=======================================================
+==PLEASE BE WARNED THAT THIS GUIDE CONTAINS SPOILERS.==
+===============PROCEED AT YOUR OWN RISK.===============
+=======================================================
+
+
+
+==1.0: INTRODUCTION==
+
+
+
+The goal of the Breath of Fire 2 Retranslation Project is not simply to put a fresh coat of paint on the old translation. Neither is it to produce a slavish, word-for-word adaptation of the original script.
+
+The goal of the Breath of Fire 2 Retranslation Project is to do the job Capcom couldn't the first time.
+
+Up until 2005, Capcom had a record of making great games with questionable localizations. Ever wonder where "Congraturation!" came from? That'd be Capcom's "Ghouls 'n Ghosts". The translator who did Street Fighter 2 didn't even know what a Shoryuken was, resulting in Ryu's famous "You must defeat Sheng Long to stand a chance" victory line. Japanese Megaman fans knew as early as Megaman X2 that Zero was created by Dr. Wily; American gamers would have to wait until Megaman X4, which introduced voice acting to the franchise (and all the problems thereof). And who could forget the horrible, hammy lines forced into Dante's mouth during the finale of Devil May Cry?
+
+From 2005 onward, though...something changed. The final months of 2004 saw the release of Megaman X8, featuring Mark Gatha in the eponymous lead role. Mark Gatha previously salvaged Bandai's otherwise lackluster dub of Mobile Fighter G Gundam with a stellar performance as protagonist Domon Kasshu, and he had much the same effect on the X series' long-standing curse. Devil May Cry 3: Dante's Awakening hit shelves in 2005 as well, devoid of the writing and direction issues that plagued the first game. Most famously, Alexander O. Smith's translation of the formerly Japan-only Gyakuten Saiban, known to Westerners as the first Ace Attorney game, cemented Capcom's new place as a producer of quality localizations.
+
+I'd like to think that this new translation is something like what Capcom would have produced if Breath of Fire 2 had been released four years ago instead of fourteen. I lay no claim to being the next Alexander O. Smith, but I certainly aspire to that level. Accuracy isn't the sole measure of a translation; if you want accuracy, then the original translation of Breath of Fire 2 should suffice. A good translation adapts its source material, with regards both to its context, its target audience and its purpose. If the letter must be sacrificed to preserve the spirit, so be it: if the work fails to fulfill its original purpose - to entertain, in this case - then the translator has failed in his duty.
+
+But enough pretentious posturing. It's time to tell you what you can expect from this translation, and what you missed out on the first time.
+
+
+
+==2.0: OVERVIEW==
+
+
+
+
+
+The original translation of Breath of Fire 2 is accurate. I've said this already, but let me explain to you why this is a bad thing.
+
+What it does is convey the literal meaning with precious little regard to context. The dialogue is dry, the grammar is stilted and awkward, pronoun confusion abounds...your average Babelfish translation is at the very least amusing, but this is just plain sad. The translation is more or less a mechanical conversion from Japanese to English, and Japanese is just alien enough for this approach to cause serious problems. One token of Japanese grammar that causes problems is the tendency to omit things which are assumed to be obvious; this is why you'll sometimes see sentences trail off, or odd structures where the topic is being danced around without being explicitly mentioned. In the hands of the truly incompetent, this results in the aforementioned pronoun trouble, where "I" and "you" are swapped around with reckless abandon. (To see this in its full, frightening effect, I refer you to "Bangai-O" for Sega Dreamcast, where Treasure submitted an awkward Engrish translation to the U.S. publisher; they found it hilarious and decided to actually use it. Today, Conspiracy Entertainment is largely known as a publisher of shovelware, proving that Translator Hell is a real place and you will be sent there at the first sign of stupidity.)
+
+So. How accurate is accurate? About as accurate as Nintendo would allow at the time. There are flubs in the translation, but the only thing obviously missing is the T-rated content. In the original, there's a running gag about how flat-chested the catgirl is - don't ask me how this makes sense; I've seen the artwork. Likewise, the titanic endowments of the engineer and secret character (yes, I'm intentionally omitting their names; it's to alleviate confusion) are duly noted. References to booze are all omitted from the U.S. version; no mention is made of Gedd's drunkenness, and the full extent of his lechery is only hinted at (the price he demands for his services is a fondle!). And the guard who catches you trying to smuggle your partner out of town? In the U.S. version, you can claim you're throwing out comic books; in the original Japanese version, you can claim you're throwing out a porn stash.
+
+And that's pretty much it. It's still amazing what the game got away with, in some regards: Breath of Fire 2 managed to slip what amounted to a villainous Catholic Church under the radar of Nintendo's censors. Of course, the fact that no one can seem to agree on whether the villain is a "Saint", a "God" or a "Saint's God" (no, really!) probably didn't help their understanding of just what it was they gave the okay to.
+
+In any case, what was missing from the original U.S. version's script has been restored and polished to a mirror sheen, just like the rest of the translation. And now, for a slightly more detailed breakdown of what's different in my version...
+
+
+
+==3.0: WHAT'S DIFFERENT AND WHY==
+
+
+
+-3.1: General Notes-
+
+
+-The names of spells and common items have been updated to match the later entries in the series wherever possible, Breath of Fire 3 in particular. In cases where BoF3 or later doesn't have an equivalent, I borrowed from the earlier translations (so "Smoke" is still "Smoke", but "Missile" is now "Sirocco"). One notable exception would be the spell "Valhalla" ("Bolt X" in the original translation), which was "Mjollnir" in Breath of Fire 3. Breath of Fire V: Dragon Quarter, which otherwise uses Breath of Fire 3's spell nomenclature, uses the original Japanese name in this instance; I decided to go with the name I preferred. In cases where the later games don't have an equivalent and the previous translations won't do, either, I made stuff up (of course): "Extract" and "Van.Ext", for example, are now "Restorative" and "Vitalizer", to match the names of the spells they equate to (as per the original Japanese version, where they are "Toplif Extract" and "Lifral Extract", "Toplif" and "Lifral" being the healing spells "Restore" and "Vitalize").
+
+-Almost the entire weapon and armor inventory has been updated to better match the original names. No longer will you be expected to put on a "SaladBwl" and head off into battle. (The original is "Hachigane", which is a metal plate worn on a headband; fans of Naruto know precisely what I'm talking about. It's now simply a "Headband"; as for how the mistake was made, it appears "hachi" can mean a bowl, and the translator stopped there.) The starting "BoyDR" is now a "Bowie Knife", and many other famous names - and famous mistranslations - have been altered or rectified. (You have no idea how much I wanted to use "Rasetsu-Haouken" and "Raidenmaru". Alas, I decided they didn't fit a fantasy medieval setting - the former wouldn't fit, period - so they're the Tyrant Sword and Thunderchild. Still not bad, though.)
+
+-Most monster names have been revised for clarity and euphony but largely to better reflect the original Japanese names or match conventions established by the later entries: the "Sludge" enemies ("Gummy" enemies in the original Japanese version) are now "Goo" enemies, for example. The enemy "Gonghead", also called by that name in Breath of Fire 3, is now called "Gunhead", a better romanization of its original name; the fact that its upgraded forms have names like "Sniperhead" and "Volleyhead" ("Shotgunhead" in my version) reinforce this decision. (The giant Gunhead is called "Gungunhead" in the Japanese version; in this vein, my translation calls it Gatlinghead.) It should be noted, by the way, that the famous "N. Rider" enemy is "Ragnarider" in the original Japanese version, not "Nightrider" (and its palette-swapped cousin in the final dungeon is called "Golgotharider", or "Calvarider" in my version).
+
+-The original Japanese version actually has a few pop culture references in it. These have been updated under the assumption that my audience will not have an encyclopedic knowledge of Japanese urban legend, traditional measurement systems or obscure cartoon characters. Many of these take residence in Watts' riddles, which were largely rewritten for the U.S. version. The riddles featured in this translation, while not identical to the originals, are intended to be identical more or less in spirit. Yes, the new translation adds in a few extra pop culture references. See if you can spot them all.
+
+
+-3.2: Characters-
+
+
+-Bosch Doggy, a.k.a. Bow
+Four characters' worth of space is a decent amount of breathing room...if you write in Japanese, that is. Every kana character is worth anywhere from 1 to 3 roman letters; the end result is that unless you rewrite the game to accomodate bigger names, things are going to get crunched (and possibly added to the heap). Bow is a victim of these cold equations - which, much like the ones in the short story of the same name, are not so much inviolable as simply the product of people not giving a damn - and thus lost about half his name in the conversion. Officially, his name is romanized "Boche Doggy", but as it turns out, he's not the only Bosch in the series. The one from Breath of Fire V: Dragon Quarter has his name written the exact same way in Japanese, and despite being a homicidal lunatic who gleefully mutilates his own body for the sake of revenge, the Cliffs Notes version of his story - namely, that he's a fellow Ranger and Ryu's partner - leads me to believe that his name is an intentional reference to the Breath of Fire 2 character, even if they have literally nothing else in common. So who am I to argue?
+
+-Rand Marks
+Surprise; his name's the same in the Japanese version. And when you take into account the whole "r/l" confusion endemic to romanization, it turns out it's a pun. Don't worry...there's an even more facepalm-worthy one to come.
+
+-Linpoo "Lin" Xiuan, a.k.a. Katt
+...All things considered, I think "Katt" came out ahead on this one. Doesn't matter how you romanize "Rinpoo"; it always conjures up crap somehow. Such are the perils of faux-Chinese names; Earthbound certainly didn't dodge this bullet (but then, I find the original Mother/Earth Bound for NES to be the superior game). At any rate, Dragon Quarter once again provided me with a compromise: like Bosch, DQ happens to have what is very possibly meant to be a bizarroverse counterpart to Rinpoo. Her name is Lin, which is conveniently written with the first two syllables of "Rinpoo", and she happens to be a catgirl. Well, she looks like one, anyway. Her hood has pointed ears, she's seen wearing a very feline-looking mask, and that tail of hers looks dangerously real. It doesn't hurt matters that she's a member of the resistance, much like the BoF2 character's ill-fated love interest. She's also a calm, collected professional who fights with guns, distinctly unlike her BoF2 counterpart. Of course, this explanation will never satisfy some - simply truncating the name and calling it a day doesn't really satisfy me, either - so while she's more commonly addressed by the nickname "Lin", "Linpoo" is officially her full first name. As for her surname, it was originally "Chuan", but if you're going for faux-Chinese, you might as well make it look a bit more plausible...
+
+-Nina Wyndia
+Nothing changed here, except that "Windia" is "Wyndia" in the later translations, so her surname had to change as well.
+
+-Sten Legacy
+Again, his name's the same in all versions.
+
+-Grenouille Hoppe de pe Tapeta, a.k.a. Jean
+Wow, what a mouthful. The frog prince's full name in the original is Ekal (or Ekaru) Hoppe de pe Tapeta, yet another pun that will slip right past anyone not familiar with Japanese. "Ekaru" is an anagram of "kaeru", meaning "frog". His new first name is French for frog, appropriate since every other word out of his mouth is a Frenchism of some description. (He gets even more in my version.)
+
+-Aspara Gus, a.k.a. Spar
+This one's pretty much self-explanatory, I think. Moving on.
+
+-Deis, a.k.a. Bleu
+The obligatory secret character-slash-game breaker. Technically, neither name is correct: her name's written "Diisu", not "Deisu", so the romanization originally given in the game's ending cast roll - "Deece" - is pretty much spot-on. But "Deis" is what the later games go with, and it actually looks better than "Deece", so it wins on all counts.
+
+
+-3.3: Prologue-
+
+
+-Ganer Bateson
+It should be noted that the ending cast list spells his name with two "n"s. But then, the original Legend of Zelda spells "Ganon" with two "n"s as well, and repeating that mistake will get you summarily banned on some forums (or so I hear). It's actually how his name should be pronounced (not like "Gainer"), but it has to be said that it looks better with one "n". His speech patterns are slightly more formal in my version, appropriate since he's a priest and all, and if you foolishly try to defy game logic by telling him "no" at the start of the game, his admonishment is stern but not quite so abusive (though there's still the little "fist on head" animation). Pay close to attention to what he says if you do so; there's a little payoff for it in the (good) ending.
+
+-The Church of Eva
+It's funny to consider that the U.S. translation inadvertently made the parallels with Catholicism even more blatant by speaking in terms of "Saint" Eva. I don't know if it was bowdlerization or just plain incompetence; Hanlon's Razor (a very useful tool) leads me to believe the latter. In Japan, he is "Eva no Kami", or "the God, Eva"; my translation uses "the Lord Eva", which is both less awkward (as noted above, is he supposed to be a saint or a god?) and retains the whole "evil bizarroverse Christianity" connotations. And yes, there are places where they treated "St. Eva" not as a substitute for the whole name "Eva no Kami", but just the "Eva" part instead, resulting in cases of "St. Eva's God". No wonder Nintendo's censors let it slip; they couldn't understand it either.
+
+-Halk Lecter
+Ah, the less-than-credible Halk. "Father Hulk" won't be smashing anything now that his name matches the one given in the ending cast roll, but that's not the only reason for the change; read on. His introduction makes him out to be a little smarmier: his litany of things he equates orphans with (in the guise of appearing "open-minded") is certainly not going to endear him to anyone.
+
+-Bosch Doggy
+Bosch is a bit more glib overall in my version; it's a shame he doesn't get any more lines after his story arc is done (other than in the finale, of course). You'll note that Ryu's first meeting with Bosch is ever-so-slightly different in my version: Ryu surprises him instead of vice versa. I think the sequence of events makes slightly more sense now (plus it gives Bosch a hilarious freak-out moment). Pay close attention to his dialogue throughout the game: he drops a couple of pop culture references that are likely to fly over most heads, but will likely be appreciated by the "Delete" kind. (Which itself is a clue that will only be understood by the people who will recognize who Bosch is quoting. Catch-22 much?)
+
+-Barbaroi
+From the Greek for "Barbarian". I nearly called him "Balbaroy", but that's the name of a Shining Force character (though it's probably written the same way in Japanese). The original ending cast list calls him "Barbaroy". You'll note that the name is eight letters long either way, so there's really no excuse for "Barubary" save for illiteracy.
+
+
+-3.4: Chapter 1-
+
+
+-Newhaven
+The original Japanese version calls it "Moto no Machi", or "Town of Origin"; "HomeTown" isn't a bad compromise, but the problem is it doesn't sound like the name of an actual town. Someone suggested "Haven" for the name; I expanded it and ran with it. Friendly, neutral...all of the things the starting town should sound like.
+
+-Chief Allen
+The boss himself. He's called the "Elder" for whatever reason in the U.S. version; the Rangers being headed by a "Chief" just makes more sense. His attitude towards Bosch is a bit more obviously exasperated in my version.
+
+-Kilgore and Trout
+One of the rare cases where the U.S. translation got the names right while the ending cast roll got the names unquestionably wrong. (They're "Kilugor" and "Traut" in the cast roll.) These two are references to the fictitous author Kilgore Trout, a recurring character in the novels of Kurt Vonnegut.
+
+-Honey
+Motts and Honey's on-again, off-again relationship has long been a source of frustration for players wanting to explore the north half of Newhaven before setting off into the wild. Honey, or "Memeko", is the only one of the two addressed by name during the game: "memeshii" means "effeminate" (the "meme" part is even written with the kanji for "woman" repeated twice) and "-ko" is a common suffix for girls' names; in short, she practically has a sign over her head saying "two-dimensional love interest". Of course, that doesn't stop her from dumping Motts and seeking solace in the nearest Church. I picked "Honey" because the name has much the same effect as "Memeko": evocative of bland sweetness. (Nothing against honey as a condiment, though. Or by the spoonful. Or drizzled over crackers. Mmmmm...)
+
+-Whoopi
+Sometimes I wonder how they picked names for the Township tenants. Was there someone on the staff who just couldn't get enough Western pop culture? Did they open up a great big book of celebrities and pick names at random? Whatever method they used, it wasn't available to the guys who translated this game the first time, that's for sure. At any rate, Whoopi Goldberg is in here, lending her name to a pretty useless fortuneteller.
+
+-Kalashnikov
+And here on the other end of the spectrum is one of the game's many weapons dealers, named for an arms manufacturer.
+
+-Mina Wyndia
+At this point, it should probably be noted that the ending cast roll originally spelled her first name as "Miena".
+
+-Patty Smith
+No, the original Japanese version never explicitly says she's Ryu's long-lost little sister Yua. Yes, you'd have to be a flaming idiot not to pick up the clues. Most of the time, she's flippant and a fair bit rude (though she goes all to pieces in the presence of bugs), but she displays a surprising amount of sensitivity in the finale, when she's brought in to see to the dragon (yet another clue).
+
+-Watts' Riddles
+The richest source of pop culture references in any JRPG not touched by Working Designs...in Japan, at least. Due to screen space restrictions, most of Watts' riddles were altered for the U.S. version. (Notoriously, the one asking you which button on your American SNES controller is red was left unchanged.) The riddles he uses in this game are yet another set: I've tried to hew as close as I can to the spirit of the original riddles, although some changes were necessary. (For one, American SNES controllers have their face buttons in two shades of purple. Judging from the Dreamcast, XBox and even the Playstation controllers to an extent, I suspect that the genius who thought Americans wouldn't buy a system whose face buttons came in red, yellow, green and blue was quietly disposed of in someone's backyard.) There is also a rather lengthy in-joke featured in one of the riddles, but seeing how the point of the riddle in the first place was to dispense its answer in the beginning and then befuddle you with irrelevant details, I think my version turned out somewhat more effective.
+
+-Mt. Futabi
+All I did was restore the missing middle syllable. Nothing fancy.
+
+-Parreaux
+Ah, the Harpie Lady Sisters. It's really hard to render a sibling rivalry in intelligible form - let alone humorously - when I'm up against the ironclad limits of the battle screen's dialogue box. Parreaux's name is written as "Parot" in the original ending cast roll; it was here I realized it was supposed to be a "haute" play on "parrot" (the "t" is silent at the end). So I opted for a different spelling which kept the joke but made the pronunciation obvious.
+
+-Nero
+No relation to the character from Devil May Cry 4. I gave him a bit of a hillbilly speech pattern, appropriate to his choice of residence and questionable eating habits. The first conversation with him is slightly different now: in the original, Bosch explains that they're looking for someone's pet, and Nero reacts indignantly, saying that he hasn't eaten any cats or dogs lately. In my version, Bosch warns Nero that the pig's collar means it's somebody's pet, and Nero brushes off the suggestion by pointing out it's not a cat or a dog...but he wouldn't have minded if it was. Either way, hilarity ensues as Bosch demands to see the collar and recognizes the name on it. Nero continues to amuse up until you gain the ability to recruit tenants for the budding Township, at which point he unfortunately becomes just another repetitive NPC. Ah, well.
+
+-The Cats
+Yes, you can has. All your base are belong to them.
+
+
+-3.5: Chapter 2-
+
+
+-Colossea
+I'll confess, this name is a little fudgy. The original name is "Korusea", "Coursair" in the U.S. version, but the connection to "Colosseum" is so obvious, I had to go with it. ("Colussair" might have been a little closer, but I think "Colossea" looks better.)
+
+-Argus Conte
+Another thing I wonder from time to time: just how much in this business is accomplished by word-of-mouth? Take the Yu-Gi-Oh! card "Giant Trunade", for instance. Do you know what a trunade is? Because I sure don't. In Japan it has the sensible name of "Hurricane", written in perfectly serviceable katakana, but if a name can't be obsessively trademarked, Konami doesn't want anything to do with it. I can imagine some guy with a thick Texas accent trying to enunciate "Giant Tornado" and it coming out as "Giant Troo-nay-dee", and somebody who has no idea what he's just heard writes it down phonetically and makes history in the process. This random tangent is relevant because I sincerely wonder if something of this nature is how "Aagasu" became "Augus" in the old translation when the ending cast list (and common sense) gives it as "Argus". But enough with the old translation's well-documented incompetence (it's pronounced "Cont", by the way; I added the "e" because it looked odd otherwise). Argus in this version is played up as a deranged director, spelling out his plan to turn the Battle Show from WWE into Manhunt in terms of scripts and actors. He's convinced of his own genius (like Uwe Boll, but more sympathetic) and ecstatically describes to Ryu how he's going to brutally murder Lin (or be made to look as if he's done so). And yes, he is the demons, but that doesn't change his inflated opinion of himself one bit. (Later on, it's pointed out that people possessed by Deathevan's minions are really tragic figures in spite of the horrible things they do. Uwe Boll has no such excuses.)
+
+-Wastrel
+Another tenant. His name's "Poo" or "Puu" in the original, and he addresses himself as a "puutaro" - that is, a homeless person. In retrospect, I realize "Wastrel" doesn't quite have the same connotation, but it's name-like enough for my purposes (there was a character in the Born Loser comics named Wastrel, come to think of it).
+
+-McCotti
+The bathroom dweller. His name is inexplicably given in the original cast roll as "Makotty (Loves You)", so perhaps this was a programmer's idea of an easter egg; the game doesn't feature any credits (apart from the ones for the fan translation), at any rate.
+
+-Rand Marks
+The tough guy, but by no means dumb muscle. He probably has the widest range of emotions out of any of the main characters, funnily enough, and I've been happy to bring them all out in his dialogue.
+
+-Linpoo "Lin" Xiuan
+On the opposite end of the spectrum is Lin, appropriately titled "Dynamite Cutie" by the ending cast roll. She's initially hostile to Ryu and company, but only because she's always running at a hundred miles an hour and leaps to entirely the wrong conclusions about their concern. The words "adorably hyper" describe her well, though anyone with a decent IQ can barely hold a conversation with her without wanting to bang their head against a wall. Her story arc involving the resistance against the corrupt Church reveals some hidden depths to her character; these are the first and last you'll see. (Damned if her sprite sitting by the fire didn't make me feel for her, though. She's a 16-by-16 blob of pixels, but they wrung every drop of emotive power out of 'em, let me tell you...)
+
+-Bunyan
+He's Babadel in the original Japanese and Baba in the U.S. version. He shows up as Bunyan in BoF3, though, so that's the name he's going by here.
+
+-The Girl in the School Restroom
+She probably has a name in the ending cast roll, though damned if I can figure out just which one she is. Amanda, Rosanna, Julia and June...pick whichever you prefer. Anyways. Whatever her name is, her original purpose in this game is to drop a pop culture reference that will fly over the heads of Westerners. I doubt most of you reading this know who Hanako is or why you should run from her. For future reference, Hanako is a ghost of Japanese urban legend said to haunt elementary school restrooms; unlike the vast majority of supernatural figures spoken of in urban legend, however, she's actually quite harmless. Creepy, to be sure, but harmless. Of course, a joke you have to dissect isn't really that funny to begin with, now, is it? So her line in my translation, while in the exact same spirit, references a different ghost...an eerily similar one, at least on paper, but one that might be more familiar to those of you who weren't born and raised in Japan. Can you think of any ghosts from Western pop culture who haunt school restrooms? Magic school restrooms in particular? That's right: the girl now screams about Moaning Myrtle, the bipolar schoolgirl ghost from the Harry Potter books who's sweet on the Boy Who Lived and sour towards just about everyone and everything else. Yes, I think you had better run now. (Or maybe I should.)
+
+-Jordi Kyme
+The "j" is pronounced like a "y". Say it out loud and you'll probably realize this is "Yoji", the headmaster of the magic school Nina is attending. I thought a more European-looking romanization was more appropriate than a Japanese-looking one.
+
+-Deis
+Snarky, arrogant and maybe a little bit vain. But that's what everybody loves about her (well, that and her impressive bust size).
+
+-Wynn Deaux
+Say it out loud. This is the window painter guy with a fancier spelling.
+
+
+-3.6: Chapter 3-
+
+
+-Wyndia
+Again, the place is spelled "Windia" in Breath of Fire 1 and 2 and "Wyndia" in 3.
+
+-King Kenneth and Queen Hina
+Well, I couldn't call him King Kenny like the original, now, could I? Also, "Hiena" officially makes Nina the only similarly-named female member of the family not to have an extraneous "e" in her name in the original cast roll.
+
+-Beretta
+Another weapons manufacturer the U.S. version's translators didn't recognize.
+
+-Capitan
+Euphony over accuracy in this case. The German version of the patch uses the dead-on accurate "Kapetan"; I use the U.S. version's slightly fudged name because it looks and sounds nicer.
+
+-Lacquer
+Here's another character the ending cast roll got right but the game itself gets wrong. How can I be so sure it's "Lacquer" and not "Locker", you ask? Because this is the house painting guy.
+
+-Remington
+And again with the weapons manufacturers. Both the U.S. version and the cast roll leave out the "g", probably because it's not there when the name's written in katakana.
+
+-Sanamo Matte
+Or "Sanamo Mat", as the cast list gives her name. Personally, I'd rather people thought of non-reflective finishes than things you wipe your feet on. Her name was truncated to just "Sana" in the U.S. version, and her method of recruiting test subjects for Granny Gigli's fusion experiments - posing as a hooker, of all things - was reduced to mere suggestion. (Granny doesn't approve, but that doesn't stop her from dropping innuendo throughout the entire process.)
+
+-Sesso
+The Water Shaman, who lost an "s" from her name in the original translation. She's portrayed as a bit absent-minded in my version.
+
+-Nympho Mani
+The slightly unhinged witch and serial man collector. Her name comes from a word meaning "sexual addiction" (as it's pronounced in French, no less); I'd suggest the U.S. version romanized her name directly as "Nimufu" for precisely this reason, but Hanlon's Razor and precedent suggest this probably isn't the case. She goes from seductress to spoiled brat and back without stopping to breathe; no wonder she has piles of statues instead of suitors, not to mention she summarily turned her potential Mr. Right into a frog...a bigger frog, anyway. She was actually shaping up to have a rather cute subplot with Tapeta, actually, but she vanishes completely from the story after the restaurant.
+
+
+-3.7: Chapter 4-
+
+
+-Fort Nageur
+The Japanese name comes out as "Swimmer Fort" (hence the horribly-crunched U.S. name of "SimaFort"), with "swimmer" written in katakana. "Swimmer" is not natively a Japanese word, so I thought I'd keep it foreign: "Nageur" is the French word for swimmer.
+
+-Grenouille Hoppe de pe Tapeta
+What's black and white and Hawaiian shirt-pattern all over? Pepe le Pew and Twoflower in a blender. No, actually, they're green and blue, because the end result is none other than Tapeta, hopeless romantic and world traveler with zero grounding in reality. His English grammar is intentionally spotty (perhaps "florid" would be a better word), and I've actually given him more Frenchisms than in the original. (I even fixed one that the U.S. version broke: "non, non, non!" is practically his catch phrase.) Like Lin, though, it turns out he's got more of a brain than he lets on; at the very least, he makes his little sister and resident enfant terrible Petape look like a flaming idiot when it turns out he knows something she doesn't about the castle's secret "self-destruct mechanism". (Namely, that there isn't one.)
+
+-Pepe
+One of the guards at Fort Nageur, seen talking idly about Tapeta's fate. Not named for Pepe le Pew, I swear. (It's just "Peh" in the original. I just gave him a double syllable, like fellow guard Tata.)
+
+-The Prisoners' Dialogue
+I slipped an in-joke in here as well. Can you find it? (Comparing the English script to the Japanese here might not even turn it up. I have to say I'm proud of the line, and it fit the meaning of the original Japanese script so well that I just had to throw it in.)
+
+-Quadra
+The "Sham Prince", in the words of the original cast roll, or simply the "Impostor" in mine. (Somehow the original cast roll calls him "Quadar", transposing the "r" and the "a". "Kuwadora" is how it's written in katakana, and in a typical display of imagination, it's what the U.S. translation calls him.)
+
+-The Greenbottle
+He's actually got a name, believe it or not: "Gunubb" ("Ganabu" in the original cast roll). If it doesn't make sense to you how "Gold Fly" became "Greenbottle", here's how it works. In Japanese, he's the "Kinbae", which, yes, literally means "gold fly", but it's worth noting that a "ginbae", literally a "silver fly", is what we call a bluebottle (in fact, you'll note that Quadra's fly pudding is actually mentioned to use bluebottles instead). The ending cast roll does, in fact, call him a "Greenbottle", so once I understood how the pun worked, I went with it. Now, if the idea of catching something that actually has a name for the purpose of using it as an ingredient in haute cuisine seems cruel, note that the Greenbottle is a foul-mouthed little abuse-spouting bastard who is first seen killing an unnamed NPC guard in cold blood. If anything, its final fate as the primary ingredient in Tapeta's fly pudding seems like...just desserts. (Cue rimshot.)
+
+
+-3.8: Chapter 5-
+
+
+-Algernon, Lienda and Eskey
+The flower girl who turns into a giant monster head thing is actually a very, very oblique literary reference. "Flowers For Algernon" is the story of a mentally-challenged individual who becomes a genius with the aid of experimental surgery; however, Algernon, the laboratory mouse that the technique was originally tested on, undergoes a sudden reversal of his improvement followed by death, and the protagonist realizes this is his fate as well. In the end, the last thing he writes is a request that someone put flowers on the mouse's grave, hence the title. Now that I've either enlightened you with this brief synopsis or bored you to tears (hopefully the former), note that the author of the book is one Daniel Keyes, and the names of Algernon's two partners cement the literary connection: they are "Daeruni" and "Suiki" in the Japanese version, anagrams of "Daniel Keyes" (as written in katakana, that is). I opted for two fresh romanizations as opposed to adapting the Japanese anagrams ("Daelni" is pretty bad, but could anyone pronounce "Syeke"?). Naturally, the original translation ignores the connection entirely, and calls them "Danielle" and "Suiky". But did you expect anything else?
+
+-Highland
+"Highland Fort" in the Japanese version, or "HighFort" in the U.S.. I had twelve characters' worth of space to work with, so something had to get cut short. There could be only one (word).
+
+-Princess Elfarlan
+She's "Elforan" in the U.S. version, and "Herfarann" in the ending cast list. I think her fresh new romanization works nicely.
+
+-Turvoe
+Sten's old war buddy, still upset with him for taking the easy way out during the horrible battle of Gufheim and going MIA. The U.S. version calls him "Trubo" and "Torubo" while the German version calls him "Turbo"; I nearly called him "Tulbow" myself (the name is written in such a way that the first "u" is non-optional) before I spotted the name in the ending cast roll. I have to admit I had a lot of fun writing his dialogue.
+
+-Spuke
+It's pronounced "Shpookay", hence her awkward name of "Shupukay" in the U.S. version. From what I gather, it's a German pronunciation.
+
+
+-3.9: Chapter 6-
+
+
+-Melodia
+Originally "Ongaku no Kuni", the "Land of Music". If I were to hazard a guess, it became "Tunlan" because someone misheard the name "Tuneland". I nearly kept it as Tunlan, but then inspiration struck.
+
+-L. Atrium, R. Atrium, L. Ventricle and R. Ventricle
+These locations are "Top-Left", "Top-Right", "Bottom-Left" and "Bottom-Right" in the original translation and the Japanese version. I take a small degree of pride in being the first translator to notice that these locations are actually a fairly decent model of a human heart, down to the background colors, and have renamed them appropriately. (I hate using abbreviations, but I felt compelled to do so here.) Ditto for one of the local monsters: neither the original translation nor the German one recognized "Ryuukosaito" as "Leukocyte" (though to be fair, the name means "white blood cell" but the enemy in question is red").
+
+-Summoner
+Musician, not magician. Anyone familiar with Final Fantasy or Shin Megami Tensei would know how to romanize "Samanaa"; unfortunately, true to expectation, he wound up as "Sumner". Yes, he drops a few musical references when you talk to him.
+
+-Farlan
+Farlan was called "El" in the original version. In case you haven't picked up on the clues yet, yes, El/Farlan is indeed Princess Elfarlan masquerading as a mercenary, and there's a secret scene which confirms this. Mind you, it took me a while to pick up on this. One telling clue in the Japanese version is that she can't say the masculine pronoun "ore" without stuttering.
+
+-Gigi Kupp
+Now that you've had a good laugh or a truly epic facepalm, let me try to explain. Her name, in the original translation, is "Eichichi"; the ending cast list gives it as the truly groan-worthy "A. Titi Efcup", and if that wasn't enough, the word "chichi" means "breasts". You can even ask her about her colossal endowments and she'll lay claim to a truly mind-boggling measurement of 1.5 meters (that's almost sixty inches!). So, pressed for a good pun, and having not yet delved into the ending cast list, I came up with "Dee Kupp", as in "D-cup breasts". Later I decided "Gigi" was a better first name, both sounding a bit more like her original name as well as suggesting a cup size more in line with her claim. Apologies to all; I don't usually delve this deep into the gutter. You might notice that she seems to have a non-functioning dialogue option at one point; this is in the Japanese version, and I suspect the joke is meant to be that she rambles right through it without stopping to listen, not terribly unusual for the character (in my version, she's even prone to apologizing for her long-winded technophilic rants).
+
+
+-3.10: Chapter 7-
+
+
+-Gandharve, the Elder Tree
+It seems that, yes, "Gandalf" is probably closer to the intended name; the name appeared in Norse mythology long before J. R. R. Tolkien brought Gandalf the Grey and Gandalf the White (and Monty Python and the Holy Grail's Black Knight...) to life in the pages of "The Hobbit" and "The Lord of the Rings". Of course, the Tolkien Gandalf is by far better known, so I went with the romanization given in the ending cast list. And yes, "Great Wise Tree" is probably a better translation of "Daikenju", but it sounds so...corny. He talks with a distinct speech impediment while the demon is erasing his memories; funnily enough, the U.S. version references it (because he actually calls attention to it) but doesn't actually give him one. I originally gave him a theriouth lithp, but I realized that shlurring hish "s"s was probably more appropriate.
+
+-Alzheimer
+I'm aware that "Aruhameru" doesn't sound a thing like "Alzheimer". Maybe it does in some dialect; I don't know. The ending cast list gives his name as Alzheimer, though, and it fits with his ability to inflict mass amnesia (or massive amounts of amnesia).
+
+-Burroughs
+"Barose" almost became "Valoze" before I realized the significance of this name in the ending cast list.
+
+-The Dragonbrood
+"Ryu no Ichizoku", literally the "Dragonrace", or "Dragon Clan" (which sounds more like a family than a species). In Breath of Fire 3, they're called the Brood, a name I don't really care for either (why does it bring the Zerg to mind?), so I compromised with the name "Dragonbrood".
+
+-Farma
+"FarmTown" in the U.S. version, "Fama" in the ending cast list. I compromised between the two.
+
+-Garver
+He's "Garber" in the U.S. version but "Garver" in the ending cast roll. I went with the latter.
+
+
+-3.11: Chapter 8-
+
+
+-The Great Bird
+The ending cast list calls it the Millennium Falcon. I kid you not.
+
+-Kotto
+Like Highland, the only reason this isn't "Kott Fortress" is because I didn't have room for it.
+
+-Tiga "Tigger" Lee
+It's probably worth pointing out that all the members of the Resistance have Disney-themed names. Yes, his name really was meant to be "Tigger Lee". So in my version, for the sake of maintaining some semblance of credibility for the character, his real name is the U.S. version's slightly-mangled "Tiga" and his nickname, never used in-game, is the original "Tigger". Like Lin, only the other way around.
+
+-George
+"Pechiri" in the U.S. version, "Peach Ri" in the ending cast roll. Not ideal either way. Why "George", then? Because of a joke you'll only get if you check out my revised ending cast roll. The ending cast roll has always been home to its share of weird jokes: the aforementioned Disney names among the members of the Resistance, for example, or the fact that the witches at the restaurant are all named for singers, or how all the NPCs in Wyndia are named after authors. Most of the character names given for the Thief's Tomb are just gibberish on the order of "Peach Ri", so I decided to change them to a fresh set of injokes: "Frank S.", "Dean M.", "Sammy D.", "Peter L.", "Richard C." and "Cesar R.", the cast of the original 1960's Ocean's 11. So "George" is meant to be a reference to George Clooney, who played Danny Ocean in the (probably better-known) remake.
+
+
+-3.12: Chapter 9-
+
+
+-The Cathedral
+Otherwise known as the "Grand Church" in the U.S. version. The ending cast roll gives it as the Cathedral, though I called it that before I knew.
+
+-Habalk
+The High Priest (yeah, I could've called him the Pope, but I decided against it) of the Church of Eva, a homicidal maniac who preaches the word of God one moment and gleefully murders a helpless woman in front of a cheering audience the next. He puts up a solemn, dignified front while in the pulpit, but lapses frequently into cackling supervillainy. His name is spelled "Habalq" in the original cast roll, but there's a reason besides pronunciation concerns for the change: his alter ego, Father Halk, who waits in Gate for his chance to open the doors to the underworld. In Japanese, the names Halk ("Haruku") and Habalq ("Habaruku") differ only in the addition of a single syllable; it only made sense to attempt the same for my new translation.
+
+
+-3.13: Chapter 10-
+
+
+-Dragnier
+Or "Dologany" in the old translation. It's "Dragnier" now because that's the name used in Breath of Fire 3, but for a while I had it down as "Dragoniel", which is close to the name given in the original ending cast list ("Doragoniel").
+
+-Valerie
+Oddly enough, the ending cast list calls her "Vallery". I think the U.S. version got it right on this count. Like the original translation and Japanese version, her lines are marked with quote marks in the emphasis font.
+
+-The Dragon Sages
+Otherwise known as "The Wise Men of the Dragon". Ugh. It's an accurate translation of "Ryu no Kenjin", but I think "Sage" is a bit more versatile than "Wise Man". Check out their names in the ending cast list, by the way: they're named for the buttons on a SNES controller.
+
+-The Dark God, Deathevan
+It's funny to note that both Deathevan and Barbaroi ended up losing letters in the wrong place: the ending cast list gives the evil deity's name as "Dethevan" rather than "Deathevn". So yeah, I think we've well and truly established during the course of this that the translators responsible for rendering Breath of Fire 2 in English the first time really had no idea what the hell they were doing, and they should probably be kept as far away from the English language as possible lest they seriously hurt themselves. The job should at least have been handed over to whoever did the opening text and ending cast list; we might have had some consistency then. Anyways. Deathevan first manifests as a bearded guy in a robe, inexplicably referring to Ryu and company as "Nicanor" ("Nikanoru" in the old translation). After Deathevan makes the mistake of provoking Ryu into a murderous rage, he transforms into a screaming, barely coherent monstrosity (far more so than in the old translation), setting off the game's grand finale. One touch missing from the U.S. version but present in mine is that after Deathevan is beaten, his dialogue actually starts breaking up; words are randomly rendered in katakana instead of hiragana and the spacing becomes awkward. I've tried to copy something of the effect in my version, with random capital letters and increasingly frequent ellipses instead, and his final breakdown is conveyed nicely as a result.
+
+
+
+==4.0: ET CETERA==
+
+
+
+Well, that's pretty much everything worth mentioning. Thanks for reading. Of course, if this is your first time playing Breath of Fire 2, you probably shouldn't have spoiled yourself like that...but hopefully, you'll still enjoy the game (and all the plot twists and surprises I haven't revealed here) anyway. And if you've played the old translation through already, now you know what to expect from my translation. And for those who waited until after playing the new translation to read this...well, now you know why I did what I did where I did it.
+
+Special thanks to everyone at Romhacking.net who participated in the Breath of Fire 2 Retranslation Project thread, as well as the fans on GameFAQs and the people watching d4s' blog and my website over the past two-and-a-half years...heck, special thanks to everyone everywhere who's ever shown any interest in this project. But most importantly, special thanks to d4s, the man himself: without his incredible work, this project would never have seen the light of day. Danke, d4s!
+
+
+	-Ryusui
+	April 30th, 2009
+
+
+-4.1: Addendum (v1.2)-
+
+
+"Pretty much everything worth mentioning"...ha. I can't believe I forgot to explain some of the pop culture jokes that I had to localize (and hint at a couple I added myself).
+
+Looks like I also made a grade-A jackass out of myself claiming "Mjollnir" to be a typo. (Halo has been a bad influence on me, and I've never even played the games.) It seems foot-in-mouth disease has long been my Achilles' heel, pun not necessarily intended. At the very least, I learn something new each and every time...even if it's at the hands of a fresh humiliation.
+
+Keep an eye out for my next project, once I stop finding things to distract me. Just ten more trophies to go on Tower of Greed, and I haven't touched my Dwarf Fortress in the longest...and then there's that 3D modeling I'm learning the ropes of...
+
+
+	-Ryusui
+	May 28th, 2009

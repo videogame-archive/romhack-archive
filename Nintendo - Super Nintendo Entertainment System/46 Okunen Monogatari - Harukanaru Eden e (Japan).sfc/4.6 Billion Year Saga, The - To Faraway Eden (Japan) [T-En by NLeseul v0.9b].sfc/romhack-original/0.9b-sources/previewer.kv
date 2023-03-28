@@ -1,0 +1,50 @@
+#:import PixelDisplay pyy_chr.ui.kivy.PixelDisplay
+
+BoxLayout:
+    orientation: 'vertical'
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+
+        Button:
+            text: 'Settings'
+            size_hint: (None, None)
+            on_release: app.open_settings()
+
+        Button:
+            text: 'Newline'
+            size_hint: (None, None)
+            on_release:
+                text_input.insert_text('\n')
+                text_input.focus = True
+
+        Spinner:
+            size_hint: (None, None)
+            text_autoupdate: True
+            values: app.text_banks
+            on_text: app.on_bank_changed(self.text)
+
+        Button:
+            text: 'Save'
+            disabled: not app.dirty
+            size_hint: (None, None)
+            on_release: app.on_save()
+
+    ScrollView:
+        id: text_scroll_hack
+        TextInput:
+            id: text_input
+            size_hint_y: None
+            height: max(self.minimum_height, text_scroll_hack.height)
+            on_text: app.on_text_changed(self.text)
+            on_cursor: app.on_cursor_position_changed(self.cursor)
+
+
+    BoxLayout:
+        PixelDisplay:
+            pixel_provider: app.pixel_provider
+            allow_stretch: True
+            on_touch_up: app.on_display_touch_up(self, args[1])
+            #size: self.texture_size
+            #size_hint: (None, None)

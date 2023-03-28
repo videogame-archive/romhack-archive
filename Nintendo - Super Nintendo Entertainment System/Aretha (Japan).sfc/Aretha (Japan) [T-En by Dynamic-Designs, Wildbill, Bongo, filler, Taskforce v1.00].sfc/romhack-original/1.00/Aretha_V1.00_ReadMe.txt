@@ -1,0 +1,179 @@
+Aretha English Language Patch V1.00
+
+
+Introduction:
+
+
+
+	Japanese Developer:				Japan Art Media Co., Ltd.
+	Japanese Publisher:				Yanoman Corporation
+	Japanese Release:				November 26, 1993
+	English Patch Production:			Dynamic-Designs
+
+
+
+Dynamic-Designs Patch History:
+
+
+
+	V1.00:  Initial Dynamic-Designs Release:	September 03, 2018
+        
+
+
+Dynamic-Designs Production Credits:
+
+
+
+	Project Coordination:				Wildbill
+	Hacking/Tools/Bug Fixing:			Bongo`
+        Assembly: 					Bongo`
+	Translation:					Filler
+	Translation Support:				Eien ni Hen
+	English Graphics:				Taskforce
+	Story Writing:					Wildbill
+        In-house Editing:       			Draken
+	Splash Page:					Taskforce
+	Beta Testing:					Draken, MariusB, and akualung
+	Splash:						Taskforce
+
+
+
+NOT FOR SALE INFO
+
+This game in English or patch to make it English is
+NOT for sale under any circumstances!  If you paid
+for this game in any way, including in a cartridge,
+demand your money back immediately!  File a complaint
+with your credit card company and/or paypal as well!
+Especially if you obtained this game in cart form!
+
+
+
+Overview (adapted from http://www.mobygames.com/game/aretha_):
+
+In a far away land, war was raging, as an evil ruler sent his troops to invade the castle of a mighty king. His minions stormed the castle and burnt it down. The king could not escape his fate, and the villain thought no one was spared by his wrath...
+
+Present time. You are Ariel, a little girl who lives with her old wise grandmother in a small house near a mountain range, north to the forest. She just turned ten, and the grandmother sends her on a seemingly simple quest: to go through the forest to Nineveh, the nearby town, and to meet there a certain person. But what starts as a simple assignment soon develops into the quest for magic powers of Aretha, the ultimate battle against the evil, and the discovery of Ariel's own true identity.
+
+The game is a console-style RPG, where Ariel and her party travel on the world map, through forests, mountain paths, and caves, occasionally visiting towns and fighting monsters in turn-based combat viewed from first-person perspective, using a variety of physical and special attacks. 
+
+From our release write up at D-D's home page:
+
+
+
+Bugs remaining from the original game that may occur and can possibly be fixed.
+
+1. Spinning world glitch - This is an original bug. If anyone encounters it, please send us a save-
+state from and SNES-9x emulator. What happens in this: At the end of a battle, very rarely, the
+landscape will spin and keep spinning instead of returning to an overworld view and full character
+control. If tghis happens, you may beed to return to your previous SRM save and be set back to that
+point, so save often!  
+ 
+
+
+Production, Testing, and Thought Processes:
+
+I've really enjoyed my part in creating this English patch. The quality of everyone's efforts leads
+me to the realization that everything we've achieved is due to a strong team effort. It's the
+dedicated contributions of each member who recodes, translates, designs fonts, redraws graphics,
+writes story scenes, and tests the developing product that ensures a successful conclusion.
+
+Let add that anyone in the world is free to pursue this "not for profit" hobby. This means that any
+human who inhabits this planet has free rein to start in the same places we did and create stories and 
+finished products that suit their own personal interests, motivations, and tastes.
+
+Finally, we will NOT be releasing Aretha-II, the direct sequel to this game, concurrently.
+
+-Wildbill
+
+
+Patching:
+
+Contained within this archive is an IPS (international patching system) file or a patch file in another
+format for the end user's convenience that when used in conjunction with a ROM file will make the
+game playable in English.
+
+Do note, as I touched on above, that this patch is a result of countless hours of love and labor.
+Hence, they are not meant to be sold at any price under any circumstance, be it in digital form or
+burnt into a donor cart's ROM chip.
+
+To patch the ROM file, one needs to procure a patcher for their preferred format, a widely available
+class of programs, many of which can be found at http://www.romhacking.net/ for one source.  A few
+can even be found on our download page for your convenience at
+http://www.dynamic-designs.us/downloads.shtml.  Search at the bottom under utilities.  We did not\
+write these utilities.  We merely provide them as a convenience.
+
+At some point, ROM sites may upload pre-patched ROMs of our Aretha translation. Obviously, Dynamic
+Designs cannot endorse playing these versions.  Neither will we support resolution of any associated
+problems. Moreover, pre-patched ROMs may float around the web for years.  Only by downloading
+patches containing just our original work from D-D's web site may gamers obtain revisions to these
+patches - if any - and take advantage of possible bug-fixes and corrections.
+
+
+Information pertaining to the Aretha ROM:
+
+Country Japan
+Internal CRC 7761
+CRC32 395BADE3
+MD5 DDF4920AE09530DA94EAE230FDFFD3C4
+SHA-1 AF4960F2EEC19EA7910A268BF8FAD266518DBCFA
+SHA-256 91F8C264F50051C5C9FADD4DF09FBB6CA8B5B54A5BA6652AD133BA103B77317D
+ROM Speed 200ns (SlowROM)
+ROM Size 16 Mb
+ROM Bank LoROM
+ROM Type Normal + Battery
+SRAM Size 64 Kb
+Internal Title ARETHA               
+
+Common Filenames
+
+Aretha (J).sfc (GoodSNES v0.999.5)
+Aretha (Japan).sfc (No-Intro 2011-12-24)
+Aretha (NTSC)(Jap)(1.0).sfc (Zapatabase 2011-01-30)
+
+
+Notes:
+
+1. Not all ROMs will necessarily be patch-able with our file.
+
+2. If the ROM you attempt to patch has a header, you may need to remove it.
+
+3. A number of tools are available to remove headers: SNESTool, Smile, Toolbox, etc.  
+
+
+
+Size before patching: 2.00 MB (2,097,152 bytes)
+
+Size after patching: 2.50 MB (2,621,440 bytes)
+
+
+Alternatively, most emulators support a feature called soft patching, which keeps the ROM file
+intact, merging the patch data only during run time. To make use of it, make sure both the ROM file
+and the IPS are in the same directory as your emulator of choice and have the same name, but not the
+same extension. Do note that this is case-sensitive.  (Also, do note this soft patching is only
+available using the IPS patch file, and may NOT work with the other patch file formats.)
+
+
+i. e.:  Aretha(E).smc and Aretha(E).ips will trigger soft patching at the emulator's run time.
+
+
+
+
+Emulator Compatibility:
+
+The patched game works fine in the emulators I have used: ZSNES and various SNES9X.
+
+
+
+
+Special Thanks:
+
+The "usual suspects"! I am shocked, SHOCKED AGAIN, that we have finally released Aretha - English!
+In the order of performing critical tasks, thanks Bongo`, Filler, Taskforce, Draken, MariusB,
+and akualung!
+
+
+Dedicated to Filler.
+
+
+Readme 2018 Dynamic-Designs

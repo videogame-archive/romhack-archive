@@ -1,0 +1,42 @@
+SFC Dossun! Stone Battle English Translation
+AGTP Version 1.0
+http://agtp.romhack.net
+draw_omega@yahoo.com
+
+-----------------
+Those Responsible
+-----------------
+Gideon Zhi - Romhacker
+DDS - Translation
+
+-----------------
+Stuff Done
+-----------------
+Just about everything.
+
+-----------------
+Stuff Not Done
+-----------------
+Reprogramming the options screen. (Not happening anytime soon.)
+
+-----------------
+Patching Instructions
+-----------------
+Go to your favorite emulation site and download SNESTool. Drop it, the
+patch, and the Japanese Stone Battle ROM into the same directory. Then
+open SNESTool. If it's missing some extenders, you'll have to find 'em
+on your own. Once you get SNESTool running, select (Use IPS) then the
+cosmogen.ips patch file, then the Japanese Stone Battle ROM. You should
+now be patched.
+
+-----------------
+If you find a bug
+-----------------
+If it's the options screen, DO NOT TELL ME ABOUT IT.
+
+If all the capital A's appear as capital D's, live with it. That
+happens on the Mac IPS patcher for some reason.
+
+Otherwise, it's untranslated text. Send a savestate or screenshot
+(preferably the former, in NESticle format) to Gideon Zhi, and I'll try to
+fix it.

@@ -1,0 +1,152 @@
+File size by FLIPS patch :
+0       80
+1       81
+127     FF (127 + 128)
+128     00 80
+129     01 80
+16383   7F FE
+16384   00 FF
+2097152 00 7F FE
+
+
+000001011111110000000
+
+16384
+data=10000000
+x=00000000
+
+output=0
+
+##### DATA COMMANDS #####
+this file number 1. ok.
+this file number 2. ok.
+C0 81 32 94
+
+C0 = Action 0 / Length 17
+xC0-x80 = x40
+64
+1001 00
+81 = Action 1 / Length 1
+94 = Action 3 / Length 4
+11 10
+100 10
+
+##### DATA COMMANDS #####
+aaaaaaaaaa1111aaaaaaaaaa1111aaaaaaaaaa
+bbbaaaaaaa2222aaaaaaaaaa2222aaaaaaaaaa
+89 62 62 62 9A BC 8D 32 32 32 32 A6 CB B7 94 81 0A
+
+89 = 09 = 1001 = 10 01 = 11 01 (Act 1, L 3)
+9A = 1A = 11010 = 110 10 = 111 10 (Act 2, L7)
+BC = 3C = 111100 = 1111 00 = 10000 00 (Act 0, )
+8D = 0D = 1101 = 11 01 = 100 01 (Act 1, L8)
+
+##### DATA COMMANDS #####
+aaaa
+aaaa
+90 = 10 = 10000 = 101 00 (Act 0, L5)
+
+aaaaabbbbb
+aaaaaccccc
+90
+81 63 (Act 1, L1, value 63)
+8F = 1111 (Act 3, L4)
+8A = 10
+
+abcdeaaaaa
+abcdezaaaa
+90 81 7A 8E 8A
+8E = 0E = 100 10 (2, 4)
+8A = 0A = 1 10
+
+abcdeaaaaa
+abcdezeeeee
+90 85 7A 65 8F 8C
+8F = 100 11 (3, 4)
+8C = (12) 1101
+
+abcdeaaaaaaaaaaa
+abcdezeeeeeccccc
+abcdeze
+90 85 7A 65 8F 8C 81 63 8F 82
+90 = 101 00 (0,5) read_source 5 chars
+85 = 10 01 (1,2) read_target 2 chars
+8F = 100 11 (3, 4) copy_target 4 chars
+copy_target 8C = 110 0 (+1, 6)
+81 = 1 01 (1, 1) read_target 1 chars
+8F = 100 11 (3, 4) copy_target 4 chars
+copy_target 82 = 1 0 (+1, 1)
+
+abcdeaaaaaaaaaaaaaaaaaaaa
+abcdeffffffffffaaaaaaaaaazzzzzzzzzzzzzzzzzzzzzzzzzzz
+90 81 66 A3 8A A6 8A 81 7A E7 96
+act  90 abcde
+act  81 f (66)
+act  A3 = x23 = 35 = 1001 11 (3, 9)
+data 8A = x10 = 101 0 (0, 5) (targetOffset=5)
+act  A6 = x26 = 38 = 1001 10 (2, 9)
+data 8A = x10 = 101 0 (0, 5) (sourceOffset=5)
+act  81 z (7A)
+act  E7 = x67 = 11010 11 (3, 26)
+data 96 = x16 = 1011 0 (0, 11) (targetOffset=16)
+
+A7 = target copy 10
+8C shift +6
+82 shift +1
+
+16 = 101 00
+
+02000200060012004400B800FFFF
+101000 11
+A3 = tc (40)
+
+8C
+
+89 61 6C 6C
+F2 88
+81 20
+92 C3   sr
+
+100001 1
+
+
+
+
+abcdefgh
+abc34fgh
+
+42 50 53 31 89 89 80 88 85 33 34 8C 4D B8 12 59 79 66 EA 4D 67 54 27 2A
+
+BPS1      42 50 53 31
+
+402      x12 x82
+110010010
+Group by 7 bits : 11, 0010010 (3, 18)
+Minus 1 on higher : 10, 0010010 (2, 18)
+Add x80 to last : (130, 18)
+
+
+11 , 0010010
+
+12
+
+256 + 128 + 16 + 2
+
+
+18 130
+
+1111111     127
+01111111
+11111111
+
+1       1
+10      2
+100     4
+1000    8
+10000
+100000
+1000000
+10000000
+
+11      3
+1100    12

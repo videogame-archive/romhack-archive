@@ -1,0 +1,5452 @@
+{
+  "config": {
+    "rom-input" : "../roms/2023/Dokapon 3-2-1 - Arashi o Yobu Yuujou (Japan).sfc",
+    "rom-output" : "../roms/2023/Dokapon 3-2-1 - English.sfc",
+    "bps-patch-output": "../roms/clean/Dokapon 3-2-1 - English - working.sfc",
+    "file.jap" : "tables/table-complete.txt",
+    "file.latin" : "tables/table-latin.txt",
+    "file.names" : "tables/table-names.txt"
+  },
+  "tables": [
+    {
+      "id": 1,
+      "pointers": [
+        {
+          "start": 85852,
+          "end": 86184,
+          "shift": 32768
+        }
+      ],
+      "new-data-start": 1576960,
+      "new-data-shift": 1540096
+    },
+    {
+      "id": 2,
+      "pointers": [
+        {
+          "start": 262400,
+          "end": 262789,
+          "shift": 229376
+        }
+      ],
+      "new-data-start": 1605632,
+      "new-data-shift": 1572864,
+      "menu": true,
+      "counter": true
+    },
+    {
+      "id": 4,
+      "pointers": [
+        {
+          "start": 1376256,
+          "end": 1376766,
+          "shift": 1343488
+        }
+      ],
+      "new-data-start": 1671168,
+      "new-data-shift": 1638400
+    },
+    {
+      "id": 5,
+      "pointers": [
+        {
+          "start": 1388968,
+          "end": 1389382,
+          "shift": 1343488
+        }
+      ],
+      "new-data-start": 1703936,
+      "new-data-shift": 1671168
+    },
+    {
+      "id": 6,
+      "pointers": [
+        {
+          "start": 1474560,
+          "end": 1474598,
+          "shift": 1441792
+        }
+      ],
+      "new-data-start": 1474600,
+      "new-data-shift": 1441792
+    },
+    {
+      "id": 7,
+      "pointers": [
+        {
+          "start": 201859,
+          "end": 202169,
+          "shift": 163840
+        },
+        {
+          "start": 205161,
+          "end": 205225,
+          "shift": 163840
+        },
+        {
+          "start": 207177,
+          "end": 207207,
+          "shift": 163840
+        },
+        {
+          "start": 207913,
+          "end": 207945,
+          "shift": 163840
+        },
+        {
+          "start": 208861,
+          "end": 209179,
+          "shift": 163840
+        },
+        {
+          "start": 223817,
+          "end": 224097,
+          "shift": 163840
+        }
+      ],
+      "new-data-start": 1736704,
+      "new-data-shift": 1703936,
+      "even-length": true,
+      "overflow": {
+        "limit": 1765376,
+        "data-start": 1769474,
+        "data-shift": 1736704
+      }
+    }
+  ],
+  "translations-files": [
+    "translations/Table 1.txt",
+    "translations/Table 2.txt",
+    "translations/Table 4.txt",
+    "translations/Table 6.txt",
+    "translations/Table 5.txt",
+    "translations/Table 7.txt"
+  ],
+  "code-patches": [
+    {
+      "code": "e2 20 a5 22 c9 82 d0 09 a9 30 85 22 c2 20 a7 20 6b c9 aa d0 73 a5 20 c9 00 d0 09 a9 33 85 22 c2 20 a7 20 6b c9 20 d0 09 a9 33 85 22 c2 20 a7 20 6b c9 40 d0 09 a9 33 85 22 c2 20 a7 20 6b c9 60 d0 09 a9 33 85 22 c2 20 a7 20 6b c9 80 d0 09 a9 33 85 22 c2 20 a7 20 6b c9 a0 d0 09 a9 33 85 22 c2 20 a7 20 6b c9 c0 d0 09 a9 33 85 22 c2 20 a7 20 6b c9 e0 d0 09 a9 33 85 22 c2 20 a7 20 6b a9 34 85 22 c2 20 a7 20 6b c9 86 d0 15 a5 20 29 02 c9 00 d0 09 a9 35 85 22 c2 20 a7 20 6b a9 36 85 22 c2 20 a7 20 6b",
+      "offset": "180000"
+    },
+    {
+      "code": "e2 20 a5 22 c9 88 d0 04 a9 31 85 22 c9 86 d0 15 a5 20 29 02 c9 00 d0 09 a9 35 85 22 c2 20 a7 20 6b a9 36 85 22 c2 20 a7 20 6b",
+      "offset": "1800d0"
+    },
+    {
+      "code": "85 1c c2 20 c9 38 0c d0 16 e2 20 af 49 03 00 c2 20 c9 03 0c d0 06 a9 09 09 e2 20 6b a9 38 0c e2 20 a7 20 6b a7 20 6b",
+      "offset": "180100"
+    },
+    {
+      "code": "22 00 80 30",
+      "offset": "a852"
+    },
+    {
+      "code": "22 D0 80 30",
+      "offset": "a772"
+    },
+    {
+      "code": "22 00 81 30",
+      "offset": "a7a7"
+    },
+    {
+      "code": "E0 01",
+      "offset": "ae2e",
+      "desc": "Text loading"
+    },
+    {
+      "code": "E0 01",
+      "offset": "644a",
+      "desc": "Text loading (day of the week)"
+    },
+    {
+      "code": "ff ff a2 00 ff 00",
+      "offset": "163c4",
+      "debug": true
+    },
+    {
+      "code": "10 07 01 02 61 01 00 30 61 01 ff ff",
+      "offset": "41c38",
+      "debug": true
+    },
+    {
+      "code": "E6 00 1E 00 1A 00 29 00 28 00 27 00 BF 00 BF 00 BF 00 BF 00 82 10 73 85 00 30 E0 00 21 00 22 00 1E 00 25 00 1D 00 BF 00 BF 00 BF 00 BF 00 82 10 75 85 00 30 ED 00 2B 00 26 00 28 00 2B 00 BF 00 BF 00 BF 00 BF 00 BF 00 82 10 77 85 00 30 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 00 30 AF 00 0F 00 2D 00 1E 00 26 00 2C 00 B0 00 BF 00 BF 00 BF 00 AF 00 E2 00 1A 00 20 00 22 00 1C 00 B0 00 BF 00 00 30 82 10 79 85 BF 00 BF 00 82 10 89 85 00 30 82 10 7B 85 BF 00 BF 00 82 10 8B 85 00 30 82 10 7D 85 BF 00 BF 00 82 10 8D 85 00 30 82 10 7F 85 BF 00 BF 00 82 10 8F 85 00 30 82 10 81 85 BF 00 BF 00 82 10 91 85 00 30 82 10 83 85 BF 00 BF 00 82 10 93 85 00 30 82 10 85 85 BF 00 BF 00 82 10 95 85 00 30 82 10 87 85 BF 00 BF 00 82 10 97 85 FF FF",
+      "offset": "18aa00"
+    },
+
+
+    {
+      "code": "A0 37 00 84 22 A0 00 80",
+      "offset": "6B81",
+      "for": "QUOTE SCREEN",
+      "description": "Moves sprites from x112D22 to x1B8000"
+    },
+    {
+      "code": "A0 37 00 84 22 A0 00 88",
+      "offset": "6BB6",
+      "for": "QUOTE SCREEN",
+      "description": "Moves sprite order from x112B2E to x1B8800"
+    },
+    {
+      "code": "",
+      "offset": "1B8000",
+      "for": "QUOTE SCREEN",
+      "description": "Quote sprites",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1B8800",
+      "for": "QUOTE SCREEN",
+      "description": "Quote sprite order",
+      "file": true
+    },
+
+
+
+    {
+      "code": "00 00 00 00 00 00 01 20 02 20 03 20 04 20 05 20 06 20 07 20 08 20 09 20 00 00 20 20 21 20 22 20 23 20 24 20 25 20 26 20 27 20 28 20 29 20 2A 20 2B 20 2C 20 2D 20 2E 20 2F 20 00 00 00 00 00 00 00 00 00 00 00 00 11 20 12 20 13 20 14 20 15 20 16 20 17 20 18 20 19 20 00 00 30 20 31 20 32 20 33 20 34 20 35 20 36 20 37 20 38 20 39 20 3A 20 3B 20 3C 20 3D 20 3E 20 3F 20 00 00 00 00 00 00",
+      "offset": "177A4A",
+      "for": "INTRODUCTION",
+      "description": "Sprite order for the intro text あれから...1年の月日が流れた / Since then... One year has passed"
+    },
+    {
+      "code": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 40 20 41 20 42 20 43 20 44 20 45 20 46 20 47 20 48 20 49 20 4A 20 4B 20 4C 20 4D 20 4E 20 4F 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 50 20 51 20 52 20 53 20 54 20 55 20 56 20 57 20 58 20 59 20 5A 20 5B 20 5C 20 5D 20 5E 20 5F 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "offset": "177ACA",
+      "for": "INTRODUCTION",
+      "description": "Sprite order for the intro text 平和の訪れたドカポン王国に / Dokapon was peaceful"
+    },
+    {
+      "code": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0A 20 0B 20 0C 20 0D 20 0E 20 0F 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1A 20 1B 20 1C 20 1D 20 1E 20 1F 20 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "offset": "177B4A",
+      "for": "INTRODUCTION",
+      "description": "Sprite order for the intro text ふたたび... / Again..."
+    },
+    {
+      "code": "",
+      "offset": "1712E2",
+      "for": "INTRODUCTION",
+      "description": "Sprites for the 3 intro texts (must be compressed under 1184 bytes)",
+      "file": true
+    },
+
+
+
+
+    {
+      "code": "",
+      "offset": "18AA00",
+      "for": "LOOK - SIDE MENU",
+      "description": "Right side menu when looking at a monster or player - Weapon/Items",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "18AC00",
+      "for": "LOOK - SIDE MENU",
+      "description": "Right side menu when looking at a monster or player - Status",
+      "file": true
+    },
+    {
+      "code": "C9 04 AC",
+      "orig": "C9 44 86",
+      "offset": "10393",
+      "for": "LOOK - SIDE MENU",
+      "desc" : "Side menu when examining a player on the map"
+    },
+    {
+      "code": "A9 04 AC",
+      "orig": "A9 44 86",
+      "offset": "10398",
+      "for": "LOOK - SIDE MENU",
+      "desc" : "Side menu when examining a player on the map"
+    },
+    {
+      "code": "A9 04 AA",
+      "orig": "A9 D4 87",
+      "offset": "1039D",
+      "for": "LOOK - SIDE MENU",
+      "desc" : "Side menu when examining a player on the map"
+    },
+    {
+      "code": "A9 04 AC",
+      "orig": "A9 44 86",
+      "offset": "103C6",
+      "for": "LOOK - SIDE MENU",
+      "desc" : "Side menu when examining a player on the map"
+    },
+    {
+      "code": "C9 04 AA",
+      "orig": "C9 D4 87",
+      "offset": "103D5",
+      "for": "LOOK - SIDE MENU",
+      "desc" : "Side menu when examining a player on the map"
+    },
+
+
+
+    {
+      "code": "A0 39 00",
+      "offset": "11B33",
+      "for": "SCORE SCREEN",
+      "description": "Title of the score screen"
+    },
+    {
+      "code": "55 00 55 00 55 00 22 08 23 08 24 08 00 08 25 08 26 08 55 00 27 08 28 08 29 08 2A 08 55 08 00 00 55 08 00 00 00 00 55 08 55 08 00 08 00 08 2E 08 2F 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 32 08 33 08 34 08 00 08 35 08 36 08 00 08 37 08 38 08 39 08 3A 08 55 08 00 00 55 08 00 00 00 00 00 00 00 00 00 00 00 00 3E 08 3F 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "offset": "CEF46",
+      "for": "SCORE SCREEN",
+      "description": "End of week"
+    },
+    {
+      "code": "02 0C 03 0C 04 0C 05 0C 06 0C 00 00 07 0C 08 0C 09 0C 0A 0C 0B 0C 0C 0C 0D 0C 0E 0C 0F 0C 42 08 00 00 00 00 55 08 00 00 00 00 00 00 00 00 2E 08 2F 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 12 0C 13 0C 14 0C 15 0C 16 0C 00 00 17 0C 18 0C 19 0C 1A 0C 1B 0C 1C 0C 1D 0C 1E 0C 1F 0C 52 08 00 00 00 00 55 08 00 00 00 00 00 00 00 00 3E 08 3F 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "offset": "CEFC6",
+      "for": "SCORE SCREEN",
+      "description": "Weeks remaining"
+    },
+    {
+      "code": "55 00 55 00 55 00 22 08 23 08 24 08 00 08 25 08 26 08 55 00 0F 0C 0A 0C 09 0C 08 0C 4C 08 4D 08 44 08 45 08 48 08 49 08 4E 08 4F 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 32 08 33 08 34 08 00 08 35 08 36 08 00 08 1F 0C 1A 0C 19 0C 18 0C 5C 08 5D 08 54 08 55 08 58 08 59 08 5E 08 5F 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00",
+      "offset": "CF1C6",
+      "for": "SCORE SCREEN",
+      "description": "    End of game"
+    },
+
+
+    {
+      "code": "",
+      "offset": "1CDD63",
+      "for": "SCORE SCREEN",
+      "description": "Sprites for the title of the score graph screen",
+      "file": true
+    },
+
+
+    {
+      "code": "22 B0 82 30 5C CB F7 80",
+      "offset": "77B3",
+      "debug": false,
+      "description": "Jumps to $30/82B0 (x1802B0), Jumps to $80/F7CB      x1802B0 is a subroutine for loading overworld map sprites"
+    },
+    {
+      "code": "22 30 82 30 5C 87 F9 80",
+      "offset": "796F",
+      "debug": false,
+      "description": "Jumps to $30/8230 (x180230), Jumps to $80/F987      x180230 is a subroutine for loading overworld map sprites"
+    },
+    {
+      "code": "22 30 81 30 5C 44 FB 80",
+      "offset": "7B1E",
+      "debug": false,
+      "description": "Jumps to $30/8130 (x180130), Jumps to $80/FB44      x180130 is a subroutine for loading overworld map sprites"
+    },
+    {
+      "code": "22 A0 81 30 5C 40 FC 80",
+      "offset": "7C20",
+      "debug": false,
+      "description": "Jumps to $30/81A0 (x1801A0), Jumps to $80/FC3E      x1801A0 is a subroutine for loading overworld map sprites"
+    },
+    {
+      "code": "00 80 BC 00 80 BB 00 80 BA",
+      "original": "39 BA 97 95 DC 97 28 A5 96",
+      "modif": "00 80 BC 00 80 BB 00 80 BA",
+      "offset": "7D15",
+      "debug": false,
+      "description": [
+        "Changes 3 pointers",
+        "Overworld map sprite order from $97:BA39 to $BC:8000 (x1E0000)",
+        "Overworld map sprite (4x4 tiles) definition from $97:DC95 to $BB:8000 (x1D8000)",
+        "Overworld map tile definition from $96:A528 to $BA:8000 (x1D0000)"
+      ]
+    },
+    {
+      "code": "CB 00 34 FF",
+      "offset": "7FDC",
+      "description": "I don't remember why I made this change. Original value was 8A 4A 75 B5. Hope it's not game breaking.",
+      "debug": true
+    },
+    {
+      "code": "A0 39 00",
+      "offset": "11B4B",
+      "description": "",
+      "debug": true
+    },
+    {
+      "code": "A0 00 FA",
+      "offset": "11B50",
+      "description": "",
+      "debug": true
+    },
+    {
+      "code": "20",
+      "offset": "BE332",
+      "description": "",
+      "debug": true
+    },
+    {
+      "code": "C9 DB 5F 10 27 A7 30 8D 18 21 E6 30 E6 30 A7 30 8D 18 21 E6 30 E6 30 A5 2C 18 69 20 00 8D 16 21 A7 30 8D 18 21 E6 30 E6 30 A7 30 6B E9 DC 5F 18 69 00 80 18 85 F0 A9 B2 00 85 F2 A7 F0 8D 18 21 E6 F0 E6 F0 A7 F0 8D 18 21 E6 F0 E6 F0 A5 2C 18 69 20 00 8D 16 21 A7 F0 8D 18 21 E6 F0 E6 F0 A7 F0 6B",
+      "offset": "180130",
+      "description": "Subroutine for loading overworld map sprites - Called from x7B1E"
+    },
+    {
+      "code": "C9 DB 5F 10 21 A7 30 9F DC 5F 7E E6 30 E6 30 A7 30 9F DE 5F 7E E6 30 E6 30 A7 30 9F 1C 60 7E E6 30 E6 30 A7 30 6B E9 DC 5F 18 69 00 80 18 85 F0 A9 B2 00 85 F2 A7 F0 9F DC 5F 7E E6 F0 E6 F0 A7 F0 9F DE 5F 7E E6 F0 E6 F0 A7 F0 9F 1C 60 7E E6 F0 E6 F0 A7 F0 6B",
+      "offset": "1801A0",
+      "description": "Subroutine for loading overworld map sprites - Called from x7C20"
+    },
+    {
+      "code": "C9 DB 5F 10 19 BD 00 00 99 00 00 BD 02 00 99 02 00 BD 04 00 99 48 00 BD 06 00 99 4A 00 6B E9 DC 5F 18 69 00 80 18 AA 86 F0 A9 B2 00 85 F2 A7 F0 99 00 00 E8 E8 86 F0 A7 F0 99 02 00 E8 E8 86 F0 A7 F0 99 48 00 E8 E8 86 F0 A7 F0 99 4A 00 6B",
+      "offset": "180230",
+      "description": "Subroutine for loading overworld map sprites - Called from x796F"
+    },
+    {
+      "code": "C9 DB 5F 10 19 BD 00 00 99 00 00 BD 02 00 99 40 00 BD 04 00 99 02 00 BD 06 00 99 42 00 6B E9 DC 5F 18 69 00 80 18 AA 86 F0 A9 B2 00 85 F2 A7 F0 99 00 00 E8 E8 86 F0 A7 F0 99 40 00 E8 E8 86 F0 A7 F0 99 02 00 E8 E8 86 F0 A7 F0 99 42 00 6B",
+      "offset": "1802B0",
+      "description": "Subroutine for loading overworld map sprites - Called from x77B3"
+    },
+    {
+      "code": "",
+      "offset": "190000",
+      "description": "Sprite (4x4 tiles) definition for the town names on the map",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1E0000",
+      "description": "Overworld map sprite order",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1D0000",
+      "description": "Overworld map sprites",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1D8000",
+      "description": "Overworld map 4x4 tiles",
+      "file": true
+    },
+
+
+    {
+      "code": "A0 BE 00 84 22 A0 00 80 84 20",
+      "offset": "428A2",
+      "for": "TITLE_SCREEN",
+      "description": "Pointer to title screen sprites"
+    },
+    {
+      "code": "A0 BF 00 84 22 A0 00 80 84 20",
+      "offset": "428D7",
+      "for": "TITLE_SCREEN",
+      "description": "Pointer to title screen sprites order"
+    },
+    {
+      "code": "",
+      "offset": "1F0000",
+      "for": "TITLE_SCREEN",
+      "description": "Title screen sprites",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1F8000",
+      "for": "TITLE_SCREEN",
+      "description": "Title screen sprites order",
+      "file": true
+    },
+
+
+    {
+      "code": "00 B0 B6",
+      "offset": "7DD8",
+      "for": "TRAINING_MAP",
+      "description": "Pointer to training map sprites"
+    },
+    {
+      "code": "00 90 B7",
+      "offset": "7DD2",
+      "for": "TRAINING_MAP",
+      "description": "Pointer to training map sprites order"
+    },
+    {
+      "code": "00 B0 B7",
+      "offset": "7DD5",
+      "for": "TRAINING_MAP",
+      "description": "Pointer to training map tiles definition"
+    },
+    {
+      "code": "",
+      "offset": "1B3000",
+      "for": "TRAINING_MAP",
+      "description": "Training map sprites",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1B9000",
+      "for": "TRAINING_MAP",
+      "description": "Training map sprites order",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1BB000",
+      "for": "TRAINING_MAP",
+      "description": "Training map sprites tiles definition",
+      "file": true
+    },
+
+
+    {
+      "code": "",
+      "offset": "1C8000",
+      "for": "FREETOWN_SCREEN",
+      "description": "Free town screen sprites",
+      "file": true
+    },
+    {
+      "code": "00 80 B9",
+      "offset": "22154",
+      "for": "FREETOWN_SCREEN",
+      "description": "Free town screen sprites pointer"
+    },
+
+
+    {
+      "code": "",
+      "offset": "1CA000",
+      "for": "DOC_SCREEN",
+      "description": "Doc screen sprites",
+      "file": true
+    },
+    {
+      "code": "00 A0 B9",
+      "offset": "21A95",
+      "for": "DOC_SCREEN",
+      "description": "Doc screen sprites pointer"
+    },
+
+
+    {
+      "code": "",
+      "offset": "1CC000",
+      "for": "SALESMAN_SCREEN",
+      "description": "Salesman screen sprites",
+      "file": true
+    },
+    {
+      "code": "00 C0 B9",
+      "offset": "21A59",
+      "for": "SALESMAN_SCREEN",
+      "description": "Salesman screen sprites pointer"
+    },
+
+
+    {
+      "code": "",
+      "offset": "1DA000",
+      "for": "ROSHAMBO_SCREEN",
+      "description": "Roshambo screen sprites",
+      "file": true
+    },
+    {
+      "code": "00 A0 BB",
+      "offset": "21A6B",
+      "for": "ROSHAMBO_SCREEN",
+      "description": "Roshambo screen sprites pointer"
+    },
+
+
+
+    {
+      "code": "",
+      "offset": "1FA000",
+      "for": "PENNY_OMG_SCREEN",
+      "description": "Penny omg screen sprites",
+      "file": true
+    },
+    {
+      "code": "A0 BF 00 84 22 A0 00 A0",
+      "offset": "43276",
+      "for": "PENNY_OMG_SCREEN",
+      "description": "Penny omg screen sprites pointer"
+    },
+
+
+    {
+      "code": "",
+      "offset": "1BC500",
+      "for": "RICO",
+      "description": "Rico sprites",
+      "file": true
+    },
+    {
+      "code": "00 C5 B7",
+      "offset": "72162",
+      "for": "RICO",
+      "description": "Rico pointer"
+    },
+
+
+    {
+      "code": "",
+      "offset": "1C0000",
+      "for": "BATTLE CARDS",
+      "description": "Battle cards sprites",
+      "file": true
+    },
+    {
+      "code": "A0 B8 00 84 22 A0 00 80",
+      "offset": "E954",
+      "for": "BATTLE CARDS",
+      "description": "Battle cards pointer"
+    },
+
+
+
+    {
+      "code": "",
+      "offset": "1DC000",
+      "for": "BILL_SCREEN",
+      "description": "End of chapter 6 - Invoice screen sprites",
+      "file": true
+    },
+    {
+      "code": "A0 BB 00 84 22 A0 00 C0",
+      "offset": "23C3E",
+      "for": "BILL_SCREEN",
+      "description": "End of chapter 6 - Invoice screen sprites pointer"
+    },
+
+
+    {
+      "code": "",
+      "offset": "1FC000",
+      "for": "CHAPTER_END_SCREEN",
+      "description": "Chapter end screen sprites",
+      "file": true
+    },
+    {
+      "code": "A0 BF 00 84 22 A0 00 C0",
+      "offset": "2367D",
+      "for": "CHAPTER_END_SCREEN",
+      "description": "Chapter end screen sprites pointer"
+    },
+    {
+      "code": "06 01 EB D0 00 20 01 EB F1 04 20 01 EB 12 08 20 01 C3 D4 0C 20 01 C3 F6 40 20 01 C3 24 44 20",
+      "offset": "C86E4",
+      "for": "CHAPTER_END_SCREEN",
+      "description": "Chapter 1 end screen sprites positions"
+    },
+    {
+      "code": "06 01 EB D0 00 20 01 EB F1 04 20 01 EB 12 08 20 01 C3 D4 0C 20 01 C3 F6 40 20 01 C3 14 47 20",
+      "offset": "C8703",
+      "for": "CHAPTER_END_SCREEN",
+      "description": "Chapter 2 end screen sprites positions"
+    },
+    {
+      "code": "06 01 EB D0 00 20 01 EB F1 04 20 01 EB 12 08 20 01 C3 D4 0C 20 01 C3 F6 40 20 01 C3 14 4B 20",
+      "offset": "C8722",
+      "for": "CHAPTER_END_SCREEN",
+      "description": "Chapter 3 end screen sprites positions"
+    },
+    {
+      "code": "06 01 EB D0 00 20 01 EB F1 04 20 01 EB 12 08 20 01 C3 D4 0C 20 01 C3 F6 40 20 01 C3 14 80 20",
+      "offset": "C8741",
+      "for": "CHAPTER_END_SCREEN",
+      "description": "Chapter 4 end screen sprites positions"
+    },
+    {
+      "code": "06 01 EB D0 00 20 01 EB F1 04 20 01 EB 12 08 20 01 C3 D4 0C 20 01 C3 F6 40 20 01 C3 14 84 20",
+      "offset": "C8760",
+      "for": "CHAPTER_END_SCREEN",
+      "description": "Chapter 5 end screen sprites positions"
+    },
+    {
+      "code": "06 01 EB D0 00 20 01 EB F1 04 20 01 EB 12 08 20 01 C3 D4 0C 20 01 C3 F6 40 20 01 C3 14 88 20",
+      "offset": "C877F",
+      "for": "CHAPTER_END_SCREEN",
+      "description": "Chapter 6 end screen sprites positions"
+    },
+    {
+      "code": "06 01 EB D0 00 20 01 EB F1 04 20 01 EB 12 08 20 01 C3 D4 0C 20 01 C3 F6 40 20 01 C3 14 8C 20",
+      "offset": "C879E",
+      "for": "CHAPTER_END_SCREEN",
+      "description": "Chapter 7 end screen sprites positions"
+    },
+    {
+      "code": "01 01 D6 D9 00 20 02 01 D6 D9 00 20 01 D6 FA 04 20 03 01 D6 D9 00 20 01 D6 FA 04 20 01 D6 12 C8 20",
+      "offset": "C87BD",
+      "for": "CHAPTER_END_SCREEN",
+      "description": "Chapter 8 end screen sprites positions"
+    },
+
+
+    {
+      "code": "",
+      "offset": "1F3000",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter end screen sprites",
+      "file": true
+    },
+    {
+      "code": "A0 BE 00 84 22 A0 00 B0",
+      "offset": "24965",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter end screen sprites pointer"
+    },
+    {
+      "code": "",
+      "offset": "1E8020",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter 1 start screen sprites order",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1E9000",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter 2 start screen sprites order",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1EA000",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter 3 start screen sprites order",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1EB000",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter 4 start screen sprites order",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1EC000",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter 5 start screen sprites order",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1ED000",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter 6 start screen sprites order",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1EE000",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter 7 start screen sprites order",
+      "file": true
+    },
+    {
+      "code": "",
+      "offset": "1EF000",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter 8 start screen sprites order",
+      "file": true
+    },
+    {
+      "code": "A0 BD 00 84 22 A0 00 80",
+      "offset": "24980",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter end screen sprites order pointer loading"
+    },
+    {
+      "code": "20 80 00 90 00 A0 00 B0 00 C0 00 D0 00 E0 00 F0",
+      "offset": "1E8000",
+      "for": "CHAPTER_START_SCREEN",
+      "description": "Chapter end screen sprites order pointers"
+    },
+
+
+
+    {
+      "code": "A9 1E",
+      "offset": "AAAB",
+      "for": "CONTINENT NAMES",
+      "description": "Prevents ghost value next to the continent names when going up and down the list"
+    },
+    {
+      "code": "22 00 84 30 EA EA E2 20 EA EA EA EA",
+      "offset": "ABCC",
+      "for": "CONTINENT NAMES",
+      "description": "Prevents ghost value next to the continent names when going up and down the list"
+    },
+    {
+      "code": "E0 18 00 F0 0D BF 00 80 AD 85 20 E2 20 A9 AD 85 22 6B A9 00 AE 85 20 E2 20 A9 31 85 22 6B",
+      "offset": "180400",
+      "for": "CONTINENT NAMES",
+      "description": "Prevents ghost value next to the continent names when going up and down the list"
+    },
+    {
+      "code": "BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 AF 00 ED 00 2C 00 22 00 1A 00 BF 00 BF 00 BF 00 BF 00 BF 00 B0 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 00 30 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 AF 00 E7 00 2E 00 2B 00 28 00 29 00 1E 00 BF 00 BF 00 BF 00 B0 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 00 30 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 AF 00 13 00 08 00 ED 00 26 00 1E 00 2B 00 22 00 1C 00 1A 00 B0 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 00 30 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 AF 00 E0 00 08 00 ED 00 26 00 1E 00 2B 00 22 00 1C 00 1A 00 B0 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 00 30 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 AF 00 0E 00 2B 00 1E 00 1E 00 27 00 25 00 1A 00 27 00 1D 00 B0 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 00 30 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 AF 00 ED 00 1F 00 2B 00 22 00 1C 00 1A 00 BF 00 BF 00 BF 00 B0 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 00 30 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 AF 00 ED 00 2E 00 2C 00 2D 00 2B 00 1A 00 25 00 22 00 1A 00 B0 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 BF 00 FF FF",
+      "offset": "18AE00",
+      "for": "CONTINENT NAMES",
+      "description": "Prevents ghost value next to the continent names when going up and down the list",
+      "desc": "OFFSETDATA=168910 is ignored when this is not disabled"
+    }
+
+    
+    
+    
+  ],
+  "town-signs": [
+    {
+      "offset": "0948",
+      "town": "AKUREYRI",
+      "value": "(AKUREYRI)wx"
+    },
+    {
+      "offset": "0976",
+      "town": "OSLO",
+      "value": "[OSLO]--"
+    },
+    {
+      "offset": "0A16",
+      "town": "JUNEAU",
+      "value": "[JUNEAU]"
+    },
+    {
+      "offset": "0CEA",
+      "town": "IRKUTSK",
+      "value": "(IRKUTSK)-"
+    },
+    {
+      "offset": "0D6C",
+      "town": "DERRY",
+      "value": "(DERRY)-"
+    },
+    {
+      "offset": "0F78",
+      "town": "DUBLIN",
+      "value": "[DUBLIN]"
+    },
+    {
+      "offset": "1254",
+      "town": "NUUK",
+      "value": "[NUUK]"
+    },
+    {
+      "offset": "1486",
+      "town": "TALLINN",
+      "value": "(TALLINNyt"
+    },
+    {
+      "offset": "18AE",
+      "town": "MOSCOW",
+      "value": "-[MOSCOW]-"
+    },
+    {
+      "offset": "19E0",
+      "town": "HARBIN",
+      "value": "[HARBIN]"
+    },
+    {
+      "offset": "1C30",
+      "town": "DENVER",
+      "value": "[DENVER]"
+    },
+    {
+      "offset": "1C80",
+      "town": "RIGA",
+      "value": "-[RIGA]---"
+    },
+    {
+      "offset": "1C96",
+      "town": "POZNAN",
+      "value": "[POZNAŃ]"
+    },
+    {
+      "offset": "1D12",
+      "town": "SEATTLE",
+      "value": "(SEATTLE)-"
+    },
+    {
+      "offset": "2064",
+      "town": "LONDON",
+      "value": "(LONDON)"
+    },
+    {
+      "offset": "2130",
+      "town": "DALLAS",
+      "value": "(DALLAS)"
+    },
+    {
+      "offset": "2596",
+      "town": "PRAGUE",
+      "value": "(PRAGUE)"
+    },
+    {
+      "offset": "2674",
+      "town": "PARIS",
+      "value": "(PARIS)-"
+    },
+    {
+      "offset": "26AC",
+      "town": "ASTANA",
+      "value": "(ASTANA)"
+    },
+    {
+      "offset": "2748",
+      "town": "NEW YORK",
+      "value": "(NEW_YORK)"
+    },
+    {
+      "offset": "2916",
+      "town": "PORTLAND",
+      "value": "-(PORTLANDyt"
+    },
+    {
+      "offset": "2A92",
+      "town": "VIENNA",
+      "value": "[VIENNA]"
+    },
+    {
+      "offset": "3018",
+      "town": "ANAHEIM",
+      "value": "(ANAHEIM)-"
+    },
+    {
+      "offset": "30B2",
+      "town": "LHASA",
+      "value": "(LHASA)-"
+    },
+    {
+      "offset": "317E",
+      "town": "ROME",
+      "value": "[ROME]"
+    },
+    {
+      "offset": "332C",
+      "town": "HOUSTON",
+      "value": "[HOUSTON]-"
+    },
+    {
+      "offset": "33C2",
+      "town": "SHANGHAI",
+      "value": "(SHANGHAI)"
+    },
+    {
+      "offset": "359E",
+      "town": "KABUL",
+      "value": "[KABUL]-"
+    },
+    {
+      "offset": "35DC",
+      "town": "TOKYO",
+      "value": "TOKYO]"
+    },
+    {
+      "offset": "3A64",
+      "town": "SEVILLA",
+      "value": "-(SEVILLA)"
+    },
+    {
+      "offset": "3C8C",
+      "town": "AMMAN",
+      "value": "(AMMAN}d"
+    },
+    {
+      "offset": "3DBA",
+      "town": "MACAU",
+      "value": "[MACAU]---"
+    },
+    {
+      "offset": "4584",
+      "town": "CAIRO",
+      "value": "[CAIRO]-"
+    },
+    {
+      "offset": "4662",
+      "town": "RABAT",
+      "value": "-(RABAT)"
+    },
+    {
+      "offset": "471A",
+      "town": "BOGOTA",
+      "value": "[BOGOTA]"
+    },
+    {
+      "offset": "472C",
+      "town": "CARACAS",
+      "value": "-(CARACAS)"
+    },
+    {
+      "offset": "4D20",
+      "town": "MANAUS",
+      "value": "-[MANAUS]-"
+    },
+    {
+      "offset": "4E6C",
+      "town": "NIAMEY",
+      "value": "bnNIAMEY,;"
+    },
+    {
+      "offset": "4E8C",
+      "town": "NAIROBI",
+      "value": "-(NAIROBI)"
+    },
+    {
+      "offset": "4F30",
+      "town": "BRASILIA",
+      "value": "(BRASILIA)"
+    },
+    {
+      "offset": "4F40",
+      "town": "RIO",
+      "value": "-[RIO]--"
+    },
+    {
+      "offset": "4F60",
+      "town": "BAMAKO",
+      "value": "-(BAMAKO)-"
+    },
+    {
+      "offset": "4FC8",
+      "town": "ALICE",
+      "value": "[ALICE]-"
+    },
+    {
+      "offset": "53E0",
+      "town": "CAIRNS",
+      "value": "(CAIRNS)"
+    },
+    {
+      "offset": "5418",
+      "town": "LIMA",
+      "value": "(LIMA)"
+    },
+    {
+      "offset": "5622",
+      "town": "LA PAZ",
+      "value": "[LA_PAZ]"
+    },
+    {
+      "offset": "5676",
+      "town": "LOME",
+      "value": "[LOME]--"
+    },
+    {
+      "offset": "56C8",
+      "town": "ULURU",
+      "value": "-[ULURU]"
+    },
+    {
+      "offset": "621C",
+      "town": "SANTIAGO",
+      "value": "(SANTIAGO)"
+    },
+    {
+      "offset": "63CC",
+      "town": "ADELAIDE",
+      "value": "[ADELAIDE]"
+    },
+    {
+      "offset": "6670",
+      "town": "PRETORIA",
+      "value": "jkPRETORIAlm"
+    },
+    {
+      "offset": "66A4",
+      "town": "PERTH",
+      "value": "[PERTH]-"
+    },
+    {
+      "offset": "67D8",
+      "town": "SIDNEY",
+      "value": "(SIDNEY)"
+    },
+    {
+      "offset": "67EA",
+      "town": "AUCKLAND",
+      "value": "(AUCKLAND)"
+    }
+  ],
+  "input-patches": [
+    {
+      "offset": "18a17e",
+      "latin": " Sign 0 1 2 3 4            #      5 6 7 8 9            # Clr  a b c d e  A B C D E #      f g h i j  F G H I J # End  k l m n o  K L M N O #      p q r s t  P Q R S T #      u v w x y  U V W X Y #      z          Z         #                          *",
+      "type": "INPUT_LETTERS_SHOWN",
+      "debug": true
+    },
+    {
+      "offset": "18a37a",
+      "latin": " Alph ! ? : . '            #      / ( ) [ ]            # Clr  + - %                #                           # End                       #                           #                           #                           #                          *",
+      "type": "INPUT_LETTERS_SHOWN",
+      "debug": true
+    },
+    {
+      "offset": "43e8b",
+      "latin": "0 1 2 3 4 bf bf bf bf bf 00 00 5 6 7 8 9 bf bf bf bf bf 00 fe a b c d e A B C D E 00 00 f g h i j F G H I J 00 fd k l m n o K L M N O 00 00 p q r s t P Q R S T 00 00 u v w x y U V W X Y 00 00 z bf bf bf bf Z bf bf bf bf 00 00 bf bf bf bf bf bf bf bf bf bf 00 ff ! ? : . ' bf bf bf bf bf 00 00 / ( ) [ ] bf bf bf bf bf 00 fe + - % bf bf bf bf bf bf bf 00 00 bf bf bf bf bf bf bf bf bf bf 00 fd bf bf bf bf bf bf bf bf bf bf 00 00 bf bf bf bf bf bf bf bf bf bf 00 00 bf bf bf bf bf bf bf bf bf bf 00 ff bf bf bf bf bf bf bf bf bf bf 00 ff bf bf bf bf bf bf",
+      "type": "INPUT_LETTERS_SAVED",
+      "debug": false
+    },
+    {
+      "latin": "P 94 4f a0 l 94 51 a0 a 94 53 a0 y 94 55 a0 e 94 57 a0 r 94 59 a0 bf 00",
+      "offset": "19c22",
+      "type": "PLAYER",
+      "debug": false
+    }
+  ],
+  "latin": [
+    {
+      "value": "{CW}",
+      "code": "0020",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{CR}",
+      "code": "0120",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{CY}",
+      "code": "0220",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{CG}",
+      "code": "0320",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{CB}",
+      "code": "0420",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{0000}",
+      "type": "NO_SPRITE",
+      "location": {
+        "offset": "d8000",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{0100}",
+      "type": "NO_SPRITE",
+      "location": {
+        "offset": "d8000",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": " ",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-106.png"
+      },
+      "location": {
+        "offset": "d96e0",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "!",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-057.png"
+      }
+    },
+    {
+      "value": "%",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-074.png"
+      }
+    },
+    {
+      "value": "'",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-052.png"
+      }
+    },
+    {
+      "value": "(",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-063.png"
+      }
+    },
+    {
+      "value": ")",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-064.png"
+      }
+    },
+    {
+      "value": "+",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-061.png"
+      }
+    },
+    {
+      "value": ",",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-088.png"
+      },
+      "location": {
+        "offset": "d94a0",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "-",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-062.png"
+      },
+      "location": {
+        "offset": "d94c0",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": ".",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-060.png"
+      }
+    },
+    {
+      "value": "/",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-068.png"
+      }
+    },
+    {
+      "value": "0",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-075.png"
+      },
+      "location": {
+        "offset": "d9400",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "1",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-076.png"
+      },
+      "location": {
+        "offset": "d9400",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "2",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-077.png"
+      },
+      "location": {
+        "offset": "d9420",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "3",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-078.png"
+      },
+      "location": {
+        "offset": "d9420",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "4",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-079.png"
+      },
+      "location": {
+        "offset": "d9440",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "5",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-080.png"
+      },
+      "location": {
+        "offset": "d9440",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "6",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-081.png"
+      },
+      "location": {
+        "offset": "d9460",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "7",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-082.png"
+      },
+      "location": {
+        "offset": "d9460",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "8",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-083.png"
+      },
+      "location": {
+        "offset": "d9480",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "9",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-084.png"
+      },
+      "location": {
+        "offset": "d9480",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": ":",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-059.png"
+      }
+    },
+    {
+      "value": "?",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-058.png"
+      },
+      "location": {
+        "offset": "d9680",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "A",
+      "code": "ed00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "B",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-001.png"
+      }
+    },
+    {
+      "value": "C",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-002.png"
+      }
+    },
+    {
+      "value": "D",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-003.png"
+      }
+    },
+    {
+      "value": "E",
+      "code": "e700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "F",
+      "code": "ea00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "G",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-006.png"
+      }
+    },
+    {
+      "value": "H",
+      "code": "e900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "I",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-008.png"
+      }
+    },
+    {
+      "value": "J",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-009.png"
+      }
+    },
+    {
+      "value": "K",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-010.png"
+      }
+    },
+    {
+      "value": "L",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-011.png"
+      }
+    },
+    {
+      "value": "M",
+      "code": "e200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "N",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-013.png"
+      }
+    },
+    {
+      "value": "O",
+      "code": "e300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "P",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-015.png"
+      }
+    },
+    {
+      "value": "Q",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-016.png"
+      }
+    },
+    {
+      "value": "R",
+      "code": "eb00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "S",
+      "code": "e000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "T",
+      "code": "e800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "U",
+      "code": "e100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "V",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-021.png"
+      }
+    },
+    {
+      "value": "W",
+      "code": "e600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "X",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-023.png"
+      }
+    },
+    {
+      "value": "Y",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-024.png"
+      }
+    },
+    {
+      "value": "Z",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-025.png"
+      }
+    },
+    {
+      "value": "[",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-065.png"
+      },
+      "location": {
+        "offset": "d94e0",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "]",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-066.png"
+      },
+      "location": {
+        "offset": "d9600",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "a",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-026.png"
+      }
+    },
+    {
+      "value": "b",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-027.png"
+      }
+    },
+    {
+      "value": "c",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-028.png"
+      }
+    },
+    {
+      "value": "d",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-029.png"
+      }
+    },
+    {
+      "value": "e",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-030.png"
+      }
+    },
+    {
+      "value": "f",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-031.png"
+      }
+    },
+    {
+      "value": "g",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-032.png"
+      }
+    },
+    {
+      "value": "h",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-033.png"
+      }
+    },
+    {
+      "value": "i",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-034.png"
+      }
+    },
+    {
+      "value": "j",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-035.png"
+      }
+    },
+    {
+      "value": "k",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-036.png"
+      }
+    },
+    {
+      "value": "l",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-037.png"
+      }
+    },
+    {
+      "value": "m",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-038.png"
+      }
+    },
+    {
+      "value": "n",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-039.png"
+      }
+    },
+    {
+      "value": "o",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-040.png"
+      }
+    },
+    {
+      "value": "p",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-041.png"
+      }
+    },
+    {
+      "value": "q",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-042.png"
+      }
+    },
+    {
+      "value": "r",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-043.png"
+      }
+    },
+    {
+      "value": "s",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-044.png"
+      }
+    },
+    {
+      "value": "t",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-045.png"
+      }
+    },
+    {
+      "value": "u",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-046.png"
+      }
+    },
+    {
+      "value": "v",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-047.png"
+      }
+    },
+    {
+      "value": "w",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-048.png"
+      }
+    },
+    {
+      "value": "x",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-049.png"
+      }
+    },
+    {
+      "value": "y",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-050.png"
+      }
+    },
+    {
+      "value": "z",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-051.png"
+      }
+    },
+    {
+      "value": "{ARMOR}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-094.png"
+      }
+    },
+    {
+      "value": "{BR-ANGLE}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-087.png"
+      }
+    },
+    {
+      "value": "{BULLET}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-107.png"
+      }
+    },
+    {
+      "value": "{BUT}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-095.png"
+      }
+    },
+    {
+      "value": "{C-QUOTES}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-108.png"
+      },
+      "location": {
+        "offset": "da8e0",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{H-ANGLE}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-101.png"
+      },
+      "location": {
+        "offset": "d9ae0",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "{ITEM}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-096.png"
+      }
+    },
+    {
+      "value": "{L-CIRCLE}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-102.png"
+      }
+    },
+    {
+      "value": "{L-WANTED}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-089.png"
+      },
+      "location": {
+        "offset": "d96a0",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "{MAGIC}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-099.png"
+      },
+      "location": {
+        "offset": "d9a80",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{POISON}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-097.png"
+      },
+      "location": {
+        "offset": "d9a80",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "{PILL}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-098.png"
+      },
+      "location": {
+        "offset": "d9aa0",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{O-QUOTES}",
+      "code": "4e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "\"",
+      "code": "4e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{R-CIRCLE}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-103.png"
+      }
+    },
+    {
+      "value": "{R-WANTED}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-090.png"
+      },
+      "location": {
+        "offset": "d96c0",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{SHIELD}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-093.png"
+      }
+    },
+    {
+      "value": "{TL-ANGLE}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-086.png"
+      }
+    },
+    {
+      "value": "{V-ANGLE}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-100.png"
+      },
+      "location": {
+        "offset": "d9ae0",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{WEAP}",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-092.png"
+      }
+    },
+    {
+      "value": "~",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-105.png"
+      }
+    },
+    {
+      "value": "*",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-053.png"
+      }
+    },
+    {
+      "value": "↓",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-104.png"
+      },
+      "location": {
+        "offset": "d92e0",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "×",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-091.png"
+      }
+    },
+    {
+      "value": "→",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-085.png"
+      }
+    },
+    {
+      "value": "{DAY-SUNDAY-S}",
+      "code": "e000",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-018.png"
+      },
+      "location": {
+        "offset": "d9c00",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{DAY-SUNDAY-U}",
+      "code": "e000",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-020.png"
+      },
+      "location": {
+        "offset": "d9c00",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "{DAY-MONDAY-M}",
+      "code": "e100",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-012.png"
+      },
+      "location": {
+        "offset": "d9c20",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{DAY-MONDAY-O}",
+      "code": "e100",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-014.png"
+      },
+      "location": {
+        "offset": "d9c20",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "{DAY-TUESDAY-T}",
+      "code": "e200",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-019.png"
+      },
+      "location": {
+        "offset": "d9c40",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{DAY-TUESDAY-U}",
+      "code": "e200",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-020.png"
+      },
+      "location": {
+        "offset": "d9c40",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "{DAY-WEDNESDAY-W}",
+      "code": "e300",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-022.png"
+      },
+      "location": {
+        "offset": "d9c60",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{DAY-WEDNESDAY-E}",
+      "code": "e300",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-004.png"
+      },
+      "location": {
+        "offset": "d9c60",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "{DAY-THURSDAY-T}",
+      "code": "e400",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-019.png"
+      },
+      "location": {
+        "offset": "d9c80",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{DAY-THURSDAY-H}",
+      "code": "e400",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-007.png"
+      },
+      "location": {
+        "offset": "d9c80",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "{DAY-FRIDAY-F}",
+      "code": "e500",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-005.png"
+      },
+      "location": {
+        "offset": "d9ca0",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{DAY-FRIDAY-R}",
+      "code": "e500",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-017.png"
+      },
+      "location": {
+        "offset": "d9ca0",
+        "side": "TWO"
+      }
+    },
+    {
+      "value": "{DAY-SATURDAY-S}",
+      "code": "e600",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-018.png"
+      },
+      "location": {
+        "offset": "d9cc0",
+        "side": "ONE"
+      }
+    },
+    {
+      "value": "{DAY-SATURDAY-A}",
+      "code": "e600",
+      "type": "SINGLE",
+      "sprite": {
+        "image": "images/single-chars/latin/char-000.png"
+      },
+      "location": {
+        "offset": "d9cc0",
+        "side": "TWO"
+      }
+    }
+  ],
+  "japanese": [
+    {
+      "value": "あ",
+      "code": "0100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "い",
+      "code": "0200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "う",
+      "code": "0300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "え",
+      "code": "0400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "お",
+      "code": "0500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "か",
+      "code": "0600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "が",
+      "code": "0700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "き",
+      "code": "0800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぎ",
+      "code": "0900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "く",
+      "code": "0a00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぐ",
+      "code": "0b00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "け",
+      "code": "0c00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "げ",
+      "code": "0d00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "こ",
+      "code": "0e00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ご",
+      "code": "0f00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "さ",
+      "code": "1000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ざ",
+      "code": "1100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "し",
+      "code": "1200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "じ",
+      "code": "1300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "す",
+      "code": "1400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ず",
+      "code": "1500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "せ",
+      "code": "1600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぜ",
+      "code": "1700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "そ",
+      "code": "1800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぞ",
+      "code": "1900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "た",
+      "code": "1a00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "だ",
+      "code": "1b00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ち",
+      "code": "1c00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぢ",
+      "code": "1d00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "っ",
+      "code": "1e00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "つ",
+      "code": "1f00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "づ",
+      "code": "2000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "て",
+      "code": "2100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "で",
+      "code": "2200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "と",
+      "code": "2300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ど",
+      "code": "2400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "な",
+      "code": "2500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "に",
+      "code": "2600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぬ",
+      "code": "2700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ね",
+      "code": "2800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "の",
+      "code": "2900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "は",
+      "code": "2a00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ば",
+      "code": "2b00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぱ",
+      "code": "2c00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ひ",
+      "code": "2d00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "び",
+      "code": "2e00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぴ",
+      "code": "2f00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ふ",
+      "code": "3000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぶ",
+      "code": "3100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぷ",
+      "code": "3200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "へ",
+      "code": "3300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "べ",
+      "code": "3400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぺ",
+      "code": "3500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ほ",
+      "code": "3600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぼ",
+      "code": "3700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぽ",
+      "code": "3800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ま",
+      "code": "3900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "み",
+      "code": "3a00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "む",
+      "code": "3b00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "め",
+      "code": "3c00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "も",
+      "code": "3d00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ゃ",
+      "code": "3e00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "や",
+      "code": "3f00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ゅ",
+      "code": "4000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ゆ",
+      "code": "4100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ょ",
+      "code": "4200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "よ",
+      "code": "4300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ら",
+      "code": "4400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "り",
+      "code": "4500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "る",
+      "code": "4600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "れ",
+      "code": "4700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ろ",
+      "code": "4800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "わ",
+      "code": "4900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "を",
+      "code": "4a00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ん",
+      "code": "4b00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ァ",
+      "code": "4c00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ア",
+      "code": "4d00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ィ",
+      "code": "4e00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "イ",
+      "code": "4f00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ゥ",
+      "code": "5000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ウ",
+      "code": "5100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ェ",
+      "code": "5200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "エ",
+      "code": "5300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ォ",
+      "code": "5400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "オ",
+      "code": "5500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "カ",
+      "code": "5600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ガ",
+      "code": "5700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "キ",
+      "code": "5800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ギ",
+      "code": "5900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ク",
+      "code": "5a00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "グ",
+      "code": "5b00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ケ",
+      "code": "5c00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ゲ",
+      "code": "5d00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "コ",
+      "code": "5e00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ゴ",
+      "code": "5f00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "サ",
+      "code": "6000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ザ",
+      "code": "6100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "シ",
+      "code": "6200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ジ",
+      "code": "6300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ス",
+      "code": "6400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ズ",
+      "code": "6500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "せ",
+      "code": "6600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ぜ",
+      "code": "6700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ソ",
+      "code": "6800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ゾ",
+      "code": "6900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "タ",
+      "code": "6a00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ダ",
+      "code": "6b00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "チ",
+      "code": "6c00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ヂ",
+      "code": "6d00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ッ",
+      "code": "6e00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ツ",
+      "code": "6f00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ヅ",
+      "code": "7000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "テ",
+      "code": "7100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "デ",
+      "code": "7200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ト",
+      "code": "7300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ド",
+      "code": "7400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ナ",
+      "code": "7500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ニ",
+      "code": "7600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ヌ",
+      "code": "7700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ネ",
+      "code": "7800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ノ",
+      "code": "7900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ハ",
+      "code": "7a00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "バ",
+      "code": "7b00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "パ",
+      "code": "7c00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ヒ",
+      "code": "7d00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ビ",
+      "code": "7e00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ピ",
+      "code": "7f00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "フ",
+      "code": "8000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ブ",
+      "code": "8100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "プ",
+      "code": "8200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ヘ",
+      "code": "8300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ベ",
+      "code": "8400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ペ",
+      "code": "8500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ホ",
+      "code": "8600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ボ",
+      "code": "8700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ポ",
+      "code": "8800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "マ",
+      "code": "8900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ミ",
+      "code": "8a00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ム",
+      "code": "8b00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "メ",
+      "code": "8c00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "モ",
+      "code": "8d00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ャ",
+      "code": "8e00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ヤ",
+      "code": "8f00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ュ",
+      "code": "9000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ユ",
+      "code": "9100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ョ",
+      "code": "9200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ヨ",
+      "code": "9300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ラ",
+      "code": "9400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "リ",
+      "code": "9500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ル",
+      "code": "9600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "レ",
+      "code": "9700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ロ",
+      "code": "9800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ワ",
+      "code": "9900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ヲ",
+      "code": "9a00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ン",
+      "code": "9b00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ヷ",
+      "code": "9c00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{BUT}",
+      "code": "9d00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "§",
+      "code": "9e00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": ".",
+      "code": "9f00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "0",
+      "code": "a000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "1",
+      "code": "a100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "2",
+      "code": "a200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "3",
+      "code": "a300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "4",
+      "code": "a400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "5",
+      "code": "a500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "6",
+      "code": "a600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "7",
+      "code": "a700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "8",
+      "code": "a800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "9",
+      "code": "a900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": ",",
+      "code": "aa00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "・",
+      "code": "ab00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "-",
+      "code": "ac00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "/",
+      "code": "ad00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "~",
+      "code": "ae00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "[",
+      "code": "af00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "]",
+      "code": "b000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "%",
+      "code": "b100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "→",
+      "code": "b200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": ",",
+      "code": "b300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": ".",
+      "code": "b400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "ー",
+      "code": "b500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "┌",
+      "code": "b600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "┘",
+      "code": "b700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "?",
+      "code": "b800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "!",
+      "code": "b900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "",
+      "code": "ba00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "",
+      "code": "bb00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "",
+      "code": "bc00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "+",
+      "code": "bd00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "×",
+      "code": "be00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": " ",
+      "code": "bf00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "E",
+      "code": "c000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "G",
+      "code": "c100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "H",
+      "code": "c200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "P",
+      "code": "c300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "X",
+      "code": "c400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "N",
+      "code": "c500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "T",
+      "code": "c600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "Y",
+      "code": "c700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "A",
+      "code": "c800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "B",
+      "code": "c900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "L",
+      "code": "ca00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "D",
+      "code": "cb00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "O",
+      "code": "cc00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "F",
+      "code": "cd00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "V",
+      "code": "ce00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "J",
+      "code": "cf00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "r",
+      "code": "d000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "(",
+      "code": "d100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": ")",
+      "code": "d200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "R",
+      "code": "d300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "C",
+      "code": "d400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "M",
+      "code": "d500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "",
+      "code": "d600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{ITEM}",
+      "code": "d700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{MAGIC}",
+      "code": "d800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{POISON}",
+      "code": "d900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{PILL}",
+      "code": "da00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{WEAP}",
+      "code": "db00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{SHIELD}",
+      "code": "dc00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{ARMOR}",
+      "code": "dd00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{V-ANGLE}",
+      "code": "de00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{H-ANGLE}",
+      "code": "df00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "日",
+      "code": "e000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "月",
+      "code": "e100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "火",
+      "code": "e200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "水",
+      "code": "e300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "木",
+      "code": "e400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "金",
+      "code": "e500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "士",
+      "code": "e600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "曜",
+      "code": "e700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "屋",
+      "code": "e800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "週",
+      "code": "e900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "目",
+      "code": "ea00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "順",
+      "code": "eb00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "位",
+      "code": "ec00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "全",
+      "code": "ed00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "価",
+      "code": "ee00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "値",
+      "code": "ef00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "収",
+      "code": "f000",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "入",
+      "code": "f100",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "合",
+      "code": "f200",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "計",
+      "code": "f300",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "店",
+      "code": "f400",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "移",
+      "code": "f500",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "動",
+      "code": "f600",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "調",
+      "code": "f700",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "攻",
+      "code": "f800",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "撃",
+      "code": "f900",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "防",
+      "code": "fa00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "御",
+      "code": "fb00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "村",
+      "code": "fc00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "名",
+      "code": "fd00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "数",
+      "code": "fe00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "残",
+      "code": "ff00",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "魔",
+      "code": "0001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "法",
+      "code": "0101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "統",
+      "code": "0201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "治",
+      "code": "0301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "他",
+      "code": "0401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "使",
+      "code": "0501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "強",
+      "code": "0601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "武",
+      "code": "0701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "器",
+      "code": "0801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "体",
+      "code": "0901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "力",
+      "code": "0a01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "回",
+      "code": "0b01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "復",
+      "code": "0c01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "所",
+      "code": "0d01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "持",
+      "code": "0e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "戦",
+      "code": "0f01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "闘",
+      "code": "1001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "資",
+      "code": "1101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "産",
+      "code": "1201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "休",
+      "code": "1301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "大",
+      "code": "1401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "陸",
+      "code": "1501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "小",
+      "code": "1601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "城",
+      "code": "1701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "死",
+      "code": "1801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "亡",
+      "code": "1901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "買",
+      "code": "1a01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "売",
+      "code": "1b01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "交",
+      "code": "1c01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "代",
+      "code": "1d01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "集",
+      "code": "1e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "人",
+      "code": "1f01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "地",
+      "code": "2001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "形",
+      "code": "2101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "出",
+      "code": "2201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "時",
+      "code": "2301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "起",
+      "code": "2401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "何",
+      "code": "2501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "次",
+      "code": "2601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "必",
+      "code": "2701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "要",
+      "code": "2801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "支",
+      "code": "2901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "配",
+      "code": "2a01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "進",
+      "code": "2b01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "場",
+      "code": "2c01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "中",
+      "code": "2d01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "行",
+      "code": "2e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "押",
+      "code": "2f01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "道",
+      "code": "3001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "者",
+      "code": "3101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "現",
+      "code": "3201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "在",
+      "code": "3301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "勇",
+      "code": "3401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "気",
+      "code": "3501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "間",
+      "code": "3601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "青",
+      "code": "3701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "宝",
+      "code": "3801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "箱",
+      "code": "3901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "黄",
+      "code": "3a01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "赤",
+      "code": "3b01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "一",
+      "code": "3c01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "発",
+      "code": "3d01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "逆",
+      "code": "3e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "転",
+      "code": "3f01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "底",
+      "code": "4001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "開",
+      "code": "4101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "付",
+      "code": "4201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "来",
+      "code": "4301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "悪",
+      "code": "4401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "手",
+      "code": "4501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "王",
+      "code": "4601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "様",
+      "code": "4701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "祝",
+      "code": "4801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "術",
+      "code": "4901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "会",
+      "code": "4a01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "投",
+      "code": "4b01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "教",
+      "code": "4c01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "物",
+      "code": "4d01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "選",
+      "code": "4e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "落",
+      "code": "4f01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "毒",
+      "code": "5001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "受",
+      "code": "5101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "長",
+      "code": "5201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "荷",
+      "code": "5301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "心",
+      "code": "5401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "品",
+      "code": "5501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "納",
+      "code": "5601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "豊",
+      "code": "5701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "今",
+      "code": "5801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "展",
+      "code": "5901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "寄",
+      "code": "5a01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "念",
+      "code": "5b01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "足",
+      "code": "5c01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "用",
+      "code": "5d01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "帰",
+      "code": "5e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "失",
+      "code": "5f01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "敗",
+      "code": "6001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "主",
+      "code": "6101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "変",
+      "code": "6201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "礼",
+      "code": "6301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "誰",
+      "code": "6401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "員",
+      "code": "6501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "無",
+      "code": "6601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "引",
+      "code": "6701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "取",
+      "code": "6801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "神",
+      "code": "6901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "父",
+      "code": "6a01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "新",
+      "code": "6b01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "確",
+      "code": "6c01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "実",
+      "code": "6d01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "決",
+      "code": "6e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "救",
+      "code": "6f01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "覚",
+      "code": "7001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "解",
+      "code": "7101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "効",
+      "code": "7201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "果",
+      "code": "7301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "消",
+      "code": "7401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "安",
+      "code": "7501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "置",
+      "code": "7601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "生",
+      "code": "7701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "返",
+      "code": "7801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "罪",
+      "code": "7901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "自",
+      "code": "7a01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "分",
+      "code": "7b01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "送",
+      "code": "7c01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "以",
+      "code": "7d01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "上",
+      "code": "7e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "定",
+      "code": "7f01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "完",
+      "code": "8001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "下",
+      "code": "8101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "借",
+      "code": "8201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "半",
+      "code": "8301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "倍",
+      "code": "8401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "口",
+      "code": "8501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "溶",
+      "code": "8601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "岩",
+      "code": "8701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "通",
+      "code": "8801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "路",
+      "code": "8901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "南",
+      "code": "8a01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "側",
+      "code": "8b01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "北",
+      "code": "8c01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "迷",
+      "code": "8d01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "森",
+      "code": "8e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "海",
+      "code": "8f01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "殿",
+      "code": "9001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "飛",
+      "code": "9101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "参",
+      "code": "9201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "加",
+      "code": "9301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "相",
+      "code": "9401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "石",
+      "code": "9501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "身",
+      "code": "9601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "呼",
+      "code": "9701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "不",
+      "code": "9801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "思",
+      "code": "9901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "議",
+      "code": "9a01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "替",
+      "code": "9b01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "同",
+      "code": "9c01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "個",
+      "code": "9d01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "有",
+      "code": "9e01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "利",
+      "code": "9f01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "重",
+      "code": "a001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "情",
+      "code": "a101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "報",
+      "code": "a201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "聞",
+      "code": "a301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "早",
+      "code": "a401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "看",
+      "code": "a501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "経",
+      "code": "a601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "験",
+      "code": "a701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "吸",
+      "code": "a801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "正",
+      "code": "a901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "光",
+      "code": "aa01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "命",
+      "code": "ab01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "声",
+      "code": "ac01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "獄",
+      "code": "ad01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "度",
+      "code": "ae01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "始",
+      "code": "af01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "内",
+      "code": "b001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "賞",
+      "code": "b101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "前",
+      "code": "b201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "去",
+      "code": "b301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "助",
+      "code": "b401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "薬",
+      "code": "b501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "草",
+      "code": "b601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "最",
+      "code": "b701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "像",
+      "code": "b801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "脱",
+      "code": "b901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "種",
+      "code": "ba01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "停",
+      "code": "bb01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "見",
+      "code": "bc01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "歩",
+      "code": "bd01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "指",
+      "code": "be01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "鏡",
+      "code": "bf01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "究",
+      "code": "c001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "極",
+      "code": "c101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "外",
+      "code": "c201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "沼",
+      "code": "c301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "過",
+      "code": "c401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "界",
+      "code": "c501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "国",
+      "code": "c601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "財",
+      "code": "c701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "姫",
+      "code": "c801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "事",
+      "code": "c901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "家",
+      "code": "ca01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "病",
+      "code": "cb01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "弱",
+      "code": "cc01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "版",
+      "code": "cd01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "玉",
+      "code": "ce01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "画",
+      "code": "cf01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "面",
+      "code": "d001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "遠",
+      "code": "d101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "吹",
+      "code": "d201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "伝",
+      "code": "d301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "説",
+      "code": "d401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "好",
+      "code": "d501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "爆",
+      "code": "d601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "冷",
+      "code": "d701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "関",
+      "code": "d801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "係",
+      "code": "d901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "化",
+      "code": "da01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "高",
+      "code": "db01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "直",
+      "code": "dc01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "接",
+      "code": "dd01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "階",
+      "code": "de01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "降",
+      "code": "df01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "登",
+      "code": "e001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "段",
+      "code": "e101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "私",
+      "code": "e201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "知",
+      "code": "e301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "常",
+      "code": "e401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "状",
+      "code": "e501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "態",
+      "code": "e601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "世",
+      "code": "e701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "期",
+      "code": "e801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "終",
+      "code": "e901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "突",
+      "code": "ea01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "然",
+      "code": "eb01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "営",
+      "code": "ec01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "業",
+      "code": "ed01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "門",
+      "code": "ee01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "白",
+      "code": "ef01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "字",
+      "code": "f001",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "良",
+      "code": "f101",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "切",
+      "code": "f201",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "子",
+      "code": "f301",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "犬",
+      "code": "f401",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "飲",
+      "code": "f501",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "勝",
+      "code": "f601",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "待",
+      "code": "f701",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "働",
+      "code": "f801",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "周",
+      "code": "f901",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "減",
+      "code": "fa01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "再",
+      "code": "fb01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "建",
+      "code": "fc01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "連",
+      "code": "fd01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "印",
+      "code": "fe01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "話",
+      "code": "ff01",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "先",
+      "code": "0002",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "祖",
+      "code": "0102",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "書",
+      "code": "0202",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "破",
+      "code": "0302",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "探",
+      "code": "0402",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "旅",
+      "code": "0502",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "続",
+      "code": "0602",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "雪",
+      "code": "0702",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "原",
+      "code": "0802",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "乗",
+      "code": "0902",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "少",
+      "code": "0a02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "息",
+      "code": "0b02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "板",
+      "code": "0c02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "彼",
+      "code": "0d02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "平",
+      "code": "0e02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "和",
+      "code": "0f02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "番",
+      "code": "1002",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "君",
+      "code": "1102",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "意",
+      "code": "1202",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "共",
+      "code": "1302",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "運",
+      "code": "1402",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "本",
+      "code": "1502",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "当",
+      "code": "1602",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "仲",
+      "code": "1702",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "忘",
+      "code": "1802",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "貯",
+      "code": "1902",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "試",
+      "code": "1a02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "負",
+      "code": "1b02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "敵",
+      "code": "1c02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "元",
+      "code": "1d02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "後",
+      "code": "1e02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "願",
+      "code": "1f02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "言",
+      "code": "2002",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "方",
+      "code": "2102",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "機",
+      "code": "2202",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "別",
+      "code": "2302",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "客",
+      "code": "2402",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "満",
+      "code": "2502",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "商",
+      "code": "2602",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "老",
+      "code": "2702",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "恵",
+      "code": "2802",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "走",
+      "code": "2902",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "感",
+      "code": "2a02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "役",
+      "code": "2b02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "立",
+      "code": "2c02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "向",
+      "code": "2d02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "広",
+      "code": "2e02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "作",
+      "code": "2f02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "巻",
+      "code": "3002",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "込",
+      "code": "3102",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "結",
+      "code": "3202",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "楽",
+      "code": "3302",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "格",
+      "code": "3402",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "料",
+      "code": "3502",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "約",
+      "code": "3602",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "束",
+      "code": "3702",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "額",
+      "code": "3802",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "放",
+      "code": "3902",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "優",
+      "code": "3a02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "近",
+      "code": "3b02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "対",
+      "code": "3c02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "毎",
+      "code": "3d02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "能",
+      "code": "3e02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "略",
+      "code": "3f02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "姉",
+      "code": "4002",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "特",
+      "code": "4102",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "天",
+      "code": "4202",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "空",
+      "code": "4302",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "容",
+      "code": "4402",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "職",
+      "code": "4502",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "成",
+      "code": "4602",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "女",
+      "code": "4702",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "設",
+      "code": "4802",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "限",
+      "code": "4902",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "問",
+      "code": "4a02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "題",
+      "code": "4b02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "活",
+      "code": "4c02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "類",
+      "code": "4d02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "色",
+      "code": "4e02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "速",
+      "code": "4f02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "質",
+      "code": "5002",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "表",
+      "code": "5102",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "初",
+      "code": "5202",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "標",
+      "code": "5302",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "保",
+      "code": "5402",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "護",
+      "code": "5502",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "協",
+      "code": "5602",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "章",
+      "code": "5702",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "案",
+      "code": "5802",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "因",
+      "code": "5902",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "離",
+      "code": "5a02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "辺",
+      "code": "5b02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "山",
+      "code": "5c02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "例",
+      "code": "5d02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "古",
+      "code": "5e02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "遺",
+      "code": "5f02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "税",
+      "code": "6002",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "払",
+      "code": "6102",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "各",
+      "code": "6202",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "座",
+      "code": "6302",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "多",
+      "code": "6402",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "守",
+      "code": "6502",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "喜",
+      "code": "6602",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "倒",
+      "code": "6702",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "装",
+      "code": "6802",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "備",
+      "code": "6902",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "渡",
+      "code": "6a02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "盗",
+      "code": "6b02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "均",
+      "code": "6c02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "的",
+      "code": "6d02",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{CW}",
+      "code": "0020",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{CR}",
+      "code": "0120",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{CY}",
+      "code": "0220",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{CG}",
+      "code": "0320",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{CB}",
+      "code": "0420",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{BGG}",
+      "code": "0520",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{STM}",
+      "code": "0620",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{BGW}",
+      "code": "0720",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{NL}",
+      "code": "0030",
+      "type": "NO_SPRITE"
+    },
+    {
+      "value": "{EL}",
+      "code": "ffff",
+      "type": "NO_SPRITE"
+    }
+  ],
+  "specials": [
+    {
+      "code": "{CG}",
+      "in-game-length": 0,
+      "data-length": 1
+    },
+    {
+      "code": "{CR}",
+      "in-game-length": 0,
+      "data-length": 1
+    },
+    {
+      "code": "{CY}",
+      "in-game-length": 0,
+      "data-length": 1
+    },
+    {
+      "code": "{CW}",
+      "in-game-length": 0,
+      "data-length": 1
+    },
+    {
+      "code": "{NL}",
+      "in-game-length": 0,
+      "data-length": 1
+    },
+    {
+      "code": "{EL}",
+      "in-game-length": 0,
+      "data-length": 1
+    },
+    {
+      "code": "{2114 6403}",
+      "in-game-length": 2,
+      "data-length": 2
+    },
+    {
+      "code": "{2116 6403}",
+      "in-game-length": 2,
+      "data-length": 2
+    },
+    {
+      "code": "{4116 6985}",
+      "in-game-length": 3,
+      "data-length": 2
+    },
+    {
+      "code": "{4116 b245}",
+      "in-game-length": 3,
+      "data-length": 2
+    },
+    {
+      "code": "{4214 5985}",
+      "in-game-length": 4,
+      "data-length": 2,
+      "desc": "town name"
+    },
+    {
+      "code": "{4214 5b85}",
+      "in-game-length": 4,
+      "data-length": 2,
+      "desc": "town name"
+    },
+    {
+      "code": "{4214 6403}",
+      "in-game-length": 4,
+      "data-length": 2,
+      "desc": "town name"
+    },
+    {
+      "code": "{6214 5985}",
+      "in-game-length": 6,
+      "data-length": 2,
+      "desc": "castle name"
+    },
+    {
+      "code": "{8014 5985}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "player name"
+    },
+    {
+      "code": "{8014 5f85}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "player name"
+    },
+    {
+      "code": "{801c 4f00}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "player name"
+    },
+    {
+      "code": "{801c 5985}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "player name"
+    },
+    {
+      "code": "{8116 5f85}",
+      "in-game-length": 7,
+      "data-length": 2,
+      "desc": "castle value"
+    },
+    {
+      "code": "{8116 6985}",
+      "in-game-length": 6,
+      "data-length": 2,
+      "desc": "gold value"
+    },
+    {
+      "code": "{8214 5785}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "item name"
+    },
+    {
+      "code": "{8214 5985}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "magic name"
+    },
+    {
+      "code": "{8214 6403}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "item name"
+    },
+    {
+      "code": "{8214 6985}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "item name?"
+    },
+    {
+      "code": "{8214 ea03}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "magic name?"
+    },
+    {
+      "code": "{821c c900}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "gear?"
+    },
+    {
+      "code": "{821c cb00}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "gear?"
+    },
+    {
+      "code": "{821c cd00}",
+      "in-game-length": 8,
+      "data-length": 2,
+      "desc": "gear?"
+    },
+    {
+      "code": "{8314 5985}",
+      "in-game-length": 6,
+      "data-length": 2,
+      "desc": "item value"
+    },
+    {
+      "code": "{8314 5b85}",
+      "in-game-length": 7,
+      "data-length": 2,
+      "desc": "doctor cost"
+    },
+    {
+      "code": "{8314 6985}",
+      "in-game-length": 6,
+      "data-length": 2,
+      "desc": "gold value"
+    },
+    {
+      "code": "{8314 6d85}",
+      "in-game-length": 6,
+      "data-length": 2,
+      "desc": "gold value"
+    },
+    {
+      "code": "{8314 a803}",
+      "in-game-length": 7,
+      "data-length": 2,
+      "desc": "risque cost"
+    },
+    {
+      "code": "{8316 6985}",
+      "in-game-length": 6,
+      "data-length": 2,
+      "desc": "gold prize"
+    },
+    {
+      "code": "{9214 5d85}",
+      "in-game-length": 9,
+      "data-length": 2,
+      "desc": "continent name"
+    }
+  ]
+}

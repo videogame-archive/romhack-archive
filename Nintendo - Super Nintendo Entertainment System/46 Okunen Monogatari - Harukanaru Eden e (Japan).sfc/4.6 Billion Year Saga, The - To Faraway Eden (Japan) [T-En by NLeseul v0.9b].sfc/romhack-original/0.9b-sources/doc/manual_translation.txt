@@ -1,0 +1,1166 @@
+Back of box:
+
+　　　　　　　　　僕の名前はトロン
+　　　　　キミも進化を旅してみようよ。
+　このゲームはね　”アクション進化げーむ”
+と言って自分のキャラを強くするために好
+きなように進化できるんだ。僕みたいなス
+タイルはどうだい？イカすだろ。なにがお
+かしいんだよ。でも走るのってたいへんな
+んだよなぁ～これが……　ウンショ！　ヨイ
+ショ！旅の途中には恐い顔をした生物や
+ちょっと間抜けな生物が僕を見るとかみ
+ついてくるんだ。　負けないぞ！僕だ
+ってかみついたり、本当たりしたり、
+ジャンプだって出来るんだ。WAO-N!!
+　弱肉強食の時代ってつらいけど、
+　　最終目的地　”エデン”　へ
+　　　必ず行くぞー＊
+
+My name is Toron!
+Join me on an evolutionary journey!
+This game is an "evolution action" game, where you can evolve your own character
+however you like. 
+How do you like my style? Pretty sharp, huh? What's so funny?
+But this running sure is difficult! Huff... puff... Along the journey, there'll
+be creatures making scary faces, and a few stupid creatures, and they'll bite at
+me when they see me. But I won't lose! I can bite too, really! And even jump!
+Hyah!
+Things are hard in an age where you either eat or be eaten, but there's no doubt
+that we'll reach the ultimate goal—a place called "Eden"... *
+
+正しく進化するように説得しなきゃ…聞いてくれるわけないよね。やっぱし。
+You've gotta persuade them to evolve properly... but there's no way they'll
+listen! Too bad.
+
+ウワーッ！巨大ガエルのハイジャンプだ。乗っかられたら重たいぞー。
+Whoa! A huge high-jumping frog! She'll crush you if she lands on you!
+
+Page 2:
+ごあいさつ
+このたびはスーパーファミコン専用ソフ
+ト、「４６億年物語　ーはるかなるエデンへー」を
+お買い上げいただき、まことにありがと
+うございます。この取り扱い説明書をよ
+くお読みになって正しい使用方法でお楽
+しみください。
+
+Welcome!
+Thank you for purchasing "The 4.6 Billion Year Saga - To Faraway Eden," a game
+software cartridge for the Super Famicom! Please read this instruction manual
+carefully and follow correct usage instructions while you enjoy this journey.
+
+
+
+使用上の注意
+Usage warnings
+
+１．使用後はACアダプタをコンセントか
+　　ら必ず抜いておいてください。
+Always remove the AC adapter from the outlet after use.
+
+２．テレビ画面からできるだけ離れてゲー
+　　ムをしてください。
+Remain as far from the television screen as possible while playing the game.
+
+３．長時間ゲームをするときは、健康のた
+　　め１時間ないし２時間ごとに１０分から
+　　１５分の小休止をしてください。
+During a long play session, it is healthy to take breaks of 10-15 minutes every
+1-2 hours.
+
+４．精密機器ですので、極端な温度条件で
+　　の使用や保管および強いショックを避
+　　けてください。また絶対に分解しない
+　　でください。
+This cartridge is a delicate electronic device. Do not use or store it in
+extreme temperatures, and avoid strong electric shocks. Never disassemble the
+cartridge.
+
+５．端子部に触れたり、水に濡らさないよ
+　　うにしてください。故障の原因となり
+　　ます。
+Do not touch the pins on the cartridge or immerse it in water. This will cause
+it to malfunction.
+
+６．シンナー、ベンジン、アルコール等の
+　　揮発油でふかないでください。
+Do not clean the cartridge with petroleum oils such as paint thinner, gasoline,
+or alcohol. 
+
+７．このカセットはスーパーファミコン専
+　　用です。ファミリーコンピュータでは
+　　使用できません。
+This cartridge is for use with the Super Famicom. It cannot be used with the
+Family Computer.
+
+８．スーパーファミコンをプロジェクショ
+　　ンテレビ（スクリーン投影方式のテレ
+　　ビ）に接続すると残像現象（画面ヤケ）
+　　を生ずりため、接続しないでください。
+Do not connect the Super Famicom to a projection television, or an afterimage
+ effect (screen burn) may result.
+
+CONTENTS
+
+Introduction
+入門編     ガイアからあなたへ
+
+Operation
+操作編     コントローラーの使い方とゲームの進め方
+               画面の見方
+              コマンドについて
+              ＜メイン画面＞　１．進化
+                                       ２．のうりょく
+                                       ３．進化のきろく
+                                       ４．進化のさいげん
+                                       クリスタルについて
+              ＜マップ画面＞   １．ゲームのセーブ
+                                       ２．セーブファイルをけす
+                                       ３．進化のきろくをみる
+                                       ４．進化のきろくをけす
+              ゲームのセーブとロード
+              絶滅とペナルティ
+Character introductions & "4.6 Billion Year Saga" story
+登場キャラクター＆「４６億年物語」ストーリー
+STAFF
+
+Page 3
+ガイアからあなたへ
+From Gaia to you
+
+私の名前はガイア。今から４６億年まえ、父
+である太陽の３番目の娘として誕生しまし
+た。そのとき父は「１０億年後に”生命”とい
+う子供たちをたくさん授かり、その中から
+おまえの良きパートナーとなる生物が進化
+していくだろう。」といました。そしてそ
+のものに”弱肉強食”という試練を与える
+事も……。父は、その厳しい自然の掟に負
+けない生物こそが、私のパートナーにふさ
+わしいと思ったのでしょう……。そして、
+１０億年後……。
+My name is Gaia. 4.6 billion years ago, I was born as the third daughter of my
+father, the Sun. At that time, my father said: "One billion years from now, you
+will be blessed with abundant children called "Life," and from among them, a
+creature who is a good partner for you shall evolve." And that this creature
+would be assigned a trial: "Eat or Be Eaten." I think my father believed that a
+creature who would not succumb to the merciless laws of nature would be a
+suitable partner... 
+
+And then, one billion years later...
+
+私は生命を授かりました。それから３０億年
+おかけて、彼等を”魚”という独り立ちで
+きる状態まで育てあげた時、ついに父の試
+みが始まりました。「負けないで！きっと
+試練に打ち勝って、進化の旅のゴール、エ
+デンに必ず来てください！」私はそう願い
+ながら、不安な様子で旅立とうとしている、
+一匹の小さな魚を見送ったのです。
+I was blessed with life! Three billion years passed as I raised them until they
+reached an independently-living phase called a "fish," and now my father's
+experiment has begun. "Don't give in! Please succeed in the trial, and come to
+Eden, the goal of the evolutionary journey!" Those were my wishes as I bade
+farewell to one small fish departing nervously on that journey. 
+
+その小さな魚……それが、”あなた”だっ
+たのです。
+That small fish... was you!
+
+ゲームの遊び方
+How to play this game
+
+このゲームの目的は、時代を越えた５章からなる弱肉強食世
+界を、そこに生きるいろいろな生物と戦いながら、自分を進
+化させ、最終目的地”エデン”にたどりつくことです。
+In this game, you will struggle through a world where "eat or be eaten"
+is the rule, an age divided into five chapters. Battle the various creatures who
+live there and evolve yourself, and reach "Eden," the ultimate goal of the
+journey.
+
+いろいろなタイプの生物に進化できますので、どんな生物で
+ゲームをクリアしていくかは、あなたしだいです！
+You can evolve into various types of creatures, so what creature clears the game
+is up to you!
+
+Page 4
+
+コントローラーの使い方とゲームの進め方
+Controls and gameplay
+
+Lボタン
+使用しません。
+L Button
+Not used.
+
+十字ボタン
+キャラクターの移動、コマンドの
+選択に使用。
+Control Pad
+Used for character movement and selection of commands.
+
+ダッシュ移動
+同じ方向にすばやく２度押しする
+と、ダッシュ移動。
+ツノがあれば、ツノ攻撃。
+Dash movement
+If you tap the same direction twice quickly, you can dash.
+If you have a horn, you will attack with it.
+
+SELECTボタン
+コマンドウインドーを表示。
+SELECT Button
+Display command window.
+
+STARTボタン
+ゲームの一時停止。
+START Button
+Pause the game.
+
+Yボタン
+アクションシーン
+かみつき攻撃。餌やお肉を食べます。
+Action scenes
+Bite attack. Eat food or meat.
+
+コマンド選択シーン。
+キャンセルボタン。
+Command selection screen
+Cancel button.
+
+Rボタン     緊急脱出
+R Button - Emergency escape
+
+クリアしたエリアに限り、途中でも
+ミニマップに戻る事ことができます。
+You can return to the map screen even from the middle of an area, but only if
+the area is cleared.
+
+Xボタン
+餌や、お肉を食べます。
+Eat food or meat.
+
+Aボタン
+体当たり攻撃
+ダッシュ時のみ有効
+Body slam attack
+Effective only when dashing.
+
+後ろ足蹴り攻撃
+４足哺乳類のみ有効
+Hind leg kick attack
+Effective only for four-legged mammals.
+
+Bボタン
+ジャンプ
+Jump
+
+段差のあるところでは、ボタン
+をはなすと着地したい場所に降
+ります。
+In locations with multiple platforms, release the button to land at your desired
+location.
+
+鳥に進化した時は、ボタンを押しっぱなしにすると、飛ぶ事ができます。
+Once you have evolved into a bird, you can fly by holding down the button.
+
+ミニマップシーン
+Map screen
+エリア決定。
+Choose an area.
+
+コマンド選択シーン
+コマンドの決定。
+テキストの送り。
+Command selection screen
+Choose a command.
+Advance text.
+
+１．生きるために、戦うのだっ！
+    To survive, fight!
+２．勝った！敵がお肉になったぞ。
+    You won! The enemy becomes meat.
+３．お肉を食べて　EVO・Pアップ
+    Eat the meat and gain EP.
+４．EVO・Pたまって、さあ進化！
+    Save EP and evolve!
+
+EVO・PとはEVOLUTION POINTSの略です。
+以降EVO・Pと表します。
+"EP" is an abbreviation for "evolution points." It will be written as "EP" after
+this.
+
+Page 5
+
+画面の見方
+Reading the display
+
+ミニマップシーン仮面
+Map screen display
+
+あなたが冒険する章の全体マップです。ミ
+ニキャラを十字ボタンで移動させて、エリ
+アをBボタンで決定するとアクションシー
+ンに移ります。
+This map shows all your adventures for the chapter. Move the character icon with
+the Control Pad. When you select an area using the B Button, an action scene
+will begin.
+
+移動可能エリアマーク（キイロ）
+New area marker (Yellow)
+
+ミニキャラ
+Character icon
+
+エリアクリアマーク（赤色）
+Clear area marker (Red)
+
+移動可能エリアマーク         次に行ける新しいエリアを示します。
+New area marker      Indicates a new area where you can go next.
+
+エリアクリアマーク            すでに、クリアしていることを示します。何度でも入る事ができます。 
+Clear area marker    Indicates an area that has already been cleared. Can
+                     be entered any number of times.
+
+ミニキャラ                これを移動させ、エリアを選択します。
+Character icon       Use this to move around and select areas.
+
+アクションシーン（エリア）画面
+Action scene display
+
+ゲームのメイン画面です。エリアを縄張り
+とする敵キャラクターと戦う場所です。エ
+リアを無事通過すればエリアクリアとなり
+ます。＊例外もあります。
+This is the main display of the game, where you battle enemy characters who have
+claimed these areas as their territory. If you can pass safely through the area,
+it will be marked as clear.(But there are some exceptions...)
+
+体力表示ウインドー
+Health display window
+
+現在の体力
+Current health
+
+最大体力
+Maximum health
+
+進化因子取得値表示ウインドー
+Accumulated EP display window
+
+あなたのキャラ
+Your character
+
+敵キャラ
+Enemy character
+
+ダメージを受けるとHPがーになります。
+Damage you receive will be subtracted from your HP.
+
+Page 6
+
+コマンドについて
+Commands
+
+メイン画面
+Main menu
+
+アクションシーンでSEL-
+ECTボタンを押すと、左の
+ようなコマンドウインドー
+が表示されます。コマンド
+の指示に従って下さい。
+When the SELECT Button is pressed during an action scene, a command window like
+that on the left will be displayed. The commands are explained below.
+
+１．進化
+Evolve
+
+キャラを進化させるコマンドです。B ボタ
+ンを押すと進化メニューが表示させます。
+進化させたい部分を選択、決定すると、さ
+らに具体的なメニューが表示されます。そ
+れぞれ進化するために必要なEVO・Pがあ
+りますので、あなたのお持ちのEVO・Pと
+照らし合わせながら選択してください。
+This command allows you to evolve your character. Press the B Button to display
+the evolution menu. When you choose and select the body part you want to evolve,
+a more specific menu will be displayed. Each of these options has an EP
+requirement, so be sure to choose options that match your available EP.
+
+進化をしなおすとHPが回復します。
+When you complete an evolution, your HP will be fully restored.
+
+進化メニューの特徴
+Evolution menu traits
+
+アゴ            かみつく力に影響。
+Jaw           Affects biting power.
+              
+シノ            ツノ攻撃力に影響。
+              ツノは３回使うと折れてしまいます。
+Horn          Affects horn attack power. 
+              A horn will break after being used 3 times.
+              
+後頭部          進化してのお楽しみ。
+Back of head  Cosmetic evolutions.
+              
+首             長くしたり、短かくしたりします。
+Neck          It can be made longer or shorter.
+              
+胴体           体当たりの力、防御力、体を大きくされば体
+              力に影響。爬虫類の時は２足化することで
+              ジャンプ力に影響。
+Body          Affects body slam power and defensive power. Becoming larger affects
+              your HP. If you are a reptile, becoming 2-legged will affect your
+              jumping power.
+              
+手足           体当たり、移動スピードに影響。（魚類のみ）
+Limbs         Affects body slam power and movement speed. (Fish only.)
+
+背ビレ          体力、体当たり、移動スピード、ジャンプ力に影響。
+Dorsal fin    Affects HP, body slam power, movement speed, and jumping power.
+
+尾            体力、体当たり、移動スピード、ジャンプ力に影響。
+Tail          Affects HP, body slam power, movement speed, and jumping power.
+
+類別によっては進化できないメニュがあります。
+Some evolution options will be unavailable depending on your classification.
+
+Page 7
+
+進化したことによる運動能力の変化
+Evolution and mobility
+
+進化のさせ方によっては、運動能力（ジャ
+ンプ、移動スピード）に変化が生じる場合
+があります。
+（例）
+胴体を鎧型にしたため防御力は増えたが重
+くなって、ジャンプ力、移動スピードが落
+ちてしまった。
+Depending on how you evolve, there are cases where your mobility (jumping and
+movement speed) will change.
+(Example)
+This creature's defensive power was increased by an armored body type, but its
+jumping power and movement speed were reduced due to the extra weight.
+
+２．のうりょく
+Status
+
+あなたの現在の状態が見られます。能力の
+変化がわかります。
+Shows your current status. This lets you see changes to your abilities.
+
+３．進化のきろく
+Record a fossil
+
+あなたが進化させた、お気に入りのキャラ
+クターを登録できます。登録できるファイ
+ルは５０キャラ分。名前をつけて同録して下
+さい。
+Allows you to record your favorite evolved characters. You can record up to 50
+entries. Each one can be given a name.
+
+名前の付け方
+Name entry
+
+十字ボタンで文字を選択、Bボタンで決定。
+Yボタンで直前の文字を修正できます。名
+前が決まったらENDを選んで下さい。自
+動的に登録されます。（いきなりENDを選
+びますと、名無しのファイル名で登録され
+ます。）
+Use the Control Pad to select a letter and the B Button to confirm it. You can
+correct previously entered letters with the Y Button. When you have finished
+entering a name, choose the END option. The record will be saved automatically.
+(If you choose END early, a nameless record will be saved.)
+
+Page 8
+
+進化のさいげん
+Restore a fossil
+
+このコマンドは、通常は表示されていませ
+ん。緑のクリスタルを食べると初めて表示
+されます。これは、”進化Tろく”に登録
+したキャラのどれかひとつを、ゲーム中に
+１回だけ再現することができるものです。
+なお、再現には時間制限があります。
+This command is not displayed by default; it will be displayed after the first
+time you eat a green Crystal. With this command, you can restore a character
+recorded in the "fossil record" into gameplay, but only once. Also, it will only
+be restored for a limited time.
+
+１．緑のクリスタルを食べると、”進化のさい
+　　げん”コマンドが表示されます。
+1. After eating a green Crystal, the "Restore a fossil" command is displayed.
+
+２．”進化のきろく”に登録したキャラを選
+　　びましょう。
+2. Choose a character recorded in the "fossil record."
+
+３．キャラが再現されました。なつかしいで
+　　しょ！
+3. The character is restored. Nice to see it again!
+
+クリスタルについて
+Types of Crystals
+
+特殊な生物に進化します。
+Red Crystal—Evolves you into a special creature.
+進化の再現ができます。
+Green Crystal—Allows restoration from the fossil record.
+進化のアドバイスをしてくれます。
+Yellow Crystal—Offers tips on evolution.
+EVO・Pがたくさん得れます。
+Blue Crystal—Provides lots of EP.
+
+マップ画面
+Map menu
+
+メニマップシーンでSELECTボタンを
+押すと、左のようなコマンドウインドーが
+表示されます。コマンドの指示に従って下
+さい。
+When the SELECT button is pressed on the map screen, a command window like the
+one on the left is shown. The commands are explained below.
+
+１．ゲームのセーブ
+Save game
+
+ゲームの内容が記録されます。３つのセー
+ブファイルが用意されています。
+Records your game progress. Three save slots
+are available.
+
+2．セーブファイル
+  をけす
+Erase save data
+
+セーブファイルを消します。
+Deletes a save slot.
+
+3．進化のきろくを
+  みる
+Review fossils
+
+”進化のきろく”で登録したキャラのデータ
+を見る事ができます。
+Allows you to review the character data stored in the "fossil record."
+
+4．進化のきろくを
+  けす
+Erase a fossil
+
+”進化のきろく”で登録したキャラをけしま
+す。
+Deletes characters stored in the "fossil record."
+
+Page 9
+
+ゲームのセーブとロード
+Saving and loading the game
+
+ミニマップシーンで、SELECTボタンを
+押してコマンドウインドーを教示し、”１．
+ゲームのセーブ”コマンドを選択すると、
+３つのセーブファイルが出ます。ファイ
+ルを選びBボタンでセーブして下さい。な
+あ、ファイル名はクリアしたエリアまでを
+コンピュータの方で自動的に表記します。
+If you press the SELECT Button to display the command window, and select the
+"Save your progress" option, the three save slots will be shown. Confirm one of
+them with the B Button. Note that the name of the save slot will automatically
+display the number of areas you have cleared.
+
+注意：すでに、セーブされているファイ
+ルに、さらにセーブすると前のデータは消
+えてしまいますので注意して下さい。
+Warning: When you save to a save slot that already contains data, the existing
+data will be erased.
+
+ロード
+Load
+
+タイトル画面の”CONTINUE"を選択
+しSTARTボタンで、３つのファイル画面
+が表示されます。再開したいファイルナン
+バーを選び、Bボタンでロードすると、ゲー
+ムの続きができます。
+If you select "Continue" on the title screen with the START Button, the three
+save slots will be shown. Select the one you want to continue and use the B
+Button to load it, and you can continue your game.
+
+NEW GAME
+
+ゲームを最初からやり直したいときに選択
+して、STARTボタンを押して下さい。
+If you want to start the game from the beginning, select this option and press
+the START button.
+
+Page 10
+
+絶滅とペナルティ
+Extinction penalty
+
+キャラの体力（HP）がなくなると絶滅です。
+ゲームは絶滅したエリアのミニマップから
+すぐ再開しますが、その際、ペナルティ
+としてあなたの持っていた進化因子（EV
+O・P）が減ってしまいます。くれぐれも慎
+重に……。
+When your character's HP is depleted, it's extinction! The game will resume
+immediately on the map screen at the area where you went extinct, but you will
+be penalized with a reduction in your accumulated EP. Be careful!
+
+絶滅を出来るだけ避けるための心得
+Suggestions for avoiding extinction
+
+１．敵のレベルに見合った進化をしましょう。
+1. Evolve to match the strength of your enemies.
+
+２．敵の性格や行動パターンを良く見まし
+　　ょう。
+2. Pay close attention to their personality and behavior patterns.
+
+３．”進化のきろく”　”進化のさいげん”の使
+　　い方しだいでは、戦闘が有利になるかも？
+3. Maybe using "Record a fossil" and "Restore a fossil" at the right time can
+   give you an advantage in battle?
+
+４．進化するとHPが回復します。というこ
+　　とは……。
+4. Remember how your HP is restored when you evolve...?
+
+登場キャラクター　＆　「４６億年物語」ストーリー
+Character introductions and story
+
+
+Page 11
+
+板皮類。全長１０ｍ。肉食性で、自分の縄
+張りに入ろうものなら、その鋭いキバで
+しつこく追い回し、攻撃してくる。
+Dinichthys—Class Placodermi, 10m long. A carnivore, it aggressively pursues any
+intruders in its territory and latches on with its sharp tusks.
+
+　　　　　　　軟骨魚類。全長１０ｍ。
+　　　　　現在のサメの先祖と言われ
+　　　ている。自分は海の王と信じ、
+　　　なぜか進化を拒み、陸の世界を
+ひどく嫌っている。
+Cladoselache—Cartilaginous fish, class Chondrichthyes, 10m long. Said to be the
+ancestor of modern sharks. Believing itself to be the ruler of the sea, it
+refuses to evolve for some reason and loathes the world of land.
+
+無ガク類。全長２０ｃｍ。少しでも近付こう
+ものなら、集団で体当たり攻撃をかけて
+くる、ちょっと面倒なタイプ。
+Cephalapsis—Jawless fish, class Ostyostraci, 20cm long. Anything that gets too
+close to a school will be swarmed with body slams. A slightly challenging type.
+
+イクチオステガ類。全長１ｍ。初めての
+両生類と言われている。性格はおとなし
+く植物をこよなく愛し、緑を侵す者に
+対しては攻撃的である。
+Ichthyostega—1m long. Said to be the first amphibian. In temperament, a quiet
+animal with a deep love of plants which becomes aggressive toward anyone who
+intrudes upon greenery.
+
+ネクトリド類。全長５０ｃｍ。その三角形の
+頭で相手を威嚇し、すきあらば突き上げ
+攻撃をする。
+Diplocaulus—Order Nectridia, 50cm long. Intimidates opponents with its
+triangular head, and will toss them into the air if it gets the chance.
+
+肉食バチのボス。全長５ｍ。両生類や植
+物を食い荒らし、共存を拒み、クリス
+タルによって巨大化した体で、両生類世
+界を征服しようとしている。
+Bee King—Leader of the carnivorous bees, 5m long. Having grown to a huge size
+with the power of the Crystals, it devours plants and amphibians and refuses to
+coexist with them. Intends to conquer the world of amphibians. 
+
+
+Page 12
+
+鳥ばん類。全長１０ｍ。頭のとさかを震わ
+せ鋭い音を発し、仲間に危険を知らせ、
+かつ、それを音波攻撃にして、相手にダ
+　　　　　　　　メージを与える。
+Parasaurolophous—Order Ornithischia, 10m long. It warns others of danger with
+piercing sounds produced by vibrations in its crest. These acoustic attacks also
+inflict damage.
+
+竜ばん類。全長２５ｍ。草食性
+　でおとなしく、なにが近付
+　　こうがシランプリ。でも、
+　　　　危害を加えられると
+　　　　　　　猛烈な反撃を
+　　　　　　　　　かえす。
+Brontosaur—Order Saurischia, 25m long. Herbivorous and placid, it pretends to be
+unaware of anything approaching it. But when threatened, it will unleash a
+furious counterattack.
+
+翼竜類。８ｍ。敵に近付き、頭をつかみ、
+高い所から落とすといういじわるな攻撃
+をする。
+Pteranodon—Order Pterosauria, 8m. Said to use the cruel tactic of approaching
+enemies, seizing them by the head, and dropping them from a high place.
+
+鳥ばん類。全長８ｍ。草食性だが気が短
+い。縄張り意識が強く、そのするどい角
+での突進攻撃は強烈！である。
+Triceratops—Order Ornithischia. 8m long. Herbivorous, but quick-tempered.
+Strongly territorial, it uses its sharp horns for a serious charge attack. 
+
+竜ばん類。全長１５ｍ。
+暴君竜と呼ばれ、も
+っとも凶暴である。
+そのするどいキバ
+は、どんな相手で
+もひと噛みで倒す
+と言う。
+Tyrannosaur—Order Saurischia, 15m long. Called the "dragon tyrant," and every
+bit as fearsome as its name. With its sharp fangs, it is said it can defeat any
+opponent with a single bite.
+
+Page 13
+
+長鼻目。体高４ｍ。寒さに耐えられるよ
+うに、全身毛におおわれ、長く大きく反
+ったキバを持つ。イエティをライバル視
+している。
+Mammoth—Order Proboscidea, 4m tall. Covered with hair to endure the cold, and
+has long and large curving tusks. It sees itself as a rival of the Yeti.
+
+デルタヂリジウム
+初期の哺乳類。体長２０ｃｍ。
+本来力が弱いため、”おなら”
+で相手にダメージをあたえ
+る必殺技？を持つ。
+Deltatheridium—An early mammal, 20cm long. Weak by nature, it has a special
+technique(?) of inflicting damage on its opponents with "gas."
+
+類人猿。体高５ｍ。氷
+河期に君臨する乱暴者。
+自分以外の哺乳類の進化を認めず、意味のない殺りくを好む。一
+撃で相手を倒すパンチ力を持つ。
+Yeti—Family Hominidae, 5m tall. A ruffian who rules the Ice Age. It refuses to
+permit the evolution of other mammals and loves indiscriminate slaughter. It has
+the punching power to knock out opponents in a single blow.
+
+始祖鳥
+鳥類？体長４０ｃｍ。鳥類の先祖とい
+われている。キバやツメなど爬虫
+類の性質も兼ね備えている。くち
+ばしの、つっつき攻撃は要注意。
+Archaeopteryx—Is it a bird? 40cm long. Said to be the ancestor of birds, it also
+has reptilian features such as fangs and claws. Be cautious of pecking attacks
+from its beak.
+
+鳥人類。体長２ｍ。クリスタルに
+よって進化が狂った鳥類。成層圏
+に浮かぶ砦をねじろに宇宙進出を
+もくろむ。
+Avian—Order Hominaviformes, 2m tall. Birds whose evolution has gone wrong
+because of the Crystals. From their fortress floating in the stratosphere, they
+envision a voyage into outer space.
+
+Page 14
+
+おおつのじか
+偶蹄目。体高３ｍ。ひらべ
+ったい大きな角をもったシ
+カの一種で、その角でつき
+あげ攻撃をする。草食だが
+気が荒い。
+Giant elk—Order Artyodactyla, 3m tall. A type of deer with large flat horns,
+which it uses to make tossing attacks. Herbivorous, but combative.
+
+ラマピテクスともいわ
+れ、人類の先祖ではな
+いかと言われている。
+手を使い、物を投げる
+という攻撃を初めて開
+拓した。
+Simian—Also called Ramapithecus. Could it be the ancestor of humans? Combat
+tactics it has invented are said to involve using its hands and throwing things.
+
+奇蹄目。体高３ｍ。ウマの最古の先祖。
+草食でおとなしい。しかし、自分を守る
+ためにくりだす、後ろげりは哺乳類世界
+でも１，２を争う。
+Eohippus—Order Perissodactyla, 3m tall. The earliest ancestor of horses. A quiet
+herbivore. But when it unleashes them in self-defense, its back kicks are second
+to none in the mammalian world. 
+
+ラーゴン族ともいい、クリ
+スタルの力によって進化が
+狂った魚類。クジラ族を憎
+んでいる。
+Ichthian—Also called the Lagons. Fish whose evolution has gone wrong because of
+the Crystals. They detest the whales.
+
+食肉類。体長２ｍ。犬歯が長
+くキバになっている。また、
+前足のするどいツメでのひっ
+かき攻撃は強烈！
+Saber-toothed cat—Order Carnivora, 2m long. Its canine teeth have grown into
+long tusks. The scratching attacks from its sharp-clawed forepaws are also
+powerful!
+
+
+Page 15
+
+ガイア誕生
+The Birth of Gaia
+
+私が誕生した時の話をしましょう。
+４６億年前、父である太陽は彼の周りあるガスやチリ
+を集め、小さな星をたくさん創り、さらにそれを集め
+て私たち９人兄弟を誕生させました。その際、それぞ
+れに誕生パレゼントとして、 水星には高熱に耐えうる
+体、金星には美しい輝き、火星には２つの月、木星に
+はとても大きな体、土星には美しいリング、天王星と
+海王星には２人で協力し合う力、冥王星には極寒に耐
+えうる体、そして私には生命を宿す力を与えてくれた
+のです。しかし、父は私へのプレゼントには少し不安
+があったようです。それは、私の中で進化していく生
+物達が私にとって良きパートナーになってくれるであ
+ろうか？　私に害を与えないだろうか？　ということ
+でした……。
+
+Let me tell you the story of my birth.
+
+4.6 billion years ago, my father the Sun gathered gas and dust around himself 
+and formed it into innumerable tiny worlds. They continued to gather ever
+larger, and so we nine brothers and sisters were born. For the occasion, we were
+each given birthday gifts. To Mercury was given a body to withstand intense
+heat; to Venus, a beautiful glow; to Mars, twin moons; to Jupiter, an immense
+body; to Saturn, beautiful rings; to the twins Uranus and Neptune, the power of
+cooperation; to Pluto, a body to withstand the deepest cold. And as for me, I
+was given the ability to support life. 
+
+However, Father seemed uneasy about his gift to me. The life I would come to
+host would evolve... but would it evolve into a good partner? Or... might it
+become harmful to me?
+
+
+Page 16
+
+生命誕生の話
+The Origin of Life
+
+ガイアが誕生してから、約10億年の間に、海の中でア
+ミノ酸や、蛋白などがつくられ、やがて最初の生命が
+誕生します。最初の生命は、バクテリアや、らんそう
+の仲間で、からだ全体がひとつの細胞でできている、
+単細胞の原生生物といわれ、酸素がなくても生きられ
+るものでした。これらの生物は、さらに長い時間をか
+け多細胞生物へと進化していきます。今、見ることの
+できるカイメンや、クラゲなどの生物が現れるには、
+25億年から、30億年もの気の遠くなるような時間がか
+かったと、いわれます。
+さて、最初の生命が一体どういう方法で誕生したのか
+？　いろいろな説がありますが、本当のことは、父な
+る太陽と、ガイアしかわからないかもしれませんね…。
+
+Around a billion years after the birth of Gaia, amino acids and proteins formed
+in the oceans, and soon the earliest life was born. Those creatures are called
+protists, unicellular organisms like bacteria. Their bodies consist of just a
+single cell, and they can survive even without oxygen. A long time passed, and
+they evolved further into multicellular organisms. It's believed to have taken
+around another 2.5 to 3 billion years before creatures visible to the naked eye
+like sponges and jellyfish appeared.
+
+But what process could have actually resulted in the birth of that first life?
+Various theories exist, but perhaps only Gaia, and her father the Sun, will ever
+know the truth...
+
+
+Page 17
+
+酸素とストロマトライトの話
+Oxygen and the Stromatolites
+
+僕らの名前は、”ストロマトライト”。
+外見は、岩石のようだけど、実は、多くの、”らんそう”
+という生物の営みによってできているんだ。”らんそう”
+は、昼間、光合成という不思議な力で”酸素”という
+ものをつくり、夜は、砂つぶをくっつけて、ぼくらを
+大きくしてくれる。その繰り返してぼくらはこんなに
+大きくなれたわけなんだ。でも、１メートルの大きさ
+になるまで、約2000年もの時間がかかるんだよ。酸素
+の世界をつくり、この星を生命に満ち溢れさせるきっ
+かけを創ったのは、”らんそう”たちの努力のたまも
+の！僕らは、そんなかれらの功績をいつまでも後世
+に伝えるようにと、ガイアさまから永遠のいのちを
+もらったんだ……。
+今でも、ぼくらはオーストラリアの西にある”ハメリ
+ンプール”という海で元気にくらしているし、酸素を
+つくり続けているんだ！
+
+We're called "Stromatolites."
+
+While we may look like rocks, we're actually here because of the work of many
+creatures called "cyanobacteria." These cyanobacteria make something called
+"oxygen" throughout the day, using an amazing ability called photosynthesis, and
+at night they deposit grains of sand to make us bigger. The cycle repeats, and
+that's how we grow. But it takes around 2000 years for us to grow as large as 1
+meter! The world of oxygen, and its many opportunities for life to flourish, are
+all thanks to the efforts of cyanobacteria. And we have been given eternal life
+by Lady Gaia so we can teach future ages about their efforts. 
+
+Even today, there's a sea called "Hamelin Pool" in the west of Australia where
+we continue to thrive and continue making oxygen!
+
+Page 18
+
+進化をやめてしまった？サメの先祖クラドセラケの話
+How Cladoselaches, Ancestors of Sharks, Stopped Evolving
+
+『どうにも気にくわねー……。』
+"It's hopeless..."
+
+ここは、３億年前の海底。クラドセラケのボスが、子
+分たちを相手に演説をしています。
+It was 300 million years ago, deep in the sea, and the Cladoselache boss was
+addressing his flunkies.
+
+ボ　ス：『酸素によって、陸の時代がやって来るかどう
+　　　　　かしらないが、最近の魚連中の上陸に備える
+　　　　　ための進化といったら、みてて、なげかわし
+　　　　　い！　少しは、魚のプライドというものがな
+　　　　　いのか?!』
+Boss: "I don't give a damn if oxygen brings in an age of land or not. But fish
+       these days, saying they're evolving to get ready to live on land... it's
+       just disgusting, see? Can't they show a bit of fish pride?!"
+
+子分達：『そーだっ！プライドがないのかーっ！』
+Flunkies: "Yeah! Show some fish pride!"
+
+ボ　ス：『見よ！海の恵まれた環境を！　一体、何の
+　　　　　不満があるというのだ？　それとも、母なる
+　　　　　海をうらぎるとでもいうのか？　いや、我々
+　　　　　はこの海をうらぎらないぞ！　海に残るぞ！
+　　　　　そして、進化も止めるぞ！』
+Boss: "Look here! The sea is a rich environment! Why the hell would anyone have
+       a problem with it? Or are they gonna double-cross our mother ocean, huh?
+       No way! We will not betray her! We will remain in the sea! And we will
+       stop evolving!"
+
+子分達：『そーだっ！　進化もやめ…えーっ⁉』
+Flunkies: "Yeah! No more evo... huh??"
+
+こうして、サメの先祖であるクラドセラケ一族は、進
+化を止め、３億年たった今もその姿をほとんど変えず、
+海の王者？いや、変わり者として君臨しているので
+す……。
+And so, the Cladoselaches, ancestors of sharks, stopped evolving, and even
+today—300 million years later—their shape is mostly unchanged. The Kings of the
+Sea? No... it's as its jesters that they reign. 
+
+Page 19
+
+イクチオステガの話
+The Ichthyostega
+
+イクチオステガは、今から４億年前に登場した、
+最初の両生類と言われています。
+Ichthyostega, which appeared 400 million years ago, are said to be the first
+amphibians. 
+
+そもそも、彼等が上陸できたのも、”植物”たちの
+おかげです……。植物たちの林がつくってくれた
+木陰や湿気が、彼等の乾きに弱い皮膚をまもって
+くれたからなのです。それゆえ、彼等の植物に対
+する愛情はなみなみならぬものがあります。イク
+チオステガ族は、”緑を大切にし、両生類が続く限
+りいつまでも見守り続ける”と誓ったのです。
+But it's because of plants that they were originally able to live on land—shade
+made by forests and moisture protected their vulnerable skin from dryness. And
+so they feel an extraordinary affection towards plants. "Because of the
+importance of greenery, we will always protect plants, for so long as amphibians
+survive" is the promise of the Ichthyostega. 
+
+今でも、彼等の子孫は、緑を多い所に住み、”誓い”
+を守り続けています。あるものは森や林の中、あ
+るものは沼地、そして、また、あるものはなんと
+！人間がつくった”木の家の屋根裏に。しかし、
+そんな彼等にも悩みがありました。からだがヌル
+ヌルして気持ち悪いという理由だけど、いじめら
+れるのです。特に、”人間”という、生物から……。
+And even today, in places rich in greenery, their descendants live on and keep
+their promise—in trees and forests, in wetlands, and even in the attics of
+wooden houses. But they have had some troubles as well. Others harass them,
+saying that their bodies are slimy and feel gross. Especially creatures called
+"humans"...
+
+Page 20
+
+ティラノの話
+The Story of Tyranno
+
+ちっとも強くならない、弱虫な恐竜がいました……。
+彼の名前はティラノサウルス。いつも、びくびくと逃
+げ回っているばかり……。ある夜、彼の目の前に光る
+赤い玉が落っこちてきて、そして語りかけてきました。
+There was a dinosaur who was wimpy, not strong in the least. His name was
+Tyrannosaurus. All he did was run away from everything, trembling. One night, a
+shining red orb fell before him and addressed him.
+
+『そこの恐竜君！いつも逃げ回ってばっかりでかわいそ
+うだから、きみの願いをひとつだけかなえてやろう！
+その玉を食べてごらん……でも、そのかわり……。』
+"Hey there, dinosaur! It's terrible that you're running away all the time, so
+you're going to get one wish granted! Just eat this orb! Or, if you prefer..."
+
+ティラノは大喜びし、それを食べてしまいました。『だ
+れにも負けない、最強のキバが欲しい！』と、願いな
+がら……。
+Elated, Tyranno wound up eating it. "I want the strongest fangs, fangs that
+won't lose to anyone!" he wished.
+
+それから長い年月がたち、恐竜世界を支配するように
+なった王様が、進化したあの弱虫ティラノだったので
+す。口には恐ろしいキバ、そして、その体には異様な
+までに不釣り合いな小さい手がありました……。
+Long years passed, and the king who came to rule the world of dinosaurs was that
+wimpy Tyranno, who had evolved. In his mouth were dreadful fangs, and on his
+body were peculiarly disproportionate little hands.
+
+Page 21
+
+恐竜はどこへいった？
+Where Did the Dinosaurs Go?
+
+ワニ、トカゲ、ヘビ、カメの４匹が話しをしてい
+ます。
+An alligator, a lizard, a snake, and a turtle were conversing.
+
+ワニ『今から6500万年前、ぼくら爬虫類の仲間だ
+　　　った恐竜達が、突然姿を消してしまった話し
+　　　はみんな知ってるよね？』
+Alligator: "We all know the story of how our fellow reptiles, the dinosaurs,
+            suddenly disappeared 65 million years ago, right?"
+
+トカゲ『うん。そんで、生き残った爬虫類は、僕
+　　　　ら４種類だけだって事も。』
+Lizard: "Yup. And that's why us four are the only surviving reptiles."
+
+ヘビ『なんで？　いなくなっちゃったの？』
+Snake: "They're all gone now? Why?"
+
+カメ『いろんな説があるらしいんだけど……、結
+　　　局、謎なんだって。』
+Turtle: "I suppose there are some theories... but ultimately, it's basically a
+         mystery."
+
+ワニ『生き残った恐竜の子孫はいないのかなー？』
+Alligator: "Aren't there any surviving descendants of the dinosaurs...?"
+
+そんな４匹の会話を、そばで聞いている鳥の親子
+がいます。
+To the side, listening to their conversation, were a family of birds.
+
+子供鳥『あっ！　知らないんだ！　それは、ぼくた
+　　　　ち鳥……』
+Baby bird: "Oh! Don't they know? It's us birds..."
+
+母さん鳥『シッ！　言っちゃダメッ！　その事は、
+　　　　　私たち鳥類だけの秘密ですよ！　さあ、行
+　　　　　きましょう。』
+Mother bird: "Shh! Be quiet! That's a secret for birds alone. Come on, let's
+              go."
+
+鳥の親子は４匹を眺めながら飛び去ってしまいま
+した。
+The birds flew off, and the four reptiles gazed after them.
+
+Page 22
+
+最強の哺乳類は？
+The Strongest Mammal?
+
+『見ろ！　あれが世界に君臨したティラノの姿かね？』
+洞窟の中から声が聞こえます。彼等はトリコノドン。
+哺乳類の先祖です。
+"Look! Isn't that Tyranno, the king of the world?" came a voice from inside a
+cave. These were Triconodons, ancestors of mammals.
+
+『恐竜達は、強くなることしか考えなかったら、あん
+なことになるのさ！　その点、僕らの、体毛を進化させ
+る努力は大正解！　これからは僕ら哺乳類の時代だい
+っ！』
+"Dinosaurs only thought about getting stronger, and now look where they are!
+Given that, we were completely right to work on getting our body hair evolved!
+And now, this age will belong to us mammals!"
+
+『いや、少なくともお前達のような哺乳類でないことは確かだ……。』
+"If nothing else, it sure won't be mammals like you..."
+
+トリコノドン達が後ろを振り向くと、そこには凶暴な
+哺乳類ハイエノドンが…。あっ！と言う間にトリコノ
+ドン達を食べてしまうと満足した顔で言いました。
+The Triconodons whirled around, and there they saw a Hyaenodon, a ferocious
+mammal. It ate up the Triconodons before they could blink, and said, with a
+satisfied look on its face:
+
+『いつの時代だろうが、力の強いものが生き残るのさ！
+ゲップ！』
+"Whatever age it may be, it's the strong who survive! *burp*"
+
+彼が、後ろ足で耳の裏をかこうとすると、ガツン！
+と、いきなり後ろからこん棒のような物でなぐられ気
+絶してしまいました。その後ろで、笑い声が聞こえま
+す。
+It moved to scratch its ear with its hind leg, when—*wham!*—it was struck from
+behind by a club-like object and collapsed. From behind it, there came a
+laughing voice.
+
+『あまいな！　これからは、頭の良い哺乳類が生き残る
+のさ！　ウッキッキー！』
+"Not good enough! It's big-brained mammals who'll survive now! *ukkikki*"
+
+Page 22
+
+エデンへ……
+To Eden...
+
+今、"エデン"に向かおうとしている、一匹の類人猿が
+います。その後ろには、彼を見送る多くの動物達が…。
+思えば、生命が誕生した35億年。生物達は進化と絶滅
+を繰り返し、弱肉強食の試練にも耐えながら、ついに
+エデンに行ける資格をもつものを生み出したのです。
+There came a day when an ape chose to head toward Eden. Behind him, seeing him
+off, were a multitude of animals. When he thought about it, it had been 3.5
+billion years since the birth of life. Creatures had evolved and gone extinct,
+time and again, as they suffered through the trial of "Eat or Be Eaten," and at
+last a creature qualified to go to Eden had been born.
+
+類人猿『僕にみんなの代表となる資格が、本当にある
+　　　　んだろうか？』
+Ape: "Could I really be qualified to act as a representative for all of you?"
+
+動物達『もちろん！　君には"知恵"という僕らにはな
+　　　　い力があるじゃないか。言い換えればそれは、ぼ
+　　　　くらの未来をきっと素晴らしいものに変えてく
+　　　　れる、希望の力でもあるんだよ。さあ、エデンへ！』
+Animals: "Of course! You have an ability called 'wisdom' that we don't, right?
+          Or, you could also say that it's the power of hope for a wonderful
+          future. Go on, to Eden!"
+
+類人猿がその姿をエデンに消した後しばらくして、空
+からやさしい声が響き渡りました。
+Soon after the form of the ape disappeared into Eden, a kind voice echoed forth
+from the sky.
+
+『今、エデンは開かれました！　あなた達は試練に勝っ
+たのです。おめでとう！』
+"Eden has been opened! All of you have succeeded in the trial. Well done!"
+
+動物達の間に歓声が上がりました。
+Cries of joy rose from among the animals.

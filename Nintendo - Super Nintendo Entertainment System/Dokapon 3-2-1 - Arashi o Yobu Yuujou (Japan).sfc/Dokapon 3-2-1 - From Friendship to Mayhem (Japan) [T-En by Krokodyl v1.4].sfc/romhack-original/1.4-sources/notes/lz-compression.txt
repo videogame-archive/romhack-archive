@@ -1,0 +1,38 @@
+0x112B2E
+Header 00 08 07		00000000 00001000 00000111
+	x800 : Bytes of decompressed data
+	x07 : # of bits for the size of repeated data
+	
+Compressed data 77 2A 00 2B 76 03 3A 00 3B
+
+77 : Flag byte (01110111)
+	 Represents the next 8 operations
+	 Read from right to left
+	 1 means write data (1 byte)
+	 0 means Repeat data (2 bytes)
+
+76 03
+
+
+77 2a 00 2b 00 00		2a 00 2b 2b 2b
+77 2a 00 2b 00 01		2a 00 2b 00 2b
+77 2a 00 2b 01 00 		2a 00 2b 00 00
+77 2a 00 2b 08 00		2a 00 2b 2b 2b 2b 2b 2b 2b
+77 2a 00 2b 04 00		2a 00 2b 2b 2b 2b 2b
+77 2a 00 2b 02 00		2a 00 2b 2b 2b 2b
+
+
+x02 = 00000010
+x08 = 00001000
+
+77			01110111
+2A 00 2B
+76 03		01110110 00000011
+3A 00 3B
+76 03
+Output : 
+
+2a002b002a002b002a002b002a002b00
+2a002b002a002b002a002b002a002b00
+2a002b002a002b002a002b002a002b00
+2a002b002a002b002a002b002a002b00

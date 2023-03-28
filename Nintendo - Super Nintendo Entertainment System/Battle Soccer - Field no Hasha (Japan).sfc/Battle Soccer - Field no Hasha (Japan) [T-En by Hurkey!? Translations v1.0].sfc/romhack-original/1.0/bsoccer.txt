@@ -1,0 +1,68 @@
+Battle Soccer - Field no Hasya (J)
+English translation v1.0
+© 2002 Hurkey!? Translations @ www.geocities.com/fartnugg/hurkey.htm
+                                ,_,
+                         '''   (O,O)
+                        (@ @)  (   )
+             +----oOO----(_)----"-"---+
+             |        Hurkey!?        |
+             |      Translations      |
+             |                        |
+             |  "Somebody has to do   |
+             |    the shitty games!"  |
+             +-----------------oOO----+
+                       |__|__|
+                        || ||
+                       ooO Ooo
+
+Version 1.0
+	-Initial Release
+
+Hey there.  Hope you guys enjoy it.. it's a fairly entertaining SNES game.  
+Your players can gain levels and you can recruit players from teams that
+you beat, which makes it interesting.  This is one of those games that 
+could have been better, but it's still pretty fun.  Anyway, let me know 
+of any bugs so I can fix them. 
+
+Thanks to the groups that translate the games that people actually give 
+a damn about! (DeJap, Aeon Genesis, RPGe, and all of you other translation 
+groups/individuals and emu authors out there.)
+
+-Fartnugg
+
+
+                         |----------------|
+                         | Known problems |
+                         |----------------|
+
+The splash screens that tell the player what "world" they're in are still 
+in Japanese.. for the life of me I couldn't find a way to edit it to look 
+good.  Oh yeah, and currently zsnes has some graphic issues near either 
+goal.  This isn't a problem with the translation, and hopefully it'll be 
+fixed in future versions.
+
+                      |-----------------------|
+                      | How to patch the game |
+                      |-----------------------|
+
+First, you need to get a good dump of Battle Soccer.  The easiest way would 
+be to check the rom with goodsnes (available at www.zophar.net) and make 
+sure that it is recognized as "Battle Soccer - Field no Hasya (J)."  Then 
+simply open SnesTool (again, available at www.zophar.net) and use the ips 
+on the unzipped rom.
+
+Alternately you can simply place the patch (named exactly like the rom
+except for the extension) in the same directory and load up the game.
+
+                            |---------|
+                            | Credits |
+                            |---------|
+
+A-KO					- Translator
+Fartnugg				- Rom guy
+SD-Tetsuo                               - Main Translator
+
+comments or corrections: 
+   fartnugg@hotmail.com
+           or
+  Fartnugg@Undernet #roms

@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-25",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 1310720,
+        "crc32": "cbc2e51b",
+        "md5": "843044b787e6c919437460cd7ba13508",
+        "sha1": "a673ef328cf2f9dc925fac4a0b9a37cf62bd163b"
+    },
+    "patches": [
+        {
+            "authors": [ "Ackman Translations" ],
+            "url": "https://www.romhacking.net/translations/363/",
+            "version": "1.0",
+            "releaseDate": "1999-12-20",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

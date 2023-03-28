@@ -1,0 +1,65 @@
+Dragon Quest 6 Translation by NoPrgress
+=======================================
+
+This is my fourth release.
+
+The included .ips file has been specially designed to correctly patch
+the original ROM, the 33% patched ROM released on 11/20/2000, the 75% 
+patched ROM released on 5/20/2001, and the 90% pathed ROM released on 
+8/7/2001. It will not work on ROMs patched with any of the DeJap .ips 
+files. If you're not sure which patch you have, apply it to an 
+unpatched ROM. 
+
+Any natural saves (Imperial Scrolls) from the 33% patch, 75% patch, or
+90% patch will work with this patch, and real-time saves wandering about 
+should still work. Real-time saves in battle, or where dialog or menu 
+windows are on the screen will probably not work. 
+
+
+
+This is a maintenance patch for the 90% patch release on 8/7. Only a
+small handful of the remaining untranslated strings have been 
+translated. Most of the changes in this release affect spelling/grammer 
+issues. Many thanks to all who submitted these errors. Special thanks 
+to Zeku for providing such a thorough list.
+
+This patch *should* be fully playable through the entire game.
+So what's left? Mostly scattered strings throughout the entire game
+and some of the random effects of certain battle skills (Goof-off 
+and Chance). 
+
+
+
+Here are the current translation stats:
+
+Dialog text:     ~93%
+Battle text:     ~80%
+Menu/item text:  ~95%
+
+
+
+This is my second official "beta" release. After I translate the 
+remaining strings and fix the remaining bugs, I will release a 
+"final" patch.
+
+
+
+To the best of my knowledge, there are still four issues/bugs:
+
+* Backing out of the Info->All option sometimes crashes the game.
+
+* Backing up through the equip windows makes the arrow disappear and
+  sometimes crashes the game.
+
+* Using a battle spell/skill where you have to target an enemy/group,
+  the spell/skill window behind the enemy list disappears.
+
+* You start out early with 'Recall', and later gain 'Remember',
+  'Forget', and 'Unforget'. I *have not* used any of these memorization
+  skills, so I don't know how accurately they are working (or 
+  translated). Many people have told me they seem to be working
+  correctly.
+
+
+
+-- NoPrgress - noprgress@yahoo.com - http://www.geocities.com/noprgress/

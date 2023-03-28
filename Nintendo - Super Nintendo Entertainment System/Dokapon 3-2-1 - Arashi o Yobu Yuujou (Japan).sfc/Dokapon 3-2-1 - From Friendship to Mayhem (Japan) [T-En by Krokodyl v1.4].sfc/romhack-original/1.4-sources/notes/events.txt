@@ -1,0 +1,17 @@
+HARVEST
+
+$80/C86A A7 20       LDA [$20]  [$A2:B215]   A:11A2 X:0024 Y:AFDC P:eNvmxdIzc
+$80/C86A A7 20       LDA [$20]  [$A2:BD11]   A:BDA2 X:0024 Y:CFDC P:eNvmxdIzC
+$80/C86A A7 20       LDA [$20]  [$A2:C714]   A:C7A2 X:0024 Y:EFDC P:eNvmxdIzC
+$80/C86A A7 20       LDA [$20]  [$9A:CCFA]   A:4000 X:0200 Y:AFDC P:eNvmxdIzc
+
+VILLAGE STRIKE
+
+$80/C86A A7 20       LDA [$20]  [$AB:88A6]   A:00AB X:0030 Y:AFDC P:eNvmxdIzc
+$80/C86A A7 20       LDA [$20]  [$B9:8000]   A:80B9 X:0030 Y:CFDC P:eNvmxdIzC
+$80/C86A A7 20       LDA [$20]  [$AB:A6F9]   A:A6AB X:0030 Y:EFDC P:eNvmxdIzC
+$80/C86A A7 20       LDA [$20]  [$9A:CCFA]   A:4000 X:0200 Y:AFDC P:eNvmxdIzc
+
+ストライキ (Sutoraiki) = Strike
+
+決行中 = in progess

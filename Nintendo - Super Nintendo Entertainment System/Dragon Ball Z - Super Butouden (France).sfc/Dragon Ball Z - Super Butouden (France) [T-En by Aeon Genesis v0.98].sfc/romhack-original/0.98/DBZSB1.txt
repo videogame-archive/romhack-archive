@@ -1,0 +1,37 @@
+Dragonball Z S.B.1 English Translation
+AGTP Version .95
+http://agtp.romhack.net
+draw_omega@yahoo.com
+
+-----------------
+Those Responsible
+-----------------
+Gideon Zhi - Romhacker, Translator
+Minh the Mystic Knight - Translator
+
+-----------------
+Stuff Done
+-----------------
+Taunts, scrolls, a few menus.
+
+-----------------
+Stuff Not Done
+-----------------
+Opening and ending :(
+
+-----------------
+Patching Instructions
+-----------------
+Go to your favorite emulation site and download SNESTool. Drop it, the
+patch, and the DBZSB1 ROM into the same directory. Then
+open SNESTool. If it's missing some extenders, you'll have to find 'em
+on your own. Once you get SNESTool running, select (Use IPS) then the
+.ips patch file, then the DBZSB1 ROM. You should now be patched.
+
+If you have the French one, use the dbzsb1f2e.ips patch. If you have the
+Japanese one, use the dbzsb1j2e.ips patch.
+
+-----------------
+If you find a bug
+-----------------
+Oh well. We probably know, and we'll fix it later.

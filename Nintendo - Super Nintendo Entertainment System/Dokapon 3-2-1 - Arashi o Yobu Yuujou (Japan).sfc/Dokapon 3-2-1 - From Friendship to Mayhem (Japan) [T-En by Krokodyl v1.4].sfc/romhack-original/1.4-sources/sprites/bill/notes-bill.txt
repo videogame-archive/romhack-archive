@@ -1,0 +1,41 @@
+x14EE47		00 12 04
+
+A9:EE47
+
+x23C3E		A0 A9 00 84 22 A0 47 EE
+			A0 BB 00 84 22 A0 00 C0
+			
+せーきゅーしょ
+se kiyu shiyo
+
+
+
+x16C085		AD:C085
+
+
+
+1DA000		00 A0 BB
+
+1DC000		00 C0 BB
+
+
+
+王様		King
+が		Subject marker
+喜んだ		v. to be glad
+の
+も		also, either, both, despite
+つかの間	moment
+けっきょく	eventually
+惜金ジゴクに
+はまりましたとさ.
+
+
+のかつやくによって石版がはかいされ
+王様が喜んだのもつかの間
+けっきょく,
+惜金ジゴクにはまりましたとさ.
+
+
+The litograph was destroyed thanks to the efforts of --NAME--.
+The king was pleased although he lost money in the end.

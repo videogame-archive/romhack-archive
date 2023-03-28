@@ -1,0 +1,14 @@
+DO NOT USE BOTH PATCHES; ONLY USE ONE. This version of the patch uses the vanilla command order of the original, Japanese FE5 - otherwise known as the "Top Wait" version.
+
+Project Exile updates FE5 to use a modernized command order, resembling the order of commands in FE7 and on, where "Wait" is at the bottom to prevent accidental input.
+
+This version is for people used to playing with the Shaya patch, or an untranslated ROM, who would be thrown off by the new command order.
+
+IF YOU'VE NEVER PLAYED THRACIA 776 BEFORE, I WOULD NOT USE THIS. "Wait" being at the top, among many other things, can cause you endless headaches if you're not already used to it.
+
+To install this, follow the instructions in the Readme, substituting this BPS for the other one. DO NOT USE BOTH PATCHES; ONLY USE ONE.
+
+Your ROM's checksums when using this version of the patch should be:                                
+ROM MD5       96E675EC7EF38696D1F5F189BA97270B        
+ROM SHA-1     63483C6C197A7F853DEB270467BF6B06AE5E1958
+ROM CRC32     EE25DEFB                                

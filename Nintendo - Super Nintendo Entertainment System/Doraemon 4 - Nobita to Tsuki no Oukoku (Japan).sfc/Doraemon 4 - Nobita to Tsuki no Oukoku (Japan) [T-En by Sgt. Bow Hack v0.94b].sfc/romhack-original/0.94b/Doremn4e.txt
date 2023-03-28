@@ -1,0 +1,39 @@
+Doraemon 4: In the (Very Huge) Moon Kingdom English Patch v0.94b
+
+Translation by Sgt. Bowhack
+Translated:
+-All text
+-Title
+-Signs in the levels
+-Maps
+-Baby bottle attack "Wa"
+-Option menu
+-Passwords (well, not exactly translated, but they're English.)
+-"Password", "Member Select" and "Option Menu" Graphics
+
+Things I haven't gotten to yet:
+-Title menu
+-Bonus game
+-Game Over/Contine screen
+
+Thanks go to:
+BigWierd- for X-Char (which I used for a lot of the graphics)
+Lord ESNES- for VISOR (which I used for some early graphics stuff)
+Necrosaro- for Thingy (which helped quite a bit)
+Flobbasko- for translating the title (which I had to cut to fit)
+Demi- for general support of my translations
+
+FAQ:
+Q: How does this thing work?
+A: Use a program that can apply IPS patches (uCON, SNESTool, IPS.exe)
+Q: How can I report bugs?
+A: E-mail me at bowhack@hotmail.com.  Also you can chat with me on
+ EFNet or Undernet.
+Q: Does this patch work on *your emu here*?
+A: Sure.  It works in ESNES (C gfx engine), SNES9x and ZSNES.  It
+ works best on ZSNES.
+Q: What do you plan on next?
+A: You'll find out when I decide.
+
+Disclaimer: This translation was not made by Epoch nor is it licensed.
+ Use this translation at your own risk.

@@ -1,0 +1,214 @@
+Ted Woolsey Uncensored Edtion Music Player Read Me
+by Madsuir
+--------------------------------------------------
+
+Four patches are available for those that wish to have the Music Player
+added to Woolsey Uncensored Edition. On all of them, you must apply a version
+of Woolsey Uncensored to an unheadered Final Fantasy III (U) (1.0) ROM 
+first. Then apply the Music Player afterwards. 
+
+Song data: 	  D4F680-D4FC88
+music player: C3F1E0~C3F550
+
+Patches included: 
+-TWUE - Music Player Config 1.ips - removes Mono from the Config menu in place of the player.
+                                    Mono still usable by turning off Stereo
+-TWUE - Music Player Config 2.ips - Uses a blank space in the Config Menu.
+-TWUE - Music Player Main Menu A.ips - modifies the main menu to utilize it, and
+				       is only compatible with the bug fix patches.
+-TWUE - Music Player Main Menu B.ips - older version of the Main Menu. Song locations in older location.
+				       Only apply this to versions of TWUE without bugfixes
+
+Song data: 	  D4F680-D4FC88
+music player: C3F1E0~C3F550
+
+Optional Patches included
+--------------------------
+FF3us Sound and SFX fixes for music player
+------------------------------------------
+released on 06/28/2017
+by madsiur and Gi Nattak
+
+Files
+-----
+nh: patch for headerless ROM
+ANTI: reverse patch
+
+Fixes
+-----
+A) Event Command $F6 and map SFX playing
+
+Patch: command_F6_sfx.ips
+  
+This patch fix the problem of sound effect that 
+would play too loud on map after a song played 
+in the music player. It also correct a similar
+problem with event command $F6. This ASM fix 
+require 19 bytes of free space in bank $C0.
+
+command_F6_sfx.asm can be assembled with xkas 0.06
+
+
+B) Tunnel to Lete River Silence
+
+Patch: lr_tunnel.ips
+
+This patch fix the problem of silence playing for
+a moment when exiting menu. It's an event fix. 
+However, the fix rise a new problem of sound being 
+too loud if tunnel is re-entered. This require two 
+event triggers on Lete River map at 30,49 and 31,49
+having as event F0 00 F6 10 1E 80 FE (see further 
+down for description and details). Since all event 
+triggers are reorganized, this fix was included on 
+its own but with previous information and following
+detail of event code you can make a DIY version 
+if needed.
+
+
+C) Lete River Cave Silence, Waterfall Cave Silence
+   Waterfall Cliff Silence, Veldt Cave volume Fix
+   
+Patch: caves_and_cliff.ips
+
+Same problem as above for those locations except 
+Veldt Cave. In this case, river sound will play
+full volume after exiting the music player. These
+4 fixes are simple event fixes that are regrouped
+in a single patch.
+
+
+Code
+----
+A) Event Command $F6 and map SFX playing
+
+See commented command_F6_sfx.asm
+
+
+B-1) Tunnel to Lete River Silence (old code)
+--------------------------------------------
+CB/0014: F6    Subcommand $10: Play song $1E (Waterfall) at volume $80 (may have other effects)
+CB/0018: D3    Clear event bit $1E80($1CC) [$1EB9, bit 4]
+CB/001A: B2    Call subroutine $CAFDB9
+CB/001E: B2    Call subroutine $CACB95
+CB/0022: 3B    Position character in a "ready-to-go" stance
+CB/0023: 31    Begin action queue for character $31 (Party Character 0), 3 bytes long (Wait until complete)
+CB/0025: C2        Set vehicle/entity's event speed to normal
+CB/0026: 82        Move vehicle/entity down 1 tile
+CB/0027: FF        End queue
+CB/0028: 59    Unfade screen at speed $08
+CB/002A: FE    Return
+
+CB/0462: F0    Play song 0 (Silence), (high bit clear), full volume
+CB/0464: F6    Subcommand $10: Play song $1E (Waterfall) at volume $64 (may have other effects)
+CB/0468: FE    Return
+
+CC/CBD2: 46    Make party 1 the current party
+CC/CBD4: 45    Refresh objects
+CC/CBD5: 42    Hide object $31
+CC/CBD7: 42    Hide object $32
+CC/CBD9: 42    Hide object $33
+CC/CBDB: 42    Hide object $34
+CC/CBDD: 45    Refresh objects
+CC/CBDE: 46    Make party 2 the current party
+CC/CBE0: 45    Refresh objects
+CC/CBE1: 42    Hide object $31
+CC/CBE3: 42    Hide object $32
+CC/CBE5: 42    Hide object $33
+CC/CBE7: 42    Hide object $34
+CC/CBE9: 45    Refresh objects
+CC/CBEA: 46    Make party 3 the current party
+CC/CBEC: 45    Refresh objects
+CC/CBED: 42    Hide object $31
+CC/CBEF: 42    Hide object $32
+CC/CBF1: 42    Hide object $33
+CC/CBF3: 42    Hide object $34
+CC/CBF5: 45    Refresh objects
+CC/CBF6: 46    Make party 1 the current party
+CC/CBF8: 45    Refresh objects
+CC/CBF9: 47    Make character in slot 0 the lead character
+CC/CBFA: FE    Return
+
+B-2) Tunnel to Lete River Silence (new code)
+--------------------------------------------
+// Regular Event
+CB/0014: EF    Play song $1E (Waterfall) at volume $80
+CB/0017: D3    Clear event bit $1E80($1CC) [$1EB9, bit 4]
+CB/0019: B2    Call subroutine $CAFDB9
+CB/001D: B2    Call subroutine $CACB95
+CB/0021: 3B    Position character in a "ready-to-go" stance
+CB/0022: 31    Begin action queue for character $31 (Party Character 0), 3 bytes long (Wait until complete)
+CB/0024: C2        Set vehicle/entity's event speed to normal
+CB/0025: 82        Move vehicle/entity down 1 tile
+CB/0026: FF        End queue
+CB/0027: 59    Unfade screen at speed $08
+CB/0029: FE    Return
+
+// Entrance Event (map $070)
+CB/0462: EF    Play song $1E (Waterfall) at volume $64
+CB/0465: FE    Return
+
+// Optimized function
+CC/CBD2: 46    Make party 1 the current party
+CC/CBD4: 45    Refresh objects
+CC/CBD5: B2    Call subroutine $CB39AC
+CC/CBD9: 45    Refresh objects
+CC/CBDA: 46    Make party 2 the current party
+CC/CBDC: 45    Refresh objects
+CC/CBDD: B2    Call subroutine $CB39AC
+CC/CBE1: 45    Refresh objects
+CC/CBE2: 46    Make party 3 the current party
+CC/CBE4: 45    Refresh objects
+CC/CBE5: B2    Call subroutine $CB39AC
+CC/CBE9: 45    Refresh objects
+CC/CBEA: 46    Make party 1 the current party
+CC/CBEC: 45    Refresh objects
+CC/CBED: 47    Make character in slot 0 the lead character
+CC/CBEE: FE    Return
+
+// Event used by the two new event triggers
+CC/CBEF: F0    Play song 0 (Silence), (high bit clear), full volume
+CC/CBF1: F6    Subcommand $10: Play song $1E (Waterfall) at volume $80 (may have other effects)
+CC/CBF5: FE    Return
+
+
+C-1 Lete River Cave Silence, Waterfall Cave Silence
+    Waterfall Cliff Silence, Veldt Cave volume Fix (Old Code)
+-------------------------------------------------------------
+// Lete River Cave (map $072)
+CB/047C: F0    Play song 0 (Silence), (high bit clear), full volume
+CB/047E: F6    Subcommand $10: Play song $1E (Waterfall) at volume $96 (may have other effects)
+CB/0482: 60    Change background layer $0F to palette $0B
+CB/0485: FE    Return
+
+// Waterfall Cave (map $09B)
+CB/C20A: F6    Subcommand $10: Play song $1E (Waterfall) at volume $80 (may have other effects)
+CB/C20E: FE    Return
+
+// Waterfall Cliff (map $09C)
+CB/C20F: F6    Subcommand $10: Play song $1E (Waterfall) at volume $BB (may have other effects)
+CB/C213: FE    Return
+
+// Veldt Cave (map $0A7)
+CB/C219: F6    Subcommand $10: Play song $1E (Waterfall) at volume $80 (may have other effects)
+CB/C21D: FE    Return
+
+C-2 Lete River Cave Silence, Waterfall Cave Silence
+    Waterfall Cliff Silence, Veldt Cave volume Fix (New Code)
+-------------------------------------------------------------
+// Lete River Cave (map $072)
+CB/047C: EF    Play song $1E (Waterfall) at volume $96
+CB/047F: 60    Change background layer $0F to palette $0B
+CB/0482: FE    Return
+
+// Waterfall Cave (map $09B)
+CB/C20A: EF    Play song $1E (Waterfall) at volume $80
+CB/C20D: FE    Return
+
+// Waterfall Cliff (map $09C)
+CB/C20F: EF    Play song $1E (Waterfall) at volume $BB
+CB/C212: FE    Return
+
+// Veldt Cave (map $0A7)
+CB/C219: EF    Play song $1E (Waterfall) at volume $80
+CB/C21C: FE    Return

@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "b41b0c91",
+        "md5": "22ec5c8988b37322db9bc7cd104a3e48",
+        "sha1": "d186be8bf682b347728191acc27f2498a67c57d1"
+    },
+    "patches": [
+        {
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Ian Kelley" ],
+            "url": "https://www.romhacking.net/translations/1063/",
+            "version": "1.00",
+            "releaseDate": "2006-10-21",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

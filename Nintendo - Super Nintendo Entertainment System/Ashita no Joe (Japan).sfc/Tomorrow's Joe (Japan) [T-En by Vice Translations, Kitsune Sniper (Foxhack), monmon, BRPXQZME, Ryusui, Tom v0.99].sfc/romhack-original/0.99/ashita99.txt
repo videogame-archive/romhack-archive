@@ -1,0 +1,110 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Tomorrow's Joe
+  English Translation Patch
+  Version 0.99
+
+  Created by Vice Translations
+              http://www.foxhack.net/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CONTENTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1 - Version History
+
+2 - Credits
+
+3 - Mini instruction thing
+
+4 - Notes
+
+5 - Disclaimer
+
+6 - Trademarks
+
+
+--------------------------------------------------------------------------------
+1 - Version History:
+--------------------------------------------------------------------------------
+Version 0.99 - May 8, 2008 [Patch size: 3341 bytes]
+ Took me long enough. This translation is 99% finished - the only
+ thing left to do is the attract screen. The game's original title
+ shows up scrolling from right to left. I can edit the tiles that
+ make up the logo, but I have no idea how to change the layout,
+ so I just left it alone. The game is fully translated otherwise.
+ 
+What's left:
+------------
+ The attract mode.
+ 
+--------------------------------------------------------------------------------
+2 - Credits
+--------------------------------------------------------------------------------
+ Kitsune Sniper
+  Game hacking
+  Email: kitsune_sniper [at] parodius [dot] com
+
+ Monmon (at MO's old board)
+  Main translator
+
+ BRPXQZME, Ryusui, D.D.S.
+  Additional translation support
+
+
+--------------------------------------------------------------------------------
+3 - Mini instruction thing:
+--------------------------------------------------------------------------------
+DPad left / right: Move left / right
+
+A: Punch
+Forward + A: Medium Punch
+Back + A: Strong Punch
+Up-forward + A: Uppercut
+Down-forward + A: Body blow
+
+B (without holding a direction on the DPad): Block
+Down + B: Lower guard
+Down + B: (when guard is lowered) - restore guard
+Left + B: Dodge high punches
+
+Down-right twice on the DPad: Crouch
+Up + A while crouching: Strong Uppercut
+
+Start: Pause
+
+--------------------------------------------------------------------------------
+4 - Notes:
+--------------------------------------------------------------------------------
+ The patch must be applied to an Ashita No Joe rom with a header.
+ If you're too dumb to understand this, well, that's your problem.
+
+--------------------------------------------------------------------------------
+5 - Disclaimer
+--------------------------------------------------------------------------------
+  There is no videogame company or any other company associated with
+  Vice Translations [be it current or former members]. In no event shall
+  Vice Translations be liable or responsible for any damages that may
+  occur from direct, indirect or consequential results of the ability or 
+  disability to use or misuse any material it provides.
+  
+  In other words, you'd better own the cart for the rom that you're patching
+  [insert hysterical laugh here], and if something goes wrong, don't blame me!  
+
+  Also, this patch must never be distributed with the rom. The zip file must not
+  be modified in any way, including [but not limiting to] archive renaming,
+  adding a file to the original zip [like a file that indicates where you got
+  the zip file], and the like. And please DO NOT DISTRIBUTE THE PATCHED ROM.
+
+  Game reproductions using this translation patch ARE allowed, as long as
+  there is very little profit involved. So selling copies of this game on eBay
+  isn't kosher, but making repros is fine.
+  
+--------------------------------------------------------------------------------
+6 - Copyrights
+--------------------------------------------------------------------------------
+  Ashita No Joe (the manga) is copyrighted to Asao Takamori and Tetsuya Chiba.
+  Ashita No Joe (the game) is copyrighted to WAVE / K. Amusement Leasing Co.
+ 
+  Patch (C) Kitsune Sniper.
+  Patch not for sale or rental.

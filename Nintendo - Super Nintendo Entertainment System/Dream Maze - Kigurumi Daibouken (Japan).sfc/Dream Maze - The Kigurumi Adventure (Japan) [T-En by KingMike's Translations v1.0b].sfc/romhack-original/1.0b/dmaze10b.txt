@@ -1,0 +1,117 @@
+Dream Maze - The Kigurumi Adventure
+v1.0 beta
+December 24, 2004
+KingMike Translations (http://www.emuxhaven.net/~kingmike/index.html)
+
+***********
+INTROUCTION
+***********
+Dream Maze is a first-person RPG. Possibly the most bizzare first-person RPG released on the
+system. In this game, you play as the hero who is destined to relive one dream over and over
+again until he destorys the demon Akumu, who has enslaved the four princesses and the Queen of
+the world of Enderia. Also, the stuffed animals and toys of the world have become possessed.
+If our hero hopes to destroy Akumu, he will need to beat up the stuffed animals, and take the
+clothes, called Kigurumi, that are left behind. When putting on a new suit, at one of the
+Changing Rooms located throughout the land, his offensive and defensive abilities will change,
+hopefully for the better. With a strong enough costume, our hero, and his two allies, will be
+able to fight back and rescue the princesses and the Queen from the demon Akumu.
+
+****
+TEAM
+****
+KingMike (http://kingmike.emuxhaven.net)
+ - programming
+PLN (http://silver.emuxhaven.net)
+ - main translation
+The visitors of MO's board (http://donut.parodius.com/MO)
+ - various translations
+
+Also a big thanks to the authors of the tools used:
+ xkas, written by byuu (http://setsuna.the2d.com)
+  - priceless assistance with inserting ASM modifications
+ SNES9X Tracer
+  - adaptaion of SNES9X done by Evil Peer to allow tracing (finding and debugging assembly-
+    level hacks)
+ FEIDIAN (http://feidian.sourceforge.net), written by Mr. D (http://d.the2d.com)
+  - used for dumping/inserting the title logo
+
+ Emulators used for early testing:
+  - ZSNES (except one of WIPs that killed my SRAM :P)
+
+*********************
+PATCHING INSTRUCTIONS
+*********************
+The proper ROM is 1 megabyte, no header. Grab SNESTool and delete the header if it exists.
+For Windows, download LunarIPS, from http://fusoya.cg-games.net). It's very self-explanatory.
+
+****************
+EMULATION ISSUES
+****************
+None that I know of.
+
+***************
+WHAT'S NOT DONE
+***************
+A couple minor menu bugs (a couple menus where moving and expanding the box wasn't enough).
+My hack drops the window borders.
+Also, I haven't finished the game yet myself, but I played most of it. I intend to finish it
+soon and get any remaining text bugs fixed.
+Also, I know the level-select screen text is ugly as hell, but SNES9X Tracer kinda crapped out
+on me for the moment, so I had to modify the text without be able to adjust the tilemap, creating
+a quality hack.
+
+*****************
+PLAY INSTRUCTIONS
+*****************
+In this RPG, you don't waste time building levels. Instead, when you defeat certain stuffed animal enemies, they will drop their clothes, called Kigurumi (easy there, sick-o! :P).
+You can then use the menu to check it's stats. Compare it to your current costume. If you like the changes, get to the nearest changing room and put the costume on.
+SIZE - affects who can wear the costume. Medium is for the main character. Small is for
+Harumi. Large is for Zachary.
+LEVEL - I guess the lower the letter, the better overall the Kigurumi is.
+PUNCH - The strength of the Kigurumi's punches.
+KICK - The strength of the Kigurumi's kicks.
+DEFENSE - You guessed it. Take less damage with a higher number.
+AGILITY - The faster character goes first.
+TALENT - A special ability granted by some suits.
+  FIRE - Attack all enemies in a horizontal line.
+  BLIZZARD - Attack all enemies in a line. Damages the enemy, and stops them for 3 turns.
+  THUNDER - Attack all enemies in a horizontal line. Any other effects?
+  SLEEP - Enemies are stopped for 3 turns.
+  POISON - Punch, Kick and Defence are dropped.
+LUCK - I think it affects the chance an enemy will miss.
+Kigurumi doesn't affect Luck (or Max HP for that matter). Use Luck Up to boost Luck by 10.
+Use a HP Maximizer to raise one person's max HP by 10, or Mystery Elixer to raise everyone's
+ max HP by 10.
+
+PLACES IN THE MAZES:
+ Healing Room - Recover all HP (and status?) for 10 candies.
+ Tool Shop - buy items. Depending on the tower and floor, the goods vary.
+ Changing Room - Change the Kigurumi worn.
+ Tailor - Deposit or withdraw up to six Kigurumi. You can also custom order a Kigurumi, which
+  allows you to mix punch, kick, defence, agility of multiple Kigurumi into your current
+  suit.
+ Beanstalk - Functionally equivalent to stairs.
+ Magic Carpet - Functionally an elevator. Floors available depend on which floor you entered
+  on.
+ Map Shop - Pressing X allows you to see your position on the current floor, but you won't be
+  able to see the room layout unless you find the Map Shop for the floor and pay 10 candies.
+ Exit - go to map screen. Use arrows to choose a tower to enter. Press A to zoom down. Press
+  A again to confirm entry, B to cancel.
+
+CONTROLS
+ Up - Walk forward
+ Left/Right - turn
+ Down - turn 180 degrees.
+ L/R - move sideways.
+ A - Open menu, confirm selection
+ B - Cancel
+ X - show map, show items held when in a store
+ START - skip intro
+ SELECT - change page on name screen
+
+*********
+COPYRIGHT
+*********
+Dream Maze - Kigurumi no Daibouken is (c)1994 by Axes Art Amuse and Hect.
+English translation provided by KingMike (c)2001-2004, and PLN (c)2004.
+Do not distribute this patch with ROM, either included, or already merged together.

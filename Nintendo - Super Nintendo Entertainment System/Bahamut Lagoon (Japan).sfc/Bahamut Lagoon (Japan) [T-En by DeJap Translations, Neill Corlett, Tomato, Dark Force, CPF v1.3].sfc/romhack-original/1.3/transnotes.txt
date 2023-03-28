@@ -1,0 +1,856 @@
+Bahamut Lagoon - Translation Notes by Tomato
+---------------------------------------------------
+
+
+  I. About
+  --------
+  I'm including a bunch of comments and notes about my translation of the
+  text in Bahamut Lagoon for various kinds of people, including: fellow
+  game translators, people who are curious about how I translated BL,
+  people who like to say good things/bad things about translations based
+  on REAL facts (all too often I'll hear things like "Chrono Trigger
+  translation sucks, a friend told me so" - which is utter nonsense).
+
+  Be sure to check out my Bahamut Lagoon site at
+  http://starmen.net/tomato/bahamut for any updates I may make to my
+  translation notes (and other BL-related stuff).
+
+
+  II. Quick Background
+  --------------------
+  I've translated about 12 or so other games, including big ones like
+  Star Ocean and Live-A-Live (although I only did a portion of the latter).
+  I've also translated manga, Japanese TV shows, short stories, and a novel.
+  Oh yeah, if anybody in the game/game translating industry is reading this,
+  I'm looking for a job, so contact me sometime.  Of course the likeliness
+  of somebody from a real company actually playing this translation AND
+  reading this text file is pretty slim, so I'll probably be selling Slurpees
+  for the rest of my life.
+
+
+  III. Quick Translation Overview
+  -------------------------------
+  My goal with Bahamut Lagoon was basically this: To translate stuff better
+  than a lot of the bland commercial translations out there, but not as
+  over-the-top as a lot of the fan translations turn out.  I wanted to be
+  somewhere in the middle ground.  I don't take too many liberties with the
+  text, but I do at least try to make people talk in their own unique ways.
+  There are going to be lots of weird sounding parts (the intro to Chapter 15
+  comes to mind instantly) but I think most people will really enjoy my
+  translation decision.  At least that is my hope, anyway.
+
+
+  IV. History
+  -----------
+  I won't go into the messy details and re-open old wounds, but I started
+  translating BL's text at the end of May 2001.  I finished the initial
+  translation a few weeks later, before I jumped onto the Star Ocean
+  translation.  The project lay dormant for about 5 months after that as a
+  bunch of stuff happened (mainly real life, Star Ocean, and other projects).
+  Then, I took up script editing in late November and early December.
+
+  I then took a 2 and a half month break to translate a book.  When I was
+  done, I went back to finish BL editing.  Because of this long break, there
+  were a bunch of inconsistencies in characters' style of speech.  I think
+  I've ironed out most of these, but if you see anything that seems out of
+  character, you now know the reason why.
+  
+  I finished script editing in March or April. Altogether, I'd say I easily
+  put 150 hours, at the very least, into the translation and editing.
+
+  Around this time, Dark Force (from DeJap) was kind enough to take Neill
+  Corlett's place as the main ASM hacker.  He worked 8+ hours per day on it,
+  for probably a little over 2 and a half months.  We all put in a lot of
+  work to get the project to where it is today.  And now you are reading
+  this.
+
+
+  V. Character Personalities, Etc.
+  --------------------------------
+  This section is a little long and probably boring. But if you're wondering
+  why some of the text sounds bland or stiff, that was done on purpose. Both
+  Sendak and Taicho talk kind of weird, please refer to them in this list.
+  This isn't even a complete list of the characters in the game.  Keeping
+  track of everybody was hard.  Especially after that long break halfway
+  through editing.
+
+  * Byuu - Here's Byuu, the main character.  I don't think he has any
+           dialogue of his own, save perhaps for choices you're allowed to
+           make when responding to people.  I didn't really do much with that
+           text though, other than making it sound normal.  I had to get each
+           text choice on its own single line, so there were 1 or 2 times
+           where I had to struggle to keep the text sounding the same as the
+           original.  Just one of those technical issues game translators
+           have to live with.
+ 
+  * Yoyo - Here's Yoyo, the princess of Kahna, and the so-called "Dragnar".
+           I actually have a lot to say about the title "Dragnar", but I'll
+           talk about that later.  Anyway, one of the weak points of this
+           game's story is definitely in Yoyo's character, at least in my
+           opinion.  She's just plain stupid, and although that's not a
+           problem in the plot, her dialogue and stuff was so stupidly
+           written I wanna barf.  She's like this mega idiot blonde girl, she
+           gets kidnapped and is scared of her powers.  I dunno, you'll just
+           have to see for yourself how uncreative the writers were.
+
+           Anyway, I didn't have to try too hard to bring across her
+           ditziness.  She does talk like a girl though, so I tried to bring
+           that forth - but if you ask specifically how that is done, I can't
+           answer very well.  Not all girls talk similarly in English so I
+           tried the best I could.
+
+  * Palpaleos - Palpaleos is a general of the Empire, and Emperor Sauzer's
+                best friend.  He plays a big part in the plot, but his
+                dialogue isn't all that spectacular, and the way he talks
+                isn't all that out of the ordinary, so I basically just tried
+                to make his text sound natural.  Of course, everybody talks
+                different depending on who they're talking to, who else is
+                with them, etc., so when I say I tried to make it sound
+                natural, I mean depending on each situation.
+
+  * Sendak - Sendak's an old man (yes, he's a man for those who have doubts).
+             He's kind of like an old advisor for the king and Yoyo.  Being
+             an old man, he speaks in a definite old-man manner in the
+             original Japanese.  It's hard to bring that across in English
+             without using voices, so I tried to first draw out his sentences
+             as much as possible, since old people do tend to ramble on a
+             lot.  Luckily, this fits in with another quirk in his
+             personality - that he rambles and complains a lot.  He also
+             talks/thinks to himself a lot.  To help accentuate his
+             rambliness I decided to not let him use many contractions in his
+             speech. Whether or not this was a good idea I don't know, but I
+             tried to be consistent at least.  I did let him use contractions
+             when he was talking to himself though. He seemed very self
+             concious and it just seemed fine to have him talk like that.
+
+             And yeah, I don't know what's up with him, he does seem a little
+             too attached to Byuu.  I'll leave any inferences to the player.
+             Especially the... one scene.
+
+  * Matelite - Matelite is the head of the knights of Kahna from what I can
+               tell.  He's a big loudmouth and rude.  These kinds of
+               personalities are always fun to try to translate, because it's
+               at least possible in English translations. In contrast to
+               Sendak and Taicho, I let Matelite use lots of contractions and
+               quicker-sounding speech.  I'm sure most people won't notice it
+               anyway, though. For the most part, the content of his dialogue
+               makes up a big part of his personality, the way he says it is
+               only the icing on the cake.  I like to think I did a reasonble
+               job with him, though I'm sure some would want to disagree.
+
+  * Bikkebakke - Bikkebakke, Rush, and Truce apparently were all just barely
+                 surviving before Byuu let them into Kahna's dragon squad.
+                 Because they're so similar in character and always hanging
+                 around each other, I tried to keep the styles of all three
+                 pretty close together.  And since they're kind of young and
+                 not especially intelligent, I try to have them talk kind of
+                 quick, and with lots of contractions and things like
+                 "gonna".
+
+                 Bikkebakke himself looks up to Byuu, almost as kind of an
+                 older brother. He often refers to Byuu as "aniki" in the
+                 Japanese version, but that shows familiarity more than
+                 anything else, in this case (IMHO).  Because of this word,
+                 some people who don't know a whole lot of Japanese think
+                 Bikkebakke is Byuu's little brother, but this is not true.
+                 Watch out for people who pretend to know Japanese.
+
+  * Rush - Rush hangs around Bikkebakke and Truce a lot.  He's really
+           headstrong, and doesn't like to think too much.  Hence the name, I
+           suppose.  Anyway, he reminds me of a hyperactive kid in his late
+           teens, so I tried to make him come across as such.  Hope it
+           worked.
+
+  * Truce - Truce.  It took a lot of time to pin down a good transliteration
+            of his katakana name, but I think this is most likely what it
+            should be. I've seen people call him Tulus or Toulouse or Taurus,
+            but I don't think any of them are quite right.
+
+            Truce seems to be the less hyper of the three, to me at least.  I
+            hope this comes across.  I'm worried a lot about inconsistencies
+            in his language that might creep in. In old, old versions of the
+            script he talked a little too stiff.  If this is still anywhere
+            in the script, it'd be in the first few chapters. Hopefully I
+            eliminated these inconsistencies.
+
+  * Taicho - Taicho is/was the captain of the army of Mahal.  Unfortunately
+             the Empire kicked the crap out of them and now Taicho is out of
+             a job, home, and wife.
+
+             Taicho's dialog style was difficult to decide on.  In the end, I
+             decided that since he's a captain, and since he ends everything
+             with "de arimasu", that I should make him sound like a
+             stiff-talking army guy.  So his text will sound really stiff.
+             I'm betting that people who don't realize this purposely-made
+             decision of mine will chalk up his stiff-sounding text to a bad
+             translation/translator and/or bad editing, but they don't know
+             the truth.
+
+             At any rate, I'm concerned the most about Taicho's dialog,
+             because there were some major inconsistencies in his text in
+             early chapters in early versions of the script.  If he suddenly
+             starts talking normal, let me know, because he's not supposed to
+             sound normal.
+
+             One of the main things that is lost in translation if his text
+             is his "de arimasu". It's kind of like his signature "word", but
+             in translation that word is lost.  Normally that might not be so
+             important, but there are a few times when people are making fun
+             of him, or when he's talking and the game doesn't tell you he's
+             talking, you can just tell it's him from the "de arimasu".  But
+             in translation that's gone, so it makes things harder. I've
+             tried my best to keep things working, but this is just one of
+             the problems any translator will have to face.  I could always
+             go the Pokemon route and have him say "Taicho Taicho!!" at the
+             end of every sentence, but then I would have a mob and the
+             flaming torches and the biting and the kicking...  And the
+             Mini-Devils already talk like that.
+
+  * Gunso -  Gunso is a heavy-armor knight under Taicho.  He apparently has
+             some weird scratching problem - I'll leave any possible reasons
+             up to the player.  I tried to keep his dialogue between normal
+             and Taicho-level stiffness.  It varies but not by a whole lot.
+
+  * Barclay - Barclay is another heavy-armor knight under Taicho's command.
+              His text is a little less stiff than Taicho, because of little
+              side-story stuff that happens later in the game.
+
+  * Anastasia - Didn't do a whole lot with her character, as she has VERY few
+                lines in the game.  I just made her sound normal.
+
+  * Diana - Same as Anastasia, I didn't do a whole lot with Diana's text.
+
+  * Ectarina - Ectarina seems like a shy girl, and very unstable.  So I tried
+               to bring that forth.
+
+  * Frederica - She seems to be way too hooked on medicine. I tried to at
+                least make her sound like it, although in reality I didn't
+                have to do much.
+
+  * Joy - Um, there's not a whole lot to say about her.  She serves the queen
+          of Campbell, so when she DOES talk I try to make her sound elegant
+          and/or official, but she doesn't talk a whole lot.
+
+  * Melodia - Melodia is a little girl.  It's pretty easy to make people
+              sound like little kids, because we have little-kid talk in
+              English too.She hangs around the Mini-Devils a lot, and in a
+              way she even looks kind of like them (not so much in battle
+              though). I think I did okay with her text, though there might
+              be a few places where I could have made her sound more kid-like
+              than I did.
+
+  * Nelbo - Just like Joy, Nelbo serves the queen of Campbell, and as such I
+            tried to make her fit that character in her dialogue.  Of which
+            there is VERY little of.
+
+            Anyway, Nelbo = :) IMO
+
+  * Zora - Zora's an older woman, and I guess she serves Princess Yoyo. She
+           isn't all that graceful or anything, and she's pretty rough.  She
+           yells at people a lot, not to mention occasional physical
+           violence.  I tried to bring this coarseness out. She's a mother of
+           one of the other characters, so I tried to make her sound like a
+           strict, middle-aged mother.
+
+  * Lukia - Lukia is a light armor knight.  She's kind of playful in a
+            kissy-kissy sort of way. I think you know what I mean. Anyway she
+            also seems like a big loudmouth to me so I tried to put that into
+            her dialogue.
+
+  * Jeanne - I don't know a whole lot about Jeanne, but people mention she's
+             sort of tomboyish in the game, so I tried to make her sound like
+             that.
+
+  * Mist - She's constantly bragging about her good looks and talking to
+           herself about how beautiful she is.  I didn't do too much with
+           her.  She's also a secret character, for those who are paying
+           attention.
+
+  * Reeve - Reeve is a Lancer. Together with his friend Frenze, he does a
+            lot of showing off of his lancing skills.  I had a hard time
+            figuring out what to name him and Frenze, but these seemed the
+            best.
+
+  * Frenze - Frenze's name was hard to figure out too.  In the end I'm glad I
+             chose this one, it's short and isn't too funky.  Character-wise,
+             he's just like Reeve, so there's not much to say.
+
+  * Donfan - Donfan was my favorite character to work on.  Translating his
+             text was hell, but making it sound good was real fun. I'm sure
+             most people will agree a lot of his scenes throw in a lot of
+             much-needed humor to break up the over-dramatic monotony of the
+             story.  Maybe it'll make some people laugh out loud even.  I'd
+             be real happy if it did.
+
+             Anyway, the first thing I should point out that his name in
+             Japanese can be seen as a rendition of "Don Juan".  He certainly
+             fits the character, sort of.  The reason I chose Donfan was
+             two-fold: that was what I called him from the start, and
+             changing his name later on would suck, and the name "Don Juan"
+             doesn't fit too well in this game, in English, IMO.  Of course,
+             calling him Donfan isn't exactly wrong either, it's a perfectly
+             allowable rendition of his katakana name.  In the end it's just
+             a choice the translator will have to make, and I chose Donfan.
+             I think most people will like this one better. And if not, they
+             should stick bananas in their ears.
+
+             I tried to make his speech really wild and corny.  I hope people
+             appreciate his text style.  My only concerns are that maybe
+             early in the game his style will be slightly inconsistent with
+             his style later in the game. I'll hopefully have had that fixed
+             up by the final patch.
+
+             Also there's his trademark line, it's a bugger to translate.
+             Ah well.  I'm pretty sure my translation of "such is the way of
+             the world" is WRONG.  I'm fairly certain "that's what I'm here
+             for" or "that's my job" is closer.  But I think I'll keep it as
+             is until I can take a break and look at it again with clearer
+             eyes. If that makes sense at all.
+
+  * Zora's Son - Zora's Son doesn't give his name (right away), probably
+                 because having Zora for his mother really screwed him up in
+                 the head.  Character-wise, he seems like a kind of innocent
+                 guy who had the unfortunate luck of having a real monster of
+                 a woman for a mother.  So he's kind of timid, and I tried to
+                 put that into his text.
+
+  * Manyo - Manyo is one of the Mini-Devils.  There's not a whole lot to say
+            except these guys are weird.  I think they're really into death
+            and praying to gods of death and stuff.  Actually you don't know
+            about that until maybe midway of the game.  When I got to that
+            text I was like, "WTF."  Anyway, my only decision was how to make
+            the text in parentheses sound - should I make it sound weird,
+            like caveman talk, or just normal, like normal subtitles? In the
+            end I chose to do a little of both.
+
+  * Monyo - See above. Nothing special here.
+
+  * Munyo - See above again.  Bleh.
+
+  * Wagahai - Wagahai's a Mini-Devil who thinks he/she is better than the
+              others.  I'm not quite sure about a couple lines this
+              Mini-Devil says inside the ship (you'll see what I mean, I need
+              to analyze those lines more), but this Mini-Devil is definitely
+              proud.  So the other Mini-Devils eventually get fed up with it,
+              and then.... you'll just have to play ;)
+
+  * Sajin - Sajin is a ninja-for-hire.  He doesn't say a whole lot, so I
+            didn't put a whole lot of effort into making him his own style.
+
+  * Zeroshin - Zeroshin is another ninja-for-hire.  He's extremely shy, and
+               always writing letters back to his mother.  I didn't need to
+               do much with his text, the content of his text speaks for
+               itself most of the time.
+
+
+  VI. Naming
+  ----------
+  People like to think that translating non-dialogue stuff is real easy.
+  Like translating item names, monster names, etc. They're actually MUCH
+  harder than dialogue. It just seems easier to beginners because they're
+  single words. But a lot of items, spells, monsters, and the like are
+  made-up names, or names based slighly off a real word, but aren't real
+  words themselves.  Or, names which are originally neither Japanese nor
+  English. BL had a lot of these words. There was a bit of German influence
+  on this game.  A lot of items and enemies were based off of World War I and
+  II terminology.  Others were of historical and religious significance,
+  which I also had to research.
+
+  A lot of work went into figuring out these item names. But there were a
+  few lost causes. In these cases, I tried to come up with a good equivalent
+  that would make sense to English speakers.  So if anybody wants to complain
+  about how I named things, you can't say I didn't put a lot of work into it.
+  But I make mistakes too, so if I did make any, please let me know.
+
+  Somebody once came up to me and said that all the character names in BL
+  were supposed to represent who they are. For example, Rush.  His name
+  sort of signifies who he is. Also, there's Taicho, which literally is a
+  sort of military commander, and Gunso, which is literally a sergeant.
+  So this person also pointed out that the main character should be called
+  "View" not "Byuu", since he gets to "view" all that happens in the game.
+  I don't buy this.  What about Sendak? Matelite? Palpaleos? Just doesn't
+  work. But I thought I'd throw this in for people to ponder over.
+
+  Some of the chapter titles are kind of corny/weird, but I'm not going to
+  change them just because they sound weird.  The one I have the most problem
+  with is "Full of Regret". I should probably have translated it some other
+  way, because "regret" doesn't seem to be the right word in this context.
+  The title comes from a line Matelite says in the chapter, but again, regret
+  doesn't seem to be quite the right word. But it still makes sense overall.
+
+  Many of the default dragon names are slightly different. Byuu's dragon is
+  Salamander in the original, but that doesn't fit in 8 characters, so we
+  dropped it down to Salmando.  Icedrake was originally Icedragon.  Thundera
+  or whatever we called it was originally Thunder Hawk. What we have as
+  Molten would probably sound best as Morten, IMO, but that was one of the
+  things I conceded to DF. His reason for calling it Molten was because it
+  would be the fourth element earth since the other 3 fire/thunder/water were
+  used on the other dragons. The flagship's name was originally Fahrenheit,
+  but we had to make it fit within 8 characters, so now it's Farnheit. You
+  can always change these names to whatever you like; you get to name your
+  dragons and your ship near the beginning of the game.
+
+  In regard to "Dragnar", let me say this. From the katakana, Dragnar is the
+  most likely English spelling. I used it in all my early scripts. I didn't
+  like it very much, so I changed it to "Dragoner" in an edited script,
+  mainly because other groups were calling it different things, and because
+  people on message boards were calling it by that too. But after a while,
+  I changed my mind again, and put it back to Dragnar.  I'd rather choose a
+  name because of what the game says and what I think than because of outside
+  influences. So now it's "Dragnar" again. Plus, it has that sort of exotic
+  feel that the original Japanese word has. Dragoner just doesn't sound all
+  that exotic.
+
+  Some item names were practically impossible to translate. The biggest
+  culprit is "Drawer Thing", which is the closest rendition I think anybody
+  can really make. It's a "thing" in a "you-know-what" type of sense, at
+  least that's the original's meaning. "an item from a drawer - you know
+  what it is."  Another is Uniuji - I don't think this is "Sea Urchin Grub"
+  but just another made up name. "Uni" shows up a lot in this game, so I
+  think Uniuji is just another extension of that.
+
+
+  VII. Editing
+  ------------
+  I did all of the dialogue editing myself. So if it sucks, blame me. Dark
+  Force helped to do some of the in-battle text, map dialogue, and other
+  little things. I didn't always agree 100% with his decisions, but I'm still
+  very happy with how things turned out.
+
+  Editing took me probably 2 months total. I wrote a custom text previewer
+  application (which was pretty sucky), and went through every single line
+  of text to make sure the text was formatted correctly. If it wasn't
+  formatted correctly, the game would crash and it wouldn't work. There's a
+  slight chance there may be a line or two in the game that will overflow
+  the box and freeze up the game, but if there are any of those lines, I must
+  have missed them in my testing.
+
+  Since the game is so linear, I went through each chapter and edited the
+  text as I played. I would edit a chapter's text, insert it into the game,
+  try it out, then re-edit and reformat to sound better.  I would then test
+  this newer text and re-edit it again. I did this time after time after time,
+  for each and every chapter. I played the game so much it was disgusting.
+
+
+  VIII. Miscellaneous
+  -------------------
+  To answer one of the most-likely questions: Yes, the game is that perverted
+  in the original version.  I made sure not to go overboard, but I made sure
+  not to be too cautious.
+
+  Speaking of cautious, one of the big changes I was *going* to make was with
+  the word "drug" that appears all throughout the game. In English, the first
+  thing that word brings out is "illegal narcotic", which is not exactly how
+  it is in Japanese. Because of this cultural difference, I was going to
+  change all the instances of "drug" to different things like "Tonic", "Heal",
+  etc. so that they would make sense in context. I can just see the little,
+  immature teenagers making bad jokes and giggling about items like
+  "High Drug" or "White Drug" or "Drug Hit" or "Heal Grass" or whatever else
+  there is. In the end, though, I just decided, screw that, I'm not gonna
+  change it, people would just call the translation sucky if I changed it,
+  and it'd just take more time which I can spend sleeping.
+
+  Originally the font was the same one as in Neill's SD3 translation, but
+  since this game looks so much like FF6, I wanted to go with FF3us's font.
+  I had to slightly modify a few of the larger characters, like w and m,
+  but in the end it looks real slick. Very professional looking.
+
+  For those people who like to play games a zillion times and find all the
+  smallest secrets, check out the checklist at my BL page. It lists
+  some hard-to-find stuff, some of which is stuff we added and/or slightly
+  changed (changed is such a harsh word).
+
+  As for "Holy Dragons", this was a difficult decision. Certainly, these
+  dragons are not of a holy nature. Dragon Gods was another possibility, but
+  it just didn't seem quite right to me. Divine Dragons was another choice,
+  but that sounds pretty funky, to me at least. It was a hard decision but I
+  chose Holy Dragons in the end, because I had to choose *something*.
+
+
+  IX. End
+  -------
+  That's all for my little BL translation notes file.  I'm sure I'll think of
+  stuff to add to it later, so if you're one of the weird geeks who has read
+  this far, and you happen to be interested in this kind of stuff, check out
+  my BL page at http://starmen.net/tomato/bahamut. If I ever want to update
+  the translation notes, I'll do it there.  I also have a complete
+  walkthrough with screenshots, helpful tips, and explanations on how to get
+  secret stuff at that site, not to mention lots of pics, downloads, and
+  other stuff. So check it out sometime.
+
+
+  X. Personal Thanks
+  ------------------
+  Too many people to thank. Neill Corlett (http://lfx.org/~corlett), Dark
+  Force, all my Japanese sensei and friends in Japan who helped me out with
+  learning the language. reidman, and all the cool people at Starmen.Net. All
+  the cool people over at MO's translation board, koitsu for pulling off that
+  awesome April Fool's joke (you had me tricked for about 0.5 seconds, it was
+  the lawyer name that gave it away big time), the people at the BL GameFaqs
+  board who helped me with some info when I needed it, the authors of some
+  Japanese BL pages which don't exist any longer, Summon Illusion, Zalagren,
+  iMoose, and Square (for the cool game, and for hopefully hiring me. Right???
+  Come on. ;)
+
+  NO thanks to all the "gimme BL now", "WHAT UP WITH BAHUMAT" kiddies who
+  have pestered me for an entire year. "If you're translating BL why aren't
+  you letting people download it? you're a stupid liar" My answer to that is:
+  I wasn't letting people download it because it wasn't done yet. Idiots.
+
+  Now go play the game and stop reading my boring crap.
+
+                                     -Tomato (http://starmen.net/tomato)
+                                     May 31, 2002
+
+
+=============================================================================
+=============================================================================
+
+
+Bahamut Lagoon - Technical Notes by Dark Force
+----------------------------------------------
+
+  Reprogramming
+  -------------
+  Originally, I only wanted to help out Neill finish his work on BL, I did
+  not plan on taking over the entire project. It quickly became clear that
+  Neill had no interest in finishing BL on his own or even with help, and so
+  my interest in BL diminished as well. It was only when Tomato consistently
+  began to persuade me to work on it and when the other groups began
+  announcing their BL projects, that I decided to actually help.
+
+  Initially, I was impressed by the work Neill had done with the 13x13 and
+  8x8 variable width fonts and the dialogue script, thinking those would make
+  my job really easy. Neill had done 3 of the 12x12 variable width fonts and
+  one of the 8x8 variable width fonts, as well as the dialogue replacement
+  and recompression. I never would have imagined how much was left to be done.
+  Neill didn't know it at the time and neither did I, but he had only
+  scratched the surface. And to make things worse, Tomato wanted EVERYTHING
+  in a variable width font! So, reluctantly, I complied. It was a challenge
+  to find enough VRAM space to hold all of the vwf text, like hacking the
+  inventory screen, for example.
+
+  Seeing the finished product, however, I think it was worth it. The game
+  feels more like a psx game than an snes game, as I don't remember any other
+  snes game or translation having a dynamic variable width 8x8 font (except
+  for Front Mission which used one, I don't know if it used it everywhere or
+  not). It was so nice not having to abbreviate item names and not truncating
+  text, forcing it to sound bad. It makes the whole translation that much
+  more friendly and enjoyable.
+
+  Eventually I think this will affect future translations to do full 8x8 vwf
+  hacks (which are much harder than 16x16 vwf hacks). I know Bongo is already
+  implementing one for his current project and I'm thinking of doing one for
+  Star Ocean. Kammedo's BL patch also uses a variable width 8x8 font, but
+  that was only after Neill tried adding one first.
+
+  This game is by far one of the ugliest I've worked on, especially when
+  adding an 8x8 vwf. There are so many inconsistencies, hundreds of hardcoded
+  pointers, dialogue scripts embedded in 2 separate scripting languages,
+  individual text strings spread out all over the damn rom, every different
+  kind of pointer system possible, at least 5 different fonts and routines to
+  display them, which all look the same on screen! Some of the fonts were
+  identical when decompressed, yet were compressed with different routines. I
+  often became quite sick of all the inconsistencies and stupidities in this
+  game and can only imagine it was written by 5 separate teams who never
+  spoke to each other and kept adding more features as hacks rather than
+  including them into the game engine.
+
+  After it's all said and done, I can take pride in the work we did on this
+  game. As far as the hacking goes I think it's the best looking job I've
+  done to date, and Neill gets half the credit for that. Also, Tomato's 12x12
+  font makes the dialogue very easy to read. It's similar to my ToP font but
+  his looks much better.
+
+
+  Visualization
+  -------------
+  As with with other translations, I spent a lot of effort on redesigning the
+  various screens and repositioning text and cursors to make the most
+  effective use of space while still keeping the screens pretty and easy to
+  read. The tech names were a bit too long in some places which cause some
+  cramming, and one screen where there is a problem with space is the
+  formation sub-screen, but overall they look great. I could have made more
+  room by expanding the window borders right to the edges of the screen, but
+  then the screen would appear cut off if the game was played on a TV screen
+  instead of an emulator, and I intend to play it on my TV.
+
+  I took some liberties along the way, improving some screens where I thought
+  the original game needed improvement. Below is a list of modifications that
+  changed the game from it's original design:
+
+  - Added variable width fonts everywhere
+    * This will cause noticible slow down on some screens (such as item lists)
+      compared to the Japanese version and you can even see it redrawing in
+      some situations. For this reason, there is a separate patch for
+      emulators which will reduce all the slowness. The emulator patch,
+      however, will not work properly on a copier.
+
+  - Inventory Menu Screen
+    * I moved the 2 item columns as close together as I could to fit the
+      longest item name. The right column is actually a bit wider than the
+      left column, but it's almost impossible to notice unless you have the
+      same item name on both columns, which is also impossible.
+    * The original text at the bottom read "Dragon Keeper's Item Explanation",
+      which sounded bad and was too long to fit with the vwf so I changed it
+      to "Inventory / Item Details" because that sounds closer to what you can view
+      and there are two separate screens accessible from that one menu option.
+    * I made the regular item icons variable width, meaning you may notice
+      that first letter of light armor items and heavy armor items do not
+      line up.
+    * For the item details I used up and down arrows to show status changes.
+
+  - Dragons Menu Screen
+    * I changed the dragon status attributes (at the botton of the screen)
+      from font text to colorized icons drawn by CPF, which I think work much
+      better especially given the limited room on that screen.
+
+  - Formation Sub-Menu Screen
+    * I moved around some text to make more room for tech lists, so a couple
+      long item names (weapons/armor) overflow on to the next line. I don't
+      care enough to fix it and it's only on a small number of items so
+      chances are you won't notice it, plus there's no more room to move it
+      around anyways.
+
+  - All Menu Status Screens
+    * I chose not to use the variable width font for HP/MP/SP/LV/NEXT/EXP
+      because I felt they were more important and I wanted them to stick out.
+    * I also chose not to use the vwf for PARTY and PAGE for the same reason.
+    * I chose to leave TIME as fixed width because it's always directly followed
+      by numbers which are also fixed width. It would look strange to mix the
+      two font types together here.
+
+  - Item Descriptions on Menu Screens
+    * There is no shadow on the 12x12 variable width font used for descriptions.
+      Neill did this one and he didn't included a shadow, reason being it's
+      really nasty since the font is displayed using sprites. I don't blame
+      him and it doesn't bother me enough to try and add a shadow to it.
+
+  - All Money Screens
+    * I chose to use PR instead of Piro (the game's currency) because it's
+      more in line with using GP like Square does in its English translations.
+
+  - Naming Screen
+    * I completely redesigned this, instead of trying to reuse the Japanese
+      layout. The result is it looks like a naming screen should be, instead
+      of a hacked up Japanese one. The name cursor is also repositioned on a
+      pixel basis, to accomodate the variable width font for the name.
+
+  - Load/Save Game Screen
+    * I expanded the 12x12 chapter names to print on two lines instead of one,
+      because I didn't want to truncate any of Tomato's translations. There's
+      one small bug as a result but I don't care since this screen looks
+      amazing the way it is now.
+
+  - Title Screen
+    * I fixed the "Temporally Play" graphic to read "Temporary Play",
+      silly Square...
+    * I Added our custom logos beside the Square logo.
+
+  - Sound Menu Screen
+    * Neill added a hidden jukebox (sound test) to the game. The names used
+      in the track titles of the songs don't correspond to the spelling
+      Tomato used in the dialogue, this is because the track titles were taken
+      from an OST cd (I think) but weren't necessarily correct, but we will
+      still honor them. For example, they had Zauzer instead of Sauzer.
+
+  - Dragon Feeding Screen
+    * I changed how the dragon class was displayed slightly, by adding a cell
+      separator instead of appending it with a slash.
+    * I made the Loyalty/Fidelity statuses always visible, which the game
+      originally hid unless you had an Uni Uni dragon; I think they're useful
+      to see at all times.
+    * I also changed the graphics/text for Loyalty/Fidelity from '?' and '??'
+      to letters of the status they actually represent.
+
+  - Dragon Transformation
+    * When the dragon transforms, I went as far as making it display 'a' or
+      'an' when it says "Transformed into a[n] xxx dragon.", instead of taking
+      the cheap way out and saying "Became xxx dragon".
+
+  - In-Battle Screens
+    * I added pixel-centering for the magic/attack names and descriptions.
+    * For the battle dialogue I forced it to be not centered (unlike the
+      original game) because I felt centered dialogue didn't look right.
+    * I also allowed the battle dialogue to have multiple lines of text,
+      instead of just one line in the original.
+    * I made the colorized item icons display instead of the standard vwf
+      icons. This isn't really a change from the original, but I'm listing it
+      so that people don't think it's a bug on our part: there is an icon that
+      looks like a bomb in battle which is appears as a pot on the status
+      screens. That's what the original game did so I'm keeping it the same
+      way.
+    * The character select window I shortened because it was longer than it
+      needed to be now that we were using a variable width font for the names.
+    * I removed the ":" after the element/status icons for enemies because it
+      seemed completely useless to me.
+    * For when a spell or item fails, I replaced the "Fail" word in Japanese
+      with a "Fail!" graphic in English, but I don't know if that's the best
+      word to use.. maybe "Miss!" or "Missed!" ?
+
+  - After-Battle Screens
+    * I changed the colors of "Exp" and "Lv Up!". The game originally meant
+      to display Exp in a different color, but because of a palette bug on
+      their part, it showed up as white. When I fixed that and "Exp" showed
+      up in yellow, "Lv Up!" looked strange also in yellow, so I changed it
+      to the next available color which was orange.
+    * I removed the "+" sign from the amount of exp gained after battle.
+
+  - Main Dialogue
+    * There are a few strings that contain hidden references to ourselves,
+      one of them tells you how to access the jukebox.
+
+  - Map/Field Dialogue
+    * The scenario objective is now pixel-centered.
+    * When drowning, it displays the message "Will drown in x turn[s].", I
+      made the "s" in "turns" only display if there is more than 1 turn left,
+      instead of taking the cheap way out and saying "turn(s)".
+    * The only string we didn't find was "Dragon evolved into xxx", when a
+      dragon evolves on the field. If anyone gets this to happen, please send
+      us a savestate, you will probably see garbage text on the screen.
+
+  - Map/Field Menus
+    * For spell details, I drew range and radius icons instead of using text.
+    * For the terrain window, I replaced the 12x12 font with an 8x8 variable
+      width font and pixel-centered the terrain type (Tomato's idea).
+    * For the main menus, I used different idents/cursor positions depending
+      if the field menu or attack menu or dragon menu is being displayed,
+      in an effort to make the text in the menu look centered. It works most
+      of the time but not always.
+
+  - Intro/End Credits
+    * Fixed Square's spelling mistakes ("designner") and added us to the
+      credits.
+
+
+  Editing
+  -------
+  Like Tomato said, I helped with the editing for map and battle dialogue, so
+  don't complain to him if the text isn't exactly what was said in Japanese.
+  I wanted to make the text sound more elaborate rather than using the lame
+  incomplete phrases that existed in Japanese. For example, 
+  original text: "Lestat: I haven't started yet!",
+  my edit: "Lestat: I still have a full deck up my sleeve!" (talking about
+  showing his potential in battle); or, 
+  original text: "Sauzer: The Holy Dragons' power... It is a terrifying power!",
+  my edit: "Sauzer: The power of the Holy Dragons commands such malevolence..."
+  That's not exactly what you'd call literal translations. I know Tomato wanted
+  to keep to the original scripts while still trying to make them sound good,
+  but in this case I didn't think that would work, and I wanted to have some fun
+  with those scripts as well. The only reason I chose to edit them was because
+  I was sick of hacking at this point.
+
+
+  Retranslations
+  --------------
+  Anyone who wants to translate BL to their own language, DO NOT CONTACT US AND
+  DO NOT RIP OFF OUR PATCH! We will plan on working on multilingual BL
+  translations when we're ready. In the mean time, Kammedo is probably more able
+  to help with translating BL to other languages, I think he's already planning
+  one for German. There is also a group that already has a BL patch in French
+  that could also help you with another language translation. There's also a
+  Thai translation group that has made a decent BL patch.
+
+                                       -Dark Force (http://www.dejap.com)
+                                       May 31, 2002
+
+
+  What's New
+  ----------
+
+  VERSION 1.3:
+
+  * Fixed all the crashing that happened. This was because of a simple
+    missing % sign in the main script. The game now runs fine. We've re-tested
+    the entire game and no crashes were to be found. If the game crashes,
+    then you likely have a bad ROM.
+
+  * Fixed a few aesthetical things in the script.
+
+  * Fixed that fireworks graphical glitch for good.
+
+
+  VERSION 1.2:
+
+  * The checksum has been fixed. So if you apply this patch and your emulator
+    says the checksum is bad, it means your original ROM was corrupt. Look
+    elsewhere for the ROM. WE WILL NOT SEND ONE TO YOU OR TELL YOU WHERE TO
+    GET ONE. If, after you apply the patch, the checksum is OK, then you have
+    a good version of the ROM.
+
+  * Fixed instances in the script that might have frozen the game if you
+    renamed a main character to a long name. This will fix the problems that
+    a few people had in Chapters 6, 12, and 15.
+
+  * Also fixed some spelling and text consistency issues. Fixed a few item
+    and dragon class names, as well.
+
+  * Re-edited a bit of the map dialogue text and other map messages.
+
+  * Fixed the dragon evolution line on the map scene. Thanks to all who
+    provided us with save states.
+
+
+  Known Issues
+  ------------
+  * Zsnes 1.337 WIN has a bug during battle where the message window appears
+    in the middle of the screen after an attack fails. THIS IS NOT OUR
+    PROBLEM! This will be remedied in future versions of ZSNES.
+  
+  * Load/save game screen: garbage text appears at bottom of screen momentarily
+    when saving a game.
+
+  * Long item names on formation sub-screen overflow onto the next line.
+
+  * There is a version of the ROM out there that gets your party members to
+    Level 99 instantly. This is a bad ROM. THIS IS NOT OUR PROBLEM! There are
+    also versions of the ROM that are corrupt and will cause the game to
+    reset randomly or just mess up in weird ways.
+
+  * If you use cheat codes, the game may suddenly reset on you at anytime.
+    Use cheat codes at your own risk.
+
+  ! If anyone notices any other bugs, please report them to us.
+
+
+  Bug when using the patch on a COPIER ONLY
+  -----------------------------------------
+
+  When viewing the list of items in battle or during dragon feeding, the item
+  names may show garbage text. To get around this problem, select any item in
+  the list as if you were about to use it, then press the B button to cancel
+  and return to the item list. When you return to the list, the item names
+  will be properly displayed.
+
+
+  Patching Help
+  -------------
+  For the first time, we are not providing any support for using this patch.
+  We didn't spend all these months translating this game only to be barraged
+  by questions on how to apply the patch. If you haven't figured it out by
+  now, the DeJap forum is the place to ask these questions. Click on the
+  Forum icon at the top of the DeJap homepage (the link has been fixed), but
+  for lazy people, the URL is http://board.zsnes.com/index.php?board=6 .
+  Make sure to read the topics at the very top of the board; the answers you
+  need will most likely be there already.
+
+
+  Credits
+  -------
+
+  All Translations...........:  Tomato
+  All Programming/Hacking....:  Neill, Dark Force
+  12x12 VWF Font.............:  Tomato
+  8x8 VWF Font...............:  Neill
+  16x16 Status Icons.........:  CPF
+  8x8 Naming Font............:  CPF
+  All Main Dialogue Editing..:  Tomato
+  Non Main Dialogue Editing..:  Tomato, Dark Force
+  Testing....................:  Tomato, Dark Force, Neill
+
+  Special Thanks to (for technical assistance):
+  Neill, Bongo, Kammedo, F.H
+
+  Special Thanks to (for other):
+  iMoose, zalagren, Summon Illusion, MO, Shih Tzu, Major Damage, animesou,
+  didalos, katharsis

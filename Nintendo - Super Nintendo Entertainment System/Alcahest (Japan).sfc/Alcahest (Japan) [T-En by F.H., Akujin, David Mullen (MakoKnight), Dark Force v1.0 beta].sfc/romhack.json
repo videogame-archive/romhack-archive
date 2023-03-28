@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 1179648,
+        "crc32": "1f51d29e",
+        "md5": "01f59d87ced210b3d8abc8d415a990aa",
+        "sha1": "c401313971e01a8d83bafdb11b395f386bac7882"
+    },
+    "patches": [
+        {
+            "authors": [ "F.H.", "Akujin", "David Mullen (MakoKnight)", "Dark Force" ],
+            "url": "https://www.romhacking.net/translations/278/",
+            "version": "1.0 beta",
+            "releaseDate": "2002-08-11",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

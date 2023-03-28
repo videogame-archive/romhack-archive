@@ -1,0 +1,8 @@
+## Know bugs / Improvements
+
+- Yes/No questions are sometimes hidden under the Yes/No menu
+- Move the AI menu to the left to show full words instead of Wea, Nor, Har
+
+Translations:
+- "On strike" sign on the event
+- City name in the training area

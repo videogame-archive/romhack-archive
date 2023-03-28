@@ -1,0 +1,75 @@
+
+Sprites
+x159C2F			$AB:9C2F
+
+x22154		2F 9C AB
+
+x1C8000		00 80 B9
+
+
+#### DOC EXILE ####
+
+x11201B			$A2:A01B
+
+x21A95		1B A0 A2
+
+x1CA000		00 A0 B9
+
+
+
+#### SALESMAN ####
+
+x16364A		$AC:B64A
+
+x21A59		4A B6 AC
+
+x1CC000		00 C0 B9
+
+せぇるすまん	Salesman
+
+
+$80/C86A A7 20       LDA [$20]  [$AC:B64A]   A:B67E X:0006 Y:AFDC P:eNvmxdIzc
+$80/C930 E2 20       SEP #$20                A:BBDC X:0006 Y:0000 P:envmxdIZC
+$80/C86A A7 20       LDA [$20]  [$9A:CCFA]   A:6000 X:0006 Y:AFDC P:eNvmxdIzc
+$80/C930 E2 20       SEP #$20                A:B7DC X:0006 Y:0000 P:envmxdIZC
+$80/C86A A7 20       LDA [$20]  [$8A:C055]   A:C07E X:0018 Y:AFDC P:eNvmxdIzc
+$80/C930 E2 20       SEP #$20                A:C17C X:0018 Y:0000 P:envmxdIZC
+$80/C86A A7 20       LDA [$20]  [$89:A02A]   A:797E X:0018 Y:CFDC P:eNvmxdIzc
+
+#### ROSHAMBO GIRL ####
+
+xF0488		9E:8488
+header: 00 1C 05
+
+x21A6B		88 84 9E
+
+x1DA000		00 A0 BB
+
+1C8 = B9
+1D0 = BA
+1D8 = BB
+1E0 = BC
+1E8 = BD
+
+1F0 = BE
+1F8 = BF
+
+
+#### Penny intro ####
+
+ガーン		OMG
+
+x177293		AE:F293
+
+header	00 10 05
+
+x43276		A0 AE 00 84 22 A0 93 F2
+
+x1FA000		A0 BF 00 84 22 A0 00 A0
+
+
+#### Penny intro order? ####
+x177DB3		$AE:FDB3
+background order
+
+$AE:DC9E

@@ -1,0 +1,25 @@
+Rico character sprite
+フッ
+
+x7DA9C				8F:DA9C
+header 00 20 04
+
+x72162		9C DA 8F
+
+			00 C5 B7  (x1BC500)
+
+
+Battle card sprites
+xA7261			94:F261
+				95:7261
+				
+
+
+			00 80 B8 (1C0000)
+				
+xE954		A0 94 00 84 22 A0 61 F2
+			A0 B8 00 84 22 A0 00 80
+
+				
+攻	offensive
+防	defense

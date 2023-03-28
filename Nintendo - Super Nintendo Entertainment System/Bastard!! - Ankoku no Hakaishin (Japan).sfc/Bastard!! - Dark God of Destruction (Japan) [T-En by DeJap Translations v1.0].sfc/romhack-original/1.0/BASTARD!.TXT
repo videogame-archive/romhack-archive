@@ -1,0 +1,91 @@
+    ________                         22-December-2000
+   /	    \	      ___________
+  .\_	 _   \......./		 \.............
+  : /	/ \   \      \_____    __/[J3d!]      :
+  :/   /  /   /		   \   \ /¯¯¯¯\	      :
+  /   /  /   //¯¯¯¯¯\	   /   //      \   /¯¯¯¯¯¯¯¯\
+/¯    ¯¯¯   //	 _   \ ___/   //   /\	\ /   ____   \
+\__________//	//   //	     //	  /  \	 \\   \	 /   /
+  :	    \	\\  / \_____/ \	  ¯¯¯¯\	  \\   \/   /
+  :	     \	 ¯¯¯¯\	       \______/\__/ \	\__/
+  :...........\______/.......................\	 \
+    [s N E S  r O M  t R A N S L A T I O N S] \__/
+
+
+                    PRESENTS:
+
+           Bastard!! Translation v1.0
+           ==========================
+
+Status
+------
+
+    This is a patch to convert the Super Famicom game
+Bastard!! into English. This is the final release. It
+requires the original uncorrupt rom with a header. Yes
+several copies of Bastard roms floating around the net
+are corrupt.
+    Everything we could think of has been hacked and
+translated and tested. If you find any bugs please
+report them right away. Note that save states from the
+Japanese rom may not work properly with the translated
+rom. If anyone tries selling this, we'll kill them!!
+
+
+About the Translation
+---------------------
+
+    This translation is a combination of the original
+Japanese and the fansubbed anime. There is plenty of
+profanity in this translation but it is justified by
+the fact that it existed in the Japanese version, though
+some of the terms were taken from the fansub. Also,
+the original game didn't have much of a story to it
+but the events followed a similar path to the anime,
+so some of the scenes were added to, by including some
+of the story from the anime. This greatly improved
+the overall translation, making it more than a game
+just full of swearing.
+
+
+Touch of Death
+--------------
+
+    Because this game can be incredibly hard to beat
+if you don't understand how to do the moves properly,
+we have included a trainer to instantly kill your
+opponent. This is useful if you don't care about the
+fighting and just want to read the story. There is
+also a cheat to restore your health, but it can also
+kill you.
+   Hint: the cheats require two separate button
+presses during battle.
+
+
+Credits
+-------
+
+Dark Force            - Programming, Script Editing (darkforce416@hotmail.com)
+Anus P.               - Programming, Graphics Editing (maxwellb@home.com)
+Faraday               - Script Translation, Majority of
+AWJ                   - Script Translation, Script Editing
+
+Also thanks to the following people:
+F.H                   - for help with the text pause routine
+Jason Li              - for help with some script editing
+
+
+[Bastard!! is copyrighted by Cobra Team.]
+[Do not spread this about without permission, if you
+did not get it from the address below, tell us!]
+[This translation must never be sold. Anyone who
+sees it for sale must contact us!]
+                                                _/\__
+                                               /   \/_
+,-----------------------------------------O---(O O  \/_----.
+|                                           o (___/  \/_   |
+|  Visit DeJap at:                            (^^'\_/ \/_  |
+|                                             <__________> |
+|  http://dejap.zsnes.com                                  |
+`----------------------------------------------------------'
+

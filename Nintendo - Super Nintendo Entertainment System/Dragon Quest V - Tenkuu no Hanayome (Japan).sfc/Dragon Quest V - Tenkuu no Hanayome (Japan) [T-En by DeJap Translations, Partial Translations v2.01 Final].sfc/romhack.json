@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "6110a1a2",
+        "md5": "a1222de3d989fdafd3311f37d89cd025",
+        "sha1": "7eedeb5f8db90c4653cb3ad8c56440878dadfa62"
+    },
+    "patches": [
+        {
+            "authors": [ "DeJap Translations", "Partial Translations" ],
+            "url": "https://www.romhacking.net/translations/341/",
+            "version": "2.01 Final",
+            "releaseDate": "2002-02-23",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

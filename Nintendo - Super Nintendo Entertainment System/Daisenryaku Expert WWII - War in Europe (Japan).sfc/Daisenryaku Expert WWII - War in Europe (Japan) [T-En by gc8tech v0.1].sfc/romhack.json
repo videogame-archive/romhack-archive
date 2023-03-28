@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Unfinished",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "cc9b8736",
+        "md5": "32b6469f867574df0b78b179cb963bc8",
+        "sha1": "984bd4bc60ce6eafa856e7973c0f1a055fdf517d"
+    },
+    "patches": [
+        {
+            "authors": [ "gc8tech" ],
+            "url": "https://www.romhacking.net/translations/2493/",
+            "version": "0.1",
+            "releaseDate": "2015-10-12",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

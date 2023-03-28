@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Unfinished",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "45522430",
+        "md5": "02bd781d38de7e470192a342bd5088dd",
+        "sha1": "d56701d583330071a46b8c6d246f70e7641cd4bc"
+    },
+    "patches": [
+        {
+            "authors": [ "Aeon Genesis" ],
+            "url": "https://www.romhacking.net/translations/330/",
+            "version": "0.98",
+            "releaseDate": "2000-06-18",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

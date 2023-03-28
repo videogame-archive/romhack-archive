@@ -1,0 +1,71 @@
+ゲルマン
+キンペ
+マーロ
+
+JPN		Romaji		Meaning		New name
+トキオ		Tokio		Tokyo		Tokyo
+キンペ		Kinpe		Beijing		Lhasa
+ウール		Uru			Seoul		Shanghai
+シンガ		Singa		Singapore	Macau
+モンゴー	Mongo		Mongolia	Astana
+ハバロフ	Khabarov	Khabarovsk	Harbin
+スクワモ	Sukuwamo	Moscow		Moscow
+ライク		Raiku		Iraq		Kabul 
+シバーリ	Shibari 	Siberia		Irkutsk
+サラム		Saramu		Jerusalem	Amman
+ホルトー	Horutō		Porto		Sevilla
+マーロ		Maro		Roma		Rome
+オフラン	Ofuran		France		Paris
+アテーネ	Atēne		Athens		Vienna
+ウイン		Uin			Vienna		Prague
+ゲルマン	Geruman		Germany		Riga
+バリテン	Bariten		Britain		London 
+ストック	Sutokku		Stockholm	Tallinn
+ラスカー	Rasukā		Alaska		Juneau
+シアトー	Shiatō		Seattle		Seattle
+ヨーク		Yōku		New York	New York
+ゴシカ		Goshika		Chicago		Dallas
+ヒュース	Hyūsu		Houston		Houston 
+ペガス		Pegasu		Vegas		Portland
+アステカ	Asuteka		Aztec		Anaheim
+パマナ		Pamana		Panama		Bogota
+バランシ	Baranshi 	Valencia	Caracas 
+サンバ		Sanba 		Sao Paulo	Rio
+コルバト	Korubato	Cordoba		La Paz 
+ナスカ		Nasuka					Lima 
+リッチ		Ritchi		Chile		Santiago
+パラス		Parasu		La Paz		Brasilia
+チュール	Chūru					Akureyri
+ゴット		Gotto					Nuuk 
+キビック	Kibikku		Quebec		Dublin 
+ビースン	Bīsun					Oslo 
+ザイルー	Zairū		Zaire		Lome
+イジップ	Ijippu		Egypt		Cairo 
+ロッコ		Rokko		Morocco		Rabat
+ケーニア	Kēnia		Kenya		Nairobi
+タッカル	Takkaru		Dakar		Bamako
+ケープ		Kēpu		Cape Town	Pretoria
+シドーニ	Shidōni		Sidney 		Sidney
+ホルン		Horun		Melbourne	Adelaide
+パース		Pāsu		Perth 		Perth
+ターウイ	Tāui		Darwin		Alice
+フリッツ	Furittsu	Brisbane	Cairns 
+リントン	Rinton		Wellington	Auckland
+
+マナウ		Manau		Manaus		Manaus
+ハンガ		Hanga		Hungary		Poznan
+アンバー	Anbā		Ann Arbor	Denver
+サバラ		Sabara		Sahara		Niamey
+クリス		Kurisu					Derry 
+エアー		Eā						Uluru
+
+
+
+The castles are named after the people of a continent
+ゴルモン	Gorumon		Mongol		Ulaan
+ゲルーマン	Gerūman		German		Berlin
+カメアリ	Kameari		American	Ottawa
+ディオン	Dion		Andean		Manaus
+キモスエ	Kimosue		Eskimo		Tromso
+サイマ		Saima		Maasai 		Douala
+ボリジニ	Borijini	Aboriginal	Darwin

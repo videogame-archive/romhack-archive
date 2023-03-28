@@ -1,0 +1,14 @@
+This is a version of the 0% growths patch with the vanilla command order of the original, Japanese FE5 - otherwise known as the "Top Wait" version.
+
+Project Exile updates FE5 to use a modernized command order, resembling the order of commands in FE7 and on, where "Wait" is at the bottom to prevent accidental input.
+
+This version is for people used to playing with the Shaya patch, or an untranslated ROM, who would be thrown off by the new command order.
+
+Use this patch IN PLACE OF THE REGULAR PROJECT EXILE PATCH - AND IN PLACE OF THE OTHER 0% GROWTHS PATCH - DO NOT USE THEM BOTH.
+
+To install, follow the same instructions that are in the readme, except substituting the regular PE .bps for the .bps contained in this folder.
+
+Your ROM's checksums should be equal to:                           
+ROM MD5       AB9874AA78CDD83E3BA9F4C0E8BCE014        
+ROM SHA-1     8CD69DC33EE7873DAF74E56A60C0B36D68B725C9
+ROM CRC32     60466274                                

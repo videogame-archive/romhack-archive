@@ -1,0 +1,33 @@
+Patching instructions: 
+
+NOTE: If video guides are more to your liking, Mekkah has prepared just such a guide: https://youtu.be/dRfWIuuE2dY
+This video is technically for Project Exile, but the process remains the same.
+
+1. Find a headerless, unmodified ROM of Thracia. I obviously cannot help you find such a thing
+To check if you've got the right ROM, verify its checksum with a tool like this one: https://www.romhacking.net/utilities/1002/
+
+Your ROM should have these values:
+MD5      C3FD1CAD754256D7A013864D917F47FA
+SHA-1    75B504921D08E313FF58150E40121AC701884517
+CRC32    FC519952
+
+2. Place your unmodified Thracia 776 ROM, the Flips program, and the Lil-Manster 1.08.bps patch in the same folder.
+
+3. Flip Flips open.
+
+4. Choose "Apply Patch"
+
+5. Select Lil-Manster 1.08.bps.
+
+6. Select your unmodified ROM.
+
+7. Pick a name for the patched ROM. This will be the one you use to play the Lil' Manster patch.
+
+8. If you are going to apply optional patches, please consult the ReadMe in the Optional folder before doing so.
+
+Note: After patching, without any of the optional patches, your ROM's checksum should be:
+MD5      625EDE0FEE77213FE9D9242D55F74E5B
+CRC32    540661531
+SHA-1    7DB4211D827C26D3AE938C6BB383D9427BEEDB75
+
+NOTE+: Some emulators are not compatible with Lil' Manster, as the ROM's size was changed. Snes9x et bsnes work fine out of the box, and "ZSNES 8MB custom build" works just as well.

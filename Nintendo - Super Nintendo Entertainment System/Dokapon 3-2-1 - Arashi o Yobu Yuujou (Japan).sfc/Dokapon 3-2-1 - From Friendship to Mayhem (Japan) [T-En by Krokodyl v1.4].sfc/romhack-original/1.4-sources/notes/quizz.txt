@@ -1,0 +1,31 @@
+In Look mode, what do the buttons L and R do? Move fast
+Which of the following Field Magic deals damage to everyone on a targeted square? Thunder+
+Which button do you use to examine a square? X Button
+Which item protects once from a Field Magic? Mirror
+Where do you find this item :Ruby Ring? Sea Temple
+There is a place in Dokapon Kingdom where powerful weapons lie. Where is it? Lava Cave
+What color is the weapon treasure chest? Red
+What is the coin-shaped square on the map? Tax Office
+What does the shop with a red roof sell ? Weapons
+What button allows to scroll faster when in examine mode? Y button
+What is the effect of the Weak status? Move 1
+What is the name of the Devil's weapon? Union Sword
+Which of these weapons is the most expensive? Halberd
+What are the base damage of Thunder+? 30
+What item allows the wearer to pass through the toxic swamp safely? Boots
+Which cursed weapon can attack its owner? Draco Blade
+What is the selling price of an item compared to the purchasing price? 50%
+Which battle skill can sometimes one-shot an enemy, regardless of the HP? Slash
+What is the magic defense bonus of Deflect? +3
+There is a Warp Space fountain. Where is it? Spring Cave
+What is the name of the princess of Dokapon Kingdom? Poring
+Which starting job is missing: Fighter, Warrior, Knight, Thief? Mage
+How much is the Dokapon Orb, the ultimate treasure, worth? 490000
+A Contract is used for a deal with the Devil. For how much can you sell it to a shop? 1
+Which item is the most expensive? 3-Spinner
+There is a martial arts expert in Dokapon Kingdom. What's their name? Chen Li
+Which town has the highest value? Sidney
+How many churches are there? 6
+How many floors has the dungeon Rabble Tower? 3
+Which small monster has the highest level? Tiamat
+In order to become the Devil, you must give away all your gold, items, magic and what? Towns

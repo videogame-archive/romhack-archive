@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "3555787e",
+        "md5": "2da21ce539d05c34ead43eb27c1c4da1",
+        "sha1": "269ad78e2e9ab00e044f4187acf52bc8a946271a"
+    },
+    "patches": [
+        {
+            "authors": [ "Magic Destiny", " Stealth Translations" ],
+            "url": "https://www.romhacking.net/translations/349/",
+            "version": "1.02",
+            "releaseDate": "2010-10-18",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

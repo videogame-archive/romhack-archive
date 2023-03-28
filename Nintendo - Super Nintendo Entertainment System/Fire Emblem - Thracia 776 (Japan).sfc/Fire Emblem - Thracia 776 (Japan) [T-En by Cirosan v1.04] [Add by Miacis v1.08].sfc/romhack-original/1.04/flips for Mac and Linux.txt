@@ -1,0 +1,5 @@
+For Mac and Linux users, if flips won't run for you, use this website:
+
+https://media.smwcentral.net/Alcaro/bps/
+
+If it says "wrong input file," it means you're using the wrong ROM. Use this website - http://onlinemd5.com/ - to make sure your ROM's checksum values are equal to the checksums specified in the Readme.

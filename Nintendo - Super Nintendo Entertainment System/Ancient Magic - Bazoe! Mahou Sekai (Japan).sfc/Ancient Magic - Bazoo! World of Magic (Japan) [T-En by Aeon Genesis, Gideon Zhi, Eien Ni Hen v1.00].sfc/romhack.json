@@ -1,0 +1,31 @@
+
+{
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "3db23a76",
+        "md5": "9d33c8299fc374f87a328626b706d1b1",
+        "sha1": "6fc402115074277b237d4f24d4062f71b30832b4"
+    },
+    "patches": [
+        {
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Eien Ni Hen" ],
+            "url": "https://www.romhacking.net/translations/1575/",
+            "version": "1.00",
+            "releaseDate": "2010-12-19",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

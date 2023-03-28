@@ -1,0 +1,5 @@
+If Flips isn't working for you because you're on Mac, Linux or mobile, you can patch the ROM using this website:
+
+https://media.smwcentral.net/Alcaro/bps/
+
+The error message "Wrong input file" means you're not using the correct ROM. You can use http://onlinemd5.com/ to make sure your ROM's checksum matches the one in the ReadMe file.
