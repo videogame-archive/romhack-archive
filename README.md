@@ -25,19 +25,11 @@ The lack of an open project providing database files to allow both archival and 
 ## Objective
 This project follow the same kind of standards as No-Intro and Redump, so expect similar rules.
 
-**YOU WILL NOT FIND ROMS HERE**
-
 This repository contains in a 'structured' way, both 'information' and 'patches' related with romhacks.
 
-The project goal is to 'normalize' the original patches distributed into a structure that is easier to process automatically to produce two deliverables:
-1. DAT (database) files to use in rom managers to help validate and archive collections.
-2. A tool that can build the collections given that the user has a copy of the 'parent' roms from No-Intro database.
+The project goal is to 'normalize' the original patches distributed into a structure that is easier to process to deliver database (DAT) files to use in rom managers to help validate and archive collections.
 
-A release of these two deliverables could happen once per quarter or purely opportunistically.
-
-Additionally, the project provides:
-1. A 'safe legal frame' for the archival project by NOT storing or providing the original roms.
-2. A 'public' repository for easy sharing by hosting on gitHub.
+**YOU WILL NOT FIND ROMS HERE**
 
 ## Current Goals
 
@@ -45,23 +37,26 @@ Additionally, the project provides:
 - [x] Write tool to create dat file from database
 - [x] Write tool to create roms from database
 - [x] Write tool to create a release template from input/output roms
-- [ ] Porting hacks found at romhackdb
-- [ ] Porting hacks from 'T-En' and other collections
-- [ ] Long Term Goal: Porting hacks from community sites
-- [ ] Long Term Goal: Porting lost hacks
+- [ ] Porting romhacks/translations for SNES
+- [ ] Porting romhacks/translations for NES
+- [ ] Porting romhacks/translations for GB
+- [ ] Porting romhacks/translations for GBC
+- [ ] Porting romhacks/translations for GEN
+- [ ] Porting romhacks/translations for N64
+- [ ] Porting romhacks/translations for GBA
 
 ## Non Goals
 
 - This project CANNOT replace the original community sites. This project is mainly an archival project.
 - This project CANNOT take 'unique content' from community sites. Example: text descriptions or images.
 
-## How To Contribute
+## ⚠ ⚠ ⚠ Looking for Contributors ⚠ ⚠ ⚠
 
 - Are you part of a romhacking community site and would like to help us build a relationship?
 
-- Are you an aspiring contributor and would like to help us build the database? Check the [Contributor Guide](#Contributor-Guide)
+- Would like to help us build the database? Check the [Contributor Guide](#Contributor-Guide)
 
-For all these please join our discord https://discord.gg/AEV88uDTeQ or email us at: vg-archive@protonmail.com
+For these please best join our discord https://discord.gg/AEV88uDTeQ or email us at: vg-archive@protonmail.com
 
 - Would you like to report that you found a lost hack/s? 
 
