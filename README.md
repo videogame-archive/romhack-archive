@@ -27,7 +27,7 @@ This project follow the same kind of standards as No-Intro and Redump, so expect
 
 This repository contains in a 'structured' way, both 'information' and 'patches' related with romhacks.
 
-The project goal is to 'normalize' the original patches distributed into a structure that is easier to process to deliver database (DAT) files to use in rom managers to help validate and archive collections.
+The project goal is to 'normalize' the original patches distributed into a structure that is easier to process to deliver database (DAT) files. These database files are used in rom managers to help validate and archive collections.
 
 **YOU WILL NOT FIND ROMS HERE**
 
