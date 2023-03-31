@@ -44,10 +44,10 @@ def jarPackage(artifactName, className) {
 
 // Executable artifacts, all of them can be obtained together using the assemble task
 artifacts {
-    archives jarPackage("dat-creator", "com.github.openretrogamingarchive.dat.DatCreator"),
-            jarPackage("romset-creator", "com.github.openretrogamingarchive.romset.RomsetCreator"),
-            jarPackage("rom-patcher", "com.github.openretrogamingarchive.rompatcher.RomPatcher"),
-            jarPackage("romhack2archive", "com.github.openretrogamingarchive.hack2arch.Romhack2Archive")
+    archives jarPackage("dat-creator", "com.github.videogamearchive.dat.DatCreator"),
+            jarPackage("romset-creator", "com.github.videogamearchive.romset.RomsetCreator"),
+            jarPackage("rom-patcher", "com.github.videogamearchive.rompatcher.RomPatcher"),
+            jarPackage("romhack2archive", "com.github.videogamearchive.hack2arch.Romhack2Archive")
 }
 
 tasks.withType(Jar) {
