@@ -50,11 +50,13 @@ The project goal is to 'normalize' the original patches distributed into a struc
 - This project CANNOT replace the original community sites. This project is mainly an archival project.
 - This project CANNOT take 'unique content' from community sites. Example: text descriptions or images.
 
-## ⚠ ⚠ ⚠ Looking for Contributors ⚠ ⚠ ⚠
+## How To Contribute
+
+⚠ ⚠ ⚠ Looking for Contributors ⚠ ⚠ ⚠
 
 - Are you part of a romhacking community site and would like to help us build a relationship?
 
-- Would like to help us build the database? Check the [Contributor Guide](#Contributor-Guide)
+- Would like to help us build the database? Check the [Contributor Guide](./CONTRIBUTOR-GUIDE.md)
 
 For these please best join our discord https://discord.gg/AEV88uDTeQ or email us at: vg-archive@protonmail.com
 

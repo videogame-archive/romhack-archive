@@ -23,8 +23,8 @@ The romhack archive consist of:
 This is best visualized with an example:
 ```
 No-Intro System Name
-    |- No-Intro Rom Name (region)
-            |- Romhack Rom Name (region) [XYZ by Author vVersion] [Add by Author vVersion]
+    |- No-Intro Rom Name (region).extension
+            |- Romhack Rom Name (region) [XYZ by Author (vVersion)] [Add by Author (vVersion)].extension
                 |- romhack.bps
                 |- romhack.json
                 |- romhack-original
@@ -39,39 +39,42 @@ The Romhack rom folder name contains the aggregation of the different patches ve
 
 The versions found under the 'romhack-original' are the versions of the individual patches used to build the romhack rom.
 
+The romhack-original folder contains the originally distributed patch files 'exactly as they were delivered'. More often than not as a compressed archive.  For romhacks delivered as roms he generated romhack.bps is enough.
+
 ## Database Fields
 
 ### romhack.json fields
 
-| **Field**       | **Data Type**   | **Required** | **Purpose**                                                                                                                                                                                           |
-|-----------------|-----------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Info**        | object          | Yes          |                                                                                                                                                                                                       |
-| name            | string          | No           | Storing the name of the romhack, when the name uses non ASCII characters, 'null' otherwise.                                                                                                           |
-| translatedTitle | boolean         | No           | 'true' if the romhack has translated the title screen of the original game, 'null' otherwise.                                                                                                         |
-| status          | string          | Yes          | 'Fully Playable' or 'Unfinished'.                                                                                                                                                                     |
-| adult           | boolean         | No           | 'true' if the game depicts explicit sexual content, 'null' otherwise.                                                                                                                                 |
-| offensive       | boolean         | No           | 'true' if the game depicts offensive content, 'null' otherwise. Under gitHub [User Safety Guidelines](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies). |
-| **Provenance**  | object          | Yes          |                                                                                                                                                                                                       |
-| retrievedBy     | string          | Yes          | Identifier of the curator submitting the information to the database.                                                                                                                                 |
-| retrievedDate   | string          | Yes          | Date following the format YYYY-MM-DD. When the curator retrieved the patch.                                                                                                                           |
-| source          | string          | Yes          | 'Trusted' when source is trackable, null otherwise. Example: comes from a community site patch distribution or from the developer.                                                                    |
-| **Rom**         | object          | Yes          |                                                                                                                                                                                                       |
-| size            | number          | Yes          | For the romhack rom: Size in bytes.                                                                                                                                                                   |
-| crc32           | string          | Yes          | For the romhack rom: crc32 hash as an hex string in lowercase.                                                                                                                                        |
-| md5             | string          | Yes          | For the romhack rom: md5 hash as an hex string in lowercase.                                                                                                                                          |
-| sha1            | string          | Yes          | For the romhack rom: sha1 hash as an hex string in lowercase.                                                                                                                                         |
-| **Patches**     | array of object | Yes          |                                                                                                                                                                                                       |
-| authors         | array of string | Yes          | Authors of the patch, to avoid naming authors in different ways best is to use their name as indicated in community sites or forums. In absence 'Anonymous' SHOULD be used.                           |
-| url             | string          | No           | Url where the link to download the patch was found, 'null' otherwise.                                                                                                                                 |
-| version         | string          | No           | Version, exactly as indicated by the author. Some authors will indicate '1.00', others '1.0', these are considered different.                                                                         |
-|                 |                 |              | If the author repeats a version an incremental numerical value SHOULD be added. For example '2.0 Final (1)' and '2.0 Final (2)'                                                                       |
-|                 |                 |              | In absence of a version the release date following the format YYYY.MM.DD SHOULD be used.                                                                                                              |
-|                 |                 |              | In absence of any versioning information the creation date of the rom file following the format YYYY.MM.DD SHOULD be used.                                                                            |
-| releaseDate     | string          | No           | Date that the current patch distribution was made available formatted YYYY-MM-DD. This date doesn't necessarily match the release or modification date of the community site.                         |
-|                 |                 |              | Is recommend to first scan text files on the patch distribution for this date when they are available.                                                                                                |
-|                 |                 |              | Also check the community site for the last date the author updated the patch when available. Sometimes the readme is outdated.                                                                        |
-| alternative     | string          | No           | When several alternative versions of the same romhack are distributed together, string identifying the used one.                                                                                      |
-| labels          | array of string | Yes          | Each patch SHOULD have AT LEAST one label. The first label of the first patch is the PRIMARY one and used as part of the romhack folder name.                                                         |
+| **Field**       | **Data Type**   | **Required** |     | **Purpose**                                                                                                                                                                                                        |
+|-----------------|-----------------|--------------|:----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Info**        | object          | Yes          |     |                                                                                                                                                                                                                    |
+| name            | string          | No           |     | Storing the name of the romhack, when the name uses non ASCII characters, 'null' otherwise.                                                                                                                        |
+| translatedTitle | boolean         | No           |     | 'true' if the romhack has translated the title screen of the original game, 'null' otherwise.                                                                                                                      |
+| status          | string          | Yes          |     | 'Fully Playable' or 'Unfinished'.                                                                                                                                                                                  |
+| adult           | boolean         | No           |     | 'true' if the game depicts explicit sexual content, 'null' otherwise.                                                                                                                                              |
+| offensive       | boolean         | No           |     | 'true' if the game depicts offensive content, 'null' otherwise. Under gitHub [User Safety Guidelines](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies).              |
+| **Provenance**  | object          | Yes          |     |                                                                                                                                                                                                                    |
+| retrievedBy     | string          | Yes          |     | Identifier of the curator submitting the information to the database.                                                                                                                                              |
+| retrievedDate   | string          | Yes          |     | Date following the format YYYY-MM-DD. When the curator retrieved the patch.                                                                                                                                        |
+| source          | string          | Yes          |     | 'Trusted' when source is trackable, null otherwise. Example: comes from a community site patch distribution or from the developer.                                                                                 |
+| **Rom**         | object          | Yes          |     |                                                                                                                                                                                                                    |
+| size            | number          | Yes          |     | For the romhack rom: Size in bytes.                                                                                                                                                                                |
+| crc32           | string          | Yes          |     | For the romhack rom: crc32 hash as an hex string in lowercase.                                                                                                                                                     |
+| md5             | string          | Yes          |     | For the romhack rom: md5 hash as an hex string in lowercase.                                                                                                                                                       |
+| sha1            | string          | Yes          |     | For the romhack rom: sha1 hash as an hex string in lowercase.                                                                                                                                                      |
+| **Patches**     | array of object | Yes          |     |                                                                                                                                                                                                                    |
+| authors         | array of string | Yes          |     | Authors of the patch, to avoid naming authors in different ways best is to use their name as indicated in community sites or forums including 'Anonymous'. In absence of any information 'Unknown' SHOULD be used. |
+| url             | string          | No           |     | Url where the link to download the patch was found, 'null' otherwise.                                                                                                                                              |
+| version         | string          | No           |     | Version, exactly as indicated by the author. Some authors will indicate '1.00', others '1.0', these are considered different.                                                                                      |
+|                 |                 |              |     | If the author repeats a version an incremental numerical value SHOULD be added. For example '2.0 Final (1)' and '2.0 Final (2)'                                                                                    |
+|                 |                 |              |     | In absence of a version the release date following the format YYYY.MM.DD SHOULD be used.                                                                                                                           |
+|                 |                 |              |     | In absence of any versioning information, 'IF the creation date of the rom or patch file IS RELIABLE' such date following the format YYYY.MM.DD SHOULD be used.                                                    |
+|                 |                 |              |     | In total absence of a reliable version 'Unknown' SHOULD be used.                                                                                                                                                   |            
+| releaseDate     | string          | No           |     | Date that the current patch distribution was made available formatted YYYY-MM-DD. This date doesn't necessarily match the release or modification date of the community site.                                      |
+|                 |                 |              |     | Is recommend to first scan text files on the patch distribution for this date when they are available.                                                                                                             |
+|                 |                 |              |     | Also check the community site for the last date the author updated the patch when available. Sometimes the readme is outdated.                                                                                     |
+| alternative     | string          | No           |     | When several alternative versions of the same romhack are distributed together, string identifying the used one.                                                                                                   |
+| labels          | array of string | Yes          |     | Each patch SHOULD have AT LEAST one label. The first label of the first patch is the PRIMARY one and used as part of the romhack folder name.                                                                      |
 
 As a general rule if a boolean value is not mandatory, null is used instead of false.
 
@@ -127,6 +130,22 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
 }
 ```
 
+## Dealing with abbreviations
+
+If an object: title, version, etc...
+
+1. If one object is a subset or abbreviation of other, use the longer one (ex. "Legend of Link" vs "Legend of Link: Adventure of Zelda", "Rockman 4 BCAS" vs "Rockman 4 - Burst Chaser X Air Sliding").
+
+2. If one object is abbreviated and one is missing part of it, they should be combined if feasible (ex. "Link: Adventure of Zelda" vs "Legend of Link" can be combined as "Legend of Link: Adventure of Zelda").
+
+## Dealing with conflicting information
+
+If an object: title, version, etc...
+
+1. If object information is conflicting, one should be chosen based on the following source priority: in-game title, readme, author's website, community site (with author input), filename of patch or zip containing patch.
+
+2. Rare exceptions can be made if a higher priority title is clearly inadequate; requires maintainer confirmation.
+
 ## Current Labels
 Labels will be added, modified or removed opportunistically as the project extends its catalogue.
 
@@ -134,16 +153,15 @@ Labels belonging to the first patch are the ones used to define a romhack.
 
 Ideally and in general a romhack has only ONE label that defines it, but exceptions may be found.
 
-| **Name**            | **Description**                                                                                                       |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------|
-| T-\$                | $ is a language iso code in camelcase. See two letter codes at: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes |
-| Enhanced Colors     | A romhack that retouches original game colors or colorize it for the first time.                                      |
-| Performance Booster | A romhack that reduces slowdowns.                                                                                     |
-| Definitive Edition  | A romhack that keeps the original game but polishes it extensively.                                                   |
-| Game                | A romhack that vastly modifies the content of the original game providing a 'complete' new game.                      |
-| Sprite Swap         | A romhack that ONLY swap sprites.                                                                                     |
-| Add                 | A romhack that adds a small touch up to the experience.                                                               |
-| Fix                 | A romhack that provides a fix for any kind of coding or graphical error.                                              |
+| **Name**            | **Description**                                                                                                                                                                                                                      | **Examples**                                      |     
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| T-\$                | $ is a language iso code in camelcase. See two letter codes at: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes                                                                                                                |                                                   |
+| Game                | A romhack that vastly modifies the content of the original game providing a new game. The romhack COULD reuse the 'vanilla' game assets and mechanics and just provide new levels or also add 'chocolate' new assets and mechanics . |                                                   |
+| Definitive Edition  | A romhack that keeps the original game but polishes it extensively. A MIGHTY and RARE title, requires maintainer confirmation.                                                                                                       | Link's Awakening Redux, The Legend of Zelda Redux |
+| Performance Booster | A romhack that reduces slowdowns WITHOUT introducing cosmetic changes.                                                                                                                                                               | SNES fastrom patches, SNES SA-1 enabled patches   |
+| Cosmetic            | A romhack that ONLY does cosmetic changes WITHOUT altering gameplay.                                                                                                                                                                 | Super Street Fighter II - Enhanced Colors         |
+| Add                 | A romhack that adds a discrete change/improvement.                                                                                                                                                                                   | SMRPG Bowser's Win Pose Uncensored                |
+| Fix                 | A romhack that provides a fix for any kind of coding or graphical error.                                                                                                                                                             | Chrono Trigger Unsightly Pixel                    |
 
 Notes: Add and Fix labels are specially shorter since they are used sometimes several times on a romhack file name.
 
@@ -164,8 +182,10 @@ In particular, information about the patches used to build a romhack.
 
 Every romhack rom name contains a pair of brackets [] for every patch applied.
 
+⚠ Author, Versions and Alternative qualifiers CANNOT contain parenthesis on the filename. If these are present on the json file they are removed when used on the filename.
+
 ```
-NAME (REGION) \[PRIMARY by AUTHOR vVERSION [Alt-ALTERNATIVE]\] ... \[Add by ADD_AUTHOR vADD_VERSION [Alt-ADD_ALTERNATIVE]\]
+NAME (REGION) \[PRIMARY by AUTHOR (vVERSION) (Alt ALTERNATIVE]\] ... \[Add by ADD_AUTHOR (vADD_VERSION) (Alt ADD_ALTERNATIVE)\]
 ```
 
 One of the advantages of our naming convention is that is unambiguous and can be calculated from the metadata allowing for validation.
@@ -178,7 +198,7 @@ Example 1.1:
 
 Results in one rom folder.
 
-[3x3 Eyes - Juuma Houkan (Japan) \[T-En by Atomizer_Zero, FamilyGuy, AkiHizirino, mkwong98 v1.01\].sfc](https://github.com/videogame-archive/romhack-archive/tree/main/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/3x3%20Eyes%20-%20Juuma%20Houkan%20(Japan).sfc/3x3%20Eyes%20-%20Juuma%20Houkan%20(Japan)%20%5BT-En%20by%20Atomizer_Zero%2C%20FamilyGuy%2C%20AkiHizirino%2C%20mkwong98%20v1.01%5D.sfc)
+3x3 Eyes - Juuma Houkan (Japan) \[T-En by Atomizer_Zero, FamilyGuy, AkiHizirino, mkwong98 (v1.01)\].sfc
 
 **Type 2:** One romhack with one patch, that cones in various alternative versions:
 
@@ -186,9 +206,9 @@ Example 2.1:
 
 A 'main' version and a 'alternative' version, results in two rom folders:
 
-[Amazing Spider-Man, The - Lethal Foes (Japan) \[T-En by gorgyrip, filler v1.0\].sfc](https://github.com/videogame-archive/romhack-archive/tree/main/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Amazing%20Spider-Man%2C%20The%20-%20Lethal%20Foes%20(Japan).sfc/Amazing%20Spider-Man%2C%20The%20-%20Lethal%20Foes%20(Japan)%20%5BT-En%20by%20gorgyrip%2C%20filler%20v1.0%5D.sfc)
+Amazing Spider-Man, The - Lethal Foes (Japan) \[T-En by gorgyrip, filler (v1.0)\].sfc
 
-[Amazing Spider-Man, The - Lethal Foes (Japan) \[T-En by gorgyrip, filler v1.0 Alt-Caps\].sfc](https://github.com/videogame-archive/romhack-archive/tree/main/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Amazing%20Spider-Man%2C%20The%20-%20Lethal%20Foes%20(Japan).sfc/Amazing%20Spider-Man%2C%20The%20-%20Lethal%20Foes%20(Japan)%20%5BT-En%20by%20gorgyrip%2C%20filler%20v1.0%20Alt-Caps%5D.sfc)
+Amazing Spider-Man, The - Lethal Foes (Japan) \[T-En by gorgyrip, filler (v1.0) (Alt Caps)\].sfc
 
 Please notice that to avoid duplicating the 'romhack-original' folder, a symlink is used.
 
@@ -196,9 +216,9 @@ Example 2.2:
 
 Two 'alternative' versions, results in two rom folders:
 
-[Dragon Ball Z - Super Gokuu Den - Totsugeki Hen (Japan) \[T-En by Kakkoii Translations v0.98 Alt-Manga\].sfc](https://github.com/videogame-archive/romhack-archive/tree/main/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Dragon%20Ball%20Z%20-%20Super%20Gokuu%20Den%20-%20Totsugeki%20Hen%20(Japan).sfc/Dragon%20Ball%20Z%20-%20Super%20Gokuu%20Den%20-%20Totsugeki%20Hen%20(Japan)%20%5BT-En%20by%20Kakkoii%20Translations%20v0.98%20Alt-Manga%5D.sfc)
+Dragon Ball Z - Super Gokuu Den - Totsugeki Hen (Japan) \[T-En by Kakkoii Translations (v0.98) (Alt Manga)\].sfc
 
-[Dragon Ball Z - Super Gokuu Den - Totsugeki Hen (Japan) \[T-En by Kakkoii Translations v0.98 Alt-Anime\].sfc](https://github.com/videogame-archive/romhack-archive/tree/main/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Dragon%20Ball%20Z%20-%20Super%20Gokuu%20Den%20-%20Totsugeki%20Hen%20(Japan).sfc/Dragon%20Ball%20Z%20-%20Super%20Gokuu%20Den%20-%20Totsugeki%20Hen%20(Japan)%20%5BT-En%20by%20Kakkoii%20Translations%20v0.98%20Alt-Anime%5D.sfc)
+Dragon Ball Z - Super Gokuu Den - Totsugeki Hen (Japan) \[T-En by Kakkoii Translations (v0.98) (Alt Anime)\].sfc
 
 Please notice that to avoid duplicating the 'romhack-original' folder, a symlink is used.
 
@@ -210,7 +230,7 @@ Because of that the original hack without Add is not provided this results into 
 
 Example 3.1:
 
-[Final Fantasy IV (Japan) (Rev 1) \[T-En by J2e Translations v3.21\] \[Add by Spooniest v1.0\] \[Add by Masaru v1.2\].sfc](https://github.com/videogame-archive/romhack-archive/tree/main/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/Final%20Fantasy%20IV%20(Japan)%20(Rev%201).sfc/Final%20Fantasy%20IV%20(Japan)%20(Rev%201)%20%5BT-En%20by%20J2e%20Translations%20v3.21%5D%20%5BAdd%20by%20Spooniest%20v1.0%5D%20%5BAdd%20by%20Masaru%20v1.2%5D.sfc)
+Final Fantasy IV (Japan) (Rev 1) \[T-En by J2e Translations (v3.21)\] \[Add by Spooniest (v1.0)\] \[Add by Masaru (v1.2)\].sfc
 
 **Type 4:** One romhack with one patch distribution with several patches:
 
@@ -220,11 +240,11 @@ Since all of them are distributed together this is still considered one patch, s
 
 From now, Link's Awakening Redux will be used as an example, if we only apply the main patch:
 
-Legend of Zelda - Link's Awakening Redux (Usa, Europe) [Definitive Edition by ShadowOne333 v1.3.5].gbc
+Legend of Zelda - Link's Awakening Redux (Usa, Europe) [Definitive Edition by ShadowOne333 (v1.3.5)].gbc
 
 If we apply optional patches these are considered alternative versions.
 
-Legend of Zelda - Link's Awakening Redux (Usa, Europe) [Definitive Edition by ShadowOne333 v1.3.5 -Alt No-THIEF, Beep].gbc
+Legend of Zelda - Link's Awakening Redux (Usa, Europe) [Definitive Edition by ShadowOne333 (v1.3.5) (Alt No-THIEF, Beep)].gbc
 
 **Romhack with several labels:**
 
@@ -248,7 +268,7 @@ This source code can be preserved together with the romhack patches under the 'r
 
 A good example is: 
 
-[4.6 Billion Year Saga, The - To Faraway Eden (Japan) \[T-En by NLeseul v0.9b\].sfc](https://github.com/videogame-archive/romhack-archive/tree/main/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System/46%20Okunen%20Monogatari%20-%20Harukanaru%20Eden%20e%20(Japan).sfc/4.6%20Billion%20Year%20Saga%2C%20The%20-%20To%20Faraway%20Eden%20(Japan)%20%5BT-En%20by%20NLeseul%20v0.9b%5D.sfc)
+4.6 Billion Year Saga, The - To Faraway Eden (Japan) \[T-En by NLeseul (v0.9b)\].sfc
 
 ## Command Line Tools
 
@@ -332,7 +352,7 @@ usage:
 
 Some may notice the fields 'adult' and 'offensive'.
 
-Romhacks are fan games that have been released without the approval of any rating associations.
+Romhacks are fan games that have been released without the approval of any rating association.
 
 Associations like [ESRB](https://www.esrb.org/ratings-guide/) on the US and [PEGI](https://pegi.info/) in Europe need to label each game release.
 
