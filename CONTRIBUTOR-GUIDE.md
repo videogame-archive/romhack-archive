@@ -7,11 +7,11 @@
 2. [Database Fields](#Database-Fields)
 3. [Dealing With Abbreviations](#Dealing-With-Abbreviations)
 4. [Dealing With Conflicting Information](#Dealing-With-Conflicting-Information)
-5.[Current Labels](#Current-Labels)
-6.[Romhack Rom Naming Convention](#Romhack-Rom-Naming-Convention)
-7.[Romhack Source Code](#Romhack-Source-Code)
-8.[Command Line Tools](#Command-Line-Tools)
-9.[User Safety](#User-Safety)
+5. [Current Labels](#Current-Labels)
+6. [Romhack Rom Naming Convention](#Romhack-Rom-Naming-Convention)
+7. [Romhack Source Code](#Romhack-Source-Code)
+8. [Command Line Tools](#Command-Line-Tools)
+9. [User Safety](#User-Safety)
 
 ## Introduction
 
