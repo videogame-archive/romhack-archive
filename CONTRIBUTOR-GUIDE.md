@@ -55,6 +55,8 @@ The romhack-original folder contains the originally distributed patch files 'exa
 | status          | string          | Yes          |     | 'Fully Playable' or 'Unfinished'.                                                                                                                                                                                  |
 | adult           | boolean         | No           |     | 'true' if the game depicts explicit sexual content, 'null' otherwise.                                                                                                                                              |
 | offensive       | boolean         | No           |     | 'true' if the game depicts offensive content, 'null' otherwise. Under gitHub [User Safety Guidelines](https://docs.github.com/en/site-policy/acceptable-use-policies/github-acceptable-use-policies).              |
+| obsoleteVersion | boolean         | No           |     | 'true' if the version is no longer relevant, 'null' otherwise. Doesn't need to be older, just not relevant, an older version can be still be relevant if is played competitively.                                  |
+| backCatalog     | boolean         | No           |     | 'true' if the hack belongs to the back catalog, 'null' otherwise. Hacks only relevant on very particular conditions like mapper swaps, or hacks just kept for historical reasons belong to this category.          |
 | **Provenance**  | object          | Yes          |     |                                                                                                                                                                                                                    |
 | retrievedBy     | string          | Yes          |     | Identifier of the curator submitting the information to the database.                                                                                                                                              |
 | retrievedDate   | string          | Yes          |     | Date following the format YYYY-MM-DD. When the curator retrieved the patch.                                                                                                                                        |
@@ -90,7 +92,9 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
     "translatedTitle": null,
     "status": "Fully Playable",
     "adult": null,
-    "offensive": null
+    "offensive": null,
+    "obsoleteVersion": null,
+    "backCatalog": null
   },
   "provenance": {
     "retrievedBy": "JuMaFuSe",
