@@ -22,7 +22,7 @@ public class StringUtil {
                     item = string.substring(startIndex, endIndex + end.length());
                 }
                 items.add(item);
-                offset = endIndex + end.length() + 1;
+                offset = endIndex + end.length();
             } else {
                 offset = string.length();
             }

@@ -3,6 +3,7 @@ package com.github.videogamearchive.util;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.nio.file.attribute.FileTime;
 import java.time.Instant;
@@ -32,7 +33,7 @@ public class Zip {
 
     public static Map<String, byte[]> readAllBytes(Path path) throws IOException {
         Map<String, byte[]> inMemory = new HashMap<>();
-        try(ZipFile zipFile = new ZipFile(path.toString())) {
+        try(ZipFile zipFile = new ZipFile(path.toString(), StandardCharsets.ISO_8859_1)) {
             Enumeration<? extends ZipEntry> entries = zipFile.entries();
             while (entries.hasMoreElements()) {
                 ZipEntry entry = entries.nextElement();

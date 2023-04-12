@@ -30,7 +30,9 @@ public class Romhack2Archive {
         System.out.println("\t\t java -jar romhack2archive.jar \"parentRom\" \"romhackRom\" \"outputDir\"");
     }
 
+    static private long MAX_MB_FOR_DELTA = 50331648;
     private static void processSystem(Path outDir, Path pathToParentRom, Path pathToRomhackRom) throws IOException, NoSuchAlgorithmException, ReflectiveOperationException {
+        System.out.println("maxMemory: " + Runtime.getRuntime().maxMemory());
         // Create directory tree
         Path out = outDir;
         if (!Files.exists(out)) {
@@ -94,9 +96,11 @@ public class Romhack2Archive {
         Files.write(out.resolve("romhack.json"), json.getBytes(StandardCharsets.UTF_8));
 
         // Create romhack.bps
-        MarcFile parentRom = new MarcFile(getBytes(pathToParentRom));
+        byte[] parentRomBytes = getBytes(pathToParentRom);
+        MarcFile parentRom = new MarcFile(parentRomBytes);
         MarcFile romhackRom = new MarcFile(romhackRomBytes);
-        BPS bps = BPS.createBPSFromFiles(parentRom, romhackRom, true);
+        boolean useDeltaMode = (parentRomBytes.length < MAX_MB_FOR_DELTA && romhackRomBytes.length < MAX_MB_FOR_DELTA);
+        BPS bps = BPS.createBPSFromFiles(parentRom, romhackRom, useDeltaMode);
         MarcFile romhackBPS = bps.export();
         romhackBPS.save(out.resolve("romhack.bps"));
 

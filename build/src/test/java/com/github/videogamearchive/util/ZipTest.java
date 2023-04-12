@@ -9,15 +9,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ZipTest {
-    Path original = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan).sfc");
-    Path modified = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01].sfc");
-    Path originalZip = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan).zip");
-    Path modifiedZip = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01].zip");
-
+    Path original = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan).sfc");
+    Path modified = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01].sfc");
+    Path originalZip = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan).zip");
+    Path modifiedZip = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01].zip");
+    Path zip1 = Path.of("..","..", "romhack-archive-private", "test-data","GoldMap13.zip");
     Path tempFileZip = Path.of("temp-" + System.currentTimeMillis() + ".zip");
     @AfterEach
     public void cleanup() throws IOException {
@@ -33,6 +32,13 @@ public class ZipTest {
         byte[] actual = zipContent.values().iterator().next();
         assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void testUnzip2() throws IOException {
+        Map<String, byte[]> contents = Zip.readAllBytes(zip1);
+        assertEquals(26, contents.size());
+    }
+
     @Test
     public void testZip() throws IOException {
         byte[] expected = Files.readAllBytes(original);
