@@ -5,11 +5,13 @@
 # Table of Contents
 1. [Introduction](#Introduction)
 2. [Database Fields](#Database-Fields)
-3. [Current Labels](#Current-Labels)
-4. [Romhack Rom Naming Convention](#Romhack-Rom-Naming-Convention)
-5. [Romhack Source Code](#Romhack-Source-Code)
-6. [Command Line Tools](#Command-Line-Tools)
-7. [User Safety](#User-Safety)
+3. [Dealing With Abbreviations](#Dealing-With-Abbreviations)
+4. [Dealing With Conflicting Information](#Dealing-With-Conflicting-Information)
+5.[Current Labels](#Current-Labels)
+6.[Romhack Rom Naming Convention](#Romhack-Rom-Naming-Convention)
+7.[Romhack Source Code](#Romhack-Source-Code)
+8.[Command Line Tools](#Command-Line-Tools)
+9.[User Safety](#User-Safety)
 
 ## Introduction
 
@@ -130,7 +132,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
 }
 ```
 
-## Dealing with abbreviations
+## Dealing With Abbreviations
 
 If an object: title, version, etc...
 
@@ -138,7 +140,7 @@ If an object: title, version, etc...
 
 2. If one object is abbreviated and one is missing part of it, they should be combined if feasible (ex. "Link: Adventure of Zelda" vs "Legend of Link" can be combined as "Legend of Link: Adventure of Zelda").
 
-## Dealing with conflicting information
+## Dealing With Conflicting Information
 
 If an object: title, version, etc...
 
@@ -153,15 +155,16 @@ Labels belonging to the first patch are the ones used to define a romhack.
 
 Ideally and in general a romhack has only ONE label that defines it, but exceptions may be found.
 
-| **Name**            | **Description**                                                                                                                                                                                                                      | **Examples**                                      |     
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| T-\$                | $ is a language iso code in camelcase. See two letter codes at: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes                                                                                                                |                                                   |
-| Game                | A romhack that vastly modifies the content of the original game providing a new game. The romhack COULD reuse the 'vanilla' game assets and mechanics and just provide new levels or also add 'chocolate' new assets and mechanics . |                                                   |
-| Definitive Edition  | A romhack that keeps the original game but polishes it extensively. A MIGHTY and RARE title, requires maintainer confirmation.                                                                                                       | Link's Awakening Redux, The Legend of Zelda Redux |
-| Performance Booster | A romhack that reduces slowdowns WITHOUT introducing cosmetic changes.                                                                                                                                                               | SNES fastrom patches, SNES SA-1 enabled patches   |
-| Cosmetic            | A romhack that ONLY does cosmetic changes WITHOUT altering gameplay.                                                                                                                                                                 | Super Street Fighter II - Enhanced Colors         |
-| Add                 | A romhack that adds a discrete change/improvement.                                                                                                                                                                                   | SMRPG Bowser's Win Pose Uncensored                |
-| Fix                 | A romhack that provides a fix for any kind of coding or graphical error.                                                                                                                                                             | Chrono Trigger Unsightly Pixel                    |
+| **Name**                | **Description**                                                                                                                                                                                                                        | **Examples**                                        |     
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| T-\$                    | $ is a language iso code in camelcase. See two letter codes at: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes                                                                                                                  |                                                     |
+| Game                    | A romhack that vastly modifies the content of the original game providing a new game. The romhack COULD reuse the 'vanilla' game assets and mechanics and just provide new levels or also add 'chocolate' new assets and mechanics .   |                                                     |
+| Definitive Edition      | A romhack that keeps the original game but polishes it extensively. A MIGHTY and RARE title, requires maintainer confirmation.                                                                                                         | Link's Awakening Redux, The Legend of Zelda Redux   |
+| Performance Booster     | A romhack that reduces slowdowns WITHOUT introducing cosmetic changes.                                                                                                                                                                 | SNES fastrom patches, SNES SA-1 enabled patches     |
+| Cosmetic                | A romhack that ONLY does cosmetic changes WITHOUT altering gameplay.                                                                                                                                                                   | Super Street Fighter II - Enhanced Colors           |
+| Add                     | A romhack that adds a discrete change/improvement.                                                                                                                                                                                     | SMRPG Bowser's Win Pose Uncensored                  |
+| Fix                     | A romhack that provides a fix for any kind of coding or graphical error.                                                                                                                                                               | Chrono Trigger Unsightly Pixel                      |
+| Bootleg                 | A romhack that was initially distributed as a physical cart.                                                                                                                                                                           |                                                     |
 
 Notes: Add and Fix labels are specially shorter since they are used sometimes several times on a romhack file name.
 
