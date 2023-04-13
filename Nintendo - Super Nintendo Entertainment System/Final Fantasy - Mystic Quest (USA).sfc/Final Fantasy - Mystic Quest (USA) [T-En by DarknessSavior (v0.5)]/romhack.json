@@ -1,0 +1,32 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Unfinished",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 524288,
+        "crc32": "7c434c2d",
+        "md5": "d221a0d8132991e485cc5056d50cb541",
+        "sha1": "5193f5f0aaef4eec5464f12583b5abde7db7bef4"
+    },
+    "patches": [
+        {
+            "authors": [ "DarknessSavior" ],
+            "url": "https://www.romhacking.net/translations/1172/",
+            "version": "0.5",
+            "releaseDate": "2007-08-01",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Unfinished",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "bac49511",
+        "md5": "205ca923476c8f51c132dc54e30afd42",
+        "sha1": "aee5f876351544fb03d09f571bf63a5be38d0715"
+    },
+    "patches": [
+        {
+            "authors": [ "Commando Ginyu" ],
+            "url": "https://www.romhacking.net/translations/316/",
+            "version": "1.0",
+            "releaseDate": "2001-05-06",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

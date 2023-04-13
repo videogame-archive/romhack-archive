@@ -1,0 +1,40 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "59e27f1a",
+        "md5": "d4f294305fa536fc7974e764900f2fcc",
+        "sha1": "77a76fc6ab696279c5dbfdd4ad8a52eb6e8f16bd"
+    },
+    "patches": [
+        {
+            "authors": [ "RPGONE" ],
+            "url": "https://www.romhacking.net/translations/337/",
+            "version": "2.00DW",
+            "releaseDate": "2003-06-20",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        },
+        {
+            "authors": [ "Rod Merida" ],
+            "url": "https://www.romhacking.net/translations/6127/",
+            "version": "1.053rtm",
+            "releaseDate": "2021-12-16",
+            "alternative": null,
+            "labels": [ "Add" ]
+        }
+    ]
+}

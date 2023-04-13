@@ -1,0 +1,32 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Unfinished",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 1572864,
+        "crc32": "db500531",
+        "md5": "fe9bee4750265e186c9e7d84c53e931e",
+        "sha1": "a1fa591099b4c3f41e7dd49907650d2b493fbcbe"
+    },
+    "patches": [
+        {
+            "authors": [ "MrRichard999" ],
+            "url": "https://www.romhacking.net/translations/4349/",
+            "version": "0.50",
+            "releaseDate": "2019-03-27",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}

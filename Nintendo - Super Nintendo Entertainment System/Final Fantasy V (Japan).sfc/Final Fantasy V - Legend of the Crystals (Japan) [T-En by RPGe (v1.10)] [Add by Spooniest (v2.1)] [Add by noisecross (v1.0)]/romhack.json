@@ -1,0 +1,48 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted"
+    },
+    "rom": {
+        "size": 2621440,
+        "crc32": "e5313fb7",
+        "md5": "7d285d74ab2975100462293b8e13d1a5",
+        "sha1": "0ac7f6b0454538a1e87a44008e6ff996e01a4c8c"
+    },
+    "patches": [
+        {
+            "authors": [ "RPGe" ],
+            "url": "https://www.romhacking.net/translations/353/",
+            "version": "1.10",
+            "releaseDate": "1998-10-17",
+            "alternative": null,
+            "labels": [ "T-En" ]
+        },
+        {
+            "authors": [ "Spooniest" ],
+            "url": "https://www.romhacking.net/translations/2600/",
+            "version": "2.1",
+            "releaseDate": "2021-03-02",
+            "alternative": null,
+            "labels": [ "Add" ]
+        },
+        {
+            "authors": [ "noisecross" ],
+            "url": "https://www.romhacking.net/translations/3499/",
+            "version": "1.0",
+            "releaseDate": "2018-03-25",
+            "alternative": null,
+            "labels": [ "Add" ]
+        }
+    ]
+}
