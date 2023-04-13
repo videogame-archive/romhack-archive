@@ -10,16 +10,16 @@ import java.nio.file.Path;
 public class Romhack2ArchiveTest {
 
     Path original = Path.of("..","..", "romhack-archive-private", "test-data","Final Fantasy V (Japan).zip");
-    Path modified = Path.of("..","..", "romhack-archive-private", "test-data","Final Fantasy V - Legend of the Crystals (Japan) [T-En by RPGe v1.10] [Add by Spooniest v2.1] [Add by noisecross v1.0].zip");
+    Path modified = Path.of("..","..", "romhack-archive-private", "test-data","Final Fantasy V - Legend of the Crystals (Japan) [T-En by RPGe (v1.10)] [Add by Spooniest (v2.1)] [Add by noisecross (v1.0)].zip");
 
     Path original2 = Path.of("..","..", "romhack-archive-private", "test-data-2","Super_Mario_Land_2_-_6_Golden_Coins_USA_Europe.gb");
     Path modified2 = Path.of("..","..", "romhack-archive-private", "test-data-2","Super_Mario_Land_2_-_6_Golden_Coins_USA_Europe_patched.gb");
 
     Path originalBig = Path.of("..","..", "romhack-archive-private", "test-data-big","Yu-Gi-Oh! Forbidden Memories (USA).bin");
-    Path modifiedBig = Path.of("..","..", "romhack-archive-private", "test-data-big","Yu-Gi-Oh! Forbidden Memories (USA) - 15 Cards drop mod  [Add by Unknown v2019.04.05].bin");
+    Path modifiedBig = Path.of("..","..", "romhack-archive-private", "test-data-big","Yu-Gi-Oh! Forbidden Memories (USA) - 15 Cards drop mod  [Add by Unknown (v2019.04.05)].bin");
 
     Path originalBig2 = Path.of("..","..", "romhack-archive-private", "test-data-big-2","Tomb Raider - The Last Revelation (USA) (Rev 1).bin");
-    Path modifiedBig2 = Path.of("..","..", "romhack-archive-private", "test-data-big-2","Tomb Raider - The Last Revelation (USA) (Rev 1) - TR4 Improved [Fix by Farglior v1.0].bin");
+    Path modifiedBig2 = Path.of("..","..", "romhack-archive-private", "test-data-big-2","Tomb Raider - The Last Revelation (USA) (Rev 1) - TR4 Improved [Fix by Farglior (v1.0)].bin");
 
     Path tempFile = Path.of("temp-" + System.currentTimeMillis());
 

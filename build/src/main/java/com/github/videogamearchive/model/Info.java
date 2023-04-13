@@ -5,8 +5,9 @@ public record Info(
         Boolean translatedTitle,
         Status status,
         Boolean adult,
-        Boolean offensive
-        //Boolean excluded
+        Boolean offensive,
+        Boolean obsoleteVersion,
+        Boolean backCatalog
         ) {
 
 }

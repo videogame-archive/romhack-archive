@@ -113,9 +113,9 @@ public class RomhackValidator {
             builder.append(' ');
             builder.append('[');
 
-            builder.append(patch.labels().get(0) + " by " + getAuthor(patch.authors()) + " v" + patch.version());
+            builder.append(patch.labels().get(0) + " by " + getAuthor(patch.authors()) + " (v" + patch.version() + ")");
             if (patch.alternative() != null) {
-                builder.append(" Alt-" + patch.alternative());
+                builder.append(" (Alt" + patch.alternative() + ")");
             }
             builder.append(']');
         }

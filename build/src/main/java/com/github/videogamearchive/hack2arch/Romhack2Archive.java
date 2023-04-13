@@ -60,7 +60,7 @@ public class Romhack2Archive {
         }
 
         // Create romhack.json
-        Info info = new Info(null, null, null, null, null);
+        Info info = new Info(null, null, null, null, null, null, null);
         Provenance provenance = new Provenance("Unknown", "YYYY-MM-DD", null);
         byte[] romhackRomBytes = getBytes(pathToRomhackRom);
         Rom rom = new Rom((long) romhackRomBytes.length, Hashes.getCrc32(romhackRomBytes), Hashes.getMd5(romhackRomBytes), Hashes.getSha1(romhackRomBytes));
@@ -70,16 +70,10 @@ public class Romhack2Archive {
             String[] collection2NameVersionAlt = patchAsString.split(" by ");
             String label = collection2NameVersionAlt[0];
             String nameVersionAlt = collection2NameVersionAlt[1];
-            int indexOfAlt = nameVersionAlt.indexOf("-Alt");
-            String alternative = null;
-            if (indexOfAlt != -1) {
-                alternative = nameVersionAlt.substring(indexOfAlt + "-Alt".length());
-                nameVersionAlt = nameVersionAlt.substring(0, indexOfAlt);
-            }
-            int indexOfVersion = nameVersionAlt.lastIndexOf(" v");
+            int indexOfVersion = nameVersionAlt.indexOf(" (v");
             String authors = nameVersionAlt.substring(0, indexOfVersion);
-            String version = nameVersionAlt.substring(indexOfVersion + " v".length());
-
+            String version = StringUtil.substring(nameVersionAlt, "(v", ")", true);
+            String alternative = StringUtil.substring(nameVersionAlt, "(Alt", ")", true);
             List<String> authorsAsList = new ArrayList<>();
             for (String author:authors.split(",")) {
                 authorsAsList.add(author.trim());
