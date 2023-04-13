@@ -16,11 +16,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class RomPatcherTest {
 
-    Path deltaPatch = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01]-delta.bps");
-    Path original = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan).sfc");
-    Path modified = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01].sfc");
-    Path originalZip = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan).zip");
-    Path modifiedZip = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01].zip");
+    Path deltaPatch = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)]-delta.bps");
+    Path original = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan).sfc");
+    Path modified = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)].sfc");
+    Path originalZip = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan).zip");
+    Path modifiedZip = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)].zip");
     Path tempFile = Path.of("temp-" + System.currentTimeMillis() + ".sfc");
     Path tempFileZip = Path.of("temp-" + System.currentTimeMillis() + ".zip");
     @AfterEach

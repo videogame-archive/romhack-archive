@@ -59,8 +59,9 @@ public abstract class ReaderWriter {
         JsonWriter jsonWriter = writerFactory.createWriter(sw);
         jsonWriter.writeObject(json);
         jsonWriter.close();
-
-        return stringListsFormatter(sw.toString());
+        String jsonAsString = stringListsFormatter(sw.toString());
+        int indexOfStart = jsonAsString.indexOf("{");
+        return jsonAsString.substring(indexOfStart);
     }
 
     private String stringListsFormatter(String input) {
