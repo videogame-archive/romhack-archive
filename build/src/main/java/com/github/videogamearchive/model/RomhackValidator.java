@@ -7,8 +7,11 @@ import com.github.videogamearchive.util.PathUtil;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 public class RomhackValidator {
@@ -61,24 +64,24 @@ public class RomhackValidator {
             }
         }
 
-        // romhack-original - ensure only folders with matching versions are found
-        for (File version:originalFolder.toFile().listFiles()) {
-            String versionName = version.getName();
-            if (versionName.endsWith("-sources")) {
-                int indexOfSources = versionName.indexOf("-sources");
-                versionName = versionName.substring(0, indexOfSources);
+        // romhack-original - ensure folders with number of patches are found
+        HashSet<String> folderNames = new HashSet<>();
+        folderNames.addAll(Arrays.asList(originalFolder.toFile().list()));
+
+        for (int i = 1; i < romhack.patches().size(); i++) {
+            String name = "" + i;
+            if (!folderNames.contains(name)) {
+                throw new RuntimeException("romhack-original misses a version - Actual: " + name);
             }
-            boolean versionFound = false;
-            for (Patch patch: romhack.patches()) {
-                if (patch.version().equals(versionName)) {
-                    versionFound = true;
-                    break;
-                }
-            }
-            if (!versionFound) {
-                throw new RuntimeException("romhack-original contains a folder that doesn't match any version - Actual: " + versionName);
-            }
+            folderNames.remove(name);
+            String nameSources = "" + i + "-source";
+            folderNames.remove(nameSources);
         }
+
+        if (!folderNames.isEmpty()) {
+            throw new RuntimeException("romhack-original has unexpected contents - Actual: " + folderNames);
+        }
+
     }
 
     public static void validateRom(Romhack romhack, byte[] bytes) throws NoSuchAlgorithmException {
@@ -99,7 +102,7 @@ public class RomhackValidator {
         }
     }
 
-    private static String getExpectedFolderNamePostfix(Romhack romhack) {
+    public static String getExpectedFolderNamePostfix(Romhack romhack) {
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < romhack.patches().size(); i++) {
             Patch patch = romhack.patches().get(i);

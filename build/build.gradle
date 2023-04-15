@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'javax.json:javax.json-api:1.1'
+    implementation 'org.apache.commons:commons-csv:1.10.0', 'javax.json:javax.json-api:1.1'
     runtimeOnly 'org.glassfish:javax.json:1.1'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'

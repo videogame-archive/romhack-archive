@@ -61,7 +61,7 @@ public class Romhack2Archive {
 
         // Create romhack.json
         Info info = new Info(null, null, null, null, null, null, null);
-        Provenance provenance = new Provenance("Unknown", "YYYY-MM-DD", null);
+        Provenance provenance = new Provenance("Unknown", "YYYY-MM-DD", null, null);
         byte[] romhackRomBytes = getBytes(pathToRomhackRom);
         Rom rom = new Rom((long) romhackRomBytes.length, Hashes.getCrc32(romhackRomBytes), Hashes.getMd5(romhackRomBytes), Hashes.getSha1(romhackRomBytes));
         String romhackName = PathUtil.getName(pathToRomhackRom);

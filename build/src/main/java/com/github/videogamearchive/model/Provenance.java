@@ -3,6 +3,7 @@ package com.github.videogamearchive.model;
 public record Provenance(
         String retrievedBy,
         String retrievedDate,
-        Source source) {
+        Source source,
+        String notes) {
 
 }
