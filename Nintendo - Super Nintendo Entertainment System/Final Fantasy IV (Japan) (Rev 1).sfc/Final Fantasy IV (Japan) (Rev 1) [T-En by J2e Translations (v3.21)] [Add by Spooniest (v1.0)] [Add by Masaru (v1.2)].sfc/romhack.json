@@ -35,7 +35,7 @@
             "version": "1.0",
             "releaseDate": "2012-06-16",
             "alternative": null,
-            "labels": [ "Add" ]
+            "labels": [ "Retouch" ]
         },
         {
             "authors": [ "Masaru", "Spooniest" ],
@@ -43,7 +43,7 @@
             "version": "1.2",
             "releaseDate": "2022-11-06",
             "alternative": null,
-            "labels": [ "Add" ]
+            "labels": [ "Retouch" ]
         }
     ]
 }

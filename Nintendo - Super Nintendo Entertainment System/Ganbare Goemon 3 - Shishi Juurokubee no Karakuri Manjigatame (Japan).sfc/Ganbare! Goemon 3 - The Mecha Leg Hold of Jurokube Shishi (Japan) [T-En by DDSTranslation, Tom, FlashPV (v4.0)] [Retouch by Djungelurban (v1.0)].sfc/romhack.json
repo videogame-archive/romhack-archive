@@ -16,26 +16,26 @@
     },
     "rom": {
         "size": 4194304,
-        "crc32": "6791972e",
-        "md5": "e15eb64245ee4dfba3fc69973f003735",
-        "sha1": "df41f77b8012e044db6bb9a6d1dbe58cd5da190f"
+        "crc32": "09ec3db1",
+        "md5": "9641556fe50a447412b18c500c4390b5",
+        "sha1": "d9f3b02595bbbe5ce181b23a66189731bd9ff4ba"
     },
     "patches": [
         {
             "authors": [ "DDSTranslation", "Tom", "FlashPV" ],
-            "url": "https://www.romhacking.net/translations/5353/",
-            "version": "3.0",
+            "url": "https://www.romhacking.net/translations/5354/",
+            "version": "4.0",
             "releaseDate": "2020-02-08",
             "alternative": null,
             "labels": [ "T-En" ]
         },
         {
             "authors": [ "Djungelurban" ],
-            "url": "https://www.romhacking.net/translations/6194/",
+            "url": "https://www.romhacking.net/translations/6197/",
             "version": "1.0",
             "releaseDate": "2021-08-02",
             "alternative": null,
-            "labels": [ "Add" ]
+            "labels": [ "Retouch" ]
         }
     ]
 }

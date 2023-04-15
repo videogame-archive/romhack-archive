@@ -35,7 +35,7 @@
             "version": "0.14",
             "releaseDate": "2017-11-11",
             "alternative": null,
-            "labels": [ "Add" ]
+            "labels": [ "Fix" ]
         },
         {
             "authors": [ "RobertTheSable", "Quirino", "RPGuy96", "VincentASM" ],
@@ -43,7 +43,7 @@
             "version": "0.22",
             "releaseDate": "2022-04-14",
             "alternative": null,
-            "labels": [ "Add" ]
+            "labels": [ "Fix" ]
         }
     ]
 }
