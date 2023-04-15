@@ -161,7 +161,7 @@ Ideally and in general a romhack has only ONE label that defines it, but excepti
 
 The label system is based on the idea that romhacks fall in two big categories, the ones that enhance the original game and the ones that change it.
 
-Each category additionally has two dimensions Gameplay/Cosmetic and Mayor/Minor.
+Each category additionally has two dimensions Gameplay/Cosmetic and Major/Minor.
 
 | **Other/Enhance** | **Description**                                                                                                       |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -172,9 +172,9 @@ Each category additionally has two dimensions Gameplay/Cosmetic and Mayor/Minor.
 
 | **Enhance** | **Dimensions**             | **Description**                                                                                                                                                                                |
 |-------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Overhaul    | All Mayor & Gameplay Mayor | Variety of gameplay improvements (and optionally cosmetic enhancements and bugfixes) that are intended to greatly improve the original experience (ex. rebalancing hacks, definitive editions) |
+| Overhaul    | All Major & Gameplay Major | Variety of gameplay improvements (and optionally cosmetic enhancements and bugfixes) that are intended to greatly improve the original experience (ex. rebalancing hacks, definitive editions) |
 | Tweak       | Gameplay Minor & All Minor | Minor gameplay improvements intended to enhance the original experience (ex. minor difficulty adjustments, tweaking animation speeds)                                                          |
-| Polish      | Cosmetic Mayor             | Visuals widely improved while maintaining the theme of the original game (ex. "Super Mario Bros Enhanced", most "enhanced color" hacks)                                                        |
+| Polish      | Cosmetic Major             | Visuals widely improved while maintaining the theme of the original game (ex. "Super Mario Bros Enhanced", most "enhanced color" hacks)                                                        |
 | Retouch     | Cosmetic Minor             | Minor cosmetic improvements intended as a touchup to the original experience (ex. SMB1 mario replaced with SMB3 mario)                                                                         |
 
 | **Change** | **Dimensions**             | **Description**                                                                                                                                                |
