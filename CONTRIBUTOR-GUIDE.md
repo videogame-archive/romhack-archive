@@ -30,7 +30,7 @@ No-Intro System Name
                 |- romhack.bps
                 |- romhack.json
                 |- romhack-original
-                    |- version 
+                    |- 1 
                         |-...
                     ...
 ```
@@ -39,9 +39,9 @@ Some will notice that the version is repeated, this is intentional and necessary
 
 The Romhack rom folder name contains the aggregation of the different patches versions used.
 
-The versions found under the 'romhack-original' are the versions of the individual patches used to build the romhack rom.
-
 The romhack-original folder contains the originally distributed patch files 'exactly as they were delivered'. More often than not as a compressed archive.  For romhacks delivered as roms he generated romhack.bps is enough.
+
+The numbers found under the 'romhack-original' are the order in what the individual patches where used to build the romhack rom.
 
 ## Database Fields
 
@@ -159,21 +159,30 @@ Labels belonging to the first patch are the ones used to define a romhack.
 
 Ideally and in general a romhack has only ONE label that defines it, but exceptions may be found.
 
-| **Name**            | **Description**                                                                                                                                                                                                                      | **Examples**                                      |     
-|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| T-\$                | $ is a language iso code in camelcase. See two letter codes at: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes                                                                                                                |                                                   |
-| Game                | A romhack that vastly modifies the content of the original game providing a new game. The romhack COULD reuse the 'vanilla' game assets and mechanics and just provide new levels or also add 'chocolate' new assets and mechanics . |                                                   |
-| Definitive Edition  | A romhack that keeps the original game but polishes it extensively. A MIGHTY and RARE title, requires maintainer confirmation. A single game can have several Definitive Edition hacks.                                              | Link's Awakening Redux, The Legend of Zelda Redux |
-| Performance Booster | A romhack that reduces slowdowns WITHOUT introducing cosmetic changes.                                                                                                                                                               | SNES fastrom patches, SNES SA-1 enabled patches   |
-| Cosmetic            | A romhack that ONLY does cosmetic changes WITHOUT altering gameplay.                                                                                                                                                                 | Super Street Fighter II - Enhanced Colors         |
-| Add-Cosmetic        | A romhack that adds a discrete cosmetic change.                                                                                                                                                                                      |                                                   |
-| Add-Gameplay        | A romhack that adds a discrete gameplay change.                                                                                                                                                                                      |                                                   | 
-| Add-Cheat           | A romhack that adds a discrete cheat.                                                                                                                                                                                                | Infinite Lives, Health, etc...                    |
-| Add                 | A romhack that adds a discrete change/improvement.                                                                                                                                                                                   | SMRPG Bowser's Win Pose Uncensored                |
-| Fix                 | A romhack that provides a fix for any kind of coding or graphical error.                                                                                                                                                             | Chrono Trigger Unsightly Pixel                    |
-| Bootleg             | A romhack that was initially distributed as a physical cart.                                                                                                                                                                         |                                                   |
+The label system is based on the idea that romhacks fall in two big categories, the ones that enhance the original game and the ones that change it.
 
-Notes: Add and Fix labels are specially shorter since they are used sometimes several times on a romhack file name.
+Each category additionally has two dimensions Gameplay/Cosmetic and Mayor/Minor.
+
+| **Other/Enhance** | **Description**                                                                                                       |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------|
+| T-\$              | $ is a language iso code in camelcase. See two letter codes at: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes |
+| Performance       | Improves the overall performance of the game (ex. lag reduction, shorter transitions)                                 |
+| Fix               | A Fixes one or more bugs, glitches, or graphical errors (NOT for intentional choices by the developer)                |
+| Cheat             | Removes an aspect of the challenge (infinite lives, stage select, etc.) (NOT for more nuanced difficulty adjustments) |    
+
+| **Enhance** | **Dimensions**             | **Description**                                                                                                                                                                                |
+|-------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Overhaul    | All Mayor & Gameplay Mayor | Variety of gameplay improvements (and optionally cosmetic enhancements and bugfixes) that are intended to greatly improve the original experience (ex. rebalancing hacks, definitive editions) |
+| Tweak       | Gameplay Minor & All Minor | Minor gameplay improvements intended to enhance the original experience (ex. minor difficulty adjustments, tweaking animation speeds)                                                          |
+| Polish      | Cosmetic Mayor             | Visuals widely improved while maintaining the theme of the original game (ex. "Super Mario Bros Enhanced", most "enhanced color" hacks)                                                        |
+| Retouch     | Cosmetic Minor             | Minor cosmetic improvements intended as a touchup to the original experience (ex. SMB1 mario replaced with SMB3 mario)                                                                         |
+
+| **Change** | **Dimensions**             | **Description**                                                                                                                                                |
+|------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Game       | All Mayor & Gameplay Mayor | Major gameplay changes that feel like a new game or sequel (ex. hacks with new levels, hacks that change the genre)                                            |
+| Alternate  | Gameplay Minor & All Minor | Minor gameplay changes that depart from the original game (ex. "8 Eyes - Playing as Simon Belmont" with whip implemented)                                      |
+| Themed     | Cosmetic Mayor             | Visuals widely replaced with another universe or theme that departs from the original game (ex. Bokosuka Wars "Hyrule Wars", "Bionic Commando Winter Edition") |
+| Reskin     | Cosmetic Minor             | Minor cosmetic changes that depart from the original game (ex. player sprite replaced with another character, bosses arbitrarily redrawn to look like "bugs")  |
 
 ## Romhack Rom Naming Convention
 
@@ -192,10 +201,12 @@ In particular, information about the patches used to build a romhack.
 
 Every romhack rom name contains a pair of brackets [] for every patch applied.
 
+If a romhack was initially distributed as a physical cart the label "(Bootleg)" is added.
+
 ⚠ Author, Versions and Alternative qualifiers CANNOT contain parenthesis on the filename. If these are present on the json file they are removed when used on the filename.
 
 ```
-NAME (REGION) \[PRIMARY by AUTHOR (vVERSION) (Alt ALTERNATIVE]\] ... \[Add by ADD_AUTHOR (vADD_VERSION) (Alt ADD_ALTERNATIVE)\]
+NAME (REGION) [(Bootleg)] [PRIMARY by AUTHOR (vVERSION) (Alt ALTERNATIVE]] ... [Add by ADD_AUTHOR (vADD_VERSION) (Alt ADD_ALTERNATIVE)]
 ```
 
 One of the advantages of our naming convention is that is unambiguous and can be calculated from the metadata allowing for validation.
@@ -271,8 +282,8 @@ This source code can be preserved together with the romhack patches under the 'r
 ```
 ...
 |- romhack-original
-    |- version
-    |- version-source
+    |- 1
+    |- 1-source
     ...
 ```
 
