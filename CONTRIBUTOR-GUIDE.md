@@ -100,7 +100,8 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
   "provenance": {
     "retrievedBy": "JuMaFuSe",
     "retrievedDate": "2023-03-21",
-    "source": "Trusted"
+    "source": "Trusted",
+    "notes" : null
   },
   "rom": {
     "size": 2621440,
