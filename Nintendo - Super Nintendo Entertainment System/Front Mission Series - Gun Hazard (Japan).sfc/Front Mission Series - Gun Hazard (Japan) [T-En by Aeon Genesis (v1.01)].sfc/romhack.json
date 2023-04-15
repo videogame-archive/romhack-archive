@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 3145728,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Aeon Genesis" ],
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Akujin", "M", "Klarth" ],
             "url": "https://www.romhacking.net/translations/528/",
             "version": "1.01",
             "releaseDate": "2004-08-23",

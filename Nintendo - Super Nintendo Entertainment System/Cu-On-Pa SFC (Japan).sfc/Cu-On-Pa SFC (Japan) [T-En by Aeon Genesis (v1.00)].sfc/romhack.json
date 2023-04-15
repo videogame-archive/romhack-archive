@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1048576,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Aeon Genesis" ],
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Akujin" ],
             "url": "https://www.romhacking.net/translations/303/",
             "version": "1.00",
             "releaseDate": "2001-10-06",

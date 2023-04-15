@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-25",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 2097152,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Aeon Genesis" ],
+            "authors": [ "Aeon Genesis", "Gideon Zhi" ],
             "url": "https://www.romhacking.net/translations/288/",
             "version": "0.80",
             "releaseDate": "2000-06-25",

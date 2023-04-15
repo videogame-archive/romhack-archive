@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1114112,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Aeon Genesis" ],
+            "authors": [ "Aeon Genesis", "J2e Translations", "Gideon Zhi", "AnusP", "Mariko Sadakane", "Eiko Ishakawa", "Reiko", "Chip" ],
             "url": "https://www.romhacking.net/translations/758/",
             "version": "1.00",
             "releaseDate": "2004-01-07",

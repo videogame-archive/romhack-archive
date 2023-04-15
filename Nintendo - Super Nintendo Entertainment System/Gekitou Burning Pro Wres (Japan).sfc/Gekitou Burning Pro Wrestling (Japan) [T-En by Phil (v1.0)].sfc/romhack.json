@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 2621440,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Phil" ],
+            "authors": [ "Phil", "snesmaster40", "KingMike" ],
             "url": "https://www.romhacking.net/translations/1243/",
             "version": "1.0",
             "releaseDate": "2010-10-31",

@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 4194304,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Disnesquick" ],
+            "authors": [ "Disnesquick", "satsu", "Avster", "Shivalva", "filler", "Akujin" ],
             "url": "https://www.romhacking.net/translations/346/",
             "version": "1.02",
             "releaseDate": "2012-09-26",

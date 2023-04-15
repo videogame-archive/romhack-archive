@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1048576,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "KingMike's Translations" ],
+            "authors": [ "KingMike's Translations", "KingMike", "Geisha Boy", "DarknessSavior" ],
             "url": "https://www.romhacking.net/translations/1714/",
             "version": "1.0",
             "releaseDate": "2012-02-29",

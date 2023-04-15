@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 4194304,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Rodimus Primal" ],
+            "authors": [ "Rodimus Primal", "assassin17", "Yazoo", "angelo26", "Master ZED", "Lenophis", "Dr. Meat", "Leviathan Mist", "Spooniest", "Chronosplit", "Madsiur", "Leet Sketcher", "SilentEnigma" ],
             "url": "https://www.romhacking.net/hacks/1386/",
             "version": "3.06",
             "releaseDate": "2022-02-19",

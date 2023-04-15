@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 4194304,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "DDSTranslation" ],
+            "authors": [ "DDSTranslation", "Tom", "FlashPV" ],
             "url": "https://www.romhacking.net/translations/5353/",
             "version": "3.0",
             "releaseDate": "2020-02-08",

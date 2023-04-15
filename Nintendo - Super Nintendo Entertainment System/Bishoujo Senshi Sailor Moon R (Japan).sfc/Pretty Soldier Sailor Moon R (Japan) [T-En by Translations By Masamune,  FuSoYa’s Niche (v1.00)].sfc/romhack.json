@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 3145728,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Translations By Masamune", " FuSoYa’s Niche" ],
+            "authors": [ "Translations By Masamune", "FuSoYa’s Niche", "FuSoYa", "SilverSonic", "Summon Illusion" ],
             "url": "https://www.romhacking.net/translations/435/",
             "version": "1.00",
             "releaseDate": "2002-03-06",

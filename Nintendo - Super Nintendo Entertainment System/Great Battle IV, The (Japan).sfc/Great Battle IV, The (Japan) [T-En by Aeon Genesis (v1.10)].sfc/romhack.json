@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-25",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 2097152,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Aeon Genesis" ],
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "TheMajinZenki", "Setz" ],
             "url": "https://www.romhacking.net/translations/3472/",
             "version": "1.10",
             "releaseDate": "13-03-2018",

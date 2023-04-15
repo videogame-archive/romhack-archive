@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1572864,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "J2e Translations" ],
+            "authors": [ "J2e Translations", "AnusP", "Blasted2", "necrosaro", "Dark Force", "P-Funk", "Ian Kelley", "Trainspotter", "Rydia", "UnaFarmer" ],
             "url": "https://www.romhacking.net/translations/352/",
             "version": "3.21",
             "releaseDate": "2001-07-03",
@@ -29,7 +30,7 @@
             "labels": [ "T-En" ]
         },
         {
-            "authors": [ "Spooniest" ],
+            "authors": [ "Spooniest", "Joelsmith380", "AnusP", "Blasted2", "necrosaro", "Dark Force", "P-Funk", "Trainspotter", "Ian Kelley", "Rydia", "UnaFarmer" ],
             "url": "https://www.romhacking.net/translations/2602/",
             "version": "1.0",
             "releaseDate": "2012-06-16",
@@ -37,7 +38,7 @@
             "labels": [ "Add" ]
         },
         {
-            "authors": [ "Masaru" ],
+            "authors": [ "Masaru", "Spooniest" ],
             "url": "https://www.romhacking.net/translations/6467/",
             "version": "1.2",
             "releaseDate": "2022-11-06",

@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1572864,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Dynamic-Designs" ],
+            "authors": [ "Dynamic-Designs", "Taskforce", "Bongo`", "filler", "Draken" ],
             "url": "https://www.romhacking.net/translations/2697/",
             "version": "1.01",
             "releaseDate": "2016-08-18",

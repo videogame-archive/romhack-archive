@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1572864,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "DeJap Translations" ],
+            "authors": [ "DeJap Translations", "Dark Force", "AnusP", "Faraday", "Alex W. Jackson", "F.H.", "Jason Li" ],
             "url": "https://www.romhacking.net/translations/289/",
             "version": "1.0",
             "releaseDate": "2000-12-22",

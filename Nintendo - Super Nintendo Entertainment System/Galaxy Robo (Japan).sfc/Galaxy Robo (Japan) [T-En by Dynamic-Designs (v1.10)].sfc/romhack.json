@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1572864,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Dynamic-Designs" ],
+            "authors": [ "Dynamic-Designs", "Draken", "Bongo`", "filler", "Wildbill" ],
             "url": "https://www.romhacking.net/translations/2418/",
             "version": "1.10",
             "releaseDate": "2015-12-28",

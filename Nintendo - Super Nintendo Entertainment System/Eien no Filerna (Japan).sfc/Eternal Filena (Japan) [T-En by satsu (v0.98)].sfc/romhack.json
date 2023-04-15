@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 3145728,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "satsu" ],
+            "authors": [ "satsu", "Disnesquick", "Near", "Bongo`", "Gideon Zhi", "Maegra", "Tomato", "D", "Eien Ni Hen", "Akujin" ],
             "url": "https://www.romhacking.net/translations/761/",
             "version": "0.98",
             "releaseDate": "2009-02-02",

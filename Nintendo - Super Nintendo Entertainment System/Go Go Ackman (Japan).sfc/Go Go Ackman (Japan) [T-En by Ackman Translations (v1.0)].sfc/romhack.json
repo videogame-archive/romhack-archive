@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-25",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1310720,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Ackman Translations" ],
+            "authors": [ "Ackman Translations", "", "Akujin", "Teunire" ],
             "url": "https://www.romhacking.net/translations/363/",
             "version": "1.0",
             "releaseDate": "1999-12-20",

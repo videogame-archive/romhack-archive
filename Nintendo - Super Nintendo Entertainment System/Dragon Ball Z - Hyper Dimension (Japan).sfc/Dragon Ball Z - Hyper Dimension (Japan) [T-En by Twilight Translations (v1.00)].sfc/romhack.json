@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 3145728,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Twilight Translations" ],
+            "authors": [ "Twilight Translations", "RedComet", "DarknessSavior", "Tom" ],
             "url": "https://www.romhacking.net/translations/1537/",
             "version": "1.00",
             "releaseDate": "2010-07-29",

@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 4194304,
@@ -29,7 +30,7 @@
             "labels": [ "T-En" ]
         },
         {
-            "authors": [ "Quirino" ],
+            "authors": [ "Quirino", "RPGuy96", "VincentASM" ],
             "url": "https://www.romhacking.net/translations/2805/",
             "version": "0.14",
             "releaseDate": "2017-11-11",
@@ -37,7 +38,7 @@
             "labels": [ "Add" ]
         },
         {
-            "authors": [ "RobertTheSable" ],
+            "authors": [ "RobertTheSable", "Quirino", "RPGuy96", "VincentASM" ],
             "url": "https://www.romhacking.net/translations/4969/",
             "version": "0.22",
             "releaseDate": "2022-04-14",

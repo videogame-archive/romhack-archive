@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 4194304,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Dynamic-Designs" ],
+            "authors": [ "Dynamic-Designs", "Wildbill", "Bongo`", "Gerb", "Taskforce", "FlashPV", "Near", "DaMarsMan", "filler", "D" ],
             "url": "https://www.romhacking.net/translations/2339/",
             "version": "1.00",
             "releaseDate": "2015-05-13",

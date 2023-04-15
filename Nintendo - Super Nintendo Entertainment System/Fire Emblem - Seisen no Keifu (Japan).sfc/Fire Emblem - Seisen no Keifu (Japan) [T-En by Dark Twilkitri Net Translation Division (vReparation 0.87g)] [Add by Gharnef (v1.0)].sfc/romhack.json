@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 4194304,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Dark Twilkitri Net Translation Division" ],
+            "authors": [ "Dark Twilkitri Net Translation Division", "Twilkitri", "Jay", "Boo" ],
             "url": "https://www.romhacking.net/translations/865/",
             "version": "Reparation 0.87g",
             "releaseDate": "2012-05-06",
@@ -29,7 +30,7 @@
             "labels": [ "T-En" ]
         },
         {
-            "authors": [ "Gharnef" ],
+            "authors": [ "Gharnef", "Twilkitri" ],
             "url": "https://www.romhacking.net/translations/2803/",
             "version": "1.0",
             "releaseDate": "2014-08-03",

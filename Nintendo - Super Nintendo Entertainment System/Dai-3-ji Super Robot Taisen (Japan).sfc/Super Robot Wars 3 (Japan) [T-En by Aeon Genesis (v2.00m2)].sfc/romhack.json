@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 2097152,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Aeon Genesis" ],
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Akujin", "TheMajinZenki", "Fei", "Mugi" ],
             "url": "https://www.romhacking.net/translations/466/",
             "version": "2.00m2",
             "releaseDate": "2019-06-24",

@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 524288,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "MrRichard999" ],
+            "authors": [ "MrRichard999", "D.D.S.", "AgentOrange", "TheMajinZenki", "FlashPV" ],
             "url": "https://www.romhacking.net/translations/4080/",
             "version": "1.0",
             "releaseDate": "2018-12-10",

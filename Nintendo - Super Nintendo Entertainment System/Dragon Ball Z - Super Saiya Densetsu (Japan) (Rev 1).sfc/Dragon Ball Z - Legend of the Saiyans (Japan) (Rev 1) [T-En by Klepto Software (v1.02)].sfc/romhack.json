@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1048576,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Klepto Software" ],
+            "authors": [ "Klepto Software", "SirYoink", "Eien Ni Hen", "MO", "UnaFarmer" ],
             "url": "https://www.romhacking.net/translations/326/",
             "version": "1.02",
             "releaseDate": "2016-02-17",

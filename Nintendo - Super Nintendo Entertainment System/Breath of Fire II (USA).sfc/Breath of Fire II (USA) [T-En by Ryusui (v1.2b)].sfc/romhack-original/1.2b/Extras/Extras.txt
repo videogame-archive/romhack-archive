@@ -1,7 +1,0 @@
-This ZIP file contains the following:
-
--Extras.txt (this file)
--Original Title Screen Music (v1.2b).ips (the intro patch for the original title screen music)
--Through the Fire and Flames (v1.2b).ips (the intro patch for Through the Fire and Flames)
-
-These patches must be applied over the Breath of Fire 2 Retranslation (v1.2b) patch. If you want to switch between alternate intros, you'll have to reapply the Breath of Fire 2 Retranslation (v1.2b) patch to a clean ROM.

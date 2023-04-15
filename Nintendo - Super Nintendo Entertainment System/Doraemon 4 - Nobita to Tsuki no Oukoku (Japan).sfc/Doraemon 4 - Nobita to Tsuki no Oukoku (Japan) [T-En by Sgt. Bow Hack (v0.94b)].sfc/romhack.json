@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1572864,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Sgt. Bow Hack" ],
+            "authors": [ "Sgt. Bow Hack", "Flobbasko" ],
             "url": "https://www.romhacking.net/translations/313/",
             "version": "0.94b",
             "releaseDate": "1998-04-25",

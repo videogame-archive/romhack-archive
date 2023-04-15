@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 3145728,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Synchronicity" ],
+            "authors": [ "Synchronicity", "sqykly", "Denpanosekai" ],
             "url": "https://www.romhacking.net/translations/1442/",
             "version": "1.0",
             "releaseDate": "2009-11-03",

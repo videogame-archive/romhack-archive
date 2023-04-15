@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 6291456,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Cirosan" ],
+            "authors": [ "Cirosan", "HidoranBlaze", "Ando", "Zane Avernathy", "EnDavio", "Robert of Normandy", "Kirb", "dn", "Miacis", "Sam Heitzer" ],
             "url": "https://www.romhacking.net/translations/4653/",
             "version": "1.04",
             "releaseDate": "2019-05-31",
@@ -29,7 +30,7 @@
             "labels": [ "T-En" ]
         },
         {
-            "authors": [ "Miacis" ],
+            "authors": [ "Miacis", "Expert Criminal", "Ultimage", "Rosie the Riveter", "Flasuban", "Tchuu" ],
             "url": "https://www.romhacking.net/translations/5884/",
             "version": "1.08",
             "releaseDate": "2021-12-24",

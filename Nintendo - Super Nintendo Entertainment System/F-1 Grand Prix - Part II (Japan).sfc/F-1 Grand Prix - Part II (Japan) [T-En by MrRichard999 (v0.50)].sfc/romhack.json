@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1572864,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "MrRichard999" ],
+            "authors": [ "MrRichard999", "TheMajinZenki", "AgentOrange" ],
             "url": "https://www.romhacking.net/translations/4349/",
             "version": "0.50",
             "releaseDate": "2019-03-27",

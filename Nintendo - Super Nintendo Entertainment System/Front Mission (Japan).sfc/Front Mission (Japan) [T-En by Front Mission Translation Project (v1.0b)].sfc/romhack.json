@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 3440640,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Front Mission Translation Project" ],
+            "authors": [ "Front Mission Translation Project", "Akujin", "Hojo", "David Mullen (MakoKnight)", "Shih Tzu", "F.H.", "Dark Force" ],
             "url": "https://www.romhacking.net/translations/362/",
             "version": "1.0b",
             "releaseDate": "2001-09-24",

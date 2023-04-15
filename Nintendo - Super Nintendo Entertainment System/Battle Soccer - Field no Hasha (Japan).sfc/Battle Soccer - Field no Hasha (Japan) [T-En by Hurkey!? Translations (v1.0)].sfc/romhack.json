@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1048576,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Hurkey!? Translations" ],
+            "authors": [ "Hurkey!? Translations", "Fartnugg", "A-KO", "SD-Tetsuo" ],
             "url": "https://www.romhacking.net/translations/568/",
             "version": "1.0",
             "releaseDate": "2002-06-18",

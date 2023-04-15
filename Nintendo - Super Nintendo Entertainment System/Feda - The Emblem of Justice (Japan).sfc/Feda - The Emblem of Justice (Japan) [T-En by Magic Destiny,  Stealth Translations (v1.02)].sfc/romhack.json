@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 3145728,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Magic Destiny", " Stealth Translations" ],
+            "authors": [ "Magic Destiny", "Stealth Translations", "Bongo`", "Yukiko", "ZackMan", "Wildbill", "Draken", "Taskforce", "Red Soul", "Tomato" ],
             "url": "https://www.romhacking.net/translations/349/",
             "version": "1.02",
             "releaseDate": "2010-10-18",

@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 524800,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "MrRichard999" ],
+            "authors": [ "MrRichard999", "AgentOrange", "pacnsacdave" ],
             "url": "https://www.romhacking.net/translations/2233/",
             "version": "0.75b",
             "releaseDate": "2015-11-30",

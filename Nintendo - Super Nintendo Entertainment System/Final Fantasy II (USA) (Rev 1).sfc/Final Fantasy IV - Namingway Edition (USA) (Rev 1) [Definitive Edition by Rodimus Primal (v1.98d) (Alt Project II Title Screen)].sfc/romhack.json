@@ -11,7 +11,8 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-03-21",
-        "source": "Trusted"
+        "source": "Trusted",
+        "notes": null
     },
     "rom": {
         "size": 1048576,
@@ -21,7 +22,7 @@
     },
     "patches": [
         {
-            "authors": [ "Rodimus Primal" ],
+            "authors": [ "Rodimus Primal", "FlamePurge", "chillyfeez", "Grimoire LD", "Justin3009", "Bahamut Zero" ],
             "url": "https://www.romhacking.net/hacks/2337/",
             "version": "1.98d",
             "releaseDate": "2022-06-05",

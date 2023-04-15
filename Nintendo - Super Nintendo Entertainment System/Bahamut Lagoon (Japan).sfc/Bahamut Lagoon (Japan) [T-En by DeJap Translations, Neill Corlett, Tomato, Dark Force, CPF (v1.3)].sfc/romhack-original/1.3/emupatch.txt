@@ -1,3 +1,0 @@
-BL Patch - Emulator version (fast version)
-
-This can work on copiers as well but it will have a few font glitches.
