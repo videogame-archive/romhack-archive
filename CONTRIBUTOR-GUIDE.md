@@ -26,7 +26,7 @@ This is best visualized with an example:
 ```
 No-Intro System Name
     |- No-Intro Rom Name (region).extension
-            |- Romhack Rom Name (region) [XYZ by Author (vVersion)] [Add by Author (vVersion)].extension
+            |- Romhack Rom Name (region) [ABC by Author (vVersion)] [XYZ by Author (vVersion)].extension
                 |- romhack.bps
                 |- romhack.json
                 |- romhack-original
@@ -35,11 +35,9 @@ No-Intro System Name
                     ...
 ```
 
-Some will notice that the version is repeated, this is intentional and necessary.
-
 The Romhack rom folder name contains the aggregation of the different patches versions used.
 
-The romhack-original folder contains the originally distributed patch files 'exactly as they were delivered'. More often than not as a compressed archive.  For romhacks delivered as roms the generated romhack.bps is enough.
+The romhack-original folder contains the originally distributed patch files 'exactly as they were delivered'. More often than not as a compressed archive.  For romhacks delivered as roms our generated romhack.bps is enough.
 
 The numbers found under the 'romhack-original' are the order in what the individual patches where used to build the romhack rom.
 
@@ -71,7 +69,7 @@ The numbers found under the 'romhack-original' are the order in what the individ
 | authors         | array of string | Yes          |     | Authors of the patch, to avoid naming authors in different ways best is to use their name as indicated in community sites or forums including 'Anonymous'. In absence of any information 'Unknown' SHOULD be used. |
 | shortAuthors    | string          | No           |     | Due to filename length limit is not always feasible to keep all authors on the filename, on those cases this field is used instead, 'null' otherwise.                                                              |
 | url             | string          | No           |     | Url where the link to download the patch was found, 'null' otherwise.                                                                                                                                              |
-| otherUrls       | string          | No           |     | Other Urls related with the hack/patch, author website, guide, etc...                                                                                                                                              |
+| otherUrls       | array of string | No           |     | Other Urls related with the hack/patch, author website, guide, etc...                                                                                                                                              |
 | version         | string          | Yes          |     | Version, exactly as indicated by the author. Some authors will indicate '1.00', others '1.0', these are considered different.                                                                                      |
 |                 |                 |              |     | If the author repeats a version an incremental numerical value SHOULD be added. For example '2.0 Final (1)' and '2.0 Final (2)'                                                                                    |
 |                 |                 |              |     | In absence of a version the release date following the format YYYY.MM.DD SHOULD be used.                                                                                                                           |
