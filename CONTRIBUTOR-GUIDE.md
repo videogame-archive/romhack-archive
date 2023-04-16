@@ -39,7 +39,7 @@ Some will notice that the version is repeated, this is intentional and necessary
 
 The Romhack rom folder name contains the aggregation of the different patches versions used.
 
-The romhack-original folder contains the originally distributed patch files 'exactly as they were delivered'. More often than not as a compressed archive.  For romhacks delivered as roms he generated romhack.bps is enough.
+The romhack-original folder contains the originally distributed patch files 'exactly as they were delivered'. More often than not as a compressed archive.  For romhacks delivered as roms the generated romhack.bps is enough.
 
 The numbers found under the 'romhack-original' are the order in what the individual patches where used to build the romhack rom.
 
@@ -69,6 +69,7 @@ The numbers found under the 'romhack-original' are the order in what the individ
 | sha1            | string          | Yes          |     | For the romhack rom: sha1 hash as an hex string in lowercase.                                                                                                                                                      |
 | **Patches**     | array of object | Yes          |     |                                                                                                                                                                                                                    |
 | authors         | array of string | Yes          |     | Authors of the patch, to avoid naming authors in different ways best is to use their name as indicated in community sites or forums including 'Anonymous'. In absence of any information 'Unknown' SHOULD be used. |
+| shortAuthors    | string          | No           |     | Due to filename length limit is not always feasible to keep all authors on the filename, on those cases this field is used instead, 'null' otherwise.                                                              |
 | url             | string          | No           |     | Url where the link to download the patch was found, 'null' otherwise.                                                                                                                                              |
 | version         | string          | Yes          |     | Version, exactly as indicated by the author. Some authors will indicate '1.00', others '1.0', these are considered different.                                                                                      |
 |                 |                 |              |     | If the author repeats a version an incremental numerical value SHOULD be added. For example '2.0 Final (1)' and '2.0 Final (2)'                                                                                    |
@@ -205,7 +206,7 @@ Every romhack rom name contains a pair of brackets [] for every patch applied.
 
 If a romhack was initially distributed as a physical cart the label "(Bootleg)" is added.
 
-⚠ Author, Versions and Alternative qualifiers CANNOT contain parenthesis on the filename. If these are present on the json file they are removed when used on the filename.
+⚠ Author, Versions and Alternative qualifiers CANNOT contain parenthesis or invalid linux and windows filename symbols. If these are present on the json file they are removed when used on the filename.
 
 ```
 NAME (REGION) [(Bootleg)] [PRIMARY by AUTHOR (vVERSION) (Alt ALTERNATIVE]] ... [Add by ADD_AUTHOR (vADD_VERSION) (Alt ADD_ALTERNATIVE)]
@@ -233,8 +234,6 @@ Amazing Spider-Man, The - Lethal Foes (Japan) \[T-En by gorgyrip, filler (v1.0)\
 
 Amazing Spider-Man, The - Lethal Foes (Japan) \[T-En by gorgyrip, filler (v1.0) (Alt Caps)\].sfc
 
-Please notice that to avoid duplicating the 'romhack-original' folder, a symlink is used.
-
 Example 2.2:
 
 Two 'alternative' versions, results in two rom folders:
@@ -242,8 +241,6 @@ Two 'alternative' versions, results in two rom folders:
 Dragon Ball Z - Super Gokuu Den - Totsugeki Hen (Japan) \[T-En by Kakkoii Translations (v0.98) (Alt Manga)\].sfc
 
 Dragon Ball Z - Super Gokuu Den - Totsugeki Hen (Japan) \[T-En by Kakkoii Translations (v0.98) (Alt Anime)\].sfc
-
-Please notice that to avoid duplicating the 'romhack-original' folder, a symlink is used.
 
 **Type 3:** One romhack with three patches, the main one and two Add:
 

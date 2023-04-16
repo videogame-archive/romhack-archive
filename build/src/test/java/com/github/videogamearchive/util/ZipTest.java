@@ -13,9 +13,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ZipTest {
     Path original = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan).sfc");
-    Path modified = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01].sfc");
+    Path modified = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)].sfc");
     Path originalZip = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan).zip");
-    Path modifiedZip = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01].zip");
+    Path modifiedZip = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)].zip");
     Path zip1 = Path.of("..","..", "romhack-archive-private", "test-data","GoldMap13.zip");
     Path tempFileZip = Path.of("temp-" + System.currentTimeMillis() + ".zip");
     @AfterEach

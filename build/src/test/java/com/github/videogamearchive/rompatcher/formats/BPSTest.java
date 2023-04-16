@@ -13,10 +13,10 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class BPSTest {
-    Path original = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan).sfc");
-    Path modified = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01].sfc");
-    Path linearPatch = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01]-linear.bps");
-    Path deltaPatch = Path.of("test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero v1.01]-delta.bps");
+    Path original = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan).sfc");
+    Path modified = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)].sfc");
+    Path linearPatch = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)]-linear.bps");
+    Path deltaPatch = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)]-delta.bps");
 
     Path tempFile = Path.of("temp-" + System.currentTimeMillis());
     @AfterEach

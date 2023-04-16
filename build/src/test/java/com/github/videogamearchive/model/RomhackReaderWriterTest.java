@@ -14,7 +14,7 @@ public class RomhackReaderWriterTest {
         Path pathToJson = Path.of("..",
                 "Nintendo - Super Nintendo Entertainment System",
                 "3x3 Eyes - Juuma Houkan (Japan).sfc",
-                "3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero, FamilyGuy, AkiHizirino, mkwong98 v1.01].sfc",
+                "3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero, FamilyGuy, AkiHizirino, mkwong98 (v1.01)].sfc",
                 "romhack.json");
         RomhackReaderWriter romhackReader = new RomhackReaderWriter();
         Romhack romhack = romhackReader.read(pathToJson);
@@ -26,7 +26,7 @@ public class RomhackReaderWriterTest {
         Path pathToJson = Path.of("..",
                 "Nintendo - Super Nintendo Entertainment System",
                 "3x3 Eyes - Juuma Houkan (Japan).sfc",
-                "3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero, FamilyGuy, AkiHizirino, mkwong98 v1.01].sfc",
+                "3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero, FamilyGuy, AkiHizirino, mkwong98 (v1.01)].sfc",
                 "romhack.json");
         RomhackReaderWriter romhackReaderWriter = new RomhackReaderWriter();
         Romhack romhack = romhackReaderWriter.read(pathToJson);

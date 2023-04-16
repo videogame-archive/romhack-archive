@@ -68,7 +68,7 @@ public class RomhackValidator {
         HashSet<String> folderNames = new HashSet<>();
         folderNames.addAll(Arrays.asList(originalFolder.toFile().list()));
 
-        for (int i = 1; i < romhack.patches().size(); i++) {
+        for (int i = 1; i <= romhack.patches().size(); i++) {
             String name = "" + i;
             if (!folderNames.contains(name)) {
                 throw new RuntimeException("romhack-original misses a version - Actual: " + name);
@@ -116,7 +116,24 @@ public class RomhackValidator {
             builder.append(' ');
             builder.append('[');
 
-            builder.append(patch.labels().get(0) + " by " + getAuthor(patch.authors()) + " (v" + patch.version() + ")");
+            String authorsAsString = patch.shortAuthors();
+            if (authorsAsString == null) {
+                authorsAsString = getAuthor(patch.authors());
+            }
+            authorsAsString = authorsAsString.replace("(", "")
+                                            .replace(")", "")
+                                            // Invalid filename symbols
+                                            .replace("/", "")
+                                            .replace("\\", "")
+                                            .replace("\"", "")
+                                            .replace(":", "")
+                                            .replace("|", "")
+                                            .replace("?", "")
+                                            .replace("*", "")
+                                            .replace("<", "")
+                                            .replace(">", "");
+
+            builder.append(patch.labels().get(0) + " by " + authorsAsString + " (v" + patch.version() + ")");
             if (patch.alternative() != null) {
                 builder.append(" (Alt " + patch.alternative() + ")");
             }

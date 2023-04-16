@@ -78,7 +78,7 @@ public class Romhack2Archive {
             for (String author:authors.split(",")) {
                 authorsAsList.add(author.trim());
             }
-            Patch patch = new Patch(authorsAsList, null, version, null, alternative, List.of(label));
+            Patch patch = new Patch(authorsAsList, null,null, version, null, alternative, List.of(label));
             patches.add(patch);
         }
         Romhack romhack = new Romhack(info, provenance, rom, patches);
