@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Akujin" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/303/",
             "version": "1.00",
             "releaseDate": "2001-10-06",

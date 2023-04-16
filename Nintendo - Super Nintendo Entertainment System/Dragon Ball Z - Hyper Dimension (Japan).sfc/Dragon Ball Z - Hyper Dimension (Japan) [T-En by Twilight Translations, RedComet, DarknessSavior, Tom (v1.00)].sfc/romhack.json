@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Twilight Translations", "RedComet", "DarknessSavior", "Tom" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1537/",
             "version": "1.00",
             "releaseDate": "2010-07-29",

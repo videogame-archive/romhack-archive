@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "DeJap Translations", "Partial Translations", "Dark Force", "Neil_", "Nan", "Hojo", "maht", "Justinffx", "Gema2k", "Moose M.", "MuuMuu", "Alex W. Jackson", "UnaFarmer", "Geechyguy", "/33/" ],
+            "shortAuthors": "DeJap Translations, Partial Translations",
             "url": "https://www.romhacking.net/translations/341/",
             "version": "2.01 Final",
             "releaseDate": "2002-02-23",

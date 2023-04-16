@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Klepto Software", "SirYoink", "Eien Ni Hen", "MO", "UnaFarmer" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/326/",
             "version": "1.02",
             "releaseDate": "2016-02-17",

@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "KingMike's Translations", "KingMike", "Geisha Boy", "DarknessSavior" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1714/",
             "version": "1.0",
             "releaseDate": "2012-02-29",

@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Near", "SpSpiff" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/342/",
             "version": "0.91",
             "releaseDate": "2001-11-20",

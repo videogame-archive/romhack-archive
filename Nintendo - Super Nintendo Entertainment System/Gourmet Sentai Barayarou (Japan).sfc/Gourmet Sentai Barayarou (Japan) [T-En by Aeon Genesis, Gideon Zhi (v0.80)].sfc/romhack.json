@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Aeon Genesis", "Gideon Zhi" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/288/",
             "version": "0.80",
             "releaseDate": "2000-06-25",

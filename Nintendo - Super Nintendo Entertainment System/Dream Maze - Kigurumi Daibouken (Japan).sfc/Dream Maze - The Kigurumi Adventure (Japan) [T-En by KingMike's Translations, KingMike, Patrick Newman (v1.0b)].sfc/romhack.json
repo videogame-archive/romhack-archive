@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "KingMike's Translations", "KingMike", "Patrick Newman" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/860/",
             "version": "1.0b",
             "releaseDate": "2004-12-24",

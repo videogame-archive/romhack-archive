@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "MrRichard999", "TheMajinZenki", "AgentOrange" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/4349/",
             "version": "0.50",
             "releaseDate": "2019-03-27",

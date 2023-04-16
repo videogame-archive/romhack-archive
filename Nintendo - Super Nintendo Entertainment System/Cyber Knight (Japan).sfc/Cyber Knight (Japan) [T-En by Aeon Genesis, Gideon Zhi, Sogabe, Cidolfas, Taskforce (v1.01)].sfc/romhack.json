@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Sogabe", "Cidolfas", "Taskforce" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/304/",
             "version": "1.01",
             "releaseDate": "2001-12-17",

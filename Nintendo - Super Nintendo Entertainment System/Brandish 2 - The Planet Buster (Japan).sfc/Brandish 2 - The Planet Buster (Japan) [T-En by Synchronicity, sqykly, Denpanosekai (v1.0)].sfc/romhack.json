@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Synchronicity", "sqykly", "Denpanosekai" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1442/",
             "version": "1.0",
             "releaseDate": "2009-11-03",

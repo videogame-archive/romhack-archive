@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "MrRichard999", "AgentOrange", "pacnsacdave" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2233/",
             "version": "0.75b",
             "releaseDate": "2015-11-30",

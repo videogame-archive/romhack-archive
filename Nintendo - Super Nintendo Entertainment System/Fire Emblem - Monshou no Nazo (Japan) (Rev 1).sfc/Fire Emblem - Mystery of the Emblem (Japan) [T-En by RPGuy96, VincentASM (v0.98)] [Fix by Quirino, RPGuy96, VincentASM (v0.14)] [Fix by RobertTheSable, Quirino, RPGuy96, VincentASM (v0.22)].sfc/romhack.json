@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "RPGuy96", "VincentASM" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/961/",
             "version": "0.98",
             "releaseDate": "2008-06-21",
@@ -31,6 +32,7 @@
         },
         {
             "authors": [ "Quirino", "RPGuy96", "VincentASM" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2805/",
             "version": "0.14",
             "releaseDate": "2017-11-11",
@@ -39,6 +41,7 @@
         },
         {
             "authors": [ "RobertTheSable", "Quirino", "RPGuy96", "VincentASM" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/4969/",
             "version": "0.22",
             "releaseDate": "2022-04-14",

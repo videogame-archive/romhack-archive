@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "FinS" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3807/",
             "version": "1.2",
             "releaseDate": "2018-09-20",

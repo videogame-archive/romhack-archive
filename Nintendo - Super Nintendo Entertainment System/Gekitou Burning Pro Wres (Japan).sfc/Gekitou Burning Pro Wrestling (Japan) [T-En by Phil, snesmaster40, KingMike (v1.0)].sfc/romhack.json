@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Phil", "snesmaster40", "KingMike" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1243/",
             "version": "1.0",
             "releaseDate": "2010-10-31",

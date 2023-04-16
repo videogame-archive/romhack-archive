@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Dynamic-Designs", "Draken", "Wildbill", "Bongo`", "Manske", "Red Soul" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2181/",
             "version": "1.02",
             "releaseDate": "2014-12-25",

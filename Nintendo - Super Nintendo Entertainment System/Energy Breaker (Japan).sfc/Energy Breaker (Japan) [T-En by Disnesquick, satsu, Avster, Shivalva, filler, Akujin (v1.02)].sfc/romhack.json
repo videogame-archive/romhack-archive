@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Disnesquick", "satsu", "Avster", "Shivalva", "filler", "Akujin" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/346/",
             "version": "1.02",
             "releaseDate": "2012-09-26",

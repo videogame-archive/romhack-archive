@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Dynamic-Designs", "Wildbill", "Bongo`", "filler", "Taskforce" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3836/",
             "version": "1.00",
             "releaseDate": "2018-09-03",

@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Aeon Genesis", "Gideon Zhi", "TheMajinZenki", "Xanathis", "Daichi" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3471/",
             "version": "1.10",
             "releaseDate": "2018-03-13",

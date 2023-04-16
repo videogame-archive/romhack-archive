@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Ian Kelley", "Tomato", "Oogami" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/718/",
             "version": "1.00",
             "releaseDate": "2002-05-28",

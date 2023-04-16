@@ -16,17 +16,18 @@
     },
     "rom": {
         "size": 4194304,
-        "crc32": "404350d8",
-        "md5": "a87bed1cbb97d5441cbc4facb684931c",
-        "sha1": "d32f2b9a975df4dda8730f4158aa61bfa8f0d1e9"
+        "crc32": "b82bf6b9",
+        "md5": "848d4f5b97605146cf676fd8d289189b",
+        "sha1": "4dbd754655df3e0875c9595389c29dfa0b82c8bf"
     },
     "patches": [
         {
             "authors": [ "Rodimus Primal", "assassin17", "Yazoo", "angelo26", "Master ZED", "Lenophis", "Dr. Meat", "Leviathan Mist", "Spooniest", "Chronosplit", "Madsiur", "Leet Sketcher", "SilentEnigma" ],
+            "shortAuthors": "Rodimus Primal",
             "url": "https://www.romhacking.net/hacks/1386/",
             "version": "3.06",
             "releaseDate": "2022-02-19",
-            "alternative": "Bug Fixes, Updated Opera & Add-Ons",
+            "alternative": null,
             "labels": [ "T-En" ]
         }
     ]

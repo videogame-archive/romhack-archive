@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "DDSTranslation", "Tom", "FlashPV" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5353/",
             "version": "3.0",
             "releaseDate": "2020-02-08",
@@ -31,6 +32,7 @@
         },
         {
             "authors": [ "Djungelurban" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6194/",
             "version": "1.0",
             "releaseDate": "2021-08-02",

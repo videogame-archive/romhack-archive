@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Dynamic-Designs", "Draken", "Bongo`", "Melonseller", "filler", "Taskforce" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3515/",
             "version": "1.00",
             "releaseDate": "2018-05-08",

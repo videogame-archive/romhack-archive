@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Dark Twilkitri Net Translation Division", "Twilkitri", "Jay", "Boo" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/865/",
             "version": "Reparation 0.87g",
             "releaseDate": "2012-05-06",
@@ -31,6 +32,7 @@
         },
         {
             "authors": [ "Gharnef", "Twilkitri" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2803/",
             "version": "1.0",
             "releaseDate": "2014-08-03",

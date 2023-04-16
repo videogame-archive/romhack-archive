@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Sheex", "ZackMan", "Shih Tzu" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/622/",
             "version": "1.03",
             "releaseDate": "2002-12-18",

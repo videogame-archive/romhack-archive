@@ -15,17 +15,18 @@
         "notes": null
     },
     "rom": {
-        "size": 1048576,
-        "crc32": "21b6a036",
-        "md5": "066ad269b4e6f4e415743a6df15da91b",
-        "sha1": "1b6e4b07f2491e334e640da83b1235cc7f53c3f2"
+        "size": 1179648,
+        "crc32": "1f51d29e",
+        "md5": "01f59d87ced210b3d8abc8d415a990aa",
+        "sha1": "c401313971e01a8d83bafdb11b395f386bac7882"
     },
     "patches": [
         {
-            "authors": [ "Hurkey!? Translations", "Fartnugg", "A-KO", "SD-Tetsuo" ],
-            "url": "https://www.romhacking.net/translations/568/",
-            "version": "1.0",
-            "releaseDate": "2002-06-18",
+            "authors": [ "F.H.", "Akujin", "David Mullen (MakoKnight)", "Dark Force" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/278/",
+            "version": "1.0 beta",
+            "releaseDate": "2002-08-11",
             "alternative": null,
             "labels": [ "T-En" ]
         }

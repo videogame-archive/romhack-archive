@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Cirosan", "HidoranBlaze", "Ando", "Zane Avernathy", "EnDavio", "Robert of Normandy", "Kirb", "dn", "Miacis", "Sam Heitzer" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/4653/",
             "version": "1.04",
             "releaseDate": "2019-05-31",
@@ -31,6 +32,7 @@
         },
         {
             "authors": [ "Miacis", "Expert Criminal", "Ultimage", "Rosie the Riveter", "Flasuban", "Tchuu" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5884/",
             "version": "1.08",
             "releaseDate": "2021-12-24",

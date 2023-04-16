@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Translation Corporation", "Nightcrawler", "Jonny", "Akujin", "Liana", "Ms. Tea" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/689/",
             "version": "1.1",
             "releaseDate": "2014-10-30",

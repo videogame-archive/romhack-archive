@@ -15,19 +15,29 @@
         "notes": null
     },
     "rom": {
-        "size": 3440640,
-        "crc32": "2b4cd5a3",
-        "md5": "e744c9bc5e7eb5715a8a24543eecbc88",
-        "sha1": "7114bd9d09f62d082f9fe43dcb4c144d439c4173"
+        "size": 4194304,
+        "crc32": "5a6d1169",
+        "md5": "70f23f5ca4a6f515a4971725dce474a3",
+        "sha1": "d93475f62e31c0420ad1cfbedbd727b3c535155f"
     },
     "patches": [
         {
             "authors": [ "Front Mission Translation Project", "Akujin", "Hojo", "David Mullen (MakoKnight)", "Shih Tzu", "F.H.", "Dark Force" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/362/",
             "version": "1.0b",
             "releaseDate": "2001-09-24",
             "alternative": null,
             "labels": [ "T-En" ]
+        },
+        {
+            "authors": [ "mteam", "mziab" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/6797/",
+            "version": "1.02",
+            "releaseDate": "2023-02-20",
+            "alternative": null,
+            "labels": [ "Fix" ]
         }
     ]
 }

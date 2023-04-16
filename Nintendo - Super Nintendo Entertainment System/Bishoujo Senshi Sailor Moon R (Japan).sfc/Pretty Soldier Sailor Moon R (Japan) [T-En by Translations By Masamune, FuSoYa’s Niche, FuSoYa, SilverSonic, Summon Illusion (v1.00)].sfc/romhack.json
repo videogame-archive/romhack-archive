@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Translations By Masamune", "FuSoYa’s Niche", "FuSoYa", "SilverSonic", "Summon Illusion" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/435/",
             "version": "1.00",
             "releaseDate": "2002-03-06",

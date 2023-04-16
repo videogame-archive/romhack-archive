@@ -23,6 +23,7 @@
     "patches": [
         {
             "authors": [ "Atomizer_Zero", "FamilyGuy", "AkiHizirino", "mkwong98" ],
+            "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2835/",
             "version": "1.01",
             "releaseDate": "2017-02-02",
