@@ -27,7 +27,7 @@
             "url": "https://www.romhacking.net/translations/5354/",
             "version": "4.0",
             "releaseDate": "2020-02-08",
-            "alternative": null,
+            "options": null,
             "labels": [ "T-En" ]
         },
         {
@@ -36,7 +36,7 @@
             "url": "https://www.romhacking.net/translations/6197/",
             "version": "1.0",
             "releaseDate": "2021-08-02",
-            "alternative": null,
+            "options": null,
             "labels": [ "Retouch" ]
         }
     ]

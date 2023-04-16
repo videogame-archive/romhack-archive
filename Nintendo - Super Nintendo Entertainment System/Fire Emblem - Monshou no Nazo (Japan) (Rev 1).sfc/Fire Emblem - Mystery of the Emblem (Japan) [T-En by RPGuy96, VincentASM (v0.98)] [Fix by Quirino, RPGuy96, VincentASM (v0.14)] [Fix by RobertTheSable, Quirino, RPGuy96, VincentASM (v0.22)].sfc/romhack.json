@@ -27,7 +27,7 @@
             "url": "https://www.romhacking.net/translations/961/",
             "version": "0.98",
             "releaseDate": "2008-06-21",
-            "alternative": null,
+            "options": null,
             "labels": [ "T-En" ]
         },
         {
@@ -36,7 +36,7 @@
             "url": "https://www.romhacking.net/translations/2805/",
             "version": "0.14",
             "releaseDate": "2017-11-11",
-            "alternative": null,
+            "options": null,
             "labels": [ "Fix" ]
         },
         {
@@ -45,7 +45,7 @@
             "url": "https://www.romhacking.net/translations/4969/",
             "version": "0.22",
             "releaseDate": "2022-04-14",
-            "alternative": null,
+            "options": null,
             "labels": [ "Fix" ]
         }
     ]

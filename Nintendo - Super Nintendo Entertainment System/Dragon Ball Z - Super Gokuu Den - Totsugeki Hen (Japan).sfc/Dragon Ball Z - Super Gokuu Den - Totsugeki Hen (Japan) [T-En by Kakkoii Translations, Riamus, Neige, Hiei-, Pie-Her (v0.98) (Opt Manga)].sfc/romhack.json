@@ -16,18 +16,18 @@
     },
     "rom": {
         "size": 2097152,
-        "crc32": "b05add0f",
-        "md5": "2d865b64e0bd659a705d3eba5e7e76ea",
-        "sha1": "124d22b80eeb598c256be4047267988a73486223"
+        "crc32": "1db72fdc",
+        "md5": "83b1c3e735902ba482c71aac03078d34",
+        "sha1": "e3c8c65217a45fc4ed474abc3ce53a71bf91ba57"
     },
     "patches": [
         {
-            "authors": [ "gorgyrip", "filler" ],
+            "authors": [ "Kakkoii Translations", "Riamus", "Neige", "Hiei-", "Pie-Her" ],
             "shortAuthors": null,
-            "url": "https://www.romhacking.net/translations/2624/",
-            "version": "1.0",
-            "releaseDate": "2016-04-04",
-            "alternative": "Caps",
+            "url": "https://www.romhacking.net/translations/315/",
+            "version": "0.98",
+            "releaseDate": "2016-12-31",
+            "options": "Manga",
             "labels": [ "T-En" ]
         }
     ]
