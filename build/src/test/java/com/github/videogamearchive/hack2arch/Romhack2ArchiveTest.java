@@ -42,15 +42,18 @@ public class Romhack2ArchiveTest {
         }
     }
     @Test
-    public void datCreatorTest() throws Exception {
+    public void romhackCreatorTest() throws Exception {
         Romhack2Archive.main(new String[]{
                 original.toString(),
                 modified.toString(),
-                tempFile.toString()});
+                tempFile.toString(),
+                "https://www.romhacking.net/translations/353/",
+                "https://www.romhacking.net/translations/2600/",
+                "https://www.romhacking.net/translations/3499/"});
     }
 
     @Test
-    public void dat2CreatorTest() throws Exception {
+    public void romhack2CreatorTest() throws Exception {
         Romhack2Archive.main(new String[]{
                 original2.toString(),
                 modified2.toString(),
@@ -58,7 +61,7 @@ public class Romhack2ArchiveTest {
     }
 
     @Test
-    public void datBigCreatorTest() throws Exception {
+    public void romhackBigCreatorTest() throws Exception {
         Romhack2Archive.main(new String[]{
                 originalBig.toString(),
                 modifiedBig.toString(),
@@ -66,7 +69,7 @@ public class Romhack2ArchiveTest {
     }
 
     @Test
-    public void datBig2CreatorTest() throws Exception {
+    public void romhackBig2CreatorTest() throws Exception {
         Romhack2Archive.main(new String[]{
                 originalBig2.toString(),
                 modifiedBig2.toString(),

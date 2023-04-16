@@ -1,5 +1,6 @@
 package com.github.videogamearchive.hack2arch;
 
+import com.github.videogamearchive.community.rhdn.Resource;
 import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.rompatcher.MarcFile;
 import com.github.videogamearchive.rompatcher.formats.BPS;
@@ -12,26 +13,41 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.security.NoSuchAlgorithmException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Romhack2Archive {
+
+    public static final SimpleDateFormat archiveFormat = new SimpleDateFormat("YYYY-MM-dd");
+
     public static void main(String[] args) throws Exception {
-        if (args.length != 3) {
+        if (args.length < 3) {
             help();
         } else {
-            processSystem(Path.of(args[2]), Path.of(args[0]), Path.of(args[1]));
+            Path parent = Path.of(args[0]);
+            Path romhack = Path.of(args[1]);
+            Path outputFolder = Path.of(args[2]);
+            List<String> urls = new ArrayList<>();
+            for (int i = 3; i < args.length; i++) {
+                if (args[i].startsWith("https://www.romhacking.net/")) {
+                    urls.add(args[i]);
+                }
+            }
+            processSystem(parent, romhack, outputFolder, urls);
         }
     }
 
     private static void help() {
         System.out.println("usage: ");
-        System.out.println("\t\t java -jar romhack2archive.jar \"parentRom\" \"romhackRom\" \"outputDir\"");
+        System.out.println("\t\t java -jar romhack2archive.jar \"parentRom\" \"romhackRom\" \"outputDir\" [\"patchURL1\"] ... [\"patchURLN\"]");
+        System.out.println("Currently only romhacking.net urls are supported, other are ignored.");
+        System.out.println("URL information takes precedence over filename information.");
     }
 
     static private long MAX_MB_FOR_DELTA = 50331648;
-    private static void processSystem(Path outDir, Path pathToParentRom, Path pathToRomhackRom) throws IOException, NoSuchAlgorithmException, ReflectiveOperationException {
+    private static void processSystem(Path pathToParentRom, Path pathToRomhackRom, Path outDir, List<String> urls) throws Exception {
         System.out.println("maxMemory: " + Runtime.getRuntime().maxMemory());
         // Create directory tree
         Path out = outDir;
@@ -61,7 +77,7 @@ public class Romhack2Archive {
 
         // Create romhack.json
         Info info = new Info(null, null, null, null, null, null, null);
-        Provenance provenance = new Provenance("Unknown", "YYYY-MM-DD", null, null);
+        Provenance provenance = new Provenance("Unknown", archiveFormat.format(new Date()), null, null);
         byte[] romhackRomBytes = getBytes(pathToRomhackRom);
         Rom rom = new Rom((long) romhackRomBytes.length, Hashes.getCrc32(romhackRomBytes), Hashes.getMd5(romhackRomBytes), Hashes.getSha1(romhackRomBytes));
         String romhackName = PathUtil.getName(pathToRomhackRom);
@@ -78,7 +94,12 @@ public class Romhack2Archive {
             for (String author:authors.split(",")) {
                 authorsAsList.add(author.trim());
             }
-            Patch patch = new Patch(authorsAsList, null,null, version, null, alternative, List.of(label));
+            Patch patch = null;
+            if (urls.size() > patches.size()) {
+                patch = Resource.getPatch(urls.get(patches.size()));
+            } else {
+                patch = new Patch(authorsAsList, null,null, version, null, alternative, List.of(label));
+            }
             patches.add(patch);
         }
         Romhack romhack = new Romhack(info, provenance, rom, patches);
