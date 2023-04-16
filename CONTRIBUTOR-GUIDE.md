@@ -208,6 +208,8 @@ If a romhack was initially distributed as a physical cart the label "(Bootleg)" 
 
 ⚠ Author, Versions and Alternative qualifiers CANNOT contain parenthesis or invalid linux and windows filename symbols. If these are present on the json file they are removed when used on the filename.
 
+⚠ Filenames cannot be longer than 255 characters since is the lowest common denominator between most file systems.
+
 ```
 NAME (REGION) [(Bootleg)] [PRIMARY by AUTHOR (vVERSION) (Alt ALTERNATIVE]] ... [Add by ADD_AUTHOR (vADD_VERSION) (Alt ADD_ALTERNATIVE)]
 ```
