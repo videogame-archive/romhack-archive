@@ -367,7 +367,9 @@ Zip format is autodetect by looking at the file's extension.
 ```
 %/>java -jar romhack2archive.jar
 usage: 
-	java -jar romhack2archive.jar "parentRom" "romhackRom" "outputDir"
+		 java -jar romhack2archive.jar "parentRom" "romhackRom" "outputDir" ["patchURL1"] ... ["patchURLN"]
+- Currently only romhacking.net urls starting by 'https' ending in '/' are supported, other are ignored.
+- URL information takes precedence over filename information.
 ```
 
 ## User Safety

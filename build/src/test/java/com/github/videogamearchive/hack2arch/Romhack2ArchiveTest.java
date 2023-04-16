@@ -42,6 +42,10 @@ public class Romhack2ArchiveTest {
         }
     }
     @Test
+    public void romhackCreatorTestInfo() throws Exception {
+        Romhack2Archive.main(new String[]{});
+    }
+    @Test
     public void romhackCreatorTest() throws Exception {
         Romhack2Archive.main(new String[]{
                 original.toString(),

@@ -31,7 +31,7 @@ public class Romhack2Archive {
             Path outputFolder = Path.of(args[2]);
             List<String> urls = new ArrayList<>();
             for (int i = 3; i < args.length; i++) {
-                if (args[i].startsWith("https://www.romhacking.net/")) {
+                if (args[i].startsWith("https://www.romhacking.net/") && args[i].endsWith("/")) {
                     urls.add(args[i]);
                 }
             }
@@ -42,8 +42,8 @@ public class Romhack2Archive {
     private static void help() {
         System.out.println("usage: ");
         System.out.println("\t\t java -jar romhack2archive.jar \"parentRom\" \"romhackRom\" \"outputDir\" [\"patchURL1\"] ... [\"patchURLN\"]");
-        System.out.println("Currently only romhacking.net urls are supported, other are ignored.");
-        System.out.println("URL information takes precedence over filename information.");
+        System.out.println("- Currently only romhacking.net urls are supported, other are ignored.");
+        System.out.println("- URL information takes precedence over filename information.");
     }
 
     static private long MAX_MB_FOR_DELTA = 50331648;
@@ -94,11 +94,12 @@ public class Romhack2Archive {
             for (String author:authors.split(",")) {
                 authorsAsList.add(author.trim());
             }
-            Patch patch = null;
+            Patch patch = new Patch(authorsAsList, null,null, version, null, alternative, List.of(label));
             if (urls.size() > patches.size()) {
-                patch = Resource.getPatch(urls.get(patches.size()));
-            } else {
-                patch = new Patch(authorsAsList, null,null, version, null, alternative, List.of(label));
+                Patch urlPatch = Resource.getPatch(urls.get(patches.size()));
+                if (urlPatch != null) {
+                    patch = urlPatch;
+                }
             }
             patches.add(patch);
         }

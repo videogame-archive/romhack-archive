@@ -47,6 +47,9 @@ public class Resource {
 
     public static Patch getPatch(String url) throws ParseException {
         CSVRecord info = cache.get(url);
+        if (info == null) {
+            return null;
+        }
 
         List<String> authors = new ArrayList<>();
         String releasedByAsString = info.get("Released By");
@@ -65,7 +68,7 @@ public class Resource {
         }
 
         String shortAuthors = null;
-//        String url = url;
+        // String url = url;
         String version = info.get("Patch Version");
         String releaseDate = info.get("Last Modified");
         if (releaseDate != null && !releaseDate.isBlank()) {
@@ -75,7 +78,6 @@ public class Resource {
         }
 
         String alternative = null;
-
         List<String> labels = new ArrayList<>();
 
         return new Patch(authors, shortAuthors, url, version, releaseDate, alternative, labels);
