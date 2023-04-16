@@ -8,7 +8,7 @@ public record Patch(
         String url,
         String version,
         String releaseDate,
-        String alternative,
+        String options,
         List<String> labels
         ) {
 

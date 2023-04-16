@@ -108,7 +108,7 @@ public class RomhackValidator {
             Patch patch = romhack.patches().get(i);
 
             // Validation
-            if (patch.alternative() != null && patch.alternative().isBlank()) {
+            if (patch.options() != null && patch.options().isBlank()) {
                 throw new RuntimeException(i +" alternative string CANNOT BE empty");
             }
 
@@ -134,8 +134,8 @@ public class RomhackValidator {
                                             .replace(">", "");
 
             builder.append(patch.labels().get(0) + " by " + authorsAsString + " (v" + patch.version() + ")");
-            if (patch.alternative() != null) {
-                builder.append(" (Alt " + patch.alternative() + ")");
+            if (patch.options() != null) {
+                builder.append(" (Opt " + patch.options() + ")");
             }
             builder.append(']');
         }
