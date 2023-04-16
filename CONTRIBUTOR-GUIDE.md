@@ -79,7 +79,7 @@ The numbers found under the 'romhack-original' are the order in what the individ
 | releaseDate     | string          | No           |     | Date that the current patch distribution was made available formatted YYYY-MM-DD. This date doesn't necessarily match the release or modification date of the community site.                                      |
 |                 |                 |              |     | Is recommend to first scan text files on the patch distribution for this date when they are available.                                                                                                             |
 |                 |                 |              |     | Also check the community site for the last date the author updated the patch when available. Sometimes the readme is outdated.                                                                                     |
-| alternative     | string          | No           |     | When multiple alternative and/or optional patches for the same romhack are distributed together, string identifying the used patches separated by commas.                                                          |
+| options         | string          | No           |     | When multiple alternative and/or optional patches for the same romhack are distributed together, string identifying the used patches separated by commas.                                                          |
 | labels          | array of string | Yes          |     | Each patch SHOULD have AT LEAST one label. The first label of the first patch is the PRIMARY one and used as part of the romhack folder name.                                                                      |
 
 As a general rule if a boolean value is not mandatory, null is used instead of false.
@@ -102,7 +102,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
     "retrievedBy": "JuMaFuSe",
     "retrievedDate": "2023-03-21",
     "source": "Trusted",
-    "notes" : null
+    "notes": null
   },
   "rom": {
     "size": 2621440,
@@ -112,28 +112,31 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
   },
   "patches": [
     {
-      "authors": [ "RPGe" ],
+      "authors": [ "RPGe", "Myria", "SoM2Freak", "harmony7" ],
+      "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/353/",
       "version": "1.10",
       "releaseDate": "1998-10-17",
-      "alternative": null,
+      "options": null,
       "labels": [ "T-En" ]
     },
     {
-      "authors": [ "Spooniest" ],
+      "authors": [ "Spooniest", "Barubary", "SoM2Freak", "harmony7", "FlamePurge" ],
+      "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/2600/",
       "version": "2.1",
       "releaseDate": "2021-03-02",
-      "alternative": null,
-      "labels": [ "Add" ]
+      "options": null,
+      "labels": [ "Fix" ]
     },
     {
       "authors": [ "noisecross" ],
+      "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/3499/",
       "version": "1.0",
       "releaseDate": "2018-03-25",
-      "alternative": null,
-      "labels": [ "Add" ]
+      "options": null,
+      "labels": [ "Fix" ]
     }
   ]
 }
@@ -211,7 +214,7 @@ If a romhack was initially distributed as a physical cart the label "(Bootleg)" 
 ⚠ Filenames cannot be longer than 255 characters since is the lowest common denominator between most file systems.
 
 ```
-NAME (REGION) [(Bootleg)] [PRIMARY by AUTHOR (vVERSION) (Alt ALTERNATIVE]] ... [Add by ADD_AUTHOR (vADD_VERSION) (Alt ADD_ALTERNATIVE)]
+NAME (REGION) [(Bootleg)] [PRIMARY by AUTHOR (vVERSION) (Opt OPTION]] ... [SECONDARY by SECONDARY_AUTHOR (vSECONDARY_VERSION) (Opt SECONDARY_OPTION)]
 ```
 
 One of the advantages of our naming convention is that is unambiguous and can be calculated from the metadata allowing for validation.
@@ -223,51 +226,51 @@ This is best visualized with a few examples, links to their archive folder names
 Example 1.1:
 
 Results in one rom folder.
-
-3x3 Eyes - Juuma Houkan (Japan) \[T-En by Atomizer_Zero, FamilyGuy, AkiHizirino, mkwong98 (v1.01)\].sfc
-
-**Type 2:** One romhack with one patch, that cones in various alternative versions:
+```
+3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero, FamilyGuy, AkiHizirino, mkwong98 (v1.01)].sfc
+```
+**Type 2:** One romhack with one patch, that cones with various optional versions:
 
 Example 2.1:
 
-A 'main' version and a 'alternative' version, results in two rom folders:
+A 'main' version and a 'optional' version, results in two rom folders:
+```
+Amazing Spider-Man, The - Lethal Foes (Japan) [T-En by gorgyrip, filler (v1.0)].sfc
 
-Amazing Spider-Man, The - Lethal Foes (Japan) \[T-En by gorgyrip, filler (v1.0)\].sfc
-
-Amazing Spider-Man, The - Lethal Foes (Japan) \[T-En by gorgyrip, filler (v1.0) (Alt Caps)\].sfc
-
+Amazing Spider-Man, The - Lethal Foes (Japan) [T-En by gorgyrip, filler (v1.0) (Opt Caps)].sfc
+```
 Example 2.2:
 
-Two 'alternative' versions, results in two rom folders:
+Two 'optional' versions, results in two rom folders:
+```
+Dragon Ball Z - Super Gokuu Den - Totsugeki Hen (Japan) [T-En by Kakkoii Translations, Riamus, Neige, Hiei-, Pie-Her (v0.98) (Opt Manga)].sfc
 
-Dragon Ball Z - Super Gokuu Den - Totsugeki Hen (Japan) \[T-En by Kakkoii Translations (v0.98) (Alt Manga)\].sfc
-
-Dragon Ball Z - Super Gokuu Den - Totsugeki Hen (Japan) \[T-En by Kakkoii Translations (v0.98) (Alt Anime)\].sfc
-
-**Type 3:** One romhack with three patches, the main one and two Add:
+Dragon Ball Z - Super Gokuu Den - Totsugeki Hen (Japan) [T-En by Kakkoii Translations, Riamus, Neige, Hiei-, Pie-Her (v0.98) (Opt Anime)].sfc
+```
+**Type 3:** One romhack with three patches, the main one and two additional ones:
 
 The contributor on this case decided that the best way of experiencing the romhack is without bugs. 
 
-Because of that the original hack without Add is not provided this results into a single rom folder.
+Because of that the original hack without additional patches is not provided this results into a single rom folder.
 
 Example 3.1:
-
-Final Fantasy IV (Japan) (Rev 1) \[T-En by J2e Translations (v3.21)\] \[Add by Spooniest (v1.0)\] \[Add by Masaru (v1.2)\].sfc
-
-**Type 4:** One romhack with one patch distribution with several patches:
+```
+Final Fantasy IV (Japan) (Rev 1) [T-En by J2e Translations, Trainspotter (v3.21)] [Retouch by Spooniest (v1.0)] [Retouch by Masaru, Spooniest (v1.2)].sfc
+```
+**Type 4:** One romhack with one patch distribution with optional patches:
 
 On this case a single patch distribution comes with several patches, a main one and a myriad of optional ones.
 
 Since all of them are distributed together this is still considered one patch, so only one pair of brackets '[]'.
 
 From now, Link's Awakening Redux will be used as an example, if we only apply the main patch:
-
-Legend of Zelda - Link's Awakening Redux (Usa, Europe) [Definitive Edition by ShadowOne333 (v1.3.5)].gbc
-
-If we apply optional patches these are considered alternative versions.
-
-Legend of Zelda - Link's Awakening Redux (Usa, Europe) [Definitive Edition by ShadowOne333 (v1.3.5) (Alt No-THIEF, Beep)].gbc
-
+```
+Legend of Zelda - Link's Awakening Redux (Usa, Europe) [Overhaul by ShadowOne333 (v1.3.5)].gbc
+```
+If we apply optional patches we add them to the filename and romhack.json under options.
+```
+Legend of Zelda - Link's Awakening Redux (Usa, Europe) [Definitive Edition by ShadowOne333 (v1.3.5) (Opt No-THIEF, Beep)].gbc
+```
 **Romhack with several labels:**
 
 For the romhack folder name the first label on the list, also called PRIMARY label for that romhack is used.
