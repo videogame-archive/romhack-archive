@@ -278,6 +278,8 @@ Sometimes we are lucky enough that source code for a romhack is made available.
 
 This source code can be preserved together with the romhack patches under the 'romhack-original' folder.
 
+The source code is preserved as it comes out from the source, more often than not compressed.
+
 ```
 ...
 |- romhack-original
