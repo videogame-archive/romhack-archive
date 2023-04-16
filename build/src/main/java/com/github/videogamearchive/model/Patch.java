@@ -6,6 +6,7 @@ public record Patch(
         List<String> authors,
         String shortAuthors,
         String url,
+        List<String> otherUrls,
         String version,
         String releaseDate,
         String options,

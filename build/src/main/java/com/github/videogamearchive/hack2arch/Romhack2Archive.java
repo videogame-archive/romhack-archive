@@ -94,7 +94,7 @@ public class Romhack2Archive {
             for (String author:authors.split(",")) {
                 authorsAsList.add(author.trim());
             }
-            Patch patch = new Patch(authorsAsList, null,null, version, null, alternative, List.of(label));
+            Patch patch = new Patch(authorsAsList, null,null, List.of(), version, null, alternative, List.of(label));
             if (urls.size() > patches.size()) {
                 Patch urlPatch = Resource.getPatch(urls.get(patches.size()));
                 if (urlPatch != null) {

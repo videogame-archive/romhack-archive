@@ -71,6 +71,7 @@ The numbers found under the 'romhack-original' are the order in what the individ
 | authors         | array of string | Yes          |     | Authors of the patch, to avoid naming authors in different ways best is to use their name as indicated in community sites or forums including 'Anonymous'. In absence of any information 'Unknown' SHOULD be used. |
 | shortAuthors    | string          | No           |     | Due to filename length limit is not always feasible to keep all authors on the filename, on those cases this field is used instead, 'null' otherwise.                                                              |
 | url             | string          | No           |     | Url where the link to download the patch was found, 'null' otherwise.                                                                                                                                              |
+| otherUrls       | string          | No           |     | Other Urls related with the hack/patch, author website, guide, etc...                                                                                                                                              |
 | version         | string          | Yes          |     | Version, exactly as indicated by the author. Some authors will indicate '1.00', others '1.0', these are considered different.                                                                                      |
 |                 |                 |              |     | If the author repeats a version an incremental numerical value SHOULD be added. For example '2.0 Final (1)' and '2.0 Final (2)'                                                                                    |
 |                 |                 |              |     | In absence of a version the release date following the format YYYY.MM.DD SHOULD be used.                                                                                                                           |
@@ -115,6 +116,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
       "authors": [ "RPGe", "Myria", "SoM2Freak", "harmony7" ],
       "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/353/",
+      "otherUrls" : [],
       "version": "1.10",
       "releaseDate": "1998-10-17",
       "options": null,
@@ -124,6 +126,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
       "authors": [ "Spooniest", "Barubary", "SoM2Freak", "harmony7", "FlamePurge" ],
       "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/2600/",
+      "otherUrls" : [],
       "version": "2.1",
       "releaseDate": "2021-03-02",
       "options": null,
@@ -133,6 +136,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
       "authors": [ "noisecross" ],
       "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/3499/",
+      "otherUrls" : [],
       "version": "1.0",
       "releaseDate": "2018-03-25",
       "options": null,

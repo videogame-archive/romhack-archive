@@ -69,6 +69,7 @@ public class Resource {
 
         String shortAuthors = null;
         // String url = url;
+        List<String> otherUrls = List.of();
         String version = info.get("Patch Version");
         String releaseDate = info.get("Last Modified");
         if (releaseDate != null && !releaseDate.isBlank()) {
@@ -80,6 +81,6 @@ public class Resource {
         String alternative = null;
         List<String> labels = new ArrayList<>();
 
-        return new Patch(authors, shortAuthors, url, version, releaseDate, alternative, labels);
+        return new Patch(authors, shortAuthors, url, otherUrls, version, releaseDate, alternative, labels);
     }
 }
