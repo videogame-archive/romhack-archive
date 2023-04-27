@@ -11,6 +11,7 @@ public class Romhack2ArchiveTest {
 
     Path original = Path.of("..","..", "romhack-archive-private", "test-data","Final Fantasy V (Japan).zip");
     Path modified = Path.of("..","..", "romhack-archive-private", "test-data","Final Fantasy V - Legend of the Crystals (Japan) [T-En by RPGe (v1.10)] [Add by Spooniest (v2.1)] [Add by noisecross (v1.0)].zip");
+    Path modifiedMultiLabel = Path.of("..","..", "romhack-archive-private", "test-data","Final Fantasy V - Legend of the Crystals (Japan) [T-En by RPGe (v1.10)] [Fix , Add by Spooniest (v2.1)] [Fix, Add by noisecross (v1.0)].zip");
 
     Path original2 = Path.of("..","..", "romhack-archive-private", "test-data-2","Super_Mario_Land_2_-_6_Golden_Coins_USA_Europe.gb");
     Path modified2 = Path.of("..","..", "romhack-archive-private", "test-data-2","Super_Mario_Land_2_-_6_Golden_Coins_USA_Europe_patched.gb");
@@ -50,6 +51,16 @@ public class Romhack2ArchiveTest {
         Romhack2Archive.main(new String[]{
                 original.toString(),
                 modified.toString(),
+                tempFile.toString(),
+                "https://www.romhacking.net/translations/353/",
+                "https://www.romhacking.net/translations/2600/",
+                "https://www.romhacking.net/translations/3499/"});
+    }
+    @Test
+    public void romhackCreatorTestMulti() throws Exception {
+        Romhack2Archive.main(new String[]{
+                original.toString(),
+                modifiedMultiLabel.toString(),
                 tempFile.toString(),
                 "https://www.romhacking.net/translations/353/",
                 "https://www.romhacking.net/translations/2600/",

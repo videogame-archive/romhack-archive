@@ -15,6 +15,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -84,7 +85,7 @@ public class Romhack2Archive {
         List<Patch> patches = new ArrayList<>();
         for (String patchAsString: StringUtil.substrings(romhackName, "[", "]", true)) {
             String[] collection2NameVersionAlt = patchAsString.split(" by ");
-            String label = collection2NameVersionAlt[0];
+            List<String> labels = Arrays.asList(collection2NameVersionAlt[0].split("\s*,\s*"));
             String nameVersionAlt = collection2NameVersionAlt[1];
             int indexOfVersion = nameVersionAlt.indexOf(" (v");
             String authors = nameVersionAlt.substring(0, indexOfVersion);
@@ -94,12 +95,15 @@ public class Romhack2Archive {
             for (String author:authors.split(",")) {
                 authorsAsList.add(author.trim());
             }
-            Patch patch = new Patch(authorsAsList, null,null, List.of(), version, null, alternative, List.of(label));
+            Patch patch = null;
             if (urls.size() > patches.size()) {
                 Patch urlPatch = Resource.getPatch(urls.get(patches.size()));
                 if (urlPatch != null) {
-                    patch = urlPatch;
+                    patch = new Patch(urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), alternative, labels);
                 }
+            }
+            if (patch == null) {
+                patch = new Patch(authorsAsList, null,null, List.of(), version, null, alternative, labels);
             }
             patches.add(patch);
         }
