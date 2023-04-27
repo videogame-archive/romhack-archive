@@ -164,27 +164,29 @@ If an object: title, version, etc...
 Labels may be added, modified or removed opportunistically as the project extends its catalogue.
 
 ### Category Labels
-Each patch is assigned a category that describes its effect and intent, which is used as part of the filename.
+Each patch is assigned one or more category labels that describes its effect and intent, which are used as part of the filename.
+
+When patch is assigned multiple category labels only ONE gameplay and ONE cosmetic label can be assigned.
 
 A category should generally be selected based on the order listed, using the first one with a description that fits the hack. Exceptions may be made in unusual cases with the approval of a maintainer.
 
-| **Category**    | **Aspects**              | **Description**                                                                                                                                                                                            |
-|-----------------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **T-\$**        | Translation              | Translates the game into another language. $ is a language ISO code in camelcase.<br />*See two letter codes at: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes*                                    |
-| **Performance** | Other                    | **Only** improves the overall performance of the game.<br />*Examples: lag reduction, shorter transitions, SNES SA-1 hacks*                                                                                |
-| **Fix**         | Other                    | **Only** fixes one or more bugs, glitches, or graphical errors. (NOT for intentional choices by the developer)<br />*Examples: FF6 evade bug, Cheetahmen II boss glitch, SMB2 missing animation frame*     |
-| **Cheat**       | Other                    | **Only** removes one or more aspect of the challenge. (NOT for more nuanced difficulty adjustments)<br />*Examples: infinite lives, stage select, other common "trainer" or Game Genie effects*            |
-| **Game**        | Gameplay, Change,  Major | Major gameplay changes that feel like a new game or sequel.<br />*Examples: hacks with new levels, hacks that change the genre*                                                                            |
-| **Alternate**   | Gameplay, Change,  Minor | Minor gameplay changes that depart from the original game.<br />*Examples: "8 Eyes - Playing as Simon Belmont" with whip implemented*                                                                      |
-| **Overhaul**    | Gameplay, Enhance, Major | Variety of gameplay improvements (and optionally cosmetic enhancements and bugfixes) that are intended to greatly improve the original experience.<br />*Examples: rebalancing hacks, definitive editions* |
-| **Tweak**       | Gameplay, Enhance, Minor | Minor gameplay improvements intended to enhance the original experience.<br />*Examples: minor difficulty adjustments, tweaking animation speeds*                                                          |
-| **Themed**      | Cosmetic, Change,  Major | Visuals widely replaced with another universe or theme that departs from the original game.<br />*Examples: Bokosuka Wars "Hyrule Wars", "Bionic Commando Winter Edition"*                                 |
-| **Reskin**      | Cosmetic, Change,  Minor | Minor cosmetic changes that depart from the original game.<br />*Examples: player sprite replaced with another character, bosses arbitrarily redrawn to look like "bugs"*                                  |
-| **Polish**      | Cosmetic, Enhance, Major | Visuals widely improved while maintaining the theme of the original game.<br />*Examples: "Super Mario Bros Enhanced", most "enhanced color" hacks*                                                        |
-| **Retouch**     | Cosmetic, Enhance, Minor | Minor cosmetic improvements intended as a touchup to the original experience.<br />*Examples: SMB1 Mario replaced with SMB3 Mario*                                                                         |
+| **Category**                               | **Aspects**              | **Description**                                                                                                                                                                                            |
+|--------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **T-\$**                                   | Translation              | Translates the game into another language. $ is a language ISO code in camelcase.<br />*See two letter codes at: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes*                                    |
+| **Performance**                            | Other                    | **Only** improves the overall performance of the game.<br />*Examples: lag reduction, shorter transitions, SNES SA-1 hacks*                                                                                |
+| **Fix**                                    | Other                    | **Only** fixes one or more bugs, glitches, or graphical errors. (NOT for intentional choices by the developer)<br />*Examples: FF6 evade bug, Cheetahmen II boss glitch, SMB2 missing animation frame*     |
+| **Cheat**                                  | Other                    | **Only** removes one or more aspect of the challenge. (NOT for more nuanced difficulty adjustments)<br />*Examples: infinite lives, stage select, other common "trainer" or Game Genie effects*            |
+| **Game**                                   | Gameplay, Change,  Major | Major gameplay changes that feel like a new game or sequel.<br />*Examples: hacks with new levels, hacks that change the genre*                                                                            |
+| **Alternate**                              | Gameplay, Change,  Minor | Minor gameplay changes that depart from the original game.<br />*Examples: "8 Eyes - Playing as Simon Belmont" with whip implemented*                                                                      |
+| **Overhaul**                               | Gameplay, Enhance, Major | Variety of gameplay improvements (and optionally cosmetic enhancements and bugfixes) that are intended to greatly improve the original experience.<br />*Examples: rebalancing hacks, definitive editions* |
+| **Tweak**                                  | Gameplay, Enhance, Minor | Minor gameplay improvements intended to enhance the original experience.<br />*Examples: minor difficulty adjustments, tweaking animation speeds*                                                          |
+| **Themed**                                 | Cosmetic, Change,  Major | Visuals widely replaced with another universe or theme that departs from the original game.<br />*Examples: Bokosuka Wars "Hyrule Wars", "Bionic Commando Winter Edition"*                                 |
+| **Reskin**                                 | Cosmetic, Change,  Minor | Minor cosmetic changes that depart from the original game.<br />*Examples: player sprite replaced with another character, bosses arbitrarily redrawn to look like "bugs"*                                  |
+| **Polish** , **Colorization**, **Redrawn** | Cosmetic, Enhance, Major | Visuals widely improved while maintaining the theme of the original game.<br />*Examples: "Super Mario Bros Enhanced", most "enhanced color" hacks*                                                        |
+| **Retouch**, **Enhanced Colors**           | Cosmetic, Enhance, Minor | Minor cosmetic improvements intended as a touchup to the original experience.<br />*Examples: SMB1 Mario replaced with SMB3 Mario*                                                                         |
 
 Notes:
-* Patches with both "gameplay" and "cosmetic" aspects should use the "Gameplay" categories.
+* Patches with both "gameplay" and "cosmetic" aspects SHOULD use multiple categories.
 * Patches with both "change" and "enhance" aspects should use the "Change" categories.
 * The categories labeled "Other" should only be used if the patch has no other effects.
 
@@ -212,7 +214,7 @@ If a romhack was initially distributed as a physical cart the label "(Bootleg)" 
 ⚠ Filenames cannot be longer than 255 characters since is the lowest common denominator between most file systems.
 
 ```
-NAME (REGION) [(Bootleg)] [PRIMARY by AUTHOR (vVERSION) (Opt OPTION]] ... [SECONDARY by SECONDARY_AUTHOR (vSECONDARY_VERSION) (Opt SECONDARY_OPTION)]
+NAME (REGION) [(Bootleg)] [PRIMARY_A, ... PRIMARY_N by AUTHOR (vVERSION) (Opt OPTION]] ... [SECONDARY_A, ... SECONDARY_N by SECONDARY_AUTHOR (vSECONDARY_VERSION) (Opt SECONDARY_OPTION)]
 ```
 
 One of the advantages of our naming convention is that is unambiguous and can be calculated from the metadata allowing for validation.
