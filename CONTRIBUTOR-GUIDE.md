@@ -214,8 +214,10 @@ If a romhack was initially distributed as a physical cart the label "(Bootleg)" 
 ⚠ Filenames cannot be longer than 255 characters since is the lowest common denominator between most file systems.
 
 ```
-NAME (REGION) [(Bootleg)] [PRIMARY_A, ... PRIMARY_N by AUTHOR (vVERSION) (Opt OPTION]] ... [SECONDARY_A, ... SECONDARY_N by SECONDARY_AUTHOR (vSECONDARY_VERSION) (Opt SECONDARY_OPTION)]
+NAME (REGION) [(Bootleg)] [PRIMARY_A, ... PRIMARY_N by AUTHOR (vVERSION) (Opt OPTION]] ... [SECONDARY_A, ... SECONDARY_N by SECONDARY_AUTHOR (vSECONDARY_VERSION) (Opt SECONDARY_OPTION)][i]
 ```
+
+[i] is added at the end when the status of a romhack is 'Unfinished'
 
 One of the advantages of our naming convention is that is unambiguous and can be calculated from the metadata allowing for validation.
 
