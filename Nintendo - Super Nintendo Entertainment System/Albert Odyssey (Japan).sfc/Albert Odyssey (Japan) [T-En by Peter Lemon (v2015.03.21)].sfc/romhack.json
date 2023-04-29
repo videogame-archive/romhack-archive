@@ -1,0 +1,35 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Unfinished",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-04-29",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "4da25b13",
+        "md5": "d2f396446e74fc40b4494a62c5c8bcc0",
+        "sha1": "60ed9f6f8414442d7f63397b9ae5c5bc0e275e3b"
+    },
+    "patches": [
+        {
+            "authors": [ "Peter Lemon" ],
+            "shortAuthors": null,
+            "url": "https://github.com/PeterLemon/SNES/tree/master/Translate",
+            "otherUrls": [ ],
+            "version": "2015.03.21",
+            "releaseDate": null,
+            "options": null,
+            "labels": [ "T-En" ]
+        }
+    ]
+}
