@@ -15,7 +15,7 @@ import static com.github.videogamearchive.hack2arch.Romhack2Archive.archiveForma
 
 public class Resource {
 
-    private static final SimpleDateFormat rhdnFormat = new SimpleDateFormat("dd MMMMM YYYY");
+    private static final SimpleDateFormat rhdnFormat = new SimpleDateFormat("dd MMMMMMM YYYY", Locale.US);
     private static final Map<String, CSVRecord> cache = new HashMap<>();
 
     static {

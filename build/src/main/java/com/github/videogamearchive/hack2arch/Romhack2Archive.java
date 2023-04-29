@@ -14,14 +14,11 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class Romhack2Archive {
 
-    public static final SimpleDateFormat archiveFormat = new SimpleDateFormat("YYYY-MM-dd");
+    public static final SimpleDateFormat archiveFormat = new SimpleDateFormat("YYYY-MM-dd", Locale.US);
 
     public static void main(String[] args) throws Exception {
         if (args.length < 3) {
