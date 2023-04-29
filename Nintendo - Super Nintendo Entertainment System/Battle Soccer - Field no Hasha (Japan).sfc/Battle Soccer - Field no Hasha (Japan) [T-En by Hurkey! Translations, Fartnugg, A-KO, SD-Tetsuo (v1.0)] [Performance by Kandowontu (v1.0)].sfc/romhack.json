@@ -1,8 +1,8 @@
 {
     "info": {
         "name": null,
-        "translatedTitle": true,
-        "status": "Fully Playable",
+        "translatedTitle": null,
+        "status": "Fully Playable | Unfinished",
         "adult": null,
         "offensive": null,
         "obsoleteVersion": null,
@@ -10,24 +10,24 @@
     },
     "provenance": {
         "retrievedBy": "JuMaFuSe",
-        "retrievedDate": "2023-04-29",
-        "source": "Trusted",
+        "retrievedDate": "2023-04-30",
+        "source": "Trusted | null",
         "notes": null
     },
     "rom": {
         "size": 1048576,
-        "crc32": "123285e1",
-        "md5": "eb97abd6e77a66ae7ac284cb2362cd18",
-        "sha1": "1e73a383b6f1e6485b87395fee81d8b4c9ee8500"
+        "crc32": "53eebb61",
+        "md5": "194a234ec17f6904025fde481061a2a0",
+        "sha1": "d56d2bc33c9500ed600d41cf736bf1bb907a2302"
     },
     "patches": [
         {
-            "authors": [ "Aeon Genesis", "Gideon Zhi", "Ian Kelley", "Tomato" ],
+            "authors": [ "Hurkey!? Translations", "Fartnugg", "A-KO", "SD-Tetsuo" ],
             "shortAuthors": null,
-            "url": "https://www.romhacking.net/translations/775/",
+            "url": "https://www.romhacking.net/translations/568/",
             "otherUrls": [ ],
-            "version": "1.00",
-            "releaseDate": "2004-03-07",
+            "version": "1.0",
+            "releaseDate": "2002-06-18",
             "options": null,
             "labels": [ "T-En" ]
         },
@@ -37,8 +37,8 @@
             "url": "https://patreon.com/kandowontu",
             "otherUrls": [ "https://twitter.com/kandowontu"],
             "version": "1.0",
-            "releaseDate": "2023-04-04",
-            "options": null,
+            "releaseDate": null,
+            "options": "2023-04-04",
             "labels": [ "Performance" ]
         }
     ]
