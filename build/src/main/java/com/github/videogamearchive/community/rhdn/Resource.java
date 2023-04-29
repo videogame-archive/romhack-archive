@@ -8,14 +8,18 @@ import org.apache.commons.csv.CSVRecord;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAccessor;
+import java.time.temporal.TemporalField;
 import java.util.*;
 
 import static com.github.videogamearchive.hack2arch.Romhack2Archive.archiveFormat;
 
 public class Resource {
 
-    private static final SimpleDateFormat rhdnFormat = new SimpleDateFormat("dd MMMMMMM YYYY", Locale.US);
+
+    private static DateTimeFormatter rhdnFormat = DateTimeFormatter.ofPattern ("d MMMM yyyy").withLocale(Locale.ENGLISH).withZone(ZoneId.systemDefault());
     private static final Map<String, CSVRecord> cache = new HashMap<>();
 
     static {
@@ -71,10 +75,10 @@ public class Resource {
         // String url = url;
         List<String> otherUrls = List.of();
         String version = info.get("Patch Version");
-        String releaseDate = info.get("Last Modified");
+        String releaseDate = info.get("Release Date");
         if (releaseDate != null && !releaseDate.isBlank()) {
-            releaseDate = StringUtil.substring(releaseDate, "[", "]", true);
-            Date releaseDateAsDate = rhdnFormat.parse(releaseDate);
+            //releaseDate = StringUtil.substring(releaseDate, "[", "]", true);
+            TemporalAccessor releaseDateAsDate = rhdnFormat.parse(releaseDate);
             releaseDate = archiveFormat.format(releaseDateAsDate);
         }
 

@@ -13,12 +13,13 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class Romhack2Archive {
-
-    public static final SimpleDateFormat archiveFormat = new SimpleDateFormat("YYYY-MM-dd", Locale.US);
+    public static DateTimeFormatter archiveFormat = DateTimeFormatter.ISO_LOCAL_DATE.withLocale(Locale.ENGLISH).withZone(ZoneId.systemDefault());
 
     public static void main(String[] args) throws Exception {
         if (args.length < 3) {
@@ -33,7 +34,7 @@ public class Romhack2Archive {
                     urls.add(args[i]);
                 }
             }
-            processSystem(parent, romhack, outputFolder, urls);
+            process(parent, romhack, outputFolder, null, urls);
         }
     }
 
@@ -45,37 +46,11 @@ public class Romhack2Archive {
     }
 
     static private long MAX_MB_FOR_DELTA = 50331648;
-    private static void processSystem(Path pathToParentRom, Path pathToRomhackRom, Path outDir, List<String> urls) throws Exception {
+    public static Path process(Path pathToParentRom, Path pathToRomhackRom, Path outDir, String username, List<String> urls) throws Exception {
         System.out.println("maxMemory: " + Runtime.getRuntime().maxMemory());
-        // Create directory tree
-        Path out = outDir;
-        if (!Files.exists(out)) {
-            Files.createDirectories(out);
-        }
-        String parentRomName = null;
-        if (PathUtil.isZip(pathToParentRom)) {
-            parentRomName = Zip.readAllBytes(pathToParentRom).keySet().stream().iterator().next();
-        } else {
-            parentRomName = PathUtil.getName(pathToParentRom);
-        }
-        out = out.resolve(parentRomName);
-        if (!Files.exists(out)) {
-            Files.createDirectories(out);
-        }
-        String romhackRomName = null;
-        if (PathUtil.isZip(pathToRomhackRom)) {
-            romhackRomName = Zip.readAllBytes(pathToRomhackRom).keySet().stream().iterator().next();
-        } else {
-            romhackRomName = PathUtil.getName(pathToRomhackRom);
-        }
-        out = out.resolve(romhackRomName);
-        if (!Files.exists(out)) {
-            Files.createDirectories(out);
-        }
-
         // Create romhack.json
         Info info = new Info(null, null, null, null, null, null, null);
-        Provenance provenance = new Provenance("Unknown", archiveFormat.format(new Date()), null, null);
+        Provenance provenance = new Provenance(username, archiveFormat.format(Instant.now()), null, null);
         byte[] romhackRomBytes = getBytes(pathToRomhackRom);
         Rom rom = new Rom((long) romhackRomBytes.length, Hashes.getCrc32(romhackRomBytes), Hashes.getMd5(romhackRomBytes), Hashes.getSha1(romhackRomBytes));
         String romhackName = PathUtil.getName(pathToRomhackRom);
@@ -110,6 +85,41 @@ public class Romhack2Archive {
         json = json.replace("\"status\": null,", "\"status\": \"Fully Playable | Unfinished\",");
         json = json.replace("\"source\": null", "\"source\": \"Trusted | null\"");
 
+        //
+        // Start - Create directory tree
+        //
+        Path out = outDir;
+        if (!Files.exists(out)) {
+            Files.createDirectories(out);
+        }
+        String parentRomName = null;
+        if (PathUtil.isZip(pathToParentRom)) {
+            parentRomName = Zip.readAllBytes(pathToParentRom).keySet().stream().iterator().next();
+        } else {
+            parentRomName = PathUtil.getName(pathToParentRom);
+        }
+        out = out.resolve(parentRomName);
+        if (!Files.exists(out)) {
+            Files.createDirectories(out);
+        }
+        String romhackRomName = null;
+        if (PathUtil.isZip(pathToRomhackRom)) {
+            romhackRomName = Zip.readAllBytes(pathToRomhackRom).keySet().stream().iterator().next();
+        } else {
+            romhackRomName = PathUtil.getName(pathToRomhackRom);
+        }
+
+        String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
+        int indexOfName = romhackName.indexOf(" [");
+        romhackRomName = romhackName.substring(0, indexOfName) + expectedFolderNamePostfix + "." + PathUtil.getExtension(romhackRomName);
+        out = out.resolve(romhackRomName);
+        if (!Files.exists(out)) {
+            Files.createDirectories(out);
+        }
+        //
+        // Finish - Create directory tree
+        //
+
         Files.write(out.resolve("romhack.json"), json.getBytes(StandardCharsets.UTF_8));
 
         // Create romhack.bps
@@ -122,7 +132,13 @@ public class Romhack2Archive {
         romhackBPS.save(out.resolve("romhack.bps"));
 
         //Create romhack-original
-        Files.createDirectories(out.resolve("romhack-original"));
+        Path romhackOriginal = out.resolve("romhack-original");
+        Files.createDirectories(romhackOriginal);
+        for (int folderNumber = 1; folderNumber<= patches.size(); folderNumber++) {
+            Files.createDirectories(romhackOriginal.resolve(Integer.toString(folderNumber)));
+        }
+
+        return out;
     }
 
     private static byte[] getBytes(Path path) throws IOException {
