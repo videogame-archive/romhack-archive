@@ -2,23 +2,20 @@ package com.github.videogamearchive.community.rhdn;
 
 import com.github.videogamearchive.model.Patch;
 import com.github.videogamearchive.util.CSV;
+import com.github.videogamearchive.util.PatchResource;
 import com.github.videogamearchive.util.StringUtil;
 import org.apache.commons.csv.CSVRecord;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.text.ParseException;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
-import java.time.temporal.TemporalField;
 import java.util.*;
 
 import static com.github.videogamearchive.hack2arch.Romhack2Archive.archiveFormat;
 
-public class Resource {
-
-
+public class RHDNResource implements PatchResource {
     private static DateTimeFormatter rhdnFormat = DateTimeFormatter.ofPattern ("d MMMM yyyy").withLocale(Locale.ENGLISH).withZone(ZoneId.systemDefault());
     private static final Map<String, CSVRecord> cache = new HashMap<>();
 
@@ -36,12 +33,12 @@ public class Resource {
     }
 
     private static List<CSVRecord> getHacks() throws IOException {
-        InputStream input = Resource.class.getResourceAsStream("hacks.csv");
+        InputStream input = RHDNResource.class.getResourceAsStream("hacks.csv");
         return CSV.read(input);
     }
 
     private static List<CSVRecord> getTranslations() throws IOException {
-        InputStream input = Resource.class.getResourceAsStream("translations.csv");
+        InputStream input = RHDNResource.class.getResourceAsStream("translations.csv");
         return CSV.read(input);
     }
 
@@ -49,7 +46,7 @@ public class Resource {
         return cache.get(url);
     }
 
-    public static Patch getPatch(String url) throws ParseException {
+    public Patch getPatch(String url) {
         CSVRecord info = cache.get(url);
         if (info == null) {
             return null;

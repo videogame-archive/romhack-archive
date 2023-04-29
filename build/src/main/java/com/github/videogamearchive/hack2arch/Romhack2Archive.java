@@ -1,13 +1,10 @@
 package com.github.videogamearchive.hack2arch;
 
-import com.github.videogamearchive.community.rhdn.Resource;
+import com.github.videogamearchive.community.rhdn.RHDNResource;
 import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.rompatcher.MarcFile;
 import com.github.videogamearchive.rompatcher.formats.BPS;
-import com.github.videogamearchive.util.Hashes;
-import com.github.videogamearchive.util.PathUtil;
-import com.github.videogamearchive.util.StringUtil;
-import com.github.videogamearchive.util.Zip;
+import com.github.videogamearchive.util.*;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -21,6 +18,7 @@ import java.util.*;
 public class Romhack2Archive {
     public static DateTimeFormatter archiveFormat = DateTimeFormatter.ISO_LOCAL_DATE.withLocale(Locale.ENGLISH).withZone(ZoneId.systemDefault());
 
+    private static final Map<String, PatchResource> supportedResources = Map.of("https://www.romhacking.net/", new RHDNResource());
     public static void main(String[] args) throws Exception {
         if (args.length < 3) {
             help();
@@ -29,11 +27,6 @@ public class Romhack2Archive {
             Path romhack = Path.of(args[1]);
             Path outputFolder = Path.of(args[2]);
             List<String> urls = new ArrayList<>();
-            for (int i = 3; i < args.length; i++) {
-                if (args[i].startsWith("https://www.romhacking.net/") && args[i].endsWith("/")) {
-                    urls.add(args[i]);
-                }
-            }
             process(parent, romhack, outputFolder, null, urls);
         }
     }
@@ -68,14 +61,22 @@ public class Romhack2Archive {
                 authorsAsList.add(author.trim());
             }
             Patch patch = null;
+            String url = null;
             if (urls.size() > patches.size()) {
-                Patch urlPatch = Resource.getPatch(urls.get(patches.size()));
+                url = urls.get(patches.size());
+                Patch urlPatch = null;
+                for (String domain:supportedResources.keySet()) {
+                    if (url.startsWith(domain)) {
+                        PatchResource patchResource = supportedResources.get(domain);
+                        urlPatch = patchResource.getPatch(url);
+                    }
+                }
                 if (urlPatch != null) {
                     patch = new Patch(urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), alternative, labels);
                 }
             }
             if (patch == null) {
-                patch = new Patch(authorsAsList, null,null, List.of(), version, null, alternative, labels);
+                patch = new Patch(authorsAsList, null,url, List.of(), version, null, alternative, labels);
             }
             patches.add(patch);
         }
