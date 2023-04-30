@@ -108,11 +108,8 @@ public class DatCreator {
                     RomhackValidator.validateBPS(romhack, clone.toPath().resolve("romhack.bps"));
                 }
 
-                String romhackPrimaryCollection = romhack.patches().get(0).labels().get(0);
-                for (String collection:romhack.patches().get(0).labels()) {
-                    Document systemCollectionDocument = getSystemCollectioDocument(system.getName(), collection.strip());
-                    addGame(systemCollectionDocument, folderName.replace("[" + romhackPrimaryCollection, "[" + collection), romhack);
-                }
+                Document systemCollectionDocument = getSystemCollectioDocument(system.getName());
+                addGame(systemCollectionDocument, folderName, romhack);
             }
         }
     }
@@ -145,8 +142,8 @@ public class DatCreator {
         game.appendChild(description);
         game.appendChild(rom);
     }
-    private static Document getSystemCollectioDocument(String system, String collection) throws ParserConfigurationException {
-        String name = system + " ("+ collection + ")";
+    private static Document getSystemCollectioDocument(String system) throws ParserConfigurationException {
+        String name = system;
         Document document = documents.get(name);
         if (document == null) {
             document = getDocument();
