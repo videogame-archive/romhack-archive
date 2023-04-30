@@ -94,13 +94,9 @@ public class RomsetCreator {
                     continue;
                 }
                 String romhackFileName = clone.getName();
-                String romhackPrimaryCollection = romhack.patches().get(0).labels().get(0);
-                for (String collection:romhack.patches().get(0).labels()) {
-                    String romhackColFileName = romhackFileName.replace("[" + romhackPrimaryCollection, "[" + collection);
-                    String zipName = PathUtil.getNameWithoutExtension(romhackColFileName) + ".zip";
-                    File pathToOutputRomZip = getOutputRom(outputRomRoot, system, collection, zipName);
-                    createRomhack(romhackColFileName, romhack, romhackBPS, pathToInputRom, pathToOutputRomZip, validate);
-                }
+                String zipName = PathUtil.getNameWithoutExtension(romhackFileName) + ".zip";
+                File pathToOutputRomZip = getOutputRom(outputRomRoot, system, zipName);
+                createRomhack(romhackFileName, romhack, romhackBPS, pathToInputRom, pathToOutputRomZip, validate);
             }
         }
     }
@@ -121,8 +117,8 @@ public class RomsetCreator {
         }
     }
 
-    private static File getOutputRom(File outputRomRoot, File system, String collection, String name) throws IOException {
-        Path romDir = outputRomRoot.toPath().resolve(system.getName()).resolve(collection);
+    private static File getOutputRom(File outputRomRoot, File system, String name) throws IOException {
+        Path romDir = outputRomRoot.toPath().resolve(system.getName());
         Files.createDirectories(romDir);
         Path romPath = romDir.resolve(name);
         return romPath.toFile();
