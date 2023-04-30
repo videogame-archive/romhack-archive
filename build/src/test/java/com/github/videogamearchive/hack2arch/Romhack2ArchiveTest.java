@@ -49,6 +49,7 @@ public class Romhack2ArchiveTest {
     @Test
     public void romhackCreatorTest() throws Exception {
         Romhack2Archive.main(new String[]{
+                "test",
                 original.toString(),
                 modified.toString(),
                 tempFile.toString(),
@@ -59,6 +60,7 @@ public class Romhack2ArchiveTest {
     @Test
     public void romhackCreatorTestMulti() throws Exception {
         Romhack2Archive.main(new String[]{
+                "test",
                 original.toString(),
                 modifiedMultiLabel.toString(),
                 tempFile.toString(),
@@ -70,14 +72,18 @@ public class Romhack2ArchiveTest {
     @Test
     public void romhack2CreatorTest() throws Exception {
         Romhack2Archive.main(new String[]{
+                "test",
                 original2.toString(),
                 modified2.toString(),
-                tempFile.toString()});
+                tempFile.toString(),
+                "https://www.romhacking.net/hacks/3784/"
+        });
     }
 
     @Test
     public void romhackBigCreatorTest() throws Exception {
         Romhack2Archive.main(new String[]{
+                "test",
                 originalBig.toString(),
                 modifiedBig.toString(),
                 tempFile.toString()});
@@ -86,6 +92,7 @@ public class Romhack2ArchiveTest {
     @Test
     public void romhackBig2CreatorTest() throws Exception {
         Romhack2Archive.main(new String[]{
+                "test",
                 originalBig2.toString(),
                 modifiedBig2.toString(),
                 tempFile.toString()});

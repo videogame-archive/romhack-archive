@@ -20,30 +20,36 @@ public class Romhack2Archive {
 
     private static final Map<String, PatchResource> supportedResources = Map.of("https://www.romhacking.net/", new RHDNResource());
     public static void main(String[] args) throws Exception {
-        if (args.length < 3) {
+        if (args.length < 4) {
             help();
         } else {
-            Path parent = Path.of(args[0]);
-            Path romhack = Path.of(args[1]);
-            Path outputFolder = Path.of(args[2]);
+            String retrievedBy = args[0];
+            Path parent = Path.of(args[1]);
+            Path romhack = Path.of(args[2]);
+            Path outputFolder = Path.of(args[3]);
             List<String> urls = new ArrayList<>();
-            process(parent, romhack, outputFolder, null, urls);
+            for (int i = 4; i < args.length; i++) {
+                if (args[i].startsWith("http://") || args[i].startsWith("https://")) {
+                    urls.add(args[i]);
+                }
+            }
+            process(parent, romhack, outputFolder, retrievedBy, urls);
         }
     }
 
     private static void help() {
         System.out.println("usage: ");
-        System.out.println("\t\t java -jar romhack2archive.jar \"parentRom\" \"romhackRom\" \"outputDir\" [\"patchURL1\"] ... [\"patchURLN\"]");
-        System.out.println("- Currently only romhacking.net urls are supported, other are ignored.");
+        System.out.println("\t\t java -jar romhack2archive.jar \"retrievedBy\" \"parentRom\" \"romhackRom\" \"outputDir\" [\"patchURL1\"] ... [\"patchURLN\"]");
+        System.out.println("- Currently only romhacking.net urls are supported, other don't retrieve extra information.");
         System.out.println("- URL information takes precedence over filename information.");
     }
 
     static private long MAX_MB_FOR_DELTA = 50331648;
-    public static Path process(Path pathToParentRom, Path pathToRomhackRom, Path outDir, String username, List<String> urls) throws Exception {
+    public static Path process(Path pathToParentRom, Path pathToRomhackRom, Path outDir, String retrievedBy, List<String> urls) throws Exception {
         System.out.println("maxMemory: " + Runtime.getRuntime().maxMemory());
         // Create romhack.json
         Info info = new Info(null, null, null, null, null, null, null);
-        Provenance provenance = new Provenance(username, archiveFormat.format(Instant.now()), null, null);
+        Provenance provenance = new Provenance(retrievedBy, archiveFormat.format(Instant.now()), null, null);
         byte[] romhackRomBytes = getBytes(pathToRomhackRom);
         Rom rom = new Rom((long) romhackRomBytes.length, Hashes.getCrc32(romhackRomBytes), Hashes.getMd5(romhackRomBytes), Hashes.getSha1(romhackRomBytes));
         String romhackName = PathUtil.getName(pathToRomhackRom);
@@ -84,8 +90,11 @@ public class Romhack2Archive {
         RomhackReaderWriter romhackReaderWriter = new RomhackReaderWriter();
         String json = romhackReaderWriter.write(romhack);
         json = json.replace("\"status\": null,", "\"status\": \"Fully Playable | Unfinished\",");
-        json = json.replace("\"source\": null", "\"source\": \"Trusted | null\"");
-
+        if (!urls.isEmpty()) {
+            json = json.replace("\"source\": null", "\"source\": \"Trusted\"");
+        } else {
+            json = json.replace("\"source\": null", "\"source\": \"Trusted | null\"");
+        }
         //
         // Start - Create directory tree
         //
