@@ -16,13 +16,13 @@
     },
     "rom": {
         "size": 4194304,
-        "crc32": "4644e9ed",
-        "md5": "0b5f1dad6bfc5d8d4e63fe9461776b34",
-        "sha1": "3fc5466d41221cf3b702e222da1dbc1a19eb0f24"
+        "crc32": "edd5acd5",
+        "md5": "9db5dcf0a30f23ee679ee0c068cc77a9",
+        "sha1": "bdacd086265ae7f3af0037dd4ae1ae4d252f8a2a"
     },
     "patches": [
         {
-            "authors": [ "Euclid" ],
+            "authors": [ "Beerad", "Beno", "Con", "David", "Duke Serkol", "Dreamer_Nom", "Euclid", "MoN", "Mottzilla", "SmashManiac", "Roto", "Vehiek" ],
             "shortAuthors": null,
             "url": "http://bszelda.zeldalegends.net/sekibanfiles.shtml",
             "otherUrls": [ ],
