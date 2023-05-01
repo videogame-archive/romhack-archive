@@ -16,20 +16,20 @@
     },
     "rom": {
         "size": 4194304,
-        "crc32": "f617e065",
-        "md5": "3b01e86d3a16a6b7ca1ac8a73e655927",
-        "sha1": "c19c763e9a0b8af5f6e0fd9bfe5797c9de4de23f"
+        "crc32": "b59e6d29",
+        "md5": "bbcea27d39d9d64688b1c0235915bb36",
+        "sha1": "37265e52c298b5c8607d3a8ac5fce829763a306d"
     },
     "patches": [
         {
-            "authors": [ "Euclid" ],
+            "authors": [ "Beno", "Con", "David", "Duke Serkol", "Dreamer_Nom", "Euclid", "MoN", "SmashManiac", "Roto", "Vehiek" ],
             "shortAuthors": null,
             "url": "http://bszelda.zeldalegends.net/sekibanfiles.shtml",
             "otherUrls": [ ],
             "version": "1.0",
             "releaseDate": "2020-09-21",
             "options": null,
-            "labels": [ "Game", "T-En" ]
+            "labels": [ "T-En" ]
         }
     ]
 }
