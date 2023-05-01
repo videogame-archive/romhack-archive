@@ -35,8 +35,8 @@ public class BPS {
 
 
         //patch
-        var sourceRelativeOffset=0;
-        var targetRelativeOffset=0;
+        int sourceRelativeOffset=0;
+        int targetRelativeOffset=0;
         for(var i=0; i<this.actions.size(); i++){
             BPSAction action= this.actions.get(i);
 
@@ -149,6 +149,9 @@ public class BPS {
         }
     }
     private static int BPS_getVLVLen(int data){
+        if (data < 0) {
+            throw new RuntimeException("VLV is negative, something did go wrong!");
+        }
         int len=0;
         while(true){
             int x = data & 0x7f;
