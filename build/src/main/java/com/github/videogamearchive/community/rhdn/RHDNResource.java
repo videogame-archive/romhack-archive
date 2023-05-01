@@ -34,11 +34,17 @@ public class RHDNResource implements PatchResource {
 
     private static List<CSVRecord> getHacks() throws IOException {
         InputStream input = RHDNResource.class.getResourceAsStream("hacks.csv");
+        if (input == null) {
+            return Collections.emptyList();
+        }
         return CSV.read(input);
     }
 
     private static List<CSVRecord> getTranslations() throws IOException {
         InputStream input = RHDNResource.class.getResourceAsStream("translations.csv");
+        if (input == null) {
+            return Collections.emptyList();
+        }
         return CSV.read(input);
     }
 

@@ -59,8 +59,8 @@ public class UPS {
 
         /* fix the glitch that cut the end of the file if it's larger than the changed file patch was originally created with */
         /* more info: https://github.com/marcrobledo/RomPatcher.js/pull/40#issuecomment-1069087423 */
-        sizeOutput = this.sizeOutput;
-        sizeInput = this.sizeInput;
+        int sizeOutput = this.sizeOutput;
+        int sizeInput = this.sizeInput;
         if(!validate && sizeInput < romFile.fileSize){
             sizeInput = romFile.fileSize;
             if(sizeOutput < sizeInput){
