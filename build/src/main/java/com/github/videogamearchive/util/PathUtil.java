@@ -1,9 +1,17 @@
 package com.github.videogamearchive.util;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class PathUtil {
+
+    public static void createSymbolicLink(Path source, Path link) throws IOException {
+        Path relativeSrc = link.getParent().relativize(source); // relative path of original file from symbolic link
+        link.getParent().toFile().mkdirs(); // create the directory hierarchy if any folder is not available
+        Files.createSymbolicLink(link, relativeSrc); // create symbolic link.
+    }
+
     public static String getName(Path path) {
         return path.getName(path.getNameCount() - 1).toString();
     }
