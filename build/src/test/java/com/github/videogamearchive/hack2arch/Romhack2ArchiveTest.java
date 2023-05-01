@@ -29,7 +29,7 @@ public class Romhack2ArchiveTest {
         if (contents != null) {
             for (File f : contents) {
                 if (! Files.isSymbolicLink(f.toPath())) {
-                    deleteDir(f);
+                    //deleteDir(f);
                 }
             }
         }
@@ -92,6 +92,16 @@ public class Romhack2ArchiveTest {
     @Test
     public void romhackBig2CreatorTest() throws Exception {
         Romhack2Archive.main(new String[]{
+                "test",
+                originalBig2.toString(),
+                modifiedBig2.toString(),
+                tempFile.toString()});
+    }
+
+    @Test
+    public void romhackBig2CreatorTestNoBPS() throws Exception {
+        Romhack2Archive.main(new String[]{
+                "--no-bps",
                 "test",
                 originalBig2.toString(),
                 modifiedBig2.toString(),

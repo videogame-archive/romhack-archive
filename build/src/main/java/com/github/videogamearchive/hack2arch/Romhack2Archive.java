@@ -20,32 +20,35 @@ public class Romhack2Archive {
 
     private static final Map<String, PatchResource> supportedResources = Map.of("https://www.romhacking.net/", new RHDNResource());
     public static void main(String[] args) throws Exception {
-        if (args.length < 4) {
+        if (args.length < 4 ||
+                (args[0].equals("--no-bps") && args.length < 5)) {
             help();
         } else {
-            String retrievedBy = args[0];
-            Path parent = Path.of(args[1]);
-            Path romhack = Path.of(args[2]);
-            Path outputFolder = Path.of(args[3]);
+            int index = (args[0].equals("--no-bps"))?1:0;
+            boolean disableBPS = index == 1;
+            String retrievedBy = args[index + 0];
+            Path parent = Path.of(args[index + 1]);
+            Path romhack = Path.of(args[index + 2]);
+            Path outputFolder = Path.of(args[index + 3]);
             List<String> urls = new ArrayList<>();
-            for (int i = 4; i < args.length; i++) {
+            for (int i = index + 4; i < args.length; i++) {
                 if (args[i].startsWith("http://") || args[i].startsWith("https://")) {
                     urls.add(args[i]);
                 }
             }
-            process(parent, romhack, outputFolder, retrievedBy, urls);
+            process(disableBPS, parent, romhack, outputFolder, retrievedBy, urls);
         }
     }
 
     private static void help() {
         System.out.println("usage: ");
-        System.out.println("\t\t java -jar romhack2archive.jar \"retrievedBy\" \"parentRom\" \"romhackRom\" \"outputDir\" [\"patchURL1\"] ... [\"patchURLN\"]");
+        System.out.println("\t\t java -jar romhack2archive.jar [--no-bps] \"retrievedBy\" \"parentRom\" \"romhackRom\" \"outputDir\" [\"patchURL1\"] ... [\"patchURLN\"]");
         System.out.println("- Currently only romhacking.net urls are supported, other don't retrieve extra information.");
         System.out.println("- URL information takes precedence over filename information.");
     }
 
     static private long MAX_MB_FOR_DELTA = 50331648;
-    public static Path process(Path pathToParentRom, Path pathToRomhackRom, Path outDir, String retrievedBy, List<String> urls) throws Exception {
+    public static Path process(boolean disableBPS, Path pathToParentRom, Path pathToRomhackRom, Path outDir, String retrievedBy, List<String> urls) throws Exception {
         System.out.println("maxMemory: " + Runtime.getRuntime().maxMemory());
         // Create romhack.json
         Info info = new Info(null, null, null, null, null, null, null);
@@ -133,14 +136,15 @@ public class Romhack2Archive {
         Files.write(out.resolve("romhack.json"), json.getBytes(StandardCharsets.UTF_8));
 
         // Create romhack.bps
-        byte[] parentRomBytes = getBytes(pathToParentRom);
-        MarcFile parentRom = new MarcFile(parentRomBytes);
-        MarcFile romhackRom = new MarcFile(romhackRomBytes);
-        boolean useDeltaMode = (parentRomBytes.length < MAX_MB_FOR_DELTA && romhackRomBytes.length < MAX_MB_FOR_DELTA);
-        BPS bps = BPS.createBPSFromFiles(parentRom, romhackRom, useDeltaMode);
-        MarcFile romhackBPS = bps.export();
-        romhackBPS.save(out.resolve("romhack.bps"));
-
+        if (!disableBPS) {
+            byte[] parentRomBytes = getBytes(pathToParentRom);
+            MarcFile parentRom = new MarcFile(parentRomBytes);
+            MarcFile romhackRom = new MarcFile(romhackRomBytes);
+            boolean useDeltaMode = (parentRomBytes.length < MAX_MB_FOR_DELTA && romhackRomBytes.length < MAX_MB_FOR_DELTA);
+            BPS bps = BPS.createBPSFromFiles(parentRom, romhackRom, useDeltaMode);
+            MarcFile romhackBPS = bps.export();
+            romhackBPS.save(out.resolve("romhack.bps"));
+        }
         //Create romhack-original
         Path romhackOriginal = out.resolve("romhack-original");
         Files.createDirectories(romhackOriginal);
