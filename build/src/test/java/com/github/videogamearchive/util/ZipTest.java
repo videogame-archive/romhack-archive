@@ -12,11 +12,11 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ZipTest {
-    Path original = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan).sfc");
-    Path modified = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)].sfc");
-    Path originalZip = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan).zip");
-    Path modifiedZip = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)].zip");
-    Path zip1 = Path.of("..","..", "romhack-archive-private", "test-data","GoldMap13.zip");
+    Path original = Path.of("test-data", "Kirby Test ROM (World).nes");
+    Path modified = Path.of("test-data", "Lolo Test ROM (World) [Themed by Hackermans (v1.1)].nes");
+    Path originalZip = Path.of("test-data", "Kirby Test ROM (World).zip");
+    Path modifiedZip = Path.of("test-data", "Lolo Test ROM (World) [Themed by Hackermans (v1.1)].zip");
+    Path zip1 = Path.of("test-data", "Lolo Test ROM v1.1.zip");
     Path tempFileZip = Path.of("temp-" + System.currentTimeMillis() + ".zip");
     @AfterEach
     public void cleanup() throws IOException {
@@ -36,7 +36,7 @@ public class ZipTest {
     @Test
     public void testUnzip2() throws IOException {
         Map<String, byte[]> contents = Zip.readAllBytes(zip1);
-        assertEquals(26, contents.size());
+        assertEquals(2, contents.size());
     }
 
     @Test

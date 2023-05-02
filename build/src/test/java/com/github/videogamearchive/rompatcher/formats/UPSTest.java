@@ -12,9 +12,9 @@ import java.nio.file.Path;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class UPSTest {
-    Path original = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan).sfc");
-    Path modified = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)].sfc");
-    Path patch = Path.of("..","..", "romhack-archive-private", "test-data","3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero (v1.01)].ups");
+    Path original = Path.of("test-data", "Kirby Test ROM (World).nes");
+    Path modified = Path.of("test-data", "Lolo Test ROM (World) [Themed by Hackermans (v1.1)].nes");
+    Path patch = Path.of("test-data", "Lolo Test ROM v1.1.ups");
 
     Path tempFile = Path.of("temp-" + System.currentTimeMillis());
     @AfterEach
