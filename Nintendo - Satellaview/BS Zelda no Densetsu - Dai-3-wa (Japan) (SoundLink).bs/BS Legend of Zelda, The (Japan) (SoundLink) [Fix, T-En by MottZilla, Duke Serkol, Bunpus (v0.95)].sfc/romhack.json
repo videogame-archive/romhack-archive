@@ -22,9 +22,9 @@
     },
     "patches": [
         {
-            "authors": [ "MottZilla" ],
+            "authors": [ "MottZilla", "Duke Serkol", "Bumpus" ],
             "shortAuthors": null,
-            "url": "https://bszelda.zeldalegends.net/bs1files.shtml",
+            "url": "https://bszelda.zeldalegends.net/rh.shtml",
             "otherUrls": [ ],
             "version": "0.95",
             "releaseDate": "2012-05-06",
