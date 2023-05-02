@@ -378,7 +378,7 @@ usage:
 
 The tool can also be feed the patch URLs, when RHDN URLs are used the tool with substitute whatever authors and version have been put on the file name by the ones found on RHDN.
 
-It will also put the release date. ⚠ Verify these since more often than not are not don't follow the guidelines.
+It will also put the release date. ⚠ Verify these since more often than not don't follow the guidelines.
 
 ### Romhack 2 Archive --no-bps
 
