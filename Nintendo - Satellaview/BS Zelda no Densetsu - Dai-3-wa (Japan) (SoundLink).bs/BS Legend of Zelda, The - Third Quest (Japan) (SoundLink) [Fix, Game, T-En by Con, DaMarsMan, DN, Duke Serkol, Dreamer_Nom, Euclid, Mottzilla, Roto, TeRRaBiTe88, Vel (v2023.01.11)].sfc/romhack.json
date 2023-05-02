@@ -5,7 +5,7 @@
         "status": "Fully Playable",
         "adult": null,
         "offensive": null,
-        "obsoleteVersion": null,
+        "obsoleteVersion": true,
         "backCatalog": null
     },
     "provenance": {
