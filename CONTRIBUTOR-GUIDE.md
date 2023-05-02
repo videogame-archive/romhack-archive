@@ -356,10 +356,11 @@ Is important to have correctly named parent rom and romhack rom.
 
 The roms should already be named following No-Intro character conventions.
 
-This tool with generate:
+This tool can generate:
 - correct folder structure
 - romhack.bps
 - romhack.json 
+- romhack-original folder with numbered sub-folders
 
 The json can then be finish up filling manually before submission to the database.
 
@@ -370,9 +371,24 @@ Zip format is autodetect by looking at the file's extension.
 ```
 %/>java -jar romhack2archive.jar
 usage: 
-		 java -jar romhack2archive.jar "parentRom" "romhackRom" "outputDir" ["patchURL1"] ... ["patchURLN"]
-- Currently only romhacking.net urls starting by 'https' ending in '/' are supported, other are ignored.
+		 java -jar romhack2archive.jar [--no-bps] "retrievedBy" "parentRom" "romhackRom" "outputDir" ["patchURL1"] ... ["patchURLN"]
+- Currently only romhacking.net urls are supported, other don't retrieve extra information.
 - URL information takes precedence over filename information.
+```
+
+The tool can also be feed the patch URLs, when RHDN URLs are used the tool with substitute whatever authors and version have been put on the file name by the ones found on RHDN.
+
+It will also put the release date. ⚠ Verify these since more often than not are not don't follow the guidelines.
+
+### Romhack 2 Archive --no-bps
+
+The romhack2archive.jar tool uses larges amounts of memory, this is not noticeable when working on small roms but makes it unsuitable to use with disc based games.
+
+To create romhack.bps from disc images is recommended to use [Floating IPS (Flips) v1.31](./bin/flips-1.31.tar.gz) from the command line and specify to use bps linear mode as shown below.
+
+```
+%$> ./flips-linux --create --bps-linear "Big CD Gane.bin" "BIG CD Game - Improved [Label by Author (v1.0)].bin" romhack.bps
+The patch was created successfully!
 ```
 
 ## User Safety
