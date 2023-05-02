@@ -15,21 +15,21 @@
         "notes": null
     },
     "rom": {
-        "size": 2097152,
-        "crc32": "2c5ccac8",
-        "md5": "120ba709e4b780af4b3ad565b95e1509",
-        "sha1": "a55006d4cef4b24cdd2f30dfa6331db830dbb577"
+        "size": 4194304,
+        "crc32": "f291f3bf",
+        "md5": "516c94c82084ba310915c9d8d4d88ceb",
+        "sha1": "63675702253a7ca1b1894b820f8f0e5902183cd1"
     },
     "patches": [
         {
-            "authors": [ "MottZilla" ],
+            "authors": [ "Beno", "Con", "David", "Duke Serkol", "Dreamer_Nom", "Euclid", "MoN", "SmashManiac", "Roto", "Vehiek" ],
             "shortAuthors": null,
-            "url": "https://bszelda.zeldalegends.net/bs1files.shtml",
+            "url": "http://bszelda.zeldalegends.net/sekibanfiles.shtml",
             "otherUrls": [ ],
-            "version": "0.95",
-            "releaseDate": "2012-05-06",
+            "version": "1.0",
+            "releaseDate": "2020-09-21",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "Fix", "T-En" ]
         }
     ]
 }

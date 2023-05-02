@@ -2,7 +2,7 @@
     "info": {
         "name": null,
         "translatedTitle": null,
-        "status": "Fully Playable | Unfinished",
+        "status": "Fully Playable",
         "adult": null,
         "offensive": null,
         "obsoleteVersion": null,
@@ -29,7 +29,7 @@
             "version": "2023.01.11",
             "releaseDate": "2023-01-11",
             "options": null,
-            "labels": [ "Game", "T-En" ]
+            "labels": [ "Fix", "Game", "T-En" ]
         }
     ]
 }
