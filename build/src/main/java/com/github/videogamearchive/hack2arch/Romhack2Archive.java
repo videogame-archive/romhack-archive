@@ -47,7 +47,7 @@ public class Romhack2Archive {
         System.out.println("- URL information takes precedence over filename information.");
     }
 
-    static private long MAX_MB_FOR_DELTA = 50331648;
+    static private long MAX_MB_FOR_DELTA = 100663296;
     public static Path process(boolean disableBPS, Path pathToParentRom, Path pathToRomhackRom, Path outDir, String retrievedBy, List<String> urls) throws Exception {
         System.out.println("maxMemory: " + Runtime.getRuntime().maxMemory());
         // Create romhack.json
@@ -141,6 +141,9 @@ public class Romhack2Archive {
             MarcFile parentRom = new MarcFile(parentRomBytes);
             MarcFile romhackRom = new MarcFile(romhackRomBytes);
             boolean useDeltaMode = (parentRomBytes.length < MAX_MB_FOR_DELTA && romhackRomBytes.length < MAX_MB_FOR_DELTA);
+            if (!useDeltaMode) {
+                throw new RuntimeException("rom is too big, use this tool with --no-bps flag and flips to generate the bps, check the contributors guide.");
+            }
             BPS bps = BPS.createBPSFromFiles(parentRom, romhackRom, useDeltaMode);
             MarcFile romhackBPS = bps.export();
             romhackBPS.save(out.resolve("romhack.bps"));
