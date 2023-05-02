@@ -1,0 +1,35 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable | Unfinished",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-02",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097664,
+        "crc32": "0f33ea3c",
+        "md5": "0d322efbf14ccbef42d19f8fc6a4bfb4",
+        "sha1": "dbf5692bfe9f3d08d7b6722fd9906d632ccfd5de"
+    },
+    "patches": [
+        {
+            "authors": [ "Con", "DaMarsMan", "DN", "Duke Serkol", "Dreamer_Nom", "Euclid", "Mottzilla", "Roto", "TeRRaBiTe88", "Vel" ],
+            "shortAuthors": null,
+            "url": "https://bszelda.zeldalegends.net/ce.shtml",
+            "otherUrls": [ ],
+            "version": "2023.01.11",
+            "releaseDate": null,
+            "options": null,
+            "labels": [ "Fix", "Game", "T-En" ]
+        }
+    ]
+}
