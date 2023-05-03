@@ -9,10 +9,11 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.Map;
 
 public final class CSV {
+
     private CSV() {
+        // Private constructor to make clear that is a non-instantiable utility class
     }
 
     public static List<CSVRecord> read(InputStream in) throws IOException {
@@ -30,11 +31,9 @@ public final class CSV {
         }
     }
 
-    private static final String EMPTY_STRING = "";
-
-    public static String toString(List records) {
+    public static String toString(String[] records) {
         if (records == null) {
-            return EMPTY_STRING;
+            return "";
         }
         StringBuilder builder = new StringBuilder();
         for (Object record:records) {
@@ -45,4 +44,5 @@ public final class CSV {
         }
         return builder.toString();
     }
+
 }

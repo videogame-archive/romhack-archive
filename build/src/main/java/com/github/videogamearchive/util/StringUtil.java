@@ -5,6 +5,10 @@ import java.util.List;
 
 public class StringUtil {
 
+    private StringUtil() {
+        // Private constructor to make clear that is a non-instantiable utility class
+    }
+
     public static List<String> substrings(String string, String start, String end, boolean excluding) {
         int offset = 0;
         List<String> items = new ArrayList<>();
@@ -39,4 +43,5 @@ public class StringUtil {
             return null;
         }
     }
+
 }

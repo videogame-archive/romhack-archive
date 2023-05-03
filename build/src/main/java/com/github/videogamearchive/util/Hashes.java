@@ -6,6 +6,11 @@ import java.security.NoSuchAlgorithmException;
 import java.util.zip.CRC32;
 
 public class Hashes {
+
+    private Hashes() {
+        // Private constructor to make clear that is a non-instantiable utility class
+    }
+
     public static String getMd5(byte[] bytes) throws NoSuchAlgorithmException {
         // Static getInstance method is called with hashing MD5
         MessageDigest md = MessageDigest.getInstance("MD5");
@@ -24,6 +29,7 @@ public class Hashes {
         }
         return hashtext;
     }
+
     public static String getSha1(byte[] bytes) throws NoSuchAlgorithmException {
         // Static getInstance method is called with hashing MD5
         MessageDigest md = MessageDigest.getInstance("SHA-1");
@@ -42,6 +48,7 @@ public class Hashes {
         }
         return hashtext;
     }
+
     public static String getCrc32(byte[] bytes) {
         CRC32 crc32 = new CRC32();
         crc32.update(bytes);

@@ -6,6 +6,10 @@ import java.nio.file.Path;
 
 public class PathUtil {
 
+    private PathUtil() {
+        // Private constructor to make clear that is a non-instantiable utility class
+    }
+
     public static void createSymbolicLink(Path source, Path link) throws IOException {
         Path relativeSrc = link.getParent().relativize(source); // relative path of original file from symbolic link
         link.getParent().toFile().mkdirs(); // create the directory hierarchy if any folder is not available
@@ -47,8 +51,10 @@ public class PathUtil {
     public static boolean isZip(Path path) {
         return isExtension(path, "zip");
     }
+
     public static boolean isExtension(Path path, String extension) {
         return !Files.isDirectory(path) &&
                 path.toString().toLowerCase().endsWith("." + extension.toLowerCase());
     }
+
 }

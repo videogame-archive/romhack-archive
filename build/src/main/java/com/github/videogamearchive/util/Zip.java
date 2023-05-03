@@ -23,6 +23,10 @@ import java.util.zip.ZipOutputStream;
  */
 public class Zip {
 
+    private Zip() {
+        // Private constructor to make clear that is a non-instantiable utility class
+    }
+
     public static byte[] readAllBytesOneFile(Path path) throws IOException {
         Map<String, byte[]> zipContent = Zip.readAllBytes(path);
         if (zipContent.size() != 1) {
@@ -46,6 +50,7 @@ public class Zip {
         }
         return inMemory;
     }
+
     private static Instant torrentZipModificationTime = Instant.parse("1996-12-24T22:32:00.00Z");
 
     public static void write(Path path,Map<String, byte[]>  content) throws IOException {
