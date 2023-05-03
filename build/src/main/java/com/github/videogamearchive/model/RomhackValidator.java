@@ -139,6 +139,13 @@ public class RomhackValidator {
             }
             builder.append(']');
         }
+        switch (romhack.info().status()) {
+            case FullyPlayable:
+                break;
+            case Incomplete:
+                builder.append(" [i]");
+                break;
+        }
         return builder.toString();
     }
 
