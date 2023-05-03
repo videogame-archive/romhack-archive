@@ -85,7 +85,7 @@ public abstract class ReaderWriter {
             }
             if (start != -1 && end != -1 && !objectFound) {
                 String match = builder.substring(start, end);
-                String removeNewLine = match.replace("\n", "").replaceAll(" +", " ");;
+                String removeNewLine = match.replace("\n", "").replaceAll(" +", " ");
                 builder.replace(start, end, removeNewLine);
             }
             if (start != -1 && end != -1) { // reset
