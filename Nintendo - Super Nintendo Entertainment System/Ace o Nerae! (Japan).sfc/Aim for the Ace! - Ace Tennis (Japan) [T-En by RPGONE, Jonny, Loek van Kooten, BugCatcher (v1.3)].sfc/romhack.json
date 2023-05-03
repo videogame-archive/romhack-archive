@@ -1,4 +1,4 @@
-{
+\{
     "info": {
         "name": null,
         "translatedTitle": true,
@@ -25,6 +25,7 @@
             "authors": [ "RPGONE", "Jonny", "Loek van Kooten", "BugCatcher" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/688/",
+            "otherUrls": null,
             "version": "1.3",
             "releaseDate": "2017-12-31",
             "options": null,

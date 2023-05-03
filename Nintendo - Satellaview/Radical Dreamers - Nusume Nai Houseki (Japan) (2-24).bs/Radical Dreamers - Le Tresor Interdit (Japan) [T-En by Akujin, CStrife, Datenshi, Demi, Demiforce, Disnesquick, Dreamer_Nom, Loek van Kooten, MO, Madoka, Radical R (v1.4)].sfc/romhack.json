@@ -10,24 +10,24 @@
     },
     "provenance": {
         "retrievedBy": "JuMaFuSe",
-        "retrievedDate": "2023-03-21",
+        "retrievedDate": "2023-05-03",
         "source": "Trusted",
         "notes": null
     },
     "rom": {
         "size": 2097152,
-        "crc32": "782b9848",
-        "md5": "1419327656c43e3784087864283dd4d0",
-        "sha1": "9050cc9c851598fd8e427c08715d7a5b0a8ec03e"
+        "crc32": "a2664b10",
+        "md5": "55c5baaedffcf4fd022361c531c72178",
+        "sha1": "d06a13524a907e5834a755e3a710fb30adb33c49"
     },
     "patches": [
         {
-            "authors": [ "Near", "SpSpiff" ],
+            "authors": [ "Demiforce", "Demi", "MO", "Loek van Kooten", "Datenshi", "Akujin", "Disnesquick", "Madoka", "CStrife", "Radical R", "Dreamer_Nom" ],
             "shortAuthors": null,
-            "url": "https://www.romhacking.net/translations/342/",
-            "otherUrls": null,
-            "version": "0.91",
-            "releaseDate": "2001-11-20",
+            "url": "https://www.romhacking.net/translations/403/",
+            "otherUrls": [ ],
+            "version": "1.4",
+            "releaseDate": "2005-12-25",
             "options": null,
             "labels": [ "T-En" ]
         }
