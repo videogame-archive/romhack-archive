@@ -118,7 +118,7 @@ public class RomhackValidator {
 
             String authorsAsString = patch.shortAuthors();
             if (authorsAsString == null) {
-                authorsAsString = toStringOrdered(patch.authors());
+                authorsAsString = toString(patch.authors());
             }
             authorsAsString = authorsAsString.replace("(", "")
                                             .replace(")", "")
@@ -133,7 +133,8 @@ public class RomhackValidator {
                                             .replace("<", "")
                                             .replace(">", "");
 
-            builder.append(toStringOrdered(patch.labels())+ " by " + authorsAsString + " (v" + patch.version() + ")");
+            Collections.sort(patch.labels());
+            builder.append(toString(patch.labels())+ " by " + authorsAsString + " (v" + patch.version() + ")");
             if (patch.options() != null) {
                 builder.append(" (Opt " + patch.options() + ")");
             }
@@ -149,8 +150,7 @@ public class RomhackValidator {
         return builder.toString();
     }
 
-    private static String toStringOrdered(List<String> strings) {
-        Collections.sort(strings);
+    private static String toString(List<String> strings) {
         StringBuilder builder = new StringBuilder();
         for (String string:strings) {
             if (builder.length() > 0) {

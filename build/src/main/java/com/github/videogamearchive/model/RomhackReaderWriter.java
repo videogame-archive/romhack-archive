@@ -13,17 +13,17 @@ import java.util.Map;
 
 public class RomhackReaderWriter extends ReaderWriter {
 
-    public Romhack read(String string) throws IOException, ReflectiveOperationException {
-        JsonParser jsonParser = jsonProvider.createParser(new InputStreamReader(new ByteArrayInputStream(string.getBytes(charset)), charset));
-        return read(jsonParser);
-    }
-
     public Romhack read(Path path) throws IOException, ReflectiveOperationException {
         JsonParser jsonParser = jsonProvider.createParser(new InputStreamReader(Files.newInputStream(path), charset));
         return read(jsonParser);
     }
 
-    private Romhack read(JsonParser jsonParser) throws IOException, ReflectiveOperationException {
+    public Romhack read(String string) throws ReflectiveOperationException {
+        JsonParser jsonParser = jsonProvider.createParser(new InputStreamReader(new ByteArrayInputStream(string.getBytes(charset)), charset));
+        return read(jsonParser);
+    }
+
+    private Romhack read(JsonParser jsonParser) throws ReflectiveOperationException {
         jsonParser.next();
         JsonObject object = jsonParser.getObject();
         Map<String, Serializable> jsonMap = getMap(object);
