@@ -92,7 +92,7 @@ public class Romhack2Archive {
         Romhack romhack = new Romhack(info, provenance, rom, patches);
         RomhackReaderWriter romhackReaderWriter = new RomhackReaderWriter();
         String json = romhackReaderWriter.write(romhack);
-        json = json.replace("\"status\": null,", "\"status\": \"Fully Playable | Unfinished\",");
+        json = json.replace("\"status\": null,", "\"status\": \"Fully Playable | Incomplete\",");
         if (!urls.isEmpty()) {
             json = json.replace("\"source\": null", "\"source\": \"Trusted\"");
         } else {

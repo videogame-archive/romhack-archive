@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public enum Status {
     FullyPlayable("Fully Playable"),
-    Unfinished("Unfinished");
+    Incomplete("Incomplete");
     private final String label;
 
     Status(String displayName) {

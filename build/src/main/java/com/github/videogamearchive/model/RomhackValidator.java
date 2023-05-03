@@ -7,10 +7,10 @@ import com.github.videogamearchive.util.PathUtil;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
@@ -118,7 +118,7 @@ public class RomhackValidator {
 
             String authorsAsString = patch.shortAuthors();
             if (authorsAsString == null) {
-                authorsAsString = getAuthor(patch.authors());
+                authorsAsString = toStringOrdered(patch.authors());
             }
             authorsAsString = authorsAsString.replace("(", "")
                                             .replace(")", "")
@@ -133,7 +133,7 @@ public class RomhackValidator {
                                             .replace("<", "")
                                             .replace(">", "");
 
-            builder.append(patch.labels().get(0) + " by " + authorsAsString + " (v" + patch.version() + ")");
+            builder.append(toStringOrdered(patch.labels())+ " by " + authorsAsString + " (v" + patch.version() + ")");
             if (patch.options() != null) {
                 builder.append(" (Opt " + patch.options() + ")");
             }
@@ -142,14 +142,16 @@ public class RomhackValidator {
         return builder.toString();
     }
 
-    private static String getAuthor(List<String> authors) {
+    private static String toStringOrdered(List<String> strings) {
+        Collections.sort(strings);
         StringBuilder builder = new StringBuilder();
-        for (String author:authors) {
-            if (!builder.isEmpty()) {
+        for (String string:strings) {
+            if (builder.length() > 0) {
                 builder.append(", ");
             }
-            builder.append(author);
+            builder.append(string);
         }
         return builder.toString();
     }
+
 }
