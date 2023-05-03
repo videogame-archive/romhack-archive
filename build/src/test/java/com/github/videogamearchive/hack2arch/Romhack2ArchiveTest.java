@@ -9,12 +9,12 @@ import java.nio.file.Path;
 
 public class Romhack2ArchiveTest {
 
-    Path original = Path.of("..","..", "romhack-archive-private", "test-data","Final Fantasy V (Japan).zip");
-    Path modified = Path.of("..","..", "romhack-archive-private", "test-data","Final Fantasy V - Legend of the Crystals (Japan) [T-En by RPGe (v1.10)] [Add by Spooniest (v2.1)] [Add by noisecross (v1.0)].zip");
-    Path modifiedMultiLabel = Path.of("..","..", "romhack-archive-private", "test-data","Final Fantasy V - Legend of the Crystals (Japan) [T-En by RPGe (v1.10)] [Fix , Add by Spooniest (v2.1)] [Fix, Add by noisecross (v1.0)].zip");
+    Path original = Path.of("test-data", "Kirby Test ROM (World).nes");
+    Path modified = Path.of("test-data", "Lolo Test ROM (World) [Themed by Hackermans (v1.1)].nes");
+    Path modifiedMultiLabel = Path.of("test-data", "Lolo Test ROM - Cool Font (World) [Themed, LabelX by Hackermans (v1.1)] [Reskin , LabelY ,LabelZ by Unknown (vUnknown).nes");
 
-    Path original2 = Path.of("..","..", "romhack-archive-private", "test-data-2","Super_Mario_Land_2_-_6_Golden_Coins_USA_Europe.gb");
-    Path modified2 = Path.of("..","..", "romhack-archive-private", "test-data-2","Super_Mario_Land_2_-_6_Golden_Coins_USA_Europe_patched.gb");
+    Path original2 = Path.of("test-data", "Kirby Test ROM (World).zip");
+    Path modified2 = Path.of("test-data", "Lolo Test ROM - Cool Font (World) [Themed by Hackermans (v1.1)] [Reskin by Unknown (vUnknown)].zip");
 
     Path originalBig = Path.of("..","..", "romhack-archive-private", "test-data-big","Yu-Gi-Oh! Forbidden Memories (USA).bin");
     Path modifiedBig = Path.of("..","..", "romhack-archive-private", "test-data-big","Yu-Gi-Oh! Forbidden Memories (USA) - 15 Cards drop mod  [Add by Unknown (v2019.04.05)].bin");
