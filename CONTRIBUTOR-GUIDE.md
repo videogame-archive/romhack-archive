@@ -398,6 +398,8 @@ The tool will prevent its use with files larger than 100663296 bytes, or 96 MB.
 
 To create romhack.bps from larger roms or disc images is recommended to use [Floating IPS (Flips) v1.31](./bin/flips-1.31.tar.gz) from the command line and specify to use bps linear mode as shown below.
 
+This tool comes with both Windows and Linux versions.
+
 ```
 %$> ./flips-linux --create --bps-linear "Big CD Gane.bin" "BIG CD Game - Improved [Label by Author (v1.0)].bin" romhack.bps
 The patch was created successfully!
