@@ -59,7 +59,10 @@ public class Romhack2Archive {
         List<Patch> patches = new ArrayList<>();
         for (String patchAsString: StringUtil.substrings(romhackName, "[", "]", true)) {
             String[] collection2NameVersionAlt = patchAsString.split(" by ");
-            List<String> labels = Arrays.asList(collection2NameVersionAlt[0].split("\\s*,\\s*"));
+            List<Label> labels = new ArrayList<>();
+            for (String labelAsString : Arrays.asList(collection2NameVersionAlt[0].split("\\s*,\\s*"))) {
+                labels.add(Enum.valueOf(Label.class, labelAsString.replace(" ", "").replace("-", "")));
+            }
             String nameVersionAlt = collection2NameVersionAlt[1];
             int indexOfVersion = nameVersionAlt.indexOf(" (v");
             String authors = nameVersionAlt.substring(0, indexOfVersion);

@@ -150,13 +150,13 @@ public class RomhackValidator {
         return builder.toString();
     }
 
-    private static String toString(List<String> strings) {
+    private static String toString(List<?> strings) {
         StringBuilder builder = new StringBuilder();
-        for (String string:strings) {
+        for (Object string:strings) {
             if (builder.length() > 0) {
                 builder.append(", ");
             }
-            builder.append(string);
+            builder.append(string.toString().trim());
         }
         return builder.toString();
     }

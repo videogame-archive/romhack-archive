@@ -1,25 +1,15 @@
 package com.github.videogamearchive.model;
 
-import java.util.Arrays;
-
 public enum Source {
     Trusted("Trusted");
-    private final String label;
+    private final String displayName;
 
     Source(String displayName) {
-        this.label = displayName;
+        this.displayName = displayName;
     }
-    @Override public String toString() { return label; }
 
-    public static Source valueOfLabel(String value) {
-        if (value == null) {
-            return null;
-        }
-        for (Source status: Source.values()) {
-            if (status.label.equals(value)) {
-                return status;
-            }
-        }
-        throw new IllegalArgumentException("value '" + value + "' is not a valid " + Source.class.getSimpleName() + ", valid values are: " + Arrays.toString(Source.values()));
+    @Override
+    public String toString() {
+        return displayName;
     }
 }

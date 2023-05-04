@@ -189,7 +189,7 @@ public abstract class ReaderWriter {
                     parameters.get(parameterName) == null) {
                 initParameters[i] = parameters.get(parameterName);
             } else if (type.isEnum()) {
-                initParameters[i] = Enum.valueOf((Class<Enum>) type, ((String) parameters.get(parameterName)).replace(" ", ""));
+                initParameters[i] = Enum.valueOf((Class<Enum>) type, ((String) parameters.get(parameterName)).replace(" ", "").replace("-", ""));
             } else {
                 initParameters[i] = buildObject(type, (Map<String, Serializable>) parameters.get(parameterName));
             }

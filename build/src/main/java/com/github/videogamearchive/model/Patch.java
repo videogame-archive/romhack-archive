@@ -10,7 +10,7 @@ public record Patch(
         String version,
         String releaseDate,
         String options,
-        List<String> labels
+        List<Label> labels
         ) {
 
 }

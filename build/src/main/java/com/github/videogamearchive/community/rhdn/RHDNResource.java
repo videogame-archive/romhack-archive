@@ -1,5 +1,6 @@
 package com.github.videogamearchive.community.rhdn;
 
+import com.github.videogamearchive.model.Label;
 import com.github.videogamearchive.model.Patch;
 import com.github.videogamearchive.util.CSV;
 import com.github.videogamearchive.util.PatchResource;
@@ -86,7 +87,7 @@ public class RHDNResource implements PatchResource {
         }
 
         String alternative = null;
-        List<String> labels = new ArrayList<>();
+        List<Label> labels = new ArrayList<>();
 
         return new Patch(authors, shortAuthors, url, otherUrls, version, releaseDate, alternative, labels);
     }

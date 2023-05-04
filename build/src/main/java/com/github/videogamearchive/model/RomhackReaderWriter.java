@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -35,12 +36,25 @@ public class RomhackReaderWriter extends ReaderWriter {
     //
 
     private Romhack buildRomhack(Map<String, Serializable> romhackAsMap) throws ReflectiveOperationException {
-        return new Romhack(
+        Romhack romhack = new Romhack(
                 buildObject(Info.class, (Map<String, Serializable>) romhackAsMap.get("info")),
                 buildObject(Provenance.class, (Map<String, Serializable>) romhackAsMap.get("provenance")),
                 buildObject(Rom.class, (Map<String, Serializable>) romhackAsMap.get("rom")),
                 buildList(Patch.class, (List<Map<String, Serializable>>) romhackAsMap.get("patches"))
             );
+
+        // Due to the missing type information the labels list contains String instead of Enum, needs to be replaced
+        for (Patch patch:romhack.patches()) {
+            List<Label> labels = new ArrayList<>();
+            for (Object labelAsString:patch.labels()) {
+                Label label = Enum.valueOf(Label.class, labelAsString.toString().replace(" ", "").replace("-", "") );
+                labels.add(label);
+            }
+            patch.labels().clear();
+            patch.labels().addAll(labels);
+        }
+
+        return romhack;
     }
 
 }
