@@ -195,11 +195,11 @@ Labels are sorted in the order given on the table when there is more than one la
 
 The next labels exist outside the category system.
 
-They can be added after the category labels and sorted in lexicographical order.
+Labels are sorted in the order given on the table when there is more than one label on the list.
 
-| **Name**        | **Description**                                                                                                                                                                                                                                                                                                                                       |
-|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Restoration** | Fixes a myriad of problems, making extensive changes to the game rom, making a game that was unplayable otherwise, playable again.                                                                                                                                                                                                                    |
+| **Order** | **Name**        | **Description**                                                                                                                                                                                                                                                                                                                                       |
+|-----------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 17        | **Restoration** | Fixes a myriad of problems, making extensive changes to the game rom, making a game that was unplayable otherwise, playable again.                                                                                                                                                                                                                    |
 
 ## Romhack Rom Naming Convention
 
