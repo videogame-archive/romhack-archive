@@ -10,26 +10,26 @@
     },
     "provenance": {
         "retrievedBy": "JuMaFuSe",
-        "retrievedDate": "2023-05-01",
+        "retrievedDate": "2023-05-02",
         "source": "Trusted",
         "notes": null
     },
     "rom": {
         "size": 2097664,
-        "crc32": "7973eae0",
-        "md5": "026ac338f08bf311bb007265222e6244",
-        "sha1": "a37c4e74d6b0c4f778cc64142072748f416d6c23"
+        "crc32": "0f33ea3c",
+        "md5": "0d322efbf14ccbef42d19f8fc6a4bfb4",
+        "sha1": "dbf5692bfe9f3d08d7b6722fd9906d632ccfd5de"
     },
     "patches": [
         {
             "authors": [ "Roto", "DN", "Duke Serkol", "Dreamer_Nom", "Con", "TeRRaBiTe88", "Vel", "DaMarsMan", "Euclid", "Mottzilla" ],
             "shortAuthors": null,
-            "url": "https://bszelda.zeldalegends.net/ce.shtml",
+            "url": "https://bszelda.zeldalegends.net/fq.shtmll",
             "otherUrls": [ ],
             "version": "2023.01.11",
-            "releaseDate": "2023-01-11",
+            "releaseDate": null,
             "options": null,
-            "labels": [ "Fix", "Game", "T-En" ]
+            "labels": [ "T-En", "Restoration" ]
         }
     ]
 }

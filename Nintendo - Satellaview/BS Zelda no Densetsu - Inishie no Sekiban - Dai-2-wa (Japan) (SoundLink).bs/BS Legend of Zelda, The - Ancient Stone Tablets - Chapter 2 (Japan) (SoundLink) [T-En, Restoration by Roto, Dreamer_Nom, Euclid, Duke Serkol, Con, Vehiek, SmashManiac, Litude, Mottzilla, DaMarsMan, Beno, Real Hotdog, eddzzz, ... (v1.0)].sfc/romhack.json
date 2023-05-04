@@ -16,9 +16,9 @@
     },
     "rom": {
         "size": 4194304,
-        "crc32": "9d066ee2",
-        "md5": "d4e835db7906e31cea5ae92e4714c4c6",
-        "sha1": "51618400d82724b8d8798220f5b68faacc3f6e3c"
+        "crc32": "b59e6d29",
+        "md5": "bbcea27d39d9d64688b1c0235915bb36",
+        "sha1": "37265e52c298b5c8607d3a8ac5fce829763a306d"
     },
     "patches": [
         {
@@ -29,7 +29,7 @@
             "version": "1.0",
             "releaseDate": "2020-09-21",
             "options": null,
-            "labels": [ "Fix", "T-En" ]
+            "labels": [ "T-En", "Restoration" ]
         }
     ]
 }

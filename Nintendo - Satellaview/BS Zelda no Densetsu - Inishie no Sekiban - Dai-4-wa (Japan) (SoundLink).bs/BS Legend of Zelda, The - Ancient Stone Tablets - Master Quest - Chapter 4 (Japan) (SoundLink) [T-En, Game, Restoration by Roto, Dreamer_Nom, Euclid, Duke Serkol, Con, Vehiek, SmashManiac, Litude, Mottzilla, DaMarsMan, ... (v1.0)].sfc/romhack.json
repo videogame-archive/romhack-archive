@@ -16,20 +16,20 @@
     },
     "rom": {
         "size": 4194304,
-        "crc32": "f291f3bf",
-        "md5": "516c94c82084ba310915c9d8d4d88ceb",
-        "sha1": "63675702253a7ca1b1894b820f8f0e5902183cd1"
+        "crc32": "edd5acd5",
+        "md5": "9db5dcf0a30f23ee679ee0c068cc77a9",
+        "sha1": "bdacd086265ae7f3af0037dd4ae1ae4d252f8a2a"
     },
     "patches": [
         {
             "authors": [ "Roto", "Dreamer_Nom", "Euclid", "Duke Serkol", "Con", "Vehiek", "SmashManiac", "Litude", "Mottzilla", "DaMarsMan", "Beno", "Real Hotdog", "eddzzz", "d4s", "Vehiek", "David", "MoN", "MadHatter" ],
-            "shortAuthors": "Roto, Dreamer_Nom, Euclid, Duke Serkol, Con, Vehiek, SmashManiac, Litude, Mottzilla, DaMarsMan, Beno, Real Hotdog, eddzzz, ...",
+            "shortAuthors": "Roto, Dreamer_Nom, Euclid, Duke Serkol, Con, Vehiek, SmashManiac, Litude, Mottzilla, DaMarsMan, ...",
             "url": "http://bszelda.zeldalegends.net/sekibanfiles.shtml",
             "otherUrls": [ ],
             "version": "1.0",
             "releaseDate": "2020-09-21",
             "options": null,
-            "labels": [ "Fix", "T-En" ]
+            "labels": [ "T-En", "Game", "Restoration" ]
         }
     ]
 }
