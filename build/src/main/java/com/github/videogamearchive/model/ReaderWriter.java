@@ -85,7 +85,7 @@ public abstract class ReaderWriter {
             }
             if (start != -1 && end != -1 && !objectFound) {
                 String match = builder.substring(start, end);
-                String removeNewLine = match.replace("\n", "").replaceAll(" +", " ");;
+                String removeNewLine = match.replace("\n", "").replaceAll(" +", " ");
                 builder.replace(start, end, removeNewLine);
             }
             if (start != -1 && end != -1) { // reset
@@ -101,7 +101,7 @@ public abstract class ReaderWriter {
     // Write : Data binding to Record type
     //
 
-    private JsonArray buildJson(List values) throws ReflectiveOperationException {
+    private JsonArray buildJson(List<?> values) throws ReflectiveOperationException {
         JsonArrayBuilder builder = Json.createArrayBuilder();
         for (Object value: values) {
             if(value == null) {
@@ -109,7 +109,7 @@ public abstract class ReaderWriter {
             } else if (value instanceof Record) {
                 builder.add(buildJson((Record) value));
             } else if (value instanceof List) {
-                builder.add(buildJson((List) value));
+                builder.add(buildJson((List<?>) value));
             } else if(value instanceof Enum) {
                 builder.add(value.toString());
             } else if (value instanceof String) {
@@ -145,7 +145,7 @@ public abstract class ReaderWriter {
             } else if (value instanceof Record) {
                 builder.add(parameterNameIsMethodName, buildJson((Record) value));
             } else if (value instanceof List) {
-                builder.add(parameterNameIsMethodName, buildJson((List) value));
+                builder.add(parameterNameIsMethodName, buildJson((List<?>) value));
             } else if(value instanceof Enum) {
                 builder.add(parameterNameIsMethodName, value.toString());
             } else if (value instanceof String) {
@@ -179,7 +179,7 @@ public abstract class ReaderWriter {
         Object[] initParameters = new Object[constructorParameters.length];
         for (int i = 0;i < constructorParameters.length; i++) {
             Parameter parameter = constructorParameters[i];
-            Class type = parameter.getType();
+            Class<?> type = parameter.getType();
             String parameterName = parameter.getName();
             if (type == String.class ||
                 type == Long.class ||
@@ -189,7 +189,7 @@ public abstract class ReaderWriter {
                     parameters.get(parameterName) == null) {
                 initParameters[i] = parameters.get(parameterName);
             } else if (type.isEnum()) {
-                initParameters[i] = Enum.valueOf(type, ((String) parameters.get(parameterName)).replace(" ", ""));
+                initParameters[i] = Enum.valueOf((Class<Enum>) type, ((String) parameters.get(parameterName)).replace(" ", ""));
             } else {
                 initParameters[i] = buildObject(type, (Map<String, Serializable>) parameters.get(parameterName));
             }
@@ -218,7 +218,7 @@ public abstract class ReaderWriter {
     // Section: Json deserialization without Data Binding
     //
 
-    protected Object getValue(JsonValue jsonValue) {
+    protected Serializable getValue(JsonValue jsonValue) {
         if (jsonValue == null) {
             return null;
         }
@@ -243,16 +243,16 @@ public abstract class ReaderWriter {
         throw new RuntimeException("json object could not be parsed.");
     }
 
-    protected List getList(JsonArray jsonArray) {
-        List list = new ArrayList(jsonArray.size());
+    protected ArrayList<Serializable> getList(JsonArray jsonArray) {
+        ArrayList<Serializable> list = new ArrayList<>(jsonArray.size());
         for (JsonValue value:jsonArray) {
             list.add(getValue(value));
         }
         return list;
     }
 
-    protected Map getMap(JsonObject jsonObject) {
-        Map<String, Object> map = new HashMap(jsonObject.size());
+    protected HashMap<String, Serializable> getMap(JsonObject jsonObject) {
+        HashMap<String, Serializable> map = new HashMap<>(jsonObject.size());
         for (String key:jsonObject.keySet()) {
             map.put(key, getValue(jsonObject.get(key)));
         }

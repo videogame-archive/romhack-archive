@@ -224,7 +224,7 @@ public class IPS {
             var lastOffset=lastRecord.offset+lastRecord.length;
 
             if(lastOffset<modified.fileSize){
-                patch.addSimpleRecord(modified.fileSize-1, new ArrayList<Integer>(Arrays.asList(0x00)));
+                patch.addSimpleRecord(modified.fileSize-1, new ArrayList<>(Arrays.asList(0x00)));
             }
         }
 
