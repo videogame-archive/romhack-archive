@@ -1,0 +1,45 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable | Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-05",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "d99b556c",
+        "md5": "544082c1518e128cf56241dcfaef56c9",
+        "sha1": "8cbacdb3b2ee1874dd0d05835f8ccecc753e0c02"
+    },
+    "patches": [
+        {
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Sogabe", "Cidolfas", "Taskforce" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/304/",
+            "otherUrls": [ ],
+            "version": "1.01",
+            "releaseDate": "2001-12-17",
+            "options": null,
+            "labels": [ "T-En" ]
+        },
+        {
+            "authors": [ "mteam", "mziab" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/6723/",
+            "otherUrls": [ ],
+            "version": "1.00",
+            "releaseDate": "2022-11-23",
+            "options": "Easy Mode",
+            "labels": [ "Fix" ]
+        }
+    ]
+}
