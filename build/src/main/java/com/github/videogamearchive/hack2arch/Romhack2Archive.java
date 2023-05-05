@@ -67,7 +67,7 @@ public class Romhack2Archive {
             int indexOfVersion = nameVersionAlt.indexOf(" (v");
             String authors = nameVersionAlt.substring(0, indexOfVersion);
             String version = StringUtil.substring(nameVersionAlt, "(v", ")", true);
-            String alternative = StringUtil.substring(nameVersionAlt, "(Alt ", ")", true);
+            String alternative = StringUtil.substring(nameVersionAlt, "(Opt ", ")", true);
             List<String> authorsAsList = new ArrayList<>();
             for (String author:authors.split(",")) {
                 authorsAsList.add(author.trim());
