@@ -1,7 +1,7 @@
 {
     "info": {
         "name": null,
-        "translatedTitle": null,
+        "translatedTitle": true,
         "status": "Fully Playable",
         "adult": null,
         "offensive": null,
@@ -10,15 +10,15 @@
     },
     "provenance": {
         "retrievedBy": "JuMaFuSe",
-        "retrievedDate": "2023-03-21",
+        "retrievedDate": "2023-05-05",
         "source": "Trusted",
         "notes": null
     },
     "rom": {
         "size": 4194304,
-        "crc32": "39dc613b",
-        "md5": "c0189ecd7227187ef560478dcc72a466",
-        "sha1": "aa7045a208a9652f5e4c530812336f678698995c"
+        "crc32": "8418d092",
+        "md5": "06911278a59d8ec92efbf608685d22e9",
+        "sha1": "8b5cc4510901d17be7fe20e5c8bb0e496761b5f0"
     },
     "patches": [
         {
@@ -30,6 +30,16 @@
             "releaseDate": "2001-09-10",
             "options": null,
             "labels": [ "T-En" ]
+        },
+        {
+            "authors": [ "BobSchneeder45" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/hacks/5397/",
+            "otherUrls": [ ],
+            "version": "2.0",
+            "releaseDate": "2023-01-08",
+            "options": "Classic Chase",
+            "labels": [ "Overhaul" ]
         }
     ]
 }
