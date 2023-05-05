@@ -4,29 +4,29 @@ import org.junit.jupiter.api.Test;
 
 public class MigrationAssistantTest {
     @Test
-    public void romhackCreatorTest() throws Exception {
+    public void migrationAssistantTest() throws Exception {
         MigrationAssistant.main(new String[]{
                 "--dry-run", "../"});
     }
 
     @Test
-    public void romhackCreatorTest2() throws Exception {
+    public void migrationAssistantTest2() throws Exception {
         MigrationAssistant.main(new String[]{
                 "../"});
     }
 
     @Test
-    public void romhackCreatorHelp() throws Exception {
+    public void migrationAssistantHelpTest() throws Exception {
         MigrationAssistant.main(new String[]{});
     }
 
     @Test
-    public void romhackCreatorError1() throws Exception {
+    public void migrationAssistantError1Test() throws Exception {
         MigrationAssistant.main(new String[]{"--dry-run"});
     }
 
     @Test
-    public void romhackCreatorError2() throws Exception {
+    public void migrationAssistantError2Test() throws Exception {
         MigrationAssistant.main(new String[]{"non-existing-path"});
     }
 }

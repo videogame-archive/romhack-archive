@@ -405,6 +405,18 @@ This tool comes with both Windows and Linux versions.
 The patch was created successfully!
 ```
 
+### Migration Assistant
+
+As a young project we evolve our naming convention rules quite often. 
+
+This tool is able to generate the romhack folder names based on the romhack.json file and renames them automatically.
+
+```
+%/>java -jar migration-assistant.jar
+usage: 
+		 java -jar migration-assistant.jar [--dry-run] "archiveRoot"
+```
+
 ## User Safety
 
 Some may notice the fields 'adult' and 'offensive'.

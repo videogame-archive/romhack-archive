@@ -20,7 +20,7 @@ test {
 
 jar {
     baseName = 'tools-library' // Default jar, no manifest, just to reuse the tools in other projects
-    version = '0.0.8'
+    version = '0.0.9'
 }
 
 def jarPackage(artifactName, className) {
@@ -47,6 +47,7 @@ artifacts {
     archives jarPackage("dat-creator", "com.github.videogamearchive.dat.DatCreator"),
             jarPackage("romset-creator", "com.github.videogamearchive.romset.RomsetCreator"),
             jarPackage("rom-patcher", "com.github.videogamearchive.rompatcher.RomPatcher"),
+            jarPackage("migration-assistant", "com.github.videogamearchive.migration.MigrationAssistant"),
             jarPackage("romhack2archive", "com.github.videogamearchive.hack2arch.Romhack2Archive")
 }
 
