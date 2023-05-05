@@ -15,10 +15,10 @@
         "notes": null
     },
     "rom": {
-        "size": 2097152,
-        "crc32": "2c5ccac8",
-        "md5": "120ba709e4b780af4b3ad565b95e1509",
-        "sha1": "a55006d4cef4b24cdd2f30dfa6331db830dbb577"
+        "size": 2097664,
+        "crc32": "39e3c22d",
+        "md5": "8e3cb3b503d96b88929fbb735b6bf729",
+        "sha1": "0079cd4b5afaac97ab57750c41b9d7c13fe4f70a"
     },
     "patches": [
         {
