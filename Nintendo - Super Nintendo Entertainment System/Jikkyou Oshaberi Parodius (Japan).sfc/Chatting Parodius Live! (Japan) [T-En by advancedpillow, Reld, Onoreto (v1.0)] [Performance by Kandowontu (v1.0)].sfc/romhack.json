@@ -1,0 +1,45 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable | Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-05",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "eabd8b9e",
+        "md5": "85656534cfda761f5ade154808a2df42",
+        "sha1": "aa14d50810f03a94fb1dee188987b74548e2d385"
+    },
+    "patches": [
+        {
+            "authors": [ "advancedpillow", "Reld", "Onoreto" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/6858/",
+            "otherUrls": [ ],
+            "version": "1.0",
+            "releaseDate": "2023-03-09",
+            "options": null,
+            "labels": [ "T-En" ]
+        },
+        {
+            "authors": [ "Kandowontu" ],
+            "shortAuthors": null,
+            "url": "https://patreon.com/kandowontu",
+            "otherUrls": ["https://twitter.com/kandowontu"],
+            "version": "1.0",
+            "releaseDate": null,
+            "options": null,
+            "labels": [ "Performance" ]
+        }
+    ]
+}

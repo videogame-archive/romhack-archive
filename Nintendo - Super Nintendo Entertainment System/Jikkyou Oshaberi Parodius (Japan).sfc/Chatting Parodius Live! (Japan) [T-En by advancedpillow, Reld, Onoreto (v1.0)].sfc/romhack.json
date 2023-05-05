@@ -15,19 +15,19 @@
         "notes": null
     },
     "rom": {
-        "size": 1048576,
-        "crc32": "68df01a0",
-        "md5": "6567ceb7ab467ed84f5a3671da710225",
-        "sha1": "a5b3ad4a4f197d2e1f35f6d0d6dd9c7f2c7a9bc4"
+        "size": 3145728,
+        "crc32": "17c7c83b",
+        "md5": "2e2576422bead3bfc1d18a2bdd7180a4",
+        "sha1": "88868eb8dec43e855acf04cb0c33aa9b1af4e72a"
     },
     "patches": [
         {
-            "authors": [ "pianohombre" ],
+            "authors": [ "advancedpillow", "Reld", "Onoreto" ],
             "shortAuthors": null,
-            "url": "https://www.romhacking.net/translations/6004/",
+            "url": "https://www.romhacking.net/translations/6858/",
             "otherUrls": [ ],
             "version": "1.0",
-            "releaseDate": "2021-03-14",
+            "releaseDate": "2023-03-09",
             "options": null,
             "labels": [ "T-En" ]
         }
