@@ -109,7 +109,7 @@ public class RomhackValidator {
 
             // Validation
             if (patch.options() != null && patch.options().isBlank()) {
-                throw new RuntimeException(i +" alternative string CANNOT BE empty");
+                throw new RuntimeException(i +" options string CANNOT BE empty");
             }
 
             // Building name

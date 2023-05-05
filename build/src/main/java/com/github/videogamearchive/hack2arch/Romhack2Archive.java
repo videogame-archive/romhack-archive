@@ -58,16 +58,16 @@ public class Romhack2Archive {
         String romhackName = PathUtil.getName(pathToRomhackRom);
         List<Patch> patches = new ArrayList<>();
         for (String patchAsString: StringUtil.substrings(romhackName, "[", "]", true)) {
-            String[] collection2NameVersionAlt = patchAsString.split(" by ");
+            String[] collection2NameVersionOpt = patchAsString.split(" by ");
             List<Label> labels = new ArrayList<>();
-            for (String labelAsString : Arrays.asList(collection2NameVersionAlt[0].split("\\s*,\\s*"))) {
+            for (String labelAsString : Arrays.asList(collection2NameVersionOpt[0].split("\\s*,\\s*"))) {
                 labels.add(Enum.valueOf(Label.class, labelAsString.replace(" ", "").replace("-", "")));
             }
-            String nameVersionAlt = collection2NameVersionAlt[1];
-            int indexOfVersion = nameVersionAlt.indexOf(" (v");
-            String authors = nameVersionAlt.substring(0, indexOfVersion);
-            String version = StringUtil.substring(nameVersionAlt, "(v", ")", true);
-            String alternative = StringUtil.substring(nameVersionAlt, "(Opt ", ")", true);
+            String nameVersionOpt = collection2NameVersionOpt[1];
+            int indexOfVersion = nameVersionOpt.indexOf(" (v");
+            String authors = nameVersionOpt.substring(0, indexOfVersion);
+            String version = StringUtil.substring(nameVersionOpt, "(v", ")", true);
+            String options = StringUtil.substring(nameVersionOpt, "(Opt ", ")", true);
             List<String> authorsAsList = new ArrayList<>();
             for (String author:authors.split(",")) {
                 authorsAsList.add(author.trim());
@@ -84,11 +84,11 @@ public class Romhack2Archive {
                     }
                 }
                 if (urlPatch != null) {
-                    patch = new Patch(urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), alternative, labels);
+                    patch = new Patch(urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), options, labels);
                 }
             }
             if (patch == null) {
-                patch = new Patch(authorsAsList, null,url, List.of(), version, null, alternative, labels);
+                patch = new Patch(authorsAsList, null,url, List.of(), version, null, options, labels);
             }
             patches.add(patch);
         }
