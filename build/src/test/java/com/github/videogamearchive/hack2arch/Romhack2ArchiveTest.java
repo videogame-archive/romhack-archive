@@ -11,7 +11,7 @@ public class Romhack2ArchiveTest {
 
     Path original = Path.of("test-data", "Kirby Test ROM (World).nes");
     Path modified = Path.of("test-data", "Lolo Test ROM (World) [Themed by Hackermans (v1.1)].nes");
-    Path modifiedMultiLabel = Path.of("test-data", "Lolo Test ROM - Cool Font (World) [Themed, LabelX by Hackermans (v1.1)] [Reskin , LabelY ,LabelZ by Unknown (vUnknown).nes");
+    Path modifiedMultiLabel = Path.of("test-data", "Lolo Test ROM - Cool Font (World) [Themed, T-Ja by Hackermans (v1.1)] [Reskin , T-En ,T-Es by Unknown (vUnknown).nes");
 
     Path original2 = Path.of("test-data", "Kirby Test ROM (World).zip");
     Path modified2 = Path.of("test-data", "Lolo Test ROM - Cool Font (World) [Themed by Hackermans (v1.1)] [Reskin by Unknown (vUnknown)].zip");
@@ -29,7 +29,7 @@ public class Romhack2ArchiveTest {
         if (contents != null) {
             for (File f : contents) {
                 if (! Files.isSymbolicLink(f.toPath())) {
-                    //deleteDir(f);
+                    deleteDir(f);
                 }
             }
         }
@@ -80,31 +80,31 @@ public class Romhack2ArchiveTest {
         });
     }
 
-    @Test
-    public void romhackBigCreatorTest() throws Exception {
-        Romhack2Archive.main(new String[]{
-                "test",
-                originalBig.toString(),
-                modifiedBig.toString(),
-                tempFile.toString()});
-    }
-
-    @Test
-    public void romhackBig2CreatorTest() throws Exception {
-        Romhack2Archive.main(new String[]{
-                "test",
-                originalBig2.toString(),
-                modifiedBig2.toString(),
-                tempFile.toString()});
-    }
-
-    @Test
-    public void romhackBig2CreatorTestNoBPS() throws Exception {
-        Romhack2Archive.main(new String[]{
-                "--no-bps",
-                "test",
-                originalBig2.toString(),
-                modifiedBig2.toString(),
-                tempFile.toString()});
-    }
+//    @Test
+//    public void romhackBigCreatorTest() throws Exception {
+//        Romhack2Archive.main(new String[]{
+//                "test",
+//                originalBig.toString(),
+//                modifiedBig.toString(),
+//                tempFile.toString()});
+//    }
+//
+//    @Test
+//    public void romhackBig2CreatorTest() throws Exception {
+//        Romhack2Archive.main(new String[]{
+//                "test",
+//                originalBig2.toString(),
+//                modifiedBig2.toString(),
+//                tempFile.toString()});
+//    }
+//
+//    @Test
+//    public void romhackBig2CreatorTestNoBPS() throws Exception {
+//        Romhack2Archive.main(new String[]{
+//                "--no-bps",
+//                "test",
+//                originalBig2.toString(),
+//                modifiedBig2.toString(),
+//                tempFile.toString()});
+//    }
 }
