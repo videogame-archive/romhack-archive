@@ -2,6 +2,12 @@ plugins {
     id 'java'
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
 repositories {
     mavenCentral()
 }
@@ -19,14 +25,18 @@ test {
 }
 
 jar {
-    baseName = 'tools-library' // Default jar, no manifest, just to reuse the tools in other projects
-    version = '0.0.9'
+    archiveBaseName = 'tools-library' // Default jar, no manifest, just to reuse the tools in other projects
+    archiveVersion = '0.0.9'
+}
+
+tasks.withType(Jar) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 def jarPackage(artifactName, className) {
     return tasks.create("jar-${artifactName}", Jar) {
-        baseName = artifactName
-        version = jar.version
+        archiveBaseName = artifactName
+        archiveVersion = jar.archiveVersion
         from(project.sourceSets.main.output) {
             include "**/**"
         }
@@ -49,8 +59,4 @@ artifacts {
             jarPackage("rom-patcher", "com.github.videogamearchive.rompatcher.RomPatcher"),
             jarPackage("migration-assistant", "com.github.videogamearchive.migration.MigrationAssistant"),
             jarPackage("romhack2archive", "com.github.videogamearchive.hack2arch.Romhack2Archive")
-}
-
-tasks.withType(Jar) {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
