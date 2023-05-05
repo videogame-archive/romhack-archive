@@ -10,24 +10,24 @@
     },
     "provenance": {
         "retrievedBy": "JuMaFuSe",
-        "retrievedDate": "2023-03-21",
+        "retrievedDate": "2023-05-05",
         "source": "Trusted",
         "notes": null
     },
     "rom": {
         "size": 6291456,
-        "crc32": "4d35b71d",
-        "md5": "fc4d0b6dd08a87664f1beecb1dfb5f30",
-        "sha1": "1e737d05f48aa81ed9d084452088186de70a6050"
+        "crc32": "d637bce7",
+        "md5": "a424f0e62d795ed27e710b376831e383",
+        "sha1": "09b8d7a88eb9743aefb74a762d166acc98f239cc"
     },
     "patches": [
         {
-            "authors": [ "LethargicOwl" ],
+            "authors": [ "Kajar Laboratories", "KWhazit", "ZeaLitY", "JLukas", "Vehek", "Lena Andreia" ],
             "shortAuthors": null,
-            "url": "https://www.romhacking.net/translations/3072/",
-            "otherUrls": null,
-            "version": "1.0",
-            "releaseDate": "2017-06-12",
+            "url": "https://www.romhacking.net/translations/1198/",
+            "otherUrls": [ ],
+            "version": "1.01",
+            "releaseDate": "2007-10-05",
             "options": null,
             "labels": [ "T-En" ]
         }
