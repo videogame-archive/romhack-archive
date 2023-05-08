@@ -36,6 +36,9 @@ public class Romhack2Archive {
                     urls.add(args[i]);
                 }
             }
+            if (Files.size(parent) > MAX_MB_FOR_LINEAR || Files.size(romhack) > MAX_MB_FOR_LINEAR) {
+                throw new RuntimeException("rom is too big for this tool to handle. Please use this tool with --no-bps flag and flips to generate the bps.");
+            }
             process(disableBPS, parent, romhack, outputFolder, retrievedBy, urls);
         }
     }
@@ -47,7 +50,9 @@ public class Romhack2Archive {
         System.out.println("- URL information takes precedence over filename information.");
     }
 
-    static private long MAX_MB_FOR_DELTA = 100663296;
+    static private long MAX_MB_FOR_DELTA = 16777216; // 16 Mb
+    static private long MAX_MB_FOR_LINEAR = 536870911; // 512 Mb
+
     public static Path process(boolean disableBPS, Path pathToParentRom, Path pathToRomhackRom, Path outDir, String retrievedBy, List<String> urls) throws Exception {
         System.out.println("maxMemory: " + Runtime.getRuntime().maxMemory());
         // Create romhack.json
@@ -84,11 +89,11 @@ public class Romhack2Archive {
                     }
                 }
                 if (urlPatch != null) {
-                    patch = new Patch(urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), options, labels);
+                    patch = new Patch(urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), options, labels, List.of());
                 }
             }
             if (patch == null) {
-                patch = new Patch(authorsAsList, null,url, List.of(), version, null, options, labels);
+                patch = new Patch(authorsAsList, null,url, List.of(), version, null, options, labels, List.of());
             }
             patches.add(patch);
         }
@@ -144,9 +149,6 @@ public class Romhack2Archive {
             MarcFile parentRom = new MarcFile(parentRomBytes);
             MarcFile romhackRom = new MarcFile(romhackRomBytes);
             boolean useDeltaMode = (parentRomBytes.length < MAX_MB_FOR_DELTA && romhackRomBytes.length < MAX_MB_FOR_DELTA);
-            if (!useDeltaMode) {
-                throw new RuntimeException("rom is too big, use this tool with --no-bps flag and flips to generate the bps, check the contributors guide.");
-            }
             BPS bps = BPS.createBPSFromFiles(parentRom, romhackRom, useDeltaMode);
             MarcFile romhackBPS = bps.export();
             romhackBPS.save(out.resolve("romhack.bps"));
