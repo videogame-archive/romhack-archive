@@ -26,6 +26,10 @@ public class PathUtil {
     }
 
     public static String getNameWithoutExtension(String name) {
+        int indexOfSlash = name.lastIndexOf('/');
+        if (indexOfSlash > -1) {
+            name = name.substring(indexOfSlash + 1);
+        }
         int indexOfDot = name.lastIndexOf('.');
         if (indexOfDot > -1) {
             return name.substring(0, indexOfDot);
