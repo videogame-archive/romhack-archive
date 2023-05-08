@@ -22,10 +22,10 @@ public class UPS {
         this.records.add(new UpsRecord(relativeOffset, d));
     }
     public MarcFile export(){
-        var patchFileSize=UPS_MAGIC.length();//UPS1 string
+        int patchFileSize=UPS_MAGIC.length();//UPS1 string
         patchFileSize+=UPS_getVLVLength(this.sizeInput); //input file size
         patchFileSize+=UPS_getVLVLength(this.sizeOutput); //output file size
-        for(var i=0; i<this.records.size(); i++){
+        for(int i=0; i<this.records.size(); i++){
             patchFileSize+=UPS_getVLVLength(this.records.get(i).offset);
             patchFileSize+= this.records.get(i).XORdata.size()+1;
         }
@@ -39,7 +39,7 @@ public class UPS {
         UPS_writeVLV(tempFile, this.sizeInput);
         UPS_writeVLV(tempFile, this.sizeOutput);
 
-        for(var i=0; i<this.records.size(); i++){
+        for(int i=0; i<this.records.size(); i++){
             UPS_writeVLV(tempFile, this.records.get(i).offset);
             tempFile.writeBytes(this.records.get(i).XORdata);
             tempFile.writeU8(0x00);
@@ -75,13 +75,13 @@ public class UPS {
         romFile.seek(0);
 
 
-        var nextOffset=0;
-        for(var i=0; i<this.records.size(); i++){
-            var record= this.records.get(i);
+        int nextOffset=0;
+        for(int i=0; i<this.records.size(); i++){
+            UpsRecord record= this.records.get(i);
             tempFile.skip(record.offset);
             romFile.skip(record.offset);
 
-            for(var j=0; j<record.XORdata.size(); j++){
+            for(int j=0; j<record.XORdata.size(); j++){
                 tempFile.writeU8((romFile.isEOF()?0x00:romFile.readU8()) ^ record.XORdata.get(j));
             }
             tempFile.skip(1);
@@ -99,7 +99,7 @@ public class UPS {
     /* encode/decode variable length values, used by UPS file structure */
     public static void UPS_writeVLV(MarcFile file, int data){
         while(true){
-            var x=data & 0x7f;
+            int x=data & 0x7f;
             data=data>>7;
             if(data==0){
                 file.writeU8(0x80 | x);
@@ -114,7 +114,7 @@ public class UPS {
 
         int shift=1;
         while(true){
-            var x=file.readU8();
+            int x=file.readU8();
 
             if(x==-1)
                 throw new Error("Can't read UPS VLV at 0x"+(file.offset-1));
@@ -130,7 +130,7 @@ public class UPS {
     public static int UPS_getVLVLength(int data){
         int len=0;
         while(true){
-            var x=data & 0x7f;
+            int x=data & 0x7f;
             data=data>>7;
             len++;
             if(data==0){
@@ -142,7 +142,7 @@ public class UPS {
     }
 
     public static UPS parseUPSFile(MarcFile file){
-        var patch=new UPS();
+        UPS patch=new UPS();
 
 
         file.seek(UPS_MAGIC.length());
@@ -178,12 +178,12 @@ public class UPS {
 
 
     public static UPS createUPSFromFiles(MarcFile original,MarcFile modified){
-        var patch=new UPS();
+        UPS patch=new UPS();
         patch.sizeInput=original.fileSize;
         patch.sizeOutput=modified.fileSize;
 
 
-        var previousSeek=1;
+        int previousSeek=1;
         while(!modified.isEOF()){
             int b1=original.isEOF()?0x00:original.readU8();
             int b2=modified.readU8();

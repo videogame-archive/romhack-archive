@@ -37,7 +37,7 @@ public class BPS {
         //patch
         int sourceRelativeOffset=0;
         int targetRelativeOffset=0;
-        for(var i=0; i<this.actions.size(); i++){
+        for(int i=0; i<this.actions.size(); i++){
             BPSAction action= this.actions.get(i);
 
             if(action.type==BPS_ACTION_SOURCE_READ){
@@ -49,14 +49,14 @@ public class BPS {
 
             }else if(action.type==BPS_ACTION_SOURCE_COPY){
                 sourceRelativeOffset+=action.relativeOffset;
-                var actionLength=action.length;
+                int actionLength=action.length;
                 while(actionLength-- != 0){
                     tempFile.writeU8(romFile._u8array[sourceRelativeOffset]);
                     sourceRelativeOffset++;
                 }
             }else if(action.type==BPS_ACTION_TARGET_COPY){
                 targetRelativeOffset+=action.relativeOffset;
-                var actionLength=action.length;
+                int actionLength=action.length;
                 while(actionLength-- != 0) {
                     tempFile.writeU8(tempFile._u8array[targetRelativeOffset]);
                     targetRelativeOffset++;
@@ -77,7 +77,7 @@ public class BPS {
 
 
         file.littleEndian=true;
-        var patch=new BPS();
+        BPS patch=new BPS();
 
 
         file.seek(4); //skip BPS1
@@ -252,9 +252,9 @@ public static List<BPSAction> createBPSFromFilesLinear(MarcFile original, MarcFi
 
 
 
-        var targetRelativeOffset=0;
-        var outputOffset=0;
-        var targetReadLength=0;
+        int targetRelativeOffset=0;
+        int outputOffset=0;
+        int targetReadLength=0;
 
 
 
@@ -271,14 +271,14 @@ public static List<BPSAction> createBPSFromFilesLinear(MarcFile original, MarcFi
 
 
         while(outputOffset < targetSize) {
-            var sourceLength = 0;
-            for(var n = 0; outputOffset + n < Math.min(sourceSize, targetSize); n++) {
+            int sourceLength = 0;
+            for(int n = 0; outputOffset + n < Math.min(sourceSize, targetSize); n++) {
                 if(sourceData[outputOffset + n] != targetData[outputOffset + n]) break;
                 sourceLength++;
             }
 
-            var rleLength = 0;
-            for(var n = 1; outputOffset + n < targetSize; n++) {
+            int rleLength = 0;
+            for(int n = 1; outputOffset + n < targetSize; n++) {
                 if(targetData[outputOffset] != targetData[outputOffset + n]) break;
                 rleLength++;
             }
@@ -291,7 +291,7 @@ public static List<BPSAction> createBPSFromFilesLinear(MarcFile original, MarcFi
 
                 //copy starting from repetition byte
                 //encode(TargetCopy | ((rleLength - 1) << 2));
-                var relativeOffset = (outputOffset - 1) - targetRelativeOffset;
+                int relativeOffset = (outputOffset - 1) - targetRelativeOffset;
                 //encode(relativeOffset << 1);
                 patchActions.add(new BPSAction(BPS_ACTION_TARGET_COPY, rleLength, null, relativeOffset));
                 outputOffset += rleLength;

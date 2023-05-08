@@ -35,8 +35,8 @@ public class IPS {
 
 
     public MarcFile export(){
-        var patchFileSize=5; //PATCH string
-        for(var i=0; i<this.records.size(); i++){
+        int patchFileSize=5; //PATCH string
+        for(int i=0; i<this.records.size(); i++){
             if(this.records.get(i).type==IPS_RECORD_RLE)
                 patchFileSize+=(3+2+2+1); //offset+0x0000+length+RLE byte to be written
             else
@@ -48,7 +48,7 @@ public class IPS {
 
         MarcFile tempFile=new MarcFile(patchFileSize);
         tempFile.writeString(IPS_MAGIC);
-        for(var i=0; i<this.records.size(); i++){
+        for(int i=0; i<this.records.size(); i++){
             IpsRecord rec= this.records.get(i);
             tempFile.writeU24(rec.offset);
             if(rec.type==IPS_RECORD_RLE){
@@ -80,8 +80,8 @@ public class IPS {
             }
         }else{
             //calculate target ROM size, expanding it if any record offset is beyond target ROM size
-            var newFileSize=romFile.fileSize;
-            for(var i=0; i<this.records.size(); i++){
+            int newFileSize=romFile.fileSize;
+            for(int i=0; i<this.records.size(); i++){
                 IpsRecord rec=this.records.get(i);
                 if(rec.type==IPS_RECORD_RLE){
                     if(rec.offset+rec.length>newFileSize){
@@ -105,10 +105,10 @@ public class IPS {
 
         romFile.seek(0);
 
-        for(var i=0; i<this.records.size(); i++){
+        for(int i=0; i<this.records.size(); i++){
             tempFile.seek(this.records.get(i).offset);
             if(this.records.get(i).type==IPS_RECORD_RLE){
-                for(var j=0; j<this.records.get(i).length; j++)
+                for(int j=0; j<this.records.get(i).length; j++)
                     tempFile.writeU8(this.records.get(i).oneByte);
             }else{
                 tempFile.writeBytes(this.records.get(i).data);
@@ -122,11 +122,11 @@ public class IPS {
 
 
     public static IPS parseIPSFile(MarcFile file){
-        var patchFile=new IPS();
+        IPS patchFile=new IPS();
         file.seek(5);
 
         while(!file.isEOF()){
-            var offset=file.readU24();
+            int offset=file.readU24();
 
             if(offset==0x454f46){ /* EOF */
                 if(file.isEOF()){
@@ -137,7 +137,7 @@ public class IPS {
                 }
             }
 
-            var length=file.readU16();
+            int length=file.readU16();
 
             if(length==IPS_RECORD_RLE){
                 patchFile.addRLERecord(offset, file.readU16(), file.readU8());
@@ -150,7 +150,7 @@ public class IPS {
 
 
     public static IPS createIPSFromFiles(MarcFile original, MarcFile modified){
-        var patch=new IPS();
+        IPS patch=new IPS();
 
         if(modified.fileSize<original.fileSize){
             patch.truncate=modified.fileSize;
@@ -165,7 +165,7 @@ public class IPS {
             if(b1!=b2){
                 boolean RLEmode=true;
                 List<Integer> differentData=new ArrayList<>();
-                var startOffset=modified.offset-1;
+                int startOffset=modified.offset-1;
 
                 while(b1!=b2 && differentData.size()<0xffff){
                     differentData.add(b2);
@@ -181,7 +181,7 @@ public class IPS {
 
 
                 //check if this record is near the previous one
-                var distance=startOffset-(previousRecord.offset+previousRecord.length);
+                int distance=startOffset-(previousRecord.offset+previousRecord.length);
                 if(
                         previousRecord.type==IPS_RECORD_SIMPLE &&
                                 distance<6 && (previousRecord.length+distance+differentData.size())<0xffff
@@ -221,7 +221,7 @@ public class IPS {
 
         if(modified.fileSize>original.fileSize){
             IpsRecord lastRecord=patch.records.get(patch.records.size() - 1);
-            var lastOffset=lastRecord.offset+lastRecord.length;
+            int lastOffset=lastRecord.offset+lastRecord.length;
 
             if(lastOffset<modified.fileSize){
                 patch.addSimpleRecord(modified.fileSize-1, new ArrayList<>(Arrays.asList(0x00)));
