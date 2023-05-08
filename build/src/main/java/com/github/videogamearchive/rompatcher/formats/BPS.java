@@ -150,7 +150,7 @@ public class BPS {
     }
     private static int BPS_getVLVLen(int data){
         if (data < 0) {
-            throw new RuntimeException("VLV is negative, something did go wrong!");
+            throw new RuntimeException("VLV is negative: This is more likely an overflow due to a BPS_ACTION_SOURCE_READ length being too big for this tool to handle. Please use other tool. Sorry.");
         }
         int len=0;
         while(true){
