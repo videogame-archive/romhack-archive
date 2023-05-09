@@ -42,7 +42,7 @@ public record RomhackRow(
                 // Folder names info
                 CSV.toString(system), CSV.toString(parent), CSV.toString(name),
                 // Info
-                CSV.toString(romhack.info().name()), CSV.toString(romhack.info().translatedTitle()), CSV.toString(romhack.info().status()), CSV.toString(romhack.info().adult()), CSV.toString(romhack.info().offensive()), CSV.toString(romhack.info().backCatalog()),
+                CSV.toString(romhack.info().name()), CSV.toString(romhack.info().translatedTitle()), CSV.toString(romhack.info().status()), CSV.toString(romhack.info().adult()), CSV.toString(romhack.info().offensive()), CSV.toString(romhack.info().obsoleteVersion()), CSV.toString(romhack.info().backCatalog()),
                 // Provenance
                 CSV.toString(romhack.provenance().retrievedBy()), CSV.toString(romhack.provenance().retrievedDate()), CSV.toString(romhack.provenance().source()), CSV.toString(romhack.provenance().notes()),
                 // Rom
@@ -53,6 +53,7 @@ public record RomhackRow(
 
         for (Patch patch:romhack.patches()) {
             romAsList.add(CSV.toString(patch.authors()));
+            romAsList.add(CSV.toString(patch.shortAuthors()));
             romAsList.add(CSV.toString(patch.url()));
             romAsList.add(CSV.toString(patch.otherUrls()));
             romAsList.add(CSV.toString(patch.version()));
