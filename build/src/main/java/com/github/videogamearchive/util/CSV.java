@@ -18,14 +18,18 @@ public final class CSV {
 
     public static List<CSVRecord> read(InputStream in) throws IOException {
         Reader reader = new InputStreamReader(in);
-        CSVParser parse = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(reader);
+        CSVFormat format = CSVFormat.DEFAULT.builder()
+                .setHeader()
+                .setSkipHeaderRecord(true)
+                .build();
+        CSVParser parse = format.parse(reader);
         List<CSVRecord> records = parse.getRecords();
         parse.close();
         return records;
     }
 
     public static void write(Path file, String[] headers, List<String[]> rows) throws IOException {
-        final var csvFormat = CSVFormat.Builder.create(CSVFormat.DEFAULT).setHeader(headers).build();
+        final CSVFormat csvFormat = CSVFormat.Builder.create(CSVFormat.DEFAULT).setHeader(headers).build();
         try (CSVPrinter csvPrinter = new CSVPrinter(new FileWriter(file.toFile(), StandardCharsets.UTF_8), csvFormat)) {
             csvPrinter.printRecords(rows);
         }
