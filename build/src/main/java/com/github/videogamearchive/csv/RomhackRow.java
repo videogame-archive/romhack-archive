@@ -5,14 +5,13 @@ import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.util.CSV;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public record RomhackRow(
         String system,
         String parent,
         String name,
-        Romhack romhack) {
+        Romhack romhack) implements Comparable<RomhackRow> {
 
     public static String[] headers() {
         return new String[] {
@@ -63,5 +62,9 @@ public record RomhackRow(
         }
 
         return romAsList.toArray(new String[] {});
+    }
+    @Override
+    public int compareTo(RomhackRow o) {
+        return name.compareTo(o.name);
     }
 }

@@ -30,6 +30,9 @@ public class CSVCreator {
                 for (File systemFolder:root.listFiles()) {
                     processSystem(systemFolder);
                 }
+
+                //
+                Collections.sort(romhacks);
                 List<String[]> rows = new ArrayList<>(romhacks.size());
                 for (RomhackRow row:romhacks) {
                     rows.add(row.row());
