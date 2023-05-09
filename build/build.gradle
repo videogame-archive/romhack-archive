@@ -55,6 +55,7 @@ def jarPackage(artifactName, className) {
 // Executable artifacts, all of them can be obtained together using the assemble task
 artifacts {
     archives jarPackage("dat-creator", "com.github.videogamearchive.dat.DatCreator"),
+            jarPackage("csv-creator", "com.github.videogamearchive.csv.CSVCreator"),
             jarPackage("romset-creator", "com.github.videogamearchive.romset.RomsetCreator"),
             jarPackage("rom-patcher", "com.github.videogamearchive.rompatcher.RomPatcher"),
             jarPackage("migration-assistant", "com.github.videogamearchive.migration.MigrationAssistant"),
