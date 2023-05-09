@@ -49,4 +49,35 @@ public final class CSV {
         return builder.toString();
     }
 
+    public static String toString(List<?> strings) {
+        if (strings == null) {
+            return "";
+        }
+        StringBuilder builder = new StringBuilder();
+        for (Object string:strings) {
+            if (builder.length() > 0) {
+                builder.append(", ");
+            }
+            builder.append(string.toString().trim());
+        }
+        return builder.toString();
+    }
+
+    public static String toString(Object object) {
+        if (object == null) {
+            return "";
+        } else if (object instanceof Boolean) {
+            return Boolean.toString((Boolean) object);
+        } else if (object instanceof Integer) {
+            return Integer.toString((Integer) object);
+        } else if (object instanceof Long) {
+            return Long.toString((Long) object);
+        } else if (object instanceof Enum<?>) {
+            return object.toString();
+        } else if (object instanceof String) {
+            return object.toString();
+        } else {
+            throw new RuntimeException("object type not supported: " + object.getClass().getSimpleName());
+        }
+    }
 }
