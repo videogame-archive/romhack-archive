@@ -36,7 +36,7 @@ public class RomhackValidator {
             throw new RuntimeException("romhack rom size and bps patch target size differ - Actual: " + bps.targetSize + " Expected: " + romhack.rom().size());
         }
         String expectedRomCrc = romhack.rom().crc32();
-        String foundRomCrc = Hashes.getCrc32String(bps.targetChecksum);
+        String foundRomCrc = Hashes.getCrc32toString(bps.targetChecksum);
         if (!expectedRomCrc.equals(foundRomCrc)) {
             throw new RuntimeException("romhack rom crc32 and bps patch target crc32 differ - Actual: " + foundRomCrc + " Expected: " + expectedRomCrc);
         }

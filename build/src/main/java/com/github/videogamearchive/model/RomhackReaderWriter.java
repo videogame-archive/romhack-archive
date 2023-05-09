@@ -54,6 +54,8 @@ public class RomhackReaderWriter extends ReaderWriter {
             patch.labels().addAll(labels);
         }
 
+        // Due to the missing type information the medias list contains Map instead of Media, needs to be replaced
+
         return romhack;
     }
 

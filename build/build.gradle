@@ -26,7 +26,7 @@ test {
 
 jar {
     archiveBaseName = 'tools-library' // Default jar, no manifest, just to reuse the tools in other projects
-    archiveVersion = '0.0.10'
+    archiveVersion = '0.0.11'
 }
 
 tasks.withType(Jar) {

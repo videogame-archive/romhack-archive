@@ -52,10 +52,10 @@ public class Hashes {
     public static String getCrc32(byte[] bytes) {
         CRC32 crc32 = new CRC32();
         crc32.update(bytes);
-        return getCrc32String(crc32.getValue());
+        return getCrc32toString(crc32.getValue());
     }
 
-    public static String getCrc32String(long value) {
+    public static String getCrc32toString(long value) {
         String hexString = Integer.toHexString((int) value);
         while (hexString.length() < 8) {
             hexString = "0" + hexString;

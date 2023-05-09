@@ -11,6 +11,10 @@ import java.io.InputStream;
 import java.nio.file.Path;
 
 public class XZ {
+    
+    private XZ() {
+        // Private constructor to make clear that is a non-instantiable utility class
+    }
 
     public static byte[] readAllBytes(Path path) throws IOException {
         InputStream infile = new FileInputStream(path.toFile());
