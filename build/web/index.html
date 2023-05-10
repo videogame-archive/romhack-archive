@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @font-face {
+                font-family: "San Francisco";
+                src: url("SFUIText-Medium.woff2");
+            }
+
+            body {
+                background-color: #333333;
+                color: #FFF;
+                font-family: "San Francisco";
+            }
+            
+            h1 {
+                text-align: center;
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+              /* Style for the table */
+              table {
+                border-collapse: collapse;
+                width: 100%;
+              }
+
+              /* Style for the table header */
+              th {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+                white-space: nowrap;
+              }
+
+              /* Style for the table data cells */
+              td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                white-space: nowrap;
+              }
+        </style>
+        <script src="lib/csv/csv.min.js"></script>
+        <script src="csv-table.js"></script>
+    </head>
+    <body onload="onLoad('romhacks', 'romhacks.csv')">
+        <img src="videogame-archive.png" class="center" />
+        <h1>Romhack Archive</h1>
+        <div id="romhacks"></div>
+    </body>
+</html>
