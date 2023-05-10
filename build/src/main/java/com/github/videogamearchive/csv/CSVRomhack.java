@@ -7,32 +7,32 @@ import com.github.videogamearchive.util.CSV;
 import java.util.ArrayList;
 import java.util.List;
 
-public record RomhackRow(
+public record CSVRomhack(
         String system,
         String parent,
         String name,
-        Romhack romhack) implements Comparable<RomhackRow> {
+        Romhack romhack) implements Comparable<CSVRomhack> {
 
     public static String[] headers() {
         return new String[] {
                 // Folder names info
-                "system", "parent", "name",
+                "System", "Parent", "Name",
                 // Info
-                "name", "translatedTitle", "status", "adult", "offensive", "obsoleteVersion", "backCatalog",
+                "Name", "Translated Title", "Status", "Adult", "Offensive", "Obsolete Version", "Back Catalog",
                 // Provenance
-                "retrievedBy", "retrievedDate", "source", "notes",
+                "Retrieved By", "Retrieved Date", "Source", "Notes",
                 // Rom
-                "size", "crc32", "md5", "sha1",
+                "Size", "CRC32", "MD5", "SHA-1",
                 // Patch 1
-                "authors", "shortAuthors", "url", "otherUrls", "version", "releaseDate", "options", "labels",
+                "Authors", "Short Authors", "Url", "Other Urls", "Version", "Release Date", "Options", "Labels",
                 // Patch 2
-                "authors", "shortAuthors", "url", "otherUrls", "version", "releaseDate", "options", "labels",
+                "Authors", "Short Authors", "Url", "Other Urls", "Version", "Release Date", "Options", "Labels",
                 // Patch 3
-                "authors", "shortAuthors", "url", "otherUrls", "version", "releaseDate", "options", "labels",
+                "Authors", "Short Authors", "Url", "Other Urls", "Version", "Release Date", "Options", "Labels",
                 // Patch 4
-                "authors", "shortAuthors", "url", "otherUrls", "version", "releaseDate", "options", "labels",
+                "Authors", "Short Authors", "Url", "Other Urls", "Version", "Release Date", "Options", "Labels",
                 // Patch 5
-                "authors", "shortAuthors", "url", "otherUrls", "version", "releaseDate", "options", "labels",
+                "Authors", "Short Authors", "Url", "Other Urls", "Version", "Release Date", "Options", "Labels",
         };
     }
 
@@ -50,6 +50,7 @@ public record RomhackRow(
 
         List<String> romAsList = new ArrayList<>(List.of(csv));
 
+        int numPatches = 0;
         for (Patch patch:romhack.patches()) {
             romAsList.add(CSV.toString(patch.authors()));
             romAsList.add(CSV.toString(patch.shortAuthors()));
@@ -59,12 +60,24 @@ public record RomhackRow(
             romAsList.add(CSV.toString(patch.releaseDate()));
             romAsList.add(CSV.toString(patch.options()));
             romAsList.add(CSV.toString(patch.labels()));
+            numPatches++;
+        }
+
+        for (int i = numPatches; i < 5; i++) {
+            romAsList.add("");
+            romAsList.add("");
+            romAsList.add("");
+            romAsList.add("");
+            romAsList.add("");
+            romAsList.add("");
+            romAsList.add("");
+            romAsList.add("");
         }
 
         return romAsList.toArray(new String[] {});
     }
     @Override
-    public int compareTo(RomhackRow o) {
+    public int compareTo(CSVRomhack o) {
         return name.compareTo(o.name);
     }
 }

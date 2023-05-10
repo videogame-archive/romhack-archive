@@ -18,7 +18,7 @@ public class CSVCreator {
     private static final String ROMHACK_ORIGINAL = "romhack-original";
     private static SimpleDateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
     private static String NOW = TIMESTAMP_FORMAT.format(new Date());
-    private static List<RomhackRow> romhacks = new ArrayList<>();
+    private static List<CSVRomhack> romhacks = new ArrayList<>();
     private static RomhackReaderWriter romhackReader = new RomhackReaderWriter();
 
     public static void main(String[] args) throws Exception {
@@ -34,10 +34,10 @@ public class CSVCreator {
                 //
                 Collections.sort(romhacks);
                 List<String[]> rows = new ArrayList<>(romhacks.size());
-                for (RomhackRow row:romhacks) {
+                for (CSVRomhack row:romhacks) {
                     rows.add(row.row());
                 }
-                CSV.write(Path.of("romhacks.csv"), RomhackRow.headers(), rows);
+                CSV.write(Path.of("romhacks.csv"), CSVRomhack.headers(), rows);
             } else {
                 help();
             }
@@ -87,7 +87,7 @@ public class CSVCreator {
                 }
 
                 Romhack romhack = romhackReader.read(romhackJSON.toPath());
-                RomhackRow extendedRomhack = new RomhackRow(system.getName(), parent.getName(), clone.getName(), romhack);
+                CSVRomhack extendedRomhack = new CSVRomhack(system.getName(), parent.getName(), clone.getName(), romhack);
                 addGame(extendedRomhack);
             }
         }
@@ -100,7 +100,7 @@ public class CSVCreator {
         System.out.println("WARNING - Ignored folder: " + file.getPath());
     }
 
-    private static void addGame(RomhackRow romhack) {
+    private static void addGame(CSVRomhack romhack) {
         romhacks.add(romhack);
     }
 
