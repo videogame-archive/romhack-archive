@@ -14,26 +14,36 @@ public record CSVRomhack(
         Romhack romhack) implements Comparable<CSVRomhack> {
 
     public static String[] headers() {
-        return new String[] {
+        String[] csvHeaders = new String[] {
                 // Folder names info
                 "System", "Parent", "Name",
                 // Info
-                "Name", "Translated Title", "Status", "Adult", "Offensive", "Obsolete Version", "Back Catalog",
+                "Name (original)", "Translated Title", "Status", "Adult", "Offensive", "Obsolete Version", "Back Catalog",
                 // Provenance
                 "Retrieved By", "Retrieved Date", "Source", "Notes",
                 // Rom
                 "Size", "CRC32", "MD5", "SHA-1",
                 // Patch 1
                 "Authors", "Short Authors", "Url", "Other Urls", "Version", "Release Date", "Options", "Labels",
-                // Patch 2
-                "Authors", "Short Authors", "Url", "Other Urls", "Version", "Release Date", "Options", "Labels",
-                // Patch 3
-                "Authors", "Short Authors", "Url", "Other Urls", "Version", "Release Date", "Options", "Labels",
-                // Patch 4
-                "Authors", "Short Authors", "Url", "Other Urls", "Version", "Release Date", "Options", "Labels",
-                // Patch 5
-                "Authors", "Short Authors", "Url", "Other Urls", "Version", "Release Date", "Options", "Labels",
+                // Patch 2-5
         };
+
+        List<String> csvHeadersAsList = new ArrayList<>(List.of(csvHeaders));
+
+        for (int i = 2; i <= 5; i++) {
+            csvHeadersAsList.addAll(List.of(
+                    "Authors (" + i + ")",
+                    "Short Authors (" + i + ")",
+                    "Url (" + i + ")",
+                    "Other Urls (" + i + ")",
+                    "Version (" + i + ")",
+                    "Release Date (" + i + ")",
+                    "Options (" + i + ")",
+                    "Labels (" + i + ")"
+            ));
+        }
+
+        return csvHeadersAsList.toArray(new String[] {});
     }
 
     public String[] row() {
