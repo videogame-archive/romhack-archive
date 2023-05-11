@@ -5,8 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="lib/cc-symbols/cc-symbols.css">
         <style>
+            html,
             body {
                 background-color: #333333;
+                height: 100%;
             }
             
             h1, h3 {
@@ -20,10 +22,6 @@
                 margin-right: auto;
             }
 
-            th, td {
-                white-space: nowrap;
-            }
-
             * {
                 font-family: Helvetica,
                             CCSymbols
@@ -34,8 +32,13 @@
                 margin: 1em;
                 overflow: scroll;
                 border-radius: 1em;
+                height: 50%;
             }
 
+            /** Fix defect on nowrap option of grid component that doesn't apply it to headers **/
+            th {
+                white-space: nowrap;
+            }
         </style>
         <script src="lib/react/react.production.min.js"></script>
         <script src="lib/react/react-dom.production.min.js"></script>

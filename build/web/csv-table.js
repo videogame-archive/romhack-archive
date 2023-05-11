@@ -16,6 +16,7 @@ function loadTable(id, csvData) {
         columnDefinitions.push({
             name : columnName,
             label : columnName,
+            nowrap : true,
             getValue : function(params) {
                 return params.row[params.column.name];
             }
@@ -39,7 +40,7 @@ function loadTable(id, csvData) {
         // Mandatory properties
         id: "id",
         columns : columnDefinitions,
-        rows :rowData,
+        rows : rowData,
         // We only need this property to have export
         exportable : {
             fileFormat: "TSV",
