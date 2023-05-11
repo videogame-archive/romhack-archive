@@ -31,6 +31,13 @@
             * {
                 font-family: "San Francisco" !important;
             }
+
+            .romhacks-wrapper {
+                margin: 1em;
+                overflow: scroll;
+                border-radius: 1em;
+            }
+
         </style>
         <script src="lib/react/react.production.min.js"></script>
         <script src="lib/react/react-dom.production.min.js"></script>
@@ -42,6 +49,8 @@
     <body onload="onLoad('romhacks', 'romhacks.csv')">
         <img src="videogame-archive.png" class="center" />
         <h1>Romhack Archive</h1>
-        <div id="romhacks"></div>
+        <div class="romhacks-wrapper">
+            <div id="romhacks"></div>
+        </div>
     </body>
 </html>
