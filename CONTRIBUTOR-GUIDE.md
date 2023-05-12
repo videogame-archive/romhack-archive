@@ -47,6 +47,7 @@ The numbers found under the 'romhack-original' are the order in what the individ
 
 | **Field**       | **Data Type**   | **Required** | **Purpose**                                                                                                                                                                                                                                                                         |
 |-----------------|-----------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| id              | number          | No           | Unique id for the romhack on the database. This id is initially null until is assigned. After being assigned becomes permanent.                                                                                                                                                     |
 | **Info**        | object          | Yes          |                                                                                                                                                                                                                                                                                     |
 | name            | string          | No           | Storing the name of the romhack, when the name uses non ASCII characters, 'null' otherwise.                                                                                                                                                                                         |
 | translatedTitle | boolean         | No           | 'true' if the romhack has translated the title screen of the original game, 'null' otherwise.                                                                                                                                                                                       |
@@ -88,6 +89,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
 **romhack.json example:**
 ```json
 {
+  "id": null,
   "info": {
     "name": null,
     "translatedTitle": null,

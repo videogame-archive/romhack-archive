@@ -97,7 +97,7 @@ public class Romhack2Archive {
             }
             patches.add(patch);
         }
-        Romhack romhack = new Romhack(info, provenance, rom, patches);
+        Romhack romhack = new Romhack(null, info, provenance, rom, patches);
         RomhackReaderWriter romhackReaderWriter = new RomhackReaderWriter();
         String json = romhackReaderWriter.write(romhack);
         json = json.replace("\"status\": null,", "\"status\": \"Fully Playable | Incomplete\",");

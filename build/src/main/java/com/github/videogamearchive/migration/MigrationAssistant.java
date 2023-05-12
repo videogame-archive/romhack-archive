@@ -32,13 +32,37 @@ public class MigrationAssistant {
                 }
             }
             if (root != null) {
-                migrate(dryRun, root);
+                System.out.println("migrate - dry run");
+                migrate(true, root); // first pass is used to find out the last id on the database
+                System.out.println("An existing folder is required to continue, aborting.");
+                if (!dryRun) {
+                    migrate(false, root); // second pass makes changes if requested
+                }
             } else {
                 System.out.println("An existing folder is required to continue, aborting.");
             }
         } else {
             help();
         }
+    }
+
+    private static Long lastFoundId = null;
+
+    private static Romhack updateLastFoundId(boolean dryRun, Romhack romhack) {
+        if (romhack.id() != null && dryRun) { // Update stored id
+            if (lastFoundId == null || lastFoundId < romhack.id()) {
+                lastFoundId = romhack.id();
+            }
+        }
+        if (romhack.id() == null && !dryRun) { // Update Romhack
+            if (lastFoundId == null) {
+                lastFoundId = 1L; // First value
+            } else {
+                lastFoundId++;
+            }
+            return new Romhack(lastFoundId, romhack.info(), romhack.provenance(), romhack.rom(), romhack.patches());
+        }
+        return romhack;
     }
 
     public static void migrate(boolean dryRun, File root) throws ReflectiveOperationException, IOException {
@@ -68,6 +92,7 @@ public class MigrationAssistant {
                     }
                     String json = Files.readString(romhackPath, StandardCharsets.UTF_8);
                     Romhack romhack = romhackReaderWriter.read(json);
+                    romhack = updateLastFoundId(dryRun, romhack);
                     String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
                     String updatedJson = romhackReaderWriter.write(romhack);
                     if (!json.equals(updatedJson)) {
