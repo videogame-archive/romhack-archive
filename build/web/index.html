@@ -12,13 +12,17 @@
 
             html,
             body {
-                background-color: #333333;
+                --main-bg-color: #46A5B9;
+                --table-bg-color: #6BB7C7;
+                --primary-button-color: #46A5B9;
+                --text-color: #FFF;
+                background-color: var(--main-bg-color);
                 height: 100%;
             }
             
             h1, h3 {
                 text-align: center;
-                color: #FFF;
+                color: var(--text-color);
             }
 
             .center {
@@ -53,6 +57,33 @@
             th {
                 white-space: nowrap;
             }
+
+            .MuiPaper-root,
+            .MuiFormLabel-root,
+            .MuiTableSortLabel-root,
+            .MuiSvgIcon-root,
+            .MuiButton-label,
+            .MuiSelect-root,
+            .MuiList-root,
+            .MuiTableCell-root {
+                background-color: var(--table-bg-color) !important;
+                color: var(--text-color) !important;
+            }
+
+            .MuiButton-containedSecondary,
+            .MuiButton-containedSecondary > .MuiButton-label {
+                background-color: var(--primary-button-color) !important;
+            }
+
+            .MuiInput-underline::before {
+                color: var(--text-color);
+                border-bottom: 1px solid var(--text-color) !important;
+            }
+
+            .MuiButton-outlined {
+                border: 1px solid var(--text-color) !important;
+            }
+
         </style>
         <script src="lib/react/react.production.min.js"></script>
         <script src="lib/react/react-dom.production.min.js"></script>
