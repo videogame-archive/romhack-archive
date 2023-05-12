@@ -3,6 +3,7 @@ package com.github.videogamearchive.migration;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.model.RomhackReaderWriter;
 import com.github.videogamearchive.model.RomhackValidator;
+import com.github.videogamearchive.util.CSV;
 import com.github.videogamearchive.util.PathUtil;
 
 import java.io.File;
@@ -10,6 +11,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MigrationAssistant {
 
@@ -46,21 +49,34 @@ public class MigrationAssistant {
         }
     }
 
+    private static Map<String, Long> assignedIds = new HashMap<>();
     private static Long lastFoundId = null;
 
-    private static Romhack updateLastFoundId(boolean dryRun, Romhack romhack) {
-        if (romhack.id() != null && dryRun) { // Update stored id
+    private static Romhack updateLastFoundId(boolean dryRun, String filename, Romhack romhack) {
+        // Update assigned ids, two romhack folders belong to the same romhack if the share name and authors
+        String romhackHash = filename.substring(0, filename.indexOf('[')) + CSV.toString(romhack.patches().get(0).authors());
+
+        if (romhack.id() == null && !dryRun) { // Update Romhack
+            Long assignedValue = assignedIds.get(romhackHash);
+            if (assignedValue == null) {
+                if (lastFoundId == null) {
+                    assignedValue = 1L; // First value
+                } else {
+                    assignedValue = lastFoundId + 1;
+                }
+            }
+            romhack = new Romhack(assignedValue, romhack.info(), romhack.provenance(), romhack.rom(), romhack.patches());
+        }
+
+        // Update stored id
+        if (romhack.id() != null) {
             if (lastFoundId == null || lastFoundId < romhack.id()) {
                 lastFoundId = romhack.id();
             }
         }
-        if (romhack.id() == null && !dryRun) { // Update Romhack
-            if (lastFoundId == null) {
-                lastFoundId = 1L; // First value
-            } else {
-                lastFoundId++;
-            }
-            return new Romhack(lastFoundId, romhack.info(), romhack.provenance(), romhack.rom(), romhack.patches());
+        // Update assigned ids
+        if (!assignedIds.containsKey(romhackHash) && romhack.id() != null) {
+            assignedIds.put(romhackHash, romhack.id());
         }
         return romhack;
     }
@@ -92,7 +108,7 @@ public class MigrationAssistant {
                     }
                     String json = Files.readString(romhackPath, StandardCharsets.UTF_8);
                     Romhack romhack = romhackReaderWriter.read(json);
-                    romhack = updateLastFoundId(dryRun, romhack);
+                    romhack = updateLastFoundId(dryRun, romhackFolder.getName(), romhack);
                     String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
                     String updatedJson = romhackReaderWriter.write(romhack);
                     if (!json.equals(updatedJson)) {
