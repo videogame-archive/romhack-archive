@@ -19,6 +19,19 @@ function loadTable(id, csvData) {
             nowrap : true,
             getValue : function(params) {
                 return params.row[params.column.name];
+            },
+            renderDOMValue : function(params) {
+                const value = params.row[params.column.name];
+                const valueNode = document.createTextNode(value);
+                var node = null;
+                if(value.startsWith("http")) {
+                    node = document.createElement('a');
+                    node.appendChild(valueNode);
+                    node.href = value;
+                } else {
+                    node = document.createTextNode(value);
+                }
+                params.container.appendChild(node);
             }
         });
      }
@@ -39,6 +52,7 @@ function loadTable(id, csvData) {
          React.createElement(window.NgUiGrid.default.Grid, {
         // Mandatory properties
         id: "id",
+        header: "Romhack Index",
         columns : columnDefinitions,
         rows : rowData,
         // We only need this property to have export
