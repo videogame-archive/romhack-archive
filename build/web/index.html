@@ -17,7 +17,7 @@
                 --primary-button-color: #000000;
                 --text-color: #FFFFFF;
                 background-color: var(--main-bg-color);
-                height: 100%;
+                height: 95%;
             }
             
             h1, h3 {
@@ -31,10 +31,6 @@
                 margin-right: auto;
             }
 
-            .middle {
-                vertical-align:middle;
-            }
-
             .center-vertical {
                 vertical-align: middle;
             }
@@ -46,11 +42,15 @@
                             !important;
             }
 
+            .brand {
+                height: 20%;
+            }
+
             .romhacks-wrapper {
                 margin: 1em;
                 overflow: scroll;
                 border-radius: 1em;
-                height: 50%;
+                height: 70%;
             }
 
             /** Fix defect on nowrap option of grid component that doesn't apply it to headers **/
@@ -95,11 +95,11 @@
         <script src="csv-table.js"></script>
     </head>
     <body onload="onLoad('romhacks', 'romhacks.csv')">
-        <img src="videogame-archive.svg" class="center" />
+        <img src="videogame-archive.svg" class="center brand" />
         <h1>Romhack Archive</h1>
         <div class="romhacks-wrapper">
             <div id="romhacks"></div>
         </div>
-        <h3>Romhack Archive <img class="middle" src="Public_Domain_Mark_button.svg" /></h3>
+        <h3>Romhack Archive <img class="center-vertical" src="Public_Domain_Mark_button.svg" /></h3>
     </body>
 </html>
