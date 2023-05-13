@@ -1,5 +1,6 @@
 package com.github.videogamearchive.migration;
 
+import com.github.videogamearchive.model.Patch;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.model.RomhackReaderWriter;
 import com.github.videogamearchive.model.RomhackValidator;
@@ -54,9 +55,10 @@ public class MigrationAssistant {
 
     private static Romhack updateLastFoundId(boolean dryRun, String filename, Romhack romhack) {
         // Update assigned ids, two romhack folders belong to the same romhack if the share name and authors
-        String romhackHash = filename.substring(0, filename.indexOf('[')) + CSV.toString(romhack.patches().get(0).authors());
+        Patch mainPatch = romhack.patches().get(0);
+        String romhackHash = filename.substring(0, filename.indexOf('[')) + CSV.toString(mainPatch.authors());
 
-        if (romhack.id() == null && !dryRun) { // Update Romhack
+        if (mainPatch.id() == null && !dryRun) { // Update Romhack
             Long assignedValue = assignedIds.get(romhackHash);
             if (assignedValue == null) {
                 if (lastFoundId == null) {
@@ -65,18 +67,19 @@ public class MigrationAssistant {
                     assignedValue = lastFoundId + 1;
                 }
             }
-            romhack = new Romhack(assignedValue, romhack.info(), romhack.provenance(), romhack.rom(), romhack.patches());
+            mainPatch = new Patch(assignedValue, mainPatch.authors(), mainPatch.shortAuthors(), mainPatch.url(), mainPatch.otherUrls(), mainPatch.version(), mainPatch.releaseDate(), mainPatch.options(), mainPatch.labels(), mainPatch.medias());
+            romhack.patches().set(0, mainPatch);
         }
 
         // Update stored id
-        if (romhack.id() != null) {
-            if (lastFoundId == null || lastFoundId < romhack.id()) {
-                lastFoundId = romhack.id();
+        if (mainPatch.id() != null) {
+            if (lastFoundId == null || lastFoundId < mainPatch.id()) {
+                lastFoundId = mainPatch.id();
             }
         }
         // Update assigned ids
-        if (!assignedIds.containsKey(romhackHash) && romhack.id() != null) {
-            assignedIds.put(romhackHash, romhack.id());
+        if (!assignedIds.containsKey(romhackHash) && mainPatch.id() != null) {
+            assignedIds.put(romhackHash, mainPatch.id());
         }
         return romhack;
     }

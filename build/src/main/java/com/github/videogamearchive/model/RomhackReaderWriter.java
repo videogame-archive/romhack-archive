@@ -37,7 +37,6 @@ public class RomhackReaderWriter extends ReaderWriter {
 
     private Romhack buildRomhack(Map<String, Serializable> romhackAsMap) throws ReflectiveOperationException {
         Romhack romhack = new Romhack(
-                (Long) romhackAsMap.get("id"),
                 buildObject(Info.class, (Map<String, Serializable>) romhackAsMap.get("info")),
                 buildObject(Provenance.class, (Map<String, Serializable>) romhackAsMap.get("provenance")),
                 buildObject(Rom.class, (Map<String, Serializable>) romhackAsMap.get("rom")),

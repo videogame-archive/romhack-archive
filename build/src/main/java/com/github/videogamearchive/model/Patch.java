@@ -3,6 +3,7 @@ package com.github.videogamearchive.model;
 import java.util.List;
 
 public record Patch(
+        Long id,
         List<String> authors,
         String shortAuthors,
         String url,

@@ -89,6 +89,6 @@ public class RHDNResource implements PatchResource {
         String options = null;
         List<Label> labels = new ArrayList<>();
 
-        return new Patch(authors, shortAuthors, url, otherUrls, version, releaseDate, options, labels, List.of());
+        return new Patch(null, authors, shortAuthors, url, otherUrls, version, releaseDate, options, labels, List.of());
     }
 }

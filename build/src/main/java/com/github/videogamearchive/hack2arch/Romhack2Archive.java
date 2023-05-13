@@ -89,15 +89,15 @@ public class Romhack2Archive {
                     }
                 }
                 if (urlPatch != null) {
-                    patch = new Patch(urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), options, labels, List.of());
+                    patch = new Patch(null, urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), options, labels, List.of());
                 }
             }
             if (patch == null) {
-                patch = new Patch(authorsAsList, null,url, List.of(), version, null, options, labels, List.of());
+                patch = new Patch(null, authorsAsList, null,url, List.of(), version, null, options, labels, List.of());
             }
             patches.add(patch);
         }
-        Romhack romhack = new Romhack(null, info, provenance, rom, patches);
+        Romhack romhack = new Romhack(info, provenance, rom, patches);
         RomhackReaderWriter romhackReaderWriter = new RomhackReaderWriter();
         String json = romhackReaderWriter.write(romhack);
         json = json.replace("\"status\": null,", "\"status\": \"Fully Playable | Incomplete\",");
