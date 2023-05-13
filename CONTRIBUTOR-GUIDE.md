@@ -89,7 +89,6 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
 **romhack.json example:**
 ```json
 {
-  "id": null,
   "info": {
     "name": null,
     "translatedTitle": null,
@@ -113,34 +112,40 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
   },
   "patches": [
     {
+      "id": null,
       "authors": [ "RPGe", "Myria", "SoM2Freak", "harmony7" ],
       "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/353/",
-      "otherUrls" : [],
+      "otherUrls": null,
       "version": "1.10",
       "releaseDate": "1998-10-17",
       "options": null,
-      "labels": [ "T-En" ]
+      "labels": [ "T-En" ],
+      "medias": null
     },
     {
+      "id": null,
       "authors": [ "Spooniest", "Barubary", "SoM2Freak", "harmony7", "FlamePurge" ],
       "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/2600/",
-      "otherUrls" : [],
+      "otherUrls": null,
       "version": "2.1",
       "releaseDate": "2021-03-02",
       "options": null,
-      "labels": [ "Fix" ]
+      "labels": [ "Fix" ],
+      "medias": null
     },
     {
+      "id": null,
       "authors": [ "noisecross" ],
       "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/3499/",
-      "otherUrls" : [],
+      "otherUrls": null,
       "version": "1.0",
       "releaseDate": "2018-03-25",
       "options": null,
-      "labels": [ "Fix" ]
+      "labels": [ "Fix" ],
+      "medias": null
     }
   ]
 }
