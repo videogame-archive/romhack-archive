@@ -21,16 +21,15 @@ function loadTable(id, csvData) {
                 return params.row[params.column.name];
             },
             renderDOMValue : function(params) {
-                const value = params.row[params.column.name];
-                const valueNode = document.createTextNode(value);
-                var node = null;
+                var value = params.row[params.column.name];
+                var valueNode = document.createTextNode(value);
+                var node = valueNode;
                 if(value.startsWith("http")) {
                     node = document.createElement('a');
                     node.appendChild(valueNode);
                     node.href = value;
-                } else {
-                    node = document.createTextNode(value);
                 }
+                params.container.innerHTML = "";
                 params.container.appendChild(node);
             }
         });
@@ -38,7 +37,7 @@ function loadTable(id, csvData) {
 
     var rowData = [];
     for (var i = 1; i < csvData.length; i++) {
-          var row = { id : i };
+          var row = { rowid : i };
           for (var j = 0; j < csvData[i].length; j++) {
             row[csvData[0][j]] = csvData[i][j];
           }
@@ -51,7 +50,7 @@ function loadTable(id, csvData) {
         {},
          React.createElement(window.NgUiGrid.default.Grid, {
         // Mandatory properties
-        id: "id",
+        id: "rowid",
         header: "Romhack Index",
         columns : columnDefinitions,
         rows : rowData,

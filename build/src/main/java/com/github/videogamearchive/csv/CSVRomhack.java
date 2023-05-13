@@ -17,6 +17,8 @@ public record CSVRomhack(
         String[] csvHeaders = new String[] {
                 // Folder names info
                 "Parent", "Name", "System",
+                // Id
+                "id",
                 // Info
                 "Name (original)", "Translated Title", "Status", "Adult", "Offensive", "Obsolete Version", "Back Catalog",
                 // Provenance
@@ -50,6 +52,8 @@ public record CSVRomhack(
         String[] csv = new String[] {
                 // Folder names info
                 CSV.toString(parent), CSV.toString(name), CSV.toString(system),
+                // Id
+                CSV.toString(romhack.id()),
                 // Info
                 CSV.toString(romhack.info().name()), CSV.toString(romhack.info().translatedTitle()), CSV.toString(romhack.info().status()), CSV.toString(romhack.info().adult()), CSV.toString(romhack.info().offensive()), CSV.toString(romhack.info().obsoleteVersion()), CSV.toString(romhack.info().backCatalog()),
                 // Provenance
