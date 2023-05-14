@@ -64,7 +64,7 @@ public class RHDNResource implements PatchResource {
         if (info.isMapped("Name")) { // hacks have names
             name = info.get("Name");
         } else if (info.isMapped("Language")) { // translations have a language
-            name = StringUtil.substrings(info.get("Language"), "[", "]", true) + " translation for " + StringUtil.substrings(info.get("Game"), "[", "]", true);
+            name = StringUtil.substring(info.get("Language"), "[", "]", false) + " translation for " + StringUtil.substring(info.get("Game"), "[", "]", false);
         }
         List<String> authors = new ArrayList<>();
         String releasedByAsString = info.get("Released By");
