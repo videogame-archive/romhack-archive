@@ -4,6 +4,7 @@ import java.util.List;
 
 public record Patch(
         Long id,
+        String name,
         List<String> authors,
         String shortAuthors,
         String url,

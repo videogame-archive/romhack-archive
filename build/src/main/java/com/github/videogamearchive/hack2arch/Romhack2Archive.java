@@ -89,11 +89,11 @@ public class Romhack2Archive {
                     }
                 }
                 if (urlPatch != null) {
-                    patch = new Patch(null, urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), options, labels, List.of());
+                    patch = new Patch(null, null, urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), options, labels, List.of());
                 }
             }
             if (patch == null) {
-                patch = new Patch(null, authorsAsList, null,url, List.of(), version, null, options, labels, List.of());
+                patch = new Patch(null, null, authorsAsList, null,url, List.of(), version, null, options, labels, List.of());
             }
             patches.add(patch);
         }

@@ -59,6 +59,8 @@ public class RHDNResource implements PatchResource {
             return null;
         }
 
+        Long id = null;
+        String name = info.get("Name");
         List<String> authors = new ArrayList<>();
         String releasedByAsString = info.get("Released By");
         if (releasedByAsString != null && !releasedByAsString.isBlank()) {
@@ -89,6 +91,6 @@ public class RHDNResource implements PatchResource {
         String options = null;
         List<Label> labels = new ArrayList<>();
 
-        return new Patch(null, authors, shortAuthors, url, otherUrls, version, releaseDate, options, labels, List.of());
+        return new Patch(id, name, authors, shortAuthors, url, otherUrls, version, releaseDate, options, labels, List.of());
     }
 }
