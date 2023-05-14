@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Energy Breaker]",
             "authors": [ "Disnesquick", "satsu", "Avster", "Shivalva", "filler", "Akujin" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/346/",
@@ -29,7 +31,8 @@
             "version": "1.02",
             "releaseDate": "2012-09-26",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

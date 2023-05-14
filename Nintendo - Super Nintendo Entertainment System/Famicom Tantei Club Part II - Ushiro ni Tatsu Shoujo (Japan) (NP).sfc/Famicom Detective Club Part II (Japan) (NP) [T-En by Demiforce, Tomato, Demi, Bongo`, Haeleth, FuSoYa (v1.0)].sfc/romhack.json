@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Famicom Detective Club Part II]",
             "authors": [ "Demiforce", "Tomato", "Demi", "Bongo`", "Haeleth", "FuSoYa" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/850/",
@@ -29,7 +31,8 @@
             "version": "1.0",
             "releaseDate": "2004-10-10",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Ancient Magic: Bazoo! Mahou Sekai]",
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Eien Ni Hen" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1575/",
@@ -29,7 +31,8 @@
             "version": "1.00",
             "releaseDate": "2010-12-19",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

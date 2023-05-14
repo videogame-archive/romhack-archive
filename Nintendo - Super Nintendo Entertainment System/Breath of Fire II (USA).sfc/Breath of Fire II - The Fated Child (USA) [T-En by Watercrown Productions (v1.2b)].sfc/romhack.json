@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": null,
             "authors": [ "Watercrown Productions" ],
             "shortAuthors": null,
             "url": "http://watercrown.info/second-verse-same-as-the-first/",
@@ -29,7 +31,8 @@
             "version": "1.2b",
             "releaseDate": "2009-10-09",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

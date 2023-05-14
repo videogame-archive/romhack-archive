@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Dragon Quest VI: Maboroshi no Daichi]",
             "authors": [ "NoPrgress" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/344/",
@@ -29,7 +31,8 @@
             "version": "0.90 (2)",
             "releaseDate": "2001-10-31",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

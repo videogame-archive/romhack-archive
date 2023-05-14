@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Alcahest]",
             "authors": [ "F.H.", "Akujin", "David Mullen (MakoKnight)", "Dark Force" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/278/",
@@ -29,7 +31,8 @@
             "version": "1.0 beta",
             "releaseDate": "2002-08-11",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

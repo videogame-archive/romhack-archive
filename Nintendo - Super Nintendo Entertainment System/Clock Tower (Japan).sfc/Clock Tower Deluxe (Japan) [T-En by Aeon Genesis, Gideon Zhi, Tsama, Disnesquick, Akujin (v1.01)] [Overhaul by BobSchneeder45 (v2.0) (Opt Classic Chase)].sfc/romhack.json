@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Clock Tower]",
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Tsama", "Disnesquick", "Akujin" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/302/",
@@ -29,9 +31,12 @@
             "version": "1.01",
             "releaseDate": "2001-09-10",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         },
         {
+            "id": null,
+            "name": "Clock Tower Deluxe",
             "authors": [ "BobSchneeder45" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/5397/",
@@ -39,7 +44,8 @@
             "version": "2.0",
             "releaseDate": "2023-01-08",
             "options": "Classic Chase",
-            "labels": [ "Overhaul" ]
+            "labels": [ "Overhaul" ],
+            "medias": null
         }
     ]
 }

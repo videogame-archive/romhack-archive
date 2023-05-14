@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Breath of Fire II]",
             "authors": [ "Ryusui", "d4s" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1384/",
@@ -29,7 +31,8 @@
             "version": "1.2b",
             "releaseDate": "2009-10-10",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

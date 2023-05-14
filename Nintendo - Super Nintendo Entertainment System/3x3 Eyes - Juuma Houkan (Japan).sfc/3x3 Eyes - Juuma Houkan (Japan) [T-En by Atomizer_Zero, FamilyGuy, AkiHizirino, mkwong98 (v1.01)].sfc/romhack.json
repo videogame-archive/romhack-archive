@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [3x3 Eyes: Juuma Houkan]",
             "authors": [ "Atomizer_Zero", "FamilyGuy", "AkiHizirino", "mkwong98" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2835/",
@@ -29,7 +31,8 @@
             "version": "1.01",
             "releaseDate": "2017-02-02",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

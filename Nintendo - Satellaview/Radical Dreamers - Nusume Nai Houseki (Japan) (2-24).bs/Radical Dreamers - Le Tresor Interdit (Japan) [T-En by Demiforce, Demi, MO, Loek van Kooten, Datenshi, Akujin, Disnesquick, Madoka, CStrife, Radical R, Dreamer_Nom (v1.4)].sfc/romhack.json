@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Radical Dreamers: Nusumenai Houseki]",
             "authors": [ "Demiforce", "Demi", "MO", "Loek van Kooten", "Datenshi", "Akujin", "Disnesquick", "Madoka", "CStrife", "Radical R", "Dreamer_Nom" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/403/",
@@ -29,7 +31,8 @@
             "version": "1.4",
             "releaseDate": "2005-12-25",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

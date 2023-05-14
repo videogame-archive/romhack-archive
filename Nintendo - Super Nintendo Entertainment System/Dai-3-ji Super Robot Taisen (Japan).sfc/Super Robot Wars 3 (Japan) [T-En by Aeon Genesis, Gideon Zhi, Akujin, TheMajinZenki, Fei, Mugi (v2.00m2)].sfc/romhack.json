@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Dai-3-Ji Super Robot Taisen]",
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Akujin", "TheMajinZenki", "Fei", "Mugi" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/466/",
@@ -29,7 +31,8 @@
             "version": "2.00m2",
             "releaseDate": "2019-06-24",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

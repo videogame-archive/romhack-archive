@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Captain Tsubasa III]",
             "authors": [ "pianohombre" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6004/",
@@ -29,7 +31,8 @@
             "version": "1.0",
             "releaseDate": "2021-03-14",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

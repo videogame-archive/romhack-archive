@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Battle Soccer: Field no Hasha]",
             "authors": [ "Hurkey!? Translations", "Fartnugg", "A-KO", "SD-Tetsuo" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/568/",
@@ -29,7 +31,8 @@
             "version": "1.0",
             "releaseDate": "2002-06-18",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

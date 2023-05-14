@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Front Mission]",
             "authors": [ "Front Mission Translation Project", "Akujin", "Hojo", "David Mullen (MakoKnight)", "Shih Tzu", "F.H.", "Dark Force" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/362/",
@@ -29,9 +31,12 @@
             "version": "1.0b",
             "releaseDate": "2001-09-24",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         },
         {
+            "id": null,
+            "name": "[English] translation for [Front Mission]",
             "authors": [ "mteam", "mziab" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6797/",
@@ -39,7 +44,8 @@
             "version": "1.02",
             "releaseDate": "2023-02-20",
             "options": null,
-            "labels": [ "Fix" ]
+            "labels": [ "Fix" ],
+            "medias": null
         }
     ]
 }

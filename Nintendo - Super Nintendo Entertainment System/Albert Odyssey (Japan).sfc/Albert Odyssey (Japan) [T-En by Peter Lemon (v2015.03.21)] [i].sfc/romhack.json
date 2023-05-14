@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": null,
             "authors": [ "Peter Lemon" ],
             "shortAuthors": null,
             "url": "https://github.com/PeterLemon/SNES/tree/master/Translate",
@@ -29,7 +31,8 @@
             "version": "2015.03.21",
             "releaseDate": null,
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

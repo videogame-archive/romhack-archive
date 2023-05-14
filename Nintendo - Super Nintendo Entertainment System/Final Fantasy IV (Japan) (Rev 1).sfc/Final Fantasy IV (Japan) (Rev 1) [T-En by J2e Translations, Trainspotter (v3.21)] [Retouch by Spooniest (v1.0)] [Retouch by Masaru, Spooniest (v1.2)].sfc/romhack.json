@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Final Fantasy IV]",
             "authors": [ "J2e Translations", "AnusP", "Blasted2", "necrosaro", "Dark Force", "P-Funk", "Ian Kelley", "Trainspotter", "Rydia", "UnaFarmer" ],
             "shortAuthors": "J2e Translations, Trainspotter",
             "url": "https://www.romhacking.net/translations/352/",
@@ -29,9 +31,12 @@
             "version": "3.21",
             "releaseDate": "2001-07-03",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         },
         {
+            "id": null,
+            "name": "[English] translation for [Final Fantasy IV]",
             "authors": [ "Spooniest", "Joelsmith380", "AnusP", "Blasted2", "necrosaro", "Dark Force", "P-Funk", "Trainspotter", "Ian Kelley", "Rydia", "UnaFarmer" ],
             "shortAuthors": "Spooniest",
             "url": "https://www.romhacking.net/translations/2602/",
@@ -39,9 +44,12 @@
             "version": "1.0",
             "releaseDate": "2012-06-16",
             "options": null,
-            "labels": [ "Retouch" ]
+            "labels": [ "Retouch" ],
+            "medias": null
         },
         {
+            "id": null,
+            "name": "[English] translation for [Final Fantasy IV]",
             "authors": [ "Masaru", "Spooniest" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6467/",
@@ -49,7 +57,8 @@
             "version": "1.2",
             "releaseDate": "2022-11-06",
             "options": null,
-            "labels": [ "Retouch" ]
+            "labels": [ "Retouch" ],
+            "medias": null
         }
     ]
 }

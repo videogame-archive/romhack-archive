@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Funaki Masakatsu Hybrid Wrestler: Tougi Denshou]",
             "authors": [ "Phil", "snesmaster40" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1240/",
@@ -29,7 +31,8 @@
             "version": "1.0",
             "releaseDate": "2008-01-05",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

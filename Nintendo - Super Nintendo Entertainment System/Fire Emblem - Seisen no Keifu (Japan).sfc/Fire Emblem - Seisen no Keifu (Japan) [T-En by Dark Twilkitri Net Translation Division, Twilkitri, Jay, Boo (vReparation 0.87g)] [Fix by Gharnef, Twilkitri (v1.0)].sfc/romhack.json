@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Fire Emblem: Seisen no Keifu]",
             "authors": [ "Dark Twilkitri Net Translation Division", "Twilkitri", "Jay", "Boo" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/865/",
@@ -29,9 +31,12 @@
             "version": "Reparation 0.87g",
             "releaseDate": "2012-05-06",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         },
         {
+            "id": null,
+            "name": "[English] translation for [Fire Emblem: Seisen no Keifu]",
             "authors": [ "Gharnef", "Twilkitri" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2803/",
@@ -39,7 +44,8 @@
             "version": "1.0",
             "releaseDate": "2014-08-03",
             "options": null,
-            "labels": [ "Fix" ]
+            "labels": [ "Fix" ],
+            "medias": null
         }
     ]
 }

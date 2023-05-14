@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Chaos Seed: Fuusui Kairouki]",
             "authors": [ "Dynamic-Designs", "Draken", "Wildbill", "Bongo`", "Manske", "Red Soul" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2181/",
@@ -29,7 +31,8 @@
             "version": "1.02",
             "releaseDate": "2014-12-25",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [BS-X: Sore wa Namae o Nusumareta Machi no Monogatari]",
             "authors": [ "LuigiBlood" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1791/",
@@ -29,7 +31,8 @@
             "version": "1.3",
             "releaseDate": "2016-11-27",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

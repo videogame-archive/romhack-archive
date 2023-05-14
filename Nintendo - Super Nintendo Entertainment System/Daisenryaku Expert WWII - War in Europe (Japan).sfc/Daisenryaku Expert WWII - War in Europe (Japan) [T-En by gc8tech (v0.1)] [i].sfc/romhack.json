@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Daisenryaku Expert WWII: War in Europe]",
             "authors": [ "gc8tech" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2493/",
@@ -29,7 +31,8 @@
             "version": "0.1",
             "releaseDate": "2015-10-12",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Genjuu Ryodan]",
             "authors": [ "gc8tech" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3235/",
@@ -29,7 +31,8 @@
             "version": "82",
             "releaseDate": "2017-10-15",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

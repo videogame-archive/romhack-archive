@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": null,
             "authors": [ "Roto", "DN", "Duke Serkol", "Dreamer_Nom", "Con", "TeRRaBiTe88", "Vel", "DaMarsMan", "Euclid", "Mottzilla" ],
             "shortAuthors": null,
             "url": "https://bszelda.zeldalegends.net/fq.shtmll",
@@ -29,7 +31,8 @@
             "version": "2023.01.11",
             "releaseDate": null,
             "options": null,
-            "labels": [ "T-En", "Restoration" ]
+            "labels": [ "T-En", "Restoration" ],
+            "medias": null
         }
     ]
 }

@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Final Fantasy: Mystic Quest]",
             "authors": [ "DarknessSavior" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1172/",
@@ -29,7 +31,8 @@
             "version": "0.5",
             "releaseDate": "2007-08-01",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

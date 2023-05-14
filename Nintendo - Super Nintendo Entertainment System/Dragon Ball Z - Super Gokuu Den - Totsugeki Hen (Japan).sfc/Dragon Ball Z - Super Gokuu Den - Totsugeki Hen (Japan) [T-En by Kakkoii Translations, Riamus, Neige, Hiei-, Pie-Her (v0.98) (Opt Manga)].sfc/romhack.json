@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Dragon Ball Z: Super Gokūden - Totsugeki-Hen]",
             "authors": [ "Kakkoii Translations", "Riamus", "Neige", "Hiei-", "Pie-Her" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/315/",
@@ -29,7 +31,8 @@
             "version": "0.98",
             "releaseDate": "2016-12-31",
             "options": "Manga",
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

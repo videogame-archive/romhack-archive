@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Dokapon 3-2-1: Arashi o Yobu Yuujou]",
             "authors": [ "Krokodyl" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5561/",
@@ -29,7 +31,8 @@
             "version": "1.4",
             "releaseDate": "2023-01-12",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

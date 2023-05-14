@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [The Amazing Spider-Man: Lethal Foes]",
             "authors": [ "kepeb" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2472/",
@@ -29,7 +31,8 @@
             "version": "1.0",
             "releaseDate": "2015-09-21",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

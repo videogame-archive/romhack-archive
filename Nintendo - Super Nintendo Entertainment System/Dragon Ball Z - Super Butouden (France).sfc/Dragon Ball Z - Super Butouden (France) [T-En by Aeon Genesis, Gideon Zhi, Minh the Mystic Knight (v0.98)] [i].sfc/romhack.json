@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Dragon Ball Z: Super Butouden]",
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Minh the Mystic Knight" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/330/",
@@ -29,7 +31,8 @@
             "version": "0.98",
             "releaseDate": "2000-06-18",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

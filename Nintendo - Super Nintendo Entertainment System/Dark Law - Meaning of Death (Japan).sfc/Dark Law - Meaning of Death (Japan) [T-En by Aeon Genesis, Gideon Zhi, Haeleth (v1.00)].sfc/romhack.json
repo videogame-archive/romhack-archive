@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Dark Law: Meaning of Death]",
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Haeleth" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/307/",
@@ -29,7 +31,8 @@
             "version": "1.00",
             "releaseDate": "2007-03-28",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "Area 88 EN Plus",
             "authors": [ "blizzz", "Natori" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/5676/",
@@ -29,9 +31,12 @@
             "version": "1.03 v2",
             "releaseDate": "2021-09-03",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         },
         {
+            "id": null,
+            "name": null,
             "authors": [ "Vitor Vilela" ],
             "shortAuthors": null,
             "url": "https://github.com/VitorVilela7/fastrom",
@@ -39,7 +44,8 @@
             "version": "1.40",
             "releaseDate": null,
             "options": null,
-            "labels": [ "Performance" ]
+            "labels": [ "Performance" ],
+            "medias": null
         }
     ]
 }

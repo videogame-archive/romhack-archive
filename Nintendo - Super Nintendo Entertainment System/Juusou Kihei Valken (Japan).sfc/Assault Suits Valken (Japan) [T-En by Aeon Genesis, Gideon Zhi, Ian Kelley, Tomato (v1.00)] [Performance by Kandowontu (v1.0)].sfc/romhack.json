@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Cybernator]",
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Ian Kelley", "Tomato" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/775/",
@@ -29,9 +31,12 @@
             "version": "1.00",
             "releaseDate": "2004-03-07",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         },
         {
+            "id": null,
+            "name": null,
             "authors": [ "Kandowontu" ],
             "shortAuthors": null,
             "url": "https://patreon.com/kandowontu",
@@ -39,7 +44,8 @@
             "version": "1.0",
             "releaseDate": "2023-04-04",
             "options": null,
-            "labels": [ "Performance" ]
+            "labels": [ "Performance" ],
+            "medias": null
         }
     ]
 }

@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Eien no Filena]",
             "authors": [ "satsu", "Disnesquick", "Near", "Bongo`", "Gideon Zhi", "Maegra", "Tomato", "D", "Eien Ni Hen", "Akujin" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/761/",
@@ -29,7 +31,8 @@
             "version": "0.98",
             "releaseDate": "2009-02-02",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Bahamut Lagoon]",
             "authors": [ "DeJap Translations", "Neill Corlett", "Tomato", "Dark Force", "CPF" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/280/",
@@ -29,7 +31,8 @@
             "version": "1.3",
             "releaseDate": "2002-05-31",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

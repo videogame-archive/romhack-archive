@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Gourmet Squadron Barayarou]",
             "authors": [ "Aeon Genesis", "Gideon Zhi" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/288/",
@@ -29,7 +31,8 @@
             "version": "0.80",
             "releaseDate": "2000-06-25",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

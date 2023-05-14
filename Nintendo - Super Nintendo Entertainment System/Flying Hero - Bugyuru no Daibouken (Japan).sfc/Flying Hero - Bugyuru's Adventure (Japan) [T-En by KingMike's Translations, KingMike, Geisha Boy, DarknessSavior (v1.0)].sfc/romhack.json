@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Flying Hero: Bugyuru no Daibouken]",
             "authors": [ "KingMike's Translations", "KingMike", "Geisha Boy", "DarknessSavior" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1714/",
@@ -29,7 +31,8 @@
             "version": "1.0",
             "releaseDate": "2012-02-29",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

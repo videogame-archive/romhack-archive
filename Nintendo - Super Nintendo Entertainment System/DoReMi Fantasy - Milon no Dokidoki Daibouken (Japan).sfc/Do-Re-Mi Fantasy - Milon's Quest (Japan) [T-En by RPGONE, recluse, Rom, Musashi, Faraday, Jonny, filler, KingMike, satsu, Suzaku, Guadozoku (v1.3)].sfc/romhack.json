@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [DoReMi Fantasy: Milon no DokiDoki Daibouken]",
             "authors": [ "RPGONE", "recluse", "Rom", "Musashi", "Faraday", "Jonny", "filler", "KingMike", "satsu", "Suzaku", "Guadozoku" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1192/",
@@ -29,7 +31,8 @@
             "version": "1.3",
             "releaseDate": "2019-09-19",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

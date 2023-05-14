@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Brandish 2: The Planet Buster]",
             "authors": [ "Synchronicity", "sqykly", "Denpanosekai" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1442/",
@@ -29,7 +31,8 @@
             "version": "1.0",
             "releaseDate": "2009-11-03",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

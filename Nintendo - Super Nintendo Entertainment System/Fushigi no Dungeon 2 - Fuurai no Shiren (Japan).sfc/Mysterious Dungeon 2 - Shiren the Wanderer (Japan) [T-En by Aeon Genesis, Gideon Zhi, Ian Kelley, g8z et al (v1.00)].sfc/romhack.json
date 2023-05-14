@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Fushigi no Dungeon 2: Fuurai no Shiren]",
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Ian Kelley", "g8z et al" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/483/",
@@ -29,7 +31,8 @@
             "version": "1.00",
             "releaseDate": "2006-03-07",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

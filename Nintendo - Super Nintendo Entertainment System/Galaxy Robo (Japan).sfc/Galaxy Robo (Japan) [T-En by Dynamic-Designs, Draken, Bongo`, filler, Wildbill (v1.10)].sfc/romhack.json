@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Galaxy Robo]",
             "authors": [ "Dynamic-Designs", "Draken", "Bongo`", "filler", "Wildbill" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2418/",
@@ -29,7 +31,8 @@
             "version": "1.10",
             "releaseDate": "2015-12-28",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

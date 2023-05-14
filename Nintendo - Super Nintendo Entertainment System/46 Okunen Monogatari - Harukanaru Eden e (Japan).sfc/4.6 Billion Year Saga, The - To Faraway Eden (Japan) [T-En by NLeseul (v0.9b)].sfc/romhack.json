@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [E.V.O.: Search for Eden]",
             "authors": [ "NLeseul" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5486/",
@@ -29,7 +31,8 @@
             "version": "0.9b",
             "releaseDate": "2020-04-08",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

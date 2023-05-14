@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Bastard!!: Ankoku no Hakaishin]",
             "authors": [ "DeJap Translations", "Dark Force", "AnusP", "Faraday", "Alex W. Jackson", "F.H.", "Jason Li" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/289/",
@@ -29,7 +31,8 @@
             "version": "1.0",
             "releaseDate": "2000-12-22",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

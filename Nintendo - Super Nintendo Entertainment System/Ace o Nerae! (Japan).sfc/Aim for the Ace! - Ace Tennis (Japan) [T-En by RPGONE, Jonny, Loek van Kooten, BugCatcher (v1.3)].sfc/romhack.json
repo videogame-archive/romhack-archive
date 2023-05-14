@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Ace wo Nerae!]",
             "authors": [ "RPGONE", "Jonny", "Loek van Kooten", "BugCatcher" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/688/",
@@ -29,7 +31,8 @@
             "version": "1.3",
             "releaseDate": "2017-12-31",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

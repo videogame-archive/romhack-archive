@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Burning Pro Wrestling]",
             "authors": [ "Phil", "snesmaster40", "KingMike" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1243/",
@@ -29,7 +31,8 @@
             "version": "1.0",
             "releaseDate": "2010-10-31",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Bahamut Lagoon]",
             "authors": [ "Near", "Tom", "FlashPV", "dev_urandom", "Blargg", "ContraryMotion", "Ballz", "Lord Nightmare" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5938/",
@@ -29,7 +31,8 @@
             "version": "1.2",
             "releaseDate": "2021-06-01",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

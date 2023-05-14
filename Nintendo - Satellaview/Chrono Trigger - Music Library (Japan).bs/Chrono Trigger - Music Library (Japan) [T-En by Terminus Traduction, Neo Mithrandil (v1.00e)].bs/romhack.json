@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Chrono Trigger - Music Library]",
             "authors": [ "Terminus Traduction", "Neo Mithrandil" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/712/",
@@ -29,7 +31,8 @@
             "version": "1.00e",
             "releaseDate": "2003-02-01",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

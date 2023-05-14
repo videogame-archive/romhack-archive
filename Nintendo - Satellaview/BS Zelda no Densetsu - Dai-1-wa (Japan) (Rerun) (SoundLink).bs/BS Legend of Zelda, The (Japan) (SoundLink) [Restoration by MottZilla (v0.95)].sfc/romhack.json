@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": null,
             "authors": [ "MottZilla" ],
             "shortAuthors": null,
             "url": "https://bszelda.zeldalegends.net/rh.shtml",
@@ -29,7 +31,8 @@
             "version": "0.95",
             "releaseDate": "2012-05-06",
             "options": null,
-            "labels": [ "Restoration" ]
+            "labels": [ "Restoration" ],
+            "medias": null
         }
     ]
 }

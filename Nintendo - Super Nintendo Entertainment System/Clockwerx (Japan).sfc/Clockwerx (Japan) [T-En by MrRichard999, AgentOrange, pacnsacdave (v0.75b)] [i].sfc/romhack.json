@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [ClockWerx]",
             "authors": [ "MrRichard999", "AgentOrange", "pacnsacdave" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2233/",
@@ -29,7 +31,8 @@
             "version": "0.75b",
             "releaseDate": "2015-11-30",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

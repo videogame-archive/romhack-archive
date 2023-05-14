@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [The Great Battle IV]",
             "authors": [ "Aeon Genesis", "Gideon Zhi", "TheMajinZenki", "Setz" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3472/",
@@ -29,7 +31,8 @@
             "version": "1.10",
             "releaseDate": "13-03-2018",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

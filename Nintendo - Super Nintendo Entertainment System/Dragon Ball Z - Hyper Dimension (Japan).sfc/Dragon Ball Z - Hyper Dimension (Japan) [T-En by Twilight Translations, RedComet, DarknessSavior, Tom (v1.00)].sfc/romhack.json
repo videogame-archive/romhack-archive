@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Dragon Ball Z: Hyper Dimension]",
             "authors": [ "Twilight Translations", "RedComet", "DarknessSavior", "Tom" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1537/",
@@ -29,7 +31,8 @@
             "version": "1.00",
             "releaseDate": "2010-07-29",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

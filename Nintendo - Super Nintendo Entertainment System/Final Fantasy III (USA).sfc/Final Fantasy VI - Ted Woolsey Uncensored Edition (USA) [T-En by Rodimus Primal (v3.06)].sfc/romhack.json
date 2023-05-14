@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "Final Fantasy VI - Ted Woolsey Uncensored Edition",
             "authors": [ "Rodimus Primal", "assassin17", "Yazoo", "angelo26", "Master ZED", "Lenophis", "Dr. Meat", "Leviathan Mist", "Spooniest", "Chronosplit", "Madsiur", "Leet Sketcher", "SilentEnigma" ],
             "shortAuthors": "Rodimus Primal",
             "url": "https://www.romhacking.net/hacks/1386/",
@@ -29,7 +31,8 @@
             "version": "3.06",
             "releaseDate": "2022-02-19",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

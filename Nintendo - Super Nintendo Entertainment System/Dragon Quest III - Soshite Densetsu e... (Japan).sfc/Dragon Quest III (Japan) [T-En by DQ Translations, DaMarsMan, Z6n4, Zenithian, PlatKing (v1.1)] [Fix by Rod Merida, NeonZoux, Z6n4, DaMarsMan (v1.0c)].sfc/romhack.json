@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Dragon Quest III: Soshite Densetsu e...]",
             "authors": [ "DQ Translations", "DaMarsMan", "Z6n4", "Zenithian", "PlatKing" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1323/",
@@ -29,9 +31,12 @@
             "version": "1.1",
             "releaseDate": "2009-11-19",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         },
         {
+            "id": null,
+            "name": "[English] translation for [Dragon Quest III: Soshite Densetsu e...]",
             "authors": [ "Rod Merida", "NeonZoux", "Z6n4", "DaMarsMan" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6398/",
@@ -39,7 +44,8 @@
             "version": "1.0c",
             "releaseDate": "2022-10-23",
             "options": null,
-            "labels": [ "Fix" ]
+            "labels": [ "Fix" ],
+            "medias": null
         }
     ]
 }

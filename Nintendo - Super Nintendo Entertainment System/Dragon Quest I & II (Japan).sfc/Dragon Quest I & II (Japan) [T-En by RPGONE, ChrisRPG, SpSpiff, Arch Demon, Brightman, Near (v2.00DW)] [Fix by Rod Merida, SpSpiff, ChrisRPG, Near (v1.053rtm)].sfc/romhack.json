@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Dragon Quest I+II]",
             "authors": [ "RPGONE", "ChrisRPG", "SpSpiff", "Arch Demon", "Brightman", "Near" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/337/",
@@ -29,9 +31,12 @@
             "version": "2.00DW",
             "releaseDate": "2003-06-20",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         },
         {
+            "id": null,
+            "name": "[English] translation for [Dragon Quest I+II]",
             "authors": [ "Rod Merida", "SpSpiff", "ChrisRPG", "Near" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6127/",
@@ -39,7 +44,8 @@
             "version": "1.053rtm",
             "releaseDate": "2021-12-16",
             "options": null,
-            "labels": [ "Fix" ]
+            "labels": [ "Fix" ],
+            "medias": null
         }
     ]
 }

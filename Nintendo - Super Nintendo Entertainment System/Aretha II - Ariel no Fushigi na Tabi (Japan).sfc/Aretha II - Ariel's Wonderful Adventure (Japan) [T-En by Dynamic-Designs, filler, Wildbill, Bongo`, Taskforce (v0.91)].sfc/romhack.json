@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Aretha II - Ariel no Fushigi na Tabi]",
             "authors": [ "Dynamic-Designs", "filler", "Wildbill", "Bongo`", "Taskforce" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5420/",
@@ -29,7 +31,8 @@
             "version": "0.91",
             "releaseDate": "2020-02-26",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Cyber Knight II: Chikyuu Teikoku no Yabou]",
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Deuce", "g8z et al", "oacat" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/910/",
@@ -29,7 +31,8 @@
             "version": "1.00",
             "releaseDate": "2005-11-17",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

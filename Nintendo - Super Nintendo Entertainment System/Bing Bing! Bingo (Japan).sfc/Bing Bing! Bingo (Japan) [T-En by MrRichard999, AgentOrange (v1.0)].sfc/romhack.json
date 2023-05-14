@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [Bing Bing! Bingo]",
             "authors": [ "MrRichard999", "AgentOrange" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3519/",
@@ -29,7 +31,8 @@
             "version": "1.0",
             "releaseDate": "2018-03-27",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }

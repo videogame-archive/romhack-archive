@@ -22,6 +22,8 @@
     },
     "patches": [
         {
+            "id": null,
+            "name": "[English] translation for [FEDA: The Emblem of Justice]",
             "authors": [ "Magic Destiny", "Stealth Translations", "Bongo`", "Yukiko", "ZackMan", "Wildbill", "Draken", "Taskforce", "Red Soul", "Tomato" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/349/",
@@ -29,7 +31,8 @@
             "version": "1.02",
             "releaseDate": "2010-10-18",
             "options": null,
-            "labels": [ "T-En" ]
+            "labels": [ "T-En" ],
+            "medias": null
         }
     ]
 }
