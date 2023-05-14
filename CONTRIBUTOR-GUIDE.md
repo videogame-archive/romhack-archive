@@ -67,6 +67,7 @@ The numbers found under the 'romhack-original' are the order in what the individ
 | sha1            | string          | Yes          | For the romhack rom: sha1 hash as an hex string in lowercase.                                                                                                                                                                                                                       |
 | **Patches**     | array of object | Yes          |                                                                                                                                                                                                                                                                                     |
 | id              | number          | No           | Unique id for the patch on the database. This id is initially null until is assigned. After being assigned becomes permanent.                                                                                                                                                       |
+| name            | string          | Yes          | Name of the patch.                                                                                                                                                                                                                                                                  |
 | authors         | array of string | Yes          | Authors of the patch, to avoid naming authors in different ways best is to use their name as indicated in community sites or forums including 'Anonymous'. In absence of any information 'Unknown' SHOULD be used. ⚠ The array is sorted in the same order authors sort themselves. |
 | shortAuthors    | string          | No           | Due to filename length limit is not always feasible to keep all authors on the filename, on those cases this field is used instead, 'null' otherwise.                                                                                                                               |
 | url             | string          | No           | Url where the link to download the patch was found, 'null' otherwise.                                                                                                                                                                                                               |
@@ -113,6 +114,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
   "patches": [
     {
       "id": null,
+      "name": "[English] translation for [Final Fantasy V]",
       "authors": [ "RPGe", "Myria", "SoM2Freak", "harmony7" ],
       "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/353/",
@@ -125,6 +127,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
     },
     {
       "id": null,
+      "name": "[English] translation for [Final Fantasy V]",
       "authors": [ "Spooniest", "Barubary", "SoM2Freak", "harmony7", "FlamePurge" ],
       "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/2600/",
@@ -137,6 +140,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
     },
     {
       "id": null,
+      "name": "[English] translation for [Final Fantasy V]",
       "authors": [ "noisecross" ],
       "shortAuthors": null,
       "url": "https://www.romhacking.net/translations/3499/",
