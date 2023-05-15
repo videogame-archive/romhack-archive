@@ -4,6 +4,8 @@ import com.github.videogamearchive.model.Patch;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.util.CSV;
 
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +18,7 @@ public record CSVRomhack(
     public static String[] headers() {
         String[] csvHeaders = new String[] {
                 // Folder names info
-                "Parent", "Name", "System",
+                "Parent", "Name", "Download", "System",
                 // Info
                 "Name (original)", "Translated Title", "Status", "Adult", "Offensive", "Obsolete Version", "Back Catalog",
                 // Provenance
@@ -50,7 +52,7 @@ public record CSVRomhack(
     public String[] row() {
         String[] csv = new String[] {
                 // Folder names info
-                CSV.toString(parent), CSV.toString(name), CSV.toString(system),
+                CSV.toString(parent), CSV.toString(name), CSV.toString("https://github.com/videogame-archive/romhack-archive/raw/main/" + system + "/" + parent + "/" + name + "/romhack.bps"), CSV.toString(system),
                 // Info
                 CSV.toString(romhack.info().name()), CSV.toString(romhack.info().translatedTitle()), CSV.toString(romhack.info().status()), CSV.toString(romhack.info().adult()), CSV.toString(romhack.info().offensive()), CSV.toString(romhack.info().obsoleteVersion()), CSV.toString(romhack.info().backCatalog()),
                 // Provenance

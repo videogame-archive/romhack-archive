@@ -24,7 +24,14 @@ function loadTable(id, csvData) {
                 var value = params.row[params.column.name];
                 var valueNode = document.createTextNode(value);
                 var node = valueNode;
-                if(value.startsWith("http")) {
+                if(params.column.name === "Download") {
+                    node = document.createElement('a');
+                    node.href = value;
+                    var img = document.createElement('img');
+                    img.className = "download-document-icon";
+                    img.src = "lib/download-document-icon/download-document-icon.svg";
+                    node.appendChild(img);
+                } else if(value.startsWith("http")) {
                     node = document.createElement('a');
                     node.appendChild(valueNode);
                     node.href = value;
@@ -51,7 +58,7 @@ function loadTable(id, csvData) {
          React.createElement(window.NgUiGrid.default.Grid, {
         // Mandatory properties
         id: "rowid",
-        header: "Romhack Index",
+        header: "Files Index",
         columns : columnDefinitions,
         rows : rowData,
         // We only need this property to have export
