@@ -1,4 +1,4 @@
-![videogame archive](./docs/readme/videogame-archive.png "Videogame Archive")
+![videogame archive](./docs/readme/videogame-archive-(alt).png "Videogame Archive")
 
 # Romhack Archive: Contributor Guide
 
