@@ -1,5 +1,8 @@
 ![videogame archive](./docs/brand/videogame-archive-(alt).png "Videogame Archive")
 
+# Romhack Archive
 
-| [**Introduction**](./INTRODUCTION.md) | [**Contributor Guide**](./CONTRIBUTOR-GUIDE.md) | [**Romhack Index**](./docs/file-index/index.html) |
-|---------------------------------------|-------------------------------------------------|---------------------------------------------------|
+# Table of Contents
+1. [**Introduction**](./INTRODUCTION.md)
+2. [**Contributor Guide**](./CONTRIBUTOR-GUIDE.md)
+3. [**Romhack Index**](./docs/file-index/index.html)
