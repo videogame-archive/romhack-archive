@@ -2,7 +2,48 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <style>
+          @font-face {
+                font-family: Roboto-Medium;
+                src: url(./font/roboto/Roboto-Medium.woff2) format(woff2);
+            }
+
+            html,
+            body {
+                --main-bg-color: #333333; /* #5274AD */;
+                --table-bg-color: /*#9D8562;*/ #7590BD;
+                --primary-button-color: #5274AD;
+                --text-color: #FFFFFF;
+                background-color: var(--main-bg-color);
+                height: 95%;
+            }
+
+            h1, h3 {
+                text-align: center;
+                color: var(--text-color);
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .center-vertical {
+                vertical-align: middle;
+            }
+
+            * {
+                font-family: Roboto-Medium,
+                            Helvetica,
+                            CCSymbols
+                            !important;
+            }
+    </style>
+    {% seo %}
   </head>
 
   <body>
