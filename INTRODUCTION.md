@@ -1,6 +1,6 @@
 ![videogame archive](./docs/brand/videogame-archive-(alt).png "Videogame Archive")
 
-# Romhack Archive : Introduction
+# Romhack Archive: Introduction
 
 # Table of Contents
 1. [Introduction](#Introduction)
