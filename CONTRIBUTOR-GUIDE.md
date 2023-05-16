@@ -332,7 +332,7 @@ It can also optionally do a series of validation checks to ensure:
 - romhack-original folder has the expected structure.
 - rom hashes length are correct, some tools forget to add leading zeroes when needed.
 
-```
+```bash
 %/>java -jar dat-creator.jar
 usage: 
 	java -jar dat-creator.jar "pathToArchiveRoot" ["validate"]
@@ -350,7 +350,7 @@ Zip format is autodetect by looking at the file's extension.
 
 It can also optionally do a series of validation checks to ensure rom length and hashes are correct.
 
-```
+```bash
 %/>java -jar romset-creator.jar
 usage: 
 	java -jar romset-creator.jar "pathToArchiveRoot" "pathToInputRomRoot" "pathToOutputRomRoot" ["validate"]
@@ -364,7 +364,7 @@ Input and output roms can be compressed using zip or not.
 
 Zip format is autodetect by looking at the file's extension.
 
-```
+```bash
 %/>java -jar rom-patcher.jar
 usage: 
 	java -jar rom-patcher.jar "patch" "inputRom" "outputRom"
@@ -389,7 +389,7 @@ Input and output roms can be compressed using zip or not.
 
 Zip format is autodetect by looking at the file's extension.
 
-```
+```bash
 %/>java -jar romhack2archive.jar
 usage: 
 		 java -jar romhack2archive.jar [--no-bps] "retrievedBy" "parentRom" "romhackRom" "outputDir" ["patchURL1"] ... ["patchURLN"]
@@ -411,7 +411,7 @@ To create romhack.bps from larger roms or disc images is recommended to use [Flo
 
 This tool comes with both Windows and Linux versions.
 
-```
+```bash
 %$> ./flips-linux --create --bps-linear "Big CD Gane.bin" "BIG CD Game - Improved [Label by Author (v1.0)].bin" romhack.bps
 The patch was created successfully!
 ```
@@ -422,7 +422,7 @@ As a young project we evolve our naming convention rules quite often.
 
 This tool is able to generate the romhack folder names based on the romhack.json file and renames them automatically.
 
-```
+```bash
 %/>java -jar migration-assistant.jar
 usage: 
 		 java -jar migration-assistant.jar [--dry-run] "archiveRoot"
