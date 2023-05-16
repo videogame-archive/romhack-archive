@@ -10,6 +10,10 @@
                 src: url(../font/roboto/Roboto-Medium.woff2) format(woff2);
             }
 
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
             html,
             body {
                 --main-bg-color: #333333; /* #5274AD */;
@@ -46,11 +50,15 @@
                 height: 20%;
             }
 
+            footer {
+                height: 10%;
+            }
+
             .romhacks-wrapper {
                 margin: 1em;
                 overflow: scroll;
                 border-radius: 1em;
-                height: 70%;
+                height: 60%;
             }
 
             .download-document-icon {
@@ -112,6 +120,8 @@
         <div class="romhacks-wrapper">
             <div id="romhacks"></div>
         </div>
-        <h3>Romhack Archive <img class="center-vertical" src="lib/public-domain-mark/Public_Domain_Mark_button.svg" /></h3>
+        <footer>
+            <h3>Romhack Archive <img class="center-vertical" src="lib/public-domain-mark/Public_Domain_Mark_button.svg" /></h3>
+        </footer>
     </body>
 </html>
