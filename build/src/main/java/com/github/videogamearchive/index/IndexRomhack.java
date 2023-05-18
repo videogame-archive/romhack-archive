@@ -1,22 +1,20 @@
-package com.github.videogamearchive.csv;
+package com.github.videogamearchive.index;
 
 import com.github.videogamearchive.model.Patch;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.util.CSV;
 
-import java.net.URLEncoder;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-public record CSVRomhack(
+public record IndexRomhack(
         String system,
         String parent,
         String name,
-        Romhack romhack) implements Comparable<CSVRomhack> {
+        Romhack romhack) implements Comparable<IndexRomhack> {
 
     public static String[] headers() {
-        String[] csvHeaders = new String[] {
+        String[] indexHeaders = new String[] {
                 // Folder names info
                 "Parent", "Name", "Download", "System",
                 // Info
@@ -30,10 +28,10 @@ public record CSVRomhack(
                 // Patch 2-5
         };
 
-        List<String> csvHeadersAsList = new ArrayList<>(List.of(csvHeaders));
+        List<String> indexHeadersAsList = new ArrayList<>(List.of(indexHeaders));
 
         for (int i = 2; i <= 5; i++) {
-            csvHeadersAsList.addAll(List.of(
+            indexHeadersAsList.addAll(List.of(
                     "Id (" + i + ")",
                     "Authors (" + i + ")",
                     "Short Authors (" + i + ")",
@@ -46,11 +44,11 @@ public record CSVRomhack(
             ));
         }
 
-        return csvHeadersAsList.toArray(new String[] {});
+        return indexHeadersAsList.toArray(new String[] {});
     }
 
     public String[] row() {
-        String[] csv = new String[] {
+        String[] index = new String[] {
                 // Folder names info
                 CSV.toString(parent), CSV.toString(name), CSV.toString("https://github.com/videogame-archive/romhack-archive/raw/main/" + system + "/" + parent + "/" + name + "/romhack.bps"), CSV.toString(system),
                 // Info
@@ -61,7 +59,7 @@ public record CSVRomhack(
                 CSV.toString(romhack.rom().size()), CSV.toString(romhack.rom().crc32()), CSV.toString(romhack.rom().md5()), CSV.toString(romhack.rom().sha1()),
         };
 
-        List<String> romAsList = new ArrayList<>(List.of(csv));
+        List<String> romAsList = new ArrayList<>(List.of(index));
 
         int numPatches = 0;
         for (Patch patch:romhack.patches()) {
@@ -91,7 +89,7 @@ public record CSVRomhack(
         return romAsList.toArray(new String[] {});
     }
     @Override
-    public int compareTo(CSVRomhack o) {
+    public int compareTo(IndexRomhack o) {
         return name.compareTo(o.name);
     }
 }

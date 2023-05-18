@@ -26,7 +26,7 @@ test {
 
 jar {
     archiveBaseName = 'tools-library' // Default jar, no manifest, just to reuse the tools in other projects
-    archiveVersion = '0.0.12'
+    archiveVersion = '0.0.13'
 }
 
 tasks.withType(Jar) {
@@ -55,7 +55,7 @@ def jarPackage(artifactName, className) {
 // Executable artifacts, all of them can be obtained together using the assemble task
 artifacts {
     archives jarPackage("dat-creator", "com.github.videogamearchive.dat.DatCreator"),
-            jarPackage("csv-creator", "com.github.videogamearchive.csv.CSVCreator"),
+            jarPackage("index-creator", "com.github.videogamearchive.index.IndexCreator"),
             jarPackage("romset-creator", "com.github.videogamearchive.romset.RomsetCreator"),
             jarPackage("rom-patcher", "com.github.videogamearchive.rompatcher.RomPatcher"),
             jarPackage("migration-assistant", "com.github.videogamearchive.migration.MigrationAssistant"),

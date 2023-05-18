@@ -1,4 +1,4 @@
-package com.github.videogamearchive.csv;
+package com.github.videogamearchive.index;
 
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.model.RomhackReaderWriter;
@@ -6,11 +6,13 @@ import com.github.videogamearchive.util.CSV;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class CSVCreator {
+public class IndexCreator {
     private static final String ROMHACK_JSON = "romhack.json";
 
     private static final String ROMHACK_BPS = "romhack.bps";
@@ -18,14 +20,17 @@ public class CSVCreator {
     private static final String ROMHACK_ORIGINAL = "romhack-original";
     private static SimpleDateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
     private static String NOW = TIMESTAMP_FORMAT.format(new Date());
-    private static List<CSVRomhack> romhacks = new ArrayList<>();
+    private static List<IndexRomhack> romhacks = new ArrayList<>();
     private static RomhackReaderWriter romhackReader = new RomhackReaderWriter();
 
+    public enum Format {csv, md}
+
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) {
+        if (args.length != 2) {
             help();
         } else {
-            File root = new File(args[0]);
+            Format format = Format.valueOf(args[0]);
+            File root = new File(args[1]);
             if (root.exists() && root.isDirectory()) {
                 for (File systemFolder:root.listFiles()) {
                     processSystem(systemFolder);
@@ -34,10 +39,39 @@ public class CSVCreator {
                 //
                 Collections.sort(romhacks);
                 List<String[]> rows = new ArrayList<>(romhacks.size());
-                for (CSVRomhack row:romhacks) {
+                for (IndexRomhack row:romhacks) {
                     rows.add(row.row());
                 }
-                CSV.write(Path.of("romhacks.csv"), CSVRomhack.headers(), rows);
+                switch (format) {
+                    case csv -> {
+                        CSV.write(Path.of("romhacks.csv"), IndexRomhack.headers(), rows);
+                    }
+                    case md -> {
+                        StringBuilder builder = new StringBuilder();
+                        for (String header:IndexRomhack.headers()) {
+                            builder.append("|");
+                            builder.append("**").append(header).append("**");
+                        }
+                        builder.append("|").append("\n");
+                        int separatorLength = builder.length() - 1;
+                        for (int i = 0; i < separatorLength; i++) {
+                            if (builder.charAt(i) == '|') {
+                                builder.append("|");
+                            } else {
+                                builder.append("-");
+                            }
+                        }
+                        builder.append("\n");
+                        for (String[] row:rows) {
+                            for (String field:row) {
+                                builder.append("|");
+                                builder.append(field);
+                            }
+                            builder.append("|").append("\n");
+                        }
+                        Files.write(Path.of("romhacks.md"), builder.toString().getBytes(StandardCharsets.UTF_8));
+                    }
+                }
             } else {
                 help();
             }
@@ -45,7 +79,7 @@ public class CSVCreator {
     }
     private static void help() {
         System.out.println("usage: ");
-        System.out.println("\t\t java -jar csv-creator.jar \"pathToArchiveRoot\"");
+        System.out.println("\t\t java -jar [csv|md] index-creator.jar \"pathToArchiveRoot\"");
     }
 
     private static void processSystem(File system) throws IOException, ReflectiveOperationException {
@@ -87,7 +121,7 @@ public class CSVCreator {
                 }
 
                 Romhack romhack = romhackReader.read(romhackJSON.toPath());
-                CSVRomhack extendedRomhack = new CSVRomhack(system.getName(), parent.getName(), clone.getName(), romhack);
+                IndexRomhack extendedRomhack = new IndexRomhack(system.getName(), parent.getName(), clone.getName(), romhack);
                 addGame(extendedRomhack);
             }
         }
@@ -100,7 +134,7 @@ public class CSVCreator {
         System.out.println("WARNING - Ignored folder: " + file.getPath());
     }
 
-    private static void addGame(CSVRomhack romhack) {
+    private static void addGame(IndexRomhack romhack) {
         romhacks.add(romhack);
     }
 
