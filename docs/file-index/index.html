@@ -71,9 +71,13 @@
             }
 
             /** Fix defect on nowrap option of grid component that doesn't apply it to headers  **/
-
             th {
                 white-space: nowrap;
+            }
+
+            /** Disable sticky first column **/
+            td, th {
+                position : initial !important;
             }
 
             /* Dark Theme
