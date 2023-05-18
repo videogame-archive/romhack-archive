@@ -75,7 +75,7 @@ public record IndexRomhack(
             numPatches++;
         }
 
-        for (int i = numPatches; i < 5; i++) {
+        for (int i = numPatches; i <= 5; i++) {
             romAsList.add("");
             romAsList.add("");
             romAsList.add("");

@@ -53,14 +53,7 @@
             }
 
             footer {
-                height: 10%;
-            }
 
-            .romhacks-wrapper {
-                margin: 1em;
-                overflow: scroll;
-                border-radius: 1em;
-                height: 60%;
             }
 
             .download-document-icon {
@@ -73,6 +66,27 @@
             /** Fix defect on nowrap option of grid component that doesn't apply it to headers  **/
             th {
                 white-space: nowrap;
+            }
+
+            /** Fix defect on button styles **/
+
+            .MuiButton-outlined > .MuiButton-label,
+            .MuiButton-containedSecondary > .MuiButton-label {
+                color: #FFFFFF;
+            }
+
+
+            .MuiButton-outlined,
+            .MuiButton-contained {
+                background-color: #039be5 !important;
+                border: none !important;
+                box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+            }
+
+
+            .MuiButton-outlined:hover,
+            .MuiButton-contained:hover {
+                box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
             }
 
             /** Disable sticky first column **/
@@ -124,9 +138,7 @@
     <body onload="onLoad('romhacks', 'romhacks.csv')">
         <img src="../brand/videogame-archive-(alt).png" class="center brand" />
         <h1>Romhack Archive</h1>
-        <div class="romhacks-wrapper">
-            <div id="romhacks"></div>
-        </div>
+        <div id="romhacks"></div>
         <footer>
             <h3>Romhack Archive <img class="center-vertical" src="lib/public-domain-mark/Public_Domain_Mark_button.svg" /></h3>
         </footer>
