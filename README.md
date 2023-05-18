@@ -5,4 +5,4 @@
 # Table of Contents
 1. [**Introduction**](./INTRODUCTION.md)
 2. [**Contributor Guide**](./CONTRIBUTOR-GUIDE.md)
-3. [**Romhack Index**](./ROMHACK-INDEX.md)
+3. [**Rom File Index**](./ROM-FILE-INDEX.md)
