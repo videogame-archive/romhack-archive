@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-02",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097664,
+        "crc32": "ba09d28a",
+        "md5": "b691f25801deaeb6968fcfa0bf685584",
+        "sha1": "652ee49acf90a363541d28b69189960364b706b5"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": null,
+            "authors": [ "MottZilla" ],
+            "shortAuthors": null,
+            "url": "https://bszelda.zeldalegends.net/rh.shtml",
+            "otherUrls": [ ],
+            "version": "0.95",
+            "releaseDate": "2012-05-06",
+            "options": null,
+            "labels": [ "Restoration" ],
+            "medias": null
+        }
+    ]
+}

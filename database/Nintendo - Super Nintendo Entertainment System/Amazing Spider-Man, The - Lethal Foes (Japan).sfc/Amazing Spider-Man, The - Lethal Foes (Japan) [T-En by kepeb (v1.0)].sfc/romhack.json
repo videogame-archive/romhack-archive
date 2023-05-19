@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-04-29",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1572864,
+        "crc32": "d798a184",
+        "md5": "a5a41386a4a6f3432801cfa60d02666c",
+        "sha1": "6984e38af83bf77b3ac7336aa555cb7bea1a561d"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [The Amazing Spider-Man: Lethal Foes]",
+            "authors": [ "kepeb" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/2472/",
+            "otherUrls": [ ],
+            "version": "1.0",
+            "releaseDate": "2015-09-21",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

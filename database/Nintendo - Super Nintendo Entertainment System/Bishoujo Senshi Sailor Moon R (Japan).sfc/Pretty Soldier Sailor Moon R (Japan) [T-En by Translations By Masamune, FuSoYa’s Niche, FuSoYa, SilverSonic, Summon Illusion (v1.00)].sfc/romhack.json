@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "4229f61d",
+        "md5": "e9edb964870c5435ca45a51c26905612",
+        "sha1": "96e8e1ea8b3e520e9576d30893da5c4b7a3f6d45"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Bishoujo Senshi Sailor Moon R]",
+            "authors": [ "Translations By Masamune", "FuSoYa’s Niche", "FuSoYa", "SilverSonic", "Summon Illusion" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/435/",
+            "otherUrls": null,
+            "version": "1.00",
+            "releaseDate": "2002-03-06",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "553c4ac0",
+        "md5": "1749db1d21b805594a2a3ac2f1d360f9",
+        "sha1": "0878275143b73a3b508af66e1044d952bbd688de"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Dragon Ball Z: Super Butouden 2]",
+            "authors": [ "Commando Ginyu" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/332/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2001-03-04",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

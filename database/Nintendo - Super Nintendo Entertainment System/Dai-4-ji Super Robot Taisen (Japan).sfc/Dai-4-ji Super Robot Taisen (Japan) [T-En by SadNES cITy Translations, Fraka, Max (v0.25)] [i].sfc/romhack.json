@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "df7805df",
+        "md5": "854c6944e16431b66f7c4a359dccea25",
+        "sha1": "b7970c18c99c37f7c810689550ddd9406e6ae8a5"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Dai-4-Ji Super Robot Taisen]",
+            "authors": [ "SadNES cITy Translations", "Fraka", "Max" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/467/",
+            "otherUrls": null,
+            "version": "0.25",
+            "releaseDate": "1999-06-01",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

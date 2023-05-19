@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "b455b7a4",
+        "md5": "ace1abe5f48d24e1512cbc6541f171be",
+        "sha1": "638272dcdda92bd233e89dbd2d4a4cfad1b9459c"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [3x3 Eyes: Juuma Houkan]",
+            "authors": [ "Atomizer_Zero", "FamilyGuy", "AkiHizirino", "mkwong98" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/2835/",
+            "otherUrls": null,
+            "version": "1.01",
+            "releaseDate": "2017-02-02",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

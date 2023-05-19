@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "404350d8",
+        "md5": "a87bed1cbb97d5441cbc4facb684931c",
+        "sha1": "d32f2b9a975df4dda8730f4158aa61bfa8f0d1e9"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "Final Fantasy VI - Ted Woolsey Uncensored Edition",
+            "authors": [ "Rodimus Primal", "assassin17", "Yazoo", "angelo26", "Master ZED", "Lenophis", "Dr. Meat", "Leviathan Mist", "Spooniest", "Chronosplit", "Madsiur", "Leet Sketcher", "SilentEnigma" ],
+            "shortAuthors": "Rodimus Primal",
+            "url": "https://www.romhacking.net/hacks/1386/",
+            "otherUrls": null,
+            "version": "3.06",
+            "releaseDate": "2022-02-19",
+            "options": "Bug Fixes, Updated Opera, Add-Ons",
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

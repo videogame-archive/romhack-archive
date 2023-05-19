@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-01",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "78de9569",
+        "md5": "7202f3d63a85ba25d0ab491bb9e3b66b",
+        "sha1": "08661008074163f993a9e5ff5180141a60ce10e2"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [BS Fire Emblem: Akaneia Senkihen]",
+            "authors": [ "Darrman" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/5650/",
+            "otherUrls": [ ],
+            "version": "1.01",
+            "releaseDate": "2020-08-20",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

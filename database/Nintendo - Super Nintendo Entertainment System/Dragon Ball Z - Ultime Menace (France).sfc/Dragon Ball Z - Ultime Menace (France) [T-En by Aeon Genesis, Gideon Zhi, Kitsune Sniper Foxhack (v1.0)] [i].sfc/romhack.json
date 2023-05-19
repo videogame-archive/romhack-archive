@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "890b32f3",
+        "md5": "e8c365dda588f8318d51d988e875af4d",
+        "sha1": "a58e7c4c5961d74c79870a58137b2092492a8e69"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Dragon Ball Z: Super Butouden 3]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Kitsune Sniper (Foxhack)" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/333/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2000-06-18",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

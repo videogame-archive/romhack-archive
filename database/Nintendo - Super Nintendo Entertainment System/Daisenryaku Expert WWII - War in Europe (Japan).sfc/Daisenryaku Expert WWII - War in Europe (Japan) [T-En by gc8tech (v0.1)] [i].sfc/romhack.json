@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "cc9b8736",
+        "md5": "32b6469f867574df0b78b179cb963bc8",
+        "sha1": "984bd4bc60ce6eafa856e7973c0f1a055fdf517d"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Daisenryaku Expert WWII: War in Europe]",
+            "authors": [ "gc8tech" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/2493/",
+            "otherUrls": null,
+            "version": "0.1",
+            "releaseDate": "2015-10-12",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

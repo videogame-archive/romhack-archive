@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "c383a51c",
+        "md5": "381c7c7a339f647d193486e6fe7c84a7",
+        "sha1": "81fcca101b13713b4a822062fd3452d7f5b059cc"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Dark Law: Meaning of Death]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Haeleth" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/307/",
+            "otherUrls": null,
+            "version": "1.00",
+            "releaseDate": "2007-03-28",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

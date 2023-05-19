@@ -1,0 +1,38 @@
+{
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "fc088414",
+        "md5": "c30f54bccead98b89728786b7bf2519b",
+        "sha1": "735fe01a266e1242485385a81758b2befbacb6cb"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Angelique]",
+            "authors": [ "Marfisa", "John Flemming" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/279/",
+            "otherUrls": null,
+            "version": "0.02",
+            "releaseDate": "2001-01-18",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
