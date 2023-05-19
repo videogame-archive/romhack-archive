@@ -44,32 +44,52 @@ public class IndexCreator {
                 }
                 switch (format) {
                     case csv -> {
-                        CSV.write(Path.of("romhacks.csv"), IndexRomhack.headers(), rows);
+                        CSV.write(Path.of("rom-file-index.csv"), IndexRomhack.headers(), rows);
                     }
                     case md -> {
                         StringBuilder builder = new StringBuilder();
-                        for (String header:IndexRomhack.headers()) {
-                            builder.append("|");
-                            builder.append("**").append(header).append("**");
+                        builder.append("![videogame archive](./brand/videogame-archive-(alt).png \"Videogame Archive\")").append("\n").append("\n");
+                        builder.append("# Romhack Archive: Rom File Index").append("\n").append("\n");
+                        builder.append("This table can be also downloaded as a standard Comma Separated Value (CSV) format file, as for RFC4180: [Download](./rom-file-index.csv)").append("\n").append("\n");
+
+                        StringBuilder headerBuilder = new StringBuilder();
+                        String[] headers = IndexRomhack.headers();
+                        int downloadIndex = -1;
+                        for (int i = 0; i < headers.length;i++) {
+                            String header = headers[i];
+                            if (header.equals("Download")) {
+                                downloadIndex = i;
+                            }
+                            headerBuilder.append("|");
+                            headerBuilder.append("**").append(header).append("**");
                         }
-                        builder.append("|").append("\n");
-                        int separatorLength = builder.length() - 1;
+                        headerBuilder.append("|").append("\n");
+
+                        int separatorLength = headerBuilder.length() - 1;
                         for (int i = 0; i < separatorLength; i++) {
-                            if (builder.charAt(i) == '|') {
-                                builder.append("|");
+                            if (headerBuilder.charAt(i) == '|') {
+                                headerBuilder.append("|");
                             } else {
-                                builder.append("-");
+                                headerBuilder.append("-");
                             }
                         }
-                        builder.append("\n");
+                        headerBuilder.append("\n");
+
+                        builder.append(headerBuilder);
                         for (String[] row:rows) {
-                            for (String field:row) {
+                            for (int i = 0; i < row.length; i++) {
+                                String field = row[i];
                                 builder.append("|");
-                                builder.append(field);
+
+                                if (i == downloadIndex) {
+                                    builder.append("[Download](").append(field).append(")");
+                                } else {
+                                    builder.append(field);
+                                }
                             }
                             builder.append("|").append("\n");
                         }
-                        Files.write(Path.of("romhacks.md"), builder.toString().getBytes(StandardCharsets.UTF_8));
+                        Files.write(Path.of("rom-file-index.md"), builder.toString().getBytes(StandardCharsets.UTF_8));
                     }
                 }
             } else {

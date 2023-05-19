@@ -50,7 +50,7 @@ public record IndexRomhack(
     public String[] row() {
         String[] index = new String[] {
                 // Folder names info
-                CSV.toString(parent), CSV.toString(name), CSV.toString("https://github.com/videogame-archive/romhack-archive/raw/main/" + system + "/" + parent + "/" + name + "/romhack.bps"), CSV.toString(system),
+                CSV.toString(parent), CSV.toString(name), CSV.toString("https://github.com/videogame-archive/romhack-archive/raw/main/database/" + system + "/" + parent + "/" + name + "/romhack.bps"), CSV.toString(system),
                 // Info
                 CSV.toString(romhack.info().name()), CSV.toString(romhack.info().translatedTitle()), CSV.toString(romhack.info().status()), CSV.toString(romhack.info().adult()), CSV.toString(romhack.info().offensive()), CSV.toString(romhack.info().obsoleteVersion()), CSV.toString(romhack.info().backCatalog()),
                 // Provenance
