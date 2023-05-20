@@ -8,10 +8,11 @@
 3. [Dealing With Abbreviations](#Dealing-With-Abbreviations)
 4. [Dealing With Conflicting Information](#Dealing-With-Conflicting-Information)
 5. [Current Labels](#Current-Labels)
-6. [Romhack Rom Naming Convention](#Romhack-Rom-Naming-Convention)
-7. [Romhack Source Code](#Romhack-Source-Code)
-8. [Command Line Tools](#Command-Line-Tools)
-9. [User Safety](#User-Safety)
+6. [Applying Patches](#Applying-Patches)
+7. [Romhack Rom Naming Convention](#Romhack-Rom-Naming-Convention)
+8. [Romhack Source Code](#Romhack-Source-Code)
+9. [Command Line Tools](#Command-Line-Tools)
+10. [User Safety](#User-Safety)
 
 ## Introduction
 
@@ -211,6 +212,13 @@ Labels are sorted in the order given on the table when there is more than one la
 | **Order** | **Name**        | **Description**                                                                                                                                                                                                                                                                                                                                       |
 |-----------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 17        | **Restoration** | Fixes a myriad of problems, making extensive changes to the game rom, making a game that was unplayable otherwise, playable again.                                                                                                                                                                                                                    |
+
+## Applying Patches
+
+When applying multiple patches, use the following sorting priorities:
+1. Patches that require a certain order to be fully functional must use this order (ex. if changes from Retouch X are overwritten by Overhaul Y, use the order: Overhaul Y, Retouch X).
+2. Patches with different category labels are sorted by the order in the category table (ex. Themed A, Fix D, EasyType C, Tweak B).
+3. Patches with the same category labels are sorted alphabetically based on the hack names (ex. Fix A, Fix B).
 
 ## Romhack Rom Naming Convention
 
