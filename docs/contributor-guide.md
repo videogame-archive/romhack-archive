@@ -9,7 +9,7 @@
 4. [Dealing With Conflicting Information](#Dealing-With-Conflicting-Information)
 5. [Current Labels](#Current-Labels)
 6. [Applying Patches](#Applying-Patches)
-7. [Romhack Rom Naming Convention](#Romhack-Rom-Naming-Convention)
+7. [Romhack Rom Filename Naming Convention](#Romhack-Rom-Filename-Naming-Convention)
 8. [Romhack Source Code](#Romhack-Source-Code)
 9. [Command Line Tools](#Command-Line-Tools)
 10. [User Safety](#User-Safety)
@@ -220,7 +220,7 @@ When applying multiple patches, use the following sorting priorities:
 2. Patches with different category labels are sorted by the order in the category table (ex. Themed A, Fix D, EasyType C, Tweak B).
 3. Patches with the same category labels are sorted alphabetically based on the hack names (ex. Fix A, Fix B).
 
-## Romhack Rom Naming Convention
+## Romhack Rom Filename Naming Convention
 
 This project naming convention is based on No-Intro naming convention.
 
@@ -233,7 +233,7 @@ This project extends No-Intro naming convention to provide additional informatio
 
 In particular, information about the patches used to build a romhack.
 
-**Formal definition for a romhack rom name:**
+### Formal definition for a romhack rom filename:
 
 Every romhack rom name contains a pair of brackets [] for every patch applied.
 
@@ -247,11 +247,13 @@ If a romhack was initially distributed as a physical cart the label "(Bootleg)" 
 NAME (REGION) [(Bootleg)] [LABEL_A, ... LABEL_N by AUTHOR (vVERSION) (Opt OPTION]] ... [SECONDARY_A, ... SECONDARY_N by SECONDARY_AUTHOR (vSECONDARY_VERSION) (Opt SECONDARY_OPTION)][i]
 ```
 
-[i] is added at the end when the status of a romhack is 'Unfinished'
+[i] is added at the end when the status of a romhack is 'Incomplete'
 
 One of the advantages of our naming convention is that is unambiguous and can be calculated from the metadata allowing for validation.
 
-This is best visualized with a few examples, links to their archive folder names are provided.
+### Romhack Rom filename Examples
+
+The naming convention is best visualized with a few examples:
 
 **Type 1:** One romhack with one patch, your most common case: 
 
