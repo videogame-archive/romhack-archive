@@ -160,9 +160,9 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
 
 If an object: title, version, etc...
 
-1. If one object is a subset or abbreviation of other, use the longer one (ex. "Legend of Link" vs "Legend of Link: Adventure of Zelda", "Rockman 4 BCAS" vs "Rockman 4 - Burst Chaser X Air Sliding").
+1. If one object is a subset or abbreviation of other, use the longer one. *Examples: "Legend of Link" vs "Legend of Link: Adventure of Zelda", "Rockman 4 BCAS" vs "Rockman 4 - Burst Chaser X Air Sliding"*
 
-2. If one object is abbreviated and one is missing part of it, they should be combined if feasible (ex. "Link: Adventure of Zelda" vs "Legend of Link" can be combined as "Legend of Link: Adventure of Zelda").
+2. If one object is abbreviated and one is missing part of it, they should be combined if feasible. *Examples: "Link: Adventure of Zelda" vs "Legend of Link" can be combined as "Legend of Link: Adventure of Zelda"*
 
 ## Dealing With Conflicting Information
 
@@ -216,9 +216,9 @@ Labels are sorted in the order given on the table when there is more than one la
 ## Applying Patches
 
 When applying multiple patches, use the following sorting priorities:
-1. Patches that require a certain order to be fully functional must use this order (ex. if changes from Retouch X are overwritten by Overhaul Y, use the order: Overhaul Y, Retouch X).
-2. Patches with different category labels are sorted by the order in the category table (ex. Themed A, Fix D, EasyType C, Tweak B).
-3. Patches with the same category labels are sorted alphabetically based on the hack names (ex. Fix A, Fix B).
+1. Patches that require a certain order to be fully functional must use this order. *Examples: If changes from Retouch X are overwritten by Overhaul Y, use the order: Overhaul Y, Retouch X*
+2. Patches with different category labels are sorted by the order in the category table. *Examples: Themed A, Fix D, EasyType C, Tweak B*
+3. Patches with the same category labels are sorted alphabetically based on the hack names. *Examples: Fix A, Fix B*
 
 ## Romhack Rom Filename Naming Convention
 
