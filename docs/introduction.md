@@ -50,7 +50,7 @@ The project goal is to 'normalize' the original patches distributed into a struc
 
 - This project CANNOT replace the original community sites. This project is mainly an archival project.
 
-## Who Can contribute?
+## Who Can Contribute?
 Anyone with some free time, the romhack archive wants to be as inclusive as possible.
 
 The romhack archive respects its contributors and wants they enjoy the time they dedicate to the archive as much as possible.
