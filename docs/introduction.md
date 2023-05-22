@@ -7,7 +7,7 @@
 2. [Objective](#Objective)
 3. [Current Goals](#Current-Goals)
 4. [Non Goals](#Non-Goals)
-6. [Who can contribute?](#Who-can-contribute)
+6. [Who Can Contribute?](#Who-Can-Contribute)
 5. [How To Contribute](#How-To-Contribute)
 6. [Contributor Guide](#Contributor-Guide)
 7. [Other General Information](#Other-General-Information)
@@ -50,7 +50,7 @@ The project goal is to 'normalize' the original patches distributed into a struc
 
 - This project CANNOT replace the original community sites. This project is mainly an archival project.
 
-## Who can contribute?
+## Who Can contribute?
 Anyone with some free time, the romhack archive wants to be as inclusive as possible.
 
 The romhack archive respects its contributors and wants they enjoy the time they dedicate to the archive as much as possible.
