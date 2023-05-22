@@ -251,9 +251,9 @@ NAME (REGION) [(Bootleg)] [LABEL_A, ... LABEL_N by AUTHOR (vVERSION) (Opt OPTION
 
 One of the advantages of our naming convention is that is unambiguous and can be calculated from the metadata allowing for validation.
 
-### Romhack Rom filename Examples
+### Romhack Rom filename, guidelines for '[]'
 
-The naming convention is best visualized with a few examples:
+The '[]' naming convention is best visualized with a few examples:
 
 **Type 1:** One romhack with one patch, your most common case: 
 
@@ -305,6 +305,20 @@ If we apply optional patches we add them to the filename and romhack.json under 
 ```
 Legend of Zelda - Link's Awakening Redux (Usa, Europe) [Definitive Edition by ShadowOne333 (v1.3.5) (Opt No-THIEF, Beep)].gbc
 ```
+
+### Romhack Rom filename, guidelines for 'name'
+
+To determine the name used for the first part of the hack ROM filename, follow these steps:
+
+1. Determine the hack name for each patch.
+2. Start with the game title from the original file, excluding any tags such as region or language. *Example: "Legend of Zelda, The - A Link to the Past"*
+3. For each patch, in order, follow the list below until a rule applies:
+- If the hack is a Translation (T-*) or a title screen addendum for a translation:
+  - If the in-game title was changed, replace the original title with this title. *Example: "Super Robot Wars 3"*
+  - Otherwise, make no changes
+- If the hack is a Fix and is an addendum to another patch (cannot be applied separately), make no changes.
+- If the hack is a Game, or if the hack name is intended as a title (rather than a description of the changes), replace the original title with the hack name. *Examples: "Super Mario Land DX", "Dr. Luigi"*
+- Otherwise, append " + " and the hack name. *Example: Castlevania - The Holy Relics + Improved Controls + Vertical Knockback*
 
 ## Romhack Source Code
 
