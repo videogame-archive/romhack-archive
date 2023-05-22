@@ -49,9 +49,14 @@ The project goal is to 'normalize' the original patches distributed into a struc
 
 - This project CANNOT replace the original community sites. This project is mainly an archival project.
 
-## How To Contribute
+## Who can contribute?
+Anyone with some free time, the romhack archive wants to be as inclusive as possible.
 
-⚠ ⚠ ⚠ Looking for Contributors ⚠ ⚠ ⚠
+The romhack archive respects its contributors and wants they enjoy the time they dedicate to the archive as much as possible.
+
+Every contributor can focus on any system, games and hacks they want.
+
+## How To Contribute
 
 - Are you part of a romhacking community site and would like to help us build a relationship?
 
