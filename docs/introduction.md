@@ -7,6 +7,7 @@
 2. [Objective](#Objective)
 3. [Current Goals](#Current-Goals)
 4. [Non Goals](#Non-Goals)
+6. [Who can contribute?](#Who-can-contribute?)
 5. [How To Contribute](#How-To-Contribute)
 6. [Contributor Guide](#Contributor-Guide)
 7. [Other General Information](#Other-General-Information)
