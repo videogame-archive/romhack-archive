@@ -26,7 +26,7 @@ public class XZ {
 
     public static void write(Path path, byte[] content) throws IOException {
         FileOutputStream outfile = new FileOutputStream(path.toFile());
-        XZOutputStream outxz = new XZOutputStream(outfile, new LZMA2Options(LZMA2Options.PRESET_MAX));
+        XZOutputStream outxz = new XZOutputStream(outfile, new LZMA2Options(LZMA2Options.PRESET_DEFAULT));
         outxz.write(content);
         outxz.close();
     }
