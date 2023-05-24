@@ -1,5 +1,6 @@
 package com.github.videogamearchive.model;
 
-public interface Identifiable {
+public interface Identifiable<RECORD extends Identifiable<RECORD>> {
     Long id();
+    RECORD withId(Long id);
 }

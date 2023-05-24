@@ -6,13 +6,13 @@ public class MigrationAssistantTest {
     @Test
     public void migrationAssistantTest() throws Exception {
         MigrationAssistant.main(new String[]{
-                "--dry-run", "../"});
+                "--dry-run", "../database"});
     }
 
     @Test
     public void migrationAssistantTest2() throws Exception {
         MigrationAssistant.main(new String[]{
-                "../"});
+                "../database"});
     }
 
     @Test

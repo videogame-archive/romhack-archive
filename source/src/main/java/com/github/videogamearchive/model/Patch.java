@@ -14,6 +14,10 @@ public record Patch(
         String options,
         List<Label> labels,
         List<Media> medias
-        ) {
+        ) implements Identifiable<Patch> {
 
+        @Override
+        public Patch withId(Long id) {
+                return new Patch(id, name(), authors(), shortAuthors(), url(), otherUrls(), version(), releaseDate(), options(), labels(), medias());
+        }
 }

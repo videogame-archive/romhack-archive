@@ -7,5 +7,9 @@ public record Romhack(
         Info info,
         Provenance provenance,
         Rom rom,
-        List<Patch> patches) implements Identifiable {
+        List<Patch> patches) implements Identifiable<Romhack> {
+    @Override
+    public Romhack withId(Long id) {
+        return new Romhack(id, info(), provenance(), rom(), patches());
+    }
 }

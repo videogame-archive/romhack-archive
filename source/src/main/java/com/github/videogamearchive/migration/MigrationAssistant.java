@@ -1,10 +1,11 @@
 package com.github.videogamearchive.migration;
 
+import com.github.videogamearchive.model.ArchiveSystem;
+import com.github.videogamearchive.model.Game;
 import com.github.videogamearchive.model.Patch;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.model.RomhackReaderWriter;
 import com.github.videogamearchive.model.RomhackValidator;
-import com.github.videogamearchive.util.CSV;
 import com.github.videogamearchive.util.PathUtil;
 
 import java.io.File;
@@ -12,8 +13,6 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.HashMap;
-import java.util.Map;
 
 public class MigrationAssistant {
 
@@ -50,46 +49,10 @@ public class MigrationAssistant {
         }
     }
 
-    private static Map<String, Long> assignedSystemIds = new HashMap<>();
-    private static Long lastSystemId = null;
-    private static Map<String, Long> assignedGameIds = new HashMap<>();
-    private static Long lastGameId = null;
-    private static Map<String, Long> assignedROmhackIds = new HashMap<>();
-    private static Long lastRomhackId = null;
-    private static Map<String, Long> assignedPatchIds = new HashMap<>();
-    private static Long lastPatchId = null;
-
-    private static void updateLastPatchId(boolean dryRun, Romhack romhack) {
-        // Update assigned ids, two patch folders belong to the same patch if the share name and authors
-
-        for (int patchIndex = 0; patchIndex < romhack.patches().size(); patchIndex++) {
-            Patch patch = romhack.patches().get(patchIndex);
-            String patchSignature = CSV.toString(patch.name()) + " " + CSV.toString(patch.authors());
-            if (patch.id() == null && !dryRun) { // Update Patch
-                Long assignedValue = assignedPatchIds.get(patchSignature);
-                if (assignedValue == null) {
-                    if (lastPatchId == null) {
-                        assignedValue = 1L; // First value
-                    } else {
-                        assignedValue = lastPatchId + 1;
-                    }
-                }
-                patch = new Patch(assignedValue, patch.name(), patch.authors(), patch.shortAuthors(), patch.url(), patch.otherUrls(), patch.version(), patch.releaseDate(), patch.options(), patch.labels(), patch.medias());
-                romhack.patches().set(patchIndex, patch);
-            }
-
-            // Update stored id
-            if (patch.id() != null) {
-                if (lastPatchId == null || lastPatchId < patch.id()) {
-                    lastPatchId = patch.id();
-                }
-            }
-            // Update assigned ids
-            if (!assignedPatchIds.containsKey(patchSignature) && patch.id() != null) {
-                assignedPatchIds.put(patchSignature, patch.id());
-            }
-        }
-    }
+    private static IdentifiableCache<ArchiveSystem> systemIdentifiableCache = new IdentifiableCache<>();
+    private static IdentifiableCache<Game> gameIdentifiableCache = new IdentifiableCache<>();
+    private static IdentifiableCache<Romhack> romhackIdentifiableCache = new IdentifiableCache<>();
+    private static IdentifiableCache<Patch> patchIdentifiableCache = new IdentifiableCache<>();
 
     public static void migrate(boolean dryRun, File root) throws ReflectiveOperationException, IOException {
 
@@ -118,7 +81,7 @@ public class MigrationAssistant {
                     }
                     String json = Files.readString(romhackPath, StandardCharsets.UTF_8);
                     Romhack romhack = romhackReaderWriter.read(json);
-                    updateLastPatchId(dryRun, romhack);
+                    romhack = romhackIdentifiableCache.updateLastId(dryRun, romhackFolder.getName(), romhack);
                     String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
                     String updatedJson = romhackReaderWriter.write(romhack);
                     if (!json.equals(updatedJson)) {
