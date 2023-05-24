@@ -1,4 +1,4 @@
-![videogame archive](./brand/videogame-archive-(alt).png "Videogame Archive")
+![videogame archive](../brand/videogame-archive-(alt).png "Videogame Archive")
 
 # Romhack Archive: Rom File Index
 

@@ -48,7 +48,7 @@ public class IndexCreator {
                     }
                     case md -> {
                         StringBuilder builder = new StringBuilder();
-                        builder.append("![videogame archive](./brand/videogame-archive-(alt).png \"Videogame Archive\")").append("\n").append("\n");
+                        builder.append("![videogame archive](../brand/videogame-archive-(alt).png \"Videogame Archive\")").append("\n").append("\n");
                         builder.append("# Romhack Archive: Rom File Index").append("\n").append("\n");
                         builder.append("This table can be also downloaded as a standard Comma Separated Value (CSV) format file, as for RFC4180: [Download](./rom-file-index.csv)").append("\n").append("\n");
 
