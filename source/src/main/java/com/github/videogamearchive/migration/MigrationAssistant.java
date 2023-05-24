@@ -50,22 +50,28 @@ public class MigrationAssistant {
         }
     }
 
-    private static Map<String, Long> assignedIds = new HashMap<>();
-    private static Long lastFoundId = null;
+    private static Map<String, Long> assignedSystemIds = new HashMap<>();
+    private static Long lastSystemId = null;
+    private static Map<String, Long> assignedGameIds = new HashMap<>();
+    private static Long lastGameId = null;
+    private static Map<String, Long> assignedROmhackIds = new HashMap<>();
+    private static Long lastRomhackId = null;
+    private static Map<String, Long> assignedPatchIds = new HashMap<>();
+    private static Long lastPatchId = null;
 
-    private static void updateLastFoundId(boolean dryRun, Romhack romhack) {
+    private static void updateLastPatchId(boolean dryRun, Romhack romhack) {
         // Update assigned ids, two patch folders belong to the same patch if the share name and authors
 
         for (int patchIndex = 0; patchIndex < romhack.patches().size(); patchIndex++) {
             Patch patch = romhack.patches().get(patchIndex);
             String patchSignature = CSV.toString(patch.name()) + " " + CSV.toString(patch.authors());
             if (patch.id() == null && !dryRun) { // Update Patch
-                Long assignedValue = assignedIds.get(patchSignature);
+                Long assignedValue = assignedPatchIds.get(patchSignature);
                 if (assignedValue == null) {
-                    if (lastFoundId == null) {
+                    if (lastPatchId == null) {
                         assignedValue = 1L; // First value
                     } else {
-                        assignedValue = lastFoundId + 1;
+                        assignedValue = lastPatchId + 1;
                     }
                 }
                 patch = new Patch(assignedValue, patch.name(), patch.authors(), patch.shortAuthors(), patch.url(), patch.otherUrls(), patch.version(), patch.releaseDate(), patch.options(), patch.labels(), patch.medias());
@@ -74,13 +80,13 @@ public class MigrationAssistant {
 
             // Update stored id
             if (patch.id() != null) {
-                if (lastFoundId == null || lastFoundId < patch.id()) {
-                    lastFoundId = patch.id();
+                if (lastPatchId == null || lastPatchId < patch.id()) {
+                    lastPatchId = patch.id();
                 }
             }
             // Update assigned ids
-            if (!assignedIds.containsKey(patchSignature) && patch.id() != null) {
-                assignedIds.put(patchSignature, patch.id());
+            if (!assignedPatchIds.containsKey(patchSignature) && patch.id() != null) {
+                assignedPatchIds.put(patchSignature, patch.id());
             }
         }
     }
@@ -112,7 +118,7 @@ public class MigrationAssistant {
                     }
                     String json = Files.readString(romhackPath, StandardCharsets.UTF_8);
                     Romhack romhack = romhackReaderWriter.read(json);
-                    updateLastFoundId(dryRun, romhack);
+                    updateLastPatchId(dryRun, romhack);
                     String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
                     String updatedJson = romhackReaderWriter.write(romhack);
                     if (!json.equals(updatedJson)) {
