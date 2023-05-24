@@ -44,7 +44,7 @@ public class IndexCreator {
                 }
                 switch (format) {
                     case csv -> {
-                        CSV.write(Path.of("rom-file-index.csv"), IndexRomhack.headers(), rows);
+                        CSV.write(Path.of("../docs/database/rom-file-index.csv"), IndexRomhack.headers(), rows);
                     }
                     case md -> {
                         StringBuilder builder = new StringBuilder();
@@ -89,7 +89,7 @@ public class IndexCreator {
                             }
                             builder.append("|").append("\n");
                         }
-                        Files.write(Path.of("rom-file-index.md"), builder.toString().getBytes(StandardCharsets.UTF_8));
+                        Files.write(Path.of("../docs/database/rom-file-index.md"), builder.toString().getBytes(StandardCharsets.UTF_8));
                     }
                 }
             } else {

@@ -5,4 +5,4 @@
 # Table of Contents
 1. [**Introduction**](./docs/introduction.md)
 2. [**Contributor Guide**](./docs/contributor-guide.md)
-3. [**Rom File Index**](./docs/rom-file-index.md)
+3. [**Rom File Index**](./docs/database/rom-file-index.md)
