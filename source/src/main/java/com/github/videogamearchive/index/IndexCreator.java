@@ -1,18 +1,25 @@
 package com.github.videogamearchive.index;
 
+import com.github.videogamearchive.model.Game;
 import com.github.videogamearchive.model.Romhack;
+import com.github.videogamearchive.model.System_;
+import com.github.videogamearchive.model.json.GameMapper;
 import com.github.videogamearchive.model.json.RomhackMapper;
+import com.github.videogamearchive.model.json.SystemMapper;
 import com.github.videogamearchive.util.CSV;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class IndexCreator {
+
+    private static final String SYSTEM_JSON = "system.json";
+
+    private static final String GAME_JSON = "game.json";
     private static final String ROMHACK_JSON = "romhack.json";
 
     private static final String ROMHACK_BPS = "romhack.bps";
@@ -21,16 +28,15 @@ public class IndexCreator {
     private static SimpleDateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
     private static String NOW = TIMESTAMP_FORMAT.format(new Date());
     private static List<IndexRomhack> romhacks = new ArrayList<>();
-    private static RomhackMapper romhackReader = new RomhackMapper();
-
-    public enum Format {csv, md}
+    private static SystemMapper systemMapper = new SystemMapper();
+    private static GameMapper gameMapper = new GameMapper();
+    private static RomhackMapper romhackMapper = new RomhackMapper();
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 2) {
+        if (args.length != 1) {
             help();
         } else {
-            Format format = Format.valueOf(args[0]);
-            File root = new File(args[1]);
+            File root = new File(args[0]);
             if (root.exists() && root.isDirectory()) {
                 for (File systemFolder:root.listFiles()) {
                     processSystem(systemFolder);
@@ -42,56 +48,7 @@ public class IndexCreator {
                 for (IndexRomhack row:romhacks) {
                     rows.add(row.row());
                 }
-                switch (format) {
-                    case csv -> {
-                        CSV.write(Path.of("../docs/database/rom-file-index.csv"), IndexRomhack.headers(), rows);
-                    }
-                    case md -> {
-                        StringBuilder builder = new StringBuilder();
-                        builder.append("![videogame archive](../brand/videogame-archive-(alt).png \"Videogame Archive\")").append("\n").append("\n");
-                        builder.append("# Romhack Archive: Rom File Index").append("\n").append("\n");
-                        builder.append("This table can be also downloaded as a standard Comma Separated Value (CSV) format file, as for RFC4180: [Download](./rom-file-index.csv)").append("\n").append("\n");
-
-                        StringBuilder headerBuilder = new StringBuilder();
-                        String[] headers = IndexRomhack.headers();
-                        int downloadIndex = -1;
-                        for (int i = 0; i < headers.length;i++) {
-                            String header = headers[i];
-                            if (header.equals("Download")) {
-                                downloadIndex = i;
-                            }
-                            headerBuilder.append("|");
-                            headerBuilder.append("**").append(header).append("**");
-                        }
-                        headerBuilder.append("|").append("\n");
-
-                        int separatorLength = headerBuilder.length() - 1;
-                        for (int i = 0; i < separatorLength; i++) {
-                            if (headerBuilder.charAt(i) == '|') {
-                                headerBuilder.append("|");
-                            } else {
-                                headerBuilder.append("-");
-                            }
-                        }
-                        headerBuilder.append("\n");
-
-                        builder.append(headerBuilder);
-                        for (String[] row:rows) {
-                            for (int i = 0; i < row.length; i++) {
-                                String field = row[i];
-                                builder.append("|");
-
-                                if (i == downloadIndex) {
-                                    builder.append("[Download](").append(field).append(")");
-                                } else {
-                                    builder.append(field);
-                                }
-                            }
-                            builder.append("|").append("\n");
-                        }
-                        Files.write(Path.of("../docs/database/rom-file-index.md"), builder.toString().getBytes(StandardCharsets.UTF_8));
-                    }
-                }
+                CSV.write(Path.of("../docs/database/database.csv"), IndexRomhack.headers(), rows);
             } else {
                 help();
             }
@@ -99,24 +56,38 @@ public class IndexCreator {
     }
     private static void help() {
         System.out.println("usage: ");
-        System.out.println("\t\t java -jar [csv|md] index-creator.jar \"pathToArchiveRoot\"");
+        System.out.println("\t\t java -jar index-creator.jar \"pathToDatabaseRoot\"");
     }
 
-    private static void processSystem(File system) throws IOException, ReflectiveOperationException {
-        if (!system.isDirectory()) {
-            ignored(system);
+    private static void processSystem(File systemFolder) throws IOException, ReflectiveOperationException {
+        if (!systemFolder.isDirectory()) {
+            ignored(systemFolder);
             return;
         } else {
-            processing(system);
+            processing(systemFolder);
         }
-        for (File parent:system.listFiles()) {
-            if (!parent.isDirectory()) {
-                ignored(parent);
+        System_ system = null;
+        if(Files.exists(systemFolder.toPath().resolve(SYSTEM_JSON))) {
+            system = systemMapper.read(systemFolder.toPath().resolve(SYSTEM_JSON));
+        } else {
+            system = new System_(null);
+        }
+
+        for (File parentFolder:systemFolder.listFiles()) {
+            if (!parentFolder.isDirectory()) {
+                ignored(parentFolder);
                 continue;
             } else {
-                processing(parent);
+                processing(parentFolder);
             }
-            for (File clone:parent.listFiles()) {
+            Game game = null;
+            if(Files.exists(parentFolder.toPath().resolve(GAME_JSON))) {
+                game = gameMapper.read(parentFolder.toPath().resolve(GAME_JSON));
+            } else {
+                game = new Game(null);
+            }
+
+            for (File clone:parentFolder.listFiles()) {
                 if (!clone.isDirectory()) {
                     ignored(clone);
                     continue;
@@ -140,8 +111,8 @@ public class IndexCreator {
                     processing(clone);
                 }
 
-                Romhack romhack = romhackReader.read(romhackJSON.toPath());
-                IndexRomhack extendedRomhack = new IndexRomhack(system.getName(), parent.getName(), clone.getName(), romhack);
+                Romhack romhack = romhackMapper.read(romhackJSON.toPath());
+                IndexRomhack extendedRomhack = new IndexRomhack(system.id(), systemFolder.getName(), game.id(), parentFolder.getName(), clone.getName(), romhack);
                 addGame(extendedRomhack);
             }
         }

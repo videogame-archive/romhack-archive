@@ -5,4 +5,5 @@
 # Table of Contents
 1. [**Introduction**](./docs/introduction.md)
 2. [**Contributor Guide**](./docs/contributor-guide.md)
-3. [**Rom File Index**](./docs/database/rom-file-index.md)
+
+The complete database can be also downloaded as a standard Comma Separated Value (CSV) format file, as for RFC4180: [Download](./docs/database/database.csv)"

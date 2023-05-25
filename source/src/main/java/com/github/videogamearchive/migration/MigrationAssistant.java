@@ -108,7 +108,7 @@ public class MigrationAssistant {
     }
 
     private static void processGame(boolean dryRun, GameMapper parentMapper, File gameFolder) throws IOException, ReflectiveOperationException {
-        Path parentPath = gameFolder.toPath().resolve("parent.json");
+        Path parentPath = gameFolder.toPath().resolve("game.json");
         String json = null;
         Game game = null;
         if (Files.exists(parentPath)) {

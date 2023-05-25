@@ -8,7 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public record IndexRomhack(
+        Long systemId,
         String system,
+        Long gameId,
         String parent,
         String name,
         Romhack romhack) implements Comparable<IndexRomhack> {
@@ -16,7 +18,9 @@ public record IndexRomhack(
     public static String[] headers() {
         String[] indexHeaders = new String[] {
                 // Folder names info
-                "Parent", "Name", "Download", "System",
+                "System Id", "System", "Game Id", "Parent", "Name",
+                // Id
+                "Romhack Id",
                 // Info
                 "Name (original)", "Translated Title", "Status", "Adult", "Offensive", "Obsolete Version", "Back Catalog",
                 // Provenance
@@ -47,10 +51,16 @@ public record IndexRomhack(
         return indexHeadersAsList.toArray(new String[] {});
     }
 
+    public String getDownload() {
+        return CSV.toString("https://github.com/videogame-archive/romhack-archive/raw/main/database/" + system + "/" + parent + "/" + name + "/romhack.bps");
+    }
+
     public String[] row() {
         String[] index = new String[] {
                 // Folder names info
-                CSV.toString(parent), CSV.toString(name), CSV.toString("https://github.com/videogame-archive/romhack-archive/raw/main/database/" + system + "/" + parent + "/" + name + "/romhack.bps"), CSV.toString(system),
+                CSV.toString(systemId), CSV.toString(system), CSV.toString(gameId), CSV.toString(parent), CSV.toString(name),
+                // Id
+                CSV.toString(romhack.id()),
                 // Info
                 CSV.toString(romhack.info().name()), CSV.toString(romhack.info().translatedTitle()), CSV.toString(romhack.info().status()), CSV.toString(romhack.info().adult()), CSV.toString(romhack.info().offensive()), CSV.toString(romhack.info().obsoleteVersion()), CSV.toString(romhack.info().backCatalog()),
                 // Provenance
