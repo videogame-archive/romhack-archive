@@ -1,13 +1,14 @@
 package com.github.videogamearchive.migration;
 
 import com.github.videogamearchive.model.System_;
-import com.github.videogamearchive.model.Parent;
+import com.github.videogamearchive.model.Game;
 import com.github.videogamearchive.model.Patch;
 import com.github.videogamearchive.model.Romhack;
-import com.github.videogamearchive.model.json.ParentMapper;
+import com.github.videogamearchive.model.json.GameMapper;
 import com.github.videogamearchive.model.json.RomhackMapper;
 import com.github.videogamearchive.model.json.SystemMapper;
 import com.github.videogamearchive.model.validator.RomhackValidator;
+import com.github.videogamearchive.util.CSV;
 import com.github.videogamearchive.util.PathUtil;
 
 import java.io.File;
@@ -52,13 +53,13 @@ public class MigrationAssistant {
     }
 
     private static IdentifiableCache<System_> systemIdentifiableCache = new IdentifiableCache<>();
-    private static IdentifiableCache<Parent> parentIdentifiableCache = new IdentifiableCache<>();
+    private static IdentifiableCache<Game> parentIdentifiableCache = new IdentifiableCache<>();
     private static IdentifiableCache<Romhack> romhackIdentifiableCache = new IdentifiableCache<>();
     private static IdentifiableCache<Patch> patchIdentifiableCache = new IdentifiableCache<>();
 
     public static void migrate(boolean dryRun, File root) throws ReflectiveOperationException, IOException {
         SystemMapper systemMapper = new SystemMapper();
-        ParentMapper parentMapper = new ParentMapper();
+        GameMapper parentMapper = new GameMapper();
         RomhackMapper romhackMapper = new RomhackMapper();
 
         for (File systemFolder:root.listFiles()) {
@@ -77,7 +78,7 @@ public class MigrationAssistant {
                     ignored(parentFolder);
                     continue;
                 }
-                processParent(dryRun, parentMapper, parentFolder);
+                processGame(dryRun, parentMapper, parentFolder);
                 for (File romhackFolder:folders) {
                     processRomhack(dryRun, romhackMapper, romhackFolder);
                 }
@@ -106,19 +107,19 @@ public class MigrationAssistant {
         }
     }
 
-    private static void processParent(boolean dryRun, ParentMapper parentMapper, File parentFolder) throws IOException, ReflectiveOperationException {
-        Path parentPath = parentFolder.toPath().resolve("parent.json");
+    private static void processGame(boolean dryRun, GameMapper parentMapper, File gameFolder) throws IOException, ReflectiveOperationException {
+        Path parentPath = gameFolder.toPath().resolve("parent.json");
         String json = null;
-        Parent parent = null;
+        Game game = null;
         if (Files.exists(parentPath)) {
             json = Files.readString(parentPath, StandardCharsets.UTF_8);
-            parent = parentMapper.read(json);
+            game = parentMapper.read(json);
         } else {
             json = "{}";
-            parent = new Parent(null);
+            game = new Game(null);
         }
-        parent = parentIdentifiableCache.updateLastId(dryRun, parentFolder.getName(), parent);
-        String updatedJson = parentMapper.write(parent);
+        game = parentIdentifiableCache.updateLastId(dryRun, gameFolder.getName(), game);
+        String updatedJson = parentMapper.write(game);
         if (!json.equals(updatedJson)) {
             System.out.println("UPDATE\tjson\t" + PathUtil.getName(parentPath));
         }
@@ -137,10 +138,18 @@ public class MigrationAssistant {
         Romhack romhack = romhackMapper.read(json);
         romhack = romhackIdentifiableCache.updateLastId(dryRun, romhackFolder.getName(), romhack);
         String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
+
+        for (int i = 0; i < romhack.patches().size(); i++) {
+            Patch patch = romhack.patches().get(i);
+            Patch newPatch = patchIdentifiableCache.updateLastId(dryRun, patch.name() + " " + CSV.toString(patch.authors()), patch);
+            romhack.patches().set(i, newPatch);
+        }
+
         String updatedJson = romhackMapper.write(romhack);
         if (!json.equals(updatedJson)) {
             System.out.println("UPDATE\tjson\t" + PathUtil.getName(romhackPath));
         }
+
         if (!dryRun) {
             Files.writeString(romhackPath, updatedJson, StandardCharsets.UTF_8);
         }
