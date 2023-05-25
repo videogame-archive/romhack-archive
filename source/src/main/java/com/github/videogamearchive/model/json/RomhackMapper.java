@@ -2,42 +2,14 @@ package com.github.videogamearchive.model.json;
 
 import com.github.videogamearchive.model.*;
 
-import javax.json.JsonObject;
-import javax.json.stream.JsonParser;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.Serializable;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class RomhackMapper extends JSONMapper {
+public class RomhackMapper extends JSONMapper<Romhack> {
 
-    public Romhack read(Path path) throws IOException, ReflectiveOperationException {
-        JsonParser jsonParser = jsonProvider.createParser(new InputStreamReader(Files.newInputStream(path), charset));
-        return read(jsonParser);
-    }
-
-    public Romhack read(String string) throws ReflectiveOperationException {
-        JsonParser jsonParser = jsonProvider.createParser(new InputStreamReader(new ByteArrayInputStream(string.getBytes(charset)), charset));
-        return read(jsonParser);
-    }
-
-    private Romhack read(JsonParser jsonParser) throws ReflectiveOperationException {
-        jsonParser.next();
-        JsonObject object = jsonParser.getObject();
-        Map<String, Serializable> jsonMap = getMap(object);
-        return buildRomhack(jsonMap);
-    }
-
-    //
-    // Read : Data binding to Romhack type
-    //
-
-    private Romhack buildRomhack(Map<String, Serializable> romhackAsMap) throws ReflectiveOperationException {
+    protected Romhack build(Map<String, Serializable> romhackAsMap) throws ReflectiveOperationException {
         Romhack romhack = new Romhack(
                 (Long) romhackAsMap.get("id"),
                 buildObject(Info.class, (Map<String, Serializable>) romhackAsMap.get("info")),

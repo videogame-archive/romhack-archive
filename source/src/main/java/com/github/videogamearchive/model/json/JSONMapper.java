@@ -1,8 +1,18 @@
 package com.github.videogamearchive.model.json;
 
-import javax.json.*;
+import javax.json.Json;
+import javax.json.JsonArray;
+import javax.json.JsonArrayBuilder;
+import javax.json.JsonNumber;
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
+import javax.json.JsonString;
+import javax.json.JsonValue;
+import javax.json.JsonWriter;
+import javax.json.JsonWriterFactory;
 import javax.json.spi.JsonProvider;
 import javax.json.stream.JsonGenerator;
+import javax.json.stream.JsonParser;
 import java.io.*;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -18,7 +28,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public abstract class JSONMapper {
+public abstract class JSONMapper<RECORD extends Record> {
     protected static final JsonProvider jsonProvider = JsonProvider.provider();
 
     //
@@ -163,6 +173,25 @@ public abstract class JSONMapper {
     //
     // Read
     //
+
+    public RECORD read(Path path) throws IOException, ReflectiveOperationException {
+        JsonParser jsonParser = jsonProvider.createParser(new InputStreamReader(Files.newInputStream(path), charset));
+        return read(jsonParser);
+    }
+
+    public RECORD read(String string) throws ReflectiveOperationException {
+        JsonParser jsonParser = jsonProvider.createParser(new InputStreamReader(new ByteArrayInputStream(string.getBytes(charset)), charset));
+        return read(jsonParser);
+    }
+
+    private RECORD read(JsonParser jsonParser) throws ReflectiveOperationException {
+        jsonParser.next();
+        JsonObject object = jsonParser.getObject();
+        Map<String, Serializable> jsonMap = getMap(object);
+        return build(jsonMap);
+    }
+
+    protected abstract RECORD build(Map<String, Serializable> jsonMap) throws ReflectiveOperationException;
 
     protected <E> List<E> buildList(Class<E> clazz, List<Map<String, Serializable>> patchesAsListOfMaps) throws ReflectiveOperationException {
         List<E> patches = new ArrayList<>(patchesAsListOfMaps.size());
