@@ -2,6 +2,8 @@ package com.github.videogamearchive.hack2arch;
 
 import com.github.videogamearchive.community.rhdn.RHDNResource;
 import com.github.videogamearchive.model.*;
+import com.github.videogamearchive.model.json.RomhackMapper;
+import com.github.videogamearchive.model.validator.RomhackValidator;
 import com.github.videogamearchive.rompatcher.MarcFile;
 import com.github.videogamearchive.rompatcher.formats.BPS;
 import com.github.videogamearchive.util.*;
@@ -98,7 +100,7 @@ public class Romhack2Archive {
             patches.add(patch);
         }
         Romhack romhack = new Romhack(null, info, provenance, rom, patches);
-        RomhackReaderWriter romhackReaderWriter = new RomhackReaderWriter();
+        RomhackMapper romhackReaderWriter = new RomhackMapper();
         String json = romhackReaderWriter.write(romhack);
         json = json.replace("\"status\": null,", "\"status\": \"Fully Playable | Incomplete\",");
         if (!urls.isEmpty()) {

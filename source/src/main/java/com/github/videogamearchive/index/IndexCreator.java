@@ -1,7 +1,7 @@
 package com.github.videogamearchive.index;
 
 import com.github.videogamearchive.model.Romhack;
-import com.github.videogamearchive.model.RomhackReaderWriter;
+import com.github.videogamearchive.model.json.RomhackMapper;
 import com.github.videogamearchive.util.CSV;
 
 import java.io.File;
@@ -21,7 +21,7 @@ public class IndexCreator {
     private static SimpleDateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
     private static String NOW = TIMESTAMP_FORMAT.format(new Date());
     private static List<IndexRomhack> romhacks = new ArrayList<>();
-    private static RomhackReaderWriter romhackReader = new RomhackReaderWriter();
+    private static RomhackMapper romhackReader = new RomhackMapper();
 
     public enum Format {csv, md}
 

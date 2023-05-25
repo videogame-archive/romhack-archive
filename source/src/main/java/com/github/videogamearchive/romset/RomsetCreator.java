@@ -1,8 +1,8 @@
 package com.github.videogamearchive.romset;
 
 import com.github.videogamearchive.model.Romhack;
-import com.github.videogamearchive.model.RomhackReaderWriter;
-import com.github.videogamearchive.model.RomhackValidator;
+import com.github.videogamearchive.model.json.RomhackMapper;
+import com.github.videogamearchive.model.validator.RomhackValidator;
 import com.github.videogamearchive.rompatcher.MarcFile;
 import com.github.videogamearchive.rompatcher.formats.BPS;
 import com.github.videogamearchive.util.PathUtil;
@@ -26,7 +26,7 @@ public class RomsetCreator {
 
     private static final String ROMHACK_ORIGINAL = "romhack-original";
 
-    private static RomhackReaderWriter romhackReader = new RomhackReaderWriter();
+    private static RomhackMapper romhackReader = new RomhackMapper();
     public static void main(String[] args) throws Exception {
         if (args.length != 3 && args.length != 4) {
             help();

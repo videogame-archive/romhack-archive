@@ -1,4 +1,4 @@
-package com.github.videogamearchive.model;
+package com.github.videogamearchive.model.json;
 
 import javax.json.*;
 import javax.json.spi.JsonProvider;
@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public abstract class ReaderWriter {
+public abstract class JSONMapper {
     protected static final JsonProvider jsonProvider = JsonProvider.provider();
 
     //

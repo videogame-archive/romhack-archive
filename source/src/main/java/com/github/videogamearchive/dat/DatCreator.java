@@ -1,7 +1,7 @@
 package com.github.videogamearchive.dat;
 import com.github.videogamearchive.model.Romhack;
-import com.github.videogamearchive.model.RomhackReaderWriter;
-import com.github.videogamearchive.model.RomhackValidator;
+import com.github.videogamearchive.model.json.RomhackMapper;
+import com.github.videogamearchive.model.validator.RomhackValidator;
 import com.github.videogamearchive.util.PathUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -34,7 +34,7 @@ public class DatCreator {
     private static String NOW = TIMESTAMP_FORMAT.format(new Date());
     private static Map<String, Document> documents = new HashMap<>();
 
-    private static RomhackReaderWriter romhackReader = new RomhackReaderWriter();
+    private static RomhackMapper romhackReader = new RomhackMapper();
     public static void main(String[] args) throws Exception {
         if (args.length != 1 && args.length != 2) {
             help();

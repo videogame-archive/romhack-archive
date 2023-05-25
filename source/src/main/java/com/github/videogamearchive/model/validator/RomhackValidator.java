@@ -1,5 +1,7 @@
-package com.github.videogamearchive.model;
+package com.github.videogamearchive.model.validator;
 
+import com.github.videogamearchive.model.Patch;
+import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.rompatcher.MarcFile;
 import com.github.videogamearchive.rompatcher.formats.BPS;
 import com.github.videogamearchive.util.Hashes;

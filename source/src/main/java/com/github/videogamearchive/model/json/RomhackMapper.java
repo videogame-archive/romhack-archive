@@ -1,4 +1,6 @@
-package com.github.videogamearchive.model;
+package com.github.videogamearchive.model.json;
+
+import com.github.videogamearchive.model.*;
 
 import javax.json.JsonObject;
 import javax.json.stream.JsonParser;
@@ -12,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class RomhackReaderWriter extends ReaderWriter {
+public class RomhackMapper extends JSONMapper {
 
     public Romhack read(Path path) throws IOException, ReflectiveOperationException {
         JsonParser jsonParser = jsonProvider.createParser(new InputStreamReader(Files.newInputStream(path), charset));
