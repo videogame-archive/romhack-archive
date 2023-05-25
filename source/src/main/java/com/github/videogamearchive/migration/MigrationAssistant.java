@@ -4,7 +4,9 @@ import com.github.videogamearchive.model.System_;
 import com.github.videogamearchive.model.Parent;
 import com.github.videogamearchive.model.Patch;
 import com.github.videogamearchive.model.Romhack;
+import com.github.videogamearchive.model.json.ParentMapper;
 import com.github.videogamearchive.model.json.RomhackMapper;
+import com.github.videogamearchive.model.json.SystemMapper;
 import com.github.videogamearchive.model.validator.RomhackValidator;
 import com.github.videogamearchive.util.PathUtil;
 
@@ -50,56 +52,92 @@ public class MigrationAssistant {
     }
 
     private static IdentifiableCache<System_> systemIdentifiableCache = new IdentifiableCache<>();
-    private static IdentifiableCache<Parent> gameIdentifiableCache = new IdentifiableCache<>();
+    private static IdentifiableCache<Parent> parentIdentifiableCache = new IdentifiableCache<>();
     private static IdentifiableCache<Romhack> romhackIdentifiableCache = new IdentifiableCache<>();
     private static IdentifiableCache<Patch> patchIdentifiableCache = new IdentifiableCache<>();
 
     public static void migrate(boolean dryRun, File root) throws ReflectiveOperationException, IOException {
+        SystemMapper systemMapper = new SystemMapper();
+        ParentMapper parentMapper = new ParentMapper();
+        RomhackMapper romhackMapper = new RomhackMapper();
 
-        RomhackMapper romhackReaderWriter = new RomhackMapper();
-
-        for (File system:root.listFiles()) {
-            processSystem(system);
-            if (system.isFile()) {
-                ignored(system);
+        for (File systemFolder:root.listFiles()) {
+            if (systemFolder.isFile()) {
+                ignored(systemFolder);
                 continue;
             }
-            for (File parentFolder:system.listFiles()) {
-                if (system.isFile()) {
+            processSystem(dryRun, systemMapper, systemFolder);
+            for (File parentFolder:systemFolder.listFiles()) {
+                if (systemFolder.isFile()) {
                     ignored(parentFolder);
                     continue;
                 }
                 File[] folders = parentFolder.listFiles();
                 if (folders == null) {
-                    ignored(system);
+                    ignored(parentFolder);
                     continue;
                 }
+                processParent(dryRun, parentMapper, parentFolder);
                 for (File romhackFolder:folders) {
-                    processRomhack(dryRun, romhackReaderWriter, romhackFolder);
+                    processRomhack(dryRun, romhackMapper, romhackFolder);
                 }
             }
         }
     }
 
-    private static void processSystem(File systemFolder) {
+    private static void processSystem(boolean dryRun, SystemMapper systemMapper, File systemFolder) throws IOException, ReflectiveOperationException {
         Path systemPath = systemFolder.toPath().resolve("system.json");
+        String json = null;
         System_ system = null;
         if (Files.exists(systemPath)) {
-
+            json = Files.readString(systemPath, StandardCharsets.UTF_8);
+            system = systemMapper.read(json);
+        } else {
+            json = "{}";
+            system = new System_(null);
+        }
+        system = systemIdentifiableCache.updateLastId(dryRun, systemFolder.getName(), system);
+        String updatedJson = systemMapper.write(system);
+        if (!json.equals(updatedJson)) {
+            System.out.println("UPDATE\tjson\t" + PathUtil.getName(systemPath));
+        }
+        if (!dryRun) {
+            Files.writeString(systemPath, updatedJson, StandardCharsets.UTF_8);
         }
     }
 
-    private static void processRomhack(boolean dryRun, RomhackMapper romhackReaderWriter, File romhackFolder) throws IOException, ReflectiveOperationException {
+    private static void processParent(boolean dryRun, ParentMapper parentMapper, File parentFolder) throws IOException, ReflectiveOperationException {
+        Path parentPath = parentFolder.toPath().resolve("parent.json");
+        String json = null;
+        Parent parent = null;
+        if (Files.exists(parentPath)) {
+            json = Files.readString(parentPath, StandardCharsets.UTF_8);
+            parent = parentMapper.read(json);
+        } else {
+            json = "{}";
+            parent = new Parent(null);
+        }
+        parent = parentIdentifiableCache.updateLastId(dryRun, parentFolder.getName(), parent);
+        String updatedJson = parentMapper.write(parent);
+        if (!json.equals(updatedJson)) {
+            System.out.println("UPDATE\tjson\t" + PathUtil.getName(parentPath));
+        }
+        if (!dryRun) {
+            Files.writeString(parentPath, updatedJson, StandardCharsets.UTF_8);
+        }
+    }
+
+    private static void processRomhack(boolean dryRun, RomhackMapper romhackMapper, File romhackFolder) throws IOException, ReflectiveOperationException {
         Path romhackPath = romhackFolder.toPath().resolve("romhack.json");
         if (!Files.exists(romhackPath)) {
             ignored(romhackFolder);
             return;
         }
         String json = Files.readString(romhackPath, StandardCharsets.UTF_8);
-        Romhack romhack = romhackReaderWriter.read(json);
+        Romhack romhack = romhackMapper.read(json);
         romhack = romhackIdentifiableCache.updateLastId(dryRun, romhackFolder.getName(), romhack);
         String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
-        String updatedJson = romhackReaderWriter.write(romhack);
+        String updatedJson = romhackMapper.write(romhack);
         if (!json.equals(updatedJson)) {
             System.out.println("UPDATE\tjson\t" + PathUtil.getName(romhackPath));
         }

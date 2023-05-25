@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class IdentifiableCache<RECORD extends Identifiable<RECORD>> {
-    private static Map<String, Long> assignedIds = new HashMap<>();
-    private static Long lastId = null;
+    private Map<String, Long> assignedIds = new HashMap<>();
+    private Long lastId = null;
 
     public RECORD updateLastId(boolean dryRun, String signature, RECORD identifiable) {
         if (identifiable.id() == null && !dryRun) { // Update
