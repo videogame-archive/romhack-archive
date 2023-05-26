@@ -95,7 +95,7 @@ public class MigrationAssistant {
             system = systemMapper.read(json);
         } else {
             json = "{}";
-            system = new System_(null);
+            system = new System_(systemFolder.getName(), null);
         }
         system = systemIdentifiableCache.updateLastId(dryRun, systemFolder.getName(), system);
         String updatedJson = systemMapper.write(system);
@@ -116,7 +116,7 @@ public class MigrationAssistant {
             game = parentMapper.read(json);
         } else {
             json = "{}";
-            game = new Game(null);
+            game = new Game(gameFolder.getName(), null);
         }
         game = parentIdentifiableCache.updateLastId(dryRun, gameFolder.getName(), game);
         String updatedJson = parentMapper.write(game);

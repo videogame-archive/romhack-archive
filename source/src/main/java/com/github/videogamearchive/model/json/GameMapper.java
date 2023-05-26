@@ -8,7 +8,7 @@ import java.util.Map;
 public class GameMapper extends JSONMapper<Game> {
 
     protected Game build(Map<String, Serializable> romhackAsMap) throws ReflectiveOperationException {
-        return new Game((Long) romhackAsMap.get("id"));
+        return new Game((String) romhackAsMap.get("name"), (Long) romhackAsMap.get("id"));
     }
 
 }
