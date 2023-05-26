@@ -44,15 +44,15 @@ public class MarkdownGenerator {
         generateFilePage(cacheDB);
     }
     private static void generateFilePage(CacheDatabase cacheDB) throws IOException, ReflectiveOperationException {
-        for (long id:cacheDB.filesById.keySet()) {
-            IndexRomhack indexRomhack = cacheDB.filesById.get(id);
+        for (long id:cacheDB.getFilesById().keySet()) {
+            IndexRomhack indexRomhack = cacheDB.getFilesById().get(id);
             Path path = Path.of("../docs/database/file/" + id + "/index");
             Files.createDirectories(path.getParent());
             Markdown markdown = Markdown.builder()
                     .name(path.toString())
                     .block(getBrand(3))
                     .block(StringBlock.builder().content("\n").build())
-                    .block(getTitle("File: " + id))
+                    .block(getTitle("File: " + indexRomhack.name()))
                     .block(StringBlock.builder().content("\n").build())
                     .block(CodeBlock.builder().language("json").content(new RomhackMapper().write(indexRomhack.romhack())).build())
                     .build();
@@ -60,8 +60,9 @@ public class MarkdownGenerator {
         }
     }
     private static void generatePatchPage(CacheDatabase cacheDB) throws IOException {
-        for (long id:cacheDB.patchById.keySet()) {
-            TableBlock table = getRomhacksTable(cacheDB.filesByPatch.get(id));
+        for (long id:cacheDB.getPatchById().keySet()) {
+            Patch patch = cacheDB.getPatchById().get(id);
+            TableBlock table = getRomhacksTable(cacheDB.getFilesByPatch().get(id));
 
             Path path = Path.of("../docs/database/patch/" + id + "/index");
             Files.createDirectories(path.getParent());
@@ -70,7 +71,7 @@ public class MarkdownGenerator {
                     .name(path.toString())
                     .block(getBrand(3))
                     .block(StringBlock.builder().content("\n").build())
-                    .block(getTitle("Patch: " + id))
+                    .block(getTitle("Patch: " + patch.name()))
                     .block(StringBlock.builder().content("\n").build())
                     .block(table)
                     .build();
@@ -79,8 +80,10 @@ public class MarkdownGenerator {
     }
 
     private static void generateGamePage(CacheDatabase cacheDB) throws IOException {
-        for (long id:cacheDB.gameById.keySet()) {
-            TableBlock table = getRomhacksTable(cacheDB.filesByGame.get(id));
+        for (long id:cacheDB.getGameById().keySet()) {
+            Game game = cacheDB.getGameById().get(id);
+
+            TableBlock table = getRomhacksTable(cacheDB.getFilesByGame().get(id));
 
             Path path = Path.of("../docs/database/game/" + id + "/index");
             Files.createDirectories(path.getParent());
@@ -89,7 +92,7 @@ public class MarkdownGenerator {
                     .name(path.toString())
                     .block(getBrand(3))
                     .block(StringBlock.builder().content("\n").build())
-                    .block(getTitle("Game: " + id))
+                    .block(getTitle("Game: " + game.name()))
                     .block(StringBlock.builder().content("\n").build())
                     .block(table)
                     .build();
@@ -98,8 +101,10 @@ public class MarkdownGenerator {
     }
 
     private static void generateSystemPage(CacheDatabase cacheDB) throws IOException {
-        for (long id:cacheDB.systemById.keySet()) {
-            TableBlock table = getRomhacksTable(cacheDB.filesBySystem.get(id));
+        for (long id:cacheDB.getSystemById().keySet()) {
+            System_ system = cacheDB.getSystemById().get(id);
+
+            TableBlock table = getRomhacksTable(cacheDB.getFilesBySystem().get(id));
 
             Path path = Path.of("../docs/database/system/" + id + "/index");
             Files.createDirectories(path.getParent());
@@ -108,7 +113,7 @@ public class MarkdownGenerator {
                     .name(path.toString())
                     .block(getBrand(3))
                     .block(StringBlock.builder().content("\n").build())
-                    .block(getTitle("System: " + id))
+                    .block(getTitle("System: " + system.name()))
                     .block(StringBlock.builder().content("\n").build())
                     .block(table)
                     .build();
@@ -137,10 +142,10 @@ public class MarkdownGenerator {
     private static void generateMainIndexPage(CacheDatabase cacheDB) throws IOException {
         List<TableBlock.TableRow> rows = new ArrayList<>();
 
-        for (Long id:cacheDB.systemNames.keySet()) {
-            String name = cacheDB.systemNames.get(id);
+        for (Long id:cacheDB.getSystemById().keySet()) {
+            System_ system = cacheDB.getSystemById().get(id);
             List<String> rowValue = new ArrayList<>();
-            UrlElement element = UrlElement.builder().tips(name).url("system/" + id + "/index.md").build();
+            UrlElement element = UrlElement.builder().tips(system.name()).url("system/" + id + "/index.md").build();
             rowValue.add(element.toMd());
             TableBlock.TableRow row = new TableBlock.TableRow();
             row.setRows(rowValue);
@@ -183,7 +188,7 @@ public class MarkdownGenerator {
     private static class CacheDatabase implements IndexCreator.IdentifiableVisitor {
         // Systems Page - List Systems [System Name]
         // docs/database/index.html
-        private final Map<Long, String> systemNames = new HashMap<>();
+        //
 
         // System Page - List - Games / Files [Parent Name, File Name]
         // docs/database/system/id/index.html
@@ -208,7 +213,6 @@ public class MarkdownGenerator {
         public void walk(File identifiableFolder, Identifiable identifiable) {
             if (identifiable instanceof System_) {
                 System_ system = (System_) identifiable;
-                systemNames.put(system.id(), identifiableFolder.getName());
                 systemById.put(system.id(), system);
             } else if (identifiable instanceof Game) {
                 Game game = (Game) identifiable;
@@ -242,10 +246,6 @@ public class MarkdownGenerator {
                     filesByPatchList.add(indexRomhack);
                 }
             }
-        }
-
-        public Map<Long, String> getSystemNames() {
-            return systemNames;
         }
 
         public Map<Long, List<IndexRomhack>> getFilesBySystem() {

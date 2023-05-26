@@ -1,8 +1,8 @@
 package com.github.videogamearchive.model;
 
-public record Game(Long id) implements Identifiable<Game> {
+public record Game(String name, Long id) implements Identifiable<Game> {
     @Override
     public Game withId(Long id) {
-        return new Game(id);
+        return new Game(name, id);
     }
 }

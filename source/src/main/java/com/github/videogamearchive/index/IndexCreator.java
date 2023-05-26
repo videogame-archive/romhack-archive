@@ -83,7 +83,7 @@ public class IndexCreator {
         if(Files.exists(systemFolder.toPath().resolve(SYSTEM_JSON))) {
             system = systemMapper.read(systemFolder.toPath().resolve(SYSTEM_JSON));
         } else {
-            system = new System_(null);
+            system = new System_(systemFolder.getName(),null);
         }
         identifiableVisitor.walk(systemFolder, system);
 
@@ -98,7 +98,7 @@ public class IndexCreator {
             if(Files.exists(parentFolder.toPath().resolve(GAME_JSON))) {
                 game = gameMapper.read(parentFolder.toPath().resolve(GAME_JSON));
             } else {
-                game = new Game(null);
+                game = new Game(parentFolder.getName(), null);
             }
             identifiableVisitor.walk(parentFolder, game);
 
