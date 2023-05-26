@@ -9,6 +9,7 @@ import com.github.videogamearchive.util.PathUtil;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
@@ -60,6 +61,10 @@ public class RomhackValidator {
 
         // romhack-original - ensure only folders are found
         Path originalFolder = romFolder.resolve("romhack-original");
+        if (!Files.exists(originalFolder)) {
+            throw new RuntimeException("Missing romhack-original folder");
+        }
+
         for (File version:originalFolder.toFile().listFiles()) {
             if (!version.isDirectory()) {
                 throw new RuntimeException("file in romhack-original folder when it can only contain directories");
