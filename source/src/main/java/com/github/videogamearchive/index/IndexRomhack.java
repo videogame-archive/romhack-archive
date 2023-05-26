@@ -1,5 +1,6 @@
 package com.github.videogamearchive.index;
 
+import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Patch;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.util.CSV;
@@ -13,7 +14,7 @@ public record IndexRomhack(
         Long gameId,
         String parent,
         String name,
-        Romhack romhack) implements Comparable<IndexRomhack> {
+        Romhack romhack) implements Comparable<IndexRomhack>, Identifiable<IndexRomhack> {
 
     public static String[] headers() {
         String[] indexHeaders = new String[] {
@@ -49,10 +50,6 @@ public record IndexRomhack(
         }
 
         return indexHeadersAsList.toArray(new String[] {});
-    }
-
-    public String getDownload() {
-        return CSV.toString("https://github.com/videogame-archive/romhack-archive/raw/main/database/" + system + "/" + parent + "/" + name + "/romhack.bps");
     }
 
     public String[] row() {
@@ -98,8 +95,35 @@ public record IndexRomhack(
 
         return romAsList.toArray(new String[] {});
     }
+
+    //
+    //
+    //
+
     @Override
     public int compareTo(IndexRomhack o) {
         return name.compareTo(o.name);
+    }
+
+    //
+    //
+    //
+
+    @Override
+    public Long id() {
+        return romhack.id();
+    }
+
+    @Override
+    public IndexRomhack withId(Long id) {
+        return new IndexRomhack(systemId, system, gameId, parent, name, romhack.withId(id));
+    }
+
+    //
+    //
+    //
+
+    public String getDownload() {
+        return CSV.toString("https://github.com/videogame-archive/romhack-archive/raw/main/database/" + system + "/" + parent + "/" + name + "/romhack.bps");
     }
 }

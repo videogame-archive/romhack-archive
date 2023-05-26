@@ -1,6 +1,7 @@
 package com.github.videogamearchive.index;
 
 import com.github.videogamearchive.model.Game;
+import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.model.System_;
 import com.github.videogamearchive.model.json.GameMapper;
@@ -38,11 +39,12 @@ public class IndexCreator {
         } else {
             File root = new File(args[0]);
             if (root.exists() && root.isDirectory()) {
-                for (File systemFolder:root.listFiles()) {
-                    processSystem(systemFolder);
-                }
-
-                //
+                processDatabase(root, new IdentifiableVisitor() {
+                    @Override
+                    public void walk(File identifiableFolder, Identifiable identifiable) {
+                        // Do nothing
+                    }
+                });
                 Collections.sort(romhacks);
                 List<String[]> rows = new ArrayList<>(romhacks.size());
                 for (IndexRomhack row:romhacks) {
@@ -54,12 +56,23 @@ public class IndexCreator {
             }
         }
     }
+
     private static void help() {
         System.out.println("usage: ");
         System.out.println("\t\t java -jar index-creator.jar \"pathToDatabaseRoot\"");
     }
 
-    private static void processSystem(File systemFolder) throws IOException, ReflectiveOperationException {
+    public interface IdentifiableVisitor {
+        void walk(File identifiableFolder, Identifiable identifiable);
+    }
+
+    public static void processDatabase(File databaseFolder, IdentifiableVisitor identifiableVisitor) throws IOException, ReflectiveOperationException {
+        for (File systemFolder: databaseFolder.listFiles()) {
+            processSystem(systemFolder, identifiableVisitor);
+        }
+    }
+
+    private static void processSystem(File systemFolder, IdentifiableVisitor identifiableVisitor) throws IOException, ReflectiveOperationException {
         if (!systemFolder.isDirectory()) {
             ignored(systemFolder);
             return;
@@ -72,6 +85,7 @@ public class IndexCreator {
         } else {
             system = new System_(null);
         }
+        identifiableVisitor.walk(systemFolder, system);
 
         for (File parentFolder:systemFolder.listFiles()) {
             if (!parentFolder.isDirectory()) {
@@ -86,16 +100,17 @@ public class IndexCreator {
             } else {
                 game = new Game(null);
             }
+            identifiableVisitor.walk(parentFolder, game);
 
-            for (File clone:parentFolder.listFiles()) {
-                if (!clone.isDirectory()) {
-                    ignored(clone);
+            for (File cloneFolder:parentFolder.listFiles()) {
+                if (!cloneFolder.isDirectory()) {
+                    ignored(cloneFolder);
                     continue;
                 }
                 File romhackJSON = null;
                 File romhackBPS = null;
                 File romhackOriginal = null;
-                for (File file:clone.listFiles()) {
+                for (File file:cloneFolder.listFiles()) {
                     if (file.getName().equals(ROMHACK_JSON) && file.isFile()) {
                         romhackJSON = file;
                     } else if (file.getName().equals(ROMHACK_BPS) && file.isFile()) {
@@ -105,14 +120,15 @@ public class IndexCreator {
                     }
                 }
                 if (romhackJSON == null || romhackBPS == null || romhackOriginal == null) {
-                    ignored(clone);
+                    ignored(cloneFolder);
                     continue;
                 } else {
-                    processing(clone);
+                    processing(cloneFolder);
                 }
 
                 Romhack romhack = romhackMapper.read(romhackJSON.toPath());
-                IndexRomhack extendedRomhack = new IndexRomhack(system.id(), systemFolder.getName(), game.id(), parentFolder.getName(), clone.getName(), romhack);
+                IndexRomhack extendedRomhack = new IndexRomhack(system.id(), systemFolder.getName(), game.id(), parentFolder.getName(), cloneFolder.getName(), romhack);
+                identifiableVisitor.walk(cloneFolder, extendedRomhack);
                 addGame(extendedRomhack);
             }
         }

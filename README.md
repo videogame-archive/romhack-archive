@@ -6,4 +6,4 @@
 1. [**Introduction**](./docs/introduction.md)
 2. [**Contributor Guide**](./docs/contributor-guide.md)
 
-The complete database can be also downloaded as a standard Comma Separated Value (CSV) format file, as for RFC4180: [Download](./docs/database/database.csv)"
+The complete database can be also downloaded as a standard Comma Separated Value (CSV) format file, as for RFC4180: [Download](./docs/database/database.csv)
