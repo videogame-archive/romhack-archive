@@ -119,7 +119,9 @@ public class IndexCreator {
                         romhackOriginal = file;
                     }
                 }
-                if (romhackJSON == null || romhackBPS == null || romhackOriginal == null) {
+                if (romhackJSON != null && romhackBPS != null && romhackOriginal == null) {
+                    throw new RuntimeException("Missing romhack-original folder");
+                } else if (romhackJSON == null || romhackBPS == null || romhackOriginal == null) {
                     ignored(cloneFolder);
                     continue;
                 } else {
