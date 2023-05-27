@@ -1,6 +1,7 @@
 package com.github.videogamearchive.migration;
 
-import com.github.videogamearchive.database.IdentifiableVisitor;
+import com.github.videogamearchive.database.DatabaseVisitor;
+import com.github.videogamearchive.database.DatabaseWalker;
 import com.github.videogamearchive.index.ExtendedRomhack;
 import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.model.json.GameMapper;
@@ -64,7 +65,7 @@ public class MigrationAssistant {
         GameMapper gameMapper = new GameMapper();
         RomhackMapper romhackMapper = new RomhackMapper();
 
-        IdentifiableVisitor.processDatabase(root, new IdentifiableVisitor() {
+        DatabaseWalker.processDatabase(root, new DatabaseVisitor() {
             @Override
             public boolean validate() {
                 return validate;
@@ -88,7 +89,7 @@ public class MigrationAssistant {
     }
 
     private static void processSystem(boolean dryRun, System_ system, SystemMapper systemMapper, File systemFolder) throws IOException, ReflectiveOperationException {
-        Path systemPath = systemFolder.toPath().resolve(IdentifiableVisitor.SYSTEM_JSON);
+        Path systemPath = systemFolder.toPath().resolve(DatabaseWalker.SYSTEM_JSON);
         String json = systemMapper.write(system);
         system = systemIdentifiableCache.updateLastId(dryRun, systemFolder.getName(), system);
         String updatedJson = systemMapper.write(system);
@@ -101,7 +102,7 @@ public class MigrationAssistant {
     }
 
     private static void processGame(boolean dryRun, Game game, GameMapper gameMapper, File gameFolder) throws IOException, ReflectiveOperationException {
-        Path parentPath = gameFolder.toPath().resolve(IdentifiableVisitor.GAME_JSON);
+        Path parentPath = gameFolder.toPath().resolve(DatabaseWalker.GAME_JSON);
         String json = gameMapper.write(game);
         game = parentIdentifiableCache.updateLastId(dryRun, gameFolder.getName(), game);
         String updatedJson = gameMapper.write(game);
@@ -114,7 +115,7 @@ public class MigrationAssistant {
     }
 
     private static void processRomhack(boolean dryRun, ExtendedRomhack indexRomhack, RomhackMapper romhackMapper, File romhackFolder) throws IOException, ReflectiveOperationException {
-        Path romhackPath = romhackFolder.toPath().resolve(IdentifiableVisitor.ROMHACK_JSON);
+        Path romhackPath = romhackFolder.toPath().resolve(DatabaseWalker.ROMHACK_JSON);
         String json = romhackMapper.write(indexRomhack.romhack());
         Romhack romhack = indexRomhack.romhack();
         romhack = romhackIdentifiableCache.updateLastId(dryRun, romhackFolder.getName(), romhack);

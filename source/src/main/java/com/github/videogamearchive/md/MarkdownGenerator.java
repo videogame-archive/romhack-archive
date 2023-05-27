@@ -1,6 +1,7 @@
 package com.github.videogamearchive.md;
 
-import com.github.videogamearchive.database.IdentifiableVisitor;
+import com.github.videogamearchive.database.DatabaseVisitor;
+import com.github.videogamearchive.database.DatabaseWalker;
 import com.github.videogamearchive.index.ExtendedRomhack;
 import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.model.json.RomhackMapper;
@@ -31,7 +32,7 @@ public class MarkdownGenerator {
             File root = new File(args[0]);
             if (root.exists() && root.isDirectory()) {
                 CacheDatabase cacheDB = new CacheDatabase(validate);
-                IdentifiableVisitor.processDatabase(root, cacheDB);
+                DatabaseWalker.processDatabase(root, cacheDB);
                 generatePages(cacheDB);
             } else {
                 help();
@@ -44,7 +45,7 @@ public class MarkdownGenerator {
         System.out.println("\t\t java -jar page-creator.jar \"database\" [--validate]");
     }
 
-    private static class CacheDatabase implements IdentifiableVisitor {
+    private static class CacheDatabase implements DatabaseVisitor {
         // Systems Page - List Systems [System Name]
         // docs/database/index.html
         //

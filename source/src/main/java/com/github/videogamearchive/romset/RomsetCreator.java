@@ -1,6 +1,7 @@
 package com.github.videogamearchive.romset;
 
-import com.github.videogamearchive.database.IdentifiableVisitor;
+import com.github.videogamearchive.database.DatabaseVisitor;
+import com.github.videogamearchive.database.DatabaseWalker;
 import com.github.videogamearchive.index.ExtendedRomhack;
 import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Romhack;
@@ -33,7 +34,7 @@ public class RomsetCreator {
             if (patchesRoot.exists() && patchesRoot.isDirectory()) {
                 File roms = new File(args[1]);
                 File romsOutput = new File(args[2]);
-                IdentifiableVisitor visitor = new IdentifiableVisitor() {
+                DatabaseVisitor visitor = new DatabaseVisitor() {
                     @Override
                     public boolean validate() {
                         return validate;
@@ -49,7 +50,7 @@ public class RomsetCreator {
                                 File pathToInputRom = getInputRom(roms,
                                         system,
                                         parent);
-                                File romhackBPS = identifiableFolder.toPath().resolve(IdentifiableVisitor.ROMHACK_BPS).toFile();
+                                File romhackBPS = identifiableFolder.toPath().resolve(DatabaseWalker.ROMHACK_BPS).toFile();
                                 String romhackFileName = indexRomhack.parent();
                                 String zipName = PathUtil.getNameWithoutExtension(romhackFileName) + ".zip";
                                 File pathToOutputRomZip = getOutputRom(romsOutput, system, zipName);
@@ -61,7 +62,7 @@ public class RomsetCreator {
                     }
                 };
 
-                IdentifiableVisitor.processDatabase(patchesRoot, visitor);
+                DatabaseWalker.processDatabase(patchesRoot, visitor);
             } else {
                 help();
             }

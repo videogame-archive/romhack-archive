@@ -2,7 +2,6 @@ package com.github.videogamearchive.database;
 
 import com.github.videogamearchive.index.ExtendedRomhack;
 import com.github.videogamearchive.model.Game;
-import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.model.System_;
 import com.github.videogamearchive.model.json.GameMapper;
@@ -14,24 +13,20 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 
-public interface IdentifiableVisitor {
-
+public class DatabaseWalker {
     public static final String SYSTEM_JSON = "system.json";
     public static final String GAME_JSON = "game.json";
     public static final String ROMHACK_JSON = "romhack.json";
     public static final String ROMHACK_BPS = "romhack.bps";
     public static final String ROMHACK_ORIGINAL = "romhack-original";
 
-    boolean validate();
-    void walk(File identifiableFolder, Identifiable identifiable);
-
-    public static void processDatabase(File databaseFolder, IdentifiableVisitor identifiableVisitor) throws IOException, ReflectiveOperationException {
+    public static void processDatabase(File databaseFolder, DatabaseVisitor identifiableVisitor) throws IOException, ReflectiveOperationException {
         for (File systemFolder: databaseFolder.listFiles()) {
             processSystem(systemFolder, identifiableVisitor);
         }
     }
 
-    public static void processSystem(File systemFolder, IdentifiableVisitor identifiableVisitor) throws IOException, ReflectiveOperationException {
+    public static void processSystem(File systemFolder, DatabaseVisitor identifiableVisitor) throws IOException, ReflectiveOperationException {
         SystemMapper systemMapper = new SystemMapper();
         GameMapper gameMapper = new GameMapper();
         RomhackMapper romhackMapper = new RomhackMapper();

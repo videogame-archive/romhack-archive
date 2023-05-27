@@ -1,5 +1,6 @@
 package com.github.videogamearchive.dat;
-import com.github.videogamearchive.database.IdentifiableVisitor;
+import com.github.videogamearchive.database.DatabaseVisitor;
+import com.github.videogamearchive.database.DatabaseWalker;
 import com.github.videogamearchive.index.ExtendedRomhack;
 import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Romhack;
@@ -41,7 +42,7 @@ public class DatCreator {
             }
             File root = new File(args[0]);
             if (root.exists() && root.isDirectory()) {
-                IdentifiableVisitor visitor = new IdentifiableVisitor() {
+                DatabaseVisitor visitor = new DatabaseVisitor() {
                     @Override
                     public boolean validate() {
                         return validate;
@@ -61,7 +62,7 @@ public class DatCreator {
                     }
                 };
 
-                IdentifiableVisitor.processDatabase(root, visitor);
+                DatabaseWalker.processDatabase(root, visitor);
 
                 for (String name:documents.keySet()) {
                     output(documents.get(name), Files.newOutputStream(Path.of(name + ".xml")), true);

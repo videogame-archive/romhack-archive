@@ -1,6 +1,7 @@
 package com.github.videogamearchive.index;
 
-import com.github.videogamearchive.database.IdentifiableVisitor;
+import com.github.videogamearchive.database.DatabaseVisitor;
+import com.github.videogamearchive.database.DatabaseWalker;
 import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.util.CSV;
 
@@ -24,7 +25,7 @@ public class IndexCreator {
             }
             File root = new File(args[0]);
             if (root.exists() && root.isDirectory()) {
-                IdentifiableVisitor.processDatabase(root, new IdentifiableVisitor() {
+                DatabaseWalker.processDatabase(root, new DatabaseVisitor() {
                     @Override
                     public boolean validate() {
                         return validate;
