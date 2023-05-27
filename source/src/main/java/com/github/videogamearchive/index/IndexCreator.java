@@ -107,23 +107,28 @@ public class IndexCreator {
                     ignored(cloneFolder);
                     continue;
                 }
+                int romhackFiles = 0;
                 File romhackJSON = null;
                 File romhackBPS = null;
                 File romhackOriginal = null;
                 for (File file:cloneFolder.listFiles()) {
                     if (file.getName().equals(ROMHACK_JSON) && file.isFile()) {
                         romhackJSON = file;
+                        romhackFiles++;
                     } else if (file.getName().equals(ROMHACK_BPS) && file.isFile()) {
                         romhackBPS = file;
+                        romhackFiles++;
                     } else if(file.getName().equals(ROMHACK_ORIGINAL) && file.isDirectory() && file.listFiles().length > 0) {
                         romhackOriginal = file;
+                        romhackFiles++;
                     }
                 }
-                if (romhackJSON != null && romhackBPS != null && romhackOriginal == null) {
-                    throw new RuntimeException("Missing romhack-original folder");
-                } else if (romhackJSON == null || romhackBPS == null || romhackOriginal == null) {
+
+                if (romhackFiles == 0) {
                     ignored(cloneFolder);
                     continue;
+                } else if (romhackFiles != 3) {
+                    throw new RuntimeException("Missing romhack.json, romhack.bps or romhack-original folder");
                 } else {
                     processing(cloneFolder);
                 }

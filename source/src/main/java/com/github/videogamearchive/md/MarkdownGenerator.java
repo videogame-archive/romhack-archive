@@ -5,10 +5,7 @@ import com.github.videogamearchive.index.IndexRomhack;
 import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.model.json.RomhackMapper;
 import fun.mingshan.markdown4j.Markdown;
-import fun.mingshan.markdown4j.type.block.CodeBlock;
-import fun.mingshan.markdown4j.type.block.StringBlock;
-import fun.mingshan.markdown4j.type.block.TableBlock;
-import fun.mingshan.markdown4j.type.block.TitleBlock;
+import fun.mingshan.markdown4j.type.block.*;
 import fun.mingshan.markdown4j.type.element.ImageElement;
 import fun.mingshan.markdown4j.type.element.UrlElement;
 import fun.mingshan.markdown4j.writer.MdWriter;
@@ -34,150 +31,6 @@ public class MarkdownGenerator {
                 help();
             }
         }
-    }
-
-    private static void generatePages(CacheDatabase cacheDB) throws IOException, ReflectiveOperationException {
-        generateMainIndexPage(cacheDB);
-        generateSystemPage(cacheDB);
-        generateGamePage(cacheDB);
-        generatePatchPage(cacheDB);
-        generateFilePage(cacheDB);
-    }
-    private static void generateFilePage(CacheDatabase cacheDB) throws IOException, ReflectiveOperationException {
-        for (long id:cacheDB.getFilesById().keySet()) {
-            IndexRomhack indexRomhack = cacheDB.getFilesById().get(id);
-            Path path = Path.of("../docs/database/file/" + id + "/index");
-            Files.createDirectories(path.getParent());
-            Markdown markdown = Markdown.builder()
-                    .name(path.toString())
-                    .block(getBrand(3))
-                    .block(StringBlock.builder().content("\n").build())
-                    .block(getTitle("File: " + indexRomhack.name()))
-                    .block(StringBlock.builder().content("\n").build())
-                    .block(CodeBlock.builder().language("json").content(new RomhackMapper().write(indexRomhack.romhack())).build())
-                    .build();
-            MdWriter.write(markdown);
-        }
-    }
-    private static void generatePatchPage(CacheDatabase cacheDB) throws IOException {
-        for (long id:cacheDB.getPatchById().keySet()) {
-            Patch patch = cacheDB.getPatchById().get(id);
-            TableBlock table = getRomhacksTable(cacheDB.getFilesByPatch().get(id));
-
-            Path path = Path.of("../docs/database/patch/" + id + "/index");
-            Files.createDirectories(path.getParent());
-
-            Markdown markdown = Markdown.builder()
-                    .name(path.toString())
-                    .block(getBrand(3))
-                    .block(StringBlock.builder().content("\n").build())
-                    .block(getTitle("Patch: " + patch.name()))
-                    .block(StringBlock.builder().content("\n").build())
-                    .block(table)
-                    .build();
-            MdWriter.write(markdown);
-        }
-    }
-
-    private static void generateGamePage(CacheDatabase cacheDB) throws IOException {
-        for (long id:cacheDB.getGameById().keySet()) {
-            Game game = cacheDB.getGameById().get(id);
-
-            TableBlock table = getRomhacksTable(cacheDB.getFilesByGame().get(id));
-
-            Path path = Path.of("../docs/database/game/" + id + "/index");
-            Files.createDirectories(path.getParent());
-
-            Markdown markdown = Markdown.builder()
-                    .name(path.toString())
-                    .block(getBrand(3))
-                    .block(StringBlock.builder().content("\n").build())
-                    .block(getTitle("Game: " + game.name()))
-                    .block(StringBlock.builder().content("\n").build())
-                    .block(table)
-                    .build();
-            MdWriter.write(markdown);
-        }
-    }
-
-    private static void generateSystemPage(CacheDatabase cacheDB) throws IOException {
-        for (long id:cacheDB.getSystemById().keySet()) {
-            System_ system = cacheDB.getSystemById().get(id);
-
-            TableBlock table = getRomhacksTable(cacheDB.getFilesBySystem().get(id));
-
-            Path path = Path.of("../docs/database/system/" + id + "/index");
-            Files.createDirectories(path.getParent());
-
-            Markdown markdown = Markdown.builder()
-                    .name(path.toString())
-                    .block(getBrand(3))
-                    .block(StringBlock.builder().content("\n").build())
-                    .block(getTitle("System: " + system.name()))
-                    .block(StringBlock.builder().content("\n").build())
-                    .block(table)
-                    .build();
-            MdWriter.write(markdown);
-        }
-    }
-
-    private static TableBlock getRomhacksTable(List<IndexRomhack> romhacks) {
-        List<TableBlock.TableRow> rows = new ArrayList<>();
-        if (romhacks != null) {
-            for (IndexRomhack romhack : romhacks) {
-                List<String> rowValue = new ArrayList<>();
-                UrlElement element1 = UrlElement.builder().tips(romhack.parent()).url("../../game/" + romhack.gameId() + "/index.md").build();
-                rowValue.add(element1.toMd());
-                UrlElement element2 = UrlElement.builder().tips(romhack.name()).url("../../file/" + romhack.romhack().id() + "/index.md").build();
-                rowValue.add(element2.toMd());
-                TableBlock.TableRow row = new TableBlock.TableRow();
-                row.setRows(rowValue);
-                rows.add(row);
-            }
-        }
-        TableBlock table = TableBlock.builder().titles(List.of("Game", "Romhack")).rows(rows).build();
-        return table;
-    }
-
-    private static void generateMainIndexPage(CacheDatabase cacheDB) throws IOException {
-        List<TableBlock.TableRow> rows = new ArrayList<>();
-
-        for (Long id:cacheDB.getSystemById().keySet()) {
-            System_ system = cacheDB.getSystemById().get(id);
-            List<String> rowValue = new ArrayList<>();
-            UrlElement element = UrlElement.builder().tips(system.name()).url("system/" + id + "/index.md").build();
-            rowValue.add(element.toMd());
-            TableBlock.TableRow row = new TableBlock.TableRow();
-            row.setRows(rowValue);
-            rows.add(row);
-        }
-
-        TableBlock table = TableBlock.builder().titles(List.of("System")).rows(rows).build();
-
-        Markdown markdown = Markdown.builder()
-                .name("../docs/database/index")
-                .block(getBrand(1))
-                .block(StringBlock.builder().content("\n").build())
-                .block(getTitle("Systems:"))
-                .block(StringBlock.builder().content("\n").build())
-                .block(table)
-                .build();
-        MdWriter.write(markdown);
-    }
-
-    private static TitleBlock getTitle(String title) {
-        return TitleBlock.builder().level(TitleBlock.Level.FIRST).content(title).build();
-    }
-
-    private static StringBlock getBrand(int level) {
-        String path = "brand/videogame-archive-(alt).png";
-        while (level > 0) {
-            path = "../" + path;
-            level--;
-        }
-        return ImageElement.builder()
-                .imageUrl(path)
-                .build().toBlock();
     }
 
     private static void help() {
@@ -276,4 +129,121 @@ public class MarkdownGenerator {
             return filesById;
         }
     }
+
+    private static void generatePages(CacheDatabase cacheDB) throws IOException, ReflectiveOperationException {
+        generateMainIndexPage(cacheDB);
+        generateSystemPage(cacheDB);
+        generateGamePage(cacheDB);
+        generatePatchPage(cacheDB);
+        generateFilePage(cacheDB);
+    }
+
+    //
+    // General Markdown ELements
+    //
+    private static TitleBlock getTitle(String title) {
+        return TitleBlock.builder().level(TitleBlock.Level.FIRST).content(title).build();
+    }
+
+    private static StringBlock getBrand(int level) {
+        String path = "brand/videogame-archive-(alt).png";
+        while (level > 0) {
+            path = "../" + path;
+            level--;
+        }
+        return ImageElement.builder()
+                .imageUrl(path)
+                .build().toBlock();
+    }
+    private static void write(Path path, int level, String title, Block content) throws IOException {
+        Markdown markdown = Markdown.builder()
+                .name(path.toString())
+                .block(getBrand(level))
+                .block(StringBlock.builder().content("\n").build())
+                .block(getTitle(title))
+                .block(StringBlock.builder().content("\n").build())
+                .block(content)
+                .build();
+        MdWriter.write(markdown);
+    }
+
+    private static TableBlock getRomhacksTable(List<IndexRomhack> romhacks) {
+        List<TableBlock.TableRow> rows = new ArrayList<>();
+        if (romhacks != null) {
+            for (IndexRomhack romhack : romhacks) {
+                List<String> rowValue = new ArrayList<>();
+                UrlElement element1 = UrlElement.builder().tips(romhack.parent()).url("../../game/" + romhack.gameId() + "/index.md").build();
+                rowValue.add(element1.toMd());
+                UrlElement element2 = UrlElement.builder().tips(romhack.name()).url("../../file/" + romhack.romhack().id() + "/index.md").build();
+                rowValue.add(element2.toMd());
+                TableBlock.TableRow row = new TableBlock.TableRow();
+                row.setRows(rowValue);
+                rows.add(row);
+            }
+        }
+        TableBlock table = TableBlock.builder().titles(List.of("Game", "Romhack")).rows(rows).build();
+        return table;
+    }
+
+    //
+    // Pages
+    //
+
+    private static void generateFilePage(CacheDatabase cacheDB) throws IOException, ReflectiveOperationException {
+        for (long id:cacheDB.getFilesById().keySet()) {
+            IndexRomhack indexRomhack = cacheDB.getFilesById().get(id);
+            Path path = Path.of("../docs/database/file/" + id + "/index");
+            Files.createDirectories(path.getParent());
+            write(path, 3, "File: " + indexRomhack.name(), CodeBlock.builder().language("json").content(new RomhackMapper().write(indexRomhack.romhack())).build());
+        }
+    }
+
+    private static void generatePatchPage(CacheDatabase cacheDB) throws IOException {
+        for (long id:cacheDB.getPatchById().keySet()) {
+            Patch patch = cacheDB.getPatchById().get(id);
+            TableBlock table = getRomhacksTable(cacheDB.getFilesByPatch().get(id));
+            Path path = Path.of("../docs/database/patch/" + id + "/index");
+            Files.createDirectories(path.getParent());
+            write(path, 3, "Patch: " + patch.name(), table);
+        }
+    }
+
+    private static void generateGamePage(CacheDatabase cacheDB) throws IOException {
+        for (long id:cacheDB.getGameById().keySet()) {
+            Game game = cacheDB.getGameById().get(id);
+            TableBlock table = getRomhacksTable(cacheDB.getFilesByGame().get(id));
+            Path path = Path.of("../docs/database/game/" + id + "/index");
+            Files.createDirectories(path.getParent());
+            write(path, 3, "Game: " + game.name(), table);
+        }
+    }
+
+    private static void generateSystemPage(CacheDatabase cacheDB) throws IOException {
+        for (long id:cacheDB.getSystemById().keySet()) {
+            System_ system = cacheDB.getSystemById().get(id);
+            TableBlock table = getRomhacksTable(cacheDB.getFilesBySystem().get(id));
+            Path path = Path.of("../docs/database/system/" + id + "/index");
+            Files.createDirectories(path.getParent());
+            write(path, 3, "System: " + system.name(), table);
+        }
+    }
+
+    private static void generateMainIndexPage(CacheDatabase cacheDB) throws IOException {
+        List<TableBlock.TableRow> rows = new ArrayList<>();
+
+        for (Long id:cacheDB.getSystemById().keySet()) {
+            System_ system = cacheDB.getSystemById().get(id);
+            List<String> rowValue = new ArrayList<>();
+            UrlElement element = UrlElement.builder().tips(system.name()).url("system/" + id + "/index.md").build();
+            rowValue.add(element.toMd());
+            TableBlock.TableRow row = new TableBlock.TableRow();
+            row.setRows(rowValue);
+            rows.add(row);
+        }
+
+        TableBlock table = TableBlock.builder().titles(List.of("System")).rows(rows).build();
+        Path path = Path.of("../docs/database/index");
+        write(path, 1, "Systems:", table);
+    }
+
 }
