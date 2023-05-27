@@ -1,9 +1,8 @@
 package com.github.videogamearchive.migration;
 
-import com.github.videogamearchive.model.System_;
-import com.github.videogamearchive.model.Game;
-import com.github.videogamearchive.model.Patch;
-import com.github.videogamearchive.model.Romhack;
+import com.github.videogamearchive.database.IdentifiableVisitor;
+import com.github.videogamearchive.index.ExtendedRomhack;
+import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.model.json.GameMapper;
 import com.github.videogamearchive.model.json.RomhackMapper;
 import com.github.videogamearchive.model.json.SystemMapper;
@@ -21,16 +20,19 @@ public class MigrationAssistant {
 
     private static void help() {
         System.out.println("usage: ");
-        System.out.println("\t\t java -jar migration-assistant.jar [--dry-run] \"archiveRoot\"");
+        System.out.println("\t\t java -jar migration-assistant.jar [--dry-run][--validate] \"database\"");
     }
 
     public static void main(String[] args) throws ReflectiveOperationException, IOException {
-        if (args.length == 1 || args.length == 2) {
+        if (args.length == 2 || args.length == 3) {
             File root = null;
             boolean dryRun = false;
+            boolean validate = false;
             for (String arg:args) {
-                if (arg.equals("--dry-run")) {
+                if (arg.equals("--dryr-un")) {
                     dryRun = true;
+                } else if (arg.equals("--validate")) {
+                    validate = true;
                 } else if (Files.exists(Path.of(arg))) {
                     root = new File(arg);
                 } else {
@@ -39,10 +41,10 @@ public class MigrationAssistant {
             }
             if (root != null) {
                 System.out.println("migrate - dry run");
-                migrate(true, root); // first pass is used to find out the last id on the database
+                migrate(true, validate, root); // first pass is used to find out the last id on the database
                 System.out.println("An existing folder is required to continue, aborting.");
                 if (!dryRun) {
-                    migrate(false, root); // second pass makes changes if requested
+                    migrate(false, false, root); // second pass makes changes if requested
                 }
             } else {
                 System.out.println("An existing folder is required to continue, aborting.");
@@ -57,46 +59,37 @@ public class MigrationAssistant {
     private static IdentifiableCache<Romhack> romhackIdentifiableCache = new IdentifiableCache<>();
     private static IdentifiableCache<Patch> patchIdentifiableCache = new IdentifiableCache<>();
 
-    public static void migrate(boolean dryRun, File root) throws ReflectiveOperationException, IOException {
+    public static void migrate(boolean dryRun, boolean validate, File root) throws ReflectiveOperationException, IOException {
         SystemMapper systemMapper = new SystemMapper();
-        GameMapper parentMapper = new GameMapper();
+        GameMapper gameMapper = new GameMapper();
         RomhackMapper romhackMapper = new RomhackMapper();
 
-        for (File systemFolder:root.listFiles()) {
-            if (systemFolder.isFile()) {
-                ignored(systemFolder);
-                continue;
+        IdentifiableVisitor.processDatabase(root, new IdentifiableVisitor() {
+            @Override
+            public boolean validate() {
+                return validate;
             }
-            processSystem(dryRun, systemMapper, systemFolder);
-            for (File parentFolder:systemFolder.listFiles()) {
-                if (systemFolder.isFile()) {
-                    ignored(parentFolder);
-                    continue;
-                }
-                File[] folders = parentFolder.listFiles();
-                if (folders == null) {
-                    ignored(parentFolder);
-                    continue;
-                }
-                processGame(dryRun, parentMapper, parentFolder);
-                for (File romhackFolder:folders) {
-                    processRomhack(dryRun, romhackMapper, romhackFolder);
+
+            @Override
+            public void walk(File identifiableFolder, Identifiable identifiable) {
+                try {
+                    if (identifiable instanceof System_) {
+                        processSystem(dryRun, (System_) identifiable, systemMapper, identifiableFolder);
+                    } else if (identifiable instanceof Game) {
+                        processGame(dryRun, (Game) identifiable, gameMapper, identifiableFolder);
+                    } else if (identifiable instanceof ExtendedRomhack) {
+                        processRomhack(dryRun, (ExtendedRomhack) identifiable, romhackMapper, identifiableFolder);
+                    }
+                } catch (Exception ex) {
+                    throw new RuntimeException(ex);
                 }
             }
-        }
+        });
     }
 
-    private static void processSystem(boolean dryRun, SystemMapper systemMapper, File systemFolder) throws IOException, ReflectiveOperationException {
-        Path systemPath = systemFolder.toPath().resolve("system.json");
-        String json = null;
-        System_ system = null;
-        if (Files.exists(systemPath)) {
-            json = Files.readString(systemPath, StandardCharsets.UTF_8);
-            system = systemMapper.read(json);
-        } else {
-            json = "{}";
-            system = new System_(systemFolder.getName(), null);
-        }
+    private static void processSystem(boolean dryRun, System_ system, SystemMapper systemMapper, File systemFolder) throws IOException, ReflectiveOperationException {
+        Path systemPath = systemFolder.toPath().resolve(IdentifiableVisitor.SYSTEM_JSON);
+        String json = systemMapper.write(system);
         system = systemIdentifiableCache.updateLastId(dryRun, systemFolder.getName(), system);
         String updatedJson = systemMapper.write(system);
         if (!json.equals(updatedJson)) {
@@ -107,19 +100,11 @@ public class MigrationAssistant {
         }
     }
 
-    private static void processGame(boolean dryRun, GameMapper parentMapper, File gameFolder) throws IOException, ReflectiveOperationException {
-        Path parentPath = gameFolder.toPath().resolve("game.json");
-        String json = null;
-        Game game = null;
-        if (Files.exists(parentPath)) {
-            json = Files.readString(parentPath, StandardCharsets.UTF_8);
-            game = parentMapper.read(json);
-        } else {
-            json = "{}";
-            game = new Game(gameFolder.getName(), null);
-        }
+    private static void processGame(boolean dryRun, Game game, GameMapper gameMapper, File gameFolder) throws IOException, ReflectiveOperationException {
+        Path parentPath = gameFolder.toPath().resolve(IdentifiableVisitor.GAME_JSON);
+        String json = gameMapper.write(game);
         game = parentIdentifiableCache.updateLastId(dryRun, gameFolder.getName(), game);
-        String updatedJson = parentMapper.write(game);
+        String updatedJson = gameMapper.write(game);
         if (!json.equals(updatedJson)) {
             System.out.println("UPDATE\tjson\t" + PathUtil.getName(parentPath));
         }
@@ -128,14 +113,10 @@ public class MigrationAssistant {
         }
     }
 
-    private static void processRomhack(boolean dryRun, RomhackMapper romhackMapper, File romhackFolder) throws IOException, ReflectiveOperationException {
-        Path romhackPath = romhackFolder.toPath().resolve("romhack.json");
-        if (!Files.exists(romhackPath)) {
-            ignored(romhackFolder);
-            return;
-        }
-        String json = Files.readString(romhackPath, StandardCharsets.UTF_8);
-        Romhack romhack = romhackMapper.read(json);
+    private static void processRomhack(boolean dryRun, ExtendedRomhack indexRomhack, RomhackMapper romhackMapper, File romhackFolder) throws IOException, ReflectiveOperationException {
+        Path romhackPath = romhackFolder.toPath().resolve(IdentifiableVisitor.ROMHACK_JSON);
+        String json = romhackMapper.write(indexRomhack.romhack());
+        Romhack romhack = indexRomhack.romhack();
         romhack = romhackIdentifiableCache.updateLastId(dryRun, romhackFolder.getName(), romhack);
         String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
 

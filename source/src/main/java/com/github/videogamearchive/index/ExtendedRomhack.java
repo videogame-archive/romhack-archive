@@ -8,13 +8,13 @@ import com.github.videogamearchive.util.CSV;
 import java.util.ArrayList;
 import java.util.List;
 
-public record IndexRomhack(
+public record ExtendedRomhack(
         Long systemId,
         String system,
         Long gameId,
         String parent,
         String name,
-        Romhack romhack) implements Comparable<IndexRomhack>, Identifiable<IndexRomhack> {
+        Romhack romhack) implements Comparable<ExtendedRomhack>, Identifiable<ExtendedRomhack> {
 
     public static String[] headers() {
         String[] indexHeaders = new String[] {
@@ -101,7 +101,7 @@ public record IndexRomhack(
     //
 
     @Override
-    public int compareTo(IndexRomhack o) {
+    public int compareTo(ExtendedRomhack o) {
         return name.compareTo(o.name);
     }
 
@@ -115,8 +115,8 @@ public record IndexRomhack(
     }
 
     @Override
-    public IndexRomhack withId(Long id) {
-        return new IndexRomhack(systemId, system, gameId, parent, name, romhack.withId(id));
+    public ExtendedRomhack withId(Long id) {
+        return new ExtendedRomhack(systemId, system, gameId, parent, name, romhack.withId(id));
     }
 
     //

@@ -71,7 +71,7 @@ public class RomPatcher {
 
     public static String helpMsg() {
         return "usage: \n" +
-                "\t\t java -jar rom-patcher.jar \"patch\" \"inputRom\" \"outputRom\" \n";
+                "\t\t java -jar rom-patcher.jar \"patch\" \"inputRom\" \"outputRom\"";
     }
     public static void help() {
         System.out.print(helpMsg());

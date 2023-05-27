@@ -1,7 +1,7 @@
 package com.github.videogamearchive.md;
 
-import com.github.videogamearchive.index.IndexCreator;
-import com.github.videogamearchive.index.IndexRomhack;
+import com.github.videogamearchive.database.IdentifiableVisitor;
+import com.github.videogamearchive.index.ExtendedRomhack;
 import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.model.json.RomhackMapper;
 import fun.mingshan.markdown4j.Markdown;
@@ -19,13 +19,19 @@ import java.util.*;
 public class MarkdownGenerator {
 
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) {
+        if (args.length != 1 && args.length != 2) {
             help();
         } else {
+            boolean validate;
+            if (args.length == 2) {
+                validate = args[1].equals("--validate");
+            } else {
+                validate = false;
+            }
             File root = new File(args[0]);
             if (root.exists() && root.isDirectory()) {
-                CacheDatabase cacheDB = new CacheDatabase();
-                IndexCreator.processDatabase(root, cacheDB);
+                CacheDatabase cacheDB = new CacheDatabase(validate);
+                IdentifiableVisitor.processDatabase(root, cacheDB);
                 generatePages(cacheDB);
             } else {
                 help();
@@ -35,32 +41,41 @@ public class MarkdownGenerator {
 
     private static void help() {
         System.out.println("usage: ");
-        System.out.println("\t\t java -jar page-creator.jar \"pathToDatabaseRoot\"");
+        System.out.println("\t\t java -jar page-creator.jar \"database\" [--validate]");
     }
 
-    private static class CacheDatabase implements IndexCreator.IdentifiableVisitor {
+    private static class CacheDatabase implements IdentifiableVisitor {
         // Systems Page - List Systems [System Name]
         // docs/database/index.html
         //
 
         // System Page - List - Games / Files [Parent Name, File Name]
         // docs/database/system/id/index.html
-        private final Map<Long, List<IndexRomhack>> filesBySystem = new HashMap<>();
+        private final Map<Long, List<ExtendedRomhack>> filesBySystem = new HashMap<>();
         private final Map<Long, System_> systemById = new HashMap<>();
 
         // Game Page - List - Games / Files [Parent Name, File Name]
         // docs/database/game/id/index.html
-        private final Map<Long, List<IndexRomhack>> filesByGame = new HashMap<>();
+        private final Map<Long, List<ExtendedRomhack>> filesByGame = new HashMap<>();
         private final Map<Long, Game> gameById = new HashMap<>();
 
         // Patch Page - List - Games / Files [Parent Name, File Name]
         // docs/database/patch/id/index.html
-        private final Map<Long, List<IndexRomhack>> filesByPatch = new HashMap<>();
+        private final Map<Long, List<ExtendedRomhack>> filesByPatch = new HashMap<>();
         private final Map<Long, Patch> patchById = new HashMap<>();
 
         // File Page [All Fields]
         // docs/database/file/id/index.html
-        private final Map<Long, IndexRomhack> filesById = new HashMap<>();
+        private final Map<Long, ExtendedRomhack> filesById = new HashMap<>();
+
+        private boolean validate;
+        public CacheDatabase(boolean validate) {
+            this.validate = validate;
+        }
+
+        public boolean validate() {
+            return validate;
+        }
 
         @Override
         public void walk(File identifiableFolder, Identifiable identifiable) {
@@ -70,18 +85,18 @@ public class MarkdownGenerator {
             } else if (identifiable instanceof Game) {
                 Game game = (Game) identifiable;
                 gameById.put(game.id(), game);
-            } else if (identifiable instanceof IndexRomhack) {
-                IndexRomhack indexRomhack = (IndexRomhack) identifiable;
+            } else if (identifiable instanceof ExtendedRomhack) {
+                ExtendedRomhack indexRomhack = (ExtendedRomhack) identifiable;
                 filesById.put(indexRomhack.romhack().id(), indexRomhack);
 
-                List<IndexRomhack> filesBySystemList = filesBySystem.get(indexRomhack.systemId());
+                List<ExtendedRomhack> filesBySystemList = filesBySystem.get(indexRomhack.systemId());
                 if (filesBySystemList == null) {
                     filesBySystemList = new ArrayList<>();
                     filesBySystem.put(indexRomhack.systemId(), filesBySystemList);
                 }
                 filesBySystemList.add(indexRomhack);
 
-                List<IndexRomhack> filesByGameList = filesByGame.get(indexRomhack.gameId());
+                List<ExtendedRomhack> filesByGameList = filesByGame.get(indexRomhack.gameId());
                 if (filesByGameList == null) {
                     filesByGameList = new ArrayList<>();
                     filesByGame.put(indexRomhack.gameId(), filesByGameList);
@@ -91,7 +106,7 @@ public class MarkdownGenerator {
                 for (Patch patch:indexRomhack.romhack().patches()) {
                     patchById.put(patch.id(), patch);
 
-                    List<IndexRomhack> filesByPatchList = filesByPatch.get(patch.id());
+                    List<ExtendedRomhack> filesByPatchList = filesByPatch.get(patch.id());
                     if (filesByPatchList == null) {
                         filesByPatchList = new ArrayList<>();
                         filesByPatch.put(patch.id(), filesByPatchList);
@@ -101,7 +116,7 @@ public class MarkdownGenerator {
             }
         }
 
-        public Map<Long, List<IndexRomhack>> getFilesBySystem() {
+        public Map<Long, List<ExtendedRomhack>> getFilesBySystem() {
             return filesBySystem;
         }
 
@@ -109,7 +124,7 @@ public class MarkdownGenerator {
             return systemById;
         }
 
-        public Map<Long, List<IndexRomhack>> getFilesByGame() {
+        public Map<Long, List<ExtendedRomhack>> getFilesByGame() {
             return filesByGame;
         }
 
@@ -117,7 +132,7 @@ public class MarkdownGenerator {
             return gameById;
         }
 
-        public Map<Long, List<IndexRomhack>> getFilesByPatch() {
+        public Map<Long, List<ExtendedRomhack>> getFilesByPatch() {
             return filesByPatch;
         }
 
@@ -125,7 +140,7 @@ public class MarkdownGenerator {
             return patchById;
         }
 
-        public Map<Long, IndexRomhack> getFilesById() {
+        public Map<Long, ExtendedRomhack> getFilesById() {
             return filesById;
         }
     }
@@ -167,10 +182,10 @@ public class MarkdownGenerator {
         MdWriter.write(markdown);
     }
 
-    private static TableBlock getRomhacksTable(List<IndexRomhack> romhacks) {
+    private static TableBlock getRomhacksTable(List<ExtendedRomhack> romhacks) {
         List<TableBlock.TableRow> rows = new ArrayList<>();
         if (romhacks != null) {
-            for (IndexRomhack romhack : romhacks) {
+            for (ExtendedRomhack romhack : romhacks) {
                 List<String> rowValue = new ArrayList<>();
                 UrlElement element1 = UrlElement.builder().tips(romhack.parent()).url("../../game/" + romhack.gameId() + "/index.md").build();
                 rowValue.add(element1.toMd());
@@ -191,7 +206,7 @@ public class MarkdownGenerator {
 
     private static void generateFilePage(CacheDatabase cacheDB) throws IOException, ReflectiveOperationException {
         for (long id:cacheDB.getFilesById().keySet()) {
-            IndexRomhack indexRomhack = cacheDB.getFilesById().get(id);
+            ExtendedRomhack indexRomhack = cacheDB.getFilesById().get(id);
             Path path = Path.of("../docs/database/file/" + id + "/index");
             Files.createDirectories(path.getParent());
             write(path, 3, "File: " + indexRomhack.name(), CodeBlock.builder().language("json").content(new RomhackMapper().write(indexRomhack.romhack())).build());

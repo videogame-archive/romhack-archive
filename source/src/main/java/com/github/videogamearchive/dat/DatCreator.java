@@ -1,7 +1,8 @@
 package com.github.videogamearchive.dat;
+import com.github.videogamearchive.database.IdentifiableVisitor;
+import com.github.videogamearchive.index.ExtendedRomhack;
+import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Romhack;
-import com.github.videogamearchive.model.json.RomhackMapper;
-import com.github.videogamearchive.model.validator.RomhackValidator;
 import com.github.videogamearchive.util.PathUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -25,29 +26,43 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class DatCreator {
-    private static final String ROMHACK_JSON = "romhack.json";
-
-    private static final String ROMHACK_BPS = "romhack.bps";
-
-    private static final String ROMHACK_ORIGINAL = "romhack-original";
     private static SimpleDateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
     private static String NOW = TIMESTAMP_FORMAT.format(new Date());
     private static Map<String, Document> documents = new HashMap<>();
-
-    private static RomhackMapper romhackReader = new RomhackMapper();
     public static void main(String[] args) throws Exception {
         if (args.length != 1 && args.length != 2) {
             help();
         } else {
-            boolean validate = false;
+            boolean validate;
             if (args.length == 2) {
-                validate = args[1].equals("validate");
+                validate = args[1].equals("--validate");
+            } else {
+                validate = false;
             }
             File root = new File(args[0]);
             if (root.exists() && root.isDirectory()) {
-                for (File systemFolder:root.listFiles()) {
-                    processSystem(systemFolder, validate);
-                }
+                IdentifiableVisitor visitor = new IdentifiableVisitor() {
+                    @Override
+                    public boolean validate() {
+                        return validate;
+                    }
+
+                    @Override
+                    public void walk(File identifiableFolder, Identifiable identifiable) {
+                        if (identifiable instanceof ExtendedRomhack) {
+                            ExtendedRomhack xRomhack = (ExtendedRomhack) identifiable;
+                            try {
+                                Document systemCollectionDocument = getSystemCollectioDocument(xRomhack.system());
+                                addGame(systemCollectionDocument, xRomhack.name(), xRomhack.romhack());
+                            } catch (Exception e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                    }
+                };
+
+                IdentifiableVisitor.processDatabase(root, visitor);
+
                 for (String name:documents.keySet()) {
                     output(documents.get(name), Files.newOutputStream(Path.of(name + ".xml")), true);
                 }
@@ -56,74 +71,15 @@ public class DatCreator {
             }
         }
     }
+
     private static void help() {
         System.out.println("usage: ");
-        System.out.println("\t\t java -jar dat-creator.jar \"pathToArchiveRoot\" [\"validate\"]");
+        System.out.println("\t\t java -jar dat-creator.jar \"database\" [--validate]");
     }
 
-    private static void processSystem(File system, boolean validate) throws ParserConfigurationException, IOException, ReflectiveOperationException {
-        if (!system.isDirectory()) {
-            ignored(system);
-            return;
-        } else {
-            processing(system);
-        }
-        for (File parent:system.listFiles()) {
-            if (!parent.isDirectory()) {
-                ignored(parent);
-                continue;
-            } else {
-                processing(parent);
-            }
-            for (File clone:parent.listFiles()) {
-                if (!clone.isDirectory()) {
-                    ignored(clone);
-                    continue;
-                }
-                File romhackJSON = null;
-                File romhackBPS = null;
-                File romhackOriginal = null;
-                for (File file:clone.listFiles()) {
-                    if (file.getName().equals(ROMHACK_JSON) && file.isFile()) {
-                        romhackJSON = file;
-                    } else if (file.getName().equals(ROMHACK_BPS) && file.isFile()) {
-                        romhackBPS = file;
-                    } else if(file.getName().equals(ROMHACK_ORIGINAL) && file.isDirectory() && file.listFiles().length > 0) {
-                        romhackOriginal = file;
-                    }
-                }
-                if (romhackJSON != null && romhackBPS != null && romhackOriginal == null) {
-                    throw new RuntimeException("Missing romhack-original folder");
-                } else if (romhackJSON == null || romhackBPS == null || romhackOriginal == null) {
-                    ignored(clone);
-                    continue;
-                } else {
-                    processing(clone);
-                }
-
-                Romhack romhack = romhackReader.read(romhackJSON.toPath());
-                String folderName = clone.getName();
-
-                if (validate) {
-                    RomhackValidator.validateRomHashLength(romhack);
-                    RomhackValidator.validateFolder(romhack, clone.toPath());
-                    RomhackValidator.validateBPS(romhack, clone.toPath().resolve("romhack.bps"));
-                }
-
-                Document systemCollectionDocument = getSystemCollectioDocument(system.getName());
-                addGame(systemCollectionDocument, folderName, romhack);
-            }
-        }
-    }
     private static DocumentBuilder getDocumentBuilder() throws ParserConfigurationException {
         DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
         return documentBuilderFactory.newDocumentBuilder();
-    }
-    private static void processing(File file) {
-        System.out.println("Processing folder: " + file.getPath());
-    }
-    private static void ignored(File file) {
-        System.out.println("WARNING - Ignored folder: " + file.getPath());
     }
 
     private static void addGame(Document doc, String fileName, Romhack romhack) {

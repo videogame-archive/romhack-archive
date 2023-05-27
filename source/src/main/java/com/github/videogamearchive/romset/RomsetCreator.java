@@ -1,16 +1,15 @@
 package com.github.videogamearchive.romset;
 
+import com.github.videogamearchive.database.IdentifiableVisitor;
+import com.github.videogamearchive.index.ExtendedRomhack;
+import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Romhack;
-import com.github.videogamearchive.model.json.RomhackMapper;
 import com.github.videogamearchive.model.validator.RomhackValidator;
 import com.github.videogamearchive.rompatcher.MarcFile;
 import com.github.videogamearchive.rompatcher.formats.BPS;
 import com.github.videogamearchive.util.PathUtil;
 import com.github.videogamearchive.util.Zip;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
@@ -20,26 +19,49 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 
 public class RomsetCreator {
-    private static final String ROMHACK_JSON = "romhack.json";
-
-    private static final String ROMHACK_BPS = "romhack.bps";
-
-    private static final String ROMHACK_ORIGINAL = "romhack-original";
-
-    private static RomhackMapper romhackReader = new RomhackMapper();
     public static void main(String[] args) throws Exception {
         if (args.length != 3 && args.length != 4) {
             help();
         } else {
-            boolean validate = false;
+            boolean validate;
             if (args.length == 4) {
-                validate = args[3].equals("validate");
+                validate = args[3].equals("--validate");
+            } else {
+                validate = false;
             }
             File patchesRoot = new File(args[0]);
             if (patchesRoot.exists() && patchesRoot.isDirectory()) {
-                for (File systemFolder:patchesRoot.listFiles()) {
-                    processSystem(systemFolder, new File(args[1]), new File(args[2]), validate);
-                }
+                File roms = new File(args[1]);
+                File romsOutput = new File(args[2]);
+                IdentifiableVisitor visitor = new IdentifiableVisitor() {
+                    @Override
+                    public boolean validate() {
+                        return validate;
+                    }
+
+                    @Override
+                    public void walk(File identifiableFolder, Identifiable identifiable) {
+                        if (identifiable instanceof ExtendedRomhack) {
+                            ExtendedRomhack indexRomhack = (ExtendedRomhack) identifiable;
+                            try {
+                                File system = identifiableFolder.getParentFile().getParentFile();
+                                File parent = identifiableFolder.getParentFile();
+                                File pathToInputRom = getInputRom(roms,
+                                        system,
+                                        parent);
+                                File romhackBPS = identifiableFolder.toPath().resolve(IdentifiableVisitor.ROMHACK_BPS).toFile();
+                                String romhackFileName = indexRomhack.parent();
+                                String zipName = PathUtil.getNameWithoutExtension(romhackFileName) + ".zip";
+                                File pathToOutputRomZip = getOutputRom(romsOutput, system, zipName);
+                                createRomhack(romhackFileName, indexRomhack.romhack(), romhackBPS, pathToInputRom, pathToOutputRomZip, validate);
+                            } catch (Exception e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                    }
+                };
+
+                IdentifiableVisitor.processDatabase(patchesRoot, visitor);
             } else {
                 help();
             }
@@ -47,60 +69,7 @@ public class RomsetCreator {
     }
     private static void help() {
         System.out.println("usage: ");
-        System.out.println("\t\t java -jar romset-creator.jar \"pathToArchiveRoot\" \"pathToInputRomRoot\" \"pathToOutputRomRoot\" [\"validate\"]");
-    }
-    private static void processSystem(File system, File inputRomRoot, File outputRomRoot, boolean validate) throws IOException, ReflectiveOperationException, NoSuchAlgorithmException {
-        if (!system.isDirectory()) {
-            ignored(system);
-            return;
-        } else {
-            processing(system);
-        }
-        for (File parent:system.listFiles()) {
-            if (!parent.isDirectory()) {
-                ignored(parent);
-                continue;
-            } else {
-                processing(parent);
-            }
-            for (File clone:parent.listFiles()) {
-                if (!clone.isDirectory()) {
-                    ignored(clone);
-                    continue;
-                }
-                File romhackJSON = null;
-                File romhackBPS = null;
-                File romhackOriginal = null;
-                for (File file:clone.listFiles()) {
-                    if (file.getName().equals(ROMHACK_JSON) && file.isFile()) {
-                        romhackJSON = file;
-                    } else if (file.getName().equals(ROMHACK_BPS) && file.isFile()) {
-                        romhackBPS = file;
-                    } else if(file.getName().equals(ROMHACK_ORIGINAL) && file.isDirectory() && file.listFiles().length > 0) {
-                        romhackOriginal = file;
-                    }
-                }
-                if (romhackJSON != null && romhackBPS != null && romhackOriginal == null) {
-                    throw new RuntimeException("Missing romhack-original folder");
-                } else if (romhackJSON == null || romhackBPS == null || romhackOriginal == null) {
-                    ignored(clone);
-                    continue;
-                } else {
-                    processing(clone);
-                }
-
-                Romhack romhack = romhackReader.read(romhackJSON.toPath());
-                File pathToInputRom = getInputRom(inputRomRoot, system, parent);
-                if (pathToInputRom == null) {
-                    ignored(clone);
-                    continue;
-                }
-                String romhackFileName = clone.getName();
-                String zipName = PathUtil.getNameWithoutExtension(romhackFileName) + ".zip";
-                File pathToOutputRomZip = getOutputRom(outputRomRoot, system, zipName);
-                createRomhack(romhackFileName, romhack, romhackBPS, pathToInputRom, pathToOutputRomZip, validate);
-            }
-        }
+        System.out.println("\t\t java -jar romset-creator.jar \"database\" \"roms\" \"romsOutput\" [--validate]");
     }
 
     private static void createRomhack(String romhackFileName, Romhack romhack, File romhackBPS, File pathToInputRom, File pathToOutputRomZip, boolean validate) throws IOException, NoSuchAlgorithmException {
@@ -151,16 +120,4 @@ public class RomsetCreator {
         return null;
     }
 
-    private static DocumentBuilder getDocumentBuilder() throws ParserConfigurationException {
-        DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
-        return documentBuilderFactory.newDocumentBuilder();
-    }
-
-    private static void processing(File file) {
-        System.out.println("Processing folder: " + file.getPath());
-    }
-
-    private static void ignored(File file) {
-        System.out.println("WARNING - Ignored folder: " + file.getPath());
-    }
 }
