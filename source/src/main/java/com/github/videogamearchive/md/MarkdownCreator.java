@@ -17,7 +17,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
 
-public class MarkdownGenerator {
+public class MarkdownCreator {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 1 && args.length != 2) {

@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 public class RomsetCreatorTest {
     @Test
-    public void datCreatorTest() throws Exception {
+    public void romsetCreatorTest() throws Exception {
         RomsetCreator.main(new String[]{ "archiveRoot", "inputRomRoot", "outputRootRoot"});
     }
 }
