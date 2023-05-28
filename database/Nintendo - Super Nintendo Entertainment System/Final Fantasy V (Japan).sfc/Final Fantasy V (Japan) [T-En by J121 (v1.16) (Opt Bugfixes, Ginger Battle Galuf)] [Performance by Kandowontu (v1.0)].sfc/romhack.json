@@ -1,0 +1,52 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-28",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2621440,
+        "crc32": "6d659a15",
+        "md5": "263df4b2dcf1c2e145edeb8c3f71740c",
+        "sha1": "9b2e8da87191a3c9e27758284a90e29eaf7a0076"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "Final Fantasy V - GBA Script Port",
+            "authors": [ "J121" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/hacks/3687/",
+            "otherUrls": [ ],
+            "version": "1.16",
+            "releaseDate": "2021-06-23",
+            "options": "Bugfixes, Ginger Battle Galuf",
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        },
+        {
+            "id": null,
+            "name": "Final Fantasy V - Fastrom",
+            "authors": [ "Kandowontu" ],
+            "shortAuthors": null,
+            "url": "https://patreon.com/kandowontu",
+            "otherUrls": [ "https://twitter.com/kandowontu" ],
+            "version": "1.0",
+            "releaseDate": "2023-04-05",
+            "options": null,
+            "labels": [ "Performance" ],
+            "medias": null
+        }
+    ]
+}
