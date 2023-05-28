@@ -51,7 +51,7 @@ public class RomsetCreator {
                                         system,
                                         parent);
                                 File romhackBPS = identifiableFolder.toPath().resolve(DatabaseWalker.ROMHACK_BPS).toFile();
-                                String romhackFileName = indexRomhack.parent();
+                                String romhackFileName = identifiableFolder.getName();
                                 String zipName = PathUtil.getNameWithoutExtension(romhackFileName) + ".zip";
                                 File pathToOutputRomZip = getOutputRom(romsOutput, system, zipName);
                                 createRomhack(romhackFileName, indexRomhack.romhack(), romhackBPS, pathToInputRom, pathToOutputRomZip, validate);

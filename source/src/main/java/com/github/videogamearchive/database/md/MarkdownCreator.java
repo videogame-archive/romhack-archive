@@ -90,17 +90,17 @@ public class MarkdownCreator {
                 ExtendedRomhack indexRomhack = (ExtendedRomhack) identifiable;
                 filesById.put(indexRomhack.romhack().id(), indexRomhack);
 
-                List<ExtendedRomhack> filesBySystemList = filesBySystem.get(indexRomhack.systemId());
+                List<ExtendedRomhack> filesBySystemList = filesBySystem.get(indexRomhack.system().id());
                 if (filesBySystemList == null) {
                     filesBySystemList = new ArrayList<>();
-                    filesBySystem.put(indexRomhack.systemId(), filesBySystemList);
+                    filesBySystem.put(indexRomhack.system().id(), filesBySystemList);
                 }
                 filesBySystemList.add(indexRomhack);
 
-                List<ExtendedRomhack> filesByGameList = filesByGame.get(indexRomhack.gameId());
+                List<ExtendedRomhack> filesByGameList = filesByGame.get(indexRomhack.game().id());
                 if (filesByGameList == null) {
                     filesByGameList = new ArrayList<>();
-                    filesByGame.put(indexRomhack.gameId(), filesByGameList);
+                    filesByGame.put(indexRomhack.game().id(), filesByGameList);
                 }
                 filesByGameList.add(indexRomhack);
 
@@ -188,9 +188,9 @@ public class MarkdownCreator {
         if (romhacks != null) {
             for (ExtendedRomhack romhack : romhacks) {
                 List<String> rowValue = new ArrayList<>();
-                UrlElement element1 = UrlElement.builder().tips(romhack.parent()).url("../../game/" + romhack.gameId() + "/index.md").build();
+                UrlElement element1 = UrlElement.builder().tips(romhack.parentFolderName()).url("../../game/" + romhack.game().id() + "/index.md").build();
                 rowValue.add(element1.toMd());
-                UrlElement element2 = UrlElement.builder().tips(romhack.name()).url("../../file/" + romhack.romhack().id() + "/index.md").build();
+                UrlElement element2 = UrlElement.builder().tips(romhack.romhackFolderName()).url("../../file/" + romhack.romhack().id() + "/index.md").build();
                 rowValue.add(element2.toMd());
                 TableBlock.TableRow row = new TableBlock.TableRow();
                 row.setRows(rowValue);
@@ -210,7 +210,7 @@ public class MarkdownCreator {
             ExtendedRomhack indexRomhack = cacheDB.getFilesById().get(id);
             Path path = Path.of("../docs/database/file/" + id + "/index");
             Files.createDirectories(path.getParent());
-            write(path, 3, "File: " + indexRomhack.name(), CodeBlock.builder().language("json").content(new RomhackMapper().write(indexRomhack.romhack())).build());
+            write(path, 3, "File: " + indexRomhack.romhack().id(), CodeBlock.builder().language("json").content(new RomhackMapper().write(indexRomhack.romhack())).build());
         }
     }
 
@@ -220,7 +220,7 @@ public class MarkdownCreator {
             TableBlock table = getRomhacksTable(cacheDB.getFilesByPatch().get(id));
             Path path = Path.of("../docs/database/patch/" + id + "/index");
             Files.createDirectories(path.getParent());
-            write(path, 3, "Patch: " + patch.name(), table);
+            write(path, 3, "Patch: " + patch.id(), table);
         }
     }
 
@@ -230,7 +230,7 @@ public class MarkdownCreator {
             TableBlock table = getRomhacksTable(cacheDB.getFilesByGame().get(id));
             Path path = Path.of("../docs/database/game/" + id + "/index");
             Files.createDirectories(path.getParent());
-            write(path, 3, "Game: " + game.name(), table);
+            write(path, 3, "Game: " + game.id(), table);
         }
     }
 
@@ -240,7 +240,7 @@ public class MarkdownCreator {
             TableBlock table = getRomhacksTable(cacheDB.getFilesBySystem().get(id));
             Path path = Path.of("../docs/database/system/" + id + "/index");
             Files.createDirectories(path.getParent());
-            write(path, 3, "System: " + system.name(), table);
+            write(path, 3, "System: " + system.id(), table);
         }
     }
 

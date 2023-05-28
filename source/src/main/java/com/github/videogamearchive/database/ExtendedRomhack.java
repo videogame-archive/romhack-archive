@@ -3,23 +3,29 @@ package com.github.videogamearchive.database;
 import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Patch;
 import com.github.videogamearchive.model.Romhack;
+import com.github.videogamearchive.model.System_;
+import com.github.videogamearchive.model.Game;
 import com.github.videogamearchive.util.CSV;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public record ExtendedRomhack(
-        Long systemId,
-        String system,
-        Long gameId,
-        String parent,
-        String name,
+        String systemFolderName,
+        System_ system,
+        String parentFolderName,
+        Game game,
+        String romhackFolderName,
         Romhack romhack) implements Comparable<ExtendedRomhack>, Identifiable<ExtendedRomhack> {
 
     public static String[] headers() {
         String[] indexHeaders = new String[] {
-                // Folder names info
-                "System Id", "System", "Game Id", "Parent", "Name",
+                // ## System
+                "System Folder Name", "System Id", "System Name (original)",
+                // ## Parent
+                "Parent Folder Name", "Game Id", "Parent Name (original)",
+                // ## Romhack
+                "Romhack Folder Name",
                 // Id
                 "Romhack Id",
                 // Info
@@ -54,8 +60,12 @@ public record ExtendedRomhack(
 
     public String[] row() {
         String[] index = new String[] {
-                // Folder names info
-                CSV.toString(systemId), CSV.toString(system), CSV.toString(gameId), CSV.toString(parent), CSV.toString(name),
+                // ## System
+                CSV.toString(systemFolderName), CSV.toString(system.id()), CSV.toString(system.name()),
+                // ## Parent
+                CSV.toString(parentFolderName), CSV.toString(game.id()), CSV.toString(game.name()),
+                // ## Romhack
+                CSV.toString(romhackFolderName),
                 // Id
                 CSV.toString(romhack.id()),
                 // Info
@@ -102,7 +112,7 @@ public record ExtendedRomhack(
 
     @Override
     public int compareTo(ExtendedRomhack o) {
-        return name.compareTo(o.name);
+        return romhackFolderName.compareTo(o.romhackFolderName);
     }
 
     //
@@ -116,7 +126,7 @@ public record ExtendedRomhack(
 
     @Override
     public ExtendedRomhack withId(Long id) {
-        return new ExtendedRomhack(systemId, system, gameId, parent, name, romhack.withId(id));
+        return new ExtendedRomhack(systemFolderName, system, parentFolderName, game, romhackFolderName, romhack.withId(id));
     }
 
     //
@@ -124,6 +134,6 @@ public record ExtendedRomhack(
     //
 
     public String getDownload() {
-        return CSV.toString("https://github.com/videogame-archive/romhack-archive/raw/main/database/" + system + "/" + parent + "/" + name + "/romhack.bps");
+        return CSV.toString("https://github.com/videogame-archive/romhack-archive/raw/main/database/" + systemFolderName + "/" + parentFolderName + "/" + romhackFolderName + "/romhack.bps");
     }
 }

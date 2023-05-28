@@ -53,8 +53,8 @@ public class DatCreator {
                         if (identifiable instanceof ExtendedRomhack) {
                             ExtendedRomhack xRomhack = (ExtendedRomhack) identifiable;
                             try {
-                                Document systemCollectionDocument = getSystemCollectioDocument(xRomhack.system());
-                                addGame(systemCollectionDocument, xRomhack.name(), xRomhack.romhack());
+                                Document systemCollectionDocument = getSystemCollectioDocument(xRomhack.systemFolderName());
+                                addGame(systemCollectionDocument, xRomhack.romhackFolderName(), xRomhack.romhack());
                             } catch (Exception e) {
                                 throw new RuntimeException(e);
                             }
