@@ -1,0 +1,39 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-28",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "9e7d68e8",
+        "md5": "29df642bf137fb8813fbc8fa9be595b2",
+        "sha1": "2e38199a4d38d8e757bea9201c90e82bd86125aa"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": null,
+            "authors": [ "DragonBallZ Translations", "Vice Translations", "Vincent", "Steven Csuth", "Jason Rubin", "Kitsune Sniper (Foxhack)" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/334/",
+            "otherUrls": [ ],
+            "version": "1.1",
+            "releaseDate": "2000-05-06",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        }
+    ]
+}
