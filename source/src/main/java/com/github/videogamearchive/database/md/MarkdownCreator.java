@@ -5,6 +5,7 @@ import com.github.videogamearchive.database.DatabaseWalker;
 import com.github.videogamearchive.database.ExtendedRomhack;
 import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.model.json.RomhackMapper;
+import com.github.videogamearchive.util.CSV;
 import fun.mingshan.markdown4j.Markdown;
 import fun.mingshan.markdown4j.type.block.*;
 import fun.mingshan.markdown4j.type.element.ImageElement;
@@ -54,11 +55,13 @@ public class MarkdownCreator {
         // docs/database/system/id/index.html
         private final Map<Long, List<ExtendedRomhack>> filesBySystem = new HashMap<>();
         private final Map<Long, System_> systemById = new HashMap<>();
+        private final Map<Long, List<String>> systemFolderNamesById = new HashMap<>();
 
         // Game Page - List - Games / Files [Parent Name, File Name]
         // docs/database/game/id/index.html
         private final Map<Long, List<ExtendedRomhack>> filesByGame = new HashMap<>();
         private final Map<Long, Game> gameById = new HashMap<>();
+        private final Map<Long, List<String>> parentFolderNamesById = new HashMap<>();
 
         // Patch Page - List - Games / Files [Parent Name, File Name]
         // docs/database/patch/id/index.html
@@ -83,9 +86,21 @@ public class MarkdownCreator {
             if (identifiable instanceof System_) {
                 System_ system = (System_) identifiable;
                 systemById.put(system.id(), system);
+                List<String> names = systemFolderNamesById.get(system.id());
+                if (names == null) {
+                    names = new ArrayList<>();
+                    systemFolderNamesById.put(system.id(), names);
+                }
+                names.add(identifiableFolder.getName());
             } else if (identifiable instanceof Game) {
                 Game game = (Game) identifiable;
                 gameById.put(game.id(), game);
+                List<String> names = systemFolderNamesById.get(game.id());
+                if (names == null) {
+                    names = new ArrayList<>();
+                    parentFolderNamesById.put(game.id(), names);
+                }
+                names.add(identifiableFolder.getName());
             } else if (identifiable instanceof ExtendedRomhack) {
                 ExtendedRomhack indexRomhack = (ExtendedRomhack) identifiable;
                 filesById.put(indexRomhack.romhack().id(), indexRomhack);
@@ -210,7 +225,7 @@ public class MarkdownCreator {
             ExtendedRomhack indexRomhack = cacheDB.getFilesById().get(id);
             Path path = Path.of("../docs/database/file/" + id + "/index");
             Files.createDirectories(path.getParent());
-            write(path, 3, "File: " + indexRomhack.romhack().id(), CodeBlock.builder().language("json").content(new RomhackMapper().write(indexRomhack.romhack())).build());
+            write(path, 3, "File: " + indexRomhack.romhackFolderName(), CodeBlock.builder().language("json").content(new RomhackMapper().write(indexRomhack.romhack())).build());
         }
     }
 
@@ -220,7 +235,7 @@ public class MarkdownCreator {
             TableBlock table = getRomhacksTable(cacheDB.getFilesByPatch().get(id));
             Path path = Path.of("../docs/database/patch/" + id + "/index");
             Files.createDirectories(path.getParent());
-            write(path, 3, "Patch: " + patch.id(), table);
+            write(path, 3, "Patch: " + patch.name(), table);
         }
     }
 
@@ -230,7 +245,7 @@ public class MarkdownCreator {
             TableBlock table = getRomhacksTable(cacheDB.getFilesByGame().get(id));
             Path path = Path.of("../docs/database/game/" + id + "/index");
             Files.createDirectories(path.getParent());
-            write(path, 3, "Game: " + game.id(), table);
+            write(path, 3, "Game: " + CSV.toString(cacheDB.parentFolderNamesById.get(game.id())), table);
         }
     }
 
@@ -240,7 +255,7 @@ public class MarkdownCreator {
             TableBlock table = getRomhacksTable(cacheDB.getFilesBySystem().get(id));
             Path path = Path.of("../docs/database/system/" + id + "/index");
             Files.createDirectories(path.getParent());
-            write(path, 3, "System: " + system.id(), table);
+            write(path, 3, "System: " + CSV.toString(cacheDB.systemFolderNamesById.get(system.id())), table);
         }
     }
 
