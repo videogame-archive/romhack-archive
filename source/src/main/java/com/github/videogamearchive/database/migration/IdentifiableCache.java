@@ -1,4 +1,4 @@
-package com.github.videogamearchive.migration;
+package com.github.videogamearchive.database.migration;
 
 import com.github.videogamearchive.model.Identifiable;
 

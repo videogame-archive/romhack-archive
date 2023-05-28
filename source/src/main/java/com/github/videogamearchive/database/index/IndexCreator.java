@@ -1,7 +1,8 @@
-package com.github.videogamearchive.index;
+package com.github.videogamearchive.database.index;
 
 import com.github.videogamearchive.database.DatabaseVisitor;
 import com.github.videogamearchive.database.DatabaseWalker;
+import com.github.videogamearchive.database.ExtendedRomhack;
 import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.util.CSV;
 

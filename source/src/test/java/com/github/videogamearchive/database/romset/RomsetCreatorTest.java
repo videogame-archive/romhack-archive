@@ -1,5 +1,6 @@
-package com.github.videogamearchive.romset;
+package com.github.videogamearchive.database.romset;
 
+import com.github.videogamearchive.database.romset.RomsetCreator;
 import org.junit.jupiter.api.Test;
 
 public class RomsetCreatorTest {

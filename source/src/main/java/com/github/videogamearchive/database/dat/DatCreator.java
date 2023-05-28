@@ -1,7 +1,7 @@
 package com.github.videogamearchive.dat;
 import com.github.videogamearchive.database.DatabaseVisitor;
 import com.github.videogamearchive.database.DatabaseWalker;
-import com.github.videogamearchive.index.ExtendedRomhack;
+import com.github.videogamearchive.database.ExtendedRomhack;
 import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.util.PathUtil;

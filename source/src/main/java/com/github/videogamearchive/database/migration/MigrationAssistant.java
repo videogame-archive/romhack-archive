@@ -1,8 +1,8 @@
-package com.github.videogamearchive.migration;
+package com.github.videogamearchive.database.migration;
 
 import com.github.videogamearchive.database.DatabaseVisitor;
 import com.github.videogamearchive.database.DatabaseWalker;
-import com.github.videogamearchive.index.ExtendedRomhack;
+import com.github.videogamearchive.database.ExtendedRomhack;
 import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.model.json.GameMapper;
 import com.github.videogamearchive.model.json.RomhackMapper;

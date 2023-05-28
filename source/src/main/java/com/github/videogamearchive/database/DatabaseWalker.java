@@ -1,6 +1,5 @@
 package com.github.videogamearchive.database;
 
-import com.github.videogamearchive.index.ExtendedRomhack;
 import com.github.videogamearchive.model.Game;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.model.System_;

@@ -1,5 +1,6 @@
-package com.github.videogamearchive.dat;
+package com.github.videogamearchive.database.dat;
 
+import com.github.videogamearchive.dat.DatCreator;
 import org.junit.jupiter.api.Test;
 
 public class DatCreatorTest {

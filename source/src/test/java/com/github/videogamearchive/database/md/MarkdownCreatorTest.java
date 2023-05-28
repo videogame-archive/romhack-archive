@@ -1,5 +1,6 @@
-package com.github.videogamearchive.md;
+package com.github.videogamearchive.database.md;
 
+import com.github.videogamearchive.database.md.MarkdownCreator;
 import org.junit.jupiter.api.Test;
 
 public class MarkdownCreatorTest {

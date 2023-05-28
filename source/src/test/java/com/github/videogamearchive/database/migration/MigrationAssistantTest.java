@@ -1,5 +1,6 @@
-package com.github.videogamearchive.migration;
+package com.github.videogamearchive.database.migration;
 
+import com.github.videogamearchive.database.migration.MigrationAssistant;
 import org.junit.jupiter.api.Test;
 
 public class MigrationAssistantTest {

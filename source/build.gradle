@@ -30,7 +30,7 @@ test {
 
 jar {
     archiveBaseName = 'tools-library' // Default jar, no manifest, just to reuse the tools in other projects
-    archiveVersion = '0.0.13'
+    archiveVersion = '0.0.14'
 }
 
 tasks.withType(Jar) {
@@ -61,7 +61,8 @@ artifacts {
     archives jarPackage("dat-creator", "com.github.videogamearchive.dat.DatCreator"),
             jarPackage("index-creator", "com.github.videogamearchive.index.IndexCreator"),
             jarPackage("romset-creator", "com.github.videogamearchive.romset.RomsetCreator"),
-            jarPackage("rom-patcher", "com.github.videogamearchive.rompatcher.RomPatcher"),
+            jarPackage("markdown-creator", "com.github.videogamearchive.mk.MarkdownCreator"),
             jarPackage("migration-assistant", "com.github.videogamearchive.migration.MigrationAssistant"),
+            jarPackage("rom-patcher", "com.github.videogamearchive.rompatcher.RomPatcher"),
             jarPackage("romhack2archive", "com.github.videogamearchive.hack2arch.Romhack2Archive")
 }

@@ -1,8 +1,8 @@
-package com.github.videogamearchive.md;
+package com.github.videogamearchive.database.md;
 
 import com.github.videogamearchive.database.DatabaseVisitor;
 import com.github.videogamearchive.database.DatabaseWalker;
-import com.github.videogamearchive.index.ExtendedRomhack;
+import com.github.videogamearchive.database.ExtendedRomhack;
 import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.model.json.RomhackMapper;
 import fun.mingshan.markdown4j.Markdown;

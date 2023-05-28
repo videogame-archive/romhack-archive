@@ -1,4 +1,4 @@
-package com.github.videogamearchive.index;
+package com.github.videogamearchive.database;
 
 import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Patch;

@@ -1,5 +1,6 @@
-package com.github.videogamearchive.index;
+package com.github.videogamearchive.database.index;
 
+import com.github.videogamearchive.database.index.IndexCreator;
 import org.junit.jupiter.api.Test;
 
 public class IndexCreatorTest {

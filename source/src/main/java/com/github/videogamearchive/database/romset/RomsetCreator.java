@@ -1,8 +1,8 @@
-package com.github.videogamearchive.romset;
+package com.github.videogamearchive.database.romset;
 
 import com.github.videogamearchive.database.DatabaseVisitor;
 import com.github.videogamearchive.database.DatabaseWalker;
-import com.github.videogamearchive.index.ExtendedRomhack;
+import com.github.videogamearchive.database.ExtendedRomhack;
 import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.model.Romhack;
 import com.github.videogamearchive.model.validator.RomhackValidator;
