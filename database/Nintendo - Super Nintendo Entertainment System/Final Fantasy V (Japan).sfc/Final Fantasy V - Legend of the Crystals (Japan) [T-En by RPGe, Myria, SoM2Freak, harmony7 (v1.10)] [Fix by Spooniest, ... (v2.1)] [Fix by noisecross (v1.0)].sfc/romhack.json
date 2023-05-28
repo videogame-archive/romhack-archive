@@ -38,7 +38,7 @@
             "id": null,
             "name": "[English] translation for [Final Fantasy V]",
             "authors": [ "Spooniest", "Barubary", "SoM2Freak", "harmony7", "FlamePurge" ],
-            "shortAuthors": null,
+            "shortAuthors": "Spooniest, ...",
             "url": "https://www.romhacking.net/translations/2600/",
             "otherUrls": null,
             "version": "2.1",
@@ -58,19 +58,6 @@
             "releaseDate": "2018-03-25",
             "options": null,
             "labels": [ "Fix" ],
-            "medias": null
-        },
-        {
-            "id": null,
-            "name": "Final Fantasy V: Strategic Battle patch",
-            "authors": [ "HatZen08" ],
-            "shortAuthors": null,
-            "url": "https://www.romhacking.net/hacks/5955/",
-            "otherUrls": null,
-            "version": "3.1",
-            "releaseDate": "2015-01-28",
-            "options": null,
-            "labels": [ "Tweak" ],
             "medias": null
         }
     ]

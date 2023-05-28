@@ -38,7 +38,7 @@
             "id": null,
             "name": "[English] translation for [Final Fantasy V]",
             "authors": [ "Spooniest", "Barubary", "SoM2Freak", "harmony7", "FlamePurge" ],
-            "shortAuthors": null,
+            "shortAuthors": "Spooniest, ...",
             "url": "https://www.romhacking.net/translations/2600/",
             "otherUrls": null,
             "version": "2.1",
@@ -58,6 +58,19 @@
             "releaseDate": "2018-03-25",
             "options": null,
             "labels": [ "Fix" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "Final Fantasy V - Fastrom",
+            "authors": [ "Kandowontu" ],
+            "shortAuthors": null,
+            "url": "https://patreon.com/kandowontu",
+            "otherUrls": [ "https://twitter.com/kandowontu" ],
+            "version": "1.0",
+            "releaseDate": "2023-04-05",
+            "options": null,
+            "labels": [ "Performance" ],
             "medias": null
         }
     ]
