@@ -17,20 +17,20 @@
     },
     "rom": {
         "size": 4194304,
-        "crc32": "7b39a348",
-        "md5": "01986f4c71e78180483f7c68a8c4ed66",
-        "sha1": "644084d263ac2183257edae0e256f7ea1df24aed"
+        "crc32": "46d53778",
+        "md5": "f96aa19a0bbfe070adcf00258d185279",
+        "sha1": "d53cf27b160a77edf0fd469232e59f4c49d6f26c"
     },
     "patches": [
         {
             "id": null,
             "name": null,
-            "authors": [ "hairy_hen" ],
+            "authors": [ "Dr. Meat", "angelo26", "ArmorVil", "assassin17", "DarkMage", "Djibriel", "Drakkhen", "Imzogelmo", "Kejardon", "Lenophis", "Leviathan Mist", "Master ZED", "mblock129", "Novalia Spirit", "Terii Senshi", "Yazoo" ],
             "shortAuthors": null,
-            "url": "https://www.romhacking.net/hacks/4619/",
+            "url": "https://www.romhacking.net/hacks/2247/",
             "otherUrls": [ ],
-            "version": "1.3",
-            "releaseDate": "2019-07-25",
+            "version": "1.05",
+            "releaseDate": "2019-02-15",
             "options": null,
             "labels": [ "T-En" ],
             "medias": [ ]
