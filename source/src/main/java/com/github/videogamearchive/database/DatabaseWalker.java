@@ -93,7 +93,7 @@ public class DatabaseWalker {
                 Romhack romhack = romhackMapper.read(romhackJSON.toPath());
 
                 if (identifiableVisitor.validate()) {
-                    RomhackValidator.validateRomHashLength(romhack);
+                    RomhackValidator.validateMetadata(romhack);
                     RomhackValidator.validateFolder(romhack, cloneFolder.toPath());
                     RomhackValidator.validateBPS(romhack, cloneFolder.toPath().resolve("romhack.bps"));
                 }

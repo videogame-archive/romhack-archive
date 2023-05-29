@@ -9,6 +9,10 @@ public class StringUtil {
         // Private constructor to make clear that is a non-instantiable utility class
     }
 
+    public static boolean isBlankString(String string) {
+        return string == null || string.isBlank();
+    }
+
     public static List<String> substrings(String string, String start, String end, boolean excluding) {
         int offset = 0;
         List<String> items = new ArrayList<>();

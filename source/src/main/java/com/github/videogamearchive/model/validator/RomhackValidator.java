@@ -6,6 +6,7 @@ import com.github.videogamearchive.rompatcher.MarcFile;
 import com.github.videogamearchive.rompatcher.formats.BPS;
 import com.github.videogamearchive.util.Hashes;
 import com.github.videogamearchive.util.PathUtil;
+import com.github.videogamearchive.util.StringUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,7 +21,11 @@ import java.util.List;
 public class RomhackValidator {
 
     private RomhackValidator() {}
-    public static void validateRomHashLength(Romhack romhack) {
+
+    /*
+     * Validation elements added over time to correct fields
+     */
+    public static void validateMetadata(Romhack romhack) {
         // Rom hashes validation
         if (romhack.rom().crc32().length() != 8) {
             throw new RuntimeException("romhack.json rom crc32 is not 8 - Actual: " + romhack.rom().crc32());
@@ -30,6 +35,17 @@ public class RomhackValidator {
         }
         if (romhack.rom().md5().length() != 32) {
             throw new RuntimeException("romhack.json rom md5 is not 32 - Actual: " + romhack.rom().md5());
+        }
+
+        // Patch names
+        for (int i = 0; i < romhack.patches().size(); i++) {
+            Patch patch = romhack.patches().get(i);
+            if (StringUtil.isBlankString(patch.name())) {
+                throw new RuntimeException("Patch " + i + " is missing name.");
+            }
+            if (StringUtil.isBlankString(patch.releaseDate())) {
+                throw new RuntimeException("Patch " + i + " is missing release date.");
+            }
         }
     }
 
