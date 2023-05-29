@@ -17,14 +17,14 @@
     },
     "rom": {
         "size": 1572864,
-        "crc32": "87a7dd67",
-        "md5": "29ad0bf121f124630ed230a85399cb59",
-        "sha1": "8e44392988d5e2820574b2b64762dacf36f7b3d8"
+        "crc32": "28fbb991",
+        "md5": "2a47774909d7486fd30d04476dda3053",
+        "sha1": "f9fd086a7d7f5bd61066eab5a58dfed0f049020c"
     },
     "patches": [
         {
             "id": null,
-            "name": "[English] translation for [Ganbare Goemon - Yuki Hime Kyuushutsu Emaki]",
+            "name": "[English] translation for [The Legend of the Mystical Ninja]",
             "authors": [ "DDSTranslation", "Tom", "FlashPV", "Akira76" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5667/",

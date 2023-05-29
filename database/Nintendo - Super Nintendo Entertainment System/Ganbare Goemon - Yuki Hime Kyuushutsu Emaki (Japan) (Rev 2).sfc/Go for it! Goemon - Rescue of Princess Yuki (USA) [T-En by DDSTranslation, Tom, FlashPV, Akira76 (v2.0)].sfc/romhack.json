@@ -17,14 +17,14 @@
     },
     "rom": {
         "size": 1572864,
-        "crc32": "87a7dd67",
-        "md5": "29ad0bf121f124630ed230a85399cb59",
-        "sha1": "8e44392988d5e2820574b2b64762dacf36f7b3d8"
+        "crc32": "733306d7",
+        "md5": "972f4eded090d1a47d65752fc19416e0",
+        "sha1": "35afbc12dde39dc21f455ee3e9d40ba137aeb230"
     },
     "patches": [
         {
             "id": null,
-            "name": "[English] translation for [Ganbare Goemon - Yuki Hime Kyuushutsu Emaki]",
+            "name": "[English] translation for [The Legend of the Mystical Ninja]",
             "authors": [ "DDSTranslation", "Tom", "FlashPV", "Akira76" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5667/",
@@ -33,18 +33,6 @@
             "releaseDate": "2020-08-26",
             "options": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
-        },
-        {
-            "id": null,
-            "name": "The Legend of the Mystical Ninja - Fastrom",
-            "authors": [ "Kandowontu" ],
-            "url": "https://patreon.com/kandowontu",
-            "otherUrls": [ "https://twitter.com/kandowontu" ],
-            "version": "1.0",
-            "releaseDate": "2023-03-16",
-            "options": null,
-            "labels": [ "Performance" ],
             "medias": [ ]
         }
     ]
