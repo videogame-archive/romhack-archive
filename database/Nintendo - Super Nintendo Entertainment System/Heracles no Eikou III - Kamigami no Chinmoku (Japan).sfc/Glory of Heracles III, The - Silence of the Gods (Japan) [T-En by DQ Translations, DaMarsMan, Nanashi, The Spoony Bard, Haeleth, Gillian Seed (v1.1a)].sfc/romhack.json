@@ -1,0 +1,39 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-29",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "87ec99f6",
+        "md5": "db003c453aa71be6cdb2ba3ccf167d4f",
+        "sha1": "1dc2a6233335e7dc990577b0d7fa109e54837f8c"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Heracles no Eikou III: Kamigami no Chinmoku]",
+            "authors": [ "DQ Translations", "DaMarsMan", "Nanashi", "The Spoony Bard", "Haeleth", "Gillian Seed" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/967/",
+            "otherUrls": [ ],
+            "version": "1.1a",
+            "releaseDate": "2014-06-24",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        }
+    ]
+}
