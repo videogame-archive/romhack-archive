@@ -1,0 +1,39 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-29",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 8388608,
+        "crc32": "0939af26",
+        "md5": "442ecd86dac68b30ffb0e892aae2ed8f",
+        "sha1": "2b6eb74646a527ba293b0e004db3e0134a28dc6c"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": null,
+            "authors": [ "Fire Emblem 4 Translation Team" ],
+            "shortAuthors": null,
+            "url": "https://forums.serenesforest.net/index.php?/topic/63676-fe4-translation-patch-open-beta-v7/",
+            "otherUrls": [ ],
+            "version": "Beta Version 7",
+            "releaseDate": "2016-07-07",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        }
+    ]
+}
