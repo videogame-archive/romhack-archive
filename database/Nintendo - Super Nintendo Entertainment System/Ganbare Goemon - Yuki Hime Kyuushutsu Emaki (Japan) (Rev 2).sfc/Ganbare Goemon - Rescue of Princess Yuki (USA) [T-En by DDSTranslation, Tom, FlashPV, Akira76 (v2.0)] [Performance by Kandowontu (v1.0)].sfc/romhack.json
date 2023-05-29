@@ -1,0 +1,52 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable | Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-29",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1572864,
+        "crc32": "87a7dd67",
+        "md5": "29ad0bf121f124630ed230a85399cb59",
+        "sha1": "8e44392988d5e2820574b2b64762dacf36f7b3d8"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": null,
+            "authors": [ "DDSTranslation", "Tom", "FlashPV", "Akira76" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/5667/",
+            "otherUrls": [ ],
+            "version": "2.0",
+            "releaseDate": "2020-08-26",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        },
+        {
+            "id": null,
+            "name": null,
+            "authors": [ "Kandowontu" ],
+            "url": "https://patreon.com/kandowontu",
+            "otherUrls": [ "https://twitter.com/kandowontu" ],
+            "otherUrls": [ ],
+            "version": "1.0",
+            "releaseDate": "2023-03-16",
+            "options": null,
+            "labels": [ "Performance" ],
+            "medias": [ ]
+        }
+    ]
+}

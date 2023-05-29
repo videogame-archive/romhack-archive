@@ -1,0 +1,39 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable | Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-29",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1572864,
+        "crc32": "25b4532b",
+        "md5": "8596eebaad7ac1d0da3772628e436d72",
+        "sha1": "4b8b3b701a15c984a53970dc3ce33a85ff3c5ee5"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": null,
+            "authors": [ "DDSTranslation", "Tom", "FlashPV", "Akira76" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/5667/",
+            "otherUrls": [ ],
+            "version": "2.0",
+            "releaseDate": "2020-08-26",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        }
+    ]
+}
