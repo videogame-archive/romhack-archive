@@ -2,8 +2,8 @@
     "id": null,
     "info": {
         "name": null,
-        "translatedTitle": null,
-        "status": "Fully Playable | Incomplete",
+        "translatedTitle": true,
+        "status": "Fully Playable",
         "adult": null,
         "offensive": null,
         "obsoleteVersion": null,

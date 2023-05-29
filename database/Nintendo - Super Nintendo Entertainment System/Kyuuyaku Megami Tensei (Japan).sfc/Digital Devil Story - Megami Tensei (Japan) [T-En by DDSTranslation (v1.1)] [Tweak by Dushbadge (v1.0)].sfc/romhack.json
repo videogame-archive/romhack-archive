@@ -24,10 +24,10 @@
     "patches": [
         {
             "id": null,
-            "name": null,
+            "name": "[English] translation for [Kyuuyaku Megami Tensei]",
             "authors": [ "DDSTranslation" ],
             "shortAuthors": null,
-            "url": "https://mail.romhacking.net/translations/2263/",
+            "url": "https://www.romhacking.net/translations/2263/",
             "otherUrls": [ ],
             "version": "1.1",
             "releaseDate": null,
@@ -37,10 +37,10 @@
         },
         {
             "id": null,
-            "name": null,
+            "name": "[English] translation for [Kyuuyaku Megami Tensei]",
             "authors": [ "Dushbadge" ],
             "shortAuthors": null,
-            "url": "https://mail.romhacking.net/translations/3319/",
+            "url": "https://www.romhacking.net/translations/3319/",
             "otherUrls": [ ],
             "version": "1.0",
             "releaseDate": null,

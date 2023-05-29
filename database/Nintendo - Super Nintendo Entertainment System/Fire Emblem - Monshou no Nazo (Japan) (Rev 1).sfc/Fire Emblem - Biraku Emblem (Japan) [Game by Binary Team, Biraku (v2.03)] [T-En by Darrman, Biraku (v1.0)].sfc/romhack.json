@@ -24,7 +24,7 @@
     "patches": [
         {
             "id": null,
-            "name": null,
+            "name": "Biraku Emblem",
             "authors": [ "Binary Team", "Biraku" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/5157/",
@@ -37,7 +37,7 @@
         },
         {
             "id": null,
-            "name": null,
+            "name": "Biraku Emblem: English Translation",
             "authors": [ "Darrman", "Biraku" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/5166/",
