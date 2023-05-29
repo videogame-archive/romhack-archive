@@ -23,7 +23,7 @@
     "patches": [
         {
             "id": null,
-            "name": null,
+            "name": "[English] translation for [Albert Odyssey]",
             "authors": [ "Peter Lemon" ],
             "shortAuthors": null,
             "url": "https://github.com/PeterLemon/SNES/tree/master/Translate",
