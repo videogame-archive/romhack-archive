@@ -1,0 +1,39 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable | Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-29",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "676a4074",
+        "md5": "0f95ffd60b32e212bccf72b2e090a2bb",
+        "sha1": "6d3a017d264bc7711cbaf8ca09ab10b18a006e5c"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Ganbare Goemon 3: Shishi Juurokubee no Karakuri Manjigatame]",
+            "authors": [ "Tom", "FlashPV", "DDS" ],
+            "shortAuthors": null,
+            "url": "https://www.translated.games/snes/goemon3",
+            "otherUrls": [ ],
+            "version": "A2",
+            "releaseDate": "2022-03-06",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        }
+    ]
+}
