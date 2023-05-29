@@ -41,7 +41,7 @@ public class Romhack2Archive {
             if (Files.size(parent) > MAX_MB_FOR_LINEAR || Files.size(romhack) > MAX_MB_FOR_LINEAR) {
                 throw new RuntimeException("rom is too big for this tool to handle. Please use this tool with --no-bps flag and flips to generate the bps.");
             }
-            process(disableBPS, parent, romhack, outputFolder, retrievedBy, urls);
+            process(disableBPS, parent, romhack, outputFolder, retrievedBy, urls, false);
         }
     }
 
@@ -55,7 +55,7 @@ public class Romhack2Archive {
     static private long MAX_MB_FOR_DELTA = 16777216; // 16 Mb
     static private long MAX_MB_FOR_LINEAR = 536870911; // 512 Mb
 
-    public static Path process(boolean disableBPS, Path pathToParentRom, Path pathToRomhackRom, Path outDir, String retrievedBy, List<String> urls) throws Exception {
+    public static Path process(boolean disableBPS, Path pathToParentRom, Path pathToRomhackRom, Path outDir, String retrievedBy, List<String> urls, boolean keepGivenFilename) throws Exception {
         System.out.println("maxMemory: " + Runtime.getRuntime().maxMemory());
         // Create romhack.json
         Info info = new Info(null, null, null, null, null, null, null);
@@ -91,7 +91,7 @@ public class Romhack2Archive {
                     }
                 }
                 if (urlPatch != null) {
-                    patch = new Patch(null, null, urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), options, labels, List.of());
+                    patch = new Patch(null, urlPatch.name(), urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), options, labels, List.of());
                 }
             }
             if (patch == null) {
@@ -133,8 +133,14 @@ public class Romhack2Archive {
         }
 
         String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
-        int indexOfName = romhackName.indexOf(" [");
-        romhackRomName = romhackName.substring(0, indexOfName) + expectedFolderNamePostfix + "." + PathUtil.getExtension(romhackRomName);
+
+        if (keepGivenFilename) {
+            romhackRomName = romhackName;
+        } else {
+            int indexOfName = romhackName.indexOf(" [");
+            romhackRomName = romhackName.substring(0, indexOfName) + expectedFolderNamePostfix + "." + PathUtil.getExtension(romhackRomName);
+        }
+
         out = out.resolve(romhackRomName);
         if (!Files.exists(out)) {
             Files.createDirectories(out);
