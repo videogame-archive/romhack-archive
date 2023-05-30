@@ -17,27 +17,27 @@
     },
     "rom": {
         "size": 1572864,
-        "crc32": "bd61d5c7",
-        "md5": "e58140b41d111ad0562d83536c8fea92",
-        "sha1": "0a69368805d52f62e847a9ea303882b1335d2180"
+        "crc32": "5fbf9bd2",
+        "md5": "51333c2ba3bcb820120dd3d5fa1d32f1",
+        "sha1": "bae525df3302046ccf1f84b3c3a4d424aee8239d"
     },
     "patches": [
         {
             "id": null,
-            "name": "[English] translation for [The Great Battle II: Last Fighter Twin]",
-            "authors": [ "Aeon Genesis", "Gideon Zhi", "TheMajinZenki", "FlashPV" ],
+            "name": "[English] translation for [The Great Battle III]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "TheMajinZenki", "Xanathis", "Daichi" ],
             "shortAuthors": null,
-            "url": "https://www.romhacking.net/translations/3470/",
+            "url": "https://www.romhacking.net/translations/3471/",
             "otherUrls": null,
-            "version": "1.20",
-            "releaseDate": "2018-03-29",
+            "version": "1.10",
+            "releaseDate": "2018-03-13",
             "options": null,
             "labels": [ "T-En" ],
             "medias": null
         },
         {
             "id": null,
-            "name": "The Great Battle II: Last Fighter Twin (J) - Fastrom",
+            "name": "The Great Battle III (J) - Fastrom",
             "authors": [ "Kandowontu" ],
             "shortAuthors": null,
             "url": "https://patreon.com/kandowontu",
