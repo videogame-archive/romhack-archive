@@ -3,7 +3,7 @@
     "info": {
         "name": null,
         "translatedTitle": null,
-        "status": "Fully Playable",
+        "status": "Incomplete",
         "adult": null,
         "offensive": null,
         "obsoleteVersion": null,
@@ -16,21 +16,21 @@
         "notes": null
     },
     "rom": {
-        "size": 1048576,
-        "crc32": "3230ea4f",
-        "md5": "bd6c161e1e23419960561536994a2e1b",
-        "sha1": "3ef52da1c3f4ad3ff694cd52d6ff0ffa41d8e5cc"
+        "size": 4194304,
+        "crc32": "3e96ca30",
+        "md5": "3a8bc1ec0b4fb43a20cdcc6ebd2d5e5b",
+        "sha1": "d3bc7a46194e6f6bfb976ec71d0562f2e82b8496"
     },
     "patches": [
         {
             "id": null,
-            "name": "[English] translation for [Smart Ball]",
-            "authors": [ "Chris M. Covell" ],
+            "name": "[English] translation for [Jikkyou Power Pro Wrestling '96 - Max Voltage]",
+            "authors": [ "Phil", "Keishou Omomuroni", "snesmaster40" ],
             "shortAuthors": null,
-            "url": "https://www.romhacking.net/translations/372/",
+            "url": "https://www.romhacking.net/translations/1239/",
             "otherUrls": [ ],
-            "version": "2001.8.8",
-            "releaseDate": "2001-08-08",
+            "version": "2007.12.07",
+            "releaseDate": "2007-12-07",
             "options": null,
             "labels": [ "T-En" ],
             "medias": [ ]
