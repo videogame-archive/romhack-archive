@@ -1,0 +1,39 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-03",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1572864,
+        "crc32": "71f71a24",
+        "md5": "e42ad5c32041a4ec7e3862f46a8ac6f5",
+        "sha1": "c578d1ca27d23d3136aebfc54b29a678ccfae306"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Mahou Kishi Rayearth]",
+            "authors": [ "LNF Translations", "RPGe", "Dibz`", "Lina`chan", "LordTech", "StSCC", "Nuku-nuku", "Neill Corlett", "aziwoqpd", "Makutosu" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/387/",
+            "otherUrls": [ ],
+            "version": "1.01",
+            "releaseDate": "1999-03-19",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        }
+    ]
+}
