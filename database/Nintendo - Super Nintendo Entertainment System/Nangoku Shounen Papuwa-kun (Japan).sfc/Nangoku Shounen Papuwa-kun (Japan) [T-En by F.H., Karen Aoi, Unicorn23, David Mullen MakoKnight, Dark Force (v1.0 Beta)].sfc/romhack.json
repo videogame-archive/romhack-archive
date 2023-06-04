@@ -1,0 +1,39 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-04",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1310720,
+        "crc32": "1993b4ef",
+        "md5": "608b199679dc647a64589d077845b5bf",
+        "sha1": "e3a72677791bfc4c917f26d1c56688887b0a2683"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Nangoku Shounen Papuwa-kun]",
+            "authors": [ "F.H.", "Karen Aoi", "Unicorn23", "David Mullen (MakoKnight)", "Dark Force" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/400/",
+            "otherUrls": [ ],
+            "version": "1.0 Beta",
+            "releaseDate": "2000-07-09",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        }
+    ]
+}
