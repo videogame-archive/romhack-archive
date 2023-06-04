@@ -41,10 +41,10 @@ public class RomhackValidator {
         for (int i = 0; i < romhack.patches().size(); i++) {
             Patch patch = romhack.patches().get(i);
             if (StringUtil.isBlankString(patch.name())) {
-                throw new RuntimeException("Patch " + i + " is missing name.");
+                throw new RuntimeException("Patch " + (i + 1) + " is missing name.");
             }
             if (StringUtil.isBlankString(patch.releaseDate())) {
-                throw new RuntimeException("Patch " + i + " is missing release date.");
+                throw new RuntimeException("Patch " + (i + 1) + " is missing release date.");
             }
         }
     }
