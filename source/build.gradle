@@ -13,10 +13,10 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.apache.commons:commons-csv:1.10.0', // https://commons.apache.org/proper/commons-csv/
-            'javax.json:javax.json-api:1.1', // https://javaee.github.io/jsonp/
-            'org.tukaani:xz:1.9', // https://tukaani.org/xz/java.html
-            'fun.mingshan:markdown4j:1.0' // https://github.com/mstao/markdown4j
+    implementation 'org.apache.commons:commons-csv:1.10.0', /* https://commons.apache.org/proper/commons-csv/ */
+            'javax.json:javax.json-api:1.1', /* https://javaee.github.io/jsonp/ */
+            'org.tukaani:xz:1.9', /* https://tukaani.org/xz/java.html */
+            'fun.mingshan:markdown4j:1.0' /* https://github.com/mstao/markdown4j */
 
     runtimeOnly 'org.glassfish:javax.json:1.1'
 
