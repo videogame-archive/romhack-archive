@@ -17,9 +17,9 @@
     },
     "rom": {
         "size": 2097152,
-        "crc32": "842d9b3a",
-        "md5": "7d68ea581c8c9ee405d87a8aee5b7641",
-        "sha1": "84c2f8c27a6e969178d61a853f421c9770fe32e3"
+        "crc32": "47ebde2f",
+        "md5": "b939b678045b83372a50b28a188c86b8",
+        "sha1": "3babf987a190e35dd6d4454f48ce2baf772a97fb"
     },
     "patches": [
         {
