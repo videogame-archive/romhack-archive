@@ -1,0 +1,52 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-03",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "69863c2b",
+        "md5": "e1ae5a1255863c5c12d9da97e92b970b",
+        "sha1": "7b79d9780aad180d975b43c1198dfa2c6a6990f3"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Shin Kidou Senki Gundam W: Endless Duel]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "satsu", "Shih Tzu", "Eien Ni Hen", "Tetsuo", "Haeleth" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/570/",
+            "otherUrls": [ ],
+            "version": "1.00",
+            "releaseDate": "2002-06-23",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        },
+        {
+            "id": null,
+            "name": "Gundam Wing: Endless Duel - Fastrom & Fixes by ComboKyo",
+            "authors": [ "ComboKyo" ],
+            "shortAuthors": null,
+            "url": "https://www.patreon.com/posts/gundam-wing-duel-80719870",
+            "otherUrls": [ ],
+            "version": "1.0",
+            "releaseDate": "2023-03-23",
+            "options": null,
+            "labels": [ "Performance" ],
+            "medias": [ ]
+        }
+    ]
+}
