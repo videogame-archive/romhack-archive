@@ -1,0 +1,39 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-06",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "76fc16e0",
+        "md5": "83170760d424ff38c062dd00d5e1779a",
+        "sha1": "154281292d6715f8eed1519309af1c4ff09f2f89"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "[English] translation for [Romancing SaGa 3]",
+            "authors": [ "Mana Sword", "Lee Chaolang", "Disnesquick" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/translations/416/",
+            "otherUrls": [ ],
+            "version": "0.30",
+            "releaseDate": "2000-07-22",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        }
+    ]
+}
