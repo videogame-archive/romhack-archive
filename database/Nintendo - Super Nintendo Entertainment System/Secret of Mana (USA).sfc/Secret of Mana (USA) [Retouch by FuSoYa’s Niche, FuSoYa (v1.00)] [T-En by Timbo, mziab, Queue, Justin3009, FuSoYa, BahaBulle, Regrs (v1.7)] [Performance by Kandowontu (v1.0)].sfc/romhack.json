@@ -1,0 +1,65 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable | Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-07",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "d91fab17",
+        "md5": "ff6ae302296e4638790c8be1c323ef0e",
+        "sha1": "15fdad78a288ff985c740c7c98c13f9df113aa8f"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "Secret of Mana Variable Width Font Edition",
+            "authors": [ "FuSoYa’s Niche", "FuSoYa" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/hacks/18/",
+            "otherUrls": [ ],
+            "version": "1.00",
+            "releaseDate": "2000-02-09",
+            "options": null,
+            "labels": [ "Retouch" ],
+            "medias": [ ]
+        },
+        {
+            "id": null,
+            "name": "Secret of Mana: Relocalized",
+            "authors": [ "Timbo", "mziab", "Queue", "Justin3009", "FuSoYa", "BahaBulle", "Regrs" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/hacks/4324/",
+            "otherUrls": [ ],
+            "version": "1.7",
+            "releaseDate": "2019-03-21",
+            "options": null,
+            "labels": [ "T-En" ],
+            "medias": [ ]
+        },
+        {
+            "id": null,
+            "name": "Secret of Mana/Seiken Densetsu 2 - Fastrom (J) and (U)",
+            "authors": [ "Kandowontu" ],
+            "shortAuthors": null,
+            "url": "https://www.patreon.com/posts/secret-of-mana-2-80433996",
+            "otherUrls": [ "https://patreon.com/kandowontu", "https://twitter.com/kandowontu"],
+            "version": "1.0",
+            "releaseDate": "2023-03-23",
+            "options": null,
+            "labels": [ "Performance" ],
+            "medias": [ ]
+        }
+    ]
+}
