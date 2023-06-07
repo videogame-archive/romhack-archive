@@ -1,0 +1,39 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-07",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "dca63c3e",
+        "md5": "0fb70235cf3ac0ad62add0f6da665ed8",
+        "sha1": "666360b59462730e8e5b1da0208237d780314064"
+    },
+    "patches": [
+        {
+            "id": null,
+            "name": "Secret of Mana Variable Width Font Edition",
+            "authors": [ "FuSoYa’s Niche", "FuSoYa" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/hacks/18/",
+            "otherUrls": [ ],
+            "version": "1.00",
+            "releaseDate": "2000-02-09",
+            "options": null,
+            "labels": [ "Retouch" ],
+            "medias": [ ]
+        }
+    ]
+}
