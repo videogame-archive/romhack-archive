@@ -1,0 +1,68 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable | Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "fce9afa7",
+        "md5": "f4bafb5d05cb1e333c1ce41ec6bd7905",
+        "sha1": "d65904a900ed9f4e582fddd8ed6b4759d238ffa4"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Shin Megami Tensei]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Ian Kelley", "Tom" ],
+            "shortAuthors": "Aeon Genesis",
+            "url": "https://www.romhacking.net/translations/571/",
+            "otherUrls": null,
+            "version": "1.00",
+            "releaseDate": "2002-06-30",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "[English] translation for [Shin Megami Tensei]",
+            "authors": [ "Orden", "Gideon Zhi", "Ian Kelley", "Tom" ],
+            "shortAuthors": "Orden",
+            "url": "https://www.romhacking.net/translations/2616/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2012-11-11",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Fix" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "Shin Megami Tensei automap enhancement",
+            "authors": [ "Revenant" ],
+            "shortAuthors": "Revenant",
+            "url": "https://www.romhacking.net/hacks/907/",
+            "otherUrls": null,
+            "version": "1.3",
+            "releaseDate": "2016-01-13",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Tweak" ],
+            "medias": null
+        }
+    ]
+}
