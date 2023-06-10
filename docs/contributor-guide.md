@@ -27,7 +27,7 @@ This is best visualized with an example:
 ```
 No-Intro System Name
     |- No-Intro Rom Name (region).extension
-            |- Romhack Rom Name (region) [ABC by Author (vVersion)] [XYZ by Author (vVersion)].extension
+            |- Release Rom Name (region) [ABC by Author (vVersion)] [XYZ by Author (vVersion)].extension
                 |- romhack.bps
                 |- romhack.json
                 |- romhack-original
@@ -66,7 +66,7 @@ The numbers found under the 'romhack-original' are the order in what the individ
 | crc32           | string          | Yes          | For the romhack rom: crc32 hash as an hex string in lowercase.                                                                                                                                                                                                                      |
 | md5             | string          | Yes          | For the romhack rom: md5 hash as an hex string in lowercase.                                                                                                                                                                                                                        |
 | sha1            | string          | Yes          | For the romhack rom: sha1 hash as an hex string in lowercase.                                                                                                                                                                                                                       |
-| **Patches**     | array of object | Yes          |                                                                                                                                                                                                                                                                                     |
+| **Hacks**       | array of object | Yes          |                                                                                                                                                                                                                                                                                     |
 | id              | number          | No           | Unique id for the patch on the database. This id is initially null until is assigned. After being assigned becomes permanent.                                                                                                                                                       |
 | name            | string          | Yes          | Name of the patch.                                                                                                                                                                                                                                                                  |
 | authors         | array of string | Yes          | Authors of the patch, to avoid naming authors in different ways best is to use their name as indicated in community sites or forums including 'Anonymous'. In absence of any information 'Unknown' SHOULD be used. ⚠ The array is sorted in the same order authors sort themselves. |
@@ -81,7 +81,8 @@ The numbers found under the 'romhack-original' are the order in what the individ
 | releaseDate     | string          | No           | Date that the current patch distribution was made available formatted YYYY-MM-DD. This date doesn't necessarily match the release or modification date of the community site.                                                                                                       |
 |                 |                 |              | Is recommend to first scan text files on the patch distribution for this date when they are available.                                                                                                                                                                              |
 |                 |                 |              | Also check the community site for the last date the author updated the patch when available. Sometimes the readme is outdated.                                                                                                                                                      |
-| options         | string          | No           | When multiple alternative and/or optional patches for the same romhack are distributed together, string identifying the used patches separated by commas.                                                                                                                           |
+| options         | array of string | No           | When multiple alternative and/or optional patches for the same romhack are distributed together, list of the used patches.                                                                                                                                                          | 
+| shortOptions    | string          | No           | Due to filename length limit is not always feasible to keep all options on the filename, on those cases this field is used instead, 'null' otherwise.                                                                                                                               |
 | labels          | array of string | Yes          | Each patch SHOULD have AT LEAST one label. ⚠ The array is sorted lexicographically.                                                                                                                                                                                                 |
 
 As a general rule if a boolean value is not mandatory, null is used instead of false.
@@ -112,7 +113,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
     "md5": "7d285d74ab2975100462293b8e13d1a5",
     "sha1": "0ac7f6b0454538a1e87a44008e6ff996e01a4c8c"
   },
-  "patches": [
+  "hacks": [
     {
       "id": null,
       "name": "[English] translation for [Final Fantasy V]",
@@ -123,6 +124,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
       "version": "1.10",
       "releaseDate": "1998-10-17",
       "options": null,
+      "shortOptions": null,
       "labels": [ "T-En" ],
       "medias": null
     },
@@ -130,12 +132,13 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
       "id": null,
       "name": "[English] translation for [Final Fantasy V]",
       "authors": [ "Spooniest", "Barubary", "SoM2Freak", "harmony7", "FlamePurge" ],
-      "shortAuthors": null,
+      "shortAuthors": "Spooniest, ...",
       "url": "https://www.romhacking.net/translations/2600/",
       "otherUrls": null,
       "version": "2.1",
       "releaseDate": "2021-03-02",
       "options": null,
+      "shortOptions": null,
       "labels": [ "Fix" ],
       "medias": null
     },
@@ -149,6 +152,7 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
       "version": "1.0",
       "releaseDate": "2018-03-25",
       "options": null,
+      "shortOptions": null,
       "labels": [ "Fix" ],
       "medias": null
     }
@@ -394,7 +398,7 @@ usage:
 	java -jar rom-patcher.jar "patch" "inputRom" "outputRom"
 ```
 
-### Romhack 2 Archive
+### Romhack 2 Release
 
 This tool is intended to be used by contributors.
 Is important to have correctly named parent rom and romhack rom.
@@ -414,7 +418,7 @@ Input and output roms can be compressed using zip or not.
 Zip format is autodetect by looking at the file's extension.
 
 ```bash
-%/>java -jar romhack2archive.jar
+%/>java -jar romhack2release.jar
 usage: 
 		 java -jar romhack2archive.jar [--no-bps] "retrievedBy" "parentRom" "romhackRom" "outputDir" ["patchURL1"] ... ["patchURLN"]
 - Currently only romhacking.net urls are supported, other don't retrieve extra information.
@@ -425,9 +429,9 @@ The tool can also be feed the patch URLs, when RHDN URLs are used the tool with 
 
 It will also put the release date. ⚠ Verify these since more often than not don't follow the guidelines.
 
-### Romhack 2 Archive --no-bps
+### Romhack 2 Release --no-bps
 
-The romhack2archive.jar tool uses larges amounts of memory, this is not noticeable when working on small roms but makes it unsuitable to use with disc based games.
+The romhack2release.jar tool uses larges amounts of memory, this is not noticeable when working on small roms but makes it unsuitable to use with disc based games.
 
 The tool will prevent its use with files larger than 512 MB.
 
