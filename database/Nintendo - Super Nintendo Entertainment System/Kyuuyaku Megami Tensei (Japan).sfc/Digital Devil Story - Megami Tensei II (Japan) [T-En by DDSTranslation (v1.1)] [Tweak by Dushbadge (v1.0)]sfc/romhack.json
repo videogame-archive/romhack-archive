@@ -1,0 +1,54 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-28",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2621440,
+        "crc32": "4999b820",
+        "md5": "fdcd5df8b88904789f672c329730d05e",
+        "sha1": "816b61d0eccb8394bc22fec0fd8dd77090d0aace"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Kyuuyaku Megami Tensei]",
+            "authors": [ "DDSTranslation" ],
+            "shortAuthors": "DDSTranslation",
+            "url": "https://www.romhacking.net/translations/2263/",
+            "otherUrls": null,
+            "version": "1.1",
+            "releaseDate": "2014-09-06",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "[English] translation for [Kyuuyaku Megami Tensei]",
+            "authors": [ "Dushbadge" ],
+            "shortAuthors": "Dushbadge",
+            "url": "https://www.romhacking.net/translations/3320/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2017-11-30",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Tweak" ],
+            "medias": null
+        }
+    ]
+}

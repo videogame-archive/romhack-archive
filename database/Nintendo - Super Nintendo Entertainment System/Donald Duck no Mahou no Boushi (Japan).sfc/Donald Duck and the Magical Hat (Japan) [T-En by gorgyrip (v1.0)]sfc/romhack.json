@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "4e5fa568",
+        "md5": "c18b5b2bfe7c8a243946cdef6a4e4e17",
+        "sha1": "28d3087b41483deb2ecf1ec5f7e927e768c6afa6"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Donald Duck no Mahou no Boushi]",
+            "authors": [ "gorgyrip", "sandytf", "Nagato" ],
+            "shortAuthors": "gorgyrip",
+            "url": "https://www.romhacking.net/translations/2655/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2017-06-27",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

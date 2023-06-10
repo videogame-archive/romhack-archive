@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-02",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "3e96ca30",
+        "md5": "3a8bc1ec0b4fb43a20cdcc6ebd2d5e5b",
+        "sha1": "d3bc7a46194e6f6bfb976ec71d0562f2e82b8496"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Jikkyou Power Pro Wrestling '96 - Max Voltage]",
+            "authors": [ "Phil", "Keishou Omomuroni", "snesmaster40" ],
+            "shortAuthors": "Phil",
+            "url": "https://www.romhacking.net/translations/1239/",
+            "otherUrls": null,
+            "version": "2007.12.07",
+            "releaseDate": "2007-12-07",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "782b9848",
+        "md5": "1419327656c43e3784087864283dd4d0",
+        "sha1": "9050cc9c851598fd8e427c08715d7a5b0a8ec03e"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Dragon Quest V: Tenkuu no Hanayome]",
+            "authors": [ "Near", "SpSpiff" ],
+            "shortAuthors": "Near",
+            "url": "https://www.romhacking.net/translations/342/",
+            "otherUrls": null,
+            "version": "0.91",
+            "releaseDate": "2001-11-20",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

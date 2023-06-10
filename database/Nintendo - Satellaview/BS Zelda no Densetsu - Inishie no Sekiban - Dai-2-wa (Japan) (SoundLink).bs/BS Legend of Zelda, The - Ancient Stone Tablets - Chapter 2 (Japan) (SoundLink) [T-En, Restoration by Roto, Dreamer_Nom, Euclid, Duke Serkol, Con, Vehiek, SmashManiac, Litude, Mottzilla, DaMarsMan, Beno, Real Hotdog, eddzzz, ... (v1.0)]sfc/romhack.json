@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-01",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "b59e6d29",
+        "md5": "bbcea27d39d9d64688b1c0235915bb36",
+        "sha1": "37265e52c298b5c8607d3a8ac5fce829763a306d"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "BS Legend of Zelda, The - Ancient Stone Tablets - Chapter 2 Restoration : English Version",
+            "authors": [ "Roto", "Dreamer_Nom", "Euclid", "Duke Serkol", "Con", "Vehiek", "SmashManiac", "Litude", "Mottzilla", "DaMarsMan", "Beno", "Real Hotdog", "eddzzz", "d4s", "Vehiek", "David", "MoN", "MadHatter" ],
+            "shortAuthors": "Roto, Dreamer_Nom, Euclid, Duke Serkol, Con, Vehiek, SmashManiac, Litude, Mottzilla, DaMarsMan, Beno, Real Hotdog, eddzzz, ...",
+            "url": "http://bszelda.zeldalegends.net/sekibanfiles.shtml",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2020-09-21",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En", "Restoration" ],
+            "medias": null
+        }
+    ]
+}

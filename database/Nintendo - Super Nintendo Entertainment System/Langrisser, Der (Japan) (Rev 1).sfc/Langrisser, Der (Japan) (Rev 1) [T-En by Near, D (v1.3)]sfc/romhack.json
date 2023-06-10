@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-02",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "0bf76cbe",
+        "md5": "bcd57c200dfe3a27db323d5c97b1c172",
+        "sha1": "931bef2f377cb2d3166b03103fe5b90cf0d6c5f5"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Der Langrisser]",
+            "authors": [ "Near", "D" ],
+            "shortAuthors": "Near, D",
+            "url": "https://www.romhacking.net/translations/1147/",
+            "otherUrls": null,
+            "version": "1.3",
+            "releaseDate": "2012-10-23",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

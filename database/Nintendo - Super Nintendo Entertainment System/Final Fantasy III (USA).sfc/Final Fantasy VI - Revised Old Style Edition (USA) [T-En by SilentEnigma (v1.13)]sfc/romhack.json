@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-29",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "a76a6d97",
+        "md5": "c70d44412252b23aac7ed8c69b13af1b",
+        "sha1": "6a6e35b7125226281b6884d3243f9df746898cf7"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "Final Fantasy VI: Revised Old Style Edition",
+            "authors": [ "SilentEnigma", "KWhazit", "Tomato", "Lina Darkstar", "DarkMage", "Rodimus Primal", "Spooniest", "angelo26", "Dr. Meat", "Yazoo", "Terii Senshi", "dn", "Leet Sketcher", "Master ZED", "Imzogelmo", "Madsiur", "Novalia Spirit", "Subtraction", "C. V. Reynolds", "assassin17", "bydoless", "Djibriel", "Dragonsbrethren", "Drakkhen", "Mike Ferrell", "Lenophis", "Lord J", "Kejardon", "mblock129" ],
+            "shortAuthors": "SilentEnigma",
+            "url": "https://www.romhacking.net/hacks/5037/",
+            "otherUrls": null,
+            "version": "1.13",
+            "releaseDate": "2023-04-02",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

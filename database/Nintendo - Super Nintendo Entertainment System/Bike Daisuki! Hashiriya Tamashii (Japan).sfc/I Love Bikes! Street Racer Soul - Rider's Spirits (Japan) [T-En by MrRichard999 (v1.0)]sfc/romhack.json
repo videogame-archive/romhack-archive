@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 524288,
+        "crc32": "21c607e8",
+        "md5": "66113739f319f0667ac04f0c9564dc3c",
+        "sha1": "caf1c35e4cbc98898941bd32922941191bbd9a8d"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Bike Daisuki! Hashiriya Tamashii - Rider's Spirits]",
+            "authors": [ "MrRichard999", "D.D.S.", "AgentOrange", "TheMajinZenki", "FlashPV" ],
+            "shortAuthors": "MrRichard999",
+            "url": "https://www.romhacking.net/translations/4080/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2018-12-10",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

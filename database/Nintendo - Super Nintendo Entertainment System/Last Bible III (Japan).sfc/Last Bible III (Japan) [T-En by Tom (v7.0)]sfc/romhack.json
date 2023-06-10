@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-02",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "b3cdda23",
+        "md5": "1633086c62077c6e340be059238879e4",
+        "sha1": "308c2e7bca585a35be6b38fe36d6c59bb10c0038"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Last Bible III]",
+            "authors": [ "Tom", "FlashPV", "DDSTranslation" ],
+            "shortAuthors": "Tom",
+            "url": "https://www.romhacking.net/translations/3545/",
+            "otherUrls": null,
+            "version": "7.0",
+            "releaseDate": "2018-05-31",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-03",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "1bbd5cb5",
+        "md5": "e92a446429af711671d0af38beacdb55",
+        "sha1": "c7d989af46e3b138969d6477099e0b373676b89e"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Little Master: Nijiiro no Maseki]",
+            "authors": [ "DackR", "Eien Ni Hen", "Musashi", "Bongo`" ],
+            "shortAuthors": "DackR",
+            "url": "https://www.romhacking.net/translations/1744/",
+            "otherUrls": null,
+            "version": "2 second beta",
+            "releaseDate": "2007-04-08",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

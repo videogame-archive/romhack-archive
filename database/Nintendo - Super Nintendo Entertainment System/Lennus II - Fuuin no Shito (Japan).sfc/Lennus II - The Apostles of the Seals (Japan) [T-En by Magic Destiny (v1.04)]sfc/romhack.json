@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-02",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "a9d6de79",
+        "md5": "8eedd52bbb4d636754a5ac4df5c17480",
+        "sha1": "fd516ca9bb1d32a15e308d976760e41bcda5bd27"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Lennus II: Fuuin no Shito]",
+            "authors": [ "Magic Destiny", "Akujin", "Draken", "Daimajin", "Xeur", "PhatOo7", "Bongo`", "Wildbill" ],
+            "shortAuthors": "Magic Destiny",
+            "url": "https://www.romhacking.net/translations/1332/",
+            "otherUrls": null,
+            "version": "1.04",
+            "releaseDate": "2008-10-15",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

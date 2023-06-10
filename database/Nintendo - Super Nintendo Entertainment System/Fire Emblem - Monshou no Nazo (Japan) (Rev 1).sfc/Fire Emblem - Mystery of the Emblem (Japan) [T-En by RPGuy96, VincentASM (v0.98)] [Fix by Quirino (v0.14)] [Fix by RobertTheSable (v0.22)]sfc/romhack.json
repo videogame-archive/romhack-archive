@@ -1,0 +1,68 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "7394798a",
+        "md5": "59829f9021c5c6525e15523f319a0cbe",
+        "sha1": "d328a5470bc1871145413a05a80b3fcf191cf33f"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Fire Emblem: Monshou no Nazo]",
+            "authors": [ "RPGuy96", "VincentASM" ],
+            "shortAuthors": "RPGuy96, VincentASM",
+            "url": "https://www.romhacking.net/translations/961/",
+            "otherUrls": null,
+            "version": "0.98",
+            "releaseDate": "2008-06-21",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "[English] translation for [Fire Emblem: Monshou no Nazo]",
+            "authors": [ "Quirino", "RPGuy96", "VincentASM" ],
+            "shortAuthors": "Quirino",
+            "url": "https://www.romhacking.net/translations/2805/",
+            "otherUrls": null,
+            "version": "0.14",
+            "releaseDate": "2017-11-11",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Fix" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "[English] translation for [Fire Emblem: Monshou no Nazo]",
+            "authors": [ "RobertTheSable", "Quirino", "RPGuy96", "VincentASM" ],
+            "shortAuthors": "RobertTheSable",
+            "url": "https://www.romhacking.net/translations/4969/",
+            "otherUrls": null,
+            "version": "0.22",
+            "releaseDate": "2022-04-14",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Fix" ],
+            "medias": null
+        }
+    ]
+}

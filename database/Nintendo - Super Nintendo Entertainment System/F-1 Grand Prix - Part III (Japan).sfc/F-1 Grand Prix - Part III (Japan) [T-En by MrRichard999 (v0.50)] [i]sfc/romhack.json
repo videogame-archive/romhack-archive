@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-28",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "08bfcab0",
+        "md5": "7012a33834f2bf733ecdeb587598d20d",
+        "sha1": "0dcbb9260dd233cb5b831a3ee92a9638b9fd6ee3"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [F-1 Grand Prix Part III]",
+            "authors": [ "MrRichard999", "TheMajinZenki", "AgentOrange" ],
+            "shortAuthors": "MrRichard999",
+            "url": "https://www.romhacking.net/translations/4350/",
+            "otherUrls": null,
+            "version": "0.50",
+            "releaseDate": "2019-03-27",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

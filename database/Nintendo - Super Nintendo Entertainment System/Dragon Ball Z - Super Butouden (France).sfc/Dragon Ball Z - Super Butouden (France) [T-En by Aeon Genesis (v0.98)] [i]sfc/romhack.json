@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "45522430",
+        "md5": "02bd781d38de7e470192a342bd5088dd",
+        "sha1": "d56701d583330071a46b8c6d246f70e7641cd4bc"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Dragon Ball Z: Super Butouden]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Minh the Mystic Knight" ],
+            "shortAuthors": "Aeon Genesis",
+            "url": "https://www.romhacking.net/translations/330/",
+            "otherUrls": null,
+            "version": "0.98",
+            "releaseDate": "2000-06-18",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-29",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2621440,
+        "crc32": "2163d81c",
+        "md5": "603483ffb4f319a21cd8bfbce6799bd5",
+        "sha1": "cecd7864d5fb8fc9b4b2244d4fb1df2d38316b18"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Gokujou Parodius]",
+            "authors": [ "blizzz" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/forum/index.php?topic=35862.0",
+            "otherUrls": null,
+            "version": "221009",
+            "releaseDate": "2022-10-09",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

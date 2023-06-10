@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-05-28",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2621440,
+        "crc32": "bfd3abbc",
+        "md5": "3759e124f76bb2686ffdd3d704b55c71",
+        "sha1": "8e3633566de3a2a04df2d5eb2d6af8772aefb1fc"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "Final Fantasy V - GBA Script Port",
+            "authors": [ "J121" ],
+            "shortAuthors": "J121",
+            "url": "https://www.romhacking.net/hacks/3687/",
+            "otherUrls": null,
+            "version": "1.16",
+            "releaseDate": "2021-06-23",
+            "options": [ "Bugfixes", "Ginger Battle Galuf" ],
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

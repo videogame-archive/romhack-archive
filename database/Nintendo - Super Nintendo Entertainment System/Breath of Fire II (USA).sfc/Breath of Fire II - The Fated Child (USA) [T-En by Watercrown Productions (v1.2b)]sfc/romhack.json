@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-04-30",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "7eb2ab3b",
+        "md5": "c81525ffd4508be1b8621d6c72808c9f",
+        "sha1": "bf6154adb500935eb748782207211ecf47868c57"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Breath of Fire II]",
+            "authors": [ "Watercrown Productions" ],
+            "shortAuthors": null,
+            "url": "http://watercrown.info/second-verse-same-as-the-first/",
+            "otherUrls": null,
+            "version": "1.2b",
+            "releaseDate": "2009-10-09",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

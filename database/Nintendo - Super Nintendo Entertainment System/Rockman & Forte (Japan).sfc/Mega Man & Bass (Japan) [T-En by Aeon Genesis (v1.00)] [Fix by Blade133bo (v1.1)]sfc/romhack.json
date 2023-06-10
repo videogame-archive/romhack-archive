@@ -1,0 +1,54 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-03",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "bd81d354",
+        "md5": "000c637b06a66d34c9cf0c0e34f2986d",
+        "sha1": "aee74beff0151450bd9eac64eb619655d48fffe7"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Rockman & Forte]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "AndrewT", "Ian Kelley", "satsu", "Demi" ],
+            "shortAuthors": "Aeon Genesis",
+            "url": "https://www.romhacking.net/translations/621/",
+            "otherUrls": null,
+            "version": "1.00",
+            "releaseDate": "2002-12-18",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "[English] translation for [Rockman & Forte]",
+            "authors": [ "Blade133bo", "Gideon Zhi", "RealGaea", "lilpuddy31" ],
+            "shortAuthors": "Blade133bo",
+            "url": "https://www.romhacking.net/translations/6128/",
+            "otherUrls": null,
+            "version": "1.1",
+            "releaseDate": "2023-03-08",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Fix" ],
+            "medias": null
+        }
+    ]
+}

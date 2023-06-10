@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-06",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "e50381bf",
+        "md5": "52a381970b31ba9d8a8e7e5fb660a888",
+        "sha1": "b499b534ba56fe2856c64cc462fdda6ab636caec"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Rival Turf!]",
+            "authors": [ "FlashPV", "Eien Ni Hen", "Shiroma3084", "Kung Fu Furby", "Jonny2x4" ],
+            "shortAuthors": "FlashPV",
+            "url": "https://www.romhacking.net/translations/2739/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2016-10-02",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

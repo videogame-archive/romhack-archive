@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-03-21",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "a6cf8e79",
+        "md5": "11d4270e2bf98335780013808c0c7004",
+        "sha1": "d3c5c8f693d458b0313ddbf7070a178ad8c85b5d"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Dossun! Stone Battle]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Tom" ],
+            "shortAuthors": "Aeon Genesis",
+            "url": "https://www.romhacking.net/translations/314/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2000-10-23",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}

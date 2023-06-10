@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-01",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "bcc7aa71",
+        "md5": "d667c31bbf44bfb2ad960b776a665848",
+        "sha1": "b879e7c41276c8ea171c3074a08f3029ab0ad8d0"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Hyper Iria]",
+            "authors": [ "Dynamic-Designs", "Matt's Messy Room", "Bongo`", "filler", "Taskforce", "Draken" ],
+            "shortAuthors": "Dynamic-Designs, Matt's Messy Room",
+            "url": "https://www.romhacking.net/translations/2665/",
+            "otherUrls": null,
+            "version": "1.02",
+            "releaseDate": "2016-08-10",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
