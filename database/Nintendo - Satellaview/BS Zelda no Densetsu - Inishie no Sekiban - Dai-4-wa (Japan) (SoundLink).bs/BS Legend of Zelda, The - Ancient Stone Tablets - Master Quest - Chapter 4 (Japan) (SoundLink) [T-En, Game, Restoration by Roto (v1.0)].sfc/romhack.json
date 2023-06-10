@@ -17,23 +17,23 @@
     },
     "rom": {
         "size": 4194304,
-        "crc32": "b59e6d29",
-        "md5": "bbcea27d39d9d64688b1c0235915bb36",
-        "sha1": "37265e52c298b5c8607d3a8ac5fce829763a306d"
+        "crc32": "edd5acd5",
+        "md5": "9db5dcf0a30f23ee679ee0c068cc77a9",
+        "sha1": "bdacd086265ae7f3af0037dd4ae1ae4d252f8a2a"
     },
     "hacks": [
         {
             "id": null,
-            "name": "BS Legend of Zelda, The - Ancient Stone Tablets - Chapter 2 Restoration : English Version",
+            "name": "BS Legend of Zelda, The - Ancient Stone Tablets - Chapter 4 Master Quest Restoration : English Version",
             "authors": [ "Roto", "Dreamer_Nom", "Euclid", "Duke Serkol", "Con", "Vehiek", "SmashManiac", "Litude", "Mottzilla", "DaMarsMan", "Beno", "Real Hotdog", "eddzzz", "d4s", "Vehiek", "David", "MoN", "MadHatter" ],
-            "shortAuthors": "Roto, Dreamer_Nom, Euclid, Duke Serkol, Con, Vehiek, SmashManiac, Litude, Mottzilla, DaMarsMan, Beno, Real Hotdog, eddzzz, ...",
+            "shortAuthors": "Roto",
             "url": "http://bszelda.zeldalegends.net/sekibanfiles.shtml",
             "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2020-09-21",
             "options": null,
             "shortOptions": null,
-            "labels": [ "T-En", "Restoration" ],
+            "labels": [ "T-En", "Game", "Restoration" ],
             "medias": null
         }
     ]
