@@ -21,7 +21,7 @@
         "md5": "e88676da051f169cde0bd496d9b19893",
         "sha1": "caad3afee78a50c69dfd18d9e8a2a265694c074d"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Lodoss Tou Senki]",

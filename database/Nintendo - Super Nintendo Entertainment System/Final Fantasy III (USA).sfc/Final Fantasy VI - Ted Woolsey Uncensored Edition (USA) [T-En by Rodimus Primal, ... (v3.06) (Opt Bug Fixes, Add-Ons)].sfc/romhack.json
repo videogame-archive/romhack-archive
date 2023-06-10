@@ -21,7 +21,7 @@
         "md5": "b3cb907c3c22d7376d7e9e6da2037dd7",
         "sha1": "fd59b64250bd85fb857ec893a326d1f917b8a581"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Final Fantasy VI - Ted Woolsey Uncensored Edition",

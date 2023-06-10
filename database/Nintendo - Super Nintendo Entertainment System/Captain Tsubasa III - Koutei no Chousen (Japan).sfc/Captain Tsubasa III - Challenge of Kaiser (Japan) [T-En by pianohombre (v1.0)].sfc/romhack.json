@@ -20,7 +20,7 @@
         "md5": "6567ceb7ab467ed84f5a3671da710225",
         "sha1": "a5b3ad4a4f197d2e1f35f6d0d6dd9c7f2c7a9bc4"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Captain Tsubasa III]",

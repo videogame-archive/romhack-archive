@@ -20,7 +20,7 @@
         "md5": "d4f294305fa536fc7974e764900f2fcc",
         "sha1": "77a76fc6ab696279c5dbfdd4ad8a52eb6e8f16bd"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dragon Quest I+II]",

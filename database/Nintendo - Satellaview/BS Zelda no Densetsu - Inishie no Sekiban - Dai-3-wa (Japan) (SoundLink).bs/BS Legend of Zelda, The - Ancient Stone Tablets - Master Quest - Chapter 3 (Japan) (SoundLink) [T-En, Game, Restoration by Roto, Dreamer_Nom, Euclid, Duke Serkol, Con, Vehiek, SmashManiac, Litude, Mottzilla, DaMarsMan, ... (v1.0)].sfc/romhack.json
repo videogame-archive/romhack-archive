@@ -20,7 +20,7 @@
         "md5": "0b5f1dad6bfc5d8d4e63fe9461776b34",
         "sha1": "3fc5466d41221cf3b702e222da1dbc1a19eb0f24"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "BS Legend of Zelda, The - Ancient Stone Tablets - Chapter 3 Master Quest Restoration : English Version",

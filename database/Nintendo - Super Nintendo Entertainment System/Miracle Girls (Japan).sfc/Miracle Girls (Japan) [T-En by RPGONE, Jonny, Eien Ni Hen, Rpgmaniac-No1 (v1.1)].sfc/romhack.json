@@ -21,7 +21,7 @@
         "md5": "088f32c6d5a9451b03bb3529404c6750",
         "sha1": "9e7c4c404f28c8336db186e8be2d26559c8b9bfc"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Miracle Girls]",

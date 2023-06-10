@@ -20,7 +20,7 @@
         "md5": "8e23d15c83a5296bab80527e8e363f6c",
         "sha1": "7dd3b03a78ee76207fd10363d80bb64bf977ddd3"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dragon Quest VI: Maboroshi no Daichi]",

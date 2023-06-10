@@ -21,7 +21,7 @@
         "md5": "3a8bc1ec0b4fb43a20cdcc6ebd2d5e5b",
         "sha1": "d3bc7a46194e6f6bfb976ec71d0562f2e82b8496"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Jikkyou Power Pro Wrestling '96 - Max Voltage]",

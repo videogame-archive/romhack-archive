@@ -21,7 +21,7 @@
         "md5": "ff6ae302296e4638790c8be1c323ef0e",
         "sha1": "15fdad78a288ff985c740c7c98c13f9df113aa8f"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Secret of Mana Variable Width Font Edition",

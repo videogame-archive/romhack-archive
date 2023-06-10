@@ -20,7 +20,7 @@
         "md5": "878da298205e5c395619cf5d0443b3dc",
         "sha1": "d757b859f1c5fb08eeba9492c0f5436c4aabd1e5"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Cu-On-Pa SFC]",

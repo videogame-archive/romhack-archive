@@ -21,7 +21,7 @@
         "md5": "a274faffc076f06fe8004fe9c5ff9b16",
         "sha1": "2b0cc1647626b5408e1ba1ca750fd8e4daaff5a9"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Mega Man X2]",

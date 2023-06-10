@@ -21,7 +21,7 @@
         "md5": "5efbd4bcf40b2c40de1eb2f55057c295",
         "sha1": "084d4b3071bd5fbce58c6916e77e4d85e9d7d80b"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Neugier: Umi to Kaze no Kodou]",

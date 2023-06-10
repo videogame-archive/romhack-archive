@@ -20,7 +20,7 @@
         "md5": "bbce3977c8bfc3ef4e84ae329c89489a",
         "sha1": "662b624edbfc3450ebf64030a5017344aa4bf7c0"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Cybernator]",

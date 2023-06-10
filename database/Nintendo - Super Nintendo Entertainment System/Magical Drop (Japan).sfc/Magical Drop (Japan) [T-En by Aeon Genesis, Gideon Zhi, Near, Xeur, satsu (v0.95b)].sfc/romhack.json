@@ -21,7 +21,7 @@
         "md5": "45c56148eeb5bd9f8552ce7cd6f6b57b",
         "sha1": "6f298a856aea5efab8cf3a48f6825add63956eb6"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Magical Drop]",

@@ -20,7 +20,7 @@
         "md5": "ad95980ecd83d5e4f3d137071ae79e69",
         "sha1": "cbdd0a9bff5c220bed9253450b64041b3c8556f2"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dragon Ball Z: Hyper Dimension]",

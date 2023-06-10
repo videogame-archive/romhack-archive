@@ -20,7 +20,7 @@
         "md5": "22ec5c8988b37322db9bc7cd104a3e48",
         "sha1": "d186be8bf682b347728191acc27f2498a67c57d1"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [ActRaiser]",

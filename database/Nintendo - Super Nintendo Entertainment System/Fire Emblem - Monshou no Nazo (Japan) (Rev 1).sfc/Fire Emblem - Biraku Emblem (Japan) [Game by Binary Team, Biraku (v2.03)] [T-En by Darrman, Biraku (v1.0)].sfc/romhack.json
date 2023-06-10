@@ -21,7 +21,7 @@
         "md5": "015c4e3cf663c211611e0ca7a237ed16",
         "sha1": "20fb056cc701d5f40e8619fd7484ac0bac157139"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Biraku Emblem",

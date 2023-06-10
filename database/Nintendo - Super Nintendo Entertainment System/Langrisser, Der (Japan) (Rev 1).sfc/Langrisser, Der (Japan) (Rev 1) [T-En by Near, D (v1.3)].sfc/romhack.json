@@ -21,7 +21,7 @@
         "md5": "bcd57c200dfe3a27db323d5c97b1c172",
         "sha1": "931bef2f377cb2d3166b03103fe5b90cf0d6c5f5"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Der Langrisser]",

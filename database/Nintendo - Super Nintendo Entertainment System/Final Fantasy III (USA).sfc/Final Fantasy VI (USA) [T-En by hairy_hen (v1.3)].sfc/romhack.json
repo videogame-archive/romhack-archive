@@ -21,7 +21,7 @@
         "md5": "01986f4c71e78180483f7c68a8c4ed66",
         "sha1": "644084d263ac2183257edae0e256f7ea1df24aed"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Final Fantasy VI: Retranslated",

@@ -20,7 +20,7 @@
         "md5": "bdfe977ced81ac04f4389bcfd3256356",
         "sha1": "9b7ce8f7e45d541e10eedea4c9cd72ae0ae1a0e7"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Aretha]",

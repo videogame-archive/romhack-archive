@@ -21,7 +21,7 @@
         "md5": "d1ef6ca38dbe5e1e06f39c0f63270213",
         "sha1": "efe1622f8aafaea4c0cb4e030696ed43d0f0b9c5"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Mario's Super Picross]",

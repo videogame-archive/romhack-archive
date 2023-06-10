@@ -20,7 +20,7 @@
         "md5": "08aeb52c53a463907aa963f8672fbddc",
         "sha1": "1333558e7742275b5df20b24b9f5204490091fc9"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Fushigi no Dungeon 2: Fuurai no Shiren]",

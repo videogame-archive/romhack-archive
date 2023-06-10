@@ -21,7 +21,7 @@
         "md5": "389d107902e96e305c35765cc7682681",
         "sha1": "d7587ffec0167bd9696e1a5f168980e1f5e106c3"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Sanrio World Smash Ball!]",

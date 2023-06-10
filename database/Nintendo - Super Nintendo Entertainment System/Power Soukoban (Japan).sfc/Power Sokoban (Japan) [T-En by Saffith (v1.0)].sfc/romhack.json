@@ -21,7 +21,7 @@
         "md5": "07d4a66b9ba21e8e0a6614c2cbdf5dd6",
         "sha1": "d203971bc7b9a8ef6eef724beeeea6778ea9996c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Power Soukoban]",

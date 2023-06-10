@@ -21,7 +21,7 @@
         "md5": "f4ec11c63cf82ecb6004bf1c2cb273f5",
         "sha1": "b59dbdae3b54d4eb708dbe80b99e877e003db08c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Smart Ball]",

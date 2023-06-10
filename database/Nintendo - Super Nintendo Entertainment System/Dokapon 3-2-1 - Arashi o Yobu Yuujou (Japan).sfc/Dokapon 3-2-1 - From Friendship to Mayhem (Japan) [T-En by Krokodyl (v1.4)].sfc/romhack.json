@@ -20,7 +20,7 @@
         "md5": "57976d49064c5fc928fe2850680a5d4f",
         "sha1": "8e8f8b7a88783969983f9d2f69eab5cc734971ff"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dokapon 3-2-1: Arashi o Yobu Yuujou]",

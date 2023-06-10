@@ -21,7 +21,7 @@
         "md5": "580f355955c31428f82db20721ce3020",
         "sha1": "a893cbe30d08eaa375dfd44cbfa54f8cc2d9885d"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ganbare Goemon 2: Kiteretsu Shougun Magginesu]",

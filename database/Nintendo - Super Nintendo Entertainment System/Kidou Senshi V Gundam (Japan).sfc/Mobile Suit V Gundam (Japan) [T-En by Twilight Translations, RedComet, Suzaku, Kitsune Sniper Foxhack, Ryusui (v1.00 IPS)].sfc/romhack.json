@@ -21,7 +21,7 @@
         "md5": "97bad8166991da4acce6ba1f2cb623f8",
         "sha1": "74475ac41d0efa9be4400e22709851bde51e5933"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kidou Senshi V Gundam]",

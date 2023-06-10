@@ -20,7 +20,7 @@
         "md5": "3dc684c9c058ffc617f227d092e52445",
         "sha1": "bac72bae123f6d287b72e547e7776b4d1486bc42"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [ClockWerx]",

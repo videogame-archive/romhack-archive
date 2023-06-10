@@ -20,7 +20,7 @@
         "md5": "4032a2281cece6f28b3fdf621c0581f2",
         "sha1": "3d4681c981cdf15d270e91687a3b9aa62ba56f46"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Hourai Gakuen no Bouken!: Tenkousei Scramble]",

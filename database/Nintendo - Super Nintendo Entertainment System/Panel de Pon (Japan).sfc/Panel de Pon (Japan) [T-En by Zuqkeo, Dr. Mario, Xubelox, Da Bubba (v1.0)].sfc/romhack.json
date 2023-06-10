@@ -21,7 +21,7 @@
         "md5": "b513cda10257b4c255b5cc0b0a0e630c",
         "sha1": "e70caabdec81fd447973ebce8bf9d3ecda6071a2"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Tetris Attack]",

@@ -20,7 +20,7 @@
         "md5": "9a11e4bc1fa4b1e82fd075883017761b",
         "sha1": "5f0e96f63938b0cfa121cacfa40db45cc2d8b90a"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Daikaijuu Monogatari]",

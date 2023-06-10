@@ -21,7 +21,7 @@
         "md5": "7b24e7694d4f00e283734f80962a81f4",
         "sha1": "f62eee33b82ddcce2f08913a4d1ba3febb433450"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ryuuki Heidan: Danzarb]",

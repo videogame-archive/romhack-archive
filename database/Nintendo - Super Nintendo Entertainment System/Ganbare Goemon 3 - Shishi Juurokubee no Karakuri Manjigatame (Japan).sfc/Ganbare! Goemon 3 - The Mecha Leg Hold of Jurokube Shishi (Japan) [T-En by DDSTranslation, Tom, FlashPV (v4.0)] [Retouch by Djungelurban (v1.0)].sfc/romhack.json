@@ -20,7 +20,7 @@
         "md5": "9641556fe50a447412b18c500c4390b5",
         "sha1": "d9f3b02595bbbe5ce181b23a66189731bd9ff4ba"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ganbare Goemon 3: Shishi Juurokubee no Karakuri Manjigatame]",

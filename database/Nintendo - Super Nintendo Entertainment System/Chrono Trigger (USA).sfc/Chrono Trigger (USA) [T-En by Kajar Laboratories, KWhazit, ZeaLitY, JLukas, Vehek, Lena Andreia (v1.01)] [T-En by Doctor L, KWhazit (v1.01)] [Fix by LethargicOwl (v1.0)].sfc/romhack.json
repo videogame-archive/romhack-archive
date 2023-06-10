@@ -20,7 +20,7 @@
         "md5": "fc4d0b6dd08a87664f1beecb1dfb5f30",
         "sha1": "1e737d05f48aa81ed9d084452088186de70a6050"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Chrono Trigger]",

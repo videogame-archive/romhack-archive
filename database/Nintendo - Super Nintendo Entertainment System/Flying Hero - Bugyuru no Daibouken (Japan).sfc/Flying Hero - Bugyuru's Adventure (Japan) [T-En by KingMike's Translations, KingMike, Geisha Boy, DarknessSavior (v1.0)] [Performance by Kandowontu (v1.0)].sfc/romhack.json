@@ -21,7 +21,7 @@
         "md5": "2272c5319cb71eb075ac37213756df8a",
         "sha1": "20aab74e39f0dc3a8ea8e3d2df96130241383e2c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Flying Hero: Bugyuru no Daibouken]",

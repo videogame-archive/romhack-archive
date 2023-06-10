@@ -20,7 +20,7 @@
         "md5": "ae26fb0c812b2105f3adfd1fa93baa99",
         "sha1": "956aafdfea18b274baa8d84994d6b8cd0139427c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Chaos Seed: Fuusui Kairouki]",

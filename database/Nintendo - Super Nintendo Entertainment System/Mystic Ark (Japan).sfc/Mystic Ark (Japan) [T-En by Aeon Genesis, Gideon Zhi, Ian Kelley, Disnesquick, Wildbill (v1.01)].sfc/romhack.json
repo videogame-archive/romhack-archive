@@ -21,7 +21,7 @@
         "md5": "ddf7df96abd4e5277f3f8b3f63e6789a",
         "sha1": "4b03bb1d36acca9e46742570bfb24512d5498cce"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Mystic Ark]",

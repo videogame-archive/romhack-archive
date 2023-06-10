@@ -20,7 +20,7 @@
         "md5": "4ed9648505ab33a4daec93707b16caba",
         "sha1": "7996bd1c01b99800e0d5d34beff93db283784864"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [BS-X: Sore wa Namae o Nusumareta Machi no Monogatari]",

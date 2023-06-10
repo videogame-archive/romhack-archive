@@ -20,7 +20,7 @@
         "md5": "7c5e2d832f0e612a96cedbc2fbd52eae",
         "sha1": "a46600eef8ef68bde707cc1bf35faf9b92c23546"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Final Fantasy V]",

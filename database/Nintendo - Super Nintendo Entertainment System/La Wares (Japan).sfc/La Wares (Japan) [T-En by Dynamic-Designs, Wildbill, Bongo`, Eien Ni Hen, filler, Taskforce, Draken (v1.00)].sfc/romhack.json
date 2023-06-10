@@ -21,7 +21,7 @@
         "md5": "6d9f6d42b849a0b920b3b977a1196ec4",
         "sha1": "e76a33c4475f4e1152e92045a4d324c59b432197"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Shin Seikoku: La Wares]",

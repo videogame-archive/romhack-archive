@@ -21,7 +21,7 @@
         "md5": "c133654f7448e1ba10250f04b49d7e72",
         "sha1": "de147ad3763fb75544f6e8ef64aceeedcc95d0ab"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Bishoujo Senshi Sailor Moon: Another Story]",

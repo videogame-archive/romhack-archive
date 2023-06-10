@@ -20,7 +20,7 @@
         "md5": "3b01e86d3a16a6b7ca1ac8a73e655927",
         "sha1": "c19c763e9a0b8af5f6e0fd9bfe5797c9de4de23f"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "BS Legend of Zelda, The - Ancient Stone Tablets - Chapter 2 Master Quest Restoration : English Version",

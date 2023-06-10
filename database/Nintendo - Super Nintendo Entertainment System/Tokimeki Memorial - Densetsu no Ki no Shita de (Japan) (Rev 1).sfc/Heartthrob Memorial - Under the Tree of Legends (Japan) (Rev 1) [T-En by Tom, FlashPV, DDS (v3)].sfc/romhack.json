@@ -21,7 +21,7 @@
         "md5": "a9c07a0dca334ab10aa25fb0e2f96a7b",
         "sha1": "1bbf5d67a0c732682183414a4e965248eb5a8fd2"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Tokimeki Memorial - Densetsu no Ki no Shita de]",

@@ -21,7 +21,7 @@
         "md5": "caa11dc7796f0bcd3716bba871307abb",
         "sha1": "107781a0f5ec1f378921526018847dffb10880cb"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Magical Quest 3 FastROM",

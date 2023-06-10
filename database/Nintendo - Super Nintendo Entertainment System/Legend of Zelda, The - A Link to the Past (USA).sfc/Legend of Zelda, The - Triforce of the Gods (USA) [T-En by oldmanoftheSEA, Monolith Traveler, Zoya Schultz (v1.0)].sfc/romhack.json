@@ -21,7 +21,7 @@
         "md5": "ea5d7499d516aa202953fae1e2bd1801",
         "sha1": "1ee1a4cb6e7eb7f9b649c3312164fc7710c5c681"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "The Legend of Zelda - Triforce of the Gods English re-localization",

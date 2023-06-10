@@ -21,7 +21,7 @@
         "md5": "0f85400d016a5e22764c2d66ff6894d5",
         "sha1": "9f3562be4dde2ad96f6a2e4019bf3c39a3e66a9b"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Holy Umbrella: Dondera no Mubou!!]",

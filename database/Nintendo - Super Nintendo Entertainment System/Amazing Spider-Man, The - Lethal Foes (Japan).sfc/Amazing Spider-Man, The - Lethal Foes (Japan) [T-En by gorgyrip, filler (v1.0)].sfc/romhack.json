@@ -20,7 +20,7 @@
         "md5": "c8a2794e64d4fd729245a74fc6d41a1e",
         "sha1": "8ff17069267468241ab209d7ae2f325aab140e23"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [The Amazing Spider-Man: Lethal Foes]",

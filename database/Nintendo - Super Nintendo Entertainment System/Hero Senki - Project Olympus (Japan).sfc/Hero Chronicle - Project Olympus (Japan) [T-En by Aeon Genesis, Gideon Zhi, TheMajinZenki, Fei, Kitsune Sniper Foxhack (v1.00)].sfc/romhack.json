@@ -21,7 +21,7 @@
         "md5": "f13e59991bd9c9c39d6522d925ca651c",
         "sha1": "f1c0970fe7865001d034f5224e830800ef10d1ca"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Hero Senki: Project Olympus]",

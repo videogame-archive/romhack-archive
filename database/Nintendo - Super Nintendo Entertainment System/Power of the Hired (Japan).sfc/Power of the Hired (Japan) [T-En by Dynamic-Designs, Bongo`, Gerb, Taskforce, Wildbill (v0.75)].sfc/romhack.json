@@ -21,7 +21,7 @@
         "md5": "e7a6ad8996b38b7f01c2c61f9610edde",
         "sha1": "fe4803bab529974b28cf1b59d9fccb26db0b65a4"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Power of the Hired]",

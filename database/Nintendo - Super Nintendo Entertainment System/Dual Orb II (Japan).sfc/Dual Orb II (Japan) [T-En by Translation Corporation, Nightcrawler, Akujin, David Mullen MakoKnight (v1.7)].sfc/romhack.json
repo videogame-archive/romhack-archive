@@ -21,7 +21,7 @@
         "md5": "4bedd76bf05fc25fa42a54c8f3bc8ce9",
         "sha1": "316cc9e76dacf25d4b03104b7ee8f1bab33d052a"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dual Orb 2]",

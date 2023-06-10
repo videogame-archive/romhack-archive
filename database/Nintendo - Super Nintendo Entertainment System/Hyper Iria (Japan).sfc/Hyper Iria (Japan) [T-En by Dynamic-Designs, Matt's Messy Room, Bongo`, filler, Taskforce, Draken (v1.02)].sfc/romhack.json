@@ -21,7 +21,7 @@
         "md5": "d667c31bbf44bfb2ad960b776a665848",
         "sha1": "b879e7c41276c8ea171c3074a08f3029ab0ad8d0"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Hyper Iria]",

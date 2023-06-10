@@ -21,7 +21,7 @@
         "md5": "5979071bd5001e5fb611c825c6a3b65f",
         "sha1": "02248f3fa36e0c940ce1493b7d9a8c30ac4f30ee"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Okamoto Ayako to Match Play Golf: Ko Olina Golf Club in Hawaii]",

@@ -21,7 +21,7 @@
         "md5": "bb4d2b97803b57f38d8a42d9ba25482b",
         "sha1": "26c793dc201d586f66755fa26f3b1dfff2c137e8"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Final Fantasy VI Relocalization Project",

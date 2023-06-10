@@ -20,7 +20,7 @@
         "md5": "0d322efbf14ccbef42d19f8fc6a4bfb4",
         "sha1": "dbf5692bfe9f3d08d7b6722fd9906d632ccfd5de"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "BS Legend of Zelda, The - Forth Quest Restoration : English Version",

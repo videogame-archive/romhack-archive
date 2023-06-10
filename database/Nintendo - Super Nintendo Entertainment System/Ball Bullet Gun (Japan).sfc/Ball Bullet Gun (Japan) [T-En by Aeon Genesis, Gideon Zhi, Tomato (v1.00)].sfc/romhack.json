@@ -20,7 +20,7 @@
         "md5": "2190dc7949b17b395f71a85f02b43f47",
         "sha1": "24006f939c4a2323bf2992516a099441971113be"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ball Bullet Gun]",

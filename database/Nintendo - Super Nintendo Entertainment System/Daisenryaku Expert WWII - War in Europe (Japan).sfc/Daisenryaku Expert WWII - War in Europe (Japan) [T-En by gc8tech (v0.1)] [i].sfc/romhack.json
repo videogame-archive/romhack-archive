@@ -20,7 +20,7 @@
         "md5": "32b6469f867574df0b78b179cb963bc8",
         "sha1": "984bd4bc60ce6eafa856e7973c0f1a055fdf517d"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Daisenryaku Expert WWII: War in Europe]",

@@ -21,7 +21,7 @@
         "md5": "608b199679dc647a64589d077845b5bf",
         "sha1": "e3a72677791bfc4c917f26d1c56688887b0a2683"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Nangoku Shounen Papuwa-kun]",

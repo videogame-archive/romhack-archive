@@ -21,7 +21,7 @@
         "md5": "d0c941ccbd1feb78aafad277e8b9bd37",
         "sha1": "a4417987973a006aff47182ddfac4db444e5775f"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Hiouden: Mamonotachi to no Chikai]",

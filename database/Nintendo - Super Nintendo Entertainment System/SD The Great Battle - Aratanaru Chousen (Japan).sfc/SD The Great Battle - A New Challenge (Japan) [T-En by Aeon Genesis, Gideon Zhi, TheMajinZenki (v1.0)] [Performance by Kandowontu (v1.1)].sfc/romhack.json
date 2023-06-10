@@ -21,7 +21,7 @@
         "md5": "20f5d2688d036e81973c3c629e19614f",
         "sha1": "38ac9ab99001eb29b55fd9aa908680f3203e1a49"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [SD The Great Battle: Aratanaru Chousen]",

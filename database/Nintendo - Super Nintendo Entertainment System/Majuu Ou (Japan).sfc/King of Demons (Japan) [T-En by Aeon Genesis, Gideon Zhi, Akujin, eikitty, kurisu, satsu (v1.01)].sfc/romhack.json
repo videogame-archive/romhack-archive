@@ -21,7 +21,7 @@
         "md5": "8dc2dd9a78bdbbe4adbc02d0a23959c6",
         "sha1": "0b3f05c8e1dd5f368b26993c7da7d7620faac22d"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Majuu Ou]",

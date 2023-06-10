@@ -21,7 +21,7 @@
         "md5": "9e60189a8e77bd3b00ec5ae6ac77b688",
         "sha1": "241b5a70ac6dcd1f67fb9243f8bfb1a458340303"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Monstania]",

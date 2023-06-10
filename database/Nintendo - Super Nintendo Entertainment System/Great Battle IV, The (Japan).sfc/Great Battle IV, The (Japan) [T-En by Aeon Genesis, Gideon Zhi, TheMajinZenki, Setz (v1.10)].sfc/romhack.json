@@ -20,7 +20,7 @@
         "md5": "8b3805664f63d955c76291746e361ca1",
         "sha1": "15c73fd0c01e1877d605c54c8e0a48b14c513d05"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [The Great Battle IV]",

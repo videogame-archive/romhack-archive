@@ -20,7 +20,7 @@
         "md5": "3400bda2b0e6298a109cba8ca9ca4d5a",
         "sha1": "a58064f0464dcc3e34a3d172f72f2c4426aed95e"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ace wo Nerae!]",

@@ -20,7 +20,7 @@
         "md5": "ff3e0f251293ce36bfe50da6242b1d5a",
         "sha1": "96f9b158c35ce3e2785545e7e73a75ab9fadc042"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ashita no Joe]",

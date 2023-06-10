@@ -20,7 +20,7 @@
         "md5": "026ac338f08bf311bb007265222e6244",
         "sha1": "a37c4e74d6b0c4f778cc64142072748f416d6c23"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "BS Legend of Zelda, The - Third Quest Restoration : English Version",

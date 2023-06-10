@@ -21,7 +21,7 @@
         "md5": "442fcbfd5a2bb03c448fc1be3a237b75",
         "sha1": "0f32bd0f6aeec8f8af077ca16cca36887b144e51"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Princess Minerva]",

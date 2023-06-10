@@ -20,7 +20,7 @@
         "md5": "c0189ecd7227187ef560478dcc72a466",
         "sha1": "aa7045a208a9652f5e4c530812336f678698995c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Clock Tower]",

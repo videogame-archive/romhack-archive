@@ -20,7 +20,7 @@
         "md5": "1ffe2a6b125893801450475504acf980",
         "sha1": "8ef1217448b551a1af211344b304ca1caaba0814"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dai-3-Ji Super Robot Taisen]",

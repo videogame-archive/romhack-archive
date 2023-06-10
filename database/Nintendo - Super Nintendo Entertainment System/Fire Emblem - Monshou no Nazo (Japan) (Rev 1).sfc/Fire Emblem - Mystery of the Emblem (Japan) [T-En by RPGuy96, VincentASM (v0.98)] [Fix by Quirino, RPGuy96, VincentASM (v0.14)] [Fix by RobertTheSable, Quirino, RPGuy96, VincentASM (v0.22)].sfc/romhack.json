@@ -20,7 +20,7 @@
         "md5": "59829f9021c5c6525e15523f319a0cbe",
         "sha1": "d328a5470bc1871145413a05a80b3fcf191cf33f"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Fire Emblem: Monshou no Nazo]",

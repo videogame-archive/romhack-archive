@@ -21,7 +21,7 @@
         "md5": "eaf6f6ff76377b5035af3cb7afe76eb5",
         "sha1": "d23eb55bb2bb98f3328ec0eaad8f46b5a8bcc0bf"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Rockman 7 EP",

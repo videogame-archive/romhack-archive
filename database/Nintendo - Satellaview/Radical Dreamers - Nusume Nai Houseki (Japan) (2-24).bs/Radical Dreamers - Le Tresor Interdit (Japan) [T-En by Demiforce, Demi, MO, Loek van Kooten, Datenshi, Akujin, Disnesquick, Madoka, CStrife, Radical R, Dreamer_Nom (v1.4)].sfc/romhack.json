@@ -20,7 +20,7 @@
         "md5": "55c5baaedffcf4fd022361c531c72178",
         "sha1": "d06a13524a907e5834a755e3a710fb30adb33c49"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Radical Dreamers: Nusumenai Houseki]",

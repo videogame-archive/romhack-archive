@@ -20,7 +20,7 @@
         "md5": "01f59d87ced210b3d8abc8d415a990aa",
         "sha1": "c401313971e01a8d83bafdb11b395f386bac7882"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Alcahest]",

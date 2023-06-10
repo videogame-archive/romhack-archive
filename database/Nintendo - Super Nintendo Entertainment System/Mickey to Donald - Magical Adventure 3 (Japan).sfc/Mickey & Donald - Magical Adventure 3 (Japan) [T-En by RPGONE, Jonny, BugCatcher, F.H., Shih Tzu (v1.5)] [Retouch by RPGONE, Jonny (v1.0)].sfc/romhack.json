@@ -21,7 +21,7 @@
         "md5": "1e10438391d6fa621b6bb1c2bc8ccd8e",
         "sha1": "67a752152acd29f165c4099c507f2bae628ecf11"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Mickey to Donald: Magical Adventure 3]",

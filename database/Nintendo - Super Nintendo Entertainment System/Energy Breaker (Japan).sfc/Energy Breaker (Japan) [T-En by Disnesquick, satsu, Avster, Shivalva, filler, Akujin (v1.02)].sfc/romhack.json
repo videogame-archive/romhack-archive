@@ -20,7 +20,7 @@
         "md5": "65e200616fae85e163bb619937826a33",
         "sha1": "4ff6c6197bd925421bcd0d6f89b57d4219d4bb9f"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Energy Breaker]",

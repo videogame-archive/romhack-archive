@@ -21,7 +21,7 @@
         "md5": "ec1255ef8d5a33392429fbff6d9d942c",
         "sha1": "03ea00083dccbf013306281cfec0a72cbdd3cfd6"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Golf Daisuki!: O.B. Club]",

@@ -21,7 +21,7 @@
         "md5": "2be01ed62d8130126189890b41ba6c89",
         "sha1": "e0f79d1d22db272532000152fcbe1d19d1b4f9fb"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kidou Senshi Gundam F91: Formula Senki 0122]",

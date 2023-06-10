@@ -20,7 +20,7 @@
         "md5": "1b059a4b1f48a4a51c57b700f21eeace",
         "sha1": "6229bdbb93ea2ceea78ebd8358328cac7c92f085"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Bastard!!: Ankoku no Hakaishin]",

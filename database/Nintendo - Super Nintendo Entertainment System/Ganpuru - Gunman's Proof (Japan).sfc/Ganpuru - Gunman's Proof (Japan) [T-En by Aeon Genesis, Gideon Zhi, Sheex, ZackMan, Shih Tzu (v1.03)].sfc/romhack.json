@@ -20,7 +20,7 @@
         "md5": "d0445e7b93600d9a661e5d0eae11e3a7",
         "sha1": "7f0fa95b447ea5601271606fbac9da7ae1b4bda7"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ganpuru: Gunman's Proof]",

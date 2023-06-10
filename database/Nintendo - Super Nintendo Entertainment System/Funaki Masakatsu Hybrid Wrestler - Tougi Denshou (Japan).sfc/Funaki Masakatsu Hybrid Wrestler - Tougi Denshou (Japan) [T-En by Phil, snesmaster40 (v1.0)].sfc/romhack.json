@@ -20,7 +20,7 @@
         "md5": "8acc00c024b39d4a576526f5e8686b26",
         "sha1": "9fe46c459e01353c7a8032a2dd9ba4cd1fae3207"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Funaki Masakatsu Hybrid Wrestler: Tougi Denshou]",

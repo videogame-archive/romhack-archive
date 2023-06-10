@@ -21,7 +21,7 @@
         "md5": "2f5bd42095038f078950df7f1bd0d9f0",
         "sha1": "8dc24d9f0df8f9abd71a8c80c18508409892103d"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Heracles no Eikou IV: Kamigami Kara no Okurimono]",

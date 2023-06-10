@@ -21,7 +21,7 @@
         "md5": "c8c3e6cb262c87e28986c3a62bd7285a",
         "sha1": "fed0417927504d53d6a98cdac991db79166784f4"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Nekketsu Tairiku Burning Heroes]",

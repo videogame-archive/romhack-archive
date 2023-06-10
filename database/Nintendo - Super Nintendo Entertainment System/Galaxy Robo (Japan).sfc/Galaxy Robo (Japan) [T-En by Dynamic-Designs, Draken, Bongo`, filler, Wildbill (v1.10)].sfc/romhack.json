@@ -20,7 +20,7 @@
         "md5": "d12e6fed8ea6ecc91e52f8fda12d6bb5",
         "sha1": "e633a2b3942fb2d946f82b1a8869f2e26afa6946"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Galaxy Robo]",

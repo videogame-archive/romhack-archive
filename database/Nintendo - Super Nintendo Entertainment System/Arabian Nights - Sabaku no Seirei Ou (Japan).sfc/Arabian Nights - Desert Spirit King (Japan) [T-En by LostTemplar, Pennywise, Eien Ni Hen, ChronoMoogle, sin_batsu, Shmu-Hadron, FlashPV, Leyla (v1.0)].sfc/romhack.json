@@ -20,7 +20,7 @@
         "md5": "fb6227cd750c6fc4beade6db8a55e3b8",
         "sha1": "6528f90602edb8772698c082a1cb3e0c9a033165"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Arabian Nights: Sabaku no Seirei Ou]",

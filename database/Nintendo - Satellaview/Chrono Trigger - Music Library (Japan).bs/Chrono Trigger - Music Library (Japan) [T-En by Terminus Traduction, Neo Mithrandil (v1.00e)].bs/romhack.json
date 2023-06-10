@@ -20,7 +20,7 @@
         "md5": "ac547efc5bd0f56e8dc143f84d563c35",
         "sha1": "ea0a6d60c015d0a80b9809fd091d181d9fc33bca"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Chrono Trigger - Music Library]",

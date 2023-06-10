@@ -21,7 +21,7 @@
         "md5": "c3ef8da45a07a4b277895a17eeeaad87",
         "sha1": "a174b73852a5610ecc0b5f166b357e4072bc0ffb"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Popeye: Ijiwaru Majo Sea Hag no Maki]",

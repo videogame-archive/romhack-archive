@@ -21,7 +21,7 @@
         "md5": "c52883a2de9ea6a0b9cad187bdd92e36",
         "sha1": "48a6d6eab6d2d2f591090d396d927c83a93cd7a0"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kunio-kun no Dodge Ball: Zenin Shuugou!]",

@@ -21,7 +21,7 @@
         "md5": "24a90de555bec1c24f2bf48c31c6a421",
         "sha1": "f707973a3621d5c541125ed177db87b22c0d207f"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Final Fantasy VI - T-Edition",

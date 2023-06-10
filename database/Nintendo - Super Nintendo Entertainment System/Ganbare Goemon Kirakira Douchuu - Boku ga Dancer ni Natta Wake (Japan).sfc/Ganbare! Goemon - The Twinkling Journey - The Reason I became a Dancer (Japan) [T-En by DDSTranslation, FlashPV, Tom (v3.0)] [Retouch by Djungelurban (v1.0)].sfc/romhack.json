@@ -21,7 +21,7 @@
         "md5": "802c2e377a71279bf50317ead4e46e19",
         "sha1": "92b69763c57b8f292b9680e5cc1ab48a0bd707fa"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ganbare Goemon 4 - Boku ga Dancer ni Natta Riyuu - Kirakira Douchuu]",

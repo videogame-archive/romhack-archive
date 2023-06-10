@@ -20,7 +20,7 @@
         "md5": "2e2576422bead3bfc1d18a2bdd7180a4",
         "sha1": "88868eb8dec43e855acf04cb0c33aa9b1af4e72a"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Jikkyou Oshaberi Parodius]",

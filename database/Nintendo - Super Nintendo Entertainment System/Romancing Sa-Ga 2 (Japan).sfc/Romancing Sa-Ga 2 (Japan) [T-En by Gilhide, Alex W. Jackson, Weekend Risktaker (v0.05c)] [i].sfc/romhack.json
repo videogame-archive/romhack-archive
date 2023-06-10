@@ -21,7 +21,7 @@
         "md5": "15a38aa08f047798a3f520a3fb49e2f0",
         "sha1": "219fabd90f603fe8ff4ee58648d85a76feec477e"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Romancing SaGa 2]",

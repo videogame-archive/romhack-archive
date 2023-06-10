@@ -21,7 +21,7 @@
         "md5": "a7db0b34a245ca1ac0240918339d365c",
         "sha1": "b0dfcc096e1c6952c94b2cbcf1e9bbfe71809ac5"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Laplace no Ma]",

@@ -21,7 +21,7 @@
         "md5": "2a47774909d7486fd30d04476dda3053",
         "sha1": "f9fd086a7d7f5bd61066eab5a58dfed0f049020c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [The Legend of the Mystical Ninja]",

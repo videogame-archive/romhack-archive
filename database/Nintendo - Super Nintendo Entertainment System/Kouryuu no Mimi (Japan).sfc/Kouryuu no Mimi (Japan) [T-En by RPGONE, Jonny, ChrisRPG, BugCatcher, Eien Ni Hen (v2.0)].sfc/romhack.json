@@ -21,7 +21,7 @@
         "md5": "e952b20775e2967b5debf621a114c16a",
         "sha1": "f40e8c2e5a248d9ed6f76ca847eda8362ef9cdcc"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kouryuu no Mimi]",

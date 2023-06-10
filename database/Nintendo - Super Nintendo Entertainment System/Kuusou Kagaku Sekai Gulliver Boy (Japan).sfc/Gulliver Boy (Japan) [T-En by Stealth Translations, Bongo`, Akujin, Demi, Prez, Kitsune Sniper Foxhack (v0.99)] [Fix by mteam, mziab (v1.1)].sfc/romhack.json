@@ -21,7 +21,7 @@
         "md5": "c857e5c9c25690e6e32e3b93c7374910",
         "sha1": "7e99fe2c51023cee9249225990ec38034549d598"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kuusou Kagaku Sekai Gulliver Boy]",

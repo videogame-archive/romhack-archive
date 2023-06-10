@@ -21,7 +21,7 @@
         "md5": "46cf594d0ece57eda5c30c935c5c2963",
         "sha1": "b052c14880f9ab500f2fd179fc1079b72f63100c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Madou Monogatari: Hanamaru Daiyouchi Enji]",

@@ -20,7 +20,7 @@
         "md5": "b691f25801deaeb6968fcfa0bf685584",
         "sha1": "652ee49acf90a363541d28b69189960364b706b5"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "BS Legend of Zelda Restoration by MottZilla : Japanese Version",

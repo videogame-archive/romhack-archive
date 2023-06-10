@@ -20,7 +20,7 @@
         "md5": "86be74ad5183c835cf465781fe1a3199",
         "sha1": "047c0d83211630f77fd3c5e3df69f7e7068b51d8"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dream Maze: Kigurumi Daibouken]",

@@ -20,7 +20,7 @@
         "md5": "0a0740f28ccc4cd3e21c6e4ac4d3b8d9",
         "sha1": "a878e75c3481c6b802a46d61fabb8284422ebe0b"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ghost Chaser Densei]",

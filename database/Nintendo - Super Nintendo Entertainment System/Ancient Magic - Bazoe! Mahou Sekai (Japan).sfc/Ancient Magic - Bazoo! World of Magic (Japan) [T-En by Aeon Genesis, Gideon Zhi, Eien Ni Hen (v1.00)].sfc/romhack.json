@@ -20,7 +20,7 @@
         "md5": "9d33c8299fc374f87a328626b706d1b1",
         "sha1": "6fc402115074277b237d4f24d4062f71b30832b4"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ancient Magic: Bazoo! Mahou Sekai]",

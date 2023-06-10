@@ -20,7 +20,7 @@
         "md5": "7202f3d63a85ba25d0ab491bb9e3b66b",
         "sha1": "08661008074163f993a9e5ff5180141a60ce10e2"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [BS Fire Emblem: Akaneia Senkihen]",

@@ -21,7 +21,7 @@
         "md5": "fdcd5df8b88904789f672c329730d05e",
         "sha1": "816b61d0eccb8394bc22fec0fd8dd77090d0aace"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kyuuyaku Megami Tensei]",

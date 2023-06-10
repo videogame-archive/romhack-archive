@@ -20,7 +20,7 @@
         "md5": "066ad269b4e6f4e415743a6df15da91b",
         "sha1": "1b6e4b07f2491e334e640da83b1235cc7f53c3f2"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Battle Soccer: Field no Hasha]",

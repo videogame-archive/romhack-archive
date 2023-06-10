@@ -20,7 +20,7 @@
         "md5": "1749db1d21b805594a2a3ac2f1d360f9",
         "sha1": "0878275143b73a3b508af66e1044d952bbd688de"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dragon Ball Z: Super Butouden 2]",

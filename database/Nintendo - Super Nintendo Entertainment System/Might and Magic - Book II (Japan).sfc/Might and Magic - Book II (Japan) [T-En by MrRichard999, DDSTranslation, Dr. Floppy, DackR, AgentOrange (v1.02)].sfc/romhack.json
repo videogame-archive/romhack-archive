@@ -21,7 +21,7 @@
         "md5": "fa17852eb0ce5d862a646c1d82aacbc2",
         "sha1": "cf28d1207758559395c9875a0756c0a8b93da91c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Might and Magic: Book Two]",

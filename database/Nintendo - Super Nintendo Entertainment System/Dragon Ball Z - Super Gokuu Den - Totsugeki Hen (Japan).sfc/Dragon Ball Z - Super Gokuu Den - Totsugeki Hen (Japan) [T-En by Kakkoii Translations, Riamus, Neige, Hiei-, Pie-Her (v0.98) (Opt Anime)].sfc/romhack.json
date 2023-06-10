@@ -20,7 +20,7 @@
         "md5": "1fdf42b981d39608ed141dfb07973d7b",
         "sha1": "3ff7b833e916e79123c40dd83a7f91372424942b"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dragon Ball Z: Super Gokūden - Totsugeki-Hen]",

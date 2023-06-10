@@ -21,7 +21,7 @@
         "md5": "4a8914b6825d272fc74016c82bfc3504",
         "sha1": "da8de8662b5cca79383ed21f1025337ff3ef9005"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kaite Tsukutte Asoberu Dezaemon]",

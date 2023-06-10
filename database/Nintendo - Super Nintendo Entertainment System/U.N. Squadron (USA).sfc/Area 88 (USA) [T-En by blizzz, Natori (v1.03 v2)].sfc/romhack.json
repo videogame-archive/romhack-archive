@@ -20,7 +20,7 @@
         "md5": "05a1c58c2b613eeb14b7f9f26d2de26a",
         "sha1": "0f500ab60b7ddb382f70a9ea3fb68e7fc593091c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Area 88 EN Plus",

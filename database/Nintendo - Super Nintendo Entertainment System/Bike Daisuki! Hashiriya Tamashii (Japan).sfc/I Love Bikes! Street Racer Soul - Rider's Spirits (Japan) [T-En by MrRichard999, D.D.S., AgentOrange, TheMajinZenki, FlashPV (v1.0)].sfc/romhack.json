@@ -20,7 +20,7 @@
         "md5": "66113739f319f0667ac04f0c9564dc3c",
         "sha1": "caf1c35e4cbc98898941bd32922941191bbd9a8d"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Bike Daisuki! Hashiriya Tamashii - Rider's Spirits]",

@@ -21,7 +21,7 @@
         "md5": "9b2bfc9d7537bc3d9757ac8529e78d77",
         "sha1": "f9a0c3b6db91f308c2650f76c94cca509f84c20b"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Secret of Mana]",

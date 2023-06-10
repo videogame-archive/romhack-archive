@@ -21,7 +21,7 @@
         "md5": "d103a94473c82e853cbbf0d0910cbd64",
         "sha1": "60f5e03605638b806d6e815bc10813939c04207b"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Mega Man X2 Relocalization",

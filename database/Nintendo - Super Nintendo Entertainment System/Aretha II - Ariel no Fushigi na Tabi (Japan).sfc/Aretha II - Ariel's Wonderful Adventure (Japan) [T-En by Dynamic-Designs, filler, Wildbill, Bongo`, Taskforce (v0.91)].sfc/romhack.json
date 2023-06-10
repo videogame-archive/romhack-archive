@@ -20,7 +20,7 @@
         "md5": "7172a7550670659a754a6d39de450073",
         "sha1": "6040e9d89c008fec2793e7196401fee6fba1f525"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Aretha II - Ariel no Fushigi na Tabi]",

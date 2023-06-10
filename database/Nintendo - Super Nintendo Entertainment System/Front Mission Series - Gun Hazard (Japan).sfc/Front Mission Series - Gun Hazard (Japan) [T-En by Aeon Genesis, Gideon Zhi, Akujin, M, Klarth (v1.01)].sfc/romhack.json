@@ -20,7 +20,7 @@
         "md5": "e6651ab57a855e10919f47ed0e097338",
         "sha1": "765e5367f081ca24bcdc6884f8ca39e3880e2b75"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Front Mission: Gun Hazard]",

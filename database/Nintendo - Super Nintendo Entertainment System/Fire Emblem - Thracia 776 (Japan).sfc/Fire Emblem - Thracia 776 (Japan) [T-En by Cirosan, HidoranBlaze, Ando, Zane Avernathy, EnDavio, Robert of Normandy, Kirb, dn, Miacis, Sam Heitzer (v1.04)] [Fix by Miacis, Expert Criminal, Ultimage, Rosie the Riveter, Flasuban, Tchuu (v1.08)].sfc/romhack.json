@@ -20,7 +20,7 @@
         "md5": "625ede0fee77213fe9d9242d55f74e5b",
         "sha1": "7db4211d827c26d3ae938c6bb383d9427beedb75"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Fire Emblem: Thracia 776]",

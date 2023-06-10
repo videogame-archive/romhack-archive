@@ -21,7 +21,7 @@
         "md5": "1633086c62077c6e340be059238879e4",
         "sha1": "308c2e7bca585a35be6b38fe36d6c59bb10c0038"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Last Bible III]",

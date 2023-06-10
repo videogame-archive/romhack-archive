@@ -20,7 +20,7 @@
         "md5": "1419327656c43e3784087864283dd4d0",
         "sha1": "9050cc9c851598fd8e427c08715d7a5b0a8ec03e"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dragon Quest V: Tenkuu no Hanayome]",

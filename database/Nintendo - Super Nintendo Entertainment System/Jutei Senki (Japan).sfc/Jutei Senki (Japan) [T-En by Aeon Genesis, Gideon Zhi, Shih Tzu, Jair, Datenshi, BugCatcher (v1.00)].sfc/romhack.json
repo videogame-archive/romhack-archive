@@ -21,7 +21,7 @@
         "md5": "41835d6fa4ca9f71aca3f0810dc72d54",
         "sha1": "353472cf5f0265a1385d02e288c67abbd4fb5609"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Jutei Senki]",

@@ -21,7 +21,7 @@
         "md5": "5fe6ce16977985e87872c2dbd30b6f06",
         "sha1": "1bcd8b498166241a1f8161cfeed20805e62aefa2"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Pikiinya!]",

@@ -21,7 +21,7 @@
         "md5": "20805b6b05f25ac6da8dc3c528078aee",
         "sha1": "30ba6b373f7eac27c2b37cfdac8518a3d72fe2df"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Live a Live]",

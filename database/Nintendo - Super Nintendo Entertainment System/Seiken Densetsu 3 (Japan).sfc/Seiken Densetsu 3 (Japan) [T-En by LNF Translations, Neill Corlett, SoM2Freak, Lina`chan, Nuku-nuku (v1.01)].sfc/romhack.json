@@ -21,7 +21,7 @@
         "md5": "1a6f161783b6b3aaadc0a9f61ebd45de",
         "sha1": "d614cf1466911a7d3212ca77475645c3229b3403"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Trials of Mana]",

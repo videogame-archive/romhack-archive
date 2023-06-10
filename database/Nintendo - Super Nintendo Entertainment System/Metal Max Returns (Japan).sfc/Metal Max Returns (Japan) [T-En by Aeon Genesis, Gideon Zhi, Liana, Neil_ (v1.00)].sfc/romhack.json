@@ -21,7 +21,7 @@
         "md5": "ff890955d9101f6b952f28a4e581f8c8",
         "sha1": "e416fd4d4500f465b3c6b130da7090fee78f9163"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Metal Max Returns]",

@@ -20,7 +20,7 @@
         "md5": "2f1fe5f94124990c1b292d269916f503",
         "sha1": "b5b919a2137d1d01aab5a5016e276e59931d90b5"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [The Great Battle V]",

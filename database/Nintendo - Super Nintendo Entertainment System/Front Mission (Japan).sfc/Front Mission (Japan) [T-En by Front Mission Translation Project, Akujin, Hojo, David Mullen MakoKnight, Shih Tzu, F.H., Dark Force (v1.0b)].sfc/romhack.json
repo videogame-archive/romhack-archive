@@ -20,7 +20,7 @@
         "md5": "e744c9bc5e7eb5715a8a24543eecbc88",
         "sha1": "7114bd9d09f62d082f9fe43dcb4c144d439c4173"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Front Mission]",

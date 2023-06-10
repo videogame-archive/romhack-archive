@@ -21,7 +21,7 @@
         "md5": "0779d495195dbbd6f191c0e9d06b2958",
         "sha1": "ebf8d301ffaf5d412a8c3c832c0f0a92cfa2f16b"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Legend of Zelda: A Link to the Past Translation Improvement",

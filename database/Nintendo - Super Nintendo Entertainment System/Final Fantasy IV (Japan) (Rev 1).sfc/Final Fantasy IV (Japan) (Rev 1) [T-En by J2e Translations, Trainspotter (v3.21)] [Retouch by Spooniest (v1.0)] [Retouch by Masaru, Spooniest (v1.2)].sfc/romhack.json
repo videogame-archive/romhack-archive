@@ -20,7 +20,7 @@
         "md5": "0cb823fb39c0b865d2d93e1ab34740ad",
         "sha1": "bf2f24d625b2e9c5f9c82c41bb0d8a5a316b78fd"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Final Fantasy IV]",

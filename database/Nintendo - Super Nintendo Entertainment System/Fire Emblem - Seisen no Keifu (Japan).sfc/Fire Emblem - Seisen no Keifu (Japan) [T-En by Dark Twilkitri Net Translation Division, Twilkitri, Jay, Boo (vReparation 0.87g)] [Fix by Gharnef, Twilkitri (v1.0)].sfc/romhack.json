@@ -20,7 +20,7 @@
         "md5": "09e8848d05b7d7b1cf0232fd4f2481e7",
         "sha1": "92e5cf441a26d5b3c27e4b24fbc761859d6b5160"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Fire Emblem: Seisen no Keifu]",

@@ -21,7 +21,7 @@
         "md5": "838fc00e11ee89158e67801fa860bb5a",
         "sha1": "7caa4fadbd49969f8a2c70e9ef4c9e0e14085498"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Majin Tensei]",

@@ -21,7 +21,7 @@
         "md5": "e58140b41d111ad0562d83536c8fea92",
         "sha1": "0a69368805d52f62e847a9ea303882b1335d2180"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [The Great Battle II: Last Fighter Twin]",

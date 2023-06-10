@@ -20,7 +20,7 @@
         "md5": "7a7b365a91d96e662474c7bb0f180c63",
         "sha1": "ef927a20791b99b7cd6082992bb1821651917f3d"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Eien no Filena]",

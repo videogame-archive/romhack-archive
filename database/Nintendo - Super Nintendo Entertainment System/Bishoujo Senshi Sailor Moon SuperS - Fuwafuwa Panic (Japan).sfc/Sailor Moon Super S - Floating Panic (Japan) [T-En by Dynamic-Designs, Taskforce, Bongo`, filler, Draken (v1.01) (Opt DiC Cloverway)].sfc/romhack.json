@@ -21,7 +21,7 @@
         "md5": "1f8f633b25aaecd22302bf50ed19e9e3",
         "sha1": "a45c1ff6ced99c3a7d8708720f021df44c15a163"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Bishoujo Senshi Sailor Moon Super S: Fuwa Fuwa Panic]",

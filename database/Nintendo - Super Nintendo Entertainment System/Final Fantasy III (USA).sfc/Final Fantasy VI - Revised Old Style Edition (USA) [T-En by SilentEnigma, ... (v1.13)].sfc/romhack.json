@@ -21,7 +21,7 @@
         "md5": "c70d44412252b23aac7ed8c69b13af1b",
         "sha1": "6a6e35b7125226281b6884d3243f9df746898cf7"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Final Fantasy VI: Revised Old Style Edition",

@@ -21,7 +21,7 @@
         "md5": "bdb5f53bd5ba73f6b0ce92148134b17c",
         "sha1": "3cfa77ac8721e442f0522c15bc0f69f0c8f1eb9d"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Little Magic]",

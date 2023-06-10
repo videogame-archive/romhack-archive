@@ -20,7 +20,7 @@
         "md5": "8d1afb023d5c751ec3579d34ccc66839",
         "sha1": "6fcb8199f1c59125372f0c8562f90541341fcc87"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Crystal Beans from Dungeon Explorer]",

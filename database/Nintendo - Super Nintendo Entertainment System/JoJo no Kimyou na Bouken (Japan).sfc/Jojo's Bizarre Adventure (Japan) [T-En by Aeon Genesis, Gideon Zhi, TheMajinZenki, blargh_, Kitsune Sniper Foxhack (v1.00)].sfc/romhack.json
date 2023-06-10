@@ -21,7 +21,7 @@
         "md5": "cbbf5fc6f7172f56337e3f0a43012b42",
         "sha1": "76176596aed30a44a73c23ca2a8f39bdabbea8ed"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Jojo no Kimyou na Bouken]",

@@ -20,7 +20,7 @@
         "md5": "bb2a9eeceb5edd79f721ae926510107a",
         "sha1": "87ac1c6eb0fb66a62b28f5110e8cc3e1f5965fc7"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Doraemon 4: Nobita to Tsuki no Oukoku]",

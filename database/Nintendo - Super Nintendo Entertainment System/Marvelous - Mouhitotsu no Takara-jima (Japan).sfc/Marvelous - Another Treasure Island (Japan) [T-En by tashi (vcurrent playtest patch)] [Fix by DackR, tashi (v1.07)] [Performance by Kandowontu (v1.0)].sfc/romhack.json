@@ -21,7 +21,7 @@
         "md5": "58b32d57a49f2b42aaf5060d116fd569",
         "sha1": "b5e42ec05ad4f07b344da15bb19d9658abeca2e0"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Marvelous: Mouhitotsu no Takarajima]",

@@ -20,7 +20,7 @@
         "md5": "48dbfc9d5799e9b015ddb8b6e0fbb3a4",
         "sha1": "6dc4d8807f5a0a7eb1803170e1c36c84637555d6"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kikou Keisatsu: Metal Jack]",

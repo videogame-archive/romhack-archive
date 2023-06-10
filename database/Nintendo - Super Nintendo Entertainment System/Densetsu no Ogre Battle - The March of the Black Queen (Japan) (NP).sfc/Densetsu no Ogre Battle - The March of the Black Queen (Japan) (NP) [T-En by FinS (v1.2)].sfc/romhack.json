@@ -20,7 +20,7 @@
         "md5": "b84f1af95a599fe0ce2c92e35fd814bd",
         "sha1": "fa37dfdcc2e75cc8c5b9935f76e15cd684730f0f"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ogre Battle: The March of the Black Queen]",

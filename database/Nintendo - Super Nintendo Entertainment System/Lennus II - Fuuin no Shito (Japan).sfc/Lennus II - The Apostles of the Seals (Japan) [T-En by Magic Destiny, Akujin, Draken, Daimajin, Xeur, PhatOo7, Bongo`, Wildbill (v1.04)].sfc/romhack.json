@@ -21,7 +21,7 @@
         "md5": "8eedd52bbb4d636754a5ac4df5c17480",
         "sha1": "fd516ca9bb1d32a15e308d976760e41bcda5bd27"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Lennus II: Fuuin no Shito]",

@@ -20,7 +20,7 @@
         "md5": "d2f396446e74fc40b4494a62c5c8bcc0",
         "sha1": "60ed9f6f8414442d7f63397b9ae5c5bc0e275e3b"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Albert Odyssey]",

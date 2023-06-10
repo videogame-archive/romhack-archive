@@ -21,7 +21,7 @@
         "md5": "e591ff3dd158df8a8a844e9391813956",
         "sha1": "b4c7a46389ed137917b1810a5a2449332e16df37"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Märchen Adventure Cotton 100%]",

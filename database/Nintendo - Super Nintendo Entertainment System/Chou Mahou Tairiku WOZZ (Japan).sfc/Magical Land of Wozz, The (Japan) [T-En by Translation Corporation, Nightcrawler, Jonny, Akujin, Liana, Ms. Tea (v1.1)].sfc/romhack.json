@@ -20,7 +20,7 @@
         "md5": "9c891382822403f241fa6a95afb3c6b7",
         "sha1": "3e96a46ed7b718ba737b5c72d727e66438010d6e"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Choumahou Tairiku Wozz]",

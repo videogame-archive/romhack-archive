@@ -21,7 +21,7 @@
         "md5": "8298a11ab14ebcbb0b7331c6866ae232",
         "sha1": "07de5003722651d29263c7ca3d3c7aa2e18c923e"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Go Go Ackman 3]",

@@ -20,7 +20,7 @@
         "md5": "a0a45569511f1a7676a5d4e9ef44e700",
         "sha1": "179f0e82e84bb78333cc330b53b9bbb21fa441fd"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Emerald Dragon]",

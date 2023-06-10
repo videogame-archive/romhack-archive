@@ -20,7 +20,7 @@
         "md5": "1095474903c14921a17edb56a2d58870",
         "sha1": "8567b555a998aa3df29bd2fc7f6c83c296cd9366"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dark Half]",

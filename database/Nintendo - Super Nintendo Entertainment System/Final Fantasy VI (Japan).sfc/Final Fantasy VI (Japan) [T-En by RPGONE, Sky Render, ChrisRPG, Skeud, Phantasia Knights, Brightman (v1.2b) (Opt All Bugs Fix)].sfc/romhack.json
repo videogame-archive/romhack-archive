@@ -21,7 +21,7 @@
         "md5": "9e7055c26f0bec6e721750b59b6675a2",
         "sha1": "352b680e0ef51336fc02fdc65456e374cf3100ad"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Final Fantasy VI]",

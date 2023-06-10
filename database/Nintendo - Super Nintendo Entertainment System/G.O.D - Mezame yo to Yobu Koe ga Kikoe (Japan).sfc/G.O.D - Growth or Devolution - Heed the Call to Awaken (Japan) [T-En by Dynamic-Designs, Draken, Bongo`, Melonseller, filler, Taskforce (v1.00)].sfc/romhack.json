@@ -20,7 +20,7 @@
         "md5": "b1321d082871296be8c3fffe93e463db",
         "sha1": "69febce3f2f73cee1be185f3102167160872c4f9"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [G.O.D.: Mezameyo to Yobu Koe ga Kikoe]",

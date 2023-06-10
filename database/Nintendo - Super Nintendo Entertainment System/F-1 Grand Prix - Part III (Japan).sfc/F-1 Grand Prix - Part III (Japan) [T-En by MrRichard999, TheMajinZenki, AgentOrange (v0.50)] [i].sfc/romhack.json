@@ -21,7 +21,7 @@
         "md5": "7012a33834f2bf733ecdeb587598d20d",
         "sha1": "0dcbb9260dd233cb5b831a3ee92a9638b9fd6ee3"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [F-1 Grand Prix Part III]",

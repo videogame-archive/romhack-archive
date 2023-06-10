@@ -21,7 +21,7 @@
         "md5": "f4d4b70adec42275f36ced04c834bffc",
         "sha1": "afff1998e281a71291b9bc7dd01239432aa583ba"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Sengoku Denshou]",

@@ -21,7 +21,7 @@
         "md5": "4c560d82da458bbb30212d5fdb1de870",
         "sha1": "756bb71c970d8cc158ab2783a9559549e02309a9"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Mega Man 7]",

@@ -21,7 +21,7 @@
         "md5": "e92a446429af711671d0af38beacdb55",
         "sha1": "c7d989af46e3b138969d6477099e0b373676b89e"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Little Master: Nijiiro no Maseki]",

@@ -21,7 +21,7 @@
         "md5": "04735e23bdec4a0bccf743045c4cc89b",
         "sha1": "f50f66937c051468dcd9ee7260f64b903937da0e"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kishin Douji Zenki: Battle Raiden]",

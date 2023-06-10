@@ -21,7 +21,7 @@
         "md5": "22bb4e886dcce4204f04e4a90044847e",
         "sha1": "a6d7f2001542094878c953b60714e8244545d8ba"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Nice de Shot]",

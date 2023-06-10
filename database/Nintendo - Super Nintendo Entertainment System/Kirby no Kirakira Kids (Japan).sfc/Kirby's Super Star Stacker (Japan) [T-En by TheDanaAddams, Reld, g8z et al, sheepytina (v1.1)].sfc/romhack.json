@@ -21,7 +21,7 @@
         "md5": "adcc77e1044ea3b6f6396f7fbcc80f52",
         "sha1": "2bfb0fe61a704389b47e54197d7d6c9e5a12222c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kirby no Kirakira Kizzu]",

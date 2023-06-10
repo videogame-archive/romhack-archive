@@ -20,7 +20,7 @@
         "md5": "854c6944e16431b66f7c4a359dccea25",
         "sha1": "b7970c18c99c37f7c810689550ddd9406e6ae8a5"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dai-4-Ji Super Robot Taisen]",

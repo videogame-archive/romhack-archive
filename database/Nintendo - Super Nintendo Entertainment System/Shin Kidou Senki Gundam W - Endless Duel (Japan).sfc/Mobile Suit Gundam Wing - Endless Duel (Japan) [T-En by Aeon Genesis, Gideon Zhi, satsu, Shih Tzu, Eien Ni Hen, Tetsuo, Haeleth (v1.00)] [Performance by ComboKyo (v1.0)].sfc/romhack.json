@@ -21,7 +21,7 @@
         "md5": "e1ae5a1255863c5c12d9da97e92b970b",
         "sha1": "7b79d9780aad180d975b43c1198dfa2c6a6990f3"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Shin Kidou Senki Gundam W: Endless Duel]",

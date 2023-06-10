@@ -20,7 +20,7 @@
         "md5": "d7224000a181209cf6145759e19243dc",
         "sha1": "a56a550c460285d06fbbcf2d8e41690bd9b9ba13"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [E.V.O.: Search for Eden]",

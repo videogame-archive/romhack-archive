@@ -20,7 +20,7 @@
         "md5": "544082c1518e128cf56241dcfaef56c9",
         "sha1": "8cbacdb3b2ee1874dd0d05835f8ccecc753e0c02"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Cyber Knight]",

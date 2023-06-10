@@ -21,7 +21,7 @@
         "md5": "849f61623d6d5f4805f2362a95f8e31a",
         "sha1": "648d74445197953f7a64022ae7d49438ac4ba8f1"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kessen! Dokapon Oukoku IV - Densetsu no Yuusha-tachi]",

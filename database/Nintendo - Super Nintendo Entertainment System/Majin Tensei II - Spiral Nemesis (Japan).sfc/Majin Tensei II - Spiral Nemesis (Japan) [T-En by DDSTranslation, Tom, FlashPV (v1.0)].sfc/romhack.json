@@ -21,7 +21,7 @@
         "md5": "380caeb9d88c3ee5738c4d5307c5554b",
         "sha1": "d0dfc6c17815abb758fca484eeaed879ad24c365"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Majin Tensei II: Spiral Nemesis]",

@@ -20,7 +20,7 @@
         "md5": "e9bbf2623d83698296920a04bce7b667",
         "sha1": "bf0b4eb71e0405bf7c5942d85123af6467894088"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Genjuu Ryodan]",

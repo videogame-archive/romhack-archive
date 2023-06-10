@@ -20,7 +20,7 @@
         "md5": "c18b5b2bfe7c8a243946cdef6a4e4e17",
         "sha1": "28d3087b41483deb2ecf1ec5f7e927e768c6afa6"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Donald Duck no Mahou no Boushi]",

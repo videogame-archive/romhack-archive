@@ -21,7 +21,7 @@
         "md5": "21a163afaf6e9c476004cb8f21593dc8",
         "sha1": "190d801457d5467771cac45970591a4c74b1feb4"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Nishijin Pachinko 3]",

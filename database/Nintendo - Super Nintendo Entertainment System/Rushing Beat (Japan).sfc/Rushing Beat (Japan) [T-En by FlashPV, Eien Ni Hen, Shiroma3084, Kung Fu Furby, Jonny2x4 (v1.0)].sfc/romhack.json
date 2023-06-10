@@ -21,7 +21,7 @@
         "md5": "52a381970b31ba9d8a8e7e5fb660a888",
         "sha1": "b499b534ba56fe2856c64cc462fdda6ab636caec"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Rival Turf!]",

@@ -20,7 +20,7 @@
         "md5": "c683cc486063b6ab8cd4d459b7ad8797",
         "sha1": "d53ce9f94dd9708854bc2ac225f27e52bcf570aa"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Final Fantasy IV Namingway Edition",

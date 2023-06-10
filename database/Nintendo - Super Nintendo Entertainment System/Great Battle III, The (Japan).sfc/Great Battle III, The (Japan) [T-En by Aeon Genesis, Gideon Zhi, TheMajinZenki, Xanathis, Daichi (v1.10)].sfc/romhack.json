@@ -20,7 +20,7 @@
         "md5": "77a5262c8aa686e8bced2d8ae5f59208",
         "sha1": "9d194bb5142a027c152cc25f3e97618a57a9c3c0"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [The Great Battle III]",

@@ -21,7 +21,7 @@
         "md5": "cbe0c3c273dea0112af070d83dd4eea0",
         "sha1": "63f03c91b1fcf3e6ff36933875f040c79d8cd045"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Soreyuke Ebisumaru Karakuri Meiro - Kieta Goemon no Nazo!!]",

@@ -21,7 +21,7 @@
         "md5": "f6f10458c244e75422cc43d867fcc889",
         "sha1": "69d9a21f7622728448c0e18b0e23e04cce24b055"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Magna Braban: Henreki no Yuusha]",

@@ -20,7 +20,7 @@
         "md5": "112332cc612043fc5341baa96618a45a",
         "sha1": "12c32db7e1825d2d843bea3a0faf770faeeac900"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Cooly Skunk]",

@@ -20,7 +20,7 @@
         "md5": "a90be9996dd3c344eab130320529f349",
         "sha1": "3b1964f041e55f292c47dbebb22544c3ccc93e17"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dragon Quest III: Soshite Densetsu e...]",

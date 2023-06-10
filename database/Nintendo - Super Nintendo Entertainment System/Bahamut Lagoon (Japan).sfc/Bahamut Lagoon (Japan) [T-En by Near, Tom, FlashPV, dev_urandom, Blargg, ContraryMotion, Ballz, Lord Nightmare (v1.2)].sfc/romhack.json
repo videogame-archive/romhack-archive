@@ -20,7 +20,7 @@
         "md5": "d94bd07e5daee3dc066b3dc754f52b68",
         "sha1": "47c66b9e6aa85883cf642c1ca68f538f17c20760"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Bahamut Lagoon]",

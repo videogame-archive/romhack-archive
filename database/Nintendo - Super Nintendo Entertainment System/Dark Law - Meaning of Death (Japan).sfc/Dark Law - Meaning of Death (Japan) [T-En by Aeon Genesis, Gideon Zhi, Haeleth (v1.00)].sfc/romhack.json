@@ -20,7 +20,7 @@
         "md5": "381c7c7a339f647d193486e6fe7c84a7",
         "sha1": "81fcca101b13713b4a822062fd3452d7f5b059cc"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dark Law: Meaning of Death]",

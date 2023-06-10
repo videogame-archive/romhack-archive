@@ -21,7 +21,7 @@
         "md5": "f7ac9dc18ea5a351c0a5a38c84168a14",
         "sha1": "15d97c05be4e7b4edd24e53452ec4c12e7ccbfc6"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Mahou Poipoi Poitto!]",

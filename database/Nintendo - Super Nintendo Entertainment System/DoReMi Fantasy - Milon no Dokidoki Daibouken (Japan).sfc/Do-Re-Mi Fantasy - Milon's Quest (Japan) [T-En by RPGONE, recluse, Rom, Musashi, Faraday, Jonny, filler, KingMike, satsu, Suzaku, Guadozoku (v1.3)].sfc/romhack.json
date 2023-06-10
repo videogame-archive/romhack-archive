@@ -20,7 +20,7 @@
         "md5": "301504c4f2dd333c2bb5d71bacee9f9e",
         "sha1": "ce00051f5d63950484872b1f0ade53326b9eeeba"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [DoReMi Fantasy: Milon no DokiDoki Daibouken]",

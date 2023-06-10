@@ -20,7 +20,7 @@
         "md5": "ce7f04c5cabbe883ac73d90136202c57",
         "sha1": "21b1f6017c1a5d2fec6ad95ec0eaf0d735d6e1b8"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Famicom Detective Club Part II]",

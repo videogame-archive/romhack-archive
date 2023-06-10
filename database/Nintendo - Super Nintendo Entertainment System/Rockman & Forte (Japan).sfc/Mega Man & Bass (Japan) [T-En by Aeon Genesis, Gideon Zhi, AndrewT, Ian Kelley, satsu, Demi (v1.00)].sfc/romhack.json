@@ -21,7 +21,7 @@
         "md5": "2011ded7fd9532a13736f2c6c8100530",
         "sha1": "622830e8652a91a0ca3357e93c3adaa36ea58a4f"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Rockman & Forte]",

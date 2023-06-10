@@ -21,7 +21,7 @@
         "md5": "e42ad5c32041a4ec7e3862f46a8ac6f5",
         "sha1": "c578d1ca27d23d3136aebfc54b29a678ccfae306"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Mahou Kishi Rayearth]",

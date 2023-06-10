@@ -20,7 +20,7 @@
         "md5": "c30f54bccead98b89728786b7bf2519b",
         "sha1": "735fe01a266e1242485385a81758b2befbacb6cb"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Angelique]",

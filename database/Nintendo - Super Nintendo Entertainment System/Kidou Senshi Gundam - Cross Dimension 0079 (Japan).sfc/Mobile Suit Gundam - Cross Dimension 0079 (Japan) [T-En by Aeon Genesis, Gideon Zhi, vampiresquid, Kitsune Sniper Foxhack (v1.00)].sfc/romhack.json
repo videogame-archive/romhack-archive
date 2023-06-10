@@ -21,7 +21,7 @@
         "md5": "83123efeecf95c72c7f571300c5532c6",
         "sha1": "22d0c2ed6ba95d96704e29aa9fab589cb55f3225"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kidou Senshi Gundam: Cross Dimension 0079]",

@@ -20,7 +20,7 @@
         "md5": "e8c365dda588f8318d51d988e875af4d",
         "sha1": "a58e7c4c5961d74c79870a58137b2092492a8e69"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dragon Ball Z: Super Butouden 3]",

@@ -20,7 +20,7 @@
         "md5": "ace1abe5f48d24e1512cbc6541f171be",
         "sha1": "638272dcdda92bd233e89dbd2d4a4cfad1b9459c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [3x3 Eyes: Juuma Houkan]",

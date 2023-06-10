@@ -20,7 +20,7 @@
         "md5": "d8fdc7bdb5d53b359669de9d5acb0cb3",
         "sha1": "e8874329a9af6e26d2c860375455a19f5bacbc68"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Burning Pro Wrestling]",

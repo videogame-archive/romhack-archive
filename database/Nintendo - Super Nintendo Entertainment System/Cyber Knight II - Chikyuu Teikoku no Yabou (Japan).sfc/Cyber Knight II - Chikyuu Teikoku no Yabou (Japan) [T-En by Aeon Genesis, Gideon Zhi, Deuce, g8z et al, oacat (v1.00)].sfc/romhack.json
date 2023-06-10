@@ -20,7 +20,7 @@
         "md5": "4513cd4ca6dc02834faa1d490c731e1d",
         "sha1": "d72786b580e89176bd1d80cbbaf41a6288eb4c26"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Cyber Knight II: Chikyuu Teikoku no Yabou]",

@@ -20,7 +20,7 @@
         "md5": "e90819a54299782f108faf27daf29223",
         "sha1": "6b612f6d99f2efc26f26fb22290bc732ada0ea6f"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dragon Ball Z: Super Saiya Densetsu]",

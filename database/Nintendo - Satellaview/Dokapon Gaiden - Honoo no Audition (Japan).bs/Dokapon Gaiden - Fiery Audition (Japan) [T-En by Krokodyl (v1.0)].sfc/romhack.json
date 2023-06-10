@@ -21,7 +21,7 @@
         "md5": "e09d6ff71e339babc6be6ca1f6fabd76",
         "sha1": "a8ab96981b78821c24bed21128ee68711addfa27"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dokapon Gaiden - Honoo no Audition]",

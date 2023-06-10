@@ -21,7 +21,7 @@
         "md5": "69df2f8abc1da56711e615184da00997",
         "sha1": "1d96c340b0dcfd4a15321c210758a103523d6d42"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dinocity]",

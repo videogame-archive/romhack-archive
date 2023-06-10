@@ -20,7 +20,7 @@
         "md5": "c5c28a7893a47d263067819ab9f2b58a",
         "sha1": "8fa67bf13821a3bddc53f31796c3edbc5cd68c78"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Cyborg 009]",

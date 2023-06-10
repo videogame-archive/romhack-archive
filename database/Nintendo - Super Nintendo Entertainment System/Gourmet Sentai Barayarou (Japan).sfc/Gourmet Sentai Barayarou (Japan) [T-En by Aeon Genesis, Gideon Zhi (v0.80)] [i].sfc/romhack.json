@@ -20,7 +20,7 @@
         "md5": "f5e18b68e1ceebd164d6fa55e74b727d",
         "sha1": "7b218e2d318f90358d553b64afe8fe76475361fa"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Gourmet Squadron Barayarou]",

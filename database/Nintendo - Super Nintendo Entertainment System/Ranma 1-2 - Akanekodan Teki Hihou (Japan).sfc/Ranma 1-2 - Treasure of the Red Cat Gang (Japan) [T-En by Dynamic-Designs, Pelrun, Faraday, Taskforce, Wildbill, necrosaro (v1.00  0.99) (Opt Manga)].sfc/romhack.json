@@ -21,7 +21,7 @@
         "md5": "7bf10acbaca82ce01bfe8ee69d4ebacf",
         "sha1": "747065e5be951ce5fb0646480b1a262ee2868dc9"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ranma 1/2: Akanekodan Teki Hihou]",

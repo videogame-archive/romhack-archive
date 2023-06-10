@@ -20,7 +20,7 @@
         "md5": "2da21ce539d05c34ead43eb27c1c4da1",
         "sha1": "269ad78e2e9ab00e044f4187acf52bc8a946271a"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [FEDA: The Emblem of Justice]",

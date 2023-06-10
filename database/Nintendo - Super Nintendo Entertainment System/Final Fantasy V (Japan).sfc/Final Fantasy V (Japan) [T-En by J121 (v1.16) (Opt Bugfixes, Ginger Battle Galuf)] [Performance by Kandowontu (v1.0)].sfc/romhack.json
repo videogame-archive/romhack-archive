@@ -21,7 +21,7 @@
         "md5": "263df4b2dcf1c2e145edeb8c3f71740c",
         "sha1": "9b2e8da87191a3c9e27758284a90e29eaf7a0076"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "Final Fantasy V - GBA Script Port",

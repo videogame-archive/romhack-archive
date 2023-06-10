@@ -21,7 +21,7 @@
         "md5": "b939b678045b83372a50b28a188c86b8",
         "sha1": "3babf987a190e35dd6d4454f48ce2baf772a97fb"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "A Link to the Past Redux",

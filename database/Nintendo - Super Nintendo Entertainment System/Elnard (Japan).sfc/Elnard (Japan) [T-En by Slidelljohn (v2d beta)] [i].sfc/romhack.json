@@ -21,7 +21,7 @@
         "md5": "d4a306a6a062a898d67ea378ffc5329e",
         "sha1": "64de29708285a11625c7fab38aba00b54dfd376e"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Elnard]",

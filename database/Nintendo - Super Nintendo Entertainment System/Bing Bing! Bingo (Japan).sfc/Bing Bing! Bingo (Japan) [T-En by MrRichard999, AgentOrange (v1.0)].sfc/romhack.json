@@ -20,7 +20,7 @@
         "md5": "ad25f4598c7af75e3e517fdf1024f67a",
         "sha1": "8b5b0ef612c8a2089d21507fac19b00cd6047e4f"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Bing Bing! Bingo]",

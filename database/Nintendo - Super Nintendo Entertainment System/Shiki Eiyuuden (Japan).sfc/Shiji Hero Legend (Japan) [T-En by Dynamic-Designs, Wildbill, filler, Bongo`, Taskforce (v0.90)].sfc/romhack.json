@@ -21,7 +21,7 @@
         "md5": "2f1246d5d0b0d3c2e01e0d631ae7a865",
         "sha1": "bcc36985be75b4205343dd3f43c5bdc255a51d25"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Shiki Eiyuuden]",

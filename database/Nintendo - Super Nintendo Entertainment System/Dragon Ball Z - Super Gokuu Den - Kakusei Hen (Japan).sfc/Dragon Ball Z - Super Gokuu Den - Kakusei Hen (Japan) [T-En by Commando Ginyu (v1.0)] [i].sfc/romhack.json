@@ -20,7 +20,7 @@
         "md5": "205ca923476c8f51c132dc54e30afd42",
         "sha1": "aee5f876351544fb03d09f571bf63a5be38d0715"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Dragon Ball Z: Super Gokūden - Kakusei Hen]",

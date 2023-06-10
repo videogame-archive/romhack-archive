@@ -21,7 +21,7 @@
         "md5": "d4acd5171cf76a02fec5ea10911eda18",
         "sha1": "1e472796af7dc78a0f32cc4b667ddbdaa56439e1"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Kidou Butouden G Gundam]",

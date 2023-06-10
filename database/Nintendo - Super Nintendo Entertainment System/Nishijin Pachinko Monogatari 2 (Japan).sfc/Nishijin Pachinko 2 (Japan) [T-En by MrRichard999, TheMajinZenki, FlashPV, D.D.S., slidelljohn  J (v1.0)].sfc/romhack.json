@@ -21,7 +21,7 @@
         "md5": "d017da969bed790884fac066f19af762",
         "sha1": "1787fcc15dde737018b15fdc7e2e35f6342e19c2"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Nishijin Pachinko Monogatari 2]",

@@ -20,7 +20,7 @@
         "md5": "7ccaceca2d4ffcc1f640cbdfa8891b5b",
         "sha1": "41d0b08737914d5cd84f8bf0f0335f6c5bf02cf2"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Brandish 2: The Planet Buster]",

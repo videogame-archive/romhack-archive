@@ -21,7 +21,7 @@
         "md5": "cdd91e848318dc562e980f1399be0d93",
         "sha1": "f4810f6e418dc49adaaa7e629452b8e1d7310f40"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Magical Pop'n]",

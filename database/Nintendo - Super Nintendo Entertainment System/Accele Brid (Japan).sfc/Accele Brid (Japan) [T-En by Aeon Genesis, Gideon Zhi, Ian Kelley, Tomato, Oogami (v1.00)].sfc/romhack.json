@@ -20,7 +20,7 @@
         "md5": "a3a3ededc23f537220bf17bf5ae90f4c",
         "sha1": "8e301af46cfda7dbb8ecc2faeeeb20c7fd8a95cd"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Accele Brid]",

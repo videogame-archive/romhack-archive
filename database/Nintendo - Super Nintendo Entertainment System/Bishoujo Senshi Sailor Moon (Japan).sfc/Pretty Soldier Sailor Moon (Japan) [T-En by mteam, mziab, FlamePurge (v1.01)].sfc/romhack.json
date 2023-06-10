@@ -21,7 +21,7 @@
         "md5": "4b0086b873fe9de7d5ac7840d773c876",
         "sha1": "768522268c6cdd13299321e51456abb26402fe6c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Bishoujo Senshi Sailor Moon]",

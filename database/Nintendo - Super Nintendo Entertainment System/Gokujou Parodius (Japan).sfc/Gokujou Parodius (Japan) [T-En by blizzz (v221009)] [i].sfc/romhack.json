@@ -21,7 +21,7 @@
         "md5": "603483ffb4f319a21cd8bfbce6799bd5",
         "sha1": "cecd7864d5fb8fc9b4b2244d4fb1df2d38316b18"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Gokujou Parodius]",

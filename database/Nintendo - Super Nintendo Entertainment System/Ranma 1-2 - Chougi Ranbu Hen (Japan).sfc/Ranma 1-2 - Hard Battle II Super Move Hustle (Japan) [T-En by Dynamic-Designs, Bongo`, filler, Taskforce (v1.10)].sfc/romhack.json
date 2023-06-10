@@ -21,7 +21,7 @@
         "md5": "2b2a047a3848b46feda78ecad6c3bcf1",
         "sha1": "a81fa6973bd95809f41370c160a97de40f8126d7"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Ranma 1/2: Chougi Ranbu Hen]",

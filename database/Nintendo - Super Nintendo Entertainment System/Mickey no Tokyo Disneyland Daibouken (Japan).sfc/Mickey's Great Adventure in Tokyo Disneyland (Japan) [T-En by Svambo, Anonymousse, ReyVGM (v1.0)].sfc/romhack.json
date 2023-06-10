@@ -21,7 +21,7 @@
         "md5": "9cbd845094d02a657f5eee7349aea8b6",
         "sha1": "4dd39a51de11ce3bce40a96f136ff159dcac5037"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Mickey no Tokyo Disneyland Daibouken]",

@@ -20,7 +20,7 @@
         "md5": "299e96968accb96b9e0d9a4154e220a5",
         "sha1": "86cf3c2d850b066f099e217f9ad39813b45e9de2"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Breath of Fire II]",

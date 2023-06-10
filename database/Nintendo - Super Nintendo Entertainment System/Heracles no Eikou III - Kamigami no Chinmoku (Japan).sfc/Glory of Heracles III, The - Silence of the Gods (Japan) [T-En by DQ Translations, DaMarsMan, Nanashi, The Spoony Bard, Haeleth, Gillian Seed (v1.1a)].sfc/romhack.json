@@ -21,7 +21,7 @@
         "md5": "db003c453aa71be6cdb2ba3ccf167d4f",
         "sha1": "1dc2a6233335e7dc990577b0d7fa109e54837f8c"
     },
-    "patches": [
+    "hacks": [
         {
             "id": null,
             "name": "[English] translation for [Heracles no Eikou III: Kamigami no Chinmoku]",
