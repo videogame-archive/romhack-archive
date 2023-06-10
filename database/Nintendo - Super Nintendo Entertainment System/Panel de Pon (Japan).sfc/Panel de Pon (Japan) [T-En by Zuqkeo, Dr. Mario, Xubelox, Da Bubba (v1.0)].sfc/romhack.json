@@ -28,12 +28,12 @@
             "authors": [ "Zuqkeo", "Dr. Mario", "Xubelox", "Da Bubba" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1144/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2008-01-01",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

@@ -28,12 +28,12 @@
             "authors": [ "Translation Corporation", "Nightcrawler", "Akujin", "David Mullen (MakoKnight)" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/345/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.7",
             "releaseDate": "2016-02-26",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

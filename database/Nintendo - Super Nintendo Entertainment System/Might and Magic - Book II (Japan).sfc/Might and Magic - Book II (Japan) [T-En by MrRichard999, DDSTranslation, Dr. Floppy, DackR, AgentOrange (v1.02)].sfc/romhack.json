@@ -31,9 +31,9 @@
             "otherUrls": [ "https://gbatemp.net/download/might-and-magic-book-two.36717/updates" ],
             "version": "1.02",
             "releaseDate": "2020-11-01",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

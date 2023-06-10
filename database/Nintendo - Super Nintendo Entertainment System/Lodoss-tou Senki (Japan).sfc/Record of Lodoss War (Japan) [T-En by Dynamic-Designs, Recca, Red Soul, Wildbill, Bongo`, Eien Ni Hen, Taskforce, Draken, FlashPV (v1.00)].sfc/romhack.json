@@ -28,12 +28,12 @@
             "authors": [ "Dynamic-Designs", "Recca", "Red Soul", "Wildbill", "Bongo`", "Eien Ni Hen", "Taskforce", "Draken", "FlashPV" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2155/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2014-02-26",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

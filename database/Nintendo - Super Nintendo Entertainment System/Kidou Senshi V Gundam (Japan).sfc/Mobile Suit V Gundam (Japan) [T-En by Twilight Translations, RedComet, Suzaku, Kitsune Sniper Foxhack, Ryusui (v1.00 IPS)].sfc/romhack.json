@@ -28,12 +28,12 @@
             "authors": [ "Twilight Translations", "RedComet", "Suzaku", "Kitsune Sniper (Foxhack)", "Ryusui" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/900/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00 IPS",
             "releaseDate": "2006-10-21",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

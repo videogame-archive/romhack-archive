@@ -27,10 +27,10 @@
             "authors": [ "advancedpillow", "Reld", "Onoreto" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6858/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2023-03-09",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

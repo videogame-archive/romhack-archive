@@ -30,7 +30,7 @@
             "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2016-04-04",
-            "options": "Caps",
+            "shortOptions": "Caps",
             "labels": [ "T-En" ],
             "medias": null
         }

@@ -28,12 +28,12 @@
             "authors": [ "DDSTranslation", "Tom", "FlashPV", "Akira76" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5667/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "2.0",
             "releaseDate": "2020-08-26",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "FlashPV", "DDSTranslation", "Tom", "Hiei-", "Akira76" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/4478/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.02",
             "releaseDate": "2020-02-25",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Tweak" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

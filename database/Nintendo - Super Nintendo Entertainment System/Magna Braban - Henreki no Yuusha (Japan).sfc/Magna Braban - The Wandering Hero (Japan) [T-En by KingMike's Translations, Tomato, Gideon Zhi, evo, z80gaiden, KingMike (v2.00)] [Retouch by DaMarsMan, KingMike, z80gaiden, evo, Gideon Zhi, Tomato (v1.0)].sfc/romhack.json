@@ -28,12 +28,12 @@
             "authors": [ "KingMike's Translations", "Tomato", "Gideon Zhi", "evo", "z80gaiden", "KingMike" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/388/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "2.00",
             "releaseDate": "2013-04-13",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "DaMarsMan", "KingMike", "z80gaiden", "evo", "Gideon Zhi", "Tomato" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2881/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2006-06-06",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Retouch" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

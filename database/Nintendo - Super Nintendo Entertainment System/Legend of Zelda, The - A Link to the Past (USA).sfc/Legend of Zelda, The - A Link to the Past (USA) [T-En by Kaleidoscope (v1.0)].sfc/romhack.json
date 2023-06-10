@@ -28,12 +28,12 @@
             "authors": [ "Kaleidoscope" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/5526/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2020-11-10",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

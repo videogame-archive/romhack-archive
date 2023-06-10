@@ -28,12 +28,12 @@
             "authors": [ "Tom", "FlashPV", "DDS" ],
             "shortAuthors": null,
             "url": "https://www.translated.games/snes/goemon3",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "A2",
             "releaseDate": "2022-03-06",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

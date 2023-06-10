@@ -28,12 +28,12 @@
             "authors": [ "Stealth Translations", "Bongo`", "Akujin", "Demi", "Prez", "Kitsune Sniper (Foxhack)" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/365/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "0.99",
             "releaseDate": "2001-05-26",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "mteam", "mziab" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2164/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.1",
             "releaseDate": "2014-04-02",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Fix" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

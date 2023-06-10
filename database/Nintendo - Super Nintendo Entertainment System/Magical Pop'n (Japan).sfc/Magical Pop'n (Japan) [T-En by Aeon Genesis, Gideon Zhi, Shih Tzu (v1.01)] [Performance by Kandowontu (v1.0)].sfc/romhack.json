@@ -28,12 +28,12 @@
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Shih Tzu" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/660/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.01",
             "releaseDate": "2003-03-07",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -44,9 +44,9 @@
             "otherUrls": [ "https://twitter.com/kandowontu" ],
             "version": "1.0",
             "releaseDate": "2023-02-28",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Performance" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

@@ -28,12 +28,12 @@
             "authors": [ "Near", "D" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1147/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.3",
             "releaseDate": "2012-10-23",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

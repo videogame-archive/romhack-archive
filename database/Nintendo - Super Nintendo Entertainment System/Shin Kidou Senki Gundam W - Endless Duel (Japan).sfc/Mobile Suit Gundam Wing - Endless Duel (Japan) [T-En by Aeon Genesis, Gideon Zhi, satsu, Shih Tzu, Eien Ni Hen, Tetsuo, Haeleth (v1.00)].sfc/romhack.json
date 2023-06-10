@@ -28,12 +28,12 @@
             "authors": [ "Aeon Genesis", "Gideon Zhi", "satsu", "Shih Tzu", "Eien Ni Hen", "Tetsuo", "Haeleth" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/570/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2002-06-23",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

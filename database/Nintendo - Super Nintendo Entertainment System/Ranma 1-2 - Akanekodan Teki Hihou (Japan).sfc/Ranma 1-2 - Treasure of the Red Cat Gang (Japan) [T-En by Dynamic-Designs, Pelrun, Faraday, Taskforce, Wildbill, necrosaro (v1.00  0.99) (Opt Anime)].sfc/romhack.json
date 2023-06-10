@@ -28,12 +28,12 @@
             "authors": [ "Dynamic-Designs", "Pelrun", "Faraday", "Taskforce", "Wildbill", "necrosaro" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/404/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00 / 0.99",
             "releaseDate": "2000-09-03",
-            "options": "Anime",
+            "shortOptions": "Anime",
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

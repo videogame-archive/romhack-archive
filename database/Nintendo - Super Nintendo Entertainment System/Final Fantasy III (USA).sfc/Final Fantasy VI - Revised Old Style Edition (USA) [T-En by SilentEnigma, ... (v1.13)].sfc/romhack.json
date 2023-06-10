@@ -28,12 +28,12 @@
             "authors": [ "SilentEnigma", "KWhazit", "Tomato", "Lina Darkstar", "DarkMage", "Rodimus Primal", "Spooniest", "angelo26", "Dr. Meat", "Yazoo", "Terii Senshi", "dn", "Leet Sketcher", "Master ZED", "Imzogelmo", "Madsiur", "Novalia Spirit", "Subtraction", "C. V. Reynolds", "assassin17", "bydoless", "Djibriel", "Dragonsbrethren", "Drakkhen", "Mike Ferrell", "Lenophis", "Lord J", "Kejardon", "mblock129" ],
             "shortAuthors": "SilentEnigma, ...",
             "url": "https://www.romhacking.net/hacks/5037/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.13",
             "releaseDate": "2023-04-02",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

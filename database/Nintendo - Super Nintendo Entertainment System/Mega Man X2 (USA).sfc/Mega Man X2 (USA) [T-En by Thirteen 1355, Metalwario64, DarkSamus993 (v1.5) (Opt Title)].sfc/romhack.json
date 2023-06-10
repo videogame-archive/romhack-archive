@@ -28,12 +28,12 @@
             "authors": [ "Thirteen 1355", "Metalwario64", "DarkSamus993" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/4777/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.5",
             "releaseDate": "2021-05-05",
-            "options": "Title",
+            "shortOptions": "Title",
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

@@ -28,12 +28,12 @@
             "authors": [ "Dynamic-Designs", "Akujin", "Bongo`", "Draken", "Wildbill", "Taskforce", "Red Soul" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1428/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.01",
             "releaseDate": "2009-12-24",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

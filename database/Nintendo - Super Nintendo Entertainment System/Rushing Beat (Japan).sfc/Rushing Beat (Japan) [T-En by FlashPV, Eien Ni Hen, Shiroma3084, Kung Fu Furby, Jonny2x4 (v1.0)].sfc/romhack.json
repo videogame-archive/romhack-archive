@@ -28,12 +28,12 @@
             "authors": [ "FlashPV", "Eien Ni Hen", "Shiroma3084", "Kung Fu Furby", "Jonny2x4" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2739/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2016-10-02",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

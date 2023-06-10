@@ -28,12 +28,12 @@
             "authors": [ "Aeon Genesis", "Gideon Zhi", "AndrewT", "Ian Kelley", "satsu", "Demi" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/621/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2002-12-19",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

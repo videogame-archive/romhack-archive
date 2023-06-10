@@ -28,12 +28,12 @@
             "authors": [ "Aeon Genesis", "Gideon Zhi", "ZackMan", "Wildbill", "Taskforce", "Akujin", "necrosaro", "satsu", "Dark Force" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/392/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.03",
             "releaseDate": "2001-05-30",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

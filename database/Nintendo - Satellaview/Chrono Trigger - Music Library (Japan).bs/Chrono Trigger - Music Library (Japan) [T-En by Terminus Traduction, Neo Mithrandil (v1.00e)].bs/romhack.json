@@ -27,10 +27,10 @@
             "authors": [ "Terminus Traduction", "Neo Mithrandil" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/712/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00e",
             "releaseDate": "2003-02-01",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

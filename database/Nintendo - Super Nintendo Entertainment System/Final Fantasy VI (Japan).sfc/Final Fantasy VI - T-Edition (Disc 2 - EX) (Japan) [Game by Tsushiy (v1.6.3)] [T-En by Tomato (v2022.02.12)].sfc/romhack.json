@@ -31,9 +31,9 @@
             "otherUrls": [],
             "version": "1.6.3",
             "releaseDate": "2017-09-19",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Game" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -44,9 +44,9 @@
             "otherUrls": ["http://tomato.fobby.net/ff6-t-edition/"],
             "version": "2022.02.12",
             "releaseDate": "2022-02-12",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

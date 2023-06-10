@@ -28,12 +28,12 @@
             "authors": [ "Dynamic-Designs", "Wildbill", "Bongo`", "Ritchie", "Recca", "Red Soul", "LostTemplar", "Taskforce", "FlashPV", "Draken", "Yuka", "Delta Flame" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1713/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2012-02-29",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

@@ -28,12 +28,12 @@
             "authors": [ "Avster" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5673/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "Beta",
             "releaseDate": "2020-09-07",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

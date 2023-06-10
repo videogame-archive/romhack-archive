@@ -28,12 +28,12 @@
             "authors": [ "oldmanoftheSEA", "Monolith Traveler", "Zoya Schultz" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/6741/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2022-04-13",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

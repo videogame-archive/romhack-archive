@@ -28,12 +28,12 @@
             "authors": [ "Dynamic-Designs", "Taskforce", "Bongo`", "Eien Ni Hen", "Wildbill", "Draken" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3355/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.02",
             "releaseDate": "2017-12-26",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

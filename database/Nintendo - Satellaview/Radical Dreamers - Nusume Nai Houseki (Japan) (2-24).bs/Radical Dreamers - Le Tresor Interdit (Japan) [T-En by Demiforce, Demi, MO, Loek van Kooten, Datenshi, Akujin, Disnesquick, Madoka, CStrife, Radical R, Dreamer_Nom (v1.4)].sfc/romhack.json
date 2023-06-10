@@ -27,10 +27,10 @@
             "authors": [ "Demiforce", "Demi", "MO", "Loek van Kooten", "Datenshi", "Akujin", "Disnesquick", "Madoka", "CStrife", "Radical R", "Dreamer_Nom" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/403/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.4",
             "releaseDate": "2005-12-25",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

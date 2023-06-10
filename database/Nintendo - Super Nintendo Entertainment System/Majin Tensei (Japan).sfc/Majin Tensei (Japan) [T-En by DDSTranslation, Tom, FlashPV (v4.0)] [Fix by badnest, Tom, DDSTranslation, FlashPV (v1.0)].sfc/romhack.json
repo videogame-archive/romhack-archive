@@ -28,12 +28,12 @@
             "authors": [ "DDSTranslation", "Tom", "FlashPV" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/4832/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "4.0",
             "releaseDate": "2019-08-09",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "badnest", "Tom", "DDSTranslation", "FlashPV" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6468/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2022-03-05",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Fix" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

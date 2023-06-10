@@ -28,12 +28,12 @@
             "authors": [ "F.H.", "Karen Aoi", "Unicorn23", "David Mullen (MakoKnight)", "Dark Force" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/400/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0 Beta",
             "releaseDate": "2000-07-09",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

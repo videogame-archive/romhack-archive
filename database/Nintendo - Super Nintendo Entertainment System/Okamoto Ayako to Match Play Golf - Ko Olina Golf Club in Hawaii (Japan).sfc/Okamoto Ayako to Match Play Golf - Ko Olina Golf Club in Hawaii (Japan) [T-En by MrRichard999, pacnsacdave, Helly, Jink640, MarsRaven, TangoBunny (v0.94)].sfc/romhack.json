@@ -28,12 +28,12 @@
             "authors": [ "MrRichard999", "pacnsacdave", "Helly", "Jink640", "MarsRaven", "TangoBunny" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2540/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "0.94",
             "releaseDate": "2015-12-11",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

@@ -28,12 +28,12 @@
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Liana", "Neil_" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1215/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2007-11-06",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

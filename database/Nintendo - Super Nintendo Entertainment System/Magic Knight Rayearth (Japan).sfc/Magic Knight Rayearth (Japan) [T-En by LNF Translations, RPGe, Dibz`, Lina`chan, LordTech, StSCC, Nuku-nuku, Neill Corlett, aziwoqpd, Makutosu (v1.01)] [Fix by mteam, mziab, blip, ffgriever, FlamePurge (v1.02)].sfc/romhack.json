@@ -28,12 +28,12 @@
             "authors": [ "LNF Translations", "RPGe", "Dibz`", "Lina`chan", "LordTech", "StSCC", "Nuku-nuku", "Neill Corlett", "aziwoqpd", "Makutosu" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/387/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.01",
             "releaseDate": "1999-03-19",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "mteam", "mziab", "blip", "ffgriever", "FlamePurge" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6650/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.02",
             "releaseDate": "2022-10-20",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Fix" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

@@ -28,12 +28,12 @@
             "authors": [ "Svambo", "Anonymousse", "ReyVGM" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6400/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2021-12-29",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

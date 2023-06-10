@@ -28,12 +28,12 @@
             "authors": [ "Binary Team", "Biraku" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/5157/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "2.03",
             "releaseDate": "2010-06-26",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Game" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "Darrman", "Biraku" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/5166/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2020-05-01",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

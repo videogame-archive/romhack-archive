@@ -28,12 +28,12 @@
             "authors": [ "FuSoYa’s Niche", "FuSoYa" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/18/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2000-02-09",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Retouch" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

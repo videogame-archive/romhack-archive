@@ -27,10 +27,10 @@
             "authors": [ "DeJap Translations", "Dark Force", "AnusP", "Faraday", "Alex W. Jackson", "F.H.", "Jason Li" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/289/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2000-12-22",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         },
@@ -40,10 +40,10 @@
             "authors": [ "Docrow", "Dark Force", "AnusP", "Faraday", "Alex W. Jackson" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3398/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2017-10-09",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Tweak" ],
             "medias": null
         }

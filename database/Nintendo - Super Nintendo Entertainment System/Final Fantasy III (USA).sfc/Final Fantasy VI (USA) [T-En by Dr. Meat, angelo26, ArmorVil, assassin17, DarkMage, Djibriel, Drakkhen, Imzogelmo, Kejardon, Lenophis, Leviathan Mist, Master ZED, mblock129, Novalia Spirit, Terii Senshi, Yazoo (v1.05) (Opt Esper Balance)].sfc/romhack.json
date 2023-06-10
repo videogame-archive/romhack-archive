@@ -28,12 +28,12 @@
             "authors": [ "Dr. Meat", "angelo26", "ArmorVil", "assassin17", "DarkMage", "Djibriel", "Drakkhen", "Imzogelmo", "Kejardon", "Lenophis", "Leviathan Mist", "Master ZED", "mblock129", "Novalia Spirit", "Terii Senshi", "Yazoo" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/2247/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.05",
             "releaseDate": "2019-02-15",
-            "options": "Esper Balance",
+            "shortOptions": "Esper Balance",
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

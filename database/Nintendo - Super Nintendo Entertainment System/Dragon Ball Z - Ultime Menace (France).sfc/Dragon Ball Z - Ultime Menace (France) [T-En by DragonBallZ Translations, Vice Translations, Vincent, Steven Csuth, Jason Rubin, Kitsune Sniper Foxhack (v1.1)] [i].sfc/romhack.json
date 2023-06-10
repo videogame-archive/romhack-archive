@@ -28,12 +28,12 @@
             "authors": [ "DragonBallZ Translations", "Vice Translations", "Vincent", "Steven Csuth", "Jason Rubin", "Kitsune Sniper (Foxhack)" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/334/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.1",
             "releaseDate": "2000-05-06",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

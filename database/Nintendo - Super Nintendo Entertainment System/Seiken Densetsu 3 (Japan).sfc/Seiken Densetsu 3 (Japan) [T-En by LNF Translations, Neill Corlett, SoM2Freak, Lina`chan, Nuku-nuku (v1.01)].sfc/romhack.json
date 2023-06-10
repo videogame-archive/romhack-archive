@@ -28,12 +28,12 @@
             "authors": [ "LNF Translations", "Neill Corlett", "SoM2Freak", "Lina`chan", "Nuku-nuku" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/440/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.01",
             "releaseDate": "2000-08-27",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

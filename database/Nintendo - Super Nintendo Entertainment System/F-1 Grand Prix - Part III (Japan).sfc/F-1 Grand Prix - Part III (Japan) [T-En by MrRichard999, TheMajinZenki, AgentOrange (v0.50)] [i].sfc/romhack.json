@@ -28,12 +28,12 @@
             "authors": [ "MrRichard999", "TheMajinZenki", "AgentOrange" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/4350/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "0.50",
             "releaseDate": "2019-03-27",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

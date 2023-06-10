@@ -28,12 +28,12 @@
             "authors": [ "Puresabe" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/5502/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.02",
             "releaseDate": "2020-12-06",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Game" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "Zynk Oxhyde", "Puresabe" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/6165/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.02",
             "releaseDate": "2021-09-08",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

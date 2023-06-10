@@ -28,12 +28,12 @@
             "authors": [ "Krokodyl" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6648/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2022-08-30",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

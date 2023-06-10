@@ -27,10 +27,10 @@
             "authors": [ "Kajar Laboratories", "KWhazit", "ZeaLitY", "JLukas", "Vehek", "Lena Andreia" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1198/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.01",
             "releaseDate": "2007-10-05",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         },
@@ -40,10 +40,10 @@
             "authors": [ "Doctor L", "KWhazit" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1258/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.01",
             "releaseDate": "2008-03-29",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         },
@@ -53,10 +53,10 @@
             "authors": [ "LethargicOwl" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3072/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2017-06-12",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Fix" ],
             "medias": null
         }

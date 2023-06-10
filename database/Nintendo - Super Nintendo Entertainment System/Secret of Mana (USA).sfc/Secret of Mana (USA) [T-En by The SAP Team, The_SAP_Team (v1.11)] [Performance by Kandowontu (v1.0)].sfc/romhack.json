@@ -28,12 +28,12 @@
             "authors": [ "The SAP Team", "The_SAP_Team" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5765/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.11",
             "releaseDate": "2021-06-05",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -44,9 +44,9 @@
             "otherUrls": [ "https://patreon.com/kandowontu", "https://twitter.com/kandowontu"],
             "version": "1.0",
             "releaseDate": "2023-03-23",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Performance" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

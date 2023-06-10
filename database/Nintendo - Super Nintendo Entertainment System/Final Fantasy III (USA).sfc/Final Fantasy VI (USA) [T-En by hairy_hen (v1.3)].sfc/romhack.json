@@ -28,12 +28,12 @@
             "authors": [ "hairy_hen" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/4619/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.3",
             "releaseDate": "2019-07-25",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

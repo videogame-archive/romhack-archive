@@ -28,12 +28,12 @@
             "authors": [ "Magic Destiny", "Akujin", "Draken", "Daimajin", "Xeur", "PhatOo7", "Bongo`", "Wildbill" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1332/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.04",
             "releaseDate": "2008-10-15",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

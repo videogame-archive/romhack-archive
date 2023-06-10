@@ -28,12 +28,12 @@
             "authors": [ "Suicidal Translations", "LordTech", "Musashi", "UnaFarmer" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/437/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "1999-11-08",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

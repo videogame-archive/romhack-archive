@@ -27,10 +27,10 @@
             "authors": [ "Dynamic-Designs", "filler", "Wildbill", "Bongo`", "Taskforce" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5420/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "0.91",
             "releaseDate": "2020-02-26",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

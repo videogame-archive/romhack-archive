@@ -28,12 +28,12 @@
             "authors": [ "DDSTranslation", "Tom", "FlashPV", "Akira76" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5667/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "2.0",
             "releaseDate": "2020-08-26",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

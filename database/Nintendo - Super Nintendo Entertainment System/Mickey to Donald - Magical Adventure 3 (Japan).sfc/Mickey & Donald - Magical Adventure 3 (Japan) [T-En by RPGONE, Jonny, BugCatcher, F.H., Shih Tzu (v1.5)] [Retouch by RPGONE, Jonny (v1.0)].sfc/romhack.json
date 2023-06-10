@@ -28,12 +28,12 @@
             "authors": [ "RPGONE", "Jonny", "BugCatcher", "F.H.", "Shih Tzu" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/553/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.5",
             "releaseDate": "2020-06-18",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "RPGONE", "Jonny" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/4191/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2016-10-18",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Retouch" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

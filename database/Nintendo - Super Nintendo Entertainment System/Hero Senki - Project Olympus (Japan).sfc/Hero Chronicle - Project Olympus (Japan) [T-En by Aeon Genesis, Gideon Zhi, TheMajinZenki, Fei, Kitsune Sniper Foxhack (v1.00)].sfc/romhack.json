@@ -28,12 +28,12 @@
             "authors": [ "Aeon Genesis", "Gideon Zhi", "TheMajinZenki", "Fei", "Kitsune Sniper (Foxhack)" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/5323/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2019-12-24",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

@@ -27,10 +27,10 @@
             "authors": [ "Roto", "DN", "Duke Serkol", "Dreamer_Nom", "Con", "TeRRaBiTe88", "Vel", "DaMarsMan", "Euclid", "Mottzilla" ],
             "shortAuthors": null,
             "url": "https://bszelda.zeldalegends.net/ce.shtml",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "2023.01.11",
             "releaseDate": "2023-01-11",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En", "Restoration" ],
             "medias": null
         }

@@ -28,12 +28,12 @@
             "authors": [ "Dynamic-Designs", "Kakushiken", "filler", "Bongo`", "Taskforce", "Draken" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2570/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2016-01-28",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

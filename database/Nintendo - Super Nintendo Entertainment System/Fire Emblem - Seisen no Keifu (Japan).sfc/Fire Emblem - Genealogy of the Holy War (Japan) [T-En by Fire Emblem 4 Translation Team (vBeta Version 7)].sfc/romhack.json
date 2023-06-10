@@ -28,12 +28,12 @@
             "authors": [ "Fire Emblem 4 Translation Team" ],
             "shortAuthors": null,
             "url": "https://forums.serenesforest.net/index.php?/topic/63676-fe4-translation-patch-open-beta-v7/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "Beta Version 7",
             "releaseDate": "2016-07-07",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

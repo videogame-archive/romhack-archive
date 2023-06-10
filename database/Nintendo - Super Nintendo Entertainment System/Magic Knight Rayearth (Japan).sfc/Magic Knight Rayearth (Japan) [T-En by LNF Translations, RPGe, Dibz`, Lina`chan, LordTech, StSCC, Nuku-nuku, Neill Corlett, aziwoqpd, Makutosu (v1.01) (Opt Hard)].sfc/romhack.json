@@ -28,12 +28,12 @@
             "authors": [ "LNF Translations", "RPGe", "Dibz`", "Lina`chan", "LordTech", "StSCC", "Nuku-nuku", "Neill Corlett", "aziwoqpd", "Makutosu" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/387/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.01",
             "releaseDate": "1999-03-19",
-            "options": "Hard",
+            "shortOptions": "Hard",
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

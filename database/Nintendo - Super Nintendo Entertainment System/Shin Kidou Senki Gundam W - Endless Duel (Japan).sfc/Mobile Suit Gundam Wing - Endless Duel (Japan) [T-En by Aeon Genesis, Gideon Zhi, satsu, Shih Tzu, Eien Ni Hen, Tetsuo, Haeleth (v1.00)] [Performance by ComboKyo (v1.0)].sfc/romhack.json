@@ -28,12 +28,12 @@
             "authors": [ "Aeon Genesis", "Gideon Zhi", "satsu", "Shih Tzu", "Eien Ni Hen", "Tetsuo", "Haeleth" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/570/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2002-06-23",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "ComboKyo" ],
             "shortAuthors": null,
             "url": "https://www.patreon.com/posts/gundam-wing-duel-80719870",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2023-03-23",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Performance" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

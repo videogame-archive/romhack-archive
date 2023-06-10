@@ -28,12 +28,12 @@
             "authors": [ "Mana Sword", "Lee Chaolang", "Disnesquick" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/416/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "0.30",
             "releaseDate": "2000-07-22",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

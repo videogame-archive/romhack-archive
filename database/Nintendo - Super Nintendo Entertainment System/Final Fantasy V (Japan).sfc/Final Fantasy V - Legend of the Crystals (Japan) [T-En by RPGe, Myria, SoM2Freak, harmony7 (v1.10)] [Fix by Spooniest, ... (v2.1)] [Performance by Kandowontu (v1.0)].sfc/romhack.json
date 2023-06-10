@@ -28,12 +28,12 @@
             "authors": [ "RPGe", "Myria", "SoM2Freak", "harmony7" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/353/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.10",
             "releaseDate": "1998-10-17",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "Spooniest", "Barubary", "SoM2Freak", "harmony7", "FlamePurge" ],
             "shortAuthors": "Spooniest, ...",
             "url": "https://www.romhacking.net/translations/2600/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "2.1",
             "releaseDate": "2021-03-02",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Fix" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -57,9 +57,9 @@
             "otherUrls": [ "https://twitter.com/kandowontu" ],
             "version": "1.0",
             "releaseDate": "2023-04-05",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Performance" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

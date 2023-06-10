@@ -28,12 +28,12 @@
             "authors": [ "Aeon Genesis", "J2e Translations", "Gideon Zhi", "necrosaro", "Bansama", "Shivalva", "Ian Kelley", "BMF54123", "Shih Tzu" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/386/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.01",
             "releaseDate": "2004-08-04",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

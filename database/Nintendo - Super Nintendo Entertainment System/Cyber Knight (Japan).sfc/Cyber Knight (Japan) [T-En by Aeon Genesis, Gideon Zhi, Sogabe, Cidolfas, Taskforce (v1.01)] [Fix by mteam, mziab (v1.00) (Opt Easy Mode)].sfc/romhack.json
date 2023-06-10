@@ -27,10 +27,10 @@
             "authors": [ "Aeon Genesis", "Gideon Zhi", "Sogabe", "Cidolfas", "Taskforce" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/304/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.01",
             "releaseDate": "2001-12-17",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         },
@@ -40,10 +40,10 @@
             "authors": [ "mteam", "mziab" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6723/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2022-11-23",
-            "options": "Easy Mode",
+            "shortOptions": "Easy Mode",
             "labels": [ "Fix" ],
             "medias": null
         }

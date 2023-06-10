@@ -27,10 +27,10 @@
             "authors": [ "Hurkey!? Translations", "Fartnugg", "A-KO", "SD-Tetsuo" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/568/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2002-06-18",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         },
@@ -43,7 +43,7 @@
             "otherUrls": [ "https://twitter.com/kandowontu" ],
             "version": "1.0",
             "releaseDate": "2023-04-04",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Performance" ],
             "medias": null
         }

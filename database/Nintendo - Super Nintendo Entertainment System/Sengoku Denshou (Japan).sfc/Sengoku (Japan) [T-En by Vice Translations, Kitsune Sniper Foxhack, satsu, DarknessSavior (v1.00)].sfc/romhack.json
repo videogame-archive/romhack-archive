@@ -28,12 +28,12 @@
             "authors": [ "Vice Translations", "Kitsune Sniper (Foxhack)", "satsu", "DarknessSavior" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1742/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2012-06-28",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

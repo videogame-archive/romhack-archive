@@ -27,10 +27,10 @@
             "authors": [ "F.H.", "Akujin", "David Mullen (MakoKnight)", "Dark Force" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/278/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0 beta",
             "releaseDate": "2002-08-11",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         },
@@ -40,10 +40,10 @@
             "authors": [ "KingMike's Translations", "KingMike" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2286/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2014-10-08",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Fix" ],
             "medias": null
         }

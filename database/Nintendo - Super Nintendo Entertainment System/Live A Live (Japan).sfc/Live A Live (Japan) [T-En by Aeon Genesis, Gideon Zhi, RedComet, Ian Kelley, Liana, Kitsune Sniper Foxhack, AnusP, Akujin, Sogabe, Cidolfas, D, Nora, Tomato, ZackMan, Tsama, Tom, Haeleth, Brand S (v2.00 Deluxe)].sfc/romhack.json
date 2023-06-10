@@ -28,12 +28,12 @@
             "authors": [ "Aeon Genesis", "Gideon Zhi", "RedComet", "Ian Kelley", "Liana", "Kitsune Sniper (Foxhack)", "AnusP", "Akujin", "Sogabe", "Cidolfas", "D", "Nora", "Tomato", "ZackMan", "Tsama", "Tom", "Haeleth", "Brand S" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/381/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "2.00 Deluxe",
             "releaseDate": "2008-05-28",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

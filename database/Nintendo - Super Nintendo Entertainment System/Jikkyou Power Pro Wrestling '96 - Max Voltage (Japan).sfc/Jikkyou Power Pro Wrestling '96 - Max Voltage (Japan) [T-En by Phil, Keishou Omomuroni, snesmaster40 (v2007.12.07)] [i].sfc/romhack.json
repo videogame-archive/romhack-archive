@@ -28,12 +28,12 @@
             "authors": [ "Phil", "Keishou Omomuroni", "snesmaster40" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1239/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "2007.12.07",
             "releaseDate": "2007-12-07",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

@@ -28,12 +28,12 @@
             "authors": [ "DQ Translations", "DaMarsMan", "Nanashi", "The Spoony Bard", "Haeleth", "Gillian Seed" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/967/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.1a",
             "releaseDate": "2014-06-24",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

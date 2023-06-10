@@ -28,12 +28,12 @@
             "authors": [ "DDSTranslation" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2263/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.1",
             "releaseDate": "2014-09-06",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "Dushbadge" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/3320/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2017-11-30",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Tweak" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

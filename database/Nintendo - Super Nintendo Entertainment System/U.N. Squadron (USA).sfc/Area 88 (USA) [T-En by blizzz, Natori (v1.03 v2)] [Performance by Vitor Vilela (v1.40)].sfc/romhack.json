@@ -27,10 +27,10 @@
             "authors": [ "blizzz", "Natori" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/hacks/5676/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.03 v2",
             "releaseDate": "2021-09-03",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         },
@@ -40,10 +40,10 @@
             "authors": [ "Vitor Vilela" ],
             "shortAuthors": null,
             "url": "https://github.com/VitorVilela7/fastrom",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.40",
             "releaseDate": "2022-01-04",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Performance" ],
             "medias": null
         }

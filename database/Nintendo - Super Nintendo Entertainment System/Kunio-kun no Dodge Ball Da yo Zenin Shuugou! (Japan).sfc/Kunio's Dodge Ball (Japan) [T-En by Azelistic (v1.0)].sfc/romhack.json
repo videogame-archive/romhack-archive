@@ -28,12 +28,12 @@
             "authors": [ "Azelistic" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/815/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2004-07-17",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

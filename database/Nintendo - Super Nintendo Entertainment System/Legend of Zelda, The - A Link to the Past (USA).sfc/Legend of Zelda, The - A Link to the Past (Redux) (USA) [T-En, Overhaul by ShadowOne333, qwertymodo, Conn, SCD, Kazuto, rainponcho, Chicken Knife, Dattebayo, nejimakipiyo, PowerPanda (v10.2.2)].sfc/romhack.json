@@ -31,9 +31,9 @@
             "otherUrls": [ "https://github.com/ShadowOne333/A-Link-to-the-Past-Redux" ],
             "version": "10.2.2",
             "releaseDate": "2023-04-17",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Overhaul", "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

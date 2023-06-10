@@ -28,12 +28,12 @@
             "authors": [ "Saffith" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/4985/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2019-09-07",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

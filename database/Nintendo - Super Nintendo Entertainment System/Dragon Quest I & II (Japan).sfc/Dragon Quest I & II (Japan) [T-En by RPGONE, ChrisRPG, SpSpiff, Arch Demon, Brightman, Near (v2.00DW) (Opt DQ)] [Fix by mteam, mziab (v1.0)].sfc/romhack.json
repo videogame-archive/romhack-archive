@@ -28,12 +28,12 @@
             "authors": [ "RPGONE", "ChrisRPG", "SpSpiff", "Arch Demon", "Brightman", "Near" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/337/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "2.00DW",
             "releaseDate": "2003-06-23",
-            "options": "DQ",
+            "shortOptions": "DQ",
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "mteam", "mziab" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/2165/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2012-09-10",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Fix" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

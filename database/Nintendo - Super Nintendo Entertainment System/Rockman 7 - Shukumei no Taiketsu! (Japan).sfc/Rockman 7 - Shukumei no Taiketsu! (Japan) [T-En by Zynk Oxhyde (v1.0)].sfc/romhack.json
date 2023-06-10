@@ -28,12 +28,12 @@
             "authors": [ "Zynk Oxhyde" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/1792/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2013-01-12",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }

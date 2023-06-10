@@ -28,12 +28,12 @@
             "authors": [ "Retroman_X", "Anime_World", "Bunkai" ],
             "shortAuthors": null,
             "url": "https://www.romhacking.net/translations/6777/",
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.1",
             "releaseDate": "2023-04-08",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "T-En" ],
-            "medias": [ ]
+            "medias": null
         },
         {
             "id": null,
@@ -41,12 +41,12 @@
             "authors": [ "Unknown" ],
             "shortAuthors": null,
             "url": null,
-            "otherUrls": [ ],
+            "otherUrls": null,
             "version": "1.0",
             "releaseDate": "null",
-            "options": null,
+            "shortOptions": null,
             "labels": [ "Retouch" ],
-            "medias": [ ]
+            "medias": null
         }
     ]
 }
