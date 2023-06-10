@@ -162,19 +162,19 @@ If you want to learn about JSON data types check: [w3schools Json data types](ht
 
 ## Dealing With Abbreviations
 
-If an object: title, version, etc...
+If a field: title, author, version, etc...
 
-1. If one object is a subset or abbreviation of other, use the longer one. *Examples: "Legend of Link" vs "Legend of Link: Adventure of Zelda", "Rockman 4 BCAS" vs "Rockman 4 - Burst Chaser X Air Sliding"*
+1. If one field is a subset or abbreviation of other, use the longer one. *Examples: "Legend of Link" vs "Legend of Link: Adventure of Zelda", "Rockman 4 BCAS" vs "Rockman 4 - Burst Chaser X Air Sliding"*
 
-2. If one object is abbreviated and one is missing part of it, they should be combined if feasible. *Examples: "Link: Adventure of Zelda" vs "Legend of Link" can be combined as "Legend of Link: Adventure of Zelda"*
+2. If one field is abbreviated and one is missing part of it, they should be combined if feasible. *Examples: "Link: Adventure of Zelda" vs "Legend of Link" can be combined as "Legend of Link: Adventure of Zelda"*
 
 ## Dealing With Conflicting Information
 
-If an object: title, version, etc...
+If a field: title, author, version, etc...
 
-1. If object information is conflicting, one should be chosen based on the following source priority: in-game title, readme, author's website, community site (with author input), filename of patch or zip containing patch.
+1. If field information is conflicting, one should be chosen based on the following source priority: in-game title, readme, author's website, community site (with author input), filename of patch or zip containing patch.
 
-2. Rare exceptions can be made if a higher priority title is clearly inadequate; requires maintainer confirmation.
+2. Rare exceptions can be made if a higher priority title is clearly inadequate; requires active member's confirmation.
 
 ## Current Labels
 Labels may be added, modified or removed opportunistically as the project extends its catalogue.
@@ -203,7 +203,7 @@ Labels should generally be selected based on the order listed, adding a label if
 | 15        | **Recolor**                | **Retouch**<br />(*recolor only*)        | Improved color palettes intended as a touchup to the original experience.<br />*Examples: enhanced color hacks*                                                                                                                                                                                                                                       |
 | 16        | **Retouch**                | Minor, Cosmetic, Enhance                 | Minor cosmetic improvements intended as a touchup to the original experience.<br />*Examples: SMB1 Mario replaced with SMB3 Mario*                                                                                                                                                                                                                    |
 
-In most cases, patches will have at most one gameplay-type and one cosmetic-type label, with rare cases requiring more minor labels from the same grouping to cover all the effects of the patch. Exceptions may be made in unusual cases with the approval of a maintainer.
+In most cases, patches will have at most one gameplay-type and one cosmetic-type label, with rare cases requiring more minor labels from the same grouping to cover all the effects of the patch. Exceptions may be made in unusual cases with the approval of the active members.
 
 Labels are sorted in the order given on the table when there is more than one label on the list.
 
