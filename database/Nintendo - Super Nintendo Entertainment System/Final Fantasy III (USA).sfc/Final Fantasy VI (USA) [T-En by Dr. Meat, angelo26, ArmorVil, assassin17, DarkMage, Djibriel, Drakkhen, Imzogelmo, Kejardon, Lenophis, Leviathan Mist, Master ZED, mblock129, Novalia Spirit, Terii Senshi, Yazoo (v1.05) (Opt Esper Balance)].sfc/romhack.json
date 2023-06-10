@@ -31,7 +31,8 @@
             "otherUrls": null,
             "version": "1.05",
             "releaseDate": "2019-02-15",
-            "shortOptions": "Esper Balance",
+            "options": [ "Esper Balance" ],
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

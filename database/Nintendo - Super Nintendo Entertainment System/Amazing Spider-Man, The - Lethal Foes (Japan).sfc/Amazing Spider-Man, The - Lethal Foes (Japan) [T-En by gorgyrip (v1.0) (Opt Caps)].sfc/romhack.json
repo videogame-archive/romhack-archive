@@ -15,21 +15,22 @@
         "notes": null
     },
     "rom": {
-        "size": 1048576,
-        "crc32": "b41b0c91",
-        "md5": "22ec5c8988b37322db9bc7cd104a3e48",
-        "sha1": "d186be8bf682b347728191acc27f2498a67c57d1"
+        "size": 2097152,
+        "crc32": "b05add0f",
+        "md5": "2d865b64e0bd659a705d3eba5e7e76ea",
+        "sha1": "124d22b80eeb598c256be4047267988a73486223"
     },
     "hacks": [
         {
             "id": null,
-            "name": "[English] translation for [ActRaiser]",
-            "authors": [ "Aeon Genesis", "Gideon Zhi", "Ian Kelley" ],
-            "shortAuthors": null,
-            "url": "https://www.romhacking.net/translations/1063/",
+            "name": "[English] translation for [The Amazing Spider-Man: Lethal Foes]",
+            "authors": [ "gorgyrip", "filler" ],
+            "shortAuthors": "gorgyrip",
+            "url": "https://www.romhacking.net/translations/2624/",
             "otherUrls": null,
-            "version": "1.00",
-            "releaseDate": "2006-10-21",
+            "version": "1.0",
+            "releaseDate": "2016-04-04",
+            "options": [ "Caps" ],
             "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null

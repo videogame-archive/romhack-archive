@@ -30,7 +30,8 @@
             "otherUrls": null,
             "version": "1.98d",
             "releaseDate": "2022-06-05",
-            "shortOptions": "Project II Title Screen",
+            "options" : [ "Project II Title Screen" ],
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

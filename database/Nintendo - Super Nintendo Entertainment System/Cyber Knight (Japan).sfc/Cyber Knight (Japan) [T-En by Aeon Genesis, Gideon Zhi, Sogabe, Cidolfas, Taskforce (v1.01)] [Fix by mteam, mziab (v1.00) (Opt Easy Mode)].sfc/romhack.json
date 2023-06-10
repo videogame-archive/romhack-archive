@@ -43,7 +43,8 @@
             "otherUrls": null,
             "version": "1.00",
             "releaseDate": "2022-11-23",
-            "shortOptions": "Easy Mode",
+            "options": [ "Easy Mode" ],
+            "shortOptions": null,
             "labels": [ "Fix" ],
             "medias": null
         }

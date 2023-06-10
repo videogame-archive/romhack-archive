@@ -31,7 +31,8 @@
             "otherUrls": null,
             "version": "2.08",
             "releaseDate": "2021-09-01",
-            "shortOptions": "Grind Be Gone",
+            "options": [ "Grind Be Gone" ],
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

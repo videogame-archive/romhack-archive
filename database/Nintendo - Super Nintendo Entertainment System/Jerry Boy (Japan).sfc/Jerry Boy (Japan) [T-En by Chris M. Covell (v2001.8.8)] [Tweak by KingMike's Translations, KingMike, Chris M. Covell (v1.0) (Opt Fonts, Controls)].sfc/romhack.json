@@ -44,7 +44,8 @@
             "otherUrls": null,
             "version": "1.0",
             "releaseDate": "2010-12-25",
-            "shortOptions": "Fonts, Controls",
+            "options": [ "Fonts", "Controls" ],
+            "shortOptions": null,
             "labels": [ "Tweak" ],
             "medias": null
         }

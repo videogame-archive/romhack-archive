@@ -31,7 +31,8 @@
             "otherUrls": null,
             "version": "3.06",
             "releaseDate": "2022-02-19",
-            "shortOptions": "Bug Fixes, Add-Ons",
+            "options": [ "Bug Fixes", "Add-Ons" ],
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

@@ -16,21 +16,21 @@
     },
     "rom": {
         "size": 2097152,
-        "crc32": "b05add0f",
-        "md5": "2d865b64e0bd659a705d3eba5e7e76ea",
-        "sha1": "124d22b80eeb598c256be4047267988a73486223"
+        "crc32": "ea7a8932",
+        "md5": "c8a2794e64d4fd729245a74fc6d41a1e",
+        "sha1": "8ff17069267468241ab209d7ae2f325aab140e23"
     },
     "hacks": [
         {
             "id": null,
             "name": "[English] translation for [The Amazing Spider-Man: Lethal Foes]",
             "authors": [ "gorgyrip", "filler" ],
-            "shortAuthors": null,
+            "shortAuthors": "gorgyrip",
             "url": "https://www.romhacking.net/translations/2624/",
             "otherUrls": null,
             "version": "1.0",
-            "releaseDate": "2016-04-04",
-            "shortOptions": "Caps",
+            "releaseDate": "2016-04-06",
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

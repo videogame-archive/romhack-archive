@@ -31,7 +31,8 @@
             "otherUrls": null,
             "version": "1.01",
             "releaseDate": "2016-08-28",
-            "shortOptions": "DiC Cloverway",
+            "options": [ "DiC Cloverway" ],
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

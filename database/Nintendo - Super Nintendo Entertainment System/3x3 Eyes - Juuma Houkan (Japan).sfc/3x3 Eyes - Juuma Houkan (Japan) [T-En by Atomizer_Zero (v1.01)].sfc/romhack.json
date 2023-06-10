@@ -1,7 +1,7 @@
 {
     "info": {
         "name": null,
-        "translatedTitle": true,
+        "translatedTitle": null,
         "status": "Fully Playable",
         "adult": null,
         "offensive": null,
@@ -15,21 +15,21 @@
         "notes": null
     },
     "rom": {
-        "size": 1048576,
-        "crc32": "7e51ffc8",
-        "md5": "3400bda2b0e6298a109cba8ca9ca4d5a",
-        "sha1": "a58064f0464dcc3e34a3d172f72f2c4426aed95e"
+        "size": 2097152,
+        "crc32": "b455b7a4",
+        "md5": "ace1abe5f48d24e1512cbc6541f171be",
+        "sha1": "638272dcdda92bd233e89dbd2d4a4cfad1b9459c"
     },
     "hacks": [
         {
             "id": null,
-            "name": "[English] translation for [Ace wo Nerae!]",
-            "authors": [ "RPGONE", "Jonny", "Loek van Kooten", "BugCatcher" ],
-            "shortAuthors": null,
-            "url": "https://www.romhacking.net/translations/688/",
+            "name": "[English] translation for [3x3 Eyes: Juuma Houkan]",
+            "authors": [ "Atomizer_Zero", "FamilyGuy", "AkiHizirino", "mkwong98" ],
+            "shortAuthors": "Atomizer_Zero",
+            "url": "https://www.romhacking.net/translations/2835/",
             "otherUrls": null,
-            "version": "1.3",
-            "releaseDate": "2017-12-31",
+            "version": "1.01",
+            "releaseDate": "2017-02-02",
             "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null

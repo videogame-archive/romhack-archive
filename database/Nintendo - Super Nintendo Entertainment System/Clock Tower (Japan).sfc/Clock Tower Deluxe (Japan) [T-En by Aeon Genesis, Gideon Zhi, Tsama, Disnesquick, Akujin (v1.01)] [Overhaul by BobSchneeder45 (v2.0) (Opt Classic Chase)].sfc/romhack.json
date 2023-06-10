@@ -43,7 +43,8 @@
             "otherUrls": null,
             "version": "2.0",
             "releaseDate": "2023-01-08",
-            "shortOptions": "Classic Chase",
+            "options": [ "Classic Chase" ],
+            "shortOptions": null,
             "labels": [ "Overhaul" ],
             "medias": null
         }

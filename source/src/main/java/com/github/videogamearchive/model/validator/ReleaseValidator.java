@@ -131,8 +131,25 @@ public class ReleaseValidator {
             Hack patch = romhack.hacks().get(i);
 
             // Validation
+            if (patch.medias() != null && patch.medias().isEmpty()) {
+                throw new RuntimeException(i +" medias array CANNOT BE empty");
+            }
+
+            if (patch.options() != null && patch.options().isEmpty()) {
+                throw new RuntimeException(i +" options array CANNOT BE empty");
+            }
+
+            if (patch.otherUrls() != null && patch.otherUrls().isEmpty()) {
+                throw new RuntimeException(i +" otherUrls array CANNOT BE empty");
+            }
+
             if (patch.shortOptions() != null && patch.shortOptions().isBlank()) {
-                throw new RuntimeException(i +" options string CANNOT BE empty");
+                throw new RuntimeException(i +" shortOptions string CANNOT BE empty");
+            }
+
+            // Missing array
+            if (patch.shortOptions() != null && patch.options() == null) {
+                throw new RuntimeException(i +" shortOptions array CANNOT BE empty of options is not null");
             }
 
             // Building name
@@ -143,41 +160,16 @@ public class ReleaseValidator {
             if (authorsAsString == null) {
                 authorsAsString = toString(patch.authors());
             }
-            authorsAsString = authorsAsString.replace("(", "")
-                                            .replace(")", "")
-                                            .replace("[", "")
-                                            .replace("]", "")
-                                            // Invalid filename symbols
-                                            .replace("/", "")
-                                            .replace("\\", "")
-                                            .replace("\"", "")
-                                            .replace(":", "")
-                                            .replace("|", "")
-                                            .replace("?", "")
-                                            .replace("*", "")
-                                            .replace("<", "")
-                                            .replace(">", "");
-
-            String versionAsString = patch.version().replace("(", "")
-                    .replace(")", "")
-                    .replace("[", "")
-                    .replace("]", "")
-                    // Invalid filename symbols
-                    .replace("/", "")
-                    .replace("\\", "")
-                    .replace("\"", "")
-                    .replace(":", "")
-                    .replace("|", "")
-                    .replace("?", "")
-                    .replace("*", "")
-                    .replace("<", "")
-                    .replace(">", "");
 
             Collections.sort(patch.labels());
-            builder.append(toString(patch.labels())+ " by " + authorsAsString + " (v" + versionAsString + ")");
+            builder.append(toString(patch.labels())+ " by " + cleanInvalidCharacters(authorsAsString)+ " (v" + cleanInvalidCharacters(patch.version()) + ")");
+
             if (patch.shortOptions() != null) {
-                builder.append(" (Opt " + patch.shortOptions() + ")");
+                builder.append(" (Opt " + cleanInvalidCharacters(patch.shortOptions()) + ")");
+            } else if (patch.options() != null) {
+                builder.append(" (Opt " + cleanInvalidCharacters(toString(patch.options())) + ")");
             }
+
             builder.append(']');
         }
         if (romhack.info().status() != null) {
@@ -201,6 +193,23 @@ public class ReleaseValidator {
             builder.append(string.toString().trim());
         }
         return builder.toString();
+    }
+
+    private static String cleanInvalidCharacters(String string) {
+        return string.replace("(", "")
+                .replace(")", "")
+                .replace("[", "")
+                .replace("]", "")
+                // Invalid filename symbols
+                .replace("/", "")
+                .replace("\\", "")
+                .replace("\"", "")
+                .replace(":", "")
+                .replace("|", "")
+                .replace("?", "")
+                .replace("*", "")
+                .replace("<", "")
+                .replace(">", "");
     }
 
 }

@@ -31,7 +31,8 @@
             "otherUrls": null,
             "version": "1.2b",
             "releaseDate": "2005-03-06",
-            "shortOptions": "All Bugs Fix",
+            "options": [ "All Bugs Fix" ],
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

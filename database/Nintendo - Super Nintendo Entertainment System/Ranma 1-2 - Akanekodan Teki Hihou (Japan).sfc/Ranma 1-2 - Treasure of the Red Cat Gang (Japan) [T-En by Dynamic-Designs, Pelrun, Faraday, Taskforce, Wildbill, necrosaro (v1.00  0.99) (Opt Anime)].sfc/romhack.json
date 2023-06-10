@@ -31,7 +31,8 @@
             "otherUrls": null,
             "version": "1.00 / 0.99",
             "releaseDate": "2000-09-03",
-            "shortOptions": "Anime",
+            "options": [ "Anime" ],
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         }

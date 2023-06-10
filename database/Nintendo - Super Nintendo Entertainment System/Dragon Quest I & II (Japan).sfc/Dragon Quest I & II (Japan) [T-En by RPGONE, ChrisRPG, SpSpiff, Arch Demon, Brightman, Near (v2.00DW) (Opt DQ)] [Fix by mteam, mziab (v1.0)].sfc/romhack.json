@@ -31,7 +31,8 @@
             "otherUrls": null,
             "version": "2.00DW",
             "releaseDate": "2003-06-23",
-            "shortOptions": "DQ",
+            "options": [ "DQ" ],
+            "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
         },
