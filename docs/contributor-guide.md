@@ -213,9 +213,10 @@ The next labels exist outside the category system.
 
 Labels are sorted in the order given on the table when there is more than one label on the list.
 
-| **Order** | **Name**        | **Description**                                                                                                                                                                                                                                                                                                                                       |
-|-----------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 17        | **Restoration** | Fixes a myriad of problems, making extensive changes to the game rom, making a game that was unplayable otherwise, playable again.                                                                                                                                                                                                                    |
+| **Order** | **Name**        | **Description**                                                                                                                    |
+|-----------|-----------------|------------------------------------------------------------------------------------------------------------------------------------|
+| 17        | **Restoration** | Fixes a myriad of problems, making extensive changes to the game rom, making a game that was unplayable otherwise, playable again. |
+| 18        | **Port**        | Ports a game from a system to another.                                                                                             |
 
 ## Applying Patches
 
