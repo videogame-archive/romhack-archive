@@ -11,6 +11,7 @@ public record Hack(
         List<String> otherUrls,
         String version,
         String releaseDate,
+        List<String> options,
         String shortOptions,
         List<Label> labels,
         List<Media> medias
@@ -18,6 +19,6 @@ public record Hack(
 
         @Override
         public Hack withId(Long id) {
-                return new Hack(id, name(), authors(), shortAuthors(), url(), otherUrls(), version(), releaseDate(), shortOptions(), labels(), medias());
+                return new Hack(id, name(), authors(), shortAuthors(), url(), otherUrls(), version(), releaseDate(), options(), shortOptions(), labels(), medias());
         }
 }

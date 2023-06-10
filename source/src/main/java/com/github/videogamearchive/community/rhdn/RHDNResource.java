@@ -93,9 +93,10 @@ public class RHDNResource implements PatchResource {
             releaseDate = archiveFormat.format(releaseDateAsDate);
         }
 
-        String options = null;
+        List<String> options = null;
+        String shortOptions = null;
         List<Label> labels = new ArrayList<>();
 
-        return new Hack(id, name, authors, shortAuthors, url, otherUrls, version, releaseDate, options, labels, List.of());
+        return new Hack(id, name, authors, shortAuthors, url, otherUrls, version, releaseDate, options, shortOptions, labels, List.of());
     }
 }
