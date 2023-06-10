@@ -1,8 +1,8 @@
 package com.github.videogamearchive.database;
 
 import com.github.videogamearchive.model.Identifiable;
-import com.github.videogamearchive.model.Patch;
-import com.github.videogamearchive.model.Romhack;
+import com.github.videogamearchive.model.Hack;
+import com.github.videogamearchive.model.Release;
 import com.github.videogamearchive.model.System_;
 import com.github.videogamearchive.model.Game;
 import com.github.videogamearchive.util.CSV;
@@ -10,13 +10,13 @@ import com.github.videogamearchive.util.CSV;
 import java.util.ArrayList;
 import java.util.List;
 
-public record ExtendedRomhack(
+public record ExtendedRelease(
         String systemFolderName,
         System_ system,
         String parentFolderName,
         Game game,
         String romhackFolderName,
-        Romhack romhack) implements Comparable<ExtendedRomhack>, Identifiable<ExtendedRomhack> {
+        Release romhack) implements Comparable<ExtendedRelease>, Identifiable<ExtendedRelease> {
 
     public static String[] headers() {
         String[] indexHeaders = new String[] {
@@ -79,7 +79,7 @@ public record ExtendedRomhack(
         List<String> romAsList = new ArrayList<>(List.of(index));
 
         int numPatches = 0;
-        for (Patch patch:romhack.patches()) {
+        for (Hack patch:romhack.hacks()) {
             romAsList.add(CSV.toString(patch.id()));
             romAsList.add(CSV.toString(patch.authors()));
             romAsList.add(CSV.toString(patch.shortAuthors()));
@@ -87,7 +87,7 @@ public record ExtendedRomhack(
             romAsList.add(CSV.toString(patch.otherUrls()));
             romAsList.add(CSV.toString(patch.version()));
             romAsList.add(CSV.toString(patch.releaseDate()));
-            romAsList.add(CSV.toString(patch.options()));
+            romAsList.add(CSV.toString(patch.shortOptions()));
             romAsList.add(CSV.toString(patch.labels()));
             numPatches++;
         }
@@ -111,7 +111,7 @@ public record ExtendedRomhack(
     //
 
     @Override
-    public int compareTo(ExtendedRomhack o) {
+    public int compareTo(ExtendedRelease o) {
         return romhackFolderName.compareTo(o.romhackFolderName);
     }
 
@@ -125,8 +125,8 @@ public record ExtendedRomhack(
     }
 
     @Override
-    public ExtendedRomhack withId(Long id) {
-        return new ExtendedRomhack(systemFolderName, system, parentFolderName, game, romhackFolderName, romhack.withId(id));
+    public ExtendedRelease withId(Long id) {
+        return new ExtendedRelease(systemFolderName, system, parentFolderName, game, romhackFolderName, romhack.withId(id));
     }
 
     //

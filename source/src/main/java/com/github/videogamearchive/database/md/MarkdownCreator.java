@@ -2,9 +2,9 @@ package com.github.videogamearchive.database.md;
 
 import com.github.videogamearchive.database.DatabaseVisitor;
 import com.github.videogamearchive.database.DatabaseWalker;
-import com.github.videogamearchive.database.ExtendedRomhack;
+import com.github.videogamearchive.database.ExtendedRelease;
 import com.github.videogamearchive.model.*;
-import com.github.videogamearchive.model.json.RomhackMapper;
+import com.github.videogamearchive.model.json.ReleaseMapper;
 import com.github.videogamearchive.util.CSV;
 import fun.mingshan.markdown4j.Markdown;
 import fun.mingshan.markdown4j.type.block.*;
@@ -53,24 +53,24 @@ public class MarkdownCreator {
 
         // System Page - List - Games / Files [Parent Name, File Name]
         // docs/database/system/id/index.html
-        private final Map<Long, List<ExtendedRomhack>> filesBySystem = new HashMap<>();
+        private final Map<Long, List<ExtendedRelease>> filesBySystem = new HashMap<>();
         private final Map<Long, System_> systemById = new HashMap<>();
         private final Map<Long, List<String>> systemFolderNamesById = new HashMap<>();
 
         // Game Page - List - Games / Files [Parent Name, File Name]
         // docs/database/game/id/index.html
-        private final Map<Long, List<ExtendedRomhack>> filesByGame = new HashMap<>();
+        private final Map<Long, List<ExtendedRelease>> filesByGame = new HashMap<>();
         private final Map<Long, Game> gameById = new HashMap<>();
         private final Map<Long, List<String>> parentFolderNamesById = new HashMap<>();
 
         // Patch Page - List - Games / Files [Parent Name, File Name]
         // docs/database/patch/id/index.html
-        private final Map<Long, List<ExtendedRomhack>> filesByPatch = new HashMap<>();
-        private final Map<Long, Patch> patchById = new HashMap<>();
+        private final Map<Long, List<ExtendedRelease>> filesByPatch = new HashMap<>();
+        private final Map<Long, Hack> patchById = new HashMap<>();
 
         // File Page [All Fields]
         // docs/database/file/id/index.html
-        private final Map<Long, ExtendedRomhack> filesById = new HashMap<>();
+        private final Map<Long, ExtendedRelease> filesById = new HashMap<>();
 
         private boolean validate;
         public CacheDatabase(boolean validate) {
@@ -101,28 +101,28 @@ public class MarkdownCreator {
                     parentFolderNamesById.put(game.id(), names);
                 }
                 names.add(identifiableFolder.getName());
-            } else if (identifiable instanceof ExtendedRomhack) {
-                ExtendedRomhack indexRomhack = (ExtendedRomhack) identifiable;
+            } else if (identifiable instanceof ExtendedRelease) {
+                ExtendedRelease indexRomhack = (ExtendedRelease) identifiable;
                 filesById.put(indexRomhack.romhack().id(), indexRomhack);
 
-                List<ExtendedRomhack> filesBySystemList = filesBySystem.get(indexRomhack.system().id());
+                List<ExtendedRelease> filesBySystemList = filesBySystem.get(indexRomhack.system().id());
                 if (filesBySystemList == null) {
                     filesBySystemList = new ArrayList<>();
                     filesBySystem.put(indexRomhack.system().id(), filesBySystemList);
                 }
                 filesBySystemList.add(indexRomhack);
 
-                List<ExtendedRomhack> filesByGameList = filesByGame.get(indexRomhack.game().id());
+                List<ExtendedRelease> filesByGameList = filesByGame.get(indexRomhack.game().id());
                 if (filesByGameList == null) {
                     filesByGameList = new ArrayList<>();
                     filesByGame.put(indexRomhack.game().id(), filesByGameList);
                 }
                 filesByGameList.add(indexRomhack);
 
-                for (Patch patch:indexRomhack.romhack().patches()) {
+                for (Hack patch:indexRomhack.romhack().hacks()) {
                     patchById.put(patch.id(), patch);
 
-                    List<ExtendedRomhack> filesByPatchList = filesByPatch.get(patch.id());
+                    List<ExtendedRelease> filesByPatchList = filesByPatch.get(patch.id());
                     if (filesByPatchList == null) {
                         filesByPatchList = new ArrayList<>();
                         filesByPatch.put(patch.id(), filesByPatchList);
@@ -132,7 +132,7 @@ public class MarkdownCreator {
             }
         }
 
-        public Map<Long, List<ExtendedRomhack>> getFilesBySystem() {
+        public Map<Long, List<ExtendedRelease>> getFilesBySystem() {
             return filesBySystem;
         }
 
@@ -140,7 +140,7 @@ public class MarkdownCreator {
             return systemById;
         }
 
-        public Map<Long, List<ExtendedRomhack>> getFilesByGame() {
+        public Map<Long, List<ExtendedRelease>> getFilesByGame() {
             return filesByGame;
         }
 
@@ -148,15 +148,15 @@ public class MarkdownCreator {
             return gameById;
         }
 
-        public Map<Long, List<ExtendedRomhack>> getFilesByPatch() {
+        public Map<Long, List<ExtendedRelease>> getFilesByPatch() {
             return filesByPatch;
         }
 
-        public Map<Long, Patch> getPatchById() {
+        public Map<Long, Hack> getPatchById() {
             return patchById;
         }
 
-        public Map<Long, ExtendedRomhack> getFilesById() {
+        public Map<Long, ExtendedRelease> getFilesById() {
             return filesById;
         }
     }
@@ -198,10 +198,10 @@ public class MarkdownCreator {
         MdWriter.write(markdown);
     }
 
-    private static TableBlock getRomhacksTable(List<ExtendedRomhack> romhacks) {
+    private static TableBlock getRomhacksTable(List<ExtendedRelease> romhacks) {
         List<TableBlock.TableRow> rows = new ArrayList<>();
         if (romhacks != null) {
-            for (ExtendedRomhack romhack : romhacks) {
+            for (ExtendedRelease romhack : romhacks) {
                 List<String> rowValue = new ArrayList<>();
                 UrlElement element1 = UrlElement.builder().tips(romhack.parentFolderName()).url("../../game/" + romhack.game().id() + "/index.md").build();
                 rowValue.add(element1.toMd());
@@ -222,16 +222,16 @@ public class MarkdownCreator {
 
     private static void generateFilePage(CacheDatabase cacheDB) throws IOException, ReflectiveOperationException {
         for (long id:cacheDB.getFilesById().keySet()) {
-            ExtendedRomhack indexRomhack = cacheDB.getFilesById().get(id);
+            ExtendedRelease indexRomhack = cacheDB.getFilesById().get(id);
             Path path = Path.of("../docs/database/file/" + id + "/index");
             Files.createDirectories(path.getParent());
-            write(path, 3, "File: " + indexRomhack.romhackFolderName(), CodeBlock.builder().language("json").content(new RomhackMapper().write(indexRomhack.romhack())).build());
+            write(path, 3, "File: " + indexRomhack.romhackFolderName(), CodeBlock.builder().language("json").content(new ReleaseMapper().write(indexRomhack.romhack())).build());
         }
     }
 
     private static void generatePatchPage(CacheDatabase cacheDB) throws IOException {
         for (long id:cacheDB.getPatchById().keySet()) {
-            Patch patch = cacheDB.getPatchById().get(id);
+            Hack patch = cacheDB.getPatchById().get(id);
             TableBlock table = getRomhacksTable(cacheDB.getFilesByPatch().get(id));
             Path path = Path.of("../docs/database/patch/" + id + "/index");
             Files.createDirectories(path.getParent());

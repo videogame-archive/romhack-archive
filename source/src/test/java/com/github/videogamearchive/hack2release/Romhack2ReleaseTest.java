@@ -1,4 +1,4 @@
-package com.github.videogamearchive.hack2arch;
+package com.github.videogamearchive.hack2release;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
@@ -7,7 +7,7 @@ import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class Romhack2ArchiveTest {
+public class Romhack2ReleaseTest {
 
     Path original = Path.of("test-data", "Kirby Test ROM (World).nes");
     Path modified = Path.of("test-data", "Lolo Test ROM (World) [Themed by Hackermans (v1.1)].nes");
@@ -44,11 +44,11 @@ public class Romhack2ArchiveTest {
     }
     @Test
     public void romhackCreatorTestInfo() throws Exception {
-        Romhack2Archive.main(new String[]{});
+        Romhack2Release.main(new String[]{});
     }
     @Test
     public void romhackCreatorTest() throws Exception {
-        Romhack2Archive.main(new String[]{
+        Romhack2Release.main(new String[]{
                 "test",
                 original.toString(),
                 modified.toString(),
@@ -59,7 +59,7 @@ public class Romhack2ArchiveTest {
     }
     @Test
     public void romhackCreatorTestMulti() throws Exception {
-        Romhack2Archive.main(new String[]{
+        Romhack2Release.main(new String[]{
                 "test",
                 original.toString(),
                 modifiedMultiLabel.toString(),
@@ -71,7 +71,7 @@ public class Romhack2ArchiveTest {
 
     @Test
     public void romhack2CreatorTest() throws Exception {
-        Romhack2Archive.main(new String[]{
+        Romhack2Release.main(new String[]{
                 "test",
                 original2.toString(),
                 modified2.toString(),

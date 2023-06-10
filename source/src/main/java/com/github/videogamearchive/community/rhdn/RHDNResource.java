@@ -1,7 +1,7 @@
 package com.github.videogamearchive.community.rhdn;
 
 import com.github.videogamearchive.model.Label;
-import com.github.videogamearchive.model.Patch;
+import com.github.videogamearchive.model.Hack;
 import com.github.videogamearchive.util.CSV;
 import com.github.videogamearchive.util.PatchResource;
 import com.github.videogamearchive.util.StringUtil;
@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAccessor;
 import java.util.*;
 
-import static com.github.videogamearchive.hack2arch.Romhack2Archive.archiveFormat;
+import static com.github.videogamearchive.hack2release.Romhack2Release.archiveFormat;
 
 public class RHDNResource implements PatchResource {
     private static DateTimeFormatter rhdnFormat = DateTimeFormatter.ofPattern ("d MMMM yyyy").withLocale(Locale.ENGLISH).withZone(ZoneId.systemDefault());
@@ -53,7 +53,7 @@ public class RHDNResource implements PatchResource {
         return cache.get(url);
     }
 
-    public Patch getPatch(String url) {
+    public Hack getPatch(String url) {
         CSVRecord info = cache.get(url);
         if (info == null) {
             return null;
@@ -96,6 +96,6 @@ public class RHDNResource implements PatchResource {
         String options = null;
         List<Label> labels = new ArrayList<>();
 
-        return new Patch(id, name, authors, shortAuthors, url, otherUrls, version, releaseDate, options, labels, List.of());
+        return new Hack(id, name, authors, shortAuthors, url, otherUrls, version, releaseDate, options, labels, List.of());
     }
 }

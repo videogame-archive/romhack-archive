@@ -1,6 +1,6 @@
 package com.github.videogamearchive.model.json;
 
-import com.github.videogamearchive.model.Romhack;
+import com.github.videogamearchive.model.Release;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -17,8 +17,8 @@ public class RomhackMapperTest {
                 "3x3 Eyes - Juuma Houkan (Japan).sfc",
                 "3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero, FamilyGuy, AkiHizirino, mkwong98 (v1.01)].sfc",
                 "romhack.json");
-        RomhackMapper romhackReader = new RomhackMapper();
-        Romhack romhack = romhackReader.read(pathToJson);
+        ReleaseMapper romhackReader = new ReleaseMapper();
+        Release romhack = romhackReader.read(pathToJson);
         assertNotNull(romhack);
     }
 
@@ -29,11 +29,11 @@ public class RomhackMapperTest {
                 "3x3 Eyes - Juuma Houkan (Japan).sfc",
                 "3x3 Eyes - Juuma Houkan (Japan) [T-En by Atomizer_Zero, FamilyGuy, AkiHizirino, mkwong98 (v1.01)].sfc",
                 "romhack.json");
-        RomhackMapper romhackReaderWriter = new RomhackMapper();
-        Romhack romhack = romhackReaderWriter.read(pathToJson);
+        ReleaseMapper romhackReaderWriter = new ReleaseMapper();
+        Release romhack = romhackReaderWriter.read(pathToJson);
         assertNotNull(romhack);
         romhackReaderWriter.write(romhack, pathToJson);
-        Romhack romhackB = romhackReaderWriter.read(pathToJson);
+        Release romhackB = romhackReaderWriter.read(pathToJson);
         assertEquals(romhack, romhackB);
     }
 }

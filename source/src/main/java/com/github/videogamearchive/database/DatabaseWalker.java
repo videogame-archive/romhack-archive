@@ -1,12 +1,12 @@
 package com.github.videogamearchive.database;
 
 import com.github.videogamearchive.model.Game;
-import com.github.videogamearchive.model.Romhack;
+import com.github.videogamearchive.model.Release;
 import com.github.videogamearchive.model.System_;
 import com.github.videogamearchive.model.json.GameMapper;
-import com.github.videogamearchive.model.json.RomhackMapper;
+import com.github.videogamearchive.model.json.ReleaseMapper;
 import com.github.videogamearchive.model.json.SystemMapper;
-import com.github.videogamearchive.model.validator.RomhackValidator;
+import com.github.videogamearchive.model.validator.ReleaseValidator;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,7 +28,7 @@ public class DatabaseWalker {
     public static void processSystem(File systemFolder, DatabaseVisitor identifiableVisitor) throws IOException, ReflectiveOperationException {
         SystemMapper systemMapper = new SystemMapper();
         GameMapper gameMapper = new GameMapper();
-        RomhackMapper romhackMapper = new RomhackMapper();
+        ReleaseMapper romhackMapper = new ReleaseMapper();
 
         if (!systemFolder.isDirectory()) {
             ignored(systemFolder);
@@ -90,15 +90,15 @@ public class DatabaseWalker {
                     processing(cloneFolder);
                 }
 
-                Romhack romhack = romhackMapper.read(romhackJSON.toPath());
+                Release romhack = romhackMapper.read(romhackJSON.toPath());
 
                 if (identifiableVisitor.validate()) {
-                    RomhackValidator.validateMetadata(romhack);
-                    RomhackValidator.validateFolder(romhack, cloneFolder.toPath());
-                    RomhackValidator.validateBPS(romhack, cloneFolder.toPath().resolve("romhack.bps"));
+                    ReleaseValidator.validateMetadata(romhack);
+                    ReleaseValidator.validateFolder(romhack, cloneFolder.toPath());
+                    ReleaseValidator.validateBPS(romhack, cloneFolder.toPath().resolve("romhack.bps"));
                 }
 
-                ExtendedRomhack extendedRomhack = new ExtendedRomhack(systemFolder.getName(), system, parentFolder.getName(), game, cloneFolder.getName(), romhack);
+                ExtendedRelease extendedRomhack = new ExtendedRelease(systemFolder.getName(), system, parentFolder.getName(), game, cloneFolder.getName(), romhack);
                 identifiableVisitor.walk(cloneFolder, extendedRomhack);
             }
         }

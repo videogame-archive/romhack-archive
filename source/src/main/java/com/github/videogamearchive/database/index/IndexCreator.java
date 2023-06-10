@@ -2,7 +2,7 @@ package com.github.videogamearchive.database.index;
 
 import com.github.videogamearchive.database.DatabaseVisitor;
 import com.github.videogamearchive.database.DatabaseWalker;
-import com.github.videogamearchive.database.ExtendedRomhack;
+import com.github.videogamearchive.database.ExtendedRelease;
 import com.github.videogamearchive.model.Identifiable;
 import com.github.videogamearchive.util.CSV;
 
@@ -13,7 +13,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class IndexCreator {
-    private static List<ExtendedRomhack> romhacks = new ArrayList<>();
+    private static List<ExtendedRelease> romhacks = new ArrayList<>();
     public static void main(String[] args) throws Exception {
         if (args.length != 1 && args.length != 2) {
             help();
@@ -34,17 +34,17 @@ public class IndexCreator {
 
                     @Override
                     public void walk(File identifiableFolder, Identifiable identifiable) {
-                        if (identifiable instanceof ExtendedRomhack) {
-                            romhacks.add((ExtendedRomhack) identifiable);
+                        if (identifiable instanceof ExtendedRelease) {
+                            romhacks.add((ExtendedRelease) identifiable);
                         }
                     }
                 });
                 Collections.sort(romhacks);
                 List<String[]> rows = new ArrayList<>(romhacks.size());
-                for (ExtendedRomhack row:romhacks) {
+                for (ExtendedRelease row:romhacks) {
                     rows.add(row.row());
                 }
-                CSV.write(Path.of("../docs/database/database.csv"), ExtendedRomhack.headers(), rows);
+                CSV.write(Path.of("../docs/database/database.csv"), ExtendedRelease.headers(), rows);
             } else {
                 help();
             }

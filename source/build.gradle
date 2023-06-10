@@ -64,5 +64,5 @@ artifacts {
             jarPackage("markdown-creator", "com.github.videogamearchive.mk.MarkdownCreator"),
             jarPackage("migration-assistant", "com.github.videogamearchive.migration.MigrationAssistant"),
             jarPackage("rom-patcher", "com.github.videogamearchive.rompatcher.RomPatcher"),
-            jarPackage("romhack2archive", "com.github.videogamearchive.hack2arch.Romhack2Archive")
+            jarPackage("romhack2release", "com.github.videogamearchive.hack2release.Romhack2Release")
 }

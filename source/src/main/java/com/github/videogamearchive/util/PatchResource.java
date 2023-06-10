@@ -1,7 +1,7 @@
 package com.github.videogamearchive.util;
 
-import com.github.videogamearchive.model.Patch;
+import com.github.videogamearchive.model.Hack;
 
 public interface PatchResource {
-    public Patch getPatch(String url);
+    public Hack getPatch(String url);
 }

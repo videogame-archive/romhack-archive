@@ -1,9 +1,9 @@
 package com.github.videogamearchive.dat;
 import com.github.videogamearchive.database.DatabaseVisitor;
 import com.github.videogamearchive.database.DatabaseWalker;
-import com.github.videogamearchive.database.ExtendedRomhack;
+import com.github.videogamearchive.database.ExtendedRelease;
 import com.github.videogamearchive.model.Identifiable;
-import com.github.videogamearchive.model.Romhack;
+import com.github.videogamearchive.model.Release;
 import com.github.videogamearchive.util.PathUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -50,8 +50,8 @@ public class DatCreator {
 
                     @Override
                     public void walk(File identifiableFolder, Identifiable identifiable) {
-                        if (identifiable instanceof ExtendedRomhack) {
-                            ExtendedRomhack xRomhack = (ExtendedRomhack) identifiable;
+                        if (identifiable instanceof ExtendedRelease) {
+                            ExtendedRelease xRomhack = (ExtendedRelease) identifiable;
                             try {
                                 Document systemCollectionDocument = getSystemCollectioDocument(xRomhack.systemFolderName());
                                 addGame(systemCollectionDocument, xRomhack.romhackFolderName(), xRomhack.romhack());
@@ -83,7 +83,7 @@ public class DatCreator {
         return documentBuilderFactory.newDocumentBuilder();
     }
 
-    private static void addGame(Document doc, String fileName, Romhack romhack) {
+    private static void addGame(Document doc, String fileName, Release romhack) {
         Element game = doc.createElement("game");
         game.setAttribute("name", PathUtil.getNameWithoutExtension(fileName));
 

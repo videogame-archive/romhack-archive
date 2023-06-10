@@ -2,12 +2,12 @@ package com.github.videogamearchive.database.migration;
 
 import com.github.videogamearchive.database.DatabaseVisitor;
 import com.github.videogamearchive.database.DatabaseWalker;
-import com.github.videogamearchive.database.ExtendedRomhack;
+import com.github.videogamearchive.database.ExtendedRelease;
 import com.github.videogamearchive.model.*;
 import com.github.videogamearchive.model.json.GameMapper;
-import com.github.videogamearchive.model.json.RomhackMapper;
+import com.github.videogamearchive.model.json.ReleaseMapper;
 import com.github.videogamearchive.model.json.SystemMapper;
-import com.github.videogamearchive.model.validator.RomhackValidator;
+import com.github.videogamearchive.model.validator.ReleaseValidator;
 import com.github.videogamearchive.util.CSV;
 import com.github.videogamearchive.util.PathUtil;
 
@@ -57,13 +57,13 @@ public class MigrationAssistant {
 
     private static IdentifiableCache<System_> systemIdentifiableCache = new IdentifiableCache<>();
     private static IdentifiableCache<Game> parentIdentifiableCache = new IdentifiableCache<>();
-    private static IdentifiableCache<Romhack> romhackIdentifiableCache = new IdentifiableCache<>();
-    private static IdentifiableCache<Patch> patchIdentifiableCache = new IdentifiableCache<>();
+    private static IdentifiableCache<Release> romhackIdentifiableCache = new IdentifiableCache<>();
+    private static IdentifiableCache<Hack> patchIdentifiableCache = new IdentifiableCache<>();
 
     public static void migrate(boolean dryRun, boolean validate, File root) throws ReflectiveOperationException, IOException {
         SystemMapper systemMapper = new SystemMapper();
         GameMapper gameMapper = new GameMapper();
-        RomhackMapper romhackMapper = new RomhackMapper();
+        ReleaseMapper romhackMapper = new ReleaseMapper();
 
         DatabaseWalker.processDatabase(root, new DatabaseVisitor() {
             @Override
@@ -78,8 +78,9 @@ public class MigrationAssistant {
                         processSystem(dryRun, (System_) identifiable, systemMapper, identifiableFolder);
                     } else if (identifiable instanceof Game) {
                         processGame(dryRun, (Game) identifiable, gameMapper, identifiableFolder);
-                    } else if (identifiable instanceof ExtendedRomhack) {
-                        processRomhack(dryRun, (ExtendedRomhack) identifiable, romhackMapper, identifiableFolder);
+                    } else if (identifiable instanceof ExtendedRelease) {
+                        processRelease(dryRun, (ExtendedRelease) identifiable, romhackMapper, identifiableFolder);
+
                     }
                 } catch (Exception ex) {
                     throw new RuntimeException(ex);
@@ -114,35 +115,35 @@ public class MigrationAssistant {
         }
     }
 
-    private static void processRomhack(boolean dryRun, ExtendedRomhack indexRomhack, RomhackMapper romhackMapper, File romhackFolder) throws IOException, ReflectiveOperationException {
-        Path romhackPath = romhackFolder.toPath().resolve(DatabaseWalker.ROMHACK_JSON);
-        String json = romhackMapper.write(indexRomhack.romhack());
-        Romhack romhack = indexRomhack.romhack();
-        romhack = romhackIdentifiableCache.updateLastId(dryRun, romhackFolder.getName(), romhack);
-        String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
+    private static void processRelease(boolean dryRun, ExtendedRelease indexRomhack, ReleaseMapper releaseMapper, File releaseFolder) throws IOException, ReflectiveOperationException {
+        Path releasePath = releaseFolder.toPath().resolve(DatabaseWalker.ROMHACK_JSON);
+        String json = releaseMapper.write(indexRomhack.romhack());
+        Release romhack = indexRomhack.romhack();
+        romhack = romhackIdentifiableCache.updateLastId(dryRun, releaseFolder.getName(), romhack);
+        String expectedFolderNamePostfix = ReleaseValidator.getExpectedFolderNamePostfix(romhack);
 
-        for (int i = 0; i < romhack.patches().size(); i++) {
-            Patch patch = romhack.patches().get(i);
-            Patch newPatch = patchIdentifiableCache.updateLastId(dryRun, patch.name() + " " + CSV.toString(patch.authors()), patch);
-            romhack.patches().set(i, newPatch);
+        for (int i = 0; i < romhack.hacks().size(); i++) {
+            Hack patch = romhack.hacks().get(i);
+            Hack newPatch = patchIdentifiableCache.updateLastId(dryRun, patch.name() + " " + CSV.toString(patch.authors()), patch);
+            romhack.hacks().set(i, newPatch);
         }
 
-        String updatedJson = romhackMapper.write(romhack);
+        String updatedJson = releaseMapper.write(romhack);
         if (!json.equals(updatedJson)) {
-            System.out.println("UPDATE\tjson\t" + PathUtil.getName(romhackPath));
+            System.out.println("UPDATE\tjson\t" + PathUtil.getName(releasePath));
         }
 
         if (!dryRun) {
-            Files.writeString(romhackPath, updatedJson, StandardCharsets.UTF_8);
+            Files.writeString(releasePath, updatedJson, StandardCharsets.UTF_8);
         }
-        String extension = PathUtil.getExtension(romhackFolder.getName());
-        int indexOfPostFix = romhackFolder.getName().indexOf(" [");
-        String correctName = romhackFolder.getName().substring(0, indexOfPostFix)+ expectedFolderNamePostfix + "." + extension;
-        if (!romhackFolder.getName().equals(correctName)) {
-            File corrected = romhackFolder.getParentFile().toPath().resolve(correctName).toFile();
-            System.out.println("UPDATE\tfolder\t" + romhackFolder.getName() + "\t" + corrected.getName());
+        String extension = PathUtil.getExtension(releaseFolder.getName());
+        int indexOfPostFix = releaseFolder.getName().indexOf(" [");
+        String correctName = releaseFolder.getName().substring(0, indexOfPostFix)+ expectedFolderNamePostfix + "." + extension;
+        if (!releaseFolder.getName().equals(correctName)) {
+            File corrected = releaseFolder.getParentFile().toPath().resolve(correctName).toFile();
+            System.out.println("UPDATE\tfolder\t" + releaseFolder.getName() + "\t" + corrected.getName());
             if (!dryRun) {
-                romhackFolder.renameTo(corrected);
+                releaseFolder.renameTo(corrected);
             }
         }
     }

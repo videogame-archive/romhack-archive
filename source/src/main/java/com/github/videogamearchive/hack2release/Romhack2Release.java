@@ -1,9 +1,9 @@
-package com.github.videogamearchive.hack2arch;
+package com.github.videogamearchive.hack2release;
 
 import com.github.videogamearchive.community.rhdn.RHDNResource;
 import com.github.videogamearchive.model.*;
-import com.github.videogamearchive.model.json.RomhackMapper;
-import com.github.videogamearchive.model.validator.RomhackValidator;
+import com.github.videogamearchive.model.json.ReleaseMapper;
+import com.github.videogamearchive.model.validator.ReleaseValidator;
 import com.github.videogamearchive.rompatcher.MarcFile;
 import com.github.videogamearchive.rompatcher.formats.BPS;
 import com.github.videogamearchive.util.*;
@@ -17,7 +17,7 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-public class Romhack2Archive {
+public class Romhack2Release {
     public static DateTimeFormatter archiveFormat = DateTimeFormatter.ISO_LOCAL_DATE.withLocale(Locale.ENGLISH).withZone(ZoneId.systemDefault());
 
     private static final Map<String, PatchResource> supportedResources = Map.of("https://www.romhacking.net/", new RHDNResource());
@@ -63,7 +63,7 @@ public class Romhack2Archive {
         byte[] romhackRomBytes = getBytes(pathToRomhackRom);
         Rom rom = new Rom((long) romhackRomBytes.length, Hashes.getCrc32(romhackRomBytes), Hashes.getMd5(romhackRomBytes), Hashes.getSha1(romhackRomBytes));
         String romhackName = PathUtil.getName(pathToRomhackRom);
-        List<Patch> patches = new ArrayList<>();
+        List<Hack> patches = new ArrayList<>();
         for (String patchAsString: StringUtil.substrings(romhackName, "[", "]", true)) {
             String[] collection2NameVersionOpt = patchAsString.split(" by ");
             List<Label> labels = new ArrayList<>();
@@ -74,16 +74,16 @@ public class Romhack2Archive {
             int indexOfVersion = nameVersionOpt.indexOf(" (v");
             String authors = nameVersionOpt.substring(0, indexOfVersion);
             String version = StringUtil.substring(nameVersionOpt, "(v", ")", true);
-            String options = StringUtil.substring(nameVersionOpt, "(Opt ", ")", true);
+            String shortOptions = StringUtil.substring(nameVersionOpt, "(Opt ", ")", true);
             List<String> authorsAsList = new ArrayList<>();
             for (String author:authors.split(",")) {
                 authorsAsList.add(author.trim());
             }
-            Patch patch = null;
+            Hack patch = null;
             String url = null;
             if (urls.size() > patches.size()) {
                 url = urls.get(patches.size());
-                Patch urlPatch = null;
+                Hack urlPatch = null;
                 for (String domain:supportedResources.keySet()) {
                     if (url.startsWith(domain)) {
                         PatchResource patchResource = supportedResources.get(domain);
@@ -91,16 +91,16 @@ public class Romhack2Archive {
                     }
                 }
                 if (urlPatch != null) {
-                    patch = new Patch(null, urlPatch.name(), urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), List.of(), urlPatch.version(), urlPatch.releaseDate(), options, labels, List.of());
+                    patch = new Hack(null, urlPatch.name(), urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), null, urlPatch.version(), urlPatch.releaseDate(), shortOptions, labels, null);
                 }
             }
             if (patch == null) {
-                patch = new Patch(null, null, authorsAsList, null,url, List.of(), version, null, options, labels, List.of());
+                patch = new Hack(null, null, authorsAsList, null,url, List.of(), version, null, shortOptions, labels, List.of());
             }
             patches.add(patch);
         }
-        Romhack romhack = new Romhack(null, info, provenance, rom, patches);
-        RomhackMapper romhackReaderWriter = new RomhackMapper();
+        Release romhack = new Release(null, info, provenance, rom, patches);
+        ReleaseMapper romhackReaderWriter = new ReleaseMapper();
         String json = romhackReaderWriter.write(romhack);
         json = json.replace("\"status\": null,", "\"status\": \"Fully Playable | Incomplete\",");
         if (!urls.isEmpty()) {
@@ -132,7 +132,7 @@ public class Romhack2Archive {
             romhackRomName = PathUtil.getName(pathToRomhackRom);
         }
 
-        String expectedFolderNamePostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack);
+        String expectedFolderNamePostfix = ReleaseValidator.getExpectedFolderNamePostfix(romhack);
 
         if (keepGivenFilename) {
             romhackRomName = romhackName;

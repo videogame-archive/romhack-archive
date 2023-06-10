@@ -2,10 +2,10 @@ package com.github.videogamearchive.database.romset;
 
 import com.github.videogamearchive.database.DatabaseVisitor;
 import com.github.videogamearchive.database.DatabaseWalker;
-import com.github.videogamearchive.database.ExtendedRomhack;
+import com.github.videogamearchive.database.ExtendedRelease;
 import com.github.videogamearchive.model.Identifiable;
-import com.github.videogamearchive.model.Romhack;
-import com.github.videogamearchive.model.validator.RomhackValidator;
+import com.github.videogamearchive.model.Release;
+import com.github.videogamearchive.model.validator.ReleaseValidator;
 import com.github.videogamearchive.rompatcher.MarcFile;
 import com.github.videogamearchive.rompatcher.formats.BPS;
 import com.github.videogamearchive.util.PathUtil;
@@ -42,8 +42,8 @@ public class RomsetCreator {
 
                     @Override
                     public void walk(File identifiableFolder, Identifiable identifiable) {
-                        if (identifiable instanceof ExtendedRomhack) {
-                            ExtendedRomhack indexRomhack = (ExtendedRomhack) identifiable;
+                        if (identifiable instanceof ExtendedRelease) {
+                            ExtendedRelease indexRomhack = (ExtendedRelease) identifiable;
                             try {
                                 File system = identifiableFolder.getParentFile().getParentFile();
                                 File parent = identifiableFolder.getParentFile();
@@ -73,7 +73,7 @@ public class RomsetCreator {
         System.out.println("\t\t java -jar romset-creator.jar \"database\" \"roms\" \"romsOutput\" [--validate]");
     }
 
-    private static void createRomhack(String romhackFileName, Romhack romhack, File romhackBPS, File pathToInputRom, File pathToOutputRomZip, boolean validate) throws IOException, NoSuchAlgorithmException {
+    private static void createRomhack(String romhackFileName, Release romhack, File romhackBPS, File pathToInputRom, File pathToOutputRomZip, boolean validate) throws IOException, NoSuchAlgorithmException {
         BPS bps = BPS.parseBPSFile(new MarcFile(romhackBPS.toPath()));
         byte[] inputRomAsBytes;
         if (PathUtil.isZip(pathToInputRom.toPath())) {
@@ -85,7 +85,7 @@ public class RomsetCreator {
         byte[] bytes = output.save();
         Zip.write(pathToOutputRomZip.toPath(), Map.of(romhackFileName, bytes));
         if (validate) {
-            RomhackValidator.validateRom(romhack, bytes);
+            ReleaseValidator.validateRom(romhack, bytes);
         }
     }
 

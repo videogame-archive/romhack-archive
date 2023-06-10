@@ -1,7 +1,7 @@
 package com.github.videogamearchive.model.validator;
 
-import com.github.videogamearchive.model.Patch;
-import com.github.videogamearchive.model.Romhack;
+import com.github.videogamearchive.model.Hack;
+import com.github.videogamearchive.model.Release;
 import com.github.videogamearchive.rompatcher.MarcFile;
 import com.github.videogamearchive.rompatcher.formats.BPS;
 import com.github.videogamearchive.util.Hashes;
@@ -18,14 +18,14 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
-public class RomhackValidator {
+public class ReleaseValidator {
 
-    private RomhackValidator() {}
+    private ReleaseValidator() {}
 
     /*
      * Validation elements added over time to correct fields
      */
-    public static void validateMetadata(Romhack romhack) {
+    public static void validateMetadata(Release romhack) {
         // Rom hashes validation
         if (romhack.rom().crc32().length() != 8) {
             throw new RuntimeException("romhack.json rom crc32 is not 8 - Actual: " + romhack.rom().crc32());
@@ -38,8 +38,8 @@ public class RomhackValidator {
         }
 
         // Patch names
-        for (int i = 0; i < romhack.patches().size(); i++) {
-            Patch patch = romhack.patches().get(i);
+        for (int i = 0; i < romhack.hacks().size(); i++) {
+            Hack patch = romhack.hacks().get(i);
             if (StringUtil.isBlankString(patch.name())) {
                 throw new RuntimeException("Patch " + (i + 1) + " is missing name.");
             }
@@ -49,7 +49,7 @@ public class RomhackValidator {
         }
     }
 
-    public static void validateBPS(Romhack romhack, Path romhackBPS) throws IOException {
+    public static void validateBPS(Release romhack, Path romhackBPS) throws IOException {
         BPS bps = BPS.parseBPSFile(new MarcFile(romhackBPS));
         if (romhack.rom().size() != bps.targetSize) {
             throw new RuntimeException("romhack rom size and bps patch target size differ - Actual: " + bps.targetSize + " Expected: " + romhack.rom().size());
@@ -61,7 +61,7 @@ public class RomhackValidator {
         }
     }
 
-    public static void validateFolder(Romhack romhack, Path romFolder) {
+    public static void validateFolder(Release romhack, Path romFolder) {
         String folderName = PathUtil.getName(romFolder);
         String extension = PathUtil.getExtension(folderName);
 
@@ -70,7 +70,7 @@ public class RomhackValidator {
             throw new RuntimeException("Missing rom extension");
         }
 
-        String expectedFolderPostfix = RomhackValidator.getExpectedFolderNamePostfix(romhack) + "." + extension;
+        String expectedFolderPostfix = ReleaseValidator.getExpectedFolderNamePostfix(romhack) + "." + extension;
         if (!folderName.endsWith(expectedFolderPostfix)) {
             throw new RuntimeException("romhack rom folder name missmatch - Actual: '" + folderName + "' Expected: '" + expectedFolderPostfix + "'");
         }
@@ -91,7 +91,7 @@ public class RomhackValidator {
         HashSet<String> folderNames = new HashSet<>();
         folderNames.addAll(Arrays.asList(originalFolder.toFile().list()));
 
-        for (int i = 1; i <= romhack.patches().size(); i++) {
+        for (int i = 1; i <= romhack.hacks().size(); i++) {
             String name = "" + i;
             if (!folderNames.contains(name)) {
                 throw new RuntimeException("romhack-original misses a version - Actual: " + name);
@@ -107,7 +107,7 @@ public class RomhackValidator {
 
     }
 
-    public static void validateRom(Romhack romhack, byte[] bytes) throws NoSuchAlgorithmException {
+    public static void validateRom(Release romhack, byte[] bytes) throws NoSuchAlgorithmException {
         String crc32 = Hashes.getCrc32(bytes);
         if (!romhack.rom().crc32().equals(crc32)) {
             throw new RuntimeException("romhack rom crc32 differ - Actual: " + crc32 + " Expected: " + romhack.rom().crc32());
@@ -125,13 +125,13 @@ public class RomhackValidator {
         }
     }
 
-    public static String getExpectedFolderNamePostfix(Romhack romhack) {
+    public static String getExpectedFolderNamePostfix(Release romhack) {
         StringBuilder builder = new StringBuilder();
-        for (int i = 0; i < romhack.patches().size(); i++) {
-            Patch patch = romhack.patches().get(i);
+        for (int i = 0; i < romhack.hacks().size(); i++) {
+            Hack patch = romhack.hacks().get(i);
 
             // Validation
-            if (patch.options() != null && patch.options().isBlank()) {
+            if (patch.shortOptions() != null && patch.shortOptions().isBlank()) {
                 throw new RuntimeException(i +" options string CANNOT BE empty");
             }
 
@@ -145,6 +145,8 @@ public class RomhackValidator {
             }
             authorsAsString = authorsAsString.replace("(", "")
                                             .replace(")", "")
+                                            .replace("[", "")
+                                            .replace("]", "")
                                             // Invalid filename symbols
                                             .replace("/", "")
                                             .replace("\\", "")
@@ -156,10 +158,25 @@ public class RomhackValidator {
                                             .replace("<", "")
                                             .replace(">", "");
 
+            String versionAsString = patch.version().replace("(", "")
+                    .replace(")", "")
+                    .replace("[", "")
+                    .replace("]", "")
+                    // Invalid filename symbols
+                    .replace("/", "")
+                    .replace("\\", "")
+                    .replace("\"", "")
+                    .replace(":", "")
+                    .replace("|", "")
+                    .replace("?", "")
+                    .replace("*", "")
+                    .replace("<", "")
+                    .replace(">", "");
+
             Collections.sort(patch.labels());
-            builder.append(toString(patch.labels())+ " by " + authorsAsString + " (v" + patch.version() + ")");
-            if (patch.options() != null) {
-                builder.append(" (Opt " + patch.options() + ")");
+            builder.append(toString(patch.labels())+ " by " + authorsAsString + " (v" + versionAsString + ")");
+            if (patch.shortOptions() != null) {
+                builder.append(" (Opt " + patch.shortOptions() + ")");
             }
             builder.append(']');
         }
