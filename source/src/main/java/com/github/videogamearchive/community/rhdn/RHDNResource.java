@@ -67,10 +67,12 @@ public class RHDNResource implements PatchResource {
             name = StringUtil.substring(info.get("Language"), "[", "]", false) + " translation for " + StringUtil.substring(info.get("Game"), "[", "]", false);
         }
         List<String> authors = new ArrayList<>();
+        String shortAuthors = null;
         String releasedByAsString = info.get("Released By");
         if (releasedByAsString != null && !releasedByAsString.isBlank()) {
             List<String> releasedBy = StringUtil.substrings(releasedByAsString, "[", "]", true);
             authors.addAll(releasedBy);
+            shortAuthors = CSV.toString(releasedBy);
         }
         String creditsAsString = info.get("Credits");
         if (creditsAsString != null && !creditsAsString.isBlank()) {
@@ -82,7 +84,6 @@ public class RHDNResource implements PatchResource {
             }
         }
 
-        String shortAuthors = null;
         // String url = url;
         List<String> otherUrls = List.of();
         String version = info.get("Patch Version");
