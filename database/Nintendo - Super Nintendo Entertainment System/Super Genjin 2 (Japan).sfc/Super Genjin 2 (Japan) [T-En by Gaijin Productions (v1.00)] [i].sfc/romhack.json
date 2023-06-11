@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1572864,
+        "crc32": "67320efa",
+        "md5": "55a0a13283a16f19687fba100af1c014",
+        "sha1": "db89101110fb23d446f58cb8dfb909b1c01f185f"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Chou Genjin 2]",
+            "authors": [ "Gaijin Productions", "Musashi" ],
+            "shortAuthors": "Gaijin Productions",
+            "url": "https://www.romhacking.net/translations/461/",
+            "otherUrls": null,
+            "version": "1.00",
+            "releaseDate": "1999-04-30",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
