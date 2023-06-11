@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "4ebbff3a",
+        "md5": "19e389ec9b24b399ce326930f3af5310",
+        "sha1": "cd95f65002e3d83e1062636a286dc57f50b14684"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Super Naxat Open: Golf de Shoubu da! Dorabocchan]",
+            "authors": [ "MrRichard999", "krom", "Helly", "AgentOrange", "D.D.S.", "FlashPV", "slidelljohn / [J" ],
+            "shortAuthors": "MrRichard999",
+            "url": "https://www.romhacking.net/translations/4096/",
+            "otherUrls": null,
+            "version": "0.99",
+            "releaseDate": "2018-12-17",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
