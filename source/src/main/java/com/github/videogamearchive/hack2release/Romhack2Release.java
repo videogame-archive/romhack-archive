@@ -99,7 +99,7 @@ public class Romhack2Release {
                 }
             }
             if (patch == null) {
-                patch = new Hack(null, null, authorsAsList, null,url, List.of(), version, null, options, null, labels, List.of());
+                patch = new Hack(null, null, authorsAsList, null, url, null, version, null, options, null, labels, null);
             }
             patches.add(patch);
         }
