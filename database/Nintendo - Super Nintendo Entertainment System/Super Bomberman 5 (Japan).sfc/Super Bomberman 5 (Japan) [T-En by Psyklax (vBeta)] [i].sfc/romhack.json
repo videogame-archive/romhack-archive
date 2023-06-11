@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "7e4ab509",
+        "md5": "a7aa5f117bf5fc40e784f25868385b13",
+        "sha1": "6786e19815057dac5c673ae20454ad84747ae033"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Super Bomberman 5]",
+            "authors": [ "Psyklax" ],
+            "shortAuthors": "Psyklax",
+            "url": "https://www.romhacking.net/translations/5333/",
+            "otherUrls": null,
+            "version": "Beta",
+            "releaseDate": "2020-01-08",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
