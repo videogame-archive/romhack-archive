@@ -1,0 +1,54 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "b22e4584",
+        "md5": "ea262c9052ead34a711e299ca26c7cda",
+        "sha1": "84ec3f289958841320448a017cec6a3ad81f5712"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Soreyuke Ebisumaru Karakuri Meiro - Kieta Goemon no Nazo!!]",
+            "authors": [ "DDSTranslation", "Tom", "FlashPV" ],
+            "shortAuthors": "DDSTranslation",
+            "url": "https://www.romhacking.net/translations/5666/",
+            "otherUrls": null,
+            "version": "2.0",
+            "releaseDate": "2020-08-26",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "[English] translation for [Soreyuke Ebisumaru Karakuri Meiro - Kieta Goemon no Nazo!!]",
+            "authors": [ "Djungelurban" ],
+            "shortAuthors": "Djungelurban",
+            "url": "https://www.romhacking.net/translations/6201/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2021-08-02",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
