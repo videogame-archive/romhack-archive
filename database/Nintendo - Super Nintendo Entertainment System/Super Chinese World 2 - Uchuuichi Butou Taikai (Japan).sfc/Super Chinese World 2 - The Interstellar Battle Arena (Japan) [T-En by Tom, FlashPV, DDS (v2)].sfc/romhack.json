@@ -16,20 +16,20 @@
         "notes": null
     },
     "rom": {
-        "size": 1572864,
-        "crc32": "f38fc8a5",
-        "md5": "5986a4bf79f2cf3523644c0ca27cb353",
-        "sha1": "836a5922122f6b86b6d415247c34e4dda5427a35"
+        "size": 3145728,
+        "crc32": "200d64f6",
+        "md5": "5ff0f895c41ec3fce7a482f44e7c5734",
+        "sha1": "d1cab6d3f7dd01227fec5f8ebce8181607f8353c"
     },
     "hacks": [
         {
             "id": null,
-            "name": "[English] translation for [Super Chinese World]",
+            "name": "[English] translation for [Super Chinese World 2]",
             "authors": [ "Tom", "FlashPV", "DDS" ],
             "shortAuthors": null,
             "url": "https://www.translated.games/snes/scw",
             "otherUrls": null,
-            "version": "1",
+            "version": "2",
             "releaseDate": "2022-05-02",
             "options": null,
             "shortOptions": null,
