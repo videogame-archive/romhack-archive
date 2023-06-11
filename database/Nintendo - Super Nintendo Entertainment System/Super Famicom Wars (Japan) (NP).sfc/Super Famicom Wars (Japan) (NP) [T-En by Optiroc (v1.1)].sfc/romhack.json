@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "45cbdf8d",
+        "md5": "96501e0e8d2f7435ac6ac5727571f8bb",
+        "sha1": "e8309511f7bb903059de7e166c2d08cd971792e5"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Super Famicom Wars]",
+            "authors": [ "Optiroc", "breakin", "Lee Hyde", "Sky Yoshi" ],
+            "shortAuthors": "Optiroc",
+            "url": "https://www.romhacking.net/translations/3354/",
+            "otherUrls": null,
+            "version": "1.1",
+            "releaseDate": "2018-07-21",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
