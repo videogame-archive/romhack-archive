@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "80a89f49",
+        "md5": "11be7a63d47fa924af18c036e4cfb4ce",
+        "sha1": "a9859784ad545ff299ae3736285e89940e03e0dd"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Shin Nekketsu Kouha: Kunio-tachi no Banka]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Datenshi" ],
+            "shortAuthors": "Aeon Genesis",
+            "url": "https://www.romhacking.net/translations/598/",
+            "otherUrls": null,
+            "version": "1.00",
+            "releaseDate": "2002-09-20",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
