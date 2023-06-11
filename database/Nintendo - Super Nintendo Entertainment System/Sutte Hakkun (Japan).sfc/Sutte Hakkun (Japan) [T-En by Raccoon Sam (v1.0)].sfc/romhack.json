@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "08373a9c",
+        "md5": "0e74ed9fc08aaf8521c2d3715e77fc43",
+        "sha1": "97e17d45beb3b235513101fce6ac78b7dcde7d78"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Sutte Hakkun]",
+            "authors": [ "Raccoon Sam", "Veal Gins" ],
+            "shortAuthors": "Raccoon Sam",
+            "url": "https://www.romhacking.net/translations/3280/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2017-11-09",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
