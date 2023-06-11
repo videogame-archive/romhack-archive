@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "3f6222b0",
+        "md5": "3dc96a2e4b81a78dd2a05386c9de7ff2",
+        "sha1": "bf7d6b61791e25d9ec02aec8679167711417ce27"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Super Soukoban]",
+            "authors": [ "MrRichard999", "krom", "rainponcho", "AgentOrange" ],
+            "shortAuthors": "MrRichard999, krom",
+            "url": "https://www.romhacking.net/translations/3313/",
+            "otherUrls": null,
+            "version": "0.5",
+            "releaseDate": "2017-12-03",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
