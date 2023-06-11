@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable | Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "c20a5170",
+        "md5": "22f02ebd9a0e257bf7fc22b071dd18b6",
+        "sha1": "3bc35592c50da66f88952a92ab65cc150a210b3d"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Super Puyo Puyo 2]",
+            "authors": [ "J2e Translations", "necrosaro", "Tomato", "Alexander Beetle" ],
+            "shortAuthors": "J2e Translations",
+            "url": "https://www.romhacking.net/translations/465/",
+            "otherUrls": null,
+            "version": "1.1",
+            "releaseDate": "2001-10-28",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
