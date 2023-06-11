@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "1f03cddf",
+        "md5": "b205136bdce3d74f4f03803002ddef4e",
+        "sha1": "550b0a44141d27ae0c0d70f224e9a6e3b7511265"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Space Megaforce]",
+            "authors": [ "asiwish" ],
+            "shortAuthors": "asiwish",
+            "url": "https://www.romhacking.net/translations/6513/",
+            "otherUrls": null,
+            "version": "1.2",
+            "releaseDate": "2022-04-07",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
