@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 6291456,
+        "crc32": "0d180481",
+        "md5": "fe6c7d5083495dc199d247ede7eb4a05",
+        "sha1": "94a0b8ce3e5b67086d87a2ff2ed2c9bb87d911df"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Daikaijuu Monogatari II]",
+            "authors": [ "Dynamic-Designs", "Wildbill", "Gerb", "filler", "Bongo`" ],
+            "shortAuthors": "Dynamic-Designs",
+            "url": "https://www.romhacking.net/translations/5763/",
+            "otherUrls": null,
+            "version": "0.90",
+            "releaseDate": "2020-11-10",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
