@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "0416c500",
+        "md5": "bf71cbbf149076973039a597d49f344f",
+        "sha1": "425c621fe1099f6c0ee8d67458ca05546c436b20"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Super Robot Taisen Gaiden: Masoukishin - The Lord of Elemental]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "TheMajinZenki", "Caitlin Newberry", "Optiroc", "FlashPV" ],
+            "shortAuthors": "Aeon Genesis",
+            "url": "https://www.romhacking.net/translations/3606/",
+            "otherUrls": null,
+            "version": "1.05",
+            "releaseDate": "2018-09-04",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
