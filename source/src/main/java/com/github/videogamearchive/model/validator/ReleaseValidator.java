@@ -149,7 +149,7 @@ public class ReleaseValidator {
 
             // Missing array
             if (patch.shortOptions() != null && patch.options() == null) {
-                throw new RuntimeException(i +" shortOptions array CANNOT BE empty of options is not null");
+                throw new RuntimeException(i +" options array CANNOT BE empty if shortOptions is not null");
             }
 
             // Building name

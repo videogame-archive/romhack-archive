@@ -74,7 +74,11 @@ public class Romhack2Release {
             int indexOfVersion = nameVersionOpt.indexOf(" (v");
             String authors = nameVersionOpt.substring(0, indexOfVersion);
             String version = StringUtil.substring(nameVersionOpt, "(v", ")", true);
-            String shortOptions = StringUtil.substring(nameVersionOpt, "(Opt ", ")", true);
+            String optionsAsString = StringUtil.substring(nameVersionOpt, "(Opt ", ")", true);
+            List<String> options = null;
+            if (optionsAsString != null) {
+                options = List.of(optionsAsString.split(","));
+            }
             List<String> authorsAsList = new ArrayList<>();
             for (String author:authors.split(",")) {
                 authorsAsList.add(author.trim());
@@ -91,11 +95,11 @@ public class Romhack2Release {
                     }
                 }
                 if (urlPatch != null) {
-                    patch = new Hack(null, urlPatch.name(), urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), null, urlPatch.version(), urlPatch.releaseDate(), null, shortOptions, labels, null);
+                    patch = new Hack(null, urlPatch.name(), urlPatch.authors(), urlPatch.shortAuthors(), urlPatch.url(), null, urlPatch.version(), urlPatch.releaseDate(), options, null, labels, null);
                 }
             }
             if (patch == null) {
-                patch = new Hack(null, null, authorsAsList, null,url, List.of(), version, null, null, shortOptions, labels, List.of());
+                patch = new Hack(null, null, authorsAsList, null,url, List.of(), version, null, options, null, labels, List.of());
             }
             patches.add(patch);
         }
