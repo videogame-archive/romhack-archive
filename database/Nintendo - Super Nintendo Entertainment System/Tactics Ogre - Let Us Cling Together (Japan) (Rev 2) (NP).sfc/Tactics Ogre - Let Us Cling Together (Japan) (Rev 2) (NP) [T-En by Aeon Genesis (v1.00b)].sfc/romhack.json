@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "61c28f72",
+        "md5": "6144d2c0f27233d9ddc9038c0b48674f",
+        "sha1": "f67768a18b125b2757c9f41b1da8a0e700c76ca4"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Tactics Ogre: Let Us Cling Together]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "LordTech", "Dark Force", "Disnesquick" ],
+            "shortAuthors": "Aeon Genesis",
+            "url": "https://www.romhacking.net/translations/1501/",
+            "otherUrls": null,
+            "version": "1.00b",
+            "releaseDate": "2010-04-08",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
