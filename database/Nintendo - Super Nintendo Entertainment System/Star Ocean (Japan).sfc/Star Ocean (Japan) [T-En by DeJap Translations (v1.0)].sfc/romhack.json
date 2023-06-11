@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 6291456,
+        "crc32": "4cd9b70f",
+        "md5": "0b641f2d3222d9f7453e9919dc959d59",
+        "sha1": "6974c89a2c452b2444304a64cfa4d9b1418dc785"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Star Ocean]",
+            "authors": [ "DeJap Translations", "Dark Force", "AnusP", "Tomato", "Akujin", "", "Bisqwit", "Hades Shingami", "LifeBlood", "ZsKnight", "The Dumper", "Katharsis" ],
+            "shortAuthors": "DeJap Translations",
+            "url": "https://www.romhacking.net/translations/452/",
+            "otherUrls": null,
+            "version": "1.0",
+            "releaseDate": "2003-12-31",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
