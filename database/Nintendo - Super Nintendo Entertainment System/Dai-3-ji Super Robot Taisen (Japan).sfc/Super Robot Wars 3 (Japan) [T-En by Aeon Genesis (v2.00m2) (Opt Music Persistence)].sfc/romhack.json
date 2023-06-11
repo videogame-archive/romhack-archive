@@ -17,9 +17,9 @@
     },
     "rom": {
         "size": 2097152,
-        "crc32": "853e1f2c",
-        "md5": "1ffe2a6b125893801450475504acf980",
-        "sha1": "8ef1217448b551a1af211344b304ca1caaba0814"
+        "crc32": "7ecfb183",
+        "md5": "fe5ed0b1936af21db50d880cc727bb86",
+        "sha1": "2d8c26cb7e32d07635b51cd2531e272a4eadaa9a"
     },
     "hacks": [
         {
@@ -31,7 +31,7 @@
             "otherUrls": null,
             "version": "2.00m2",
             "releaseDate": "2019-06-24",
-            "options": null,
+            "options": [ "Music Persistence" ],
             "shortOptions": null,
             "labels": [ "T-En" ],
             "medias": null
