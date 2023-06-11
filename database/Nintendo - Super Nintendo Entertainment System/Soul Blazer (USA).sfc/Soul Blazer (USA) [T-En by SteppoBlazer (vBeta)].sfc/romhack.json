@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "21910030",
+        "md5": "a648bdafd931d6450f633b76e87223ba",
+        "sha1": "fbf85251a9e19602c4f84118a255b79b45985a06"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Soul Blazer]",
+            "authors": [ "SteppoBlazer" ],
+            "shortAuthors": null,
+            "url": "https://www.romhacking.net/forum/index.php?topic=30920.0",
+            "otherUrls": null,
+            "version": "Beta",
+            "releaseDate": "2020-07-01",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
