@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-11",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1572864,
+        "crc32": "705d9d0c",
+        "md5": "8002b4650f031e77cc798f91a6819c75",
+        "sha1": "7b261f269e2ace08bf45952233bbdbb6fc66f4cf"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Super F1 Circus 2]",
+            "authors": [ "MrRichard999", "Jink640", "Helly", "TheMajinZenki" ],
+            "shortAuthors": "MrRichard999",
+            "url": "https://www.romhacking.net/translations/2834/",
+            "otherUrls": null,
+            "version": "0.95",
+            "releaseDate": "2018-12-04",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
