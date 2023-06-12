@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-12",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "41ff68c7",
+        "md5": "2c2e999f59504a42a74df658ba9558d2",
+        "sha1": "bf23c193159c89dfee1cabc6c1b81cc3289e6805"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Treasure Hunter G]",
+            "authors": [ "obsolete translation", "Metalhawk's Translations" ],
+            "shortAuthors": "obsolete translation, Metalhawk's Translations",
+            "url": "https://www.romhacking.net/translations/490/",
+            "otherUrls": null,
+            "version": "Post Beta 2",
+            "releaseDate": "2004-02-22",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
