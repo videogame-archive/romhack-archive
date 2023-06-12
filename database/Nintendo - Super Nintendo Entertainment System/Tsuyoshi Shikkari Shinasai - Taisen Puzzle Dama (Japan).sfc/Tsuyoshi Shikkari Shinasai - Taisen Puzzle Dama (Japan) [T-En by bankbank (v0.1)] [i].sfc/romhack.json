@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-12",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 1048576,
+        "crc32": "d60d4a93",
+        "md5": "18b5025dc7211a7b5d143e09b0799dda",
+        "sha1": "494e1d26af1f5acda5a6d90380015da2cc022ab5"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Tsuyoshi Shikkari Shinasai - Taisen Puzzle Dama]",
+            "authors": [ "bankbank" ],
+            "shortAuthors": "bankbank",
+            "url": "https://www.romhacking.net/translations/6641/",
+            "otherUrls": null,
+            "version": "0.1",
+            "releaseDate": "2022-08-25",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
