@@ -17,9 +17,9 @@
     },
     "rom": {
         "size": 1048576,
-        "crc32": "c3b18df7",
-        "md5": "ff3e0f251293ce36bfe50da6242b1d5a",
-        "sha1": "96f9b158c35ce3e2785545e7e73a75ab9fadc042"
+        "crc32": "28b3f17c",
+        "md5": "d3763e45c12700ed2ca42eb8d4cf5ba5",
+        "sha1": "bcbaa26f12aefebbf6c667de6000a434e326c477"
     },
     "hacks": [
         {
@@ -34,6 +34,20 @@
             "options": null,
             "shortOptions": null,
             "labels": [ "T-En" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "Ashita No Joe - Fastrom (Fix)",
+            "authors": [ "Kandowontu" ],
+            "shortAuthors": null,
+            "url": "https://www.patreon.com/posts/ashita-no-joe-79666646",
+            "otherUrls": [ "https://patreon.com/kandowontu", "https://twitter.com/kandowontu" ],
+            "version": "1.0",
+            "releaseDate": "2023-03-07",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Performance" ],
             "medias": null
         }
     ]
