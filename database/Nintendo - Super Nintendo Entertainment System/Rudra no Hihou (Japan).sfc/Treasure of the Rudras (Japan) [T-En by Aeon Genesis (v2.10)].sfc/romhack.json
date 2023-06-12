@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-12",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "2d7bd150",
+        "md5": "ced6962c5ffeef91019a8f121f9b797d",
+        "sha1": "832da86eb4b0cef3a5b6f4497307cf7b7b153a86"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Rudra no Hihou]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi", "Ian Kelley", "NinjaC64", "satsu", "Moriyosi", "Matthew Kendora", "_Bnu", "BTAxis", "Boss Monkey Hayama" ],
+            "shortAuthors": "Aeon Genesis",
+            "url": "https://www.romhacking.net/translations/669/",
+            "otherUrls": null,
+            "version": "2.10",
+            "releaseDate": "2015-06-11",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
