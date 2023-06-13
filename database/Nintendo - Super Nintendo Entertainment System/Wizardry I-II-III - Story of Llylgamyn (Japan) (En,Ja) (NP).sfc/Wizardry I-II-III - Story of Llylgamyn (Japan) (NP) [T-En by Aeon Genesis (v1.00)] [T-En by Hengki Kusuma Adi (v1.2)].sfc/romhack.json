@@ -1,0 +1,54 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-13",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "9f61780d",
+        "md5": "2c48013844614a7583d69de55aba9ca4",
+        "sha1": "23649c9459e4676bd62dbd39e931bc64d13726be"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Wizardry I-II-III: Story of Llylgamyn]",
+            "authors": [ "Aeon Genesis", "Gideon Zhi" ],
+            "shortAuthors": "Aeon Genesis",
+            "url": "https://www.romhacking.net/translations/496/",
+            "otherUrls": null,
+            "version": "1.00",
+            "releaseDate": "2000-08-05",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "[English] translation for [Wizardry I-II-III: Story of Llylgamyn]",
+            "authors": [ "Hengki Kusuma Adi", "Gideon Zhi" ],
+            "shortAuthors": "Hengki Kusuma Adi",
+            "url": "https://www.romhacking.net/translations/5711/",
+            "otherUrls": null,
+            "version": "1.2",
+            "releaseDate": "2023-02-22",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
