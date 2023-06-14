@@ -17,9 +17,9 @@
     },
     "rom": {
         "size": 4194304,
-        "crc32": "2c3ce62f",
-        "md5": "dbe8e5afa3e065885f69159c3f7c24b7",
-        "sha1": "e6e561ee05447dda9736d28271f160abe7ca0cb9"
+        "crc32": "66e0f078",
+        "md5": "cf76e6f5c3f89d0541ed0a1dfab600af",
+        "sha1": "b1131736f6d01011a2c6b5190b62499e5d348198"
     },
     "hacks": [
         {
