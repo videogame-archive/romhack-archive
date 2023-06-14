@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-14",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 6291456,
+        "crc32": "f2b4241a",
+        "md5": "c215761f8abcfcee17c139eeeb05dad3",
+        "sha1": "e23f8359e309844beeb2e1f820ee0f944aed3bb7"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Wizardry: Bane of the Cosmic Forge]",
+            "authors": [ "TiCo", "MrRichard999" ],
+            "shortAuthors": "TiCo",
+            "url": "https://www.romhacking.net/translations/939/",
+            "otherUrls": null,
+            "version": "0.99",
+            "releaseDate": "2013-08-09",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
