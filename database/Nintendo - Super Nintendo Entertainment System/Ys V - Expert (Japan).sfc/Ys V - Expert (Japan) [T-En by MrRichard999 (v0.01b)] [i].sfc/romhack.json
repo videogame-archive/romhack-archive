@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Incomplete",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-15",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "c5115a04",
+        "md5": "73f1c5a3e65e332480a4c4874ccfc918",
+        "sha1": "3fab40fc9c9f236f77bbe08e502e9353117cb262"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Ys V Expert]",
+            "authors": [ "MrRichard999", "UnsungHero" ],
+            "shortAuthors": "MrRichard999",
+            "url": "https://www.romhacking.net/translations/1803/",
+            "otherUrls": null,
+            "version": "0.01b",
+            "releaseDate": "2013-03-03",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
