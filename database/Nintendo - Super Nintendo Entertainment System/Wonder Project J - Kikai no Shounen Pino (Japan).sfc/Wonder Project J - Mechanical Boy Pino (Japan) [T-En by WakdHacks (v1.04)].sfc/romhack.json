@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": true,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-14",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "876fc072",
+        "md5": "4f0a19dafe361247c5dda0276b1cae13",
+        "sha1": "c3400a6462eabf9826b0959d5d845182083e878c"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "[English] translation for [Wonder Project J: Kikai no Shonen Pino]",
+            "authors": [ "WakdHacks", "LordTech", "Tomato", "Akujin", "Kagami" ],
+            "shortAuthors": "WakdHacks",
+            "url": "https://www.romhacking.net/translations/497/",
+            "otherUrls": null,
+            "version": "1.04",
+            "releaseDate": "2001-08-15",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "T-En" ],
+            "medias": null
+        }
+    ]
+}
