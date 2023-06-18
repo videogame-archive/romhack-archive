@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-18",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 3145728,
+        "crc32": "c33d676f",
+        "md5": "c9e62c875de2717d6665254cf4b957a6",
+        "sha1": "96c686cdf0864eff4074cb2a6b7c641b47e90751"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "Final Fantasy 6 - A Complete Hack",
+            "authors": [ "MC50" ],
+            "shortAuthors": "MC50",
+            "url": "https://www.romhacking.net/hacks/650/",
+            "otherUrls": null,
+            "version": "2.01",
+            "releaseDate": "2019-05-23",
+            "options": [ "Normal" ],
+            "shortOptions": null,
+            "labels": [ "Game" ],
+            "medias": null
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-18",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 6291456,
+        "crc32": "39a8f5b4",
+        "md5": "f344eea5e58aa43cc6365c14750d7af6",
+        "sha1": "e2e1ed5b66fb66ae0c9bae9ad64e55e34196bfdd"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "Final Fantasy VI - A Soldier's Contingency (Extended Bestiary Edition)",
+            "authors": [ "Lightning Hunter", "Fauntleroy", "Mike Ferrell", "C-Dude", "Madsiur" ],
+            "shortAuthors": "Lightning Hunter",
+            "url": "https://www.romhacking.net/hacks/7486/",
+            "otherUrls": null,
+            "version": "1.02",
+            "releaseDate": "2023-01-31",
+            "options": [ "Unheadered 1.1" ],
+            "shortOptions": null,
+            "labels": [ "Overhaul" ],
+            "medias": null
+        }
+    ]
+}

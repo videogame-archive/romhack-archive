@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-18",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 8388608,
+        "crc32": "5dfbf674",
+        "md5": "8c5061517e67fafa26ff41bae639d33f",
+        "sha1": "91a7309a6e5466e7dd8c0e2eed7d78d81091188e"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "Return of the Dark Sorcerer",
+            "authors": [ "Mike Ferrell", "DarkMage", "GrayShadows", "HatZen08", "angelo26", "Leviathan Mist", "Drakkhen", "Master ZED", "Lenophis", "assassin17", "Madsiur", "Synchysi", "Edrin", "Lufia", "James White", "Poco Loco", "Zeemis", "Sutebenu", "Dr.Blank", "Lijj", "XolarDark", "Jackimus", "Tsushiy", "JCE3000GT", "Lockirby", "Lord Envoy", "Magical Trevor", "Zozma", "DjinnandTonic", "OBSailorStar", "FEOK", "Sathka", "Eddie Lee", "Koreki", "dn", "B-Run", "Bropedio", "Think0028", "Eggers", "seibaby", "ScarabEnigma", "emberling", "13375K31C43R" ],
+            "shortAuthors": "Mike Ferrell",
+            "url": "https://www.romhacking.net/hacks/2207/",
+            "otherUrls": null,
+            "version": "2.9.4",
+            "releaseDate": "2023-05-17",
+            "options": [ "Unheadered 1.0" ],
+            "shortOptions": null,
+            "labels": [ "Game" ],
+            "medias": null
+        }
+    ]
+}
