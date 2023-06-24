@@ -1,0 +1,54 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-24",
+        "source": "Unreliable",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "7dbb9407",
+        "md5": "31bb0c1e3996757d8e66b77832b38bf1",
+        "sha1": "4298f8796933afa8b92021d653d3c6e46e1241df"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "Final Fantasy IV - Ultima",
+            "authors": [ "8-bit fan", "chillyfeez", "Ace_Aileron", "FlamePurge", "Grimoire LD", "Myself086", "T92", "mrBrawndo", "Gedankenschild", "Pinkpuff", "b0ardface", "Aexoden", "Crow!" ],
+            "shortAuthors": "8-bit fan",
+            "url": "https://www.romhacking.net/hacks/4134/",
+            "otherUrls": null,
+            "version": "2022 r25a",
+            "releaseDate": "2023-03-12",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Overhaul" ],
+            "medias": null
+        },
+        {
+            "id": null,
+            "name": "Final Fantasy IV (J) / Final Fantasy II (US) - MSU1",
+            "authors": [ "Kurrono" ],
+            "shortAuthors": null,
+            "url": "https://www.zeldix.net/t1952-final-fantasy-iv-j-final-fantasy-ii-us",
+            "otherUrls": null,
+            "version": "3",
+            "releaseDate": "2019-10-18",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Tweak" ],
+            "medias": null
+        }
+    ]
+}

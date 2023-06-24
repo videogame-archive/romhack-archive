@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-24",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 2097152,
+        "crc32": "88fc605e",
+        "md5": "f4497007cfc28844d930b78f4a86ab75",
+        "sha1": "cb8dc4ebbf5910bb95d67603f133b0c9784682cb"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "Final Fantasy IV - Ultima",
+            "authors": [ "8-bit fan", "chillyfeez", "Ace_Aileron", "FlamePurge", "Grimoire LD", "Myself086", "T92", "mrBrawndo", "Gedankenschild", "Pinkpuff", "b0ardface", "Aexoden", "Crow!" ],
+            "shortAuthors": "8-bit fan",
+            "url": "https://www.romhacking.net/hacks/4134/",
+            "otherUrls": null,
+            "version": "2022 r25a",
+            "releaseDate": "2023-03-12",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Overhaul" ],
+            "medias": null
+        }
+    ]
+}
