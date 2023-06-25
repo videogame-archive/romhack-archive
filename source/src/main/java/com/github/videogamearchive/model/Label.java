@@ -32,7 +32,8 @@ public enum Label {
      * Other Labels
      */
     Restoration("Restoration"),
-    Port("Port");
+    Port("Port"),
+    Music("Music");
 
     private final String displayName;
 
