@@ -12,30 +12,16 @@
     "provenance": {
         "retrievedBy": "JuMaFuSe",
         "retrievedDate": "2023-06-24",
-        "source": "Unreliable",
+        "source": "Trusted",
         "notes": null
     },
     "rom": {
-        "size": 2097152,
-        "crc32": "7dbb9407",
-        "md5": "31bb0c1e3996757d8e66b77832b38bf1",
-        "sha1": "4298f8796933afa8b92021d653d3c6e46e1241df"
+        "size": 1572864,
+        "crc32": "5c9a81f1",
+        "md5": "a63816f5431ebbf51f8463a46f863e7a",
+        "sha1": "e7da3ec91e8c17879b7c88ad47f4d6e1239ad03d"
     },
     "hacks": [
-        {
-            "id": null,
-            "name": "Final Fantasy IV - Ultima",
-            "authors": [ "8-bit fan", "chillyfeez", "Ace_Aileron", "FlamePurge", "Grimoire LD", "Myself086", "T92", "mrBrawndo", "Gedankenschild", "Pinkpuff", "b0ardface", "Aexoden", "Crow!" ],
-            "shortAuthors": "8-bit fan",
-            "url": "https://www.romhacking.net/hacks/4134/",
-            "otherUrls": null,
-            "version": "2022 r25a",
-            "releaseDate": "2023-03-12",
-            "options": null,
-            "shortOptions": null,
-            "labels": [ "Overhaul" ],
-            "medias": null
-        },
         {
             "id": null,
             "name": "Final Fantasy IV (J) / Final Fantasy II (US) - MSU1",
@@ -47,7 +33,7 @@
             "releaseDate": "2019-10-18",
             "options": null,
             "shortOptions": null,
-            "labels": [ "Tweak" ],
+            "labels": [ "Music" ],
             "medias": null
         }
     ]
