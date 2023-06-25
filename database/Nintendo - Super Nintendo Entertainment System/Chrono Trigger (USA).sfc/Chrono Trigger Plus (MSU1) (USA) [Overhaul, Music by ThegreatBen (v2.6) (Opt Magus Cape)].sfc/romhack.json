@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-25",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 6291456,
+        "crc32": "2c0cfade",
+        "md5": "8ce79b9315ba493905d4e5c38660c36f",
+        "sha1": "8bbbefd1512683151875005e9d61eda43bd00626"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "Chrono Trigger+",
+            "authors": [ "ThegreatBen", "Mauron", "qwertymodo", "Josephine Lithius" ],
+            "shortAuthors": "ThegreatBen",
+            "url": "https://www.romhacking.net/hacks/3691/",
+            "otherUrls": null,
+            "version": "2.6",
+            "releaseDate": "2022-12-15",
+            "options": [ "Magus Cape" ],
+            "shortOptions": null,
+            "labels": [ "Overhaul", "Music" ],
+            "medias": null
+        }
+    ]
+}
