@@ -3,7 +3,7 @@
     "info": {
         "name": null,
         "translatedTitle": null,
-        "status": "Fully Playable",
+        "status": "Fully Playable | Incomplete",
         "adult": null,
         "offensive": null,
         "obsoleteVersion": null,
@@ -16,21 +16,21 @@
         "notes": null
     },
     "rom": {
-        "size": 3145728,
-        "crc32": "758e1657",
-        "md5": "582bd6665e054e2545d8940c71a26719",
-        "sha1": "1ee28286661c03921d70c8fe195234042bd98d88"
+        "size": 4194304,
+        "crc32": "39f1d5ea",
+        "md5": "9fa0dcc7025ef673dff8b2da0dab5a2a",
+        "sha1": "e24181429b27fc4367921ce68fe21bee9373e62c"
     },
     "hacks": [
         {
             "id": null,
-            "name": "Final Fantasy VI (J) / Final Fantasy III (US) - MSU1",
-            "authors": [ "Insidious611" ],
+            "name": "Donkey Kong Country - MSU1",
+            "authors": [ "Conn" ],
             "shortAuthors": null,
-            "url": "https://www.zeldix.net/t1335-final-fantasy-vi-j-final-fantasy-iii-us",
+            "url": "https://www.zeldix.net/t1484-donkey-kong-country",
             "otherUrls": null,
-            "version": "20220422",
-            "releaseDate": "2022-04-22",
+            "version": "2019.12.12",
+            "releaseDate": "2019-12-12",
             "options": null,
             "shortOptions": null,
             "labels": [ "Music" ],
