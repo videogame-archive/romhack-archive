@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-25",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "a7237e28",
+        "md5": "f8dc16289a2aa1c6144b841ad505164c",
+        "sha1": "03b6c74a5c035633b0408a970cd9d4d2b2825c45"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "Donkey Kong Country 3 - MSU1",
+            "authors": [ "Conn" ],
+            "shortAuthors": null,
+            "url": "https://www.zeldix.net/t1598-donkey-kong-country-3",
+            "otherUrls": null,
+            "version": "2018.01.14",
+            "releaseDate": "2018-01-14",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Music" ],
+            "medias": null
+        }
+    ]
+}
