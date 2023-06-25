@@ -1,0 +1,40 @@
+{
+    "id": null,
+    "info": {
+        "name": null,
+        "translatedTitle": null,
+        "status": "Fully Playable",
+        "adult": null,
+        "offensive": null,
+        "obsoleteVersion": null,
+        "backCatalog": null
+    },
+    "provenance": {
+        "retrievedBy": "JuMaFuSe",
+        "retrievedDate": "2023-06-25",
+        "source": "Trusted",
+        "notes": null
+    },
+    "rom": {
+        "size": 4194304,
+        "crc32": "4ed73afd",
+        "md5": "e372b30867f930b0a78d5dc70bc7d81d",
+        "sha1": "bd42a6c426c40cfc3a2125277938b7f483d839de"
+    },
+    "hacks": [
+        {
+            "id": null,
+            "name": "Donkey Kong Country 2 - MSU1",
+            "authors": [ "Conn" ],
+            "shortAuthors": null,
+            "url": "https://www.zeldix.net/t1445-donkey-kong-country-2",
+            "otherUrls": null,
+            "version": "2022.08.22",
+            "releaseDate": "2022-08-22",
+            "options": null,
+            "shortOptions": null,
+            "labels": [ "Music" ],
+            "medias": null
+        }
+    ]
+}
